@@ -1,0 +1,7 @@
+Encoding
+- do something properly with pdgid
+- handle "ell"
+- get bar into ascii, seems to be also missing from texName
+- put groups and names of groups into place
+
+- + after particle may not be super plus

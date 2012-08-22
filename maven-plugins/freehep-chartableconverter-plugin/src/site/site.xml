@@ -1,0 +1,40 @@
+<project name="freehep">
+    <bannerLeft>
+        <name>FreeHEP Character Table Converter Plugin</name>
+<!--        <src>http://maven.apache.org/images/apache-maven-project.png</src> -->
+<!-- FIXME, should this be substituted by some properties -->
+        <href>http://java.freehep.org/freehep-chartableconverter-plugin</href>
+    </bannerLeft>
+    
+    <bannerRight>
+        <name>FreeHEP</name>
+        <src>http://java.freehep.org/images/sm-freehep.gif</src>
+        <href>http://java.freehep.org</href>
+    </bannerRight>
+  
+  <body>
+    <links>
+        <item name="FreeHEP 2.x" href="http://java.freehep.org/"/>
+        <item name="Maven 2" href="http://maven.apache.org/maven2/"/>
+    </links>
+
+    <menu name="Overview">
+      <item name="Introduction" href="index.html"/>
+      <item name="Goals" href="plugin-info.html"/>
+      <item name="Usage" href="usage.html"/>
+<!--
+      <item name="FAQ" href="faq.html"/>
+-->
+    </menu>
+
+<!--   
+    <menu name="Examples">
+      <item name="description1" href="examples/example-one.html"/>
+      <item name="description2" href="examples/example-two.html"/>
+    </menu>
+-->
+
+    ${reports}
+    
+  </body>
+</project>

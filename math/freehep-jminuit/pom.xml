@@ -1,0 +1,52 @@
+<?xml version="1.0"?>
+<project>
+  <parent>
+    <artifactId>global</artifactId>
+    <groupId>org.freehep</groupId>
+    <version>5</version>
+  </parent>
+  <modelVersion>4.0.0</modelVersion>
+  <groupId>org.freehep</groupId>
+  <artifactId>freehep-jminuit</artifactId>
+  <name>FreeHEP Java Minuit</name>
+  <version>1.0.1-SNAPSHOT</version>
+  <description>FreeHEP Minuit Implementation in Java.</description>
+  <repositories>
+    <repository>
+      <id>freehep-maven</id>
+      <name>Maven FreeHEP</name>
+      <url>http://java.freehep.org/maven2</url>
+    </repository>
+  </repositories>
+  <build>
+    <plugins>
+      <plugin>
+        <artifactId>maven-compiler-plugin</artifactId>
+        <configuration>
+          <source>1.5</source>
+          <target>1.5</target>
+        </configuration>
+      </plugin>
+    </plugins>
+  </build>
+  <reporting>
+    <plugins>
+      <plugin>
+        <artifactId>maven-javadoc-plugin</artifactId>
+        <configuration>
+          <source>1.5</source>
+          <links>
+            <link>http://java.sun.com/j2se/1.5.0/docs/api/</link>
+          </links>
+        </configuration>
+      </plugin>
+    </plugins>
+  </reporting>
+  <dependencies>
+    <dependency>
+      <groupId>junit</groupId>
+      <artifactId>junit</artifactId>
+      <version>3.8.2</version>
+    </dependency>
+  </dependencies>
+</project>

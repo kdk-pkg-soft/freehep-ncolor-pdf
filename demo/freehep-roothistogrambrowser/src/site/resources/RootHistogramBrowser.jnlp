@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?> 
+<!-- JNLP File for Root Histogram Browser--> 
+<jnlp 
+  spec="1.0" 
+  codebase="http://java.freehep.org/freehep-roothistogrambrowser" 
+  href="RootHistogramBrowser.jnlp"
+  version ="2.0-SNAPSHOT"> 
+  <information> 
+    <title>Root Histogram Browser</title> 
+    <vendor>FreeHEP</vendor> 
+    <homepage href="freehep-roothistogrambrowser/index.html"/> 
+    <description>FreeHEP Root Histogram Browser</description> 
+    <description kind="short">A program for browsing histograms in a Root file.</description>
+    <offline-allowed/> 
+  </information>
+  <security> 
+    <all-permissions/> 
+  </security> 
+  <resources> 
+    <j2se version="1.4+"/> 
+    
+<jar href="freehep-roothistogrambrowser-2.0-SNAPSHOT.jar"/>
+<jar href="freehep-rootio-2.0.1.jar" main="true"/>
+<jar href="jas-plotter-2.1.jar"/>
+<jar href="bcel-5.1.jar"/>
+
+  </resources> 
+  <application-desc main-class="hep.io.root.util.RootHistogramBrowser"/> 
+</jnlp> 

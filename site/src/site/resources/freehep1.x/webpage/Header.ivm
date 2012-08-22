@@ -1,0 +1,4 @@
+#set( $webName = "WebPage" )
+#set( $webSearch = "java.freehep.org" )
+<h1>WebPage</h1>
+Web Page Generation System

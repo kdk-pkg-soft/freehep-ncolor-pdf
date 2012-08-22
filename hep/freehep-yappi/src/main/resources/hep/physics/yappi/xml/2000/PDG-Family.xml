@@ -1,0 +1,330 @@
+<?xml version="1.0" encoding="ISO-8859-1"?> 
+<!--=============================================================================--> 
+<!-- Copyright of file, 2000, CERN, Geneva, Switzerland. (yappi.freehep.org)     --> 
+<!-- Copyright of data, 2000, PDG. (pdg.lbl.gov)                                 --> 
+<!--=============================================================================--> 
+<!-- ATTENTION: this file is GENERATED. To override values, use a different file --> 
+<!--=============================================================================--> 
+<PPML source="PDG-2000-Generated" xmlns:ppml="http://www.w3.org/1999/XMLSchema-instance" 
+      ppml:nonamespaceSchemaLocation='ppml.xsd'> 
+   <Family name="GAUGE AND HIGGS BOSONS" texName="GAUGE\;AND\;HIGGS\;BOSONS" > 
+       <ParticleRef name="gamma" /> 
+       <ParticleRef name="g" /> 
+       <ParticleRef name="W+" /> 
+       <ParticleRef name="Z" /> 
+       <ParticleRef name="HiggsBosons---H0andH+,Searchesfor" /> 
+       <ParticleRef name="HeavyBosonsOtherThan---HiggsBosons,Searchesfor" /> 
+       <ParticleRef name="Axions(A0)andOther---VeryLightBosons,Searchesfor" /> 
+   </Family> 
+   <Family name="LEPTONS" texName="LEPTONS" > 
+       <ParticleRef name="e-" /> 
+       <ParticleRef name="mu-" /> 
+       <ParticleRef name="tau-" /> 
+       <ParticleRef name="HeavyChargedLeptonSearches" /> 
+       <ParticleRef name="Neutrinos" /> 
+       <ParticleRef name="nu(e)" /> 
+       <ParticleRef name="nu(mu)" /> 
+       <ParticleRef name="nu(tau)" /> 
+       <ParticleRef name="NumberofLightNeutrinoTypes" /> 
+       <ParticleRef name="MassiveNeutrinosand---LeptonMixing,Searchesfor+" /> 
+   </Family> 
+   <Family name="QUARKS" texName="QUARKS" > 
+       <ParticleRef name="u" /> 
+       <ParticleRef name="d" /> 
+       <ParticleRef name="s" /> 
+       <ParticleRef name="c" /> 
+       <ParticleRef name="b" /> 
+       <ParticleRef name="t" /> 
+       <ParticleRef name="b'(4thGeneration)Quark,Searchesfor" /> 
+       <ParticleRef name="FreeQuarkSearches" /> 
+   </Family> 
+   <Family name="LIGHT UNFLAVORED MESONS" texName="LIGHT\;UNFLAVORED\;MESONS" > 
+       <ParticleRef name="pi+" /> 
+       <ParticleRef name="pi0" /> 
+       <ParticleRef name="eta" /> 
+       <ParticleRef name="f(0)(400--1200)" /> 
+       <ParticleRef name="rho(770)0" /> 
+       <ParticleRef name="rho(770)+" /> 
+       <ParticleRef name="omega(782)" /> 
+       <ParticleRef name="eta'(958)" /> 
+       <ParticleRef name="f(0)(980)" /> 
+       <ParticleRef name="a(0)(980)0" /> 
+       <ParticleRef name="a(0)(980)+" /> 
+       <ParticleRef name="phi(1020)" /> 
+       <ParticleRef name="h(1)(1170)" /> 
+       <ParticleRef name="b(1)(1235)0" /> 
+       <ParticleRef name="b(1)(1235)+" /> 
+       <ParticleRef name="a(1)(1260)0" /> 
+       <ParticleRef name="a(1)(1260)+" /> 
+       <ParticleRef name="f(2)(1270)" /> 
+       <ParticleRef name="f(1)(1285)" /> 
+       <ParticleRef name="eta(1295)" /> 
+       <ParticleRef name="pi(1300)0" /> 
+       <ParticleRef name="pi(1300)+" /> 
+       <ParticleRef name="a(2)(1320)0" /> 
+       <ParticleRef name="a(2)(1320)+" /> 
+       <ParticleRef name="f(0)(1370)" /> 
+       <ParticleRef name="f(1)(1420)" /> 
+       <ParticleRef name="omega(1420)" /> 
+       <ParticleRef name="eta(1440)" /> 
+       <ParticleRef name="a(0)(1450)0" /> 
+       <ParticleRef name="a(0)(1450)+" /> 
+       <ParticleRef name="rho(1450)0" /> 
+       <ParticleRef name="rho(1450)+" /> 
+       <ParticleRef name="f(0)(1500)" /> 
+       <ParticleRef name="f(2)'(1525)" /> 
+       <ParticleRef name="omega(1650)" /> 
+       <ParticleRef name="omega(3)(1670)" /> 
+       <ParticleRef name="pi(2)(1670)0" /> 
+       <ParticleRef name="pi(2)(1670)+" /> 
+       <ParticleRef name="phi(1680)" /> 
+       <ParticleRef name="rho(3)(1690)0" /> 
+       <ParticleRef name="rho(3)(1690)+" /> 
+       <ParticleRef name="rho(1700)0" /> 
+       <ParticleRef name="rho(1700)+" /> 
+       <ParticleRef name="f(0)(1710)" /> 
+       <ParticleRef name="pi(1800)0" /> 
+       <ParticleRef name="pi(1800)+" /> 
+       <ParticleRef name="phi(3)(1850)" /> 
+       <ParticleRef name="f(2)(2010)" /> 
+       <ParticleRef name="a(4)(2040)0" /> 
+       <ParticleRef name="a(4)(2040)+" /> 
+       <ParticleRef name="f(4)(2050)" /> 
+       <ParticleRef name="f(2)(2300)" /> 
+       <ParticleRef name="f(2)(2340)" /> 
+   </Family> 
+   <Family name="STRANGE MESONS" texName="STRANGE\;MESONS" > 
+       <ParticleRef name="K+" /> 
+       <ParticleRef name="K0" /> 
+       <ParticleRef name="K(S)0" /> 
+       <ParticleRef name="K(L)0" /> 
+       <ParticleRef name="K*(892)+" /> 
+       <ParticleRef name="K*(892)0" /> 
+       <ParticleRef name="K(1)(1270)0" /> 
+       <ParticleRef name="K(1)(1270)+" /> 
+       <ParticleRef name="K(1)(1400)0" /> 
+       <ParticleRef name="K(1)(1400)+" /> 
+       <ParticleRef name="K*(1410)0" /> 
+       <ParticleRef name="K*(1410)+" /> 
+       <ParticleRef name="K(0)*(1430)0" /> 
+       <ParticleRef name="K(0)*(1430)+" /> 
+       <ParticleRef name="K(2)*(1430)+" /> 
+       <ParticleRef name="K(2)*(1430)0" /> 
+       <ParticleRef name="K*(1680)0" /> 
+       <ParticleRef name="K*(1680)+" /> 
+       <ParticleRef name="K(2)(1770)0" /> 
+       <ParticleRef name="K(2)(1770)+" /> 
+       <ParticleRef name="K(3)*(1780)0" /> 
+       <ParticleRef name="K(3)*(1780)+" /> 
+       <ParticleRef name="K(2)(1820)0" /> 
+       <ParticleRef name="K(2)(1820)+" /> 
+       <ParticleRef name="K(4)*(2045)0" /> 
+       <ParticleRef name="K(4)*(2045)+" /> 
+   </Family> 
+   <Family name="CHARMED MESONS" texName="CHARMED\;MESONS" > 
+       <ParticleRef name="D+" /> 
+       <ParticleRef name="D0" /> 
+       <ParticleRef name="D*(2007)0" /> 
+       <ParticleRef name="D*(2010)+" /> 
+       <ParticleRef name="D(1)(2420)0" /> 
+       <ParticleRef name="D(2)*(2460)0" /> 
+       <ParticleRef name="D(2)*(2460)+" /> 
+   </Family> 
+   <Family name="CHARMED, STRANGE MESONS" texName="CHARMED,\;STRANGE\;MESONS" > 
+       <ParticleRef name="D(s)+" /> 
+       <ParticleRef name="D(s)*+" /> 
+       <ParticleRef name="D(s1)(2536)+" /> 
+       <ParticleRef name="D(sJ)(2573)+" /> 
+   </Family> 
+   <Family name="BOTTOM MESONS" texName="BOTTOM\;MESONS" > 
+       <ParticleRef name="B-particleorganization" /> 
+       <ParticleRef name="B+" /> 
+       <ParticleRef name="B0" /> 
+       <ParticleRef name="B+/B0ADMIXTURE" /> 
+       <ParticleRef name="B(s)+/B0/B0/b-baryonADMIXTURE" /> 
+       <ParticleRef name="B*0" /> 
+       <ParticleRef name="B*+" /> 
+   </Family> 
+   <Family name="BOTTOM, STRANGE MESONS" texName="BOTTOM,\;STRANGE\;MESONS" > 
+       <ParticleRef name="B(s)0" /> 
+   </Family> 
+   <Family name="BOTTOM, CHARMED MESONS" texName="BOTTOM,\;CHARMED\;MESONS" > 
+       <ParticleRef name="B(c)+" /> 
+   </Family> 
+   <Family name="ccbar MESONS" texName="c\overline{c}\;MESONS" > 
+       <ParticleRef name="eta(c)(1S)" /> 
+       <ParticleRef name="J/psi(1S)" /> 
+       <ParticleRef name="chi(c0)(1P)" /> 
+       <ParticleRef name="chi(c1)(1P)" /> 
+       <ParticleRef name="chi(c2)(1P)" /> 
+       <ParticleRef name="psi(2S)" /> 
+       <ParticleRef name="psi(3770)" /> 
+       <ParticleRef name="psi(4040)" /> 
+       <ParticleRef name="psi(4160)" /> 
+       <ParticleRef name="psi(4415)" /> 
+   </Family> 
+   <Family name="bbbar MESONS" texName="b\overline{b}\;MESONS" > 
+       <ParticleRef name="Upsilon(1S)" /> 
+       <ParticleRef name="chi(b0)(1P)" /> 
+       <ParticleRef name="chi(b1)(1P)" /> 
+       <ParticleRef name="chi(b2)(1P)" /> 
+       <ParticleRef name="Upsilon(2S)" /> 
+       <ParticleRef name="chi(b0)(2P)" /> 
+       <ParticleRef name="chi(b1)(2P)" /> 
+       <ParticleRef name="chi(b2)(2P)" /> 
+       <ParticleRef name="Upsilon(3S)" /> 
+       <ParticleRef name="Upsilon(4S)" /> 
+       <ParticleRef name="Upsilon(10860)" /> 
+       <ParticleRef name="Upsilon(11020)" /> 
+   </Family> 
+   <Family name="N BARYONS" texName="N\;BARYONS" > 
+       <ParticleRef name="p+" /> 
+       <ParticleRef name="n" /> 
+       <ParticleRef name="N(1440)0" /> 
+       <ParticleRef name="N(1440)+" /> 
+       <ParticleRef name="N(1520)0" /> 
+       <ParticleRef name="N(1520)+" /> 
+       <ParticleRef name="N(1535)0" /> 
+       <ParticleRef name="N(1535)+" /> 
+       <ParticleRef name="N(1650)0" /> 
+       <ParticleRef name="N(1650)+" /> 
+       <ParticleRef name="N(1675)0" /> 
+       <ParticleRef name="N(1675)+" /> 
+       <ParticleRef name="N(1680)0" /> 
+       <ParticleRef name="N(1680)+" /> 
+       <ParticleRef name="N(1700)0" /> 
+       <ParticleRef name="N(1700)+" /> 
+       <ParticleRef name="N(1710)0" /> 
+       <ParticleRef name="N(1710)+" /> 
+       <ParticleRef name="N(1720)0" /> 
+       <ParticleRef name="N(1720)+" /> 
+       <ParticleRef name="N(2190)0" /> 
+       <ParticleRef name="N(2190)+" /> 
+       <ParticleRef name="N(2220)" /> 
+       <ParticleRef name="N(2250)" /> 
+       <ParticleRef name="N(2600)" /> 
+   </Family> 
+   <Family name="Delta BARYONS" texName="\Delta\;BARYONS" > 
+       <ParticleRef name="Delta(1232)-" /> 
+       <ParticleRef name="Delta(1232)0" /> 
+       <ParticleRef name="Delta(1232)+" /> 
+       <ParticleRef name="Delta(1232)++" /> 
+       <ParticleRef name="Delta(1600)-" /> 
+       <ParticleRef name="Delta(1600)0" /> 
+       <ParticleRef name="Delta(1600)+" /> 
+       <ParticleRef name="Delta(1600)++" /> 
+       <ParticleRef name="Delta(1620)-" /> 
+       <ParticleRef name="Delta(1620)0" /> 
+       <ParticleRef name="Delta(1620)+" /> 
+       <ParticleRef name="Delta(1620)++" /> 
+       <ParticleRef name="Delta(1700)-" /> 
+       <ParticleRef name="Delta(1700)0" /> 
+       <ParticleRef name="Delta(1700)+" /> 
+       <ParticleRef name="Delta(1700)++" /> 
+       <ParticleRef name="Delta(1905)-" /> 
+       <ParticleRef name="Delta(1905)0" /> 
+       <ParticleRef name="Delta(1905)+" /> 
+       <ParticleRef name="Delta(1905)++" /> 
+       <ParticleRef name="Delta(1910)-" /> 
+       <ParticleRef name="Delta(1910)0" /> 
+       <ParticleRef name="Delta(1910)+" /> 
+       <ParticleRef name="Delta(1910)++" /> 
+       <ParticleRef name="Delta(1920)-" /> 
+       <ParticleRef name="Delta(1920)0" /> 
+       <ParticleRef name="Delta(1920)+" /> 
+       <ParticleRef name="Delta(1920)++" /> 
+       <ParticleRef name="Delta(1930)-" /> 
+       <ParticleRef name="Delta(1930)0" /> 
+       <ParticleRef name="Delta(1930)+" /> 
+       <ParticleRef name="Delta(1930)++" /> 
+       <ParticleRef name="Delta(1950)-" /> 
+       <ParticleRef name="Delta(1950)0" /> 
+       <ParticleRef name="Delta(1950)+" /> 
+       <ParticleRef name="Delta(1950)++" /> 
+       <ParticleRef name="Delta(2420)" /> 
+   </Family> 
+   <Family name="Lambda BARYONS" texName="\Lambda\;BARYONS" > 
+       <ParticleRef name="Lambda" /> 
+       <ParticleRef name="Lambda(1405)" /> 
+       <ParticleRef name="Lambda(1520)" /> 
+       <ParticleRef name="Lambda(1600)" /> 
+       <ParticleRef name="Lambda(1670)" /> 
+       <ParticleRef name="Lambda(1690)" /> 
+       <ParticleRef name="Lambda(1800)" /> 
+       <ParticleRef name="Lambda(1810)" /> 
+       <ParticleRef name="Lambda(1820)" /> 
+       <ParticleRef name="Lambda(1830)" /> 
+       <ParticleRef name="Lambda(1890)" /> 
+       <ParticleRef name="Lambda(2100)" /> 
+       <ParticleRef name="Lambda(2110)" /> 
+       <ParticleRef name="Lambda(2350)" /> 
+   </Family> 
+   <Family name="Sigma BARYONS" texName="\Sigma\;BARYONS" > 
+       <ParticleRef name="Sigma+" /> 
+       <ParticleRef name="Sigma0" /> 
+       <ParticleRef name="Sigma-" /> 
+       <ParticleRef name="Sigma(1385)+" /> 
+       <ParticleRef name="Sigma(1385)-" /> 
+       <ParticleRef name="Sigma(1385)0" /> 
+       <ParticleRef name="Sigma(1660)-" /> 
+       <ParticleRef name="Sigma(1660)0" /> 
+       <ParticleRef name="Sigma(1660)+" /> 
+       <ParticleRef name="Sigma(1670)-" /> 
+       <ParticleRef name="Sigma(1670)0" /> 
+       <ParticleRef name="Sigma(1670)+" /> 
+       <ParticleRef name="Sigma(1750)-" /> 
+       <ParticleRef name="Sigma(1750)0" /> 
+       <ParticleRef name="Sigma(1750)+" /> 
+       <ParticleRef name="Sigma(1775)-" /> 
+       <ParticleRef name="Sigma(1775)0" /> 
+       <ParticleRef name="Sigma(1775)+" /> 
+       <ParticleRef name="Sigma(1915)-" /> 
+       <ParticleRef name="Sigma(1915)0" /> 
+       <ParticleRef name="Sigma(1915)+" /> 
+       <ParticleRef name="Sigma(1940)-" /> 
+       <ParticleRef name="Sigma(1940)0" /> 
+       <ParticleRef name="Sigma(1940)+" /> 
+       <ParticleRef name="Sigma(2030)-" /> 
+       <ParticleRef name="Sigma(2030)0" /> 
+       <ParticleRef name="Sigma(2030)+" /> 
+       <ParticleRef name="Sigma(2250)" /> 
+   </Family> 
+   <Family name="Xi BARYONS" texName="\Xi\;BARYONS" > 
+       <ParticleRef name="Xi0" /> 
+       <ParticleRef name="Xi-" /> 
+       <ParticleRef name="Xi(1530)-" /> 
+       <ParticleRef name="Xi(1530)0" /> 
+       <ParticleRef name="Xi(1690)" /> 
+       <ParticleRef name="Xi(1820)-" /> 
+       <ParticleRef name="Xi(1820)0" /> 
+       <ParticleRef name="Xi(1950)" /> 
+       <ParticleRef name="Xi(2030)" /> 
+   </Family> 
+   <Family name="Omega BARYONS" texName="\Omega\;BARYONS" > 
+       <ParticleRef name="Omega-" /> 
+       <ParticleRef name="Omega(2250)-" /> 
+   </Family> 
+   <Family name="CHARMED BARYONS" texName="CHARMED\;BARYONS" > 
+       <ParticleRef name="Lambda(c)+" /> 
+       <ParticleRef name="Lambda(c)(2593)+" /> 
+       <ParticleRef name="Lambda(c)(2625)+" /> 
+       <ParticleRef name="Sigma(c)(2455)++" /> 
+       <ParticleRef name="Sigma(c)(2455)+" /> 
+       <ParticleRef name="Sigma(c)(2455)0" /> 
+       <ParticleRef name="Sigma(c)(2520)++" /> 
+       <ParticleRef name="Sigma(c)(2520)0" /> 
+       <ParticleRef name="Xi(c)+" /> 
+       <ParticleRef name="Xi(c)0" /> 
+       <ParticleRef name="Xi(c)'+" /> 
+       <ParticleRef name="Xi(c)'0" /> 
+       <ParticleRef name="Xi(c)(2645)+" /> 
+       <ParticleRef name="Xi(c)(2645)0" /> 
+       <ParticleRef name="Xi(c)(2815)+" /> 
+       <ParticleRef name="Xi(c)(2815)0" /> 
+       <ParticleRef name="Omega(c)0" /> 
+   </Family> 
+   <Family name="BOTTOM BARYONS" texName="BOTTOM\;BARYONS" > 
+       <ParticleRef name="Lambda(b)0" /> 
+       <ParticleRef name="b-baryonADMIXTURE(Lambda(b),Xi(b),Sigma(b),Omega(b))" /> 
+   </Family> 
+</PPML> 

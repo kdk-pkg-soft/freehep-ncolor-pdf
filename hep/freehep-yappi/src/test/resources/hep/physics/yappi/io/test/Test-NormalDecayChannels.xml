@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="ISO-8859-1"?> 
+<!--=============================================================================--> 
+<!-- Copyright of file, 2000, CERN, Geneva, Switzerland. (yappi.freehep.org)     --> 
+<!-- Copyright of data, 2000, PDG. (pdg.lbl.gov)                                 --> 
+<!--=============================================================================--> 
+<PPML source="TestFile" xmlns:ppml="http://www.w3.org/1999/XMLSchema-instance" 
+      ppml:nonamespaceSchemaLocation='ppml.xsd'> 
+   <ParticleType name="eta(c)(1S)" >
+      <DecayGroup name="Decays involving hadronic resonances">
+          <Decay name="eta'(958) pi pi" texName="\eta^{\prime}(958)\;pi\;pi" fraction="4.1" posError="1.7" negError="1.7" P="1319" PUnit="MeV/c"> 
+          </Decay> 
+          <Decay name="rho rho" texName="\rho\;\rho" fraction="2.6" posError="0.9" negError="0.9" P="1275" PUnit="MeV/c"> 
+          </Decay> 
+          <Decay name="K*(892)0 K- pi+ + c.c." texName="K^{\ast}(892)^{0}K^{-}pi^{+}+\;c.c." fraction="2.0" posError="0.7" negError="0.7" P="1273" PUnit="MeV/c"> 
+          </Decay> 
+      </DecayGroup>
+      <DecayGroup name="Decays into stable hadrons"> 
+          <Decay name="K Kbar pi" texName="K\;K\;pi" fraction="5.5" posError="1.7" negError="1.7" P="1378" PUnit="MeV/c"> 
+          </Decay> 
+          <Decay name="eta pi pi" texName="\eta\;pi\;pi" fraction="4.9" posError="1.8" negError="1.8" P="1425" PUnit="MeV/c"> 
+          </Decay> 
+          <Decay name="pi+ pi- K+ K-" texName="pi^{+}pi^{-}K^{+}K^{-}" fraction="2.0" posError="0.7" negError="0.6" P="1342" PUnit="MeV/c"> 
+          </Decay> 
+          <Decay name="2(K+ K-)" texName="2(K^{+}K^{-})" fraction="2.1" posError="1.2" negError="1.2" P="1053" PUnit="MeV/c"> 
+          </Decay> 
+          <Decay name="2(pi+ pi-)" texName="2(pi^{+}pi^{-})" fraction="1.2" posError="0.4" negError="0.4" P="1457" PUnit="MeV/c"> 
+          </Decay> 
+      </DecayGroup>
+   </ParticleType> 
+</PPML> 

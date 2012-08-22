@@ -1,0 +1,47 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
+  <parent>
+    <artifactId>global</artifactId>
+    <groupId>org.freehep</groupId>
+    <version>8</version>
+  </parent>
+  <modelVersion>4.0.0</modelVersion>
+  <groupId>org.freehep</groupId>
+  <artifactId>freehep-aid-plugin</artifactId>
+  <packaging>maven-plugin</packaging>
+  <name>FreeHEP AID Maven Plugin</name>
+  <version>2.0.1-SNAPSHOT</version>
+  <description>Maven 2 Plugin for the AID compiler.</description>
+  <repositories>
+    <repository>
+      <id>freehep-maven</id>
+      <name>Maven FreeHEP</name>
+      <url>http://java.freehep.org/maven2</url>
+    </repository>
+  </repositories>
+  <dependencies>
+    <dependency>
+      <groupId>org.codehaus.plexus</groupId>
+      <artifactId>plexus-compiler-api</artifactId>
+    </dependency>
+    <dependency>
+      <groupId>org.apache.maven</groupId>
+      <artifactId>maven-project</artifactId>
+    </dependency>
+    <dependency>
+      <groupId>org.apache.maven</groupId>
+      <artifactId>maven-plugin-api</artifactId>
+    </dependency>
+    <dependency>
+      <groupId>org.freehep</groupId>
+      <artifactId>freehep-aid</artifactId>
+      <version>2.0</version>
+    </dependency>
+  </dependencies>
+  <reporting>
+    <plugins>
+      <plugin>
+        <artifactId>maven-plugin-plugin</artifactId>
+      </plugin>
+    </plugins>
+  </reporting>
+</project>

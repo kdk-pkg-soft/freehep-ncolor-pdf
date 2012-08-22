@@ -1,0 +1,4 @@
+#set( $webName = "PS Viewer" )
+#set( $webSearch = "java.freehep.org" )
+<h1>PS Viewer</h1>
+Embeddable PostScript Viewer

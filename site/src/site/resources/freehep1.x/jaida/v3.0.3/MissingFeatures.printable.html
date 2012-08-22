@@ -1,0 +1,48 @@
+<html><head>
+    
+
+    <link rel="stylesheet" type="text/css" href="../PrintablePage.css">
+
+<meta http-equiv="Content-Language" content="en-us">
+<meta name="GENERATOR" content="Microsoft FrontPage 5.0">
+<meta name="ProgId" content="FrontPage.Editor.Document">
+<meta http-equiv="Content-Type" content="text/html; charset=windows-1252">
+<title>JAIDA 3.0</title>
+</head><body>
+
+<h1>JAIDA</h1>
+AIDA in Java
+
+<h1>Missing Features</h1>
+<p>The following is a list of the AIDA methods/classes that are not currently 
+supported in JAIDA.</p>
+<ul>
+  <li>Styles classes implemented only minimally<ul>
+    <li>IAxisSyle and IBaseStyle are partially implemented (it is possible to 
+    set logaritmic or linear scale axis)</li>
+    <li>IBrushStyle, IDataStyle, IFillStyle, IInfoStyle, ILineStyle, 
+    IMarkerStyle, ITextStyle, ITitleStyle are not implemented.</li>
+  </ul>
+  </li>
+  <li>Class IInfo is not implemented</li>
+  <li>IFitter supports only constraints of the type &quot;a = b&quot;</li>
+  <li>IFunctions: no operations among built in functions are supported e.g.: 
+  &quot;g+p1&quot;</li>
+  <li>IHistogramFactory: createCopy(String, ... ) methods are not implemented</li>
+  <li>IPlotter, IPlotterFactory, IPlotterStyle, IPlotterRegion have partial 
+  implementations due to the missing styles classes.</li>
+  <li>IPlotterLayout is not implemented</li>
+  <li>ITree: the following methods are not implemented<ul>
+    <li>mv(...)</li>
+    <li>setOverwrite(...)</li>
+    <li>cp(...)</li>
+    <li>symlink(...)</li>
+  </ul>
+  </li>
+  <li>IEvaluator and IFilter can only be applied to ITuple's columns at the root 
+  level (not to columns inside folders)</li>
+  <li>ITuple: for the reason above the project methods on ITuple apply only to 
+  root level columns</li>
+</ul>
+
+</body></html>

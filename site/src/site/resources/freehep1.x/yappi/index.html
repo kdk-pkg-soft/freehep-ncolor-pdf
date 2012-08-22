@@ -1,0 +1,188 @@
+<html><head>
+    
+    <link rel="stylesheet" type="text/css" href="WebPage.css">
+
+<title>YaPPI, Yet another Particle Property Interface</title>
+</head><body>
+
+<table border="0" style="border-collapse: collapse" bordercolor="#111111" width="100%" cellpadding="0" cellspacing="5">
+  <tr>
+    <td colspan="2">
+        <table bgcolor="#294563" width="100%" border="0" style="border-collapse: collapse" bordercolor="#111111" cellspacing="0" cellpadding="5">
+          <tr>
+                                    <td width="100%" rowspan="2" align="left" valign="center">
+                <font color="#FFCC00">
+                <h1>
+YaPPI
+</h1>
+<span class="YaPPI">Y</span>et
+<span class="YaPPI">a</span>nother
+<span class="YaPPI">P</span>article
+<span class="YaPPI">P</span>roperty
+<span class="YaPPI">I</span>nterface</span>                </font>
+            </td>
+            <td  bgcolor="#4C6C8F" colspan="2" align="right" valign="top">
+              <table width="100%" border="0" style="border-collapse: collapse" bordercolor="#111111" cellpadding="3">
+                <form method="GET" action="http://www.google.com/search">
+                <tr>
+                                                                                                                                                            <td colspan="2">
+                     <input type="text" name="as_q" size="30">
+                  </td>
+                  <td rowspan="2">
+                     <input type="submit">
+                  </td>
+                </tr>
+                                    <tr>
+                                                                <td><input type="radio" checked name="as_sitesearch" value="yappi.freehep.org" >YaPPI</td>
+                                                                                        <td><input type="radio"  name="as_sitesearch" value="freehep.org" >FreeHEP</td>
+                                                                </tr>
+                                </form>
+              </table>
+            </td>
+          </tr>
+          <tr>
+            <td align="center" valign="center">
+                <a href="http://www.freehep.org">
+                    Member&nbsp;of&nbsp;FreeHEP
+                </a>
+            </td>
+                            <td align="center" valign="center">
+                    <a href="index.printable.html">Printable&nbsp;Page</a>
+                </td>
+                      </tr>
+        </table>
+    </td>
+  </tr>
+  <tr>
+    <td valign="top">
+        
+<div class="menu">
+<ul>
+<li>
+<span class="head">Introduction</span>
+<ul>
+<li>
+<a href="index.html"><span class="sel">Overview</span></a>
+</li>
+<li>
+<a href="BrowseData.html"><span>Browse&nbsp;Particle&nbsp;Data</span></a>
+</li>
+<li>
+<a href="ScreenShots.html"><span>Screen&nbsp;Shots</span></a>
+</li>
+<li>
+<a href="Publications.html"><span>Publications/Talks</span></a>
+</li>
+<li>
+<a href="Contributors.html"><span>Contributors</span></a>
+</li>
+<li>
+<a href="Users.html"><span>Users</span></a>
+</li>
+</ul>
+</li>
+<li>
+<span class="head">User&nbsp;Documentation</span>
+<ul>
+<li>
+<a href="Manual.html"><span>Manual</span></a>
+</li>
+<li>
+<a href="License.html"><span>License</span></a>
+</li>
+</ul>
+</li>
+<li>
+<span class="head">Download</span>
+<ul>
+<li>
+<a href="Distributions.html"><span>Binary&nbsp;Distributions</span></a>
+</li>
+<li>
+<a href="Distributions.html"><span>Source&nbsp;Distributions</span></a>
+</li>
+</ul>
+</li>
+<li>
+<span class="head">Get&nbsp;Involved</span>
+<ul>
+<li>
+<a href="SourceCode.html"><span>Source&nbsp;Code</span></a>
+</li>
+<li>
+<a href="http://bugs.freehep.org/secure/IssueNavigator.jspa?reset=true&mode=hide&pid=10012&sorter/order=ASC&sorter/field=priority&resolutionIds=-1&component=10018"><span>Bug&nbsp;Database</span></a>
+</li>
+</ul>
+</li>
+<li>
+<span class="head">Developer&nbsp;Area</span>
+<ul>
+<li>
+<a href="XMLSchema.html"><span>XML&nbsp;Schema</span></a>
+</li>
+<li>
+<a href="ClassDiagram.html"><span>Class&nbsp;Diagram</span></a>
+</li>
+<li>
+<a href="ToDoList.html"><span>ToDo&nbsp;List</span></a>
+</li>
+</ul>
+</li>
+</ul>
+</div>
+
+
+    </td>
+    <td valign="top">
+        
+<h1>Overview</h1>
+<p>YaPPI is an XML database of particle properties. It is a part of the open source
+<a href="http://java.freehep.org/">FreeHEP Java Library</a>.</p>
+
+<h2>What is YaPPI?</h2>
+<p>
+YaPPI is an XML database of particle properties, accessible through a
+Java API. The goal is to provide particle property data to physicists'
+analysis programs in a way that is independent of platform, environment,
+or analysis package being used. Available components of YaPPI include:
+</p>
+
+<ul>
+<li>
+    A set of XML files derived from
+    derived directly from the from the Review of Particle Physics (RPP)
+    of the <a href="http://pdg.lbl.gov/">Particle Data Group</a> (PDG).
+    The XML data files are designed to be easy for users to modify or
+    extend for their own purposes.
+</li>
+<li>
+    A Java API for reading (and writing) the XML database.
+</li>
+<li>
+    An implementation of the ParticlePropertyProvider
+    interface of the <a href="http://jas.freehep.org/">Java Analysis Studio</a>
+    (JAS), a High Energy Physics analysis software package. JAS users
+    may access particle properties in XML directly from within JAS,.
+</li>
+<li>A <a href="BrowseData.html">web servlet</a> to allow online browsing
+    of particle data. </li>
+</ul>
+
+<p>The implementation was created by Patrick Hellwig as Summer Student at CERN in 2000
+and is currently maintained by Mark D&ouml;nszelmann and Tony Johnson at SLAC.
+</p>
+
+        <p>
+        &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp
+        &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp
+        &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp
+        &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp
+        &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp
+        &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp
+        &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp
+        &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp
+    </td>
+  </tr>
+</table>
+
+</body></html>

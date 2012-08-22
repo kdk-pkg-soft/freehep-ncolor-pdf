@@ -1,0 +1,32 @@
+cp ../../ReleaseNotes.html ReleaseNotes.xhtml
+webpage *.xhtml demo/ExportDemo/*.xhtml demo/IconBrowser/*.xhtml demo/LegoPlot/*.xhtml demo/Root/*.xhtml
+cd aid
+webpage *.xhtml
+cd ..
+cd aidajni
+webpage *.xhtml
+cd ..
+cd cernlibadapter
+webpage *.xhtml
+cd ..
+cd jaida
+webpage *.xhtml v1.0/*.xhtml v3.0/*.xhtml v3.0/tutorial/*.xhtml v3.0.3/*.xhtml v3.0.3/tutorial/*.xhtml v3.2.0/*.xhtml v3.2.0/tutorial/*.xhtml v3.2.1/*.xhtml v3.2.1/tutorial/*.xhtml v3.2.2/*.xhtml v3.2.2/tutorial/*.xhtml 
+cd ..
+cd io
+webpage *.xhtml
+cd ..
+cd heprep
+webpage *.xhtml
+cd ..
+cd psviewer
+webpage *.xhtml
+cd ..
+cd vectorgraphics
+webpage *.xhtml
+cd ..
+cd webpage
+webpage *.xhtml
+cd ..
+cd yappi
+webpage *.xhtml
+cd ..

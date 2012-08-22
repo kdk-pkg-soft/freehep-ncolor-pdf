@@ -1,0 +1,44 @@
+<html><head>
+    
+
+    <link rel="stylesheet" type="text/css" href="../../PrintablePage.css">
+
+<meta http-equiv="Content-Type" content="text/html; charset=windows-1252">
+<meta name="GENERATOR" content="Microsoft FrontPage 5.0">
+<meta name="ProgId" content="FrontPage.Editor.Document">
+<title>Tutorial</title>
+</head><body>
+
+<h1>JAIDA</h1>
+AIDA in Java
+
+<h1>JAIDA 3.0.1 Tutorial</h1>
+
+<h3>Creating an Analysis Factory</h3>
+<p>Before you can use any of the AIDA interfaces you must start by creating an
+Analysis Factory. You can do this in the standard way using the following line
+of code:</p>
+<pre><b>IAnalysisFactory factory = IAnalysisFactory.create();</b></pre>
+<p>There are actually three different analysis factories included with JAIDA 
+3.0.1,
+with varying degrees of GUI support</p>
+<ol>
+  <li><b>hep.aida.ref.AnalysisFactory</b> - (in freehep-hep.jar) It has no GUI support. This is suitable for use in
+  completely non-graphical environments, such as batch processing. A dummy
+  IPlotter implementation is provided to satisfy the AIDA interface
+  requirements, but no plots will be displayed.</li>
+  <li><b>jas.aida.JASAnalysisFactory</b> - (in jas.jar) A minimal implementation of IPlotter is
+  provided using the JAS plotter. Each IPlotter will appear in its own top level
+  window. Minimal interaction with the plots is allowed through popup menus.</li>
+  <li><b>jas.aida.gui.JASGUIAnalysisFactory</b> - (in JASAIDA.jar) A slightly more elaborate GUI is
+  provided, in which each IPlotter appears within a top level window, and the
+  complete tree of AIDA objects is displayed.</li>
+</ol>
+<ul>
+  <li><a href="UsingJAIDAFromJava.html">Using JAIDA from Java</a></li>
+  <li><a href="UsingJAIDAFromCPP.html">Using JAIDA from C++.</a></li>
+  <li><a href="UsingJAIDAFromJython.html">Using JAIDA from Jython</a></li>
+</ul>
+
+
+</body></html>

@@ -1,0 +1,36 @@
+<project>
+  <parent>
+    <artifactId>maven-plugin-pom</artifactId>
+    <groupId>org.freehep</groupId>
+    <version>5</version>
+  </parent>
+  <modelVersion>4.0.0</modelVersion>
+  <groupId>org.freehep</groupId>
+  <artifactId>freehep-wbxml-plugin</artifactId>
+  <version>2.0-SNAPSHOT</version>
+  <packaging>maven-plugin</packaging>
+  <name>FreeHEP WBXML Plugin</name>
+  <description>Maven plugin to generate constant files and documentation from a wbxml definition file
+  </description>
+  <repositories>
+    <repository>
+      <id>freehep-maven</id>
+      <name>Maven FreeHEP</name>
+      <url>http://java.freehep.org/maven2</url>
+    </repository>
+  </repositories>
+  <dependencies>
+    <dependency>
+      <groupId>org.codehaus.plexus</groupId>
+      <artifactId>plexus-compiler-api</artifactId>
+    </dependency>
+    <dependency>
+      <groupId>org.apache.maven</groupId>
+      <artifactId>maven-project</artifactId>
+    </dependency>
+    <dependency>
+      <groupId>org.apache.maven</groupId>
+      <artifactId>maven-plugin-api</artifactId>
+    </dependency>
+  </dependencies>
+</project>

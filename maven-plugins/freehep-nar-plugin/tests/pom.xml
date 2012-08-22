@@ -1,0 +1,65 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
+  <parent>
+    <artifactId>global</artifactId>
+    <groupId>org.freehep</groupId>
+    <version>8</version>
+  </parent>
+  <modelVersion>4.0.0</modelVersion>
+  <groupId>org.freehep.freehep-nar-plugin.tests</groupId>
+  <artifactId>pom</artifactId>
+  <packaging>pom</packaging>
+  <name>FreeHEP Maven Native Archive Plugin Tests</name>
+  <version>1-SNAPSHOT</version>
+  <description>Tests for the FreeHEP NAR Plugin</description>
+  <repositories>
+    <repository>
+      <id>freehep-maven</id>
+      <name>Maven FreeHEP</name>
+      <url>http://java.freehep.org/maven2</url>
+    </repository>
+  </repositories>
+  <pluginRepositories>
+    <pluginRepository>
+      <id>freehep-maven</id>
+      <name>Maven FreeHEP</name>
+      <url>http://java.freehep.org/maven2</url>
+    </pluginRepository>
+  </pluginRepositories>
+  <distributionManagement>
+    <repository>
+      <id>freehep-maven-deploy</id>
+      <name>FreeHEP Maven Repository</name>
+      <url>scpexe://svn.freehep.org/nfs/slac/g/jas/maven2</url>
+    </repository>
+  </distributionManagement>
+  <build>
+    <pluginManagement>
+      <plugins>
+        <plugin>
+          <groupId>org.freehep</groupId>
+          <artifactId>freehep-nar-plugin</artifactId>
+          <version>2.0-alpha-11-SNAPSHOT</version>
+          <extensions>true</extensions>
+        </plugin>
+      </plugins>
+    </pluginManagement>
+  </build>
+  <modules>
+
+    <module>helloworldexe</module>
+    <module>helloworldstaticexe</module>
+
+    <module>helloworldjni</module>
+    <module>helloworldjnilibjava</module>
+    <module>helloworldstaticjni</module>
+    <module>hellothirdpartyjni</module>
+    
+    <module>helloworldsharedlib</module>
+    <module>helloworldsharedlibexe</module>
+    <module>helloworldsharedlibjni</module>
+
+    <module>helloworldstaticlib</module>
+    <module>helloworldstaticlibexe</module>
+    <module>helloworldstaticlibjni</module>
+  </modules>
+</project>

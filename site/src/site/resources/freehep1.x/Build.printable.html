@@ -1,0 +1,183 @@
+<html><head>
+    
+
+    <link rel="stylesheet" type="text/css" href="PrintablePage.css">
+
+<meta http-equiv="Content-Type" content="text/html; charset=windows-1252">
+<meta name="GENERATOR" content="Microsoft FrontPage 6.0">
+<meta name="ProgId" content="FrontPage.Editor.Document">
+<title>The FreeHEP Java Library - Build</title>
+</head><body>
+
+<h1>FreeHEP Java Library</h1>
+Components and Tools for Java
+
+
+      <h1>Building the FreeHEP Java Library</h1>
+      <p>The FreeHEP libraries consist of 2 parts: The Java Libraries, and the
+      Native Libraries. The latter are wrappers to, for instance, legacy Fortran
+      code and to hook up the FreeHEP Java libraries to C++. In most cases one
+      would only need to build the Java Libraries.</p>
+      <h2>Building the Java libraries from the source code</h2>
+      <p>To build the FreeHEP Java libraries you have to use ANT, which comes as part
+      of the checked out CVS tree. The build of FreeHEP was tested on
+      WindowsXP/2000/NT, Linux and Solaris, using the Java Development Kit 1.4 or
+      later. </p>
+      <p>Execute the following 5 steps:</p>
+      <ol>
+        <li>Set the environment variable JDK_HOME to the root of your java
+          development kit (1.4 or later).</li>
+        <li>Add JDK_HOME/bin to your PATH. This is needed to find commands such as "idlj".</li>
+        <li>Set the environment variable FREEHEP to the root of the FreeHEP
+          distribution.</li>
+        <li>Change directory to the root of the freehep distribution.</li>
+        <li>Execute <b>ant</b> to build the default target (all separate freehep
+          jar files which end up in the lib directory).</li>
+      </ol>
+      <table border="1" width="100%">
+        <tr>
+          <th width="8%">Step</th>
+          <th width="45%">Unix (Linux/Solaris) example</th>
+          <th width="47%">Windows (2000/NT) example</th>
+        </tr>
+        <tr>
+          <th width="8%">1</th>
+          <td width="45%">
+            <pre>setenv JDK_HOME /usr/local/jdk-1.4.0</pre>
+          </td>
+          <td width="47%">
+            <pre>set JDK_HOME=D:\jdk-1.4.0</pre>
+          </td>
+        </tr>
+        <tr>
+          <th width="8%">2</th>
+          <td width="45%">
+            <pre>setenv PATH /bin:</pre>
+          </td>
+          <td width="47%">
+            <pre>set PATH=%JDK_HOME%\bin;%PATH%</pre>
+          </td>
+        </tr>
+        <tr>
+          <th width="8%">3</th>
+          <td width="45%">
+            <pre>setenv FREEHEP /home/duns/freehep</pre>
+          </td>
+          <td width="47%">
+            <pre>set FREEHEP=D:\home\duns\freehep</pre>
+          </td>
+        </tr>
+        <tr>
+          <th width="8%">4</th>
+          <td width="45%">
+            <pre>cd /home/duns/freehep</pre>
+          </td>
+          <td width="47%">
+            <pre>cd D:\home\duns\freehep</pre>
+          </td>
+        </tr>
+        <tr>
+          <th width="8%">5</th>
+          <td width="45%">
+            <pre>tools/ant</pre>
+          </td>
+          <td width="47%">
+            <pre>tools\ant</pre>
+          </td>
+        </tr>
+      </table>
+      <h4>Other suggestions and commands</h4>
+      <p>You may want to add FREEHEP/tools to your PATH, and try also the
+      following commands:</p>
+      <table border="1" width="100%">
+        <tr>
+          <th width="34%">Command</th>
+          <th width="66%">Description</th>
+        </tr>
+        <tr>
+          <td width="34%">
+            <pre>ant help</pre>
+          </td>
+          <td width="66%">shows usage of ANT for FreeHEP</td>
+        </tr>
+        <tr>
+          <td width="34%">
+            <pre>ant -projecthelp</pre>
+          </td>
+          <td width="66%">lists all available targets</td>
+        </tr>
+        <tr>
+          <td width="34%">
+            <pre>ant -Djar=base</pre>
+          </td>
+          <td width="66%">builds only the jar file with name &quot;freehep-base&quot;</td>
+        </tr>
+      </table>
+      <h2>Building the Native libraries from the source code</h2>
+      <p>To build the FreeHEP Native libraries you have to use gmake, which comes
+      for Windows as part
+      of the checked out CVS tree and is normally part of&nbsp; Unix/MacOSX (use 
+      make)
+      systems. </p>
+      <p>You further need a C/C++ compiler and if you want to link with CERNLIB the Fortran
+      compile-time libraries.&nbsp; </p>
+      <p> We assume you have already set up your environment for
+      compiling the Java libraries. </p>
+      <p>Now execute the following 4 steps:</p>
+      <ol>
+        <li>Set the environment variable OS to the OS you are running on.</li>
+        <li>Set the environment variable CERN_ROOT to the root of the CERN
+          LIBRARY distribution.</li>
+        <li>Change directory to the root of the freehep distribution</li>
+        <li>Execute <b>gmake</b> to build the default target; the libs will end
+          up in the lib/OSTYPE-COMPILER directory.</li>
+      </ol>
+      <table border="1" width="100%">
+        <tr>
+          <th width="8%">Step</th>
+          <th width="45%">Unix (Linux/Solaris/MacOS X) example</th>
+          <th width="47%">Windows (XP/2000/NT) example</th>
+        </tr>
+        <tr>
+          <th width="8%">1</th>
+          <td width="45%">
+            <pre>setenv OS Linux | Solaris | Darwin</pre>
+          </td>
+          <td width="47%">
+            <pre><i>normally already set to Windows...</i></pre>
+          </td>
+        </tr>
+        <tr>
+          <th width="8%">2</th>
+          <td width="45%">
+            <pre><i>normally already set to /cern/pro</i></pre>
+          </td>
+          <td width="47%">
+            <pre>set CERN_ROOT=D:\cern\pro</pre>
+          </td>
+        </tr>
+        <tr>
+          <th width="8%">3</th>
+          <td width="45%">
+            <pre>cd /home/duns/freehep</pre>
+          </td>
+          <td width="47%">
+            <pre>cd D:\home\duns\freehep</pre>
+          </td>
+        </tr>
+        <tr>
+          <th width="8%">4</th>
+          <td width="45%">
+            <pre>gmake
+make (on MacOS X)</pre>
+          </td>
+          <td width="47%">
+            <pre>gmake</pre>
+          </td>
+        </tr>
+      </table>
+      <p>Steps 2 may be omitted, in which case parts of the FreeHEP native
+      libraries will <b> not</b> be compiled.</p>
+      <p>&nbsp;</p>
+
+</body></html>

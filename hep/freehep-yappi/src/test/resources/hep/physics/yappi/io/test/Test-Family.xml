@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="ISO-8859-1"?> 
+<!--=============================================================================--> 
+<!-- Copyright of file, 2000, CERN, Geneva, Switzerland. (yappi.freehep.org)     --> 
+<!-- Copyright of data, 2000, PDG. (pdg.lbl.gov)                                 --> 
+<!--=============================================================================--> 
+<PPML source="TestFile" xmlns:ppml="http://www.w3.org/1999/XMLSchema-instance" 
+      ppml:nonamespaceSchemaLocation='ppml.xsd'> 
+   <Family name="ccbar MESONS" texName="c\overline{c}\;MESONS" > 
+       <ParticleType name="eta(c)(1S)" /> 
+       <ParticleType name="J/psi(1S)" /> 
+       <ParticleType name="chi(c0)(1P)" /> 
+       <ParticleType name="chi(c1)(1P)" /> 
+       <ParticleType name="chi(c2)(1P)" /> 
+       <ParticleType name="psi(2S)" /> 
+       <ParticleType name="psi(3770)" /> 
+       <ParticleType name="psi(4040)" /> 
+       <ParticleType name="psi(4160)" /> 
+       <ParticleType name="psi(4415)" /> 
+   </Family> 
+</PPML> 

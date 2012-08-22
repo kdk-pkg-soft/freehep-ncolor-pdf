@@ -1,0 +1,17 @@
+    ---
+FreeHEP - Coding Standards
+    ---
+Mark Donszelmann
+    ---
+    ---
+
+Coding Standards
+
+    We follow the "normal" Java coding standards. 
+    
+    However, since we are a small group, with different tastes for placement 
+    of curly brackets, we decided to live with different formats. 
+    
+    Please keep the format that you found.
+    
+    

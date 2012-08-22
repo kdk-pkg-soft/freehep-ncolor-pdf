@@ -1,0 +1,34 @@
+<faqs title="Frequently Asked Questions" toplink="false">
+
+  <part id="MacOSX">
+    <title>MacOSX</title>
+
+    <faq id="Undefined symbols: ___dso_handle">
+      <question>
+	When compiling on MacOS X I get the message: Undefined symbols: ___dso_handle.
+      </question>
+
+      <answer>
+	You have an old version of XCode, you need at least version 2.4.1
+	or "gcc version 4.0.1 (Apple Computer, Inc. build 5367)"
+      </answer>
+    </faq>
+
+    <faq id="Interactive Window does not close (in Geant4 A01 Example)">
+      <question>
+	When I run the A01 Example and type "exit" at the prompt
+        a message appears that I need to close the interactive window.
+        However, the window does not have an active close button
+        and therefore does not close.
+      </question>
+
+      <answer>
+        Typing ctrl-c at the prompt will close the window. We suspect 
+        the close button does not work because of some threading problem
+        with Java and Native threads on MacOS X.
+      </answer>
+    </faq>
+  </part>
+
+</faqs>
+

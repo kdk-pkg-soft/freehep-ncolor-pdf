@@ -1,0 +1,34 @@
+    ---
+FreeHEP Changes from 1.x to 2.x
+    ---
+Mark Donszelmann
+    ---
+    ---
+
+FreeHEP Changes from 1.x to 2.x
+
+    A number of changes were necessary to put code into different libraries:
+    
+    * Lots of minor fixes as suggested by Eclipse. 
+    
+    * org.freehep.swing.graphics.ScaleBorder was removed from freehep-base
+    since it would make freehep-swing depend on freehep-graphics2d. 
+    Since this class is currently only used by WIRED 4, it could move there. 
+    It is currently stationed inactive in the freehep-swing top-level directory.
+    
+    * org.freehep.xml.menus.test.Test is dependent on freehep-swing for one
+    class. Maybe this dependency should be removed, but menus.test.Test is used
+    (see next point) as a regular class.
+    
+    * org.freehep.util.commanddispatcher.test.* depends on freehep-swing and freehep-xml
+    for test scope.
+    
+    * org.freehep.application.* depends on JavaHelp and JNLP in a provided manner.
+    
+    * Module CERNLIBAdapter was split in freehep-hbook under hepio and freehep-fminuit under math.
+    
+    
+    
+    
+    
+    

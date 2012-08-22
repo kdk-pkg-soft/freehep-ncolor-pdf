@@ -1,0 +1,95 @@
+<html xmlns="http://www.w3.org/1999/xhtml"><head>
+    
+
+    <link rel="stylesheet" type="text/css" href="PrintablePage.css">
+
+  <title>VectorGraphics - ToDo List</title>
+</head><body>
+
+<h1>VectorGraphics</h1>
+2D Vector and Image Graphics Library
+<?xml version="1.0"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+    "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+
+
+  <h1>ToDo List</h1>
+
+  <h2>General</h2>
+
+  <ul>
+    <li>Should we add layers, or grouping?</li>
+
+    <li>Tests for multi-page</li>
+
+    <li>Handle delayed font writing until text is written</li>
+
+    <li>Adjust TestText2D to be better visible...</li>
+
+    <li>Tagstrings should be handled better...</li>
+
+  </ul>
+
+  <h3>FontEmbedder</h3>
+
+  <ul>
+    <li>Rewrite Lookup table (or subtables) to minimize startup effects</li>
+  </ul>
+
+  <h2>Format Specific</h2>
+
+  <h3>CGM</h3>
+
+  <ul>
+    <li>Implement all version 2 tags</li>
+
+    <li>Check output</li>
+
+    <li>Char height factor 100 too large</li>
+
+    <li>Positions factor 100 too large</li>
+
+    <li>Use constants for classes of elements</li>
+
+    <li>Check names (color-&gt;colour)</li>
+
+    <li>Combine spec modes</li>
+
+    <li>Check on version while writing dependent TagSet</li>
+
+    <li>Include Raster data: this can be included internally as CELL ARRAYS, which use an internal run length encoding.
+    With CGM version 3 the TILE ARRAY element supports additional compression schemes including CCITT T4, CCITT T6,
+    JPEG or PNG (code 9, method 0).</li>
+  </ul>
+
+  <h3>EMF</h3>
+
+  <ul>
+    <li>Make superclass for Poly and PolyPoly ?</li>
+
+    <li>Make superclass for BitMap classes</li>
+  </ul>
+
+  <h3>GIF</h3>
+
+  <ul>
+    <li>add color interpolator so that context can use more than 256 colors while gif will write only 256 colors.</li>
+  </ul>
+
+  <h3>PDF</h3>
+
+  <ul>
+    <li>No check on rewriting /Length element in stream dictionary</li>
+
+    <li>PDFStream: add marked content operators</li>
+  </ul>
+
+  <h3>SVG</h3>
+
+  <ul>
+    <li>add to TagString &lt;v&gt; tag to surround a combination of &lt;sup&gt; and &lt;sub&gt; -&gt; SVG glyphRun</li>
+
+    <li>Use special symbol set in output</li>
+  </ul>
+
+</body></html>

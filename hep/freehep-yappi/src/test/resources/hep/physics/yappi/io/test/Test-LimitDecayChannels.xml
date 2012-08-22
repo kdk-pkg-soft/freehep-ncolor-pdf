@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="ISO-8859-1"?> 
+<!--=============================================================================--> 
+<!-- Copyright of file, 2000, CERN, Geneva, Switzerland. (yappi.freehep.org)     --> 
+<!-- Copyright of data, 2000, PDG. (pdg.lbl.gov)                                 --> 
+<!--=============================================================================--> 
+<PPML source="TestFile" xmlns:ppml="http://www.w3.org/1999/XMLSchema-instance" 
+      ppml:nonamespaceSchemaLocation='ppml.xsd'> 
+   <ParticleType name="eta(c)(1S)" > 
+      <DecayGroup name="Decays involving hadronic resonances">
+          <Decay name="a(0)(980) pi" texName="" fraction="&lt; 2" P="1323" PUnit="MeV/c"> 
+          </Decay> 
+          <Decay name="a(2)(1320) pi" texName="" fraction="&lt; 2" P="1193" PUnit="MeV/c"> 
+          </Decay> 
+          <Decay name="K*(892) Kbar + c.c." texName="K^{\ast}(892)\;K\;+\;c.c." fraction="&lt; 1.28" P="1307" PUnit="MeV/c"> 
+          </Decay> 
+          <Decay name="f(2)(1270) eta" texName="f_{2}(1270)\;\eta" fraction="&lt; 1.1" P="1142" PUnit="MeV/c"> 
+          </Decay> 
+          <Decay name="omega omega" texName="\omega\;\omega" fraction="&lt; 3.1E-3" P="1268" PUnit="MeV/c"> 
+          </Decay>
+      </DecayGroup>
+      <DecayGroup name="Decays into stable hadrons"> 
+          <Decay name="K Kbar eta" texName="K\;K\;\eta" fraction="&lt; 3.1" P="1262" PUnit="MeV/c"> 
+          </Decay> 
+          <Decay name="pi+ pi- p pbar" texName="pi^{+}pi^{-}p\;p" fraction="&lt; 1.2" P="1023" PUnit="MeV/c"> 
+          </Decay> 
+          <Decay name="Lambda Lambdabar" texName="\Lambda\;\Lambda" fraction="&lt; 2E-3" P="987" PUnit="MeV/c"> 
+          </Decay>
+      </DecayGroup>
+   </ParticleType> 
+</PPML> 

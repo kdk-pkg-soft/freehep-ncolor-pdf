@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?> 
+<!-- JNLP File for Icon Browser--> 
+<jnlp 
+  spec="1.0" 
+  codebase="http://java.freehep.org/demo" 
+  href="IconBrowser/IconBrowser.jnlp"
+  version ="2.2"> 
+  <information> 
+    <title>Icon Browser</title> 
+    <vendor>FreeHEP</vendor> 
+    <homepage href="IconBrowser/index.thtml"/> 
+    <description>FreeHEP Icon Browser</description> 
+    <description kind="short">A program for browsing icons in jar or zip files.</description>
+    <icon href="IconBrowser/IconBrowser.gif"/> 
+    <offline-allowed/> 
+  </information> 
+  <resources>
+    <j2se version="1.4+"/>
+    <jar href="lib/freehep-demo.jar" main="true"/>
+    <jar href="lib/ZipAnotate.jar"/>
+    <jar href="lib/jlfgr.jar"/>
+    <jar href="lib/freehep-base.jar"/>
+    <jar href="lib/freehep-graphicsio.jar" download="lazy" part="graphicsio"/>
+    <jar href="lib/freehep-graphicsio-gif.jar" download="lazy" part="graphicsio"/>
+    <jar href="lib/freehep-graphics2d.jar" download="lazy" part="graphicsio"/>
+    <jar href="lib/JFAIcons.jar"/>
+    <jar href="lib/IconBrowserHelp.jar" download="lazy" part="help"/>
+    <jar href="lib/jh.jar" download="lazy" part="help"/>
+    <property name="jnlp.org.freehep.application.ServiceManager" value="org.freehep.application.services.jnlp.JNLPServiceManager"/>
+  </resources> 
+  <application-desc main-class="org.freehep.demo.iconbrowser.IconBrowser"/> 
+</jnlp> 

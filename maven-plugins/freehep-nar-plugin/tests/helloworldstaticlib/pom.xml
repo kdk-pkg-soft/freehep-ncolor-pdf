@@ -1,0 +1,50 @@
+<?xml version="1.0"?><project>
+  <parent>
+    <artifactId>pom</artifactId>
+    <groupId>org.freehep.freehep-nar-plugin.tests</groupId>
+    <version>1-SNAPSHOT</version>
+  </parent>
+  <modelVersion>4.0.0</modelVersion>
+  <groupId>org.freehep.freehep-nar-plugin.tests</groupId>
+  <artifactId>helloworldstaticlib</artifactId>
+  <packaging>nar</packaging>
+  <name>FreeHEP NAR Example Helloworld Static Lib</name>
+  <version>1.0-SNAPSHOT</version>
+  <description>FreeHEP NAR Example Helloworld Static Lib</description>
+  <repositories>
+    <repository>
+      <id>freehep-maven</id>
+      <name>Maven FreeHEP</name>
+      <url>http://java.freehep.org/maven2</url>
+    </repository>
+  </repositories>
+  <build>
+    <defaultGoal>install</defaultGoal>
+    <plugins>
+      <plugin>
+        <groupId>org.freehep</groupId>
+        <artifactId>freehep-nar-plugin</artifactId>
+        <extensions>true</extensions>
+        <configuration>
+          <libraries>
+            <library>
+              <type>static</type>
+            </library>
+          </libraries>
+          <tests>
+            <test>
+              <name>HelloWorldTest</name>
+              <link>static</link>
+            </test>
+          </tests>
+        </configuration>
+      </plugin>
+      <plugin>
+        <artifactId>maven-surefire-plugin</artifactId>
+        <configuration>
+          <skip>true</skip>
+        </configuration>
+      </plugin>
+    </plugins>
+  </build>
+</project>

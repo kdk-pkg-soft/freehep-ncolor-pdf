@@ -1,0 +1,634 @@
+<html><head>
+    
+
+    <link rel="stylesheet" type="text/css" href="PrintablePage.css">
+
+<meta http-equiv="Content-Language" content="en-us">
+<meta http-equiv="Content-Type" content="text/html; charset=windows-1252">
+<meta name="GENERATOR" content="Microsoft FrontPage 6.0">
+<meta name="ProgId" content="FrontPage.Editor.Document">
+<title>The FreeHEP Java Library - Release Notes</title>
+</head><body>
+
+<h1>FreeHEP Java Library</h1>
+Components and Tools for Java
+
+
+      <h1>Release Notes</h1>
+
+      <p>These release notes are in reverse chronological order.</p>
+
+      <h2>HEAD of CVS</h2>
+
+      <h3>General</h3>
+        <ul>
+          <li>All but one of the java classes now compile without deprecation on 
+          JDK 1.5.0-beta-b31. Identifiers with the name &quot;enum&quot; were renamed 
+          since this is now a keyword. The show() and hide() method calls have 
+          all been replaced by setVisible(true/false).<br>
+          All but 1 warning (aid related) have been fixed.</li>
+          <li>FREEHEP-414: Exceptions checked when classes are loaded, instantiated and searched 
+  (arrays).</li>
+          <li>FREEHEP-418: Support for Linux-icc 8.0 compiler added.</li>
+			<li>FREEHEP-443: Support for Linuxamd64-g++ added.</li>
+          <li>FREEHEP-316: Support for WINDOWS-g++ 3.3 compiler added, including linkage with CERNLIB-WIN32-g++.</li>
+          <li>FREEHEP-430: Dependency on g2c (g++) minimized to the libs with 
+          Fortran.</li>
+			<li>FREEHEP-452: Value() can now be externalized and recreated from 
+			a special string.</li>
+			<li>FREEHEP-499: zlib upgraded from 1.1.3 to 1.2.2.</li>
+      </ul>
+
+      <h3>AID</h3>
+        <ul>
+            <li>FREEHEP-397: Separately packaged for users who only want AID.
+            See separate
+            <a href="http://java.freehep.org/aid/AllReleaseNotes.html">ReleaseNotes</a>.</li>
+        </ul>
+
+      <h3>Application Framework</h3>
+		<ul>
+			<li>FREEHEP-449: Allow negative numbers to be used in version 
+			numbers.</li>
+		</ul>
+		<h3>FREEHEP JNI</h3>
+		<ul>
+			<li>FREEHEP-476: Setting JNI_SHOW_DEBUG will print debug messages 
+			and exceptions for interaction with JNICUtil.</li>
+		</ul>
+		<h3>FreeHEP IO</h3>
+        <ul>
+          <li>FREEHEP-354: Updates in zipios++ were handed back to 
+          zipios.sourceforge.net. Current FreeHEP version not updated yet.</li>
+      </ul>
+
+      <h3>Root IO</h3>
+      <ul>
+        <li>Added support for reading files via a root daemon, using root: protocol.</li>
+      </ul>
+      
+      <h3>Geant4</h3>
+        <ul>
+          <li>FREEHEP-345: Removed geant4 driver from FreeHEP. Fully supported 
+          in Geant4 CVS repository.</li>
+      </ul>
+
+      <h3>HEPREP (C++)</h3>
+		<ul>
+			<li>Moved to its own package, now separately documented.</li>
+		</ul>
+		<h3>JHepRep</h3>
+      <ul>
+        <li>FREEHEP-497: Removed debug message about optimization</li>
+        <li>XMLHepRepReader and DefaultHepRepReader now share the same 
+		AbstractHepRepReader.</li>
+		<li>FREEHEP-481: AbstractHepRepReader fails to return true for hasNext() 
+		for last file.</li>
+		<li>FREEHEP-458: Handles heprep.properties file.</li>
+		<li>FREEHEP-459: Zip files now support sequential access.</li>
+		<li>FREEHEP-460: Added &quot;int skip(int n)&quot; method to HepRepReader.</li>
+		<li>FREEHEP-461: Added &quot;int size()&quot; method to HepRepReader.</li>
+		<li>FREEHEP-462: .gz and .heprep and .xml files use XMLSequence to read 
+		multiple HepRep files. </li>
+		<li>FREEHEP-463: Added entryName() and entryNames() methods to 
+		HepRepReader.</li>
+		<li>Removed IOExceptions from factory for all but the createReader and 
+		createWriter methods.</li>
+		<li>FREEHEP-451: Removed unnecessary public access to ref and xml 
+		classes. Almost all classes use factories now.</li>
+		<li>FREEHEP-450: Added method HepRepFactory.createHepRepType(HepRepTypeTree&nbsp;tree,String&nbsp;name) to 
+		Factory</li>
+		<li>Added HepRepConverter interface (see WIRED-244), for java only.</li>
+		<li>Removal of InstanceTrees and TypeTrees corrected in HepRep 
+        implementations (corba, corbavalue, ref and rmi).</li>
+        <li>FREEHEP-419: Added HepRep.xsd and HepRep.dtd to the web schema 
+        directory.</li>
+        <li>FREEHEP-420: Java and C++ writer now use new Identifier for 
+        HepRep.xsd.</li>
+        <li>FREEHEP-434: HepRepIterator now has attribute specific listeners. A 
+        HepRepIteratorAdapter is also available.</li>
+        <li>FREEHEP-436: DefaultHepRepInstance now caches the layer attribute. 
+        The DefaultHepRepIterator is thus faster. Changes into layer attributes, 
+        on either HepRepType or HepRepInstance should be followed by validating 
+        all HepRepInstances.</li>
+		<li>HepRepIteratorListener renamed to HepRepAttributeListener, 
+		HepRepIteratorAdapter renamed to HepRepAttributeAdapter. 
+		HepRepFrameListener added.</li>
+		<li>DefaultHepRepIterator changed to handle frames correctly.</li>
+		<li>DefaultHepRepIterator can now be called without layering.</li>
+		<li>Changed HepRepWriter to be able to write out heprep.properties file.</li>
+		<li>Changed some default attributes.</li>
+      </ul>
+
+      <h3>Other</h3>
+      <ul>
+        <li>ColorConverter will now look at all 3 or 4 entries before deciding to convert from float or integer.</li>
+        <li>FREEHEP-482: Add treetable to freehep.</li>
+        <li>FREEHEP-472: Add table column resize routines for freehep.</li>
+        <li>FREEHEP-479: Added TableSorter and helper classes.</li>
+		<li>FREEHEP-395: added Argv package and additions for simpler command 
+        line parsing.</li>
+		<li>ExportFileType now has 2 of the 4 exportToFile methods implemented, 
+		calling the other (array) 2.</li>
+		<li>Cursors can be created with specific hotspots.</li>
+      </ul>
+
+      <h3>Infrastructure</h3>
+      <ul>
+        <li>FREEHEP-405, FREEHEP-423: upgraded Ant to 1.6.1.</li>
+        <li>FREEHEP-406: upgraded Doclet to JDK 1.4.2 source code.</li>
+        <li>FREEHEP-407: upgraded JavaCC to 3.2 and got rid of the JavaCC 2.1 
+        version and its support.</li>
+        <li>FREEHEP-408: upgraded Java3D to 1.3.1.</li>
+        <li>FREEHEP-409: upgraded LogKit to 1.2.2.</li>
+		<li>FREEHEP-441: upgraded JDOM to beta 10.</li>
+      </ul>
+
+      <h2>Version 1.2.2 (December 11, 2003)</h2>
+
+      <h3>AID</h3>
+        <ul>
+          <li>Added several java.util interfaces to default definitions.</li>
+      </ul>
+
+      <h3>AIDA</h3>
+        <ul>
+            <li>Renamed PolinomialModelFunction into PolynomialModelFunction.</li>
+            <li>Fixed typos in ExponentModelFunction.</li>
+            <li>Review design of FTuple; removed unecessary methods.</li>
+            <li>Java version updated to AIDA 3.2, C++ version kept at 3.0 for compatibility with Geant4.</li>
+            <li>Finished the implementation of ITree; cp, mv, symlink methods</li>
+            <li>Implemented AIDA style objects</li>
+            <li>Moved AIDA-only JUnit tests to aida repository</li>
+        </ul>
+
+      <h3>AIDAJNI version 3.2.0</h3>
+        <ul>
+            <li>AIDAJNI-20: All creation of Proxies routed through the ProxyFactory.</li>
+            <li>AIDAJNI-9 (partially): Experimental CI classes available for 
+            Axis, Annotation, Histogram, Cloud and Profile.</li>
+            <li>AIDAJNI-12: AIDA version 3.2.1 compliant for both Java and C++.</li>
+        </ul>
+        
+      <h3>AIDAJNI version 3.0.4</h3>
+        <ul>
+            <li>FREEHEP-349: Updated to use exceptions() instead of checkExceptions() when a bool is returned.</li>
+            <li>AIDA-33: Tuple now returns "java.lang.String" for getColumnType() of a string column.</li>
+            <li>AIDA-33: TupleFactory accepts both hep.aida.ITuple and ITuple as well as 
+                java.lang.String and string.</li>
+            <li>AIDAJNI-14: allmost all methods in all JI classes are implemented. Exceptions
+                are there where the C++ version is unimplementable.</li>
+            <li>AIDAJNI-3: find method in tree will now return the correct IManagedObject.</li>
+            <li>AIDAJNI-6: Implemented methods for Histogram Arithmetic.</li>
+            <li>AIDAJNI-8: Implemented methods for DataPointSet, DataPoint and Measurement.</li>
+            <li>AIDAJNI-10: Got rid of "hiding" warnings and string conversion on Solaris.</li>
+            <li>AIDAJNI-4: Geant4 overlay now includes libs compiled with g++3.2</li>
+            <li>Implements AIDA C++ version 3.0 using AIDA Java version 3.2.1</li>
+            <li>Return empty strings and empty vectors instead of NULL. Fixed some memory
+                leaks.</li>
+        </ul>
+
+      <h3>FREEHEP JNI</h3>
+        <ul>
+            <li>FREEHEP-349: Changed return type of checkExceptions() to return void. exceptions() returns 
+                bool, and will not print anything.</li>
+        </ul>
+      
+      <h3>FREEHEP IO</h3>
+        <ul>
+            <li>Added NoCloseReader and NoCloseWriter classes.</li>
+            <li>FREEHEP-361: Added popBufferBytes() for use by CGM to 
+            ByteCountOutputStream.</li>
+            <li>FREEHEP-352: Added XMLSequence to allow reading of multiple XML segments
+                from a stream, using the XMLParser.</li>
+            <li>FREEHEP-306: Added zipios++ (0.1.5) and zlib (1.1.3) libraries so that we can write
+                zip files from c++.
+        </ul>
+        
+      <h3>Infrastructure and Tools</h3>
+        <ul>
+            <li>FREEHEP-346: added c++ .NET compilation and linking in WIN32-VC7 directories.</li>
+            <li>INFRASTRUCTURE-18: JavaDoc now runs with -source 1.4 to document assert keyword correctly.</li>
+            <li>FREEHEP-325: Upgraded to ant 1.5.4</li>
+            <li>INFRASTRUCTURE-14: Fixed WebPage tool to strip head/body of included files, added title of main
+                document as title of generated webpage</li>
+            <li>FREEHEP-321: documented that JDK_HOME/bin should be in PATH.</li>
+            <li>FREEHEP-320: fixed javah not to use unpublished SUN api.
+                FreeHEP now compiles with jsdk 1.4.2</li>
+            <li>Build.xml now adds classpath for running javah.</li>
+            <li>FREEHEP-308: Modified c/c++ compilation setup to allow for libraries that are
+                not linked to C++ (LINKNOCXX) and/or not linked to Java (LINKNOJAVA).
+                CERNLibAdapters (minuit and hbook) now link without C++ or Java
+                and are therefore compatible with any reasonable version of gcc/redhat.
+            <li>FREEHEP-309: Added sstream header for g++ 2.95.2 (old compiler on MacOS X).
+            <li>FREEHEP-288: CERNLIBAdapter for WIN32-VC now includes DFORMD.DLL in
+                alignment with CERNLIB. DFORRT.DLL has been removed.</li>
+            <li>FREEHEP-304: AID version 0.9.4 will not output semicolons for namespaces.
+                Seems to produce warnings on the True64 compiler.</li>
+            <li>FREEHEP-299: Added FreeHEPCommand task. Build file will now run idlj for
+                out of date idl files. Setup different from before, look in freehep-heprep.properties
+                for an example. Idl generated files removed from repository (heprep).</li>
+        </ul>
+
+      <h3>Util</h3>
+        <ul>
+            <li>FREEHEP-357: added GZIPOutputStream in C++ for writing gzip files.</li>
+        </ul>
+
+      <h3>Swing</h3>
+        <ul>
+            <li>WIRED-6: Moved org.freehep.swing.undo into FreeHEP from WIRED.
+                this adds AnimatableEditSupport classes to deal with animation
+                feedback for undoable edits.</li>
+            <li>Added new package, org.freehep.swing.print.table with utilities
+                for printing tables.</li>
+            <li>Added new package, org.freehep.swing.wizard with a set of
+                classes for creating wizards (dialogs with a set of pages).</li>
+            <li>FREEHEP-232 Added new package, org.freehep.swing.popup with a set of
+                utilities for handling popup menus.</li>
+        </ul>
+
+      <h3>Util</h3>
+        <ul>
+            <li>FREEHEP-350: Merged EndingFileFilter into ExtensionFileFilter as part of org.freehep.swing.</li>
+            <li>WIRED-6: Added DiscreteAngle class which given an Angle allows
+                iteration over a set of discrete angles.
+        </ul>
+
+      <h3>PS Viewer</h3>
+        <ul>
+            <li>Separately packaged for users who only want the PS Viewer.</li>
+            <li>See separate
+            <a href="http://java.freehep.org/psviewer/AllReleaseNotes.html">
+            ReleaseNotes</a>.</li>
+        </ul>
+
+      <h3>VectorGraphics</h3>
+        <ul>
+            <li>Separately packaged for users who only want the VectorGraphics 
+            package.</li>
+            <li>See separate
+            <a href="http://java.freehep.org/vectorgraphics/AllReleaseNotes.html">
+            ReleaseNotes</a>.</li>
+        </ul>
+
+      <h3>Geant4</h3>
+        <ul>
+            <li>FREEHEP-312: Geant4 Driver now 4.5.2 and 4.6 compliant.</li>
+        </ul>
+
+      <h3>HepRep</h3>
+        <ul>
+            <li>XMLHepRepReader now uses InputStream rather than Reader to allow 
+            for usage of XMLSequence.<li>HepRepIO.writeHepRep recognizes .heprep extension.<li>FREEHEP-371: Major rewrite of the ref, corba, corbavalue and rmi 
+            HepRep classes to implement the equals() and hashCode() methods and 
+            to return Sets and Lists rather than Collections in cases where 
+            possible. HepRep interfaces have changed. C++ implementation was 
+            also modified accordingly.<li>FREEHEP-281: Added overlay methods to HepRep, HepRepInstanceTree
+                and HepRepInstance. Corba, CorbaValue and Streamer do not implement
+                these.  C++ and JNI ignore these calls.
+                Reference Implementation partially ready.</li>
+            <li>FREEHEP-370: Added boolean (true) attribute IsPickable (PickAction) to 
+            defaults.<li>FREEHEP-363: Added boolean (false) attribute 
+            ShowParentAttributes (PickAction) to defaults.<li>FREEHEP-362: Added 
+            boolean (false) attribute PickParent (PickAction) to defaults.<li>
+            FREEHEP-360: Added getSuperInstance() method to HepRepInstance.<li>WIRED-170: HepRep can use either flat or a hierarchical namespace for its types.
+                Method getFullName() was added to the HepRepType interface. The XMLReader and XMLWriter 
+                were modified to handle both types of namespaces.
+            <li>WIRED-173: added LineWidthMultiplier and MarkSizeMultiplier to defaults.</li>
+            <li>FREEHEP-7: Reference implementation makes full use of intern() 
+            of Strings.</li>
+            <li>HEPREP-4: Added HepRepViewer interface.</li>
+            <li>FREEHEP-351: HepRepAttValue will now convert int/long to double for getDouble() and
+                int to long for getLong().</li>
+            <li>Made CreateTest.java up-to-date with HepRep2 standard.</li>
+            <li>FREEHEP-349: Updated HepRepJNI to use exceptions() instead of checkExceptions() when a bool is returned.</li>
+            <li>FREEHEP-342: Internal LinkedLists replaced by Lists.</li>
+            <li>FREEHEP-341: Added HasHepRep interface.</li>
+            <li>FREEHEP-310: Removed streamer and streamer-c++, since the interfaces
+                (including) heprep itself would have become more complicated with extra
+                stuff such as filenames for hepreps etc etc... the c++ interface,
+                see FREEHEP-303 and the java ref implementation will do.</li>
+            <li>FREEHEP-305, FREEHEP-8: The writer for HepRep now comes with extra parameters to write compressed
+                and/or in random access mode. The default/xml writers write either .gz or .zip
+                files repectively, when these flags are set. The C++ implementation only writes plain or
+                .zip files.
+            <li>FREEHEP-303: Native C++ implementation of HepRep added. Only allows writing
+                to XML and in memory inspection. No reader provided.</li>
+        </ul>
+
+
+      <h2>Version 1.2.1 (June 5, 2003)</h2>
+      <h3>AIDA</h3>
+
+        <ul>
+            <li>Use services API to find store factories</li>
+            <li>Modify IStoreFactory for compatibility with JAS3</li>
+            <li>Add new test cases for Root and PAW</li>
+            <li>Small mods to PAW store (now uses id for tuples)</li>
+            <li>Small mods to Root store (now has option for controlling whether all
+                cycles are listed, or only most recent (the default))</li>
+            <li>Root tuples containing variable length arrays are now mapped to AIDA
+                tuples with nested Folders</li>
+            <li>Fixes for FreeHEP-282: unable to read specific root file. Problem
+                with ordering of doubles.</li>
+            <li>AIDA JNI, resolved warnings of uninitialized variables.</li>
+        </ul>
+
+      <h3>Infrastructure and Tools</h3>
+        <ul>
+            <li>FREEHEP-288: minuitAdapter and hbookAdapter now bundled together
+                into CERNLIBAdapter. In the case of WIN32-VC this includes DFORRT.DLL.</li>
+            <li>FREEHEP-283: void* now recognized as resultype. AID version 0.9.2</li>
+            <li>Added hbookAdapter makefile to produce hbook distribution</li>
+        </ul>
+
+      <h3>Doc</h3>
+        <ul>
+            <li>Fixed apidoc tags in most files. "ant sysdoc" still gives 6 warnings.</li>
+            <li>FREEHEP-276: Removed test packages from apidoc..</li>
+        </ul>
+
+      <h3>Util</h3>
+        <ul>
+            <li>ImageUtilities.createRenderedImage() will now return the given image, if it was
+                a RenderedImage already and no background was requested.</li>
+            <li>FreeHEPLookup will now also find classes registered using the
+                services API.</li>
+            <li>FREEHEP-290: ImageHandler will not throw HeadlessException anymore.
+                Reference tests are corrected. SWF Testing disabled because of
+                loop in CubicToQuadPathConstructor FREEHEP-286.</li>
+        </ul>
+
+      <h3>FreeHEP IO</h3>
+        <ul>
+            <li>Removed classes ImageOutput, DCTOutputStream and all implementations of ImageOutput;
+                use ImageGraphics2D.writeImage to write image in particular format (JPG, PNG or RAW)</li>
+        </ul>
+
+      <h3>VectorGraphics</h3>
+        <ul>
+            <li>FREEHEP-277: Initialization of graphics context and background better handled.</li>
+            <li>FREEHEP-104, FREEHEP-224: Images can now be embedded in their smallest size (JPG, PNG, ZLIB, RAW).</li>
+            <li>RawWriter added to write plain image format, with padding and choice of format (ARGB, RGB, BGR, ...).</li>
+            <li>ImageGraphics2D.writeImage now chooses preferred freehep imagewriter if more than one is available.</li>
+        </ul>
+      <h4>EMF</h4>
+        <ul>
+            <li>FREEHEP-92: TextColor correctly set in EMF.</li>
+        </ul>
+
+      <h4>JAVA</h4>
+        <ul>
+            <li>FREEHEP-275: Package can be set as property if needed. Test files will end
+                up in correct directory.</li>
+        </ul>
+
+      <h4>PS</h4>
+        <ul>
+            <li>FREEHEP-272: PageMargins have been changed to be Insets.
+                Options can be set from Export Panel.</li>
+        </ul>
+
+      <h4>PDF</h4>
+        <ul>
+            <li>FREEHEP-273: PDFWriterTest works again.</li>
+            <li>FREEHEP-272: PageMargins have been changed to be Insets.
+                Options can be set from Export Panel.</li>
+            <li>FREEHEP-279: Width and height corrected for images on setPaint(TexturePaint).</li>
+        </ul>
+
+      <h4>SVG</h4>
+        <ul>
+            <li>FREEHEP-21: Nesting of SVG <g> tag is limited, would crash the browser.
+                Drawing state (stroke, etc) now included in primitives. Files slightly
+                larger, but work now in Adobe SVG Viewer 3.0 and are a lot quicker to
+                display.</li>
+            <li>FREEHEP-188: Texture Paint works now.</li>
+            <li>FREEHEP-110: Vertical Text offset is now approximated.</li>
+        </ul>
+
+      <h4>SWF</h4>
+        <ul>
+            <li>FREEHEP-23: LineStyles are now written as outlines if SWF does not support
+                them.</li>
+            <li>FREEHEP-201: Dashed lines work using outlines.</li>
+        </ul>
+
+      <h3>HepRep</h3>
+        <ul>
+            <li>FREEHEP-274: HepRepStreamer for C++ can now write trees only.</li>
+            <li>Resolved problems of warnings on Linux and Solaris.</li>
+            <li>Geant4 driver changed, but currently writes incorrect HepRep files,
+                see FREEHEP-267 and FREEHEP-292, use 1.2 instead.</li>
+        </ul>
+
+
+      <h2>Version 1.2 (May 16, 2003)</h2>
+      <h3>Application Framework</h3>
+      <ul>
+        <li>Moved PrintHelper, PrintOptions and PrintDialog from JAS.</li>
+      </ul>
+      <h3>Libraries</h3>
+      <ul>
+        <li>Removed xercesSamples.jar, xerces.jar and their tool file to check xml.</li>
+        <li>Upgraded JavaHelp to 1.1.3</li>
+        <li>Removed Log4J</li>
+      </ul>
+      <h3>Swing Extensions</h3>
+      <ul>
+        <li>Added a TableLayout class which uses the standard GridBagLayout but allows
+            easier setup and use.
+      </ul>
+      <h3>Utility</h3>
+      <ul>
+        <li>Added ImageUtilities class to convert different types of images.</li>
+        <li>Removed classes: XercesDOMParser, StreamingCharFactory, DOMParser and DocumentFinishedException,
+            and updated all XML related classes to be dependent on JAXP for their parser.
+        <li>Added a UserProperties class which allows for storage of non string types,
+            and cascaded lookups.</li>
+        <li>FREEHEP-258: XMLWriter now properly encodes in unicode for characters between 0x80 and 0xFF</li>
+      </ul>
+      <h3>Infrastructure and Tools</h3>
+      <ul>
+        <li>FREEHEP-244: added "test" target to build.xml, which executes unit tests if defined.</li>
+        <li>Upgraded JavaWebStart (jnlp) to 1.2</li>
+        <li>FREEHEP-15: upgraded doclet to jdk 1.4.1</li>
+        <li>Removed jar.inf from build.xml. You can now set jar.metainfdir and jar.metainf
+            to include for instance a service directory</li>
+        <li>FREEHEP-1: upgraded to Ant version 1.5.3.</li>
+        <li>FREEHEP-1: build file now uses -source 1.4 for compilation.</li>
+        <li>FREEHEP-206: upgraded JavaCC to version 3.0, and AID to version 0.9</li>
+        <li>FREEHEP-176: a flag to control generation of exceptions in C++ code
+            was added. In aid.cpp.properties you may set useExceptions to true/false.
+            The default is set to true. AIDA and HEPREP have their flags set to false.
+            AID version 0.9.1</li>
+      </ul>
+      <h3>FreeHEP IO</h3>
+      <ul>
+        <li>Added LineNumberWriter to keep track of number of lines written. Allows a Listener.</li>
+        <li>ByteOrderOutputStream and FlateOutputStream can now write images. An ImageOutput
+            interface was added and all graphicsio drivers use this ImageOutput interface.</li>
+        <li>FREEHEP-124: DCT Input and Output Stream handle the reader/writing of Images.</li>
+        <li>FREEHEP-246: removed stacksize limitation from ByteCoutOutputStream.</li>
+        <li>IndentPrintWriter now properly overloads all print() and println() methods.
+            It was moved from org.freehep.util to org.freehep.util.io.</li>
+        <li>Added NoCloseOutputStream which only flushes the output.</li>
+        <li>FREEHEP-190: Added Base64 Input and Output Streams.</li>
+        <li>FREEHEP-191: Added ReaderInputStream and WriterOutputStream.</li>
+        <li>FREEHEP-210: Added DecompressableInputStream and CompressableOutputStream,
+            which can start (de)compressing midstream. BitInputStream and BitOutputStream
+            inherit from these respective classes now.</li>
+      </ul>
+      <h3>ROOTIO</h3>
+      <ul>
+        <li>Added latest version of ROOTIO.</li>
+      </ul>
+      <h3>VectorGraphics</h3>
+        <ul>
+            <li>FREEHEP-264: ExportDialog will properly append extension when browsing for a file name.
+                It will also ignore the default name if a user preference was saved.</li>
+            <li>VectorGraphicsTransferable was moved from org.freehep.graphicsio.exportchooser to
+                org.freehep.util.export.</li>
+            <li>FREEHEP-266: Added invert() method to PrintColor with guaranteed contrast. Used
+                it in BackgroundPanel for selection of color and text.</li>
+            <li>FREEHEP-230: Creator properly set for all output formats.</li>
+            <li>FREEHEP-260: Background color can be set from options and Transperency can
+                also be toggled. Applies to all formats.</li>
+            <li>FREEHEP-254: The background is correctly set from the component (if available)
+                and the formats now correctly write out the background if they do not support
+                transparency (CGM, EMF, JPG, PS and PPM).</li>
+            <li>Images handling redone, to handle images of different types and to avoid the PixelGrabber class.</li>
+            <li>FREEHEP-249: Curly artifacts fonts of Type 1 (PDF/PS) inclusion are fixed.</li>
+            <li>FREEHEP-247: Warnings and errors can be printed by setting AbstractVectorGraphicsIO.EMIT_WARNINGS,
+                or EMIT_ERRORS property to true.</li>
+            <li>FREEHEP-248: Tests were added for Preview and Thumbnails (PS and PDF).</li>
+            <li>FREEHEP-49: Tests for Font Embedding added.</li>
+            <li>FREEHEP-217: ExportDialog replaces SimpleExportDialog</li>
+            <li>FREEHEP-217: Base classes for Exporting moved to package org.freehep.util.export.
+                VectorGraphics and ImageIO Plugin classes stay in packages
+                org.freehep.graphics2d and org.freehep.graphicsio and its subpackages.
+                This allows you to add new ExportFileTypes and have a Dialog that uses
+                them, by adding new plugin jar files to the classpath.</li>
+            <li>FREEHEP-39, FREEHEP-57, FREEHEP-58: Redid all the option panels for all drivers</li>
+            <li>FREEHEP-199: AbstractPathConstructor calls quad method rather than making cubics.</li>
+            <li>FREEHEP-196: SymbolShape now has proper bounding box.</li>
+            <li>FREEHEP-185 and FREEHEP-187: Added transparency for normal (non-image) drawing to the PDF and SVG formats.</li>
+            <li>FREEHEP-202: Fixed PrintColor class to rely on JDK 1.4 Color constants.</li>
+            <li>FREEHEP-204: Added WebColor class to create Colors following the 216-web color
+                scheme.</li>
+            <li>FREEHEP-207: endExport() now calls dispose() on top-level graphics context, which may call
+                writeGraphicsSave().</li>
+        </ul>
+      <h4>PixelGraphics2D</h4>
+          <ul>
+            <li>FREEHEP-218: Blitting of symbols made into renderinghint, which defaults to ON,
+                except for JPG which uses non-transparent image to draw in, which would result
+                in blitting of images with a black background. PPM does not suffer from this
+                since it uses transparent images to write to a file, even if the format itself
+                does not allow for transparency. JPEG images have to be written on TYPE_INT_RGB
+                or they end up as blank pages, see SUN bug 4775930</li>
+            <li>FREEHEP-256: Setting the font to Symbol or ZapfDingbats maps the ascii range
+                into the corresponding unicode ranges.</li>
+            <li>FREEHEP-205: The drawSymbol and fillSymbol methods in PixelGraphics2D will use
+                image blitting of cached symbol images of max size 32x32, in the case
+                the display is local (Windows32, MacOSX and X11local). In the X11 Remote
+                case normal drawing procedures are used. The colors are converted to
+                WebColors. For VectorGraphics export everything stays as normal.</li>
+          </ul>
+      <h4>EMF</h4>
+        <ul>
+            <li>FREEHEP-91, FREEHEP-179: Used AlphaBlend tag to implement Transparent Images.</li>
+            <li>FREEHEP-63, FREEHEP-90: Logical fonts are now properly translated to Windows fonts.</li>
+            <li>FREEHEP-88, FREEHEP-89: Symbol and ZapfDingbats are now mapped to "Arial Unicode MS",
+                since there is no standard Unicode Serif font on Windows with all these
+                encodings. If explicitly using Unicodes from a font, they may show as blocks.</li>
+            <li>FREEHEP-253: Images are now properly padded and 1 pixel offset is corrected.</li>
+            <li>FREEHEP-193: Header properly padded.</li>
+        </ul>
+      <h4>GIF, JPG, PNG, PPM</h4>
+        <ul>
+            <li>FREEHEP-218: Blitting of symbols made into renderinghint, which defaults to ON,
+                except for JPG which uses non-transparent image to draw in, which would result
+                in blitting of images with a black background.</li>
+            <li>FREEHEP-243: Antialias and AntialiasText are now options for ImageGraphics2D,
+                so can be used on any of the image formats. Defaults are on for both,
+                except for the GIF format, which defaults both to off since it would
+                result in too many colors. The tests use AntialiasText off since
+                it seems to generate time-dependent information in the image formats.</li>
+            <li>FREEHEP-19: JPEG Driver was fixed, uses non-transparent RGB BufferedImage.</li>
+            <li>FREEHEP-212: GIF and PPM are now ImageIO plugins, separately packaged as jar files.</li>
+            <li>FREEHEP-212: PNG and JPG are now relying on Sun's implementation. Encoder for PNG is
+                still available but may be removed in the future.</li>
+            <li>GIF Driver separately packaged so that one can remove it for distribution.</li>
+        </ul>
+      <h4>JAVA</h4>
+        <ul>
+            <li>FREEHEP-214, FREEHEP-238, FREEHEP-237, FREEHEP-263, FREEHEP-270:
+                Added JAVA Driver which saves aa Java
+                source file of what has been drawn to the screen. This is to enable users to
+                easily generate test files. Limitations are currently:
+                <ul>
+                    <li>no images can be written (FREEHEP-236),</li>
+                    <li>displayed component will not resize (FREEHEP-239)</li>
+                </ul>
+            </li>
+        </ul>
+      <h4>PDF</h4>
+        <ul>
+            <li>FREEHEP-95, FREEHEP-255: Logical fonts are mapped to PDF standard fonts.</li>
+            <li>FREEHEP-94: Implemented drawFrameAndBanner() method.</li>
+            <li>Fixed Encoding for FontEmbedderType1</li>
+            <li>FREEHEP-203: Cleaned up the PDF output regarding empty objects.</li>
+        </ul>
+      <h4>PS</h4>
+        <ul>
+            <li>FREEHEP-250: No fonts are assumed standard in PS/EPS, so all are included
+                when requested.</li>
+            <li>FREEHEP-111: PSFontNames are properly encoded now. GhostScript does not
+                complain anymore about Times, Helvetica and others. Symbol and ZapfDingbats
+                do not come in Bold or Italic.</li>
+            <li>FREEHEP-235: Changed encoding of PS from ISOLatin to STDLatin. The hyphen
+                now encodes properly.</li>
+            <li>Removed EPSIExportFileType since it was not used.</li>
+        </ul>
+      <h4>SVG</h4>
+        <ul>
+            <li>FREEHEP-221: ImageSize can now be properly set and modified.</li>
+            <li>FREEHEP-258: XML now properly unicode encoded for characters between 0x80 and 0xFF</li>
+            <li>FREEHEP-116: Compressed SVG can be read (as .svg or .svgz) in Adobe SVG Viewer 3.0 build76.
+                Default setting is now compressed.</li>
+            <li>FREEHEP-108: Clipping along any path works.</li>
+            <li>FREEHEP-189: PNG Images now embedded into SVG format.</li>
+        </ul>
+      <h4>SWF</h4>
+        <ul>
+            <li>FREEHEP-109, FREEHEP-115: Logical Java fonts properly mapped, and symbol and zapfdingbats encoded.</li>
+            <li>FREEHEP-200: Symbols and ZapfDingbats fonts are properly mapped to produce glyphs.</li>
+            <li>FREEHEP-223: DefineJPEG2 and DefineJPEG3 implemented correctly. DefineBits and JPEGTables can only be read
+                and written, but cannot be created.</li>
+            <li>FREEHEP-59: upgraded to version 6.0</li>
+            <li>FREEHEP-197: swf file can now be partially compressed for version 6.0</li>
+            <li>FREEHEP-195: proper bounding boxes written.</li>
+            <li>FREEHEP-75: glyphed text added to output.</li>
+            <li>FREEHEP-74: Fixed a problem with curved shapes.</li>
+            <li>FREEHEP-24, FREEHEP-119 and FREEHEP-171: Added imaging (including transparency) to the SWF format.
+                It also handles setPaint(TexturePaint) now.</li>
+            <li>FREEHEP-22: clip now properly written.</li>
+        </ul>
+      <h3>HepRep</h3>
+        <ul>
+            <li>FREEHEP-9: HepRep output from C++ and Java now writes scientific format
+                for doubles and floats with a precision of 6.</li>
+        </ul>
+
+
+
+      <h2>Version 1.1 (March 20, 2003)</h2>
+      <ul>
+        <li>Initial public release.</li>
+      </ul>
+
+
+
+</body></html>

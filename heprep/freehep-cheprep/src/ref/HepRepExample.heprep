@@ -1,0 +1,78 @@
+<?xml version="1.0" ?>
+<heprep version="2.0"
+  xmlns="http://java.freehep.org/schemas/heprep/2.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+  xsi:schemaLocation="http://java.freehep.org/schemas/heprep/2.0 http://java.freehep.org/schemas/heprep/2.0/HepRep.xsd">
+  <layer order="Detector Geometry"/>
+  <typetree name="Geometry" version="1.0">
+    <type name="Geometry">
+      <attvalue name="layer" value="Detector Geometry"/>
+      <attvalue name="drawAs" value="Cylinder"/>
+      <type name="Magnet Coil">
+        <attvalue name="Color" type="Color"
+          value="1.00, 1.00, 1.00, 1.00"/>
+      </type>
+      <type name="Electromagnetic Calorimeter">
+        <attvalue name="Color" type="Color"
+          value="1.00, 1.00, 0.00, 1.00"/>
+      </type>
+      <type name="Drift Chamber">
+      </type>
+      <type name="Support Tube">
+        <attvalue name="Color" type="Color"
+          value="1.00, 0.00, 1.00, 1.00"/>
+      </type>
+      <type name="Silicon Vertex Detector">
+        <attvalue name="Color" type="Color"
+          value="1.00, 0.20, 0.20, 1.00"/>
+      </type>
+      <type name="Beam Pipe">
+        <attvalue name="Color" type="Color"
+          value="1.00, 1.00, 0.00, 1.00"/>
+      </type>
+    </type>
+  </typetree>
+  <instancetree name="Simplified BaBar Detector"
+    typetreename="Geometry" typetreeversion="1.0" version="Hand Coded">
+    <instance type="Geometry/Magnet Coil">
+      <attvalue name="Radius" type="double" value="143"/>
+      <point x="0" y="0" z="-148"/>
+      <point x="0" y="0" z="220"/>
+    </instance>
+    <instance type="Geometry/Electromagnetic Calorimeter">
+      <attvalue name="Radius" type="double" value="122"/>
+      <point x="0" y="0" z="-144"/>
+      <point x="0" y="0" z="216"/>
+    </instance>
+    <instance type="Geometry/Drift Chamber">
+      <instance type="Geometry/Drift Chamber">
+        <attvalue name="Color" type="Color"
+          value="0.00, 1.00, 0.00, 1.00"/>
+        <attvalue name="Radius" type="double" value="78"/>
+        <point x="0" y="0" z="-102"/>
+        <point x="0" y="0" z="176"/>
+      </instance>
+      <instance type="Geometry/Drift Chamber">
+        <attvalue name="Color" type="Color"
+          value="0.00, 1.00, 1.00, 1.00"/>
+        <attvalue name="Radius" type="double" value="24"/>
+        <point x="0" y="0" z="-102"/>
+        <point x="0" y="0" z="176"/>
+      </instance>
+    </instance>
+    <instance type="Geometry/Support Tube">
+      <attvalue name="Radius" type="double" value="21"/>
+      <point x="0" y="0" z="-44"/>
+      <point x="0" y="0" z="78"/>
+    </instance>
+    <instance type="Geometry/Silicon Vertex Detector">
+      <attvalue name="Radius" type="double" value="15"/>
+      <point x="0" y="0" z="-13.5"/>
+      <point x="0" y="0" z="26"/>
+    </instance>
+    <instance type="Geometry/Beam Pipe">
+      <attvalue name="Radius" type="double" value="2.5"/>
+      <point x="0" y="0" z="-144"/>
+      <point x="0" y="0" z="216"/>
+    </instance>
+  </instancetree>
+</heprep>

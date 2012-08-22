@@ -1,0 +1,13 @@
+    ---
+    Bugs And Issues
+    ---
+    AIDA Team @ SLAC
+    ---
+    ---
+
+Bugs And Issues
+
+    General bugs and issues should be posted to the {{{http://java.freehep.org/redirect?project=JAIDA&amp;area=bugs}JAIDA bugs database}}; issues 
+with the JNI glue code to C++ should be posted to the {{{http://java.freehep.org/redirect?project=AIDAJNI&amp;area=bugs}AIDAJNI}}
+database.
+

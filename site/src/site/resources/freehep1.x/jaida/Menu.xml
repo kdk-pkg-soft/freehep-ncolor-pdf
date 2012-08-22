@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!--
+    Document   : SiteMapTemplate.xml
+    Created on : March 11, 2003, 11:20 AM
+    Author     : The FreeHEP team @ SLAC
+    Description: The default MenuList
+-->
+<!DOCTYPE MenuList>
+<?xml-stylesheet type="text/xsl" href="menu.xslt"?>
+<MenuList xmlns:xsi='http://www.w3.org/2001/XMLSchema-instance'
+  xsi:noNamespaceSchemaLocation='SiteMap.xsd'>
+    <Menu name = "Introduction">
+        <MenuItem name = "Overview" href = "index.html"/>
+        <MenuItem name = "News"/>
+        <MenuItem name = "Features"/>
+        <MenuItem name = "Demos"/>
+        <MenuItem name = "Screen Shots"/>
+        <MenuItem name = "Publications/Talks"/>
+        <MenuItem name = "Future Plans"/>
+        <MenuItem name = "Contributors"         href = "Contributors.html"/>
+        <MenuItem name = "Users"                href = "Users.html"/>
+    </Menu>
+    <Menu name = "User Documentation">
+        <MenuItem name = "Release Notes"        href = "v3.2.4/ReleaseNotes.html"/>
+        <MenuItem name = "AIDA Manual"          href = "http://java.freehep.org/redirect?project=AIDA&amp;area=manual"/>
+        <MenuItem name = "AIDA API"             href = "http://java.freehep.org/redirect?project=AIDA&amp;area=api"/>
+        <MenuItem name = "Geant4 and JAIDA"     href = "Geant4JAIDA.html" />
+        <MenuItem name = "License"              href = "License.html"/>
+    </Menu>
+    <Menu name = "Download">
+        <MenuItem name = "Binary Distributions" href = "BinaryDistributions.html"/>
+        <MenuItem name = "Source Distributions" href = "SourceDistributions.html"/>
+    </Menu>
+    <Menu name = "Get Involved">
+        <MenuItem name = "Discussion"           href = "MailingLists.html"/>
+    </Menu>
+    <Menu name = "Developer Area">
+        <MenuItem name = "Design Documentation"/>
+        <MenuItem name = "Project Guidelines"/>
+        <MenuItem name = "How to Extend"/>
+        <MenuItem name = "ToDo List"/>
+    </Menu>
+</MenuList>

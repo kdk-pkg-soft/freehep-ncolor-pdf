@@ -1,0 +1,114 @@
+<html><head>
+    
+
+    <link rel="stylesheet" type="text/css" href="../PrintablePage.css">
+
+<meta http-equiv="Content-Language" content="en-us">
+<meta name="GENERATOR" content="Microsoft FrontPage 5.0">
+<meta name="ProgId" content="FrontPage.Editor.Document">
+<meta http-equiv="Content-Type" content="text/html; charset=windows-1252">
+<title>JAIDA 3</title>
+</head><body>
+
+<h1>JAIDA</h1>
+AIDA in Java
+
+<h1>Fit Methods</h1>
+
+<p>The fit methods are divided in <i>binned</i> and <i>unbinned</i> fit methods 
+depending on weather they apply to the bins or to the content of a given 
+distribution; so a fit to an histogram will be performed with a binned fit 
+method, while a fit to a column of a tuple will be unbinned.</p>
+
+<h2>Binned Fit Methods</h2>
+
+<p>Given a function f and a binned distribution we define:</p>
+
+<blockquote>
+
+<p><img border="0" src="../Formulas/images/height.gif"> to be the height of the 
+i<sup>th</sup> bin</p>
+
+<p><img border="0" src="../Formulas/images/variable.gif"> to be the center of 
+the i<sup>th</sup> bin</p>
+
+<p><img border="0" src="../Formulas/images/function.gif"> the function's value 
+at the i<sup>th</sup> bin</p>
+
+<p><img border="0" src="../Formulas/images/sigma.gif"> the error on the i<sup>th</sup> 
+bin</p>
+
+</blockquote>
+
+<p>With the above we define the following fit methods, where the sums are 
+performed over all the bins:</p>
+
+<ul>
+  <li>
+
+<h3> <i>LeastSquares</i></h3>
+  </li>
+</ul>
+<blockquote>
+  <blockquote>
+
+<p> <img border="0" src="../Formulas/images/leastSquaredMethod.gif"></p>
+  </blockquote>
+</blockquote>
+
+<ul>
+  <li>
+<h3> <i>Chi2</i></h3>
+  </li>
+</ul>
+<blockquote>
+  <blockquote>
+<p><img border="0" src="../Formulas/images/chi2Method.gif"></p>
+  </blockquote>
+</blockquote>
+<ul>
+  <li>
+<h3> <i>CleverChi2</i></h3>
+  </li>
+</ul>
+
+<blockquote>
+  <blockquote>
+<p> <img border="0" src="../Formulas/images/cleverChi2Method.gif"></p>
+  </blockquote>
+</blockquote>
+<ul>
+  <li>
+<h3> <i>BinnedMaximumLikelihood</i></h3>
+
+  </li>
+</ul>
+
+<blockquote>
+  <blockquote>
+<p> <img border="0" src="../Formulas/images/binnedMaximumLikelihood.gif"></p>
+
+  </blockquote>
+</blockquote>
+
+<h2>Unbinned Fit Methods</h2>
+
+<p>Given a probability distribution function f and a set of data we define the 
+following unbinned fit method:</p>
+
+<ul>
+  <li>
+
+<h3> <i>UnbinnedMaximumLikelihood</i></h3>
+
+  </li>
+</ul>
+
+<blockquote>
+  <blockquote>
+    <p><img border="0" src="../Formulas/images/unbinnedMaximumLikelihood.gif"></p>
+  </blockquote>
+</blockquote>
+
+
+</body></html>

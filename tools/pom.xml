@@ -1,0 +1,34 @@
+<project>
+  <parent>
+    <artifactId>global</artifactId>
+    <groupId>org.freehep</groupId>
+    <version>5</version>
+  </parent>
+  <modelVersion>4.0.0</modelVersion>
+  <groupId>org.freehep</groupId>
+  <artifactId>tools</artifactId>
+  <packaging>pom</packaging>
+  <name>FreeHEP Tools</name>
+  <version>3-SNAPSHOT</version>
+  <description>FreeHEP Tools</description>
+  <url>http://java.freehep.org</url>
+  <repositories>
+    <repository>
+      <id>freehep-maven</id>
+      <name>Maven FreeHEP</name>
+      <url>http://java.freehep.org/maven2</url>
+    </repository>
+  </repositories>
+  <modules>
+    <module>freehep-aid</module>
+    <module>freehep-aid-plugin</module>
+    <module>freehep-rtti</module>
+    <module>freehep-psviewer</module>
+  </modules>
+  <distributionManagement>
+    <site>
+      <id>freehep-web-deploy</id>
+      <url>scpexe://svn.freehep.org/nfs/slac/g/jas/workspace/freehep/__star__/web/freehep/</url>
+    </site>
+  </distributionManagement>
+</project>

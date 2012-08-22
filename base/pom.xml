@@ -1,0 +1,39 @@
+<project>
+  <parent>
+    <artifactId>global</artifactId>
+    <groupId>org.freehep</groupId>
+    <version>4</version>
+  </parent>
+  <modelVersion>4.0.0</modelVersion>
+  <groupId>org.freehep</groupId>
+  <artifactId>base</artifactId>
+  <packaging>pom</packaging>
+  <name>FreeHEP Base</name>
+  <version>4</version>
+  <description>FreeHEP Base Library</description>
+  <url>http://java.freehep.org/</url>
+  <repositories>
+    <repository>
+      <id>freehep-maven</id>
+      <name>Maven FreeHEP</name>
+      <url>http://java.freehep.org/maven2</url>
+    </repository>
+  </repositories>
+  <modules>
+    <module>freehep-application</module>
+    <module>freehep-argv</module>
+    <module>freehep-commandline</module>
+    <module>freehep-commanddispatcher</module>
+<!--
+    <module>freehep-connexion</module>
+-->
+    <module>freehep-export</module>
+    <module>freehep-io</module>
+    <module>freehep-parameterdatabase</module>
+    <module>freehep-record</module>
+    <module>freehep-swing</module>
+    <module>freehep-util</module>
+    <module>freehep-webutil</module>
+    <module>freehep-xml</module>
+  </modules>
+</project>

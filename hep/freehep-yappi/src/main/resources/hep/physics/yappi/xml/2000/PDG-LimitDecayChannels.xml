@@ -1,0 +1,3430 @@
+<?xml version="1.0" encoding="ISO-8859-1"?> 
+<!--=============================================================================--> 
+<!-- Copyright of file, 2000, CERN, Geneva, Switzerland. (yappi.freehep.org)     --> 
+<!-- Copyright of data, 2000, PDG. (pdg.lbl.gov)                                 --> 
+<!--=============================================================================--> 
+<!-- ATTENTION: this file is GENERATED. To override values, use a different file --> 
+<!--=============================================================================--> 
+<PPML source="PDG-2000-Generated" xmlns:ppml="http://www.w3.org/1999/XMLSchema-instance" 
+      ppml:nonamespaceSchemaLocation='ppml.xsd'> 
+   <ParticleType name="gamma" > 
+   </ParticleType> 
+   <ParticleType name="g" > 
+   </ParticleType> 
+   <ParticleType name="W+" > 
+      <Decay name="pi+gamma" texName="pi^{+}\gamma" fraction="&lt; 7E-5" PUnit="MeV/c"> 
+      </Decay> 
+      <Decay name="D(s)+gamma" texName="D^{+}_{s}\gamma" fraction="&lt; 1.3E-3" PUnit="MeV/c"> 
+      </Decay> 
+   </ParticleType> 
+   <ParticleType name="Z" > 
+      <Decay name="ggg" texName="g\;g\;g" fraction="&lt; 1.1" PUnit="MeV/c"> 
+      </Decay> 
+      <Decay name="pi0gamma" texName="pi^{0}\gamma" fraction="&lt; 5.2E-5" PUnit="MeV/c"> 
+      </Decay> 
+      <Decay name="etagamma" texName="\eta\;\gamma" fraction="&lt; 5.1E-5" PUnit="MeV/c"> 
+      </Decay> 
+      <Decay name="omegagamma" texName="\omega\;\gamma" fraction="&lt; 6.5E-4" PUnit="MeV/c"> 
+      </Decay> 
+      <Decay name="eta'(958)gamma" texName="\eta^{\prime}(958)\;\gamma" fraction="&lt; 4.2E-5" PUnit="MeV/c"> 
+      </Decay> 
+      <Decay name="gammagamma" texName="\gamma\;\gamma" fraction="&lt; 5.2E-5" PUnit="MeV/c"> 
+      </Decay> 
+      <Decay name="gammagammagamma" texName="\gamma\;\gamma\;\gamma" fraction="&lt; 1.0E-5" PUnit="MeV/c"> 
+      </Decay> 
+      <Decay name="pi+Wmp" texName="pi^{\pm}W^{\mp}" fraction="&lt; 7E-5" PUnit="MeV/c"> 
+      </Decay> 
+      <Decay name="rho+Wmp" texName="\rho^{\pm}W^{\mp}" fraction="&lt; 8.3E-5" PUnit="MeV/c"> 
+      </Decay> 
+      <Decay name="chi(c2)(1P)X" texName="\chi_{c2}(1P)\;X" fraction="&lt; 3.2E-3" PUnit="MeV/c"> 
+      </Decay> 
+      <Decay name="Upsilon" texName="\Upsilon" fraction="1" PUnit="MeV/c"> 
+      </Decay> 
+      <Decay name="Upsilon(1S)X" texName="\Upsilon(1S\;)\;X" fraction="&lt; 4.4E-5" PUnit="MeV/c"> 
+      </Decay> 
+      <Decay name="Upsilon(2S)X" texName="\Upsilon(2S\;)\;X" fraction="&lt; 1.39E-4" PUnit="MeV/c"> 
+      </Decay> 
+      <Decay name="Upsilon(3S)X" texName="\Upsilon(3S\;)\;X" fraction="&lt; 9.4E-5" PUnit="MeV/c"> 
+      </Decay> 
+      <Decay name="B(s)0X" texName="B^{0}_{s}X" fraction="seen" PUnit="MeV/c"> 
+      </Decay> 
+      <Decay name="B(c)+X" texName="B^{+}_{c}X" fraction="searched for" PUnit="MeV/c"> 
+      </Decay> 
+      <Decay name="anomalousgamma+hadrons" texName="anomalous\;\gamma\;+\;hadrons" fraction="&lt; 3.2E-3" PUnit="MeV/c"> 
+      </Decay> 
+      <Decay name="e+e-gamma" texName="e^{+}e^{-}\gamma" fraction="&lt; 5.2E-4" PUnit="MeV/c"> 
+      </Decay> 
+      <Decay name="mu+mu-gamma" texName="mu^{+}mu^{-}\gamma" fraction="&lt; 5.6E-4" PUnit="MeV/c"> 
+      </Decay> 
+      <Decay name="tau+tau-gamma" texName="\tau^{+}\tau^{-}\gamma" fraction="&lt; 7.3E-4" PUnit="MeV/c"> 
+      </Decay> 
+      <Decay name="ell+ell-gammagamma" texName="\ell^{+}\ell^{-}\gamma\;\gamma" fraction="&lt; 6.8E-6" PUnit="MeV/c"> 
+      </Decay> 
+      <Decay name="qqgammagamma" texName="q\;q\;\gamma\;\gamma" fraction="&lt; 5.5E-6" PUnit="MeV/c"> 
+      </Decay> 
+      <Decay name="nunugammagamma" texName="nu\;nu\;\gamma\;\gamma" fraction="&lt; 3.1E-6" PUnit="MeV/c"> 
+      </Decay> 
+      <Decay name="e+mump" texName="e^{\pm}mu^{\mp}" fraction="&lt; 1.7E-6" PUnit="MeV/c"> 
+      </Decay> 
+      <Decay name="e+taump" texName="e^{\pm}\tau^{\mp}" fraction="&lt; 9.8E-6" PUnit="MeV/c"> 
+      </Decay> 
+      <Decay name="mu+taump" texName="mu^{\pm}\tau^{\mp}" fraction="&lt; 1.2E-5" PUnit="MeV/c"> 
+      </Decay> 
+      <Decay name="pe" texName="p\;e" fraction="&lt; 1.8E-6" PUnit="MeV/c"> 
+      </Decay> 
+      <Decay name="pmu" texName="p\;mu" fraction="&lt; 1.8E-6" PUnit="MeV/c"> 
+      </Decay> 
+   </ParticleType> 
+   <ParticleType name="HiggsBosons---H0andH+,Searchesfor" > 
+   </ParticleType> 
+   <ParticleType name="HeavyBosonsOtherThan---HiggsBosons,Searchesfor" > 
+   </ParticleType> 
+   <ParticleType name="Axions(A0)andOther---VeryLightBosons,Searchesfor" > 
+   </ParticleType> 
+   <ParticleType name="e-" > 
+   </ParticleType> 
+   <ParticleType name="mu-" > 
+      <Decay name="e-nu(e)nu(mu)" texName="e^{-}nu_{e}nu_{mu}" fraction="~~ 100" PUnit="MeV/c"> 
+      </Decay> 
+      <Decay name="e-nu(e)nu(mu)" texName="e^{-}nu_{e}nu_{mu}" fraction="&lt; 1.2" PUnit="MeV/c"> 
+      </Decay> 
+      <Decay name="e-gamma" texName="e^{-}\gamma" fraction="&lt; 1.2E-11" PUnit="MeV/c"> 
+      </Decay> 
+      <Decay name="e-e+e-" texName="e^{-}e^{+}e^{-}" fraction="&lt; 1.0E-12" PUnit="MeV/c"> 
+      </Decay> 
+      <Decay name="e-2gamma" texName="e^{-}2\gamma" fraction="&lt; 7.2E-11" PUnit="MeV/c"> 
+      </Decay> 
+   </ParticleType> 
+   <ParticleType name="tau-" > 
+      <Decay name="particle-geq" texName="particle^{-}\geq" fraction="0" PUnit="MeV/c"> 
+      </Decay> 
+      <Decay name="K-pi0nu(tau)" texName="K^{-}pi^{0}nu_{\tau}" fraction="&lt; 3.9E-4" posError="2.3E-4" negError="2.1E-4" PUnit="MeV/c"> 
+      </Decay> 
+      <Decay name="K0---(non-K---*---(892)-------)nu---tau" texName="K^{0}\;---\;(non-\;K\;---\;\ast\;---\;(892)\;---\;-\;---\;)\;nu\;---\;\tau" fraction="&lt; 1.55E-3" posError="0.17E-3" negError="0.17E-3" PUnit="MeV/c"> 
+      </Decay> 
+      <Decay name="K0h+h-h-geq0neutralsnu(tau)" texName="K^{0}h^{+}h^{-}h^{-}\geq\;0\;neutrals\;nu_{\tau}" fraction="&lt; 1.7E-3" PUnit="MeV/c"> 
+      </Decay> 
+      <Decay name="pi-pi+pi-nu(tau)(ex.K0),---non-axialvector" texName="pi^{-}pi^{+}pi^{-}nu_{\tau}(ex.K^{0}),\;---\;non-axial\;vector" fraction="&lt; 2.4" PUnit="MeV/c"> 
+      </Decay> 
+      <Decay name="pi-K+pi-geq0neut.nu(tau)" texName="pi^{-}K^{+}pi^{-}\geq\;0\;neut.\;nu_{\tau}" fraction="&lt; 2.5E-3" PUnit="MeV/c"> 
+      </Decay> 
+      <Decay name="mu-e-e+nu(mu)nu(tau)" texName="mu^{-}e^{-}e^{+}nu_{mu}nu_{\tau}" fraction="&lt; 3.6E-5" PUnit="MeV/c"> 
+      </Decay> 
+      <Decay name="" texName="" fraction="3" PUnit="MeV/c"> 
+      </Decay> 
+      <Decay name="(ex.K" texName="(ex.\;K" fraction="0" PUnit="MeV/c"> 
+      </Decay> 
+      <Decay name="3h-2h+2pi0nu(tau)" texName="3h^{-}2h^{+}2pi^{0}nu_{\tau}" fraction="&lt; 1.1E-4" PUnit="MeV/c"> 
+      </Decay> 
+      <Decay name="" texName="" fraction="4" PUnit="MeV/c"> 
+      </Decay> 
+      <Decay name="(GammaprongXGamma" texName="(\GammaprongX\Gamma" fraction="&lt; 2.4E-6" PUnit="MeV/c"> 
+      </Decay> 
+      <Decay name="(K*" texName="(\;K^{\ast}" fraction="892" PUnit="MeV/c"> 
+      </Decay> 
+      <Decay name="etapi-nu(tau)" texName="\eta\;pi^{-}nu_{\tau}" fraction="&lt; 1.4E-4" PUnit="MeV/c"> 
+      </Decay> 
+      <Decay name="etaa(1)(1260)-nu(tau)arrowrightetapi-rho0nu(tau)" texName="\eta\;a_{1}(1260)^{-}nu_{\tau}\arrowright\;\eta\;pi^{-}\rho^{0}nu_{\tau}" fraction="&lt; 3.9E-4" PUnit="MeV/c"> 
+      </Decay> 
+      <Decay name="etaetapi-nu(tau)" texName="\eta\;\eta\;pi^{-}nu_{\tau}" fraction="&lt; 1.1E-4" PUnit="MeV/c"> 
+      </Decay> 
+      <Decay name="etaetapi-pi0nu(tau)" texName="\eta\;\eta\;pi^{-}pi^{0}nu_{\tau}" fraction="&lt; 2.0E-4" PUnit="MeV/c"> 
+      </Decay> 
+      <Decay name="eta'(958)pi-nu(tau)" texName="\eta^{\prime}(958)\;pi^{-}nu_{\tau}" fraction="&lt; 7.4E-5" PUnit="MeV/c"> 
+      </Decay> 
+      <Decay name="eta'(958)pi-pi0nu(tau)" texName="\eta^{\prime}(958)\;pi^{-}pi^{0}nu_{\tau}" fraction="&lt; 8.0E-5" PUnit="MeV/c"> 
+      </Decay> 
+      <Decay name="phipi-nu(tau)" texName="\phi\;pi^{-}nu_{\tau}" fraction="&lt; 2.0E-4" PUnit="MeV/c"> 
+      </Decay> 
+      <Decay name="phiK-nu(tau)" texName="\phi\;K^{-}nu_{\tau}" fraction="&lt; 6.7E-5" PUnit="MeV/c"> 
+      </Decay> 
+      <Decay name="pi(1300)-nu(tau)arrowright(rhopi)-nu(tau)arrowright---(3pi)-------nu---tau" texName="pi\;(1300)^{-}nu_{\tau}\arrowright\;(\rho\;pi\;)^{-}nu_{\tau}\arrowright\;---\;(3pi\;)\;---\;-\;---\;nu\;---\;\tau" fraction="&lt; 1.0E-4" PUnit="MeV/c"> 
+      </Decay> 
+      <Decay name="pi(1300)-nu(tau)arrowright---((pipi)---S-wave---pi)-------nu---tau---arrowright---(3pi)-------nu---tau" texName="pi\;(1300)^{-}nu_{\tau}\arrowright\;---\;((pi\;pi\;)\;---\;S-wave\;---\;pi\;)\;---\;-\;---\;nu\;---\;\tau\;---\;\arrowright\;---\;(3pi\;)\;---\;-\;---\;nu\;---\;\tau" fraction="&lt; 1.9E-4" PUnit="MeV/c"> 
+      </Decay> 
+      <Decay name="e-gamma" texName="e^{-}\gamma" fraction="&lt; 2.7E-6" PUnit="MeV/c"> 
+      </Decay> 
+      <Decay name="mu-gamma" texName="mu^{-}\gamma" fraction="&lt; 1.1E-6" PUnit="MeV/c"> 
+      </Decay> 
+      <Decay name="e-pi0" texName="e^{-}pi^{0}" fraction="&lt; 3.7E-6" PUnit="MeV/c"> 
+      </Decay> 
+      <Decay name="mu-pi0" texName="mu^{-}pi^{0}" fraction="&lt; 4.0E-6" PUnit="MeV/c"> 
+      </Decay> 
+      <Decay name="e-K0" texName="e^{-}K^{0}" fraction="&lt; 1.3E-3" PUnit="MeV/c"> 
+      </Decay> 
+      <Decay name="mu-K0" texName="mu^{-}K^{0}" fraction="&lt; 1.0E-3" PUnit="MeV/c"> 
+      </Decay> 
+      <Decay name="e-eta" texName="e^{-}\eta" fraction="&lt; 8.2E-6" PUnit="MeV/c"> 
+      </Decay> 
+      <Decay name="mu-eta" texName="mu^{-}\eta" fraction="&lt; 9.6E-6" PUnit="MeV/c"> 
+      </Decay> 
+      <Decay name="e-rho0" texName="e^{-}\rho^{0}" fraction="&lt; 2.0E-6" PUnit="MeV/c"> 
+      </Decay> 
+      <Decay name="mu-rho0" texName="mu^{-}\rho^{0}" fraction="&lt; 6.3E-6" PUnit="MeV/c"> 
+      </Decay> 
+      <Decay name="e-K*(892)0" texName="e^{-}K^{\ast}(892)^{0}" fraction="&lt; 5.1E-6" PUnit="MeV/c"> 
+      </Decay> 
+      <Decay name="mu-K*(892)0" texName="mu^{-}K^{\ast}(892)^{0}" fraction="&lt; 7.5E-6" PUnit="MeV/c"> 
+      </Decay> 
+      <Decay name="e-K*(892)0" texName="e^{-}K^{\ast}(892)^{0}" fraction="&lt; 7.4E-6" PUnit="MeV/c"> 
+      </Decay> 
+      <Decay name="mu-K*(892)0" texName="mu^{-}K^{\ast}(892)^{0}" fraction="&lt; 7.5E-6" PUnit="MeV/c"> 
+      </Decay> 
+      <Decay name="e-phi" texName="e^{-}\phi" fraction="&lt; 6.9E-6" PUnit="MeV/c"> 
+      </Decay> 
+      <Decay name="mu-phi" texName="mu^{-}\phi" fraction="&lt; 7.0E-6" PUnit="MeV/c"> 
+      </Decay> 
+      <Decay name="pi-gammaL" texName="pi^{-}\gamma\;L" fraction="&lt; 2.8E-4" PUnit="MeV/c"> 
+      </Decay> 
+      <Decay name="pi-pi0L" texName="pi^{-}pi^{0}L" fraction="&lt; 3.7E-4" PUnit="MeV/c"> 
+      </Decay> 
+      <Decay name="e-e+e-" texName="e^{-}e^{+}e^{-}" fraction="&lt; 2.9E-6" PUnit="MeV/c"> 
+      </Decay> 
+      <Decay name="e-mu+mu-" texName="e^{-}mu^{+}mu^{-}" fraction="&lt; 1.8E-6" PUnit="MeV/c"> 
+      </Decay> 
+      <Decay name="e+mu-mu-" texName="e^{+}mu^{-}mu^{-}" fraction="&lt; 1.5E-6" PUnit="MeV/c"> 
+      </Decay> 
+      <Decay name="mu-e+e-" texName="mu^{-}e^{+}e^{-}" fraction="&lt; 1.7E-6" PUnit="MeV/c"> 
+      </Decay> 
+      <Decay name="mu+e-e-" texName="mu^{+}e^{-}e^{-}" fraction="&lt; 1.5E-6" PUnit="MeV/c"> 
+      </Decay> 
+      <Decay name="mu-mu+mu-" texName="mu^{-}mu^{+}mu^{-}" fraction="&lt; 1.9E-6" PUnit="MeV/c"> 
+      </Decay> 
+      <Decay name="e-pi+pi-" texName="e^{-}pi^{+}pi^{-}" fraction="&lt; 2.2E-6" PUnit="MeV/c"> 
+      </Decay> 
+      <Decay name="e+pi-pi-L" texName="e^{+}pi^{-}pi^{-}L" fraction="&lt; 1.9E-6" PUnit="MeV/c"> 
+      </Decay> 
+      <Decay name="mu-pi+pi-" texName="mu^{-}pi^{+}pi^{-}" fraction="&lt; 8.2E-6" PUnit="MeV/c"> 
+      </Decay> 
+      <Decay name="mu+pi-pi-L" texName="mu^{+}pi^{-}pi^{-}L" fraction="&lt; 3.4E-6" PUnit="MeV/c"> 
+      </Decay> 
+      <Decay name="e-pi+K-" texName="e^{-}pi^{+}K^{-}" fraction="&lt; 6.4E-6" PUnit="MeV/c"> 
+      </Decay> 
+      <Decay name="e-pi-K+" texName="e^{-}pi^{-}K^{+}" fraction="&lt; 3.8E-6" PUnit="MeV/c"> 
+      </Decay> 
+      <Decay name="e+pi-K-L" texName="e^{+}pi^{-}K^{-}L" fraction="&lt; 2.1E-6" PUnit="MeV/c"> 
+      </Decay> 
+      <Decay name="e-K+K-" texName="e^{-}K^{+}K^{-}" fraction="&lt; 6.0E-6" PUnit="MeV/c"> 
+      </Decay> 
+      <Decay name="e+K-K-L" texName="e^{+}K^{-}K^{-}L" fraction="&lt; 3.8E-6" PUnit="MeV/c"> 
+      </Decay> 
+      <Decay name="mu-pi+K-" texName="mu^{-}pi^{+}K^{-}" fraction="&lt; 7.5E-6" PUnit="MeV/c"> 
+      </Decay> 
+      <Decay name="mu-pi-K+" texName="mu^{-}pi^{-}K^{+}" fraction="&lt; 7.4E-6" PUnit="MeV/c"> 
+      </Decay> 
+      <Decay name="mu+pi-K-L" texName="mu^{+}pi^{-}K^{-}L" fraction="&lt; 7.0E-6" PUnit="MeV/c"> 
+      </Decay> 
+      <Decay name="mu-K+K-" texName="mu^{-}K^{+}K^{-}" fraction="&lt; 1.5E-5" PUnit="MeV/c"> 
+      </Decay> 
+      <Decay name="mu+K-K-L" texName="mu^{+}K^{-}K^{-}L" fraction="&lt; 6.0E-6" PUnit="MeV/c"> 
+      </Decay> 
+      <Decay name="e-pi0pi0" texName="e^{-}pi^{0}pi^{0}" fraction="&lt; 6.5E-6" PUnit="MeV/c"> 
+      </Decay> 
+      <Decay name="mu-pi0pi0" texName="mu^{-}pi^{0}pi^{0}" fraction="&lt; 1.4E-5" PUnit="MeV/c"> 
+      </Decay> 
+      <Decay name="e-etaeta" texName="e^{-}\eta\;\eta" fraction="&lt; 3.5E-5" PUnit="MeV/c"> 
+      </Decay> 
+      <Decay name="mu-etaeta" texName="mu^{-}\eta\;\eta" fraction="&lt; 6.0E-5" PUnit="MeV/c"> 
+      </Decay> 
+      <Decay name="e-pi0eta" texName="e^{-}pi^{0}\eta" fraction="&lt; 2.4E-5" PUnit="MeV/c"> 
+      </Decay> 
+      <Decay name="mu-pi0eta" texName="mu^{-}pi^{0}\eta" fraction="&lt; 2.2E-5" PUnit="MeV/c"> 
+      </Decay> 
+      <Decay name="pgamma" texName="p\;\gamma" fraction="&lt; 3.5E-6" PUnit="MeV/c"> 
+      </Decay> 
+      <Decay name="ppi0" texName="p\;pi^{0}" fraction="&lt; 1.5E-5" PUnit="MeV/c"> 
+      </Decay> 
+      <Decay name="p2pi0" texName="p\;2pi^{0}" fraction="&lt; 3.3E-5" PUnit="MeV/c"> 
+      </Decay> 
+      <Decay name="peta" texName="p\;\eta" fraction="&lt; 8.9E-6" PUnit="MeV/c"> 
+      </Decay> 
+      <Decay name="ppi0eta" texName="p\;pi^{0}\eta" fraction="&lt; 2.7E-5" PUnit="MeV/c"> 
+      </Decay> 
+      <Decay name="e-lightboson" texName="e^{-}light\;boson" fraction="&lt; 2.7E-3" PUnit="MeV/c"> 
+      </Decay> 
+      <Decay name="mu-lightboson" texName="mu^{-}light\;boson" fraction="&lt; 5E-3" PUnit="MeV/c"> 
+      </Decay> 
+   </ParticleType> 
+   <ParticleType name="HeavyChargedLeptonSearches" > 
+   </ParticleType> 
+   <ParticleType name="Neutrinos" > 
+   </ParticleType> 
+   <ParticleType name="nu(e)" > 
+   </ParticleType> 
+   <ParticleType name="nu(mu)" > 
+   </ParticleType> 
+   <ParticleType name="nu(tau)" > 
+   </ParticleType> 
+   <ParticleType name="NumberofLightNeutrinoTypes" > 
+   </ParticleType> 
+   <ParticleType name="MassiveNeutrinosand---LeptonMixing,Searchesfor+" > 
+   </ParticleType> 
+   <ParticleType name="u" > 
+   </ParticleType> 
+   <ParticleType name="d" > 
+   </ParticleType> 
+   <ParticleType name="s" > 
+   </ParticleType> 
+   <ParticleType name="c" > 
+   </ParticleType> 
+   <ParticleType name="b" > 
+   </ParticleType> 
+   <ParticleType name="t" > 
+      <Decay name="gammaq(q=u,c)" texName="\gamma\;q\;(q\;=u\;,c)" fraction="&lt; 3.2" PUnit="MeV/c"> 
+      </Decay> 
+      <Decay name="Zq(q=u,c)T1" texName="Z\;q\;(q\;=u\;,c)\;T1" fraction="&lt; 33" PUnit="MeV/c"> 
+      </Decay> 
+   </ParticleType> 
+   <ParticleType name="b'(4thGeneration)Quark,Searchesfor" > 
+   </ParticleType> 
+   <ParticleType name="FreeQuarkSearches" > 
+   </ParticleType> 
+   <ParticleType name="pi+" > 
+      <Decay name="e+nu(e)nunu" texName="e^{+}nu_{e}nu\;nu" fraction="&lt; 5E-6" PUnit="MeV/c"> 
+      </Decay> 
+      <Decay name="mu+nu(e)L" texName="mu^{+}nu_{e}L" fraction="&lt; 1.5E-3" PUnit="MeV/c"> 
+      </Decay> 
+      <Decay name="mu+nu(e)" texName="mu^{+}nu_{e}" fraction="&lt; 8.0E-3" PUnit="MeV/c"> 
+      </Decay> 
+      <Decay name="mu-e+e+nu" texName="mu^{-}e^{+}e^{+}nu" fraction="&lt; 1.6E-6" PUnit="MeV/c"> 
+      </Decay> 
+   </ParticleType> 
+   <ParticleType name="pi0" > 
+      <Decay name="nunu" texName="nu\;nu" fraction="&lt; 8.3E-7" PUnit="MeV/c"> 
+      </Decay> 
+      <Decay name="nu(e)nu(e)" texName="nu_{e}nu_{e}" fraction="&lt; 1.7E-6" PUnit="MeV/c"> 
+      </Decay> 
+      <Decay name="nu(mu)nu(mu)" texName="nu_{mu}nu_{mu}" fraction="&lt; 3.1E-6" PUnit="MeV/c"> 
+      </Decay> 
+      <Decay name="nu(tau)nu(tau)" texName="nu_{\tau}nu_{\tau}" fraction="&lt; 2.1E-6" PUnit="MeV/c"> 
+      </Decay> 
+      <Decay name="3gamma" texName="3\gamma" fraction="&lt; 3.1E-8" PUnit="MeV/c"> 
+      </Decay> 
+      <Decay name="mu+e-+e-mu+" texName="mu^{+}e^{-}+\;e^{-}mu^{+}" fraction="&lt; 1.72E-8" PUnit="MeV/c"> 
+      </Decay> 
+   </ParticleType> 
+   <ParticleType name="eta" > 
+      <Decay name="otherneutralmodes" texName="other\;neutral\;modes" fraction="&lt; 2.8" PUnit="MeV/c"> 
+      </Decay> 
+      <Decay name="e+e-" texName="e^{+}e^{-}" fraction="&lt; 7.7E-5" PUnit="MeV/c"> 
+      </Decay> 
+      <Decay name="pi+pi-2gamma" texName="pi^{+}pi^{-}2\gamma" fraction="&lt; 2.1E-3" PUnit="MeV/c"> 
+      </Decay> 
+      <Decay name="pi+pi-" texName="pi^{+}pi^{-}" fraction="&lt; 3.3E-4" PUnit="MeV/c"> 
+      </Decay> 
+      <Decay name="pi0pi0" texName="pi^{0}pi^{0}" fraction="&lt; 4.3E-4" PUnit="MeV/c"> 
+      </Decay> 
+      <Decay name="mu+e-+mu-e+" texName="mu^{+}e^{-}+\;mu^{-}e^{+}" fraction="&lt; 6E-6" PUnit="MeV/c"> 
+      </Decay> 
+   </ParticleType> 
+   <ParticleType name="f(0)(400--1200)" > 
+      <Decay name="pipi" texName="pi\;pi" fraction="dominant" PUnit="MeV/c"> 
+      </Decay> 
+      <Decay name="gammagamma" texName="\gamma\;\gamma" fraction="seen" PUnit="MeV/c"> 
+      </Decay> 
+   </ParticleType> 
+   <ParticleType name="rho(770)0" > 
+      <Decay name="pi+eta" texName="pi^{\pm}\eta" fraction="&lt; 6E-3" PUnit="MeV/c"> 
+      </Decay> 
+      <Decay name="pi+pi+pi-pi0" texName="pi^{\pm}pi^{+}pi^{-}pi^{0}" fraction="&lt; 2.0E-3" PUnit="MeV/c"> 
+      </Decay> 
+      <Decay name="pi+pi-pi0" texName="pi^{+}pi^{-}pi^{0}" fraction="&lt; 1.2E-4" PUnit="MeV/c"> 
+      </Decay> 
+   </ParticleType> 
+   <ParticleType name="rho(770)+" > 
+      <Decay name="pi+eta" texName="pi^{\pm}\eta" fraction="&lt; 6E-3" PUnit="MeV/c"> 
+      </Decay> 
+      <Decay name="pi+pi+pi-pi0" texName="pi^{\pm}pi^{+}pi^{-}pi^{0}" fraction="&lt; 2.0E-3" PUnit="MeV/c"> 
+      </Decay> 
+      <Decay name="pi+pi-pi0" texName="pi^{+}pi^{-}pi^{0}" fraction="&lt; 1.2E-4" PUnit="MeV/c"> 
+      </Decay> 
+   </ParticleType> 
+   <ParticleType name="omega(782)" > 
+      <Decay name="pi+pi-gamma" texName="pi^{+}pi^{-}\gamma" fraction="&lt; 3.6E-3" PUnit="MeV/c"> 
+      </Decay> 
+      <Decay name="pi+pi-pi+pi-" texName="pi^{+}pi^{-}pi^{+}pi^{-}" fraction="&lt; 1E-3" PUnit="MeV/c"> 
+      </Decay> 
+      <Decay name="mu+mu-" texName="mu^{+}mu^{-}" fraction="&lt; 1.8E-4" PUnit="MeV/c"> 
+      </Decay> 
+      <Decay name="3gamma" texName="3\gamma" fraction="&lt; 1.9E-4" PUnit="MeV/c"> 
+      </Decay> 
+   </ParticleType> 
+   <ParticleType name="eta'(958)" > 
+      <Decay name="rho" texName="\rho" fraction="0" PUnit="MeV/c"> 
+      </Decay> 
+      <Decay name="pi+pi+pi-pi-" texName="pi^{+}pi^{+}pi^{-}pi^{-}" fraction="&lt; 1" PUnit="MeV/c"> 
+      </Decay> 
+      <Decay name="pi+pi+pi-pi-neutrals" texName="pi^{+}pi^{+}pi^{-}pi^{-}neutrals" fraction="&lt; 1" PUnit="MeV/c"> 
+      </Decay> 
+      <Decay name="pi+pi-e+e-" texName="pi^{+}pi^{-}e^{+}e^{-}" fraction="&lt; 6E-3" PUnit="MeV/c"> 
+      </Decay> 
+      <Decay name="e+e-" texName="e^{+}e^{-}" fraction="&lt; 2.1E-7" PUnit="MeV/c"> 
+      </Decay> 
+      <Decay name="pi+pi-" texName="pi^{+}pi^{-}" fraction="&lt; 2" PUnit="MeV/c"> 
+      </Decay> 
+      <Decay name="gammae+e-" texName="\gamma\;e^{+}e^{-}" fraction="&lt; 9E-4" PUnit="MeV/c"> 
+      </Decay> 
+      <Decay name="pi0e+e-" texName="pi^{0}e^{+}e^{-}" fraction="&lt; 1.4E-3" PUnit="MeV/c"> 
+      </Decay> 
+      <Decay name="etae+e-" texName="\eta\;e^{+}e^{-}" fraction="&lt; 2.4E-3" PUnit="MeV/c"> 
+      </Decay> 
+      <Decay name="3gamma" texName="3\gamma" fraction="&lt; 1.0E-4" PUnit="MeV/c"> 
+      </Decay> 
+      <Decay name="mu+mu-pi0" texName="mu^{+}mu^{-}pi^{0}" fraction="&lt; 6.0E-5" PUnit="MeV/c"> 
+      </Decay> 
+      <Decay name="mu+mu-eta" texName="mu^{+}mu^{-}\eta" fraction="&lt; 1.5E-5" PUnit="MeV/c"> 
+      </Decay> 
+      <Decay name="emu" texName="e\;mu" fraction="&lt; 4.7E-4" PUnit="MeV/c"> 
+      </Decay> 
+   </ParticleType> 
+   <ParticleType name="f(0)(980)" > 
+      <Decay name="pipi" texName="pi\;pi" fraction="dominant" PUnit="MeV/c"> 
+      </Decay> 
+      <Decay name="KK" texName="K\;K" fraction="seen" PUnit="MeV/c"> 
+      </Decay> 
+   </ParticleType> 
+   <ParticleType name="a(0)(980)0" > 
+      <Decay name="etapi" texName="\eta\;pi" fraction="dominant" PUnit="MeV/c"> 
+      </Decay> 
+      <Decay name="KK" texName="K\;K" fraction="seen" PUnit="MeV/c"> 
+      </Decay> 
+      <Decay name="gammagamma" texName="\gamma\;\gamma" fraction="seen" PUnit="MeV/c"> 
+      </Decay> 
+   </ParticleType> 
+   <ParticleType name="a(0)(980)+" > 
+      <Decay name="etapi" texName="\eta\;pi" fraction="dominant" PUnit="MeV/c"> 
+      </Decay> 
+      <Decay name="KK" texName="K\;K" fraction="seen" PUnit="MeV/c"> 
+      </Decay> 
+      <Decay name="gammagamma" texName="\gamma\;\gamma" fraction="seen" PUnit="MeV/c"> 
+      </Decay> 
+   </ParticleType> 
+   <ParticleType name="phi(1020)" > 
+      <Decay name="omegagamma" texName="\omega\;\gamma" fraction="&lt; 5" PUnit="MeV/c"> 
+      </Decay> 
+      <Decay name="rhogamma" texName="\rho\;\gamma" fraction="&lt; 1.2E-5" PUnit="MeV/c"> 
+      </Decay> 
+      <Decay name="pi+pi-pi+pi-" texName="pi^{+}pi^{-}pi^{+}pi^{-}" fraction="&lt; 8.7E-4" PUnit="MeV/c"> 
+      </Decay> 
+      <Decay name="pi+pi+pi-pi-pi0" texName="pi^{+}pi^{+}pi^{-}pi^{-}pi^{0}" fraction="&lt; 1.5E-4" PUnit="MeV/c"> 
+      </Decay> 
+      <Decay name="pi0e+e-" texName="pi^{0}e^{+}e^{-}" fraction="&lt; 1.2E-4" PUnit="MeV/c"> 
+      </Decay> 
+      <Decay name="rhogammagamma" texName="\rho\;\gamma\;\gamma" fraction="&lt; 5E-4" PUnit="MeV/c"> 
+      </Decay> 
+      <Decay name="etapi+pi-" texName="\eta\;pi^{+}pi^{-}" fraction="&lt; 3E-4" PUnit="MeV/c"> 
+      </Decay> 
+   </ParticleType> 
+   <ParticleType name="h(1)(1170)" > 
+      <Decay name="rhopi" texName="\rho\;pi" fraction="seen" PUnit="MeV/c"> 
+      </Decay> 
+   </ParticleType> 
+   <ParticleType name="b(1)(1235)0" > 
+      <Decay name="omegapi" texName="\omega\;pi" fraction="dominant" PUnit="MeV/c"> 
+      </Decay> 
+      <Decay name="etarho" texName="\eta\;\rho" fraction="seen" PUnit="MeV/c"> 
+      </Decay> 
+      <Decay name="phipi" texName="\phi\;pi" fraction="&lt; 1.5" PUnit="MeV/c"> 
+      </Decay> 
+   </ParticleType> 
+   <ParticleType name="b(1)(1235)+" > 
+      <Decay name="omegapi" texName="\omega\;pi" fraction="dominant" PUnit="MeV/c"> 
+      </Decay> 
+      <Decay name="etarho" texName="\eta\;\rho" fraction="seen" PUnit="MeV/c"> 
+      </Decay> 
+      <Decay name="phipi" texName="\phi\;pi" fraction="&lt; 1.5" PUnit="MeV/c"> 
+      </Decay> 
+   </ParticleType> 
+   <ParticleType name="a(1)(1260)0" > 
+      <Decay name="(rhopi)(S-wave)" texName="(\;\rho\;pi\;)_{S-wave}" fraction="seen" PUnit="MeV/c"> 
+      </Decay> 
+      <Decay name="(rhopi)(D-wave)" texName="(\;\rho\;pi\;)_{D-wave}" fraction="seen" PUnit="MeV/c"> 
+      </Decay> 
+      <Decay name="(rho(1450)pi)(S-wave)" texName="(\;\rho(1450)\;pi\;)_{S-wave}" fraction="seen" PUnit="MeV/c"> 
+      </Decay> 
+      <Decay name="(rho(1450)pi)(D-wave)" texName="(\;\rho(1450)\;pi\;)_{D-wave}" fraction="seen" PUnit="MeV/c"> 
+      </Decay> 
+      <Decay name="sigmapi" texName="\sigma\;pi" fraction="seen" PUnit="MeV/c"> 
+      </Decay> 
+      <Decay name="f(0)(980)pi" texName="f_{0}(980)\;pi" fraction="not seen" PUnit="MeV/c"> 
+      </Decay> 
+      <Decay name="f(0)(1370)pi" texName="f_{0}(1370)\;pi" fraction="seen" PUnit="MeV/c"> 
+      </Decay> 
+      <Decay name="f(2)(1270)pi" texName="f_{2}(1270)\;pi" fraction="seen" PUnit="MeV/c"> 
+      </Decay> 
+      <Decay name="KK*(892)+c.c." texName="K\;K^{\ast}(892)\;+c.c." fraction="seen" PUnit="MeV/c"> 
+      </Decay> 
+      <Decay name="pi(1300)pi" texName="pi\;(1300)\;pi" fraction="not seen" PUnit="MeV/c"> 
+      </Decay> 
+      <Decay name="pigamma" texName="pi\;\gamma" fraction="seen" PUnit="MeV/c"> 
+      </Decay> 
+   </ParticleType> 
+   <ParticleType name="a(1)(1260)+" > 
+      <Decay name="(rhopi)(S-wave)" texName="(\;\rho\;pi\;)_{S-wave}" fraction="seen" PUnit="MeV/c"> 
+      </Decay> 
+      <Decay name="(rhopi)(D-wave)" texName="(\;\rho\;pi\;)_{D-wave}" fraction="seen" PUnit="MeV/c"> 
+      </Decay> 
+      <Decay name="(rho(1450)pi)(S-wave)" texName="(\;\rho(1450)\;pi\;)_{S-wave}" fraction="seen" PUnit="MeV/c"> 
+      </Decay> 
+      <Decay name="(rho(1450)pi)(D-wave)" texName="(\;\rho(1450)\;pi\;)_{D-wave}" fraction="seen" PUnit="MeV/c"> 
+      </Decay> 
+      <Decay name="sigmapi" texName="\sigma\;pi" fraction="seen" PUnit="MeV/c"> 
+      </Decay> 
+      <Decay name="f(0)(980)pi" texName="f_{0}(980)\;pi" fraction="not seen" PUnit="MeV/c"> 
+      </Decay> 
+      <Decay name="f(0)(1370)pi" texName="f_{0}(1370)\;pi" fraction="seen" PUnit="MeV/c"> 
+      </Decay> 
+      <Decay name="f(2)(1270)pi" texName="f_{2}(1270)\;pi" fraction="seen" PUnit="MeV/c"> 
+      </Decay> 
+      <Decay name="KK*(892)+c.c." texName="K\;K^{\ast}(892)\;+c.c." fraction="seen" PUnit="MeV/c"> 
+      </Decay> 
+      <Decay name="pi(1300)pi" texName="pi\;(1300)\;pi" fraction="not seen" PUnit="MeV/c"> 
+      </Decay> 
+      <Decay name="pigamma" texName="pi\;\gamma" fraction="seen" PUnit="MeV/c"> 
+      </Decay> 
+   </ParticleType> 
+   <ParticleType name="f(2)(1270)" > 
+      <Decay name="etapipi" texName="\eta\;pi\;pi" fraction="&lt; 8E-3" PUnit="MeV/c"> 
+      </Decay> 
+      <Decay name="K0K-pi++c.c." texName="K^{0}K^{-}pi^{+}+\;c.c." fraction="&lt; 3.4E-3" PUnit="MeV/c"> 
+      </Decay> 
+      <Decay name="e+e-" texName="e^{+}e^{-}" fraction="&lt; 9E-9" PUnit="MeV/c"> 
+      </Decay> 
+   </ParticleType> 
+   <ParticleType name="f(1)(1285)" > 
+      <Decay name="KK*(892)" texName="K\;K^{\ast}(892)" fraction="not seen" PUnit="MeV/c"> 
+      </Decay> 
+   </ParticleType> 
+   <ParticleType name="eta(1295)" > 
+      <Decay name="etapi+pi-" texName="\eta\;pi^{+}pi^{-}" fraction="seen" PUnit="MeV/c"> 
+      </Decay> 
+      <Decay name="a(0)(980)pi" texName="a_{0}(980)\;pi" fraction="seen" PUnit="MeV/c"> 
+      </Decay> 
+      <Decay name="etapi0pi0" texName="\eta\;pi^{0}pi^{0}" fraction="seen" PUnit="MeV/c"> 
+      </Decay> 
+      <Decay name="eta(pipi)(S-wave)" texName="\eta\;(pi\;pi\;)_{S-wave}" fraction="seen" PUnit="MeV/c"> 
+      </Decay> 
+   </ParticleType> 
+   <ParticleType name="pi(1300)0" > 
+      <Decay name="rhopi" texName="\rho\;pi" fraction="seen" PUnit="MeV/c"> 
+      </Decay> 
+      <Decay name="pi(pipi)(S-wave)" texName="pi\;(pi\;pi\;)_{S-wave}" fraction="seen" PUnit="MeV/c"> 
+      </Decay> 
+   </ParticleType> 
+   <ParticleType name="pi(1300)+" > 
+      <Decay name="rhopi" texName="\rho\;pi" fraction="seen" PUnit="MeV/c"> 
+      </Decay> 
+      <Decay name="pi(pipi)(S-wave)" texName="pi\;(pi\;pi\;)_{S-wave}" fraction="seen" PUnit="MeV/c"> 
+      </Decay> 
+   </ParticleType> 
+   <ParticleType name="a(2)(1320)0" > 
+      <Decay name="pi+pi-pi-" texName="pi^{+}pi^{-}pi^{-}" fraction="&lt; 8" PUnit="MeV/c"> 
+      </Decay> 
+      <Decay name="e+e-" texName="e^{+}e^{-}" fraction="&lt; 2.3E-7" PUnit="MeV/c"> 
+      </Decay> 
+   </ParticleType> 
+   <ParticleType name="a(2)(1320)+" > 
+      <Decay name="pi+pi-pi-" texName="pi^{+}pi^{-}pi^{-}" fraction="&lt; 8" PUnit="MeV/c"> 
+      </Decay> 
+      <Decay name="e+e-" texName="e^{+}e^{-}" fraction="&lt; 2.3E-7" PUnit="MeV/c"> 
+      </Decay> 
+   </ParticleType> 
+   <ParticleType name="f(0)(1370)" > 
+      <Decay name="pipi" texName="pi\;pi" fraction="seen" PUnit="MeV/c"> 
+      </Decay> 
+      <Decay name="4pi" texName="4pi" fraction="seen" PUnit="MeV/c"> 
+      </Decay> 
+      <Decay name="4pi0" texName="4pi^{0}" fraction="seen" PUnit="MeV/c"> 
+      </Decay> 
+      <Decay name="2pi+2pi-" texName="2pi^{+}2pi^{-}" fraction="seen" PUnit="MeV/c"> 
+      </Decay> 
+      <Decay name="pi+pi-2pi0" texName="pi^{+}pi^{-}2pi^{0}" fraction="seen" PUnit="MeV/c"> 
+      </Decay> 
+      <Decay name="2(pipi)(S-wave)" texName="2(pi\;pi\;)_{S-wave}" fraction="seen" PUnit="MeV/c"> 
+      </Decay> 
+      <Decay name="etaeta" texName="\eta\;\eta" fraction="seen" PUnit="MeV/c"> 
+      </Decay> 
+      <Decay name="KK" texName="K\;K" fraction="seen" PUnit="MeV/c"> 
+      </Decay> 
+      <Decay name="gammagamma" texName="\gamma\;\gamma" fraction="seen" PUnit="MeV/c"> 
+      </Decay> 
+      <Decay name="e+e-" texName="e^{+}e^{-}" fraction="not seen" PUnit="MeV/c"> 
+      </Decay> 
+   </ParticleType> 
+   <ParticleType name="f(1)(1420)" > 
+      <Decay name="KKpi" texName="K\;K\;pi" fraction="dominant" PUnit="MeV/c"> 
+      </Decay> 
+      <Decay name="KK*(892)+c.c." texName="K\;K^{\ast}(892)\;+\;c.c." fraction="dominant" PUnit="MeV/c"> 
+      </Decay> 
+      <Decay name="etapipipossibly" texName="\eta\;pi\;pi\;possibly" fraction="seen" PUnit="MeV/c"> 
+      </Decay> 
+      <Decay name="phigamma" texName="\phi\;\gamma" fraction="seen" PUnit="MeV/c"> 
+      </Decay> 
+   </ParticleType> 
+   <ParticleType name="omega(1420)" > 
+      <Decay name="rhopi" texName="\rho\;pi" fraction="dominant" PUnit="MeV/c"> 
+      </Decay> 
+   </ParticleType> 
+   <ParticleType name="eta(1440)" > 
+      <Decay name="KKpi" texName="K\;K\;pi" fraction="seen" PUnit="MeV/c"> 
+      </Decay> 
+      <Decay name="KK*(892)+c.c." texName="K\;K^{\ast}(892)\;+\;c.c." fraction="seen" PUnit="MeV/c"> 
+      </Decay> 
+      <Decay name="etapipi" texName="\eta\;pi\;pi" fraction="seen" PUnit="MeV/c"> 
+      </Decay> 
+      <Decay name="a(0)(980)pi" texName="a_{0}(980)\;pi" fraction="seen" PUnit="MeV/c"> 
+      </Decay> 
+      <Decay name="eta(pipi)(S-wave)" texName="\eta\;(pi\;pi\;)_{S-wave}" fraction="seen" PUnit="MeV/c"> 
+      </Decay> 
+      <Decay name="f(0)(980)eta" texName="f_{0}(980)\;\eta" fraction="seen" PUnit="MeV/c"> 
+      </Decay> 
+      <Decay name="4pi" texName="4pi" fraction="seen" PUnit="MeV/c"> 
+      </Decay> 
+   </ParticleType> 
+   <ParticleType name="a(0)(1450)0" > 
+      <Decay name="pieta" texName="pi\;\eta" fraction="seen" PUnit="MeV/c"> 
+      </Decay> 
+      <Decay name="pieta'(958)" texName="pi\;\eta^{\prime}(958)" fraction="seen" PUnit="MeV/c"> 
+      </Decay> 
+      <Decay name="KK" texName="K\;K" fraction="seen" PUnit="MeV/c"> 
+      </Decay> 
+   </ParticleType> 
+   <ParticleType name="a(0)(1450)+" > 
+      <Decay name="pieta" texName="pi\;\eta" fraction="seen" PUnit="MeV/c"> 
+      </Decay> 
+      <Decay name="pieta'(958)" texName="pi\;\eta^{\prime}(958)" fraction="seen" PUnit="MeV/c"> 
+      </Decay> 
+      <Decay name="KK" texName="K\;K" fraction="seen" PUnit="MeV/c"> 
+      </Decay> 
+   </ParticleType> 
+   <ParticleType name="rho(1450)0" > 
+      <Decay name="pipi" texName="pi\;pi" fraction="seen" PUnit="MeV/c"> 
+      </Decay> 
+      <Decay name="4pi" texName="4pi" fraction="seen" PUnit="MeV/c"> 
+      </Decay> 
+      <Decay name="omegapi" texName="\omega\;pi" fraction="&lt; 2.0" PUnit="MeV/c"> 
+      </Decay> 
+      <Decay name="e+e-" texName="e^{+}e^{-}" fraction="seen" PUnit="MeV/c"> 
+      </Decay> 
+      <Decay name="etarho" texName="\eta\;\rho" fraction="&lt; 4" PUnit="MeV/c"> 
+      </Decay> 
+      <Decay name="a(2)(1320)pi" texName="a_{2}(1320)\;pi" fraction="not seen" PUnit="MeV/c"> 
+      </Decay> 
+      <Decay name="phipi" texName="\phi\;pi" fraction="&lt; 1" PUnit="MeV/c"> 
+      </Decay> 
+      <Decay name="KK" texName="K\;K" fraction="&lt; 1.6E-3" PUnit="MeV/c"> 
+      </Decay> 
+   </ParticleType> 
+   <ParticleType name="rho(1450)+" > 
+      <Decay name="pipi" texName="pi\;pi" fraction="seen" PUnit="MeV/c"> 
+      </Decay> 
+      <Decay name="4pi" texName="4pi" fraction="seen" PUnit="MeV/c"> 
+      </Decay> 
+      <Decay name="omegapi" texName="\omega\;pi" fraction="&lt; 2.0" PUnit="MeV/c"> 
+      </Decay> 
+      <Decay name="e+e-" texName="e^{+}e^{-}" fraction="seen" PUnit="MeV/c"> 
+      </Decay> 
+      <Decay name="etarho" texName="\eta\;\rho" fraction="&lt; 4" PUnit="MeV/c"> 
+      </Decay> 
+      <Decay name="a(2)(1320)pi" texName="a_{2}(1320)\;pi" fraction="not seen" PUnit="MeV/c"> 
+      </Decay> 
+      <Decay name="phipi" texName="\phi\;pi" fraction="&lt; 1" PUnit="MeV/c"> 
+      </Decay> 
+      <Decay name="KK" texName="K\;K" fraction="&lt; 1.6E-3" PUnit="MeV/c"> 
+      </Decay> 
+   </ParticleType> 
+   <ParticleType name="f(0)(1500)" > 
+      <Decay name="etaeta'(958)" texName="\eta\;\eta^{\prime}(958)" fraction="seen" PUnit="MeV/c"> 
+      </Decay> 
+      <Decay name="etaeta" texName="\eta\;\eta" fraction="seen" PUnit="MeV/c"> 
+      </Decay> 
+      <Decay name="4pi" texName="4pi" fraction="seen" PUnit="MeV/c"> 
+      </Decay> 
+      <Decay name="4pi0" texName="4pi^{0}" fraction="seen" PUnit="MeV/c"> 
+      </Decay> 
+      <Decay name="2pi+2pi-" texName="2pi^{+}2pi^{-}" fraction="seen" PUnit="MeV/c"> 
+      </Decay> 
+      <Decay name="pipi" texName="pi\;pi" fraction="seen" PUnit="MeV/c"> 
+      </Decay> 
+      <Decay name="pi+pi-" texName="pi^{+}pi^{-}" fraction="seen" PUnit="MeV/c"> 
+      </Decay> 
+      <Decay name="2pi0" texName="2pi^{0}" fraction="seen" PUnit="MeV/c"> 
+      </Decay> 
+      <Decay name="KK" texName="K\;K" fraction="seen" PUnit="MeV/c"> 
+      </Decay> 
+   </ParticleType> 
+   <ParticleType name="f(2)'(1525)" > 
+   </ParticleType> 
+   <ParticleType name="omega(1650)" > 
+      <Decay name="rhopi" texName="\rho\;pi" fraction="seen" PUnit="MeV/c"> 
+      </Decay> 
+      <Decay name="omegapipi" texName="\omega\;pi\;pi" fraction="seen" PUnit="MeV/c"> 
+      </Decay> 
+      <Decay name="e+e-" texName="e^{+}e^{-}" fraction="seen" PUnit="MeV/c"> 
+      </Decay> 
+   </ParticleType> 
+   <ParticleType name="omega(3)(1670)" > 
+      <Decay name="rhopi" texName="\rho\;pi" fraction="seen" PUnit="MeV/c"> 
+      </Decay> 
+      <Decay name="omegapipi" texName="\omega\;pi\;pi" fraction="seen" PUnit="MeV/c"> 
+      </Decay> 
+      <Decay name="b(1)(1235)pipossibly" texName="b_{1}(1235)\;pi\;possibly" fraction="seen" PUnit="MeV/c"> 
+      </Decay> 
+   </ParticleType> 
+   <ParticleType name="pi(2)(1670)0" > 
+      <Decay name="rho(1450)pi" texName="\rho(1450)\;pi" fraction="&lt; 3.6E-3" PUnit="MeV/c"> 
+      </Decay> 
+      <Decay name="b(1)(1235)pi" texName="b_{1}(1235)\;pi" fraction="&lt; 1.9E-3" PUnit="MeV/c"> 
+      </Decay> 
+   </ParticleType> 
+   <ParticleType name="pi(2)(1670)+" > 
+      <Decay name="rho(1450)pi" texName="\rho(1450)\;pi" fraction="&lt; 3.6E-3" PUnit="MeV/c"> 
+      </Decay> 
+      <Decay name="b(1)(1235)pi" texName="b_{1}(1235)\;pi" fraction="&lt; 1.9E-3" PUnit="MeV/c"> 
+      </Decay> 
+   </ParticleType> 
+   <ParticleType name="phi(1680)" > 
+      <Decay name="KK*(892)+c.c." texName="K\;K^{\ast}(892)\;+\;c.c." fraction="dominant" PUnit="MeV/c"> 
+      </Decay> 
+      <Decay name="K(S)0Kpi" texName="K^{0}_{S}K\;pi" fraction="seen" PUnit="MeV/c"> 
+      </Decay> 
+      <Decay name="KK" texName="K\;K" fraction="seen" PUnit="MeV/c"> 
+      </Decay> 
+      <Decay name="e+e-" texName="e^{+}e^{-}" fraction="seen" PUnit="MeV/c"> 
+      </Decay> 
+      <Decay name="omegapipi" texName="\omega\;pi\;pi" fraction="not seen" PUnit="MeV/c"> 
+      </Decay> 
+   </ParticleType> 
+   <ParticleType name="rho(3)(1690)0" > 
+      <Decay name="etapi+pi-" texName="\eta\;pi^{+}pi^{-}" fraction="seen" PUnit="MeV/c"> 
+      </Decay> 
+      <Decay name="rho(770)eta" texName="\rho(770)\;\eta" fraction="seen" PUnit="MeV/c"> 
+      </Decay> 
+   </ParticleType> 
+   <ParticleType name="rho(3)(1690)+" > 
+      <Decay name="etapi+pi-" texName="\eta\;pi^{+}pi^{-}" fraction="seen" PUnit="MeV/c"> 
+      </Decay> 
+      <Decay name="rho(770)eta" texName="\rho(770)\;\eta" fraction="seen" PUnit="MeV/c"> 
+      </Decay> 
+   </ParticleType> 
+   <ParticleType name="rho(1700)0" > 
+      <Decay name="rhopipi" texName="\rho\;pi\;pi" fraction="dominant" PUnit="MeV/c"> 
+      </Decay> 
+      <Decay name="rho0pi+pi-" texName="\rho^{0}pi^{+}pi^{-}" fraction="large" PUnit="MeV/c"> 
+      </Decay> 
+      <Decay name="rho+pimppi0" texName="\rho^{\pm}pi^{\mp}pi^{0}" fraction="large" PUnit="MeV/c"> 
+      </Decay> 
+      <Decay name="2(pi+pi-)" texName="2(pi^{+}pi^{-})" fraction="large" PUnit="MeV/c"> 
+      </Decay> 
+      <Decay name="pi+pi-" texName="pi^{+}pi^{-}" fraction="seen" PUnit="MeV/c"> 
+      </Decay> 
+      <Decay name="pi-pi0" texName="pi^{-}pi^{0}" fraction="seen" PUnit="MeV/c"> 
+      </Decay> 
+      <Decay name="KK*(892)+c.c." texName="K\;K^{\ast}(892)\;+\;c.c." fraction="seen" PUnit="MeV/c"> 
+      </Decay> 
+      <Decay name="etarho" texName="\eta\;\rho" fraction="seen" PUnit="MeV/c"> 
+      </Decay> 
+      <Decay name="a(2)(1320)pi" texName="a_{2}(1320)\;pi" fraction="not seen" PUnit="MeV/c"> 
+      </Decay> 
+      <Decay name="KK" texName="K\;K" fraction="seen" PUnit="MeV/c"> 
+      </Decay> 
+      <Decay name="e+e-" texName="e^{+}e^{-}" fraction="seen" PUnit="MeV/c"> 
+      </Decay> 
+      <Decay name="pi0omega" texName="pi^{0}\omega" fraction="seen" PUnit="MeV/c"> 
+      </Decay> 
+   </ParticleType> 
+   <ParticleType name="rho(1700)+" > 
+      <Decay name="rhopipi" texName="\rho\;pi\;pi" fraction="dominant" PUnit="MeV/c"> 
+      </Decay> 
+      <Decay name="rho0pi+pi-" texName="\rho^{0}pi^{+}pi^{-}" fraction="large" PUnit="MeV/c"> 
+      </Decay> 
+      <Decay name="rho+pimppi0" texName="\rho^{\pm}pi^{\mp}pi^{0}" fraction="large" PUnit="MeV/c"> 
+      </Decay> 
+      <Decay name="2(pi+pi-)" texName="2(pi^{+}pi^{-})" fraction="large" PUnit="MeV/c"> 
+      </Decay> 
+      <Decay name="pi+pi-" texName="pi^{+}pi^{-}" fraction="seen" PUnit="MeV/c"> 
+      </Decay> 
+      <Decay name="pi-pi0" texName="pi^{-}pi^{0}" fraction="seen" PUnit="MeV/c"> 
+      </Decay> 
+      <Decay name="KK*(892)+c.c." texName="K\;K^{\ast}(892)\;+\;c.c." fraction="seen" PUnit="MeV/c"> 
+      </Decay> 
+      <Decay name="etarho" texName="\eta\;\rho" fraction="seen" PUnit="MeV/c"> 
+      </Decay> 
+      <Decay name="a(2)(1320)pi" texName="a_{2}(1320)\;pi" fraction="not seen" PUnit="MeV/c"> 
+      </Decay> 
+      <Decay name="KK" texName="K\;K" fraction="seen" PUnit="MeV/c"> 
+      </Decay> 
+      <Decay name="e+e-" texName="e^{+}e^{-}" fraction="seen" PUnit="MeV/c"> 
+      </Decay> 
+      <Decay name="pi0omega" texName="pi^{0}\omega" fraction="seen" PUnit="MeV/c"> 
+      </Decay> 
+   </ParticleType> 
+   <ParticleType name="f(0)(1710)" > 
+      <Decay name="KK" texName="K\;K" fraction="seen" PUnit="MeV/c"> 
+      </Decay> 
+      <Decay name="etaeta" texName="\eta\;\eta" fraction="seen" PUnit="MeV/c"> 
+      </Decay> 
+      <Decay name="pipi" texName="pi\;pi" fraction="seen" PUnit="MeV/c"> 
+      </Decay> 
+   </ParticleType> 
+   <ParticleType name="pi(1800)0" > 
+      <Decay name="pi+pi-pi-" texName="pi^{+}pi^{-}pi^{-}" fraction="seen" PUnit="MeV/c"> 
+      </Decay> 
+      <Decay name="f(0)(980)pi-" texName="f_{0}(980)\;pi^{-}" fraction="seen" PUnit="MeV/c"> 
+      </Decay> 
+      <Decay name="f(0)(1370)pi-" texName="f_{0}(1370)\;pi^{-}" fraction="seen" PUnit="MeV/c"> 
+      </Decay> 
+      <Decay name="rhopi-" texName="\rho\;pi^{-}" fraction="not seen" PUnit="MeV/c"> 
+      </Decay> 
+      <Decay name="etaetapi-" texName="\eta\;\eta\;pi^{-}" fraction="seen" PUnit="MeV/c"> 
+      </Decay> 
+      <Decay name="a(0)(980)eta" texName="a_{0}(980)\;\eta" fraction="seen" PUnit="MeV/c"> 
+      </Decay> 
+      <Decay name="f(0)(1500)pi-" texName="f_{0}(1500)\;pi^{-}" fraction="seen" PUnit="MeV/c"> 
+      </Decay> 
+      <Decay name="etaeta'(958)pi-" texName="\eta\;\eta^{\prime}(958)\;pi^{-}" fraction="seen" PUnit="MeV/c"> 
+      </Decay> 
+      <Decay name="K(0)*(1430)K-" texName="K^{\ast}_{0}(1430)\;K^{-}" fraction="seen" PUnit="MeV/c"> 
+      </Decay> 
+      <Decay name="K*(892)K-" texName="K^{\ast}(892)\;K^{-}" fraction="not seen" PUnit="MeV/c"> 
+      </Decay> 
+   </ParticleType> 
+   <ParticleType name="pi(1800)+" > 
+      <Decay name="pi+pi-pi-" texName="pi^{+}pi^{-}pi^{-}" fraction="seen" PUnit="MeV/c"> 
+      </Decay> 
+      <Decay name="f(0)(980)pi-" texName="f_{0}(980)\;pi^{-}" fraction="seen" PUnit="MeV/c"> 
+      </Decay> 
+      <Decay name="f(0)(1370)pi-" texName="f_{0}(1370)\;pi^{-}" fraction="seen" PUnit="MeV/c"> 
+      </Decay> 
+      <Decay name="rhopi-" texName="\rho\;pi^{-}" fraction="not seen" PUnit="MeV/c"> 
+      </Decay> 
+      <Decay name="etaetapi-" texName="\eta\;\eta\;pi^{-}" fraction="seen" PUnit="MeV/c"> 
+      </Decay> 
+      <Decay name="a(0)(980)eta" texName="a_{0}(980)\;\eta" fraction="seen" PUnit="MeV/c"> 
+      </Decay> 
+      <Decay name="f(0)(1500)pi-" texName="f_{0}(1500)\;pi^{-}" fraction="seen" PUnit="MeV/c"> 
+      </Decay> 
+      <Decay name="etaeta'(958)pi-" texName="\eta\;\eta^{\prime}(958)\;pi^{-}" fraction="seen" PUnit="MeV/c"> 
+      </Decay> 
+      <Decay name="K(0)*(1430)K-" texName="K^{\ast}_{0}(1430)\;K^{-}" fraction="seen" PUnit="MeV/c"> 
+      </Decay> 
+      <Decay name="K*(892)K-" texName="K^{\ast}(892)\;K^{-}" fraction="not seen" PUnit="MeV/c"> 
+      </Decay> 
+   </ParticleType> 
+   <ParticleType name="phi(3)(1850)" > 
+      <Decay name="KK" texName="K\;K" fraction="seen" PUnit="MeV/c"> 
+      </Decay> 
+      <Decay name="KK*(892)+c.c." texName="K\;K^{\ast}(892)\;+\;c.c." fraction="seen" PUnit="MeV/c"> 
+      </Decay> 
+   </ParticleType> 
+   <ParticleType name="f(2)(2010)" > 
+      <Decay name="phiphi" texName="\phi\;\phi" fraction="seen" PUnit="MeV/c"> 
+      </Decay> 
+   </ParticleType> 
+   <ParticleType name="a(4)(2040)0" > 
+      <Decay name="KK" texName="K\;K" fraction="seen" PUnit="MeV/c"> 
+      </Decay> 
+      <Decay name="pi+pi-pi0" texName="pi^{+}pi^{-}pi^{0}" fraction="seen" PUnit="MeV/c"> 
+      </Decay> 
+      <Decay name="etapi0" texName="\eta\;pi^{0}" fraction="seen" PUnit="MeV/c"> 
+      </Decay> 
+   </ParticleType> 
+   <ParticleType name="a(4)(2040)+" > 
+      <Decay name="KK" texName="K\;K" fraction="seen" PUnit="MeV/c"> 
+      </Decay> 
+      <Decay name="pi+pi-pi0" texName="pi^{+}pi^{-}pi^{0}" fraction="seen" PUnit="MeV/c"> 
+      </Decay> 
+      <Decay name="etapi0" texName="\eta\;pi^{0}" fraction="seen" PUnit="MeV/c"> 
+      </Decay> 
+   </ParticleType> 
+   <ParticleType name="f(4)(2050)" > 
+      <Decay name="4pi0" texName="4pi^{0}" fraction="&lt; 1.2" PUnit="MeV/c"> 
+      </Decay> 
+      <Decay name="a(2)(1320)pi" texName="a_{2}(1320)\;pi" fraction="seen" PUnit="MeV/c"> 
+      </Decay> 
+   </ParticleType> 
+   <ParticleType name="f(2)(2300)" > 
+      <Decay name="phiphi" texName="\phi\;\phi" fraction="seen" PUnit="MeV/c"> 
+      </Decay> 
+   </ParticleType> 
+   <ParticleType name="f(2)(2340)" > 
+      <Decay name="phiphi" texName="\phi\;\phi" fraction="seen" PUnit="MeV/c"> 
+      </Decay> 
+   </ParticleType> 
+   <ParticleType name="K+" > 
+      <Decay name="pi0pi0pi0e+nu(e)" texName="pi^{0}pi^{0}pi^{0}e^{+}nu_{e}" fraction="&lt; 3.5E-6" PUnit="MeV/c"> 
+      </Decay> 
+      <Decay name="mu+nu(mu)nunu" texName="mu^{+}nu_{mu}nu\;nu" fraction="&lt; 6.0E-6" PUnit="MeV/c"> 
+      </Decay> 
+      <Decay name="e+nu(e)nunu" texName="e^{+}nu_{e}nu\;nu" fraction="&lt; 6E-5" PUnit="MeV/c"> 
+      </Decay> 
+      <Decay name="e+nu(e)mu+mu-" texName="e^{+}nu_{e}mu^{+}mu^{-}" fraction="&lt; 5E-7" PUnit="MeV/c"> 
+      </Decay> 
+      <Decay name="mu+nu(mu)mu+mu-" texName="mu^{+}nu_{mu}mu^{+}mu^{-}" fraction="&lt; 4.1E-7" PUnit="MeV/c"> 
+      </Decay> 
+      <Decay name="pi0mu+nu(mu)gamma" texName="pi^{0}mu^{+}nu_{mu}\gamma" fraction="&lt; 6.1E-5" PUnit="MeV/c"> 
+      </Decay> 
+      <Decay name="pi0e+nu(e)gamma(SD)" texName="pi^{0}e^{+}nu_{e}\gamma\;(SD)" fraction="&lt; 5.3E-5" PUnit="MeV/c"> 
+      </Decay> 
+      <Decay name="pi+3gamma" texName="pi^{+}3\gamma" fraction="&lt; 1.0E-4" PUnit="MeV/c"> 
+      </Decay> 
+      <Decay name="pi+pi+e-nu(e)SQ" texName="pi^{+}pi^{+}e^{-}nu_{e}SQ" fraction="&lt; 1.2E-8" PUnit="MeV/c"> 
+      </Decay> 
+      <Decay name="pi+pi+mu-nu(mu)SQ" texName="pi^{+}pi^{+}mu^{-}nu_{mu}SQ" fraction="&lt; 3.0E-6" PUnit="MeV/c"> 
+      </Decay> 
+      <Decay name="mu-nue+e+" texName="mu^{-}nu\;e^{+}e^{+}" fraction="&lt; 2.0E-8" PUnit="MeV/c"> 
+      </Decay> 
+      <Decay name="mu+nu(e)" texName="mu^{+}nu_{e}" fraction="&lt; 4E-3" PUnit="MeV/c"> 
+      </Decay> 
+      <Decay name="pi+mu+e-" texName="pi^{+}mu^{+}e^{-}" fraction="&lt; 2.1E-10" PUnit="MeV/c"> 
+      </Decay> 
+      <Decay name="pi+mu-e+" texName="pi^{+}mu^{-}e^{+}" fraction="&lt; 7E-9" PUnit="MeV/c"> 
+      </Decay> 
+      <Decay name="pi-mu+e+L" texName="pi^{-}mu^{+}e^{+}L" fraction="&lt; 7E-9" PUnit="MeV/c"> 
+      </Decay> 
+      <Decay name="pi-e+e+L" texName="pi^{-}e^{+}e^{+}L" fraction="&lt; 1.0E-8" PUnit="MeV/c"> 
+      </Decay> 
+      <Decay name="pi-mu+mu+L" texName="pi^{-}mu^{+}mu^{+}L" fraction="&lt; 1.5E-4" PUnit="MeV/c"> 
+      </Decay> 
+      <Decay name="mu+nu(e)L" texName="mu^{+}nu_{e}L" fraction="&lt; 3.3E-3" PUnit="MeV/c"> 
+      </Decay> 
+   </ParticleType> 
+   <ParticleType name="K0" > 
+   </ParticleType> 
+   <ParticleType name="K(S)0" > 
+      <Decay name="3pi0" texName="3pi^{0}" fraction="&lt; 1.4E-5" PUnit="MeV/c"> 
+      </Decay> 
+      <Decay name="mu+mu-S1" texName="mu^{+}mu^{-}S1" fraction="&lt; 3.2E-7" PUnit="MeV/c"> 
+      </Decay> 
+      <Decay name="e+e-S1" texName="e^{+}e^{-}S1" fraction="&lt; 1.4E-7" PUnit="MeV/c"> 
+      </Decay> 
+      <Decay name="pi0e+e-S1" texName="pi^{0}e^{+}e^{-}S1" fraction="&lt; 1.1E-6" PUnit="MeV/c"> 
+      </Decay> 
+   </ParticleType> 
+   <ParticleType name="K(L)0" > 
+      <Decay name="3gamma" texName="3\gamma" fraction="&lt; 2.4E-7" PUnit="MeV/c"> 
+      </Decay> 
+      <Decay name="pi0pi0gamma" texName="pi^{0}pi^{0}\gamma" fraction="&lt; 5.6E-6" PUnit="MeV/c"> 
+      </Decay> 
+      <Decay name="pi0gammae+e-" texName="pi^{0}\gamma\;e^{+}e^{-}" fraction="&lt; 7.1E-7" PUnit="MeV/c"> 
+      </Decay> 
+      <Decay name="ChargeconjugationtimesParity(CP,CPV)orLeptonFamilynumber" texName="Charge\;conjugation\;\times\;Parity\;(CP,\;CPV\;)\;or\;Lepton\;Family\;number" fraction="1" PUnit="MeV/c"> 
+      </Decay> 
+      <Decay name="pi0mu+mu-CP,S1" texName="pi^{0}mu^{+}mu^{-}CP,S1" fraction="&lt; 5.1E-9" PUnit="MeV/c"> 
+      </Decay> 
+      <Decay name="pi0e+e-CP,S1" texName="pi^{0}e^{+}e^{-}CP,S1" fraction="&lt; 4.3E-9" PUnit="MeV/c"> 
+      </Decay> 
+      <Decay name="pi0nunuCP,S1" texName="pi^{0}nu\;nu\;CP,S1" fraction="&lt; 5.9E-7" PUnit="MeV/c"> 
+      </Decay> 
+      <Decay name="e+mump" texName="e^{\pm}mu^{\mp}" fraction="&lt; 4.7E-12" PUnit="MeV/c"> 
+      </Decay> 
+      <Decay name="e+e+mumpmump" texName="e^{\pm}e^{\pm}mu^{\mp}mu^{\mp}" fraction="&lt; 6.1E-9" PUnit="MeV/c"> 
+      </Decay> 
+      <Decay name="pi0mu+emp" texName="pi^{0}mu^{\pm}e^{\mp}" fraction="&lt; 6.2E-9" PUnit="MeV/c"> 
+      </Decay> 
+   </ParticleType> 
+   <ParticleType name="K*(892)+" > 
+      <Decay name="Kpipi" texName="K\;pi\;pi" fraction="&lt; 7E-4" PUnit="MeV/c"> 
+      </Decay> 
+   </ParticleType> 
+   <ParticleType name="K*(892)0" > 
+      <Decay name="Kpipi" texName="K\;pi\;pi" fraction="&lt; 7E-4" PUnit="MeV/c"> 
+      </Decay> 
+   </ParticleType> 
+   <ParticleType name="K(1)(1270)0" > 
+   </ParticleType> 
+   <ParticleType name="K(1)(1270)+" > 
+   </ParticleType> 
+   <ParticleType name="K(1)(1400)0" > 
+      <Decay name="K(0)*(1430)pi" texName="K^{\ast}_{0}(1430)\;pi" fraction="not seen" PUnit="MeV/c"> 
+      </Decay> 
+   </ParticleType> 
+   <ParticleType name="K(1)(1400)+" > 
+      <Decay name="K(0)*(1430)pi" texName="K^{\ast}_{0}(1430)\;pi" fraction="not seen" PUnit="MeV/c"> 
+      </Decay> 
+   </ParticleType> 
+   <ParticleType name="K*(1410)0" > 
+      <Decay name="Krho" texName="K\;\rho" fraction="&lt; 7" PUnit="MeV/c"> 
+      </Decay> 
+   </ParticleType> 
+   <ParticleType name="K*(1410)+" > 
+      <Decay name="Krho" texName="K\;\rho" fraction="&lt; 7" PUnit="MeV/c"> 
+      </Decay> 
+   </ParticleType> 
+   <ParticleType name="K(0)*(1430)0" > 
+   </ParticleType> 
+   <ParticleType name="K(0)*(1430)+" > 
+   </ParticleType> 
+   <ParticleType name="K(2)*(1430)+" > 
+      <Decay name="Komegapi" texName="K\;\omega\;pi" fraction="&lt; 7.2E-4" PUnit="MeV/c"> 
+      </Decay> 
+   </ParticleType> 
+   <ParticleType name="K(2)*(1430)0" > 
+      <Decay name="Komegapi" texName="K\;\omega\;pi" fraction="&lt; 7.2E-4" PUnit="MeV/c"> 
+      </Decay> 
+   </ParticleType> 
+   <ParticleType name="K*(1680)0" > 
+   </ParticleType> 
+   <ParticleType name="K*(1680)+" > 
+   </ParticleType> 
+   <ParticleType name="K(2)(1770)0" > 
+      <Decay name="Kpipi" texName="K\;pi\;pi" fraction="" PUnit="MeV/c"> 
+      </Decay> 
+      <Decay name="K(2)*(1430)pi" texName="K^{\ast}_{2}(1430)\;pi" fraction="dominant" PUnit="MeV/c"> 
+      </Decay> 
+      <Decay name="K*(892)pi" texName="K^{\ast}(892)\;pi" fraction="seen" PUnit="MeV/c"> 
+      </Decay> 
+      <Decay name="Kf(2)(1270)" texName="K\;f_{2}(1270)" fraction="seen" PUnit="MeV/c"> 
+      </Decay> 
+      <Decay name="Kphi" texName="K\;\phi" fraction="seen" PUnit="MeV/c"> 
+      </Decay> 
+      <Decay name="Komega" texName="K\;\omega" fraction="seen" PUnit="MeV/c"> 
+      </Decay> 
+   </ParticleType> 
+   <ParticleType name="K(2)(1770)+" > 
+      <Decay name="Kpipi" texName="K\;pi\;pi" fraction="" PUnit="MeV/c"> 
+      </Decay> 
+      <Decay name="K(2)*(1430)pi" texName="K^{\ast}_{2}(1430)\;pi" fraction="dominant" PUnit="MeV/c"> 
+      </Decay> 
+      <Decay name="K*(892)pi" texName="K^{\ast}(892)\;pi" fraction="seen" PUnit="MeV/c"> 
+      </Decay> 
+      <Decay name="Kf(2)(1270)" texName="K\;f_{2}(1270)" fraction="seen" PUnit="MeV/c"> 
+      </Decay> 
+      <Decay name="Kphi" texName="K\;\phi" fraction="seen" PUnit="MeV/c"> 
+      </Decay> 
+      <Decay name="Komega" texName="K\;\omega" fraction="seen" PUnit="MeV/c"> 
+      </Decay> 
+   </ParticleType> 
+   <ParticleType name="K(3)*(1780)0" > 
+   </ParticleType> 
+   <ParticleType name="K(3)*(1780)+" > 
+   </ParticleType> 
+   <ParticleType name="K(2)(1820)0" > 
+      <Decay name="K(2)*(1430)pi" texName="K^{\ast}_{2}(1430)\;pi" fraction="seen" PUnit="MeV/c"> 
+      </Decay> 
+      <Decay name="K*(892)pi" texName="K^{\ast}(892)\;pi" fraction="seen" PUnit="MeV/c"> 
+      </Decay> 
+      <Decay name="Kf(2)(1270)" texName="K\;f_{2}(1270)" fraction="seen" PUnit="MeV/c"> 
+      </Decay> 
+      <Decay name="Komega" texName="K\;\omega" fraction="seen" PUnit="MeV/c"> 
+      </Decay> 
+   </ParticleType> 
+   <ParticleType name="K(2)(1820)+" > 
+      <Decay name="K(2)*(1430)pi" texName="K^{\ast}_{2}(1430)\;pi" fraction="seen" PUnit="MeV/c"> 
+      </Decay> 
+      <Decay name="K*(892)pi" texName="K^{\ast}(892)\;pi" fraction="seen" PUnit="MeV/c"> 
+      </Decay> 
+      <Decay name="Kf(2)(1270)" texName="K\;f_{2}(1270)" fraction="seen" PUnit="MeV/c"> 
+      </Decay> 
+      <Decay name="Komega" texName="K\;\omega" fraction="seen" PUnit="MeV/c"> 
+      </Decay> 
+   </ParticleType> 
+   <ParticleType name="K(4)*(2045)0" > 
+   </ParticleType> 
+   <ParticleType name="K(4)*(2045)+" > 
+   </ParticleType> 
+   <ParticleType name="D+" > 
+      <Decay name="etaanything" texName="\eta\;anything" fraction="&lt; 13" PUnit="MeV/c"> 
+      </Decay> 
+      <Decay name="K*" texName="K^{\ast}" fraction="892" PUnit="MeV/c"> 
+      </Decay> 
+      <Decay name="K-pi+e+nu(e)nonresonant" texName="K^{-}pi^{+}e^{+}nu_{e}nonresonant" fraction="&lt; 7E-3" PUnit="MeV/c"> 
+      </Decay> 
+      <Decay name="K*" texName="K^{\ast}" fraction="892" PUnit="MeV/c"> 
+      </Decay> 
+      <Decay name="(K*(892)pi)0e+nu(e)" texName="(\;K^{\ast}(892)\;pi\;)^{0}e^{+}nu_{e}" fraction="&lt; 1.2" PUnit="MeV/c"> 
+      </Decay> 
+      <Decay name="K-pi+pi0mu+nu(mu)" texName="K^{-}pi^{+}pi^{0}mu^{+}nu_{mu}" fraction="&lt; 1.4E-3" PUnit="MeV/c"> 
+      </Decay> 
+      <Decay name="K(1)(1270)0mu+nu(mu)" texName="K_{1}(1270)^{0}mu^{+}nu_{mu}" fraction="&lt; 3.5" PUnit="MeV/c"> 
+      </Decay> 
+      <Decay name="K*(1410)0mu+nu(mu)" texName="K^{\ast}(1410)^{0}mu^{+}nu_{mu}" fraction="&lt; 2.7" PUnit="MeV/c"> 
+      </Decay> 
+      <Decay name="phie+nu(e)" texName="\phi\;e^{+}nu_{e}" fraction="&lt; 2.09" PUnit="MeV/c"> 
+      </Decay> 
+      <Decay name="phimu+nu(mu)" texName="\phi\;mu^{+}nu_{mu}" fraction="&lt; 3.72" PUnit="MeV/c"> 
+      </Decay> 
+      <Decay name="etaell+nu(ell)" texName="\eta\;\ell^{+}nu_{\ell}" fraction="&lt; 5E-3" PUnit="MeV/c"> 
+      </Decay> 
+      <Decay name="K*" texName="K^{\ast}" fraction="892" PUnit="MeV/c"> 
+      </Decay> 
+      <Decay name="K*" texName="K^{\ast}" fraction="0" PUnit="MeV/c"> 
+      </Decay> 
+      <Decay name="K*" texName="K^{\ast}" fraction="1680" PUnit="MeV/c"> 
+      </Decay> 
+      <Decay name="K*" texName="K^{\ast}" fraction="892" PUnit="MeV/c"> 
+      </Decay> 
+      <Decay name="K*" texName="K^{\ast}" fraction="892" PUnit="MeV/c"> 
+      </Decay> 
+      <Decay name="K" texName="K" fraction="1" PUnit="MeV/c"> 
+      </Decay> 
+      <Decay name="K*" texName="K^{\ast}" fraction="892" PUnit="MeV/c"> 
+      </Decay> 
+      <Decay name="K*" texName="K^{\ast}" fraction="892" PUnit="MeV/c"> 
+      </Decay> 
+      <Decay name="K" texName="K" fraction="0" PUnit="MeV/c"> 
+      </Decay> 
+      <Decay name="K" texName="K" fraction="1" PUnit="MeV/c"> 
+      </Decay> 
+      <Decay name="K*" texName="K^{\ast}" fraction="892" PUnit="MeV/c"> 
+      </Decay> 
+      <Decay name="K*" texName="K^{\ast}" fraction="892" PUnit="MeV/c"> 
+      </Decay> 
+      <Decay name="K-pi+pi+pi+pi-nonresonant" texName="K^{-}pi^{+}pi^{+}pi^{+}pi^{-}nonresonant" fraction="&lt; 2.3E-3" PUnit="MeV/c"> 
+      </Decay> 
+      <Decay name="omegapi+" texName="\omega\;pi^{+}" fraction="&lt; 7E-3" PUnit="MeV/c"> 
+      </Decay> 
+      <Decay name="etarho+" texName="\eta\;\rho^{+}" fraction="&lt; 7E-3" PUnit="MeV/c"> 
+      </Decay> 
+      <Decay name="K+K*" texName="K^{+}K^{\ast}" fraction="892" PUnit="MeV/c"> 
+      </Decay> 
+      <Decay name="K" texName="K" fraction="0" PUnit="MeV/c"> 
+      </Decay> 
+      <Decay name="K*" texName="K^{\ast}" fraction="892" PUnit="MeV/c"> 
+      </Decay> 
+      <Decay name="K+K-pi+pi" texName="K^{+}K^{-}pi^{+}pi" fraction="0" PUnit="MeV/c"> 
+      </Decay> 
+      <Decay name="K*" texName="K^{\ast}" fraction="892" PUnit="MeV/c"> 
+      </Decay> 
+      <Decay name="K0K-pi+pi+non-K*+K*0" texName="K^{0}K^{-}pi^{+}pi^{+}non-K^{\ast+}K^{\ast0}" fraction="&lt; 7.9E-3" PUnit="MeV/c"> 
+      </Decay> 
+      <Decay name="K+K-pi+pi+pi----" texName="K^{+}K^{-}pi^{+}pi^{+}pi^{-}---" fraction="600" PUnit="MeV/c"> 
+      </Decay> 
+      <Decay name="timesB(phiarrowrightK+K-)" texName="\times\;B(\phi\;\arrowright\;K^{+}K^{-})" fraction="&lt; 1E-3" PUnit="MeV/c"> 
+      </Decay> 
+      <Decay name="K+K-pi+pi+pi-nonresonant" texName="K^{+}K^{-}pi^{+}pi^{+}pi^{-}nonresonant" fraction="&lt; 3" PUnit="MeV/c"> 
+      </Decay> 
+      <Decay name="phirho+" texName="\phi\;\rho^{+}" fraction="&lt; 1.4" PUnit="MeV/c"> 
+      </Decay> 
+      <Decay name="phipi+pi+pi-" texName="\phi\;pi^{+}pi^{+}pi^{-}" fraction="&lt; 2E-3" PUnit="MeV/c"> 
+      </Decay> 
+      <Decay name="DoublyCabibbosuppressed(DC)modes,DoublyCabibbosuppressed(DC)modes,DoublyCabibbosuppressed(DC)modes,DoublyCabibbosuppressed(DC)modes,---Delta" texName="Doubly\;Cabibbo\;suppressed\;(DC\;)\;modes,Doubly\;Cabibbo\;suppressed\;(DC\;)\;modes,Doubly\;Cabibbo\;suppressed\;(DC\;)\;modes,Doubly\;Cabibbo\;suppressed\;(DC\;)\;modes,\;---\;\Delta" fraction="1" PUnit="MeV/c"> 
+      </Decay> 
+      <Decay name="K+K+K-DC" texName="K^{+}K^{+}K^{-}DC" fraction="&lt; 1.4E-4" PUnit="MeV/c"> 
+      </Decay> 
+      <Decay name="phiK+DC" texName="\phi\;K^{+}DC" fraction="&lt; 1.3E-4" PUnit="MeV/c"> 
+      </Decay> 
+      <Decay name="pi+e+e-C1" texName="pi^{+}e^{+}e^{-}C1" fraction="&lt; 5.2E-5" PUnit="MeV/c"> 
+      </Decay> 
+      <Decay name="pi+mu+mu-C1" texName="pi^{+}mu^{+}mu^{-}C1" fraction="&lt; 1.5E-5" PUnit="MeV/c"> 
+      </Decay> 
+      <Decay name="rho+mu+mu-C1" texName="\rho^{+}mu^{+}mu^{-}C1" fraction="&lt; 5.6E-4" PUnit="MeV/c"> 
+      </Decay> 
+      <Decay name="K+e+e-" texName="K^{+}e^{+}e^{-}" fraction="&lt; 2.0E-4" PUnit="MeV/c"> 
+      </Decay> 
+      <Decay name="K+mu+mu-" texName="K^{+}mu^{+}mu^{-}" fraction="&lt; 4.4E-5" PUnit="MeV/c"> 
+      </Decay> 
+      <Decay name="pi+e+mump" texName="pi^{+}e^{\pm}mu^{\mp}" fraction="&lt; 3.4E-5" PUnit="MeV/c"> 
+      </Decay> 
+      <Decay name="K+e+mump" texName="K^{+}e^{\pm}mu^{\mp}" fraction="&lt; 6.8E-5" PUnit="MeV/c"> 
+      </Decay> 
+      <Decay name="pi-e+e+L" texName="pi^{-}e^{+}e^{+}L" fraction="&lt; 9.6E-5" PUnit="MeV/c"> 
+      </Decay> 
+      <Decay name="pi-mu+mu+L" texName="pi^{-}mu^{+}mu^{+}L" fraction="&lt; 1.7E-5" PUnit="MeV/c"> 
+      </Decay> 
+      <Decay name="pi-e+mu+L" texName="pi^{-}e^{+}mu^{+}L" fraction="&lt; 5.0E-5" PUnit="MeV/c"> 
+      </Decay> 
+      <Decay name="rho-mu+mu+L" texName="\rho^{-}mu^{+}mu^{+}L" fraction="&lt; 5.6E-4" PUnit="MeV/c"> 
+      </Decay> 
+      <Decay name="K-e+e+L" texName="K^{-}e^{+}e^{+}L" fraction="&lt; 1.2E-4" PUnit="MeV/c"> 
+      </Decay> 
+      <Decay name="K-mu+mu+L" texName="K^{-}mu^{+}mu^{+}L" fraction="&lt; 1.2E-4" PUnit="MeV/c"> 
+      </Decay> 
+      <Decay name="K-e+mu+L" texName="K^{-}e^{+}mu^{+}L" fraction="&lt; 1.3E-4" PUnit="MeV/c"> 
+      </Decay> 
+      <Decay name="K*(892)-mu+mu+L" texName="K^{\ast}(892)^{-}mu^{+}mu^{+}L" fraction="&lt; 8.5E-4" PUnit="MeV/c"> 
+      </Decay> 
+   </ParticleType> 
+   <ParticleType name="D0" > 
+      <Decay name="etaanything" texName="\eta\;anything" fraction="&lt; 13" PUnit="MeV/c"> 
+      </Decay> 
+      <Decay name="K*" texName="K^{\ast}" fraction="892" PUnit="MeV/c"> 
+      </Decay> 
+      <Decay name="K-pi+pi-mu+nu(mu)" texName="K^{-}pi^{+}pi^{-}mu^{+}nu_{mu}" fraction="&lt; 1.2E-3" PUnit="MeV/c"> 
+      </Decay> 
+      <Decay name="(K*(892)pi)-mu+nu(mu)" texName="(\;K^{\ast}(892)\;pi\;)^{-}mu^{+}nu_{mu}" fraction="&lt; 1.4E-3" PUnit="MeV/c"> 
+      </Decay> 
+      <Decay name="K" texName="K" fraction="0" PUnit="MeV/c"> 
+      </Decay> 
+      <Decay name="K" texName="K" fraction="0" PUnit="MeV/c"> 
+      </Decay> 
+      <Decay name="K" texName="K" fraction="0" PUnit="MeV/c"> 
+      </Decay> 
+      <Decay name="K*" texName="K^{\ast}" fraction="892" PUnit="MeV/c"> 
+      </Decay> 
+      <Decay name="K*" texName="K^{\ast}" fraction="0" PUnit="MeV/c"> 
+      </Decay> 
+      <Decay name="K*" texName="K^{\ast}" fraction="892" PUnit="MeV/c"> 
+      </Decay> 
+      <Decay name="K*" texName="K^{\ast}" fraction="892" PUnit="MeV/c"> 
+      </Decay> 
+      <Decay name="K" texName="K" fraction="0" PUnit="MeV/c"> 
+      </Decay> 
+      <Decay name="K*" texName="K^{\ast}" fraction="892" PUnit="MeV/c"> 
+      </Decay> 
+      <Decay name="K*" texName="K^{\ast}" fraction="892" PUnit="MeV/c"> 
+      </Decay> 
+      <Decay name="K" texName="K" fraction="1" PUnit="MeV/c"> 
+      </Decay> 
+      <Decay name="K*" texName="K^{\ast}" fraction="892" PUnit="MeV/c"> 
+      </Decay> 
+      <Decay name="K*" texName="K^{\ast}" fraction="892" PUnit="MeV/c"> 
+      </Decay> 
+      <Decay name="K" texName="K" fraction="1" PUnit="MeV/c"> 
+      </Decay> 
+      <Decay name="K*" texName="K^{\ast}" fraction="892" PUnit="MeV/c"> 
+      </Decay> 
+      <Decay name="K*" texName="K^{\ast}" fraction="892" PUnit="MeV/c"> 
+      </Decay> 
+      <Decay name="K0a(1)(1260)0" texName="K^{0}a_{1}(1260)^{0}" fraction="&lt; 1.9" PUnit="MeV/c"> 
+      </Decay> 
+      <Decay name="K*(892)-rho+P-wave" texName="K^{\ast}(892)^{-}\rho^{+}P-wave" fraction="&lt; 1.5" PUnit="MeV/c"> 
+      </Decay> 
+      <Decay name="K-pi+f(0)(980)" texName="K^{-}pi^{+}f_{0}(980)" fraction="&lt; 1.1" PUnit="MeV/c"> 
+      </Decay> 
+      <Decay name="K(1)(1400)-pi+" texName="K_{1}(1400)^{-}pi^{+}" fraction="&lt; 1.2" PUnit="MeV/c"> 
+      </Decay> 
+      <Decay name="K(1)(1400)0pi0" texName="K_{1}(1400)^{0}pi^{0}" fraction="&lt; 3.7" PUnit="MeV/c"> 
+      </Decay> 
+      <Decay name="K*(1410)-pi+" texName="K^{\ast}(1410)^{-}pi^{+}" fraction="&lt; 1.2" PUnit="MeV/c"> 
+      </Decay> 
+      <Decay name="K*(892)0eta'(958)" texName="K^{\ast}(892)^{0}\eta^{\prime}(958)" fraction="&lt; 1.0E-3" PUnit="MeV/c"> 
+      </Decay> 
+      <Decay name="K*" texName="K^{\ast}" fraction="892" PUnit="MeV/c"> 
+      </Decay> 
+      <Decay name="timesB(K*0arrowrightK-pi+)" texName="\times\;B(K^{\ast0}\arrowright\;K^{-}pi^{+})" fraction="&lt; 1.1E-3" PUnit="MeV/c"> 
+      </Decay> 
+      <Decay name="K*" texName="K^{\ast}" fraction="892" PUnit="MeV/c"> 
+      </Decay> 
+      <Decay name="K*" texName="K^{\ast}" fraction="892" PUnit="MeV/c"> 
+      </Decay> 
+      <Decay name="K*" texName="K^{\ast}" fraction="892" PUnit="MeV/c"> 
+      </Decay> 
+      <Decay name="K(S)0K(S)0pi0" texName="K^{0}_{S}K^{0}_{S}pi^{0}" fraction="&lt; 5.9E-4" PUnit="MeV/c"> 
+      </Decay> 
+      <Decay name="K*" texName="K^{\ast}" fraction="892" PUnit="MeV/c"> 
+      </Decay> 
+      <Decay name="K*" texName="K^{\ast}" fraction="892" PUnit="MeV/c"> 
+      </Decay> 
+      <Decay name="K+K-pi+pi-non-phi---" texName="K^{+}K^{-}pi^{+}pi^{-}non-\;\phi\;---" fraction="676" PUnit="MeV/c"> 
+      </Decay> 
+      <Decay name="K+K-pi+pi-nonresonant" texName="K^{+}K^{-}pi^{+}pi^{-}nonresonant" fraction="&lt; 8E-4" PUnit="MeV/c"> 
+      </Decay> 
+      <Decay name="K*(892)0K0" texName="K^{\ast}(892)^{0}K^{0}" fraction="&lt; 1.6E-3" PUnit="MeV/c"> 
+      </Decay> 
+      <Decay name="phipi0" texName="\phi\;pi^{0}" fraction="&lt; 1.4E-3" PUnit="MeV/c"> 
+      </Decay> 
+      <Decay name="phieta" texName="\phi\;\eta" fraction="&lt; 2.8E-3" PUnit="MeV/c"> 
+      </Decay> 
+      <Decay name="phiomega" texName="\phi\;\omega" fraction="&lt; 2.1E-3" PUnit="MeV/c"> 
+      </Decay> 
+      <Decay name="rho0gamma" texName="\rho^{0}\gamma" fraction="&lt; 2.4E-4" PUnit="MeV/c"> 
+      </Decay> 
+      <Decay name="omegagamma" texName="\omega\;\gamma" fraction="&lt; 2.4E-4" PUnit="MeV/c"> 
+      </Decay> 
+      <Decay name="phigamma" texName="\phi\;\gamma" fraction="&lt; 1.9E-4" PUnit="MeV/c"> 
+      </Decay> 
+      <Decay name="K*(892)0gamma" texName="K^{\ast}(892)^{0}\gamma" fraction="&lt; 7.6E-4" PUnit="MeV/c"> 
+      </Decay> 
+      <Decay name="K+ell-nu(ell)(viaD0)C2M" texName="K^{+}\ell^{-}nu_{\ell}(via\;D^{0})\;C2M" fraction="&lt; 1.7E-4" PUnit="MeV/c"> 
+      </Decay> 
+      <Decay name="K+pi-(viaD0)C2M" texName="K^{+}pi^{-}(via\;D^{0})\;C2M" fraction="&lt; 1.6E-5" PUnit="MeV/c"> 
+      </Decay> 
+      <Decay name="K+pi-pi+pi-(viaD0)" texName="K^{+}pi^{-}pi^{+}pi^{-}(via\;D^{0})" fraction="&lt; 1.0E-3" PUnit="MeV/c"> 
+      </Decay> 
+      <Decay name="e+e-C1" texName="e^{+}e^{-}C1" fraction="&lt; 6.2E-6" PUnit="MeV/c"> 
+      </Decay> 
+      <Decay name="mu+mu-C1" texName="mu^{+}mu^{-}C1" fraction="&lt; 4.1E-6" PUnit="MeV/c"> 
+      </Decay> 
+      <Decay name="pi0e+e-C1" texName="pi^{0}e^{+}e^{-}C1" fraction="&lt; 4.5E-5" PUnit="MeV/c"> 
+      </Decay> 
+      <Decay name="pi0mu+mu-C1" texName="pi^{0}mu^{+}mu^{-}C1" fraction="&lt; 1.8E-4" PUnit="MeV/c"> 
+      </Decay> 
+      <Decay name="etae+e-C1" texName="\eta\;e^{+}e^{-}C1" fraction="&lt; 1.1E-4" PUnit="MeV/c"> 
+      </Decay> 
+      <Decay name="etamu+mu-C1" texName="\eta\;mu^{+}mu^{-}C1" fraction="&lt; 5.3E-4" PUnit="MeV/c"> 
+      </Decay> 
+      <Decay name="rho0e+e-C1" texName="\rho^{0}e^{+}e^{-}C1" fraction="&lt; 1.0E-4" PUnit="MeV/c"> 
+      </Decay> 
+      <Decay name="rho0mu+mu-C1" texName="\rho^{0}mu^{+}mu^{-}C1" fraction="&lt; 2.3E-4" PUnit="MeV/c"> 
+      </Decay> 
+      <Decay name="omegae+e-C1" texName="\omega\;e^{+}e^{-}C1" fraction="&lt; 1.8E-4" PUnit="MeV/c"> 
+      </Decay> 
+      <Decay name="omegamu+mu-C1" texName="\omega\;mu^{+}mu^{-}C1" fraction="&lt; 8.3E-4" PUnit="MeV/c"> 
+      </Decay> 
+      <Decay name="phie+e-C1" texName="\phi\;e^{+}e^{-}C1" fraction="&lt; 5.2E-5" PUnit="MeV/c"> 
+      </Decay> 
+      <Decay name="phimu+mu-C1" texName="\phi\;mu^{+}mu^{-}C1" fraction="&lt; 4.1E-4" PUnit="MeV/c"> 
+      </Decay> 
+      <Decay name="K0e+e-" texName="K^{0}e^{+}e^{-}" fraction="&lt; 1.1E-4" PUnit="MeV/c"> 
+      </Decay> 
+      <Decay name="K0mu+mu-" texName="K^{0}mu^{+}mu^{-}" fraction="&lt; 2.6E-4" PUnit="MeV/c"> 
+      </Decay> 
+      <Decay name="K*(892)0e+e-" texName="K^{\ast}(892)^{0}e^{+}e^{-}" fraction="&lt; 1.4E-4" PUnit="MeV/c"> 
+      </Decay> 
+      <Decay name="K*(892)0mu+mu-" texName="K^{\ast}(892)^{0}mu^{+}mu^{-}" fraction="&lt; 1.18E-3" PUnit="MeV/c"> 
+      </Decay> 
+      <Decay name="pi+pi-pi0mu+mu-C1" texName="pi^{+}pi^{-}pi^{0}mu^{+}mu^{-}C1" fraction="&lt; 8.1E-4" PUnit="MeV/c"> 
+      </Decay> 
+      <Decay name="mu+emp" texName="mu^{\pm}e^{\mp}" fraction="&lt; 8.1E-6" PUnit="MeV/c"> 
+      </Decay> 
+      <Decay name="pi0e+mump" texName="pi^{0}e^{\pm}mu^{\mp}" fraction="&lt; 8.6E-5" PUnit="MeV/c"> 
+      </Decay> 
+      <Decay name="etae+mump" texName="\eta\;e^{\pm}mu^{\mp}" fraction="&lt; 1.0E-4" PUnit="MeV/c"> 
+      </Decay> 
+      <Decay name="rho0e+mump" texName="\rho^{0}e^{\pm}mu^{\mp}" fraction="&lt; 4.9E-5" PUnit="MeV/c"> 
+      </Decay> 
+      <Decay name="omegae+mump" texName="\omega\;e^{\pm}mu^{\mp}" fraction="&lt; 1.2E-4" PUnit="MeV/c"> 
+      </Decay> 
+      <Decay name="phie+mump" texName="\phi\;e^{\pm}mu^{\mp}" fraction="&lt; 3.4E-5" PUnit="MeV/c"> 
+      </Decay> 
+      <Decay name="K0e+mump" texName="K^{0}e^{\pm}mu^{\mp}" fraction="&lt; 1.0E-4" PUnit="MeV/c"> 
+      </Decay> 
+      <Decay name="K*(892)0e+mump" texName="K^{\ast}(892)^{0}e^{\pm}mu^{\mp}" fraction="&lt; 1.0E-4" PUnit="MeV/c"> 
+      </Decay> 
+   </ParticleType> 
+   <ParticleType name="D*(2007)0" > 
+   </ParticleType> 
+   <ParticleType name="D*(2010)+" > 
+   </ParticleType> 
+   <ParticleType name="D(1)(2420)0" > 
+      <Decay name="D*(2010)+pi-" texName="D^{\ast}(2010)^{+}pi^{-}" fraction="seen" PUnit="MeV/c"> 
+      </Decay> 
+      <Decay name="D+pi-" texName="D^{+}pi^{-}" fraction="not seen" PUnit="MeV/c"> 
+      </Decay> 
+   </ParticleType> 
+   <ParticleType name="D(2)*(2460)0" > 
+      <Decay name="D+pi-" texName="D^{+}pi^{-}" fraction="seen" PUnit="MeV/c"> 
+      </Decay> 
+      <Decay name="D*(2010)+pi-" texName="D^{\ast}(2010)^{+}pi^{-}" fraction="seen" PUnit="MeV/c"> 
+      </Decay> 
+   </ParticleType> 
+   <ParticleType name="D(2)*(2460)+" > 
+      <Decay name="D0pi+" texName="D^{0}pi^{+}" fraction="seen" PUnit="MeV/c"> 
+      </Decay> 
+      <Decay name="D*0pi+" texName="D^{\ast0}pi^{+}" fraction="seen" PUnit="MeV/c"> 
+      </Decay> 
+   </ParticleType> 
+   <ParticleType name="D(s)+" > 
+      <Decay name="K" texName="K" fraction="0" PUnit="MeV/c"> 
+      </Decay> 
+      <Decay name="K+K-pi+pi" texName="K^{+}K^{-}pi^{+}pi" fraction="0" PUnit="MeV/c"> 
+      </Decay> 
+      <Decay name="K+K0pi+pi-" texName="K^{+}K^{0}pi^{+}pi^{-}" fraction="&lt; 2.8" PUnit="MeV/c"> 
+      </Decay> 
+      <Decay name="K0K-pi+pi+non-K*+K*0" texName="K^{0}K^{-}pi^{+}pi^{+}non-K^{\ast+}K^{\ast0}" fraction="&lt; 2.9" PUnit="MeV/c"> 
+      </Decay> 
+      <Decay name="pi+pi+pi-nonresonant" texName="pi^{+}pi^{+}pi^{-}nonresonant" fraction="&lt; 2.8E-3" PUnit="MeV/c"> 
+      </Decay> 
+      <Decay name="pi+pi+pi-pi" texName="pi^{+}pi^{+}pi^{-}pi" fraction="0" PUnit="MeV/c"> 
+      </Decay> 
+      <Decay name="pi+pi+pi+pi-pi-pi" texName="pi^{+}pi^{+}pi^{+}pi^{-}pi^{-}pi" fraction="0" PUnit="MeV/c"> 
+      </Decay> 
+      <Decay name="eta'(958)pi+pi03-body" texName="\eta^{\prime}(958)\;pi^{+}pi^{0}3-body" fraction="&lt; 1.4" PUnit="MeV/c"> 
+      </Decay> 
+      <Decay name="K+rho0" texName="K^{+}\rho^{0}" fraction="&lt; 2.9E-3" PUnit="MeV/c"> 
+      </Decay> 
+      <Decay name="K+K+K-" texName="K^{+}K^{+}K^{-}" fraction="&lt; 6E-4" PUnit="MeV/c"> 
+      </Decay> 
+      <Decay name="phiK+" texName="\phi\;K^{+}" fraction="&lt; 5E-4" PUnit="MeV/c"> 
+      </Decay> 
+      <Decay name="pi+e+e-" texName="pi^{+}e^{+}e^{-}" fraction="&lt; 2.7E-4" PUnit="MeV/c"> 
+      </Decay> 
+      <Decay name="pi+mu+mu-" texName="pi^{+}mu^{+}mu^{-}" fraction="&lt; 1.4E-4" PUnit="MeV/c"> 
+      </Decay> 
+      <Decay name="K+e+e-C1" texName="K^{+}e^{+}e^{-}C1" fraction="&lt; 1.6E-3" PUnit="MeV/c"> 
+      </Decay> 
+      <Decay name="K+mu+mu-C1" texName="K^{+}mu^{+}mu^{-}C1" fraction="&lt; 1.4E-4" PUnit="MeV/c"> 
+      </Decay> 
+      <Decay name="K*(892)+mu+mu-C1" texName="K^{\ast}(892)^{+}mu^{+}mu^{-}C1" fraction="&lt; 1.4E-3" PUnit="MeV/c"> 
+      </Decay> 
+      <Decay name="pi+e+mump" texName="pi^{+}e^{\pm}mu^{\mp}" fraction="&lt; 6.1E-4" PUnit="MeV/c"> 
+      </Decay> 
+      <Decay name="K+e+mump" texName="K^{+}e^{\pm}mu^{\mp}" fraction="&lt; 6.3E-4" PUnit="MeV/c"> 
+      </Decay> 
+      <Decay name="pi-e+e+L" texName="pi^{-}e^{+}e^{+}L" fraction="&lt; 6.9E-4" PUnit="MeV/c"> 
+      </Decay> 
+      <Decay name="pi-mu+mu+L" texName="pi^{-}mu^{+}mu^{+}L" fraction="&lt; 8.2E-5" PUnit="MeV/c"> 
+      </Decay> 
+      <Decay name="pi-e+mu+L" texName="pi^{-}e^{+}mu^{+}L" fraction="&lt; 7.3E-4" PUnit="MeV/c"> 
+      </Decay> 
+      <Decay name="K-e+e+L" texName="K^{-}e^{+}e^{+}L" fraction="&lt; 6.3E-4" PUnit="MeV/c"> 
+      </Decay> 
+      <Decay name="K-mu+mu+L" texName="K^{-}mu^{+}mu^{+}L" fraction="&lt; 1.8E-4" PUnit="MeV/c"> 
+      </Decay> 
+      <Decay name="K-e+mu+L" texName="K^{-}e^{+}mu^{+}L" fraction="&lt; 6.8E-4" PUnit="MeV/c"> 
+      </Decay> 
+      <Decay name="K*(892)-mu+mu+L" texName="K^{\ast}(892)^{-}mu^{+}mu^{+}L" fraction="&lt; 1.4E-3" PUnit="MeV/c"> 
+      </Decay> 
+   </ParticleType> 
+   <ParticleType name="D(s)*+" > 
+   </ParticleType> 
+   <ParticleType name="D(s1)(2536)+" > 
+      <Decay name="D*(2010)+K0" texName="D^{\ast}(2010)^{+}K^{0}" fraction="seen" PUnit="MeV/c"> 
+      </Decay> 
+      <Decay name="D*(2007)0K+" texName="D^{\ast}(2007)^{0}K^{+}" fraction="seen" PUnit="MeV/c"> 
+      </Decay> 
+      <Decay name="D+K0" texName="D^{+}K^{0}" fraction="not seen" PUnit="MeV/c"> 
+      </Decay> 
+      <Decay name="D0K+" texName="D^{0}K^{+}" fraction="not seen" PUnit="MeV/c"> 
+      </Decay> 
+      <Decay name="D(s)*+gammapossibly" texName="D^{\ast+}_{s}\gamma\;possibly" fraction="seen" PUnit="MeV/c"> 
+      </Decay> 
+   </ParticleType> 
+   <ParticleType name="D(sJ)(2573)+" > 
+      <Decay name="D0K+" texName="D^{0}K^{+}" fraction="seen" PUnit="MeV/c"> 
+      </Decay> 
+      <Decay name="D*(2007)0K+" texName="D^{\ast}(2007)^{0}K^{+}" fraction="not seen" PUnit="MeV/c"> 
+      </Decay> 
+   </ParticleType> 
+   <ParticleType name="B-particleorganization" > 
+   </ParticleType> 
+   <ParticleType name="B+" > 
+      <Decay name="pi0e+nu(e)" texName="pi^{0}e^{+}nu_{e}" fraction="&lt; 2.2E-3" PUnit="MeV/c"> 
+      </Decay> 
+      <Decay name="omegaell+nu(ell)" texName="\omega\;\ell^{+}nu_{\ell}" fraction="&lt; 2.1E-4" PUnit="MeV/c"> 
+      </Decay> 
+      <Decay name="rho0ell+nu(ell)" texName="\rho^{0}\ell^{+}nu_{\ell}" fraction="&lt; 2.1E-4" PUnit="MeV/c"> 
+      </Decay> 
+      <Decay name="e+nu(e)" texName="e^{+}nu_{e}" fraction="&lt; 1.5E-5" PUnit="MeV/c"> 
+      </Decay> 
+      <Decay name="mu+nu(mu)" texName="mu^{+}nu_{mu}" fraction="&lt; 2.1E-5" PUnit="MeV/c"> 
+      </Decay> 
+      <Decay name="tau+nu(tau)" texName="\tau^{+}nu_{\tau}" fraction="&lt; 5.7E-4" PUnit="MeV/c"> 
+      </Decay> 
+      <Decay name="e+nu(e)gamma" texName="e^{+}nu_{e}\gamma" fraction="&lt; 2.0E-4" PUnit="MeV/c"> 
+      </Decay> 
+      <Decay name="mu+nu(mu)gamma" texName="mu^{+}nu_{mu}\gamma" fraction="&lt; 5.2E-5" PUnit="MeV/c"> 
+      </Decay> 
+      <Decay name="D-pi+pi+" texName="D^{-}pi^{+}pi^{+}" fraction="&lt; 1.4E-3" PUnit="MeV/c"> 
+      </Decay> 
+      <Decay name="D*(2010)+pi0" texName="D^{\ast}(2010)^{+}pi^{0}" fraction="&lt; 1.7E-4" PUnit="MeV/c"> 
+      </Decay> 
+      <Decay name="D(1)*(2420)0rho+" texName="D^{\ast}_{1}(2420)^{0}\rho^{+}" fraction="&lt; 1.4E-3" PUnit="MeV/c"> 
+      </Decay> 
+      <Decay name="D(2)*(2460)0pi+" texName="D^{\ast}_{2}(2460)^{0}pi^{+}" fraction="&lt; 1.3E-3" PUnit="MeV/c"> 
+      </Decay> 
+      <Decay name="D(2)*(2460)0rho+" texName="D^{\ast}_{2}(2460)^{0}\rho^{+}" fraction="&lt; 4.7E-3" PUnit="MeV/c"> 
+      </Decay> 
+      <Decay name="D*(2007)0D*(2010)+" texName="D^{\ast}(2007)^{0}D^{\ast}(2010)^{+}" fraction="&lt; 1.1" PUnit="MeV/c"> 
+      </Decay> 
+      <Decay name="D" texName="D" fraction="0" PUnit="MeV/c"> 
+      </Decay> 
+      <Decay name="D*(2007)0D+" texName="D^{\ast}(2007)^{0}D^{+}" fraction="&lt; 1.3" PUnit="MeV/c"> 
+      </Decay> 
+      <Decay name="D0D+" texName="D^{0}D^{+}" fraction="&lt; 6.7E-3" PUnit="MeV/c"> 
+      </Decay> 
+      <Decay name="D(s)+pi0" texName="D^{+}_{s}pi^{0}" fraction="&lt; 2.0E-4" PUnit="MeV/c"> 
+      </Decay> 
+      <Decay name="D(s)*+pi0" texName="D^{\ast+}_{s}pi^{0}" fraction="&lt; 3.3E-4" PUnit="MeV/c"> 
+      </Decay> 
+      <Decay name="D(s)+eta" texName="D^{+}_{s}\eta" fraction="&lt; 5E-4" PUnit="MeV/c"> 
+      </Decay> 
+      <Decay name="D(s)*+eta" texName="D^{\ast+}_{s}\eta" fraction="&lt; 8E-4" PUnit="MeV/c"> 
+      </Decay> 
+      <Decay name="D(s)+omega" texName="D^{+}_{s}\omega" fraction="&lt; 5E-4" PUnit="MeV/c"> 
+      </Decay> 
+      <Decay name="D(s)*+omega" texName="D^{\ast+}_{s}\omega" fraction="&lt; 7E-4" PUnit="MeV/c"> 
+      </Decay> 
+      <Decay name="D(s)+a(1)(1260)0" texName="D^{+}_{s}a_{1}(1260)^{0}" fraction="&lt; 2.2E-3" PUnit="MeV/c"> 
+      </Decay> 
+      <Decay name="D(s)*+a(1)(1260)0" texName="D^{\ast+}_{s}a_{1}(1260)^{0}" fraction="&lt; 1.6E-3" PUnit="MeV/c"> 
+      </Decay> 
+      <Decay name="D(s)+phi" texName="D^{+}_{s}\phi" fraction="&lt; 3.2E-4" PUnit="MeV/c"> 
+      </Decay> 
+      <Decay name="D(s)*+phi" texName="D^{\ast+}_{s}\phi" fraction="&lt; 4E-4" PUnit="MeV/c"> 
+      </Decay> 
+      <Decay name="D(s)+K0" texName="D^{+}_{s}K^{0}" fraction="&lt; 1.1E-3" PUnit="MeV/c"> 
+      </Decay> 
+      <Decay name="D(s)*+K0" texName="D^{\ast+}_{s}K^{0}" fraction="&lt; 1.1E-3" PUnit="MeV/c"> 
+      </Decay> 
+      <Decay name="D(s)-pi+K+" texName="D^{-}_{s}pi^{+}K^{+}" fraction="&lt; 8E-4" PUnit="MeV/c"> 
+      </Decay> 
+      <Decay name="D(s)*-pi+K+" texName="D^{\ast-}_{s}pi^{+}K^{+}" fraction="&lt; 1.2E-3" PUnit="MeV/c"> 
+      </Decay> 
+      <Decay name="J/psi(1S)rho+" texName="J/\psi\;(1S\;)\;\rho^{+}" fraction="&lt; 7.7E-4" PUnit="MeV/c"> 
+      </Decay> 
+      <Decay name="J/psi(1S)a(1)(1260)+" texName="J/\psi\;(1S\;)\;a_{1}(1260)^{+}" fraction="&lt; 1.2E-3" PUnit="MeV/c"> 
+      </Decay> 
+      <Decay name="psi(2S)K*(892)+" texName="\psi\;(2S\;)\;K^{\ast}(892)^{+}" fraction="&lt; 3.0E-3" PUnit="MeV/c"> 
+      </Decay> 
+      <Decay name="chi(c1)(1P)K*(892)+" texName="\chi_{c1}(1P)\;K^{\ast}(892)^{+}" fraction="&lt; 2.1E-3" PUnit="MeV/c"> 
+      </Decay> 
+      <Decay name="K+pi0" texName="K^{+}pi^{0}" fraction="&lt; 1.6E-5" PUnit="MeV/c"> 
+      </Decay> 
+      <Decay name="eta'K*(892)+" texName="\eta^{\prime}K^{\ast}(892)^{+}" fraction="&lt; 1.3E-4" PUnit="MeV/c"> 
+      </Decay> 
+      <Decay name="etaK+" texName="\eta\;K^{+}" fraction="&lt; 1.4E-5" PUnit="MeV/c"> 
+      </Decay> 
+      <Decay name="etaK*(892)+" texName="\eta\;K^{\ast}(892)^{+}" fraction="&lt; 3.0E-5" PUnit="MeV/c"> 
+      </Decay> 
+      <Decay name="omegaK*(892)+" texName="\omega\;K^{\ast}(892)^{+}" fraction="&lt; 8.7E-5" PUnit="MeV/c"> 
+      </Decay> 
+      <Decay name="K*(892)0pi+" texName="K^{\ast}(892)^{0}pi^{+}" fraction="&lt; 4.1E-5" PUnit="MeV/c"> 
+      </Decay> 
+      <Decay name="K*(892)+pi0" texName="K^{\ast}(892)^{+}pi^{0}" fraction="&lt; 9.9E-5" PUnit="MeV/c"> 
+      </Decay> 
+      <Decay name="K+pi-pi+nonresonant" texName="K^{+}pi^{-}pi^{+}nonresonant" fraction="&lt; 2.8E-5" PUnit="MeV/c"> 
+      </Decay> 
+      <Decay name="K-pi+pi+nonresonant" texName="K^{-}pi^{+}pi^{+}nonresonant" fraction="&lt; 5.6E-5" PUnit="MeV/c"> 
+      </Decay> 
+      <Decay name="K(1)(1400)0pi+" texName="K_{1}(1400)^{0}pi^{+}" fraction="&lt; 2.6E-3" PUnit="MeV/c"> 
+      </Decay> 
+      <Decay name="K(2)*(1430)0pi+" texName="K^{\ast}_{2}(1430)^{0}pi^{+}" fraction="&lt; 6.8E-4" PUnit="MeV/c"> 
+      </Decay> 
+      <Decay name="K+rho0" texName="K^{+}\rho^{0}" fraction="&lt; 1.9E-5" PUnit="MeV/c"> 
+      </Decay> 
+      <Decay name="K0rho+" texName="K^{0}\rho^{+}" fraction="&lt; 4.8E-5" PUnit="MeV/c"> 
+      </Decay> 
+      <Decay name="K*(892)+pi+pi-" texName="K^{\ast}(892)^{+}pi^{+}pi^{-}" fraction="&lt; 1.1E-3" PUnit="MeV/c"> 
+      </Decay> 
+      <Decay name="K*(892)+rho0" texName="K^{\ast}(892)^{+}\rho^{0}" fraction="&lt; 9.0E-4" PUnit="MeV/c"> 
+      </Decay> 
+      <Decay name="K(1)(1400)+rho0" texName="K_{1}(1400)^{+}\rho^{0}" fraction="&lt; 7.8E-4" PUnit="MeV/c"> 
+      </Decay> 
+      <Decay name="K(2)*(1430)+rho0" texName="K^{\ast}_{2}(1430)^{+}\rho^{0}" fraction="&lt; 1.5E-3" PUnit="MeV/c"> 
+      </Decay> 
+      <Decay name="K+K0" texName="K^{+}K^{0}" fraction="&lt; 2.1E-5" PUnit="MeV/c"> 
+      </Decay> 
+      <Decay name="K+K-pi+nonresonant" texName="K^{+}K^{-}pi^{+}nonresonant" fraction="&lt; 7.5E-5" PUnit="MeV/c"> 
+      </Decay> 
+      <Decay name="K+K+pi-nonresonant" texName="K^{+}K^{+}pi^{-}nonresonant" fraction="&lt; 8.79E-5" PUnit="MeV/c"> 
+      </Decay> 
+      <Decay name="K+K*(892)0" texName="K^{+}K^{\ast}(892)^{0}" fraction="&lt; 1.29E-4" PUnit="MeV/c"> 
+      </Decay> 
+      <Decay name="K+K-K+" texName="K^{+}K^{-}K^{+}" fraction="&lt; 2.0E-4" PUnit="MeV/c"> 
+      </Decay> 
+      <Decay name="K+phi" texName="K^{+}\phi" fraction="&lt; 5E-6" PUnit="MeV/c"> 
+      </Decay> 
+      <Decay name="K+K-K+nonresonant" texName="K^{+}K^{-}K^{+}nonresonant" fraction="&lt; 3.8E-5" PUnit="MeV/c"> 
+      </Decay> 
+      <Decay name="K*(892)+K+K-" texName="K^{\ast}(892)^{+}K^{+}K^{-}" fraction="&lt; 1.6E-3" PUnit="MeV/c"> 
+      </Decay> 
+      <Decay name="K*(892)+phi" texName="K^{\ast}(892)^{+}\phi" fraction="&lt; 4.1E-5" PUnit="MeV/c"> 
+      </Decay> 
+      <Decay name="K(1)(1400)+phi" texName="K_{1}(1400)^{+}\phi" fraction="&lt; 1.1E-3" PUnit="MeV/c"> 
+      </Decay> 
+      <Decay name="K(2)*(1430)+phi" texName="K^{\ast}_{2}(1430)^{+}\phi" fraction="&lt; 3.4E-3" PUnit="MeV/c"> 
+      </Decay> 
+      <Decay name="K(1)(1270)+gamma" texName="K_{1}(1270)^{+}\gamma" fraction="&lt; 7.3E-3" PUnit="MeV/c"> 
+      </Decay> 
+      <Decay name="K(1)(1400)+gamma" texName="K_{1}(1400)^{+}\gamma" fraction="&lt; 2.2E-3" PUnit="MeV/c"> 
+      </Decay> 
+      <Decay name="K(2)*(1430)+gamma" texName="K^{\ast}_{2}(1430)^{+}\gamma" fraction="&lt; 1.4E-3" PUnit="MeV/c"> 
+      </Decay> 
+      <Decay name="K*(1680)+gamma" texName="K^{\ast}(1680)^{+}\gamma" fraction="&lt; 1.9E-3" PUnit="MeV/c"> 
+      </Decay> 
+      <Decay name="K(3)*(1780)+gamma" texName="K^{\ast}_{3}(1780)^{+}\gamma" fraction="&lt; 5.5E-3" PUnit="MeV/c"> 
+      </Decay> 
+      <Decay name="K(4)*(2045)+gamma" texName="K^{\ast}_{4}(2045)^{+}\gamma" fraction="&lt; 9.9E-3" PUnit="MeV/c"> 
+      </Decay> 
+      <Decay name="pi+pi0" texName="pi^{+}pi^{0}" fraction="&lt; 2.0E-5" PUnit="MeV/c"> 
+      </Decay> 
+      <Decay name="pi+pi+pi-" texName="pi^{+}pi^{+}pi^{-}" fraction="&lt; 1.3E-4" PUnit="MeV/c"> 
+      </Decay> 
+      <Decay name="rho0pi+" texName="\rho^{0}pi^{+}" fraction="&lt; 4.3E-5" PUnit="MeV/c"> 
+      </Decay> 
+      <Decay name="pi+f(0)(980)" texName="pi^{+}f_{0}(980)" fraction="&lt; 1.4E-4" PUnit="MeV/c"> 
+      </Decay> 
+      <Decay name="pi+f(2)(1270)" texName="pi^{+}f_{2}(1270)" fraction="&lt; 2.4E-4" PUnit="MeV/c"> 
+      </Decay> 
+      <Decay name="pi+pi-pi+nonresonant" texName="pi^{+}pi^{-}pi^{+}nonresonant" fraction="&lt; 4.1E-5" PUnit="MeV/c"> 
+      </Decay> 
+      <Decay name="pi+pi0pi0" texName="pi^{+}pi^{0}pi^{0}" fraction="&lt; 8.9E-4" PUnit="MeV/c"> 
+      </Decay> 
+      <Decay name="rho+pi0" texName="\rho^{+}pi^{0}" fraction="&lt; 7.7E-5" PUnit="MeV/c"> 
+      </Decay> 
+      <Decay name="pi+pi-pi+pi0" texName="pi^{+}pi^{-}pi^{+}pi^{0}" fraction="&lt; 4.0E-3" PUnit="MeV/c"> 
+      </Decay> 
+      <Decay name="rho+rho0" texName="\rho^{+}\rho^{0}" fraction="&lt; 1.0E-3" PUnit="MeV/c"> 
+      </Decay> 
+      <Decay name="a(1)(1260)+pi0" texName="a_{1}(1260)^{+}pi^{0}" fraction="&lt; 1.7E-3" PUnit="MeV/c"> 
+      </Decay> 
+      <Decay name="a(1)(1260)0pi+" texName="a_{1}(1260)^{0}pi^{+}" fraction="&lt; 9.0E-4" PUnit="MeV/c"> 
+      </Decay> 
+      <Decay name="omegapi+" texName="\omega\;pi^{+}" fraction="&lt; 2.3E-5" PUnit="MeV/c"> 
+      </Decay> 
+      <Decay name="omegarho+" texName="\omega\;\rho^{+}" fraction="&lt; 6.1E-5" PUnit="MeV/c"> 
+      </Decay> 
+      <Decay name="etapi+" texName="\eta\;pi^{+}" fraction="&lt; 1.5E-5" PUnit="MeV/c"> 
+      </Decay> 
+      <Decay name="eta'pi+" texName="\eta^{\prime}pi^{+}" fraction="&lt; 3.1E-5" PUnit="MeV/c"> 
+      </Decay> 
+      <Decay name="eta'rho+" texName="\eta^{\prime}\rho^{+}" fraction="&lt; 4.7E-5" PUnit="MeV/c"> 
+      </Decay> 
+      <Decay name="etarho+" texName="\eta\;\rho^{+}" fraction="&lt; 3.2E-5" PUnit="MeV/c"> 
+      </Decay> 
+      <Decay name="phipi+" texName="\phi\;pi^{+}" fraction="&lt; 5E-6" PUnit="MeV/c"> 
+      </Decay> 
+      <Decay name="phirho+" texName="\phi\;\rho^{+}" fraction="&lt; 1.6E-5" PUnit="MeV/c"> 
+      </Decay> 
+      <Decay name="pi+pi+pi+pi-pi-" texName="pi^{+}pi^{+}pi^{+}pi^{-}pi^{-}" fraction="&lt; 8.6E-4" PUnit="MeV/c"> 
+      </Decay> 
+      <Decay name="rho0a(1)(1260)+" texName="\rho^{0}a_{1}(1260)^{+}" fraction="&lt; 6.2E-4" PUnit="MeV/c"> 
+      </Decay> 
+      <Decay name="rho0a(2)(1320)+" texName="\rho^{0}a_{2}(1320)^{+}" fraction="&lt; 7.2E-4" PUnit="MeV/c"> 
+      </Decay> 
+      <Decay name="pi+pi+pi+pi-pi-pi0" texName="pi^{+}pi^{+}pi^{+}pi^{-}pi^{-}pi^{0}" fraction="&lt; 6.3E-3" PUnit="MeV/c"> 
+      </Decay> 
+      <Decay name="a(1)(1260)+a(1)(1260)0" texName="a_{1}(1260)^{+}a_{1}(1260)^{0}" fraction="&lt; 1.3" PUnit="MeV/c"> 
+      </Decay> 
+      <Decay name="pppi+" texName="p\;p\;pi^{+}" fraction="&lt; 1.6E-4" PUnit="MeV/c"> 
+      </Decay> 
+      <Decay name="pppi+nonresonant" texName="p\;p\;pi^{+}nonresonant" fraction="&lt; 5.3E-5" PUnit="MeV/c"> 
+      </Decay> 
+      <Decay name="pppi+pi+pi-" texName="p\;p\;pi^{+}pi^{+}pi^{-}" fraction="&lt; 5.2E-4" PUnit="MeV/c"> 
+      </Decay> 
+      <Decay name="ppK+nonresonant" texName="p\;p\;K^{+}nonresonant" fraction="&lt; 8.9E-5" PUnit="MeV/c"> 
+      </Decay> 
+      <Decay name="pLambda" texName="p\;\Lambda" fraction="&lt; 2.6E-6" PUnit="MeV/c"> 
+      </Decay> 
+      <Decay name="pLambdapi+pi-" texName="p\;\Lambda\;pi^{+}pi^{-}" fraction="&lt; 2.0E-4" PUnit="MeV/c"> 
+      </Decay> 
+      <Decay name="Delta0p" texName="\Delta^{0}p" fraction="&lt; 3.8E-4" PUnit="MeV/c"> 
+      </Decay> 
+      <Decay name="Delta++p" texName="\Delta^{++}p" fraction="&lt; 1.5E-4" PUnit="MeV/c"> 
+      </Decay> 
+      <Decay name="Lambda(c)-ppi+pi0" texName="\Lambda^{-}_{c}p\;pi^{+}pi^{0}" fraction="&lt; 3.12E-3" PUnit="MeV/c"> 
+      </Decay> 
+      <Decay name="Lambda(c)-ppi+pi+pi-" texName="\Lambda^{-}_{c}p\;pi^{+}pi^{+}pi^{-}" fraction="&lt; 1.46E-3" PUnit="MeV/c"> 
+      </Decay> 
+      <Decay name="Lambda(c)-ppi+pi+pi-pi0" texName="\Lambda^{-}_{c}p\;pi^{+}pi^{+}pi^{-}pi^{0}" fraction="&lt; 1.34" PUnit="MeV/c"> 
+      </Decay> 
+      <Decay name="LeptonFamilynumber" texName="Lepton\;Family\;number" fraction="1" PUnit="MeV/c"> 
+      </Decay> 
+      <Decay name="pi+e+e-" texName="pi^{+}e^{+}e^{-}" fraction="&lt; 3.9E-3" PUnit="MeV/c"> 
+      </Decay> 
+      <Decay name="pi+mu+mu-" texName="pi^{+}mu^{+}mu^{-}" fraction="&lt; 9.1E-3" PUnit="MeV/c"> 
+      </Decay> 
+      <Decay name="K+e+e-" texName="K^{+}e^{+}e^{-}" fraction="&lt; 6E-5" PUnit="MeV/c"> 
+      </Decay> 
+      <Decay name="K+mu+mu-" texName="K^{+}mu^{+}mu^{-}" fraction="&lt; 5.2E-6" PUnit="MeV/c"> 
+      </Decay> 
+      <Decay name="K*(892)+e+e-" texName="K^{\ast}(892)^{+}e^{+}e^{-}" fraction="&lt; 6.9E-4" PUnit="MeV/c"> 
+      </Decay> 
+      <Decay name="K*(892)+mu+mu-" texName="K^{\ast}(892)^{+}mu^{+}mu^{-}" fraction="&lt; 1.2E-3" PUnit="MeV/c"> 
+      </Decay> 
+      <Decay name="pi+e+mu-" texName="pi^{+}e^{+}mu^{-}" fraction="&lt; 6.4E-3" PUnit="MeV/c"> 
+      </Decay> 
+      <Decay name="pi+e-mu+" texName="pi^{+}e^{-}mu^{+}" fraction="&lt; 6.4E-3" PUnit="MeV/c"> 
+      </Decay> 
+      <Decay name="K+e+mu-" texName="K^{+}e^{+}mu^{-}" fraction="&lt; 6.4E-3" PUnit="MeV/c"> 
+      </Decay> 
+      <Decay name="K+e-mu+" texName="K^{+}e^{-}mu^{+}" fraction="&lt; 6.4E-3" PUnit="MeV/c"> 
+      </Decay> 
+      <Decay name="pi-e+e+L" texName="pi^{-}e^{+}e^{+}L" fraction="&lt; 3.9E-3" PUnit="MeV/c"> 
+      </Decay> 
+      <Decay name="pi-mu+mu+L" texName="pi^{-}mu^{+}mu^{+}L" fraction="&lt; 9.1E-3" PUnit="MeV/c"> 
+      </Decay> 
+      <Decay name="pi-e+mu+" texName="pi^{-}e^{+}mu^{+}" fraction="&lt; 6.4E-3" PUnit="MeV/c"> 
+      </Decay> 
+      <Decay name="K-e+e+L" texName="K^{-}e^{+}e^{+}L" fraction="&lt; 3.9E-3" PUnit="MeV/c"> 
+      </Decay> 
+      <Decay name="K-mu+mu+L" texName="K^{-}mu^{+}mu^{+}L" fraction="&lt; 9.1E-3" PUnit="MeV/c"> 
+      </Decay> 
+      <Decay name="K-e+mu+" texName="K^{-}e^{+}mu^{+}" fraction="&lt; 6.4E-3" PUnit="MeV/c"> 
+      </Decay> 
+   </ParticleType> 
+   <ParticleType name="B0" > 
+      <Decay name="D0pi+pi-" texName="D^{0}pi^{+}pi^{-}" fraction="&lt; 1.6E-3" PUnit="MeV/c"> 
+      </Decay> 
+      <Decay name="D(2)*(2460)-pi+" texName="D^{\ast}_{2}(2460)^{-}pi^{+}" fraction="&lt; 2.2E-3" PUnit="MeV/c"> 
+      </Decay> 
+      <Decay name="D(2)*(2460)-rho+" texName="D^{\ast}_{2}(2460)^{-}\rho^{+}" fraction="&lt; 4.9E-3" PUnit="MeV/c"> 
+      </Decay> 
+      <Decay name="D-D+" texName="D^{-}D^{+}" fraction="&lt; 1.2E-3" PUnit="MeV/c"> 
+      </Decay> 
+      <Decay name="D(s)+pi-" texName="D^{+}_{s}pi^{-}" fraction="&lt; 2.8E-4" PUnit="MeV/c"> 
+      </Decay> 
+      <Decay name="D(s)*+pi-" texName="D^{\ast+}_{s}pi^{-}" fraction="&lt; 5E-4" PUnit="MeV/c"> 
+      </Decay> 
+      <Decay name="D(s)+rho-" texName="D^{+}_{s}\rho^{-}" fraction="&lt; 7E-4" PUnit="MeV/c"> 
+      </Decay> 
+      <Decay name="D(s)*+rho-" texName="D^{\ast+}_{s}\rho^{-}" fraction="&lt; 8E-4" PUnit="MeV/c"> 
+      </Decay> 
+      <Decay name="D(s)+a(1)(1260)-" texName="D^{+}_{s}a_{1}(1260)^{-}" fraction="&lt; 2.6E-3" PUnit="MeV/c"> 
+      </Decay> 
+      <Decay name="D(s)*+a(1)(1260)-" texName="D^{\ast+}_{s}a_{1}(1260)^{-}" fraction="&lt; 2.2E-3" PUnit="MeV/c"> 
+      </Decay> 
+      <Decay name="D(s)-K+" texName="D^{-}_{s}K^{+}" fraction="&lt; 2.4E-4" PUnit="MeV/c"> 
+      </Decay> 
+      <Decay name="D(s)*-K+" texName="D^{\ast-}_{s}K^{+}" fraction="&lt; 1.7E-4" PUnit="MeV/c"> 
+      </Decay> 
+      <Decay name="D(s)-K*(892)+" texName="D^{-}_{s}K^{\ast}(892)^{+}" fraction="&lt; 9.9E-4" PUnit="MeV/c"> 
+      </Decay> 
+      <Decay name="D(s)*-K*(892)+" texName="D^{\ast-}_{s}K^{\ast}(892)^{+}" fraction="&lt; 1.1E-3" PUnit="MeV/c"> 
+      </Decay> 
+      <Decay name="D(s)*-pi+K0" texName="D^{\ast-}_{s}pi^{+}K^{0}" fraction="&lt; 3.1E-3" PUnit="MeV/c"> 
+      </Decay> 
+      <Decay name="D(s)*-pi+K*(892)0" texName="D^{\ast-}_{s}pi^{+}K^{\ast}(892)^{0}" fraction="&lt; 2.0E-3" PUnit="MeV/c"> 
+      </Decay> 
+      <Decay name="D0pi0" texName="D^{0}pi^{0}" fraction="&lt; 1.2E-4" PUnit="MeV/c"> 
+      </Decay> 
+      <Decay name="D0rho0" texName="D^{0}\rho^{0}" fraction="&lt; 3.9E-4" PUnit="MeV/c"> 
+      </Decay> 
+      <Decay name="D0eta" texName="D^{0}\eta" fraction="&lt; 1.3E-4" PUnit="MeV/c"> 
+      </Decay> 
+      <Decay name="D0eta'" texName="D^{0}\eta^{\prime}" fraction="&lt; 9.4E-4" PUnit="MeV/c"> 
+      </Decay> 
+      <Decay name="D0omega" texName="D^{0}\omega" fraction="&lt; 5.1E-4" PUnit="MeV/c"> 
+      </Decay> 
+      <Decay name="D*(2007)0pi0" texName="D^{\ast}(2007)^{0}pi^{0}" fraction="&lt; 4.4E-4" PUnit="MeV/c"> 
+      </Decay> 
+      <Decay name="D*(2007)0rho0" texName="D^{\ast}(2007)^{0}\rho^{0}" fraction="&lt; 5.6E-4" PUnit="MeV/c"> 
+      </Decay> 
+      <Decay name="D*(2007)0eta" texName="D^{\ast}(2007)^{0}\eta" fraction="&lt; 2.6E-4" PUnit="MeV/c"> 
+      </Decay> 
+      <Decay name="D*(2007)0eta'" texName="D^{\ast}(2007)^{0}\eta^{\prime}" fraction="&lt; 1.4E-3" PUnit="MeV/c"> 
+      </Decay> 
+      <Decay name="D*(2007)0omega" texName="D^{\ast}(2007)^{0}\omega" fraction="&lt; 7.4E-4" PUnit="MeV/c"> 
+      </Decay> 
+      <Decay name="D*(2010)+D-" texName="D^{\ast}(2010)^{+}D^{-}" fraction="&lt; 1.8E-3" PUnit="MeV/c"> 
+      </Decay> 
+      <Decay name="D(*)0D(*)0" texName="D^{(\ast)0}D^{(\ast)0}" fraction="&lt; 2.7" PUnit="MeV/c"> 
+      </Decay> 
+      <Decay name="J/psi(1S)pi0" texName="J/\psi\;(1S\;)\;pi^{0}" fraction="&lt; 5.8E-5" PUnit="MeV/c"> 
+      </Decay> 
+      <Decay name="J/psi(1S)eta" texName="J/\psi\;(1S\;)\;\eta" fraction="&lt; 1.2E-3" PUnit="MeV/c"> 
+      </Decay> 
+      <Decay name="J/psi(1S)rho0" texName="J/\psi\;(1S\;)\;\rho^{0}" fraction="&lt; 2.5E-4" PUnit="MeV/c"> 
+      </Decay> 
+      <Decay name="J/psi(1S)omega" texName="J/\psi\;(1S\;)\;\omega" fraction="&lt; 2.7E-4" PUnit="MeV/c"> 
+      </Decay> 
+      <Decay name="chi(c1)(1P)K0" texName="\chi_{c1}(1P)\;K^{0}" fraction="&lt; 2.7E-3" PUnit="MeV/c"> 
+      </Decay> 
+      <Decay name="chi(c1)(1P)K*(892)0" texName="\chi_{c1}(1P)\;K^{\ast}(892)^{0}" fraction="&lt; 2.1E-3" PUnit="MeV/c"> 
+      </Decay> 
+      <Decay name="K0pi0" texName="K^{0}pi^{0}" fraction="&lt; 4.1E-5" PUnit="MeV/c"> 
+      </Decay> 
+      <Decay name="eta'K*(892)0" texName="\eta^{\prime}K^{\ast}(892)^{0}" fraction="&lt; 3.9E-5" PUnit="MeV/c"> 
+      </Decay> 
+      <Decay name="etaK*(892)0" texName="\eta\;K^{\ast}(892)^{0}" fraction="&lt; 3.0E-5" PUnit="MeV/c"> 
+      </Decay> 
+      <Decay name="etaK0" texName="\eta\;K^{0}" fraction="&lt; 3.3E-5" PUnit="MeV/c"> 
+      </Decay> 
+      <Decay name="omegaK0" texName="\omega\;K^{0}" fraction="&lt; 5.7E-5" PUnit="MeV/c"> 
+      </Decay> 
+      <Decay name="omegaK*(892)0" texName="\omega\;K^{\ast}(892)^{0}" fraction="&lt; 2.3E-5" PUnit="MeV/c"> 
+      </Decay> 
+      <Decay name="K+K-" texName="K^{+}K^{-}" fraction="&lt; 4.3E-6" PUnit="MeV/c"> 
+      </Decay> 
+      <Decay name="K0K0" texName="K^{0}K^{0}" fraction="&lt; 1.7E-5" PUnit="MeV/c"> 
+      </Decay> 
+      <Decay name="K+rho-" texName="K^{+}\rho^{-}" fraction="&lt; 3.5E-5" PUnit="MeV/c"> 
+      </Decay> 
+      <Decay name="K0rho0" texName="K^{0}\rho^{0}" fraction="&lt; 3.9E-5" PUnit="MeV/c"> 
+      </Decay> 
+      <Decay name="K0f(0)(980)" texName="K^{0}f_{0}(980)" fraction="&lt; 3.6E-4" PUnit="MeV/c"> 
+      </Decay> 
+      <Decay name="K*(892)+pi-" texName="K^{\ast}(892)^{+}pi^{-}" fraction="&lt; 7.2E-5" PUnit="MeV/c"> 
+      </Decay> 
+      <Decay name="K*(892)0pi0" texName="K^{\ast}(892)^{0}pi^{0}" fraction="&lt; 2.8E-5" PUnit="MeV/c"> 
+      </Decay> 
+      <Decay name="K(2)*(1430)+pi-" texName="K^{\ast}_{2}(1430)^{+}pi^{-}" fraction="&lt; 2.6E-3" PUnit="MeV/c"> 
+      </Decay> 
+      <Decay name="K0K+K-" texName="K^{0}K^{+}K^{-}" fraction="&lt; 1.3E-3" PUnit="MeV/c"> 
+      </Decay> 
+      <Decay name="K0phi" texName="K^{0}\phi" fraction="&lt; 3.1E-5" PUnit="MeV/c"> 
+      </Decay> 
+      <Decay name="K-pi+pi+pi-" texName="K^{-}pi^{+}pi^{+}pi^{-}" fraction="&lt; 2.3E-4" PUnit="MeV/c"> 
+      </Decay> 
+      <Decay name="K*(892)0pi+pi-" texName="K^{\ast}(892)^{0}pi^{+}pi^{-}" fraction="&lt; 1.4E-3" PUnit="MeV/c"> 
+      </Decay> 
+      <Decay name="K*(892)0K+K-" texName="K^{\ast}(892)^{0}K^{+}K^{-}" fraction="&lt; 6.1E-4" PUnit="MeV/c"> 
+      </Decay> 
+      <Decay name="K*(892)0phi" texName="K^{\ast}(892)^{0}\phi" fraction="&lt; 2.1E-5" PUnit="MeV/c"> 
+      </Decay> 
+      <Decay name="K(1)(1400)0rho0" texName="K_{1}(1400)^{0}\rho^{0}" fraction="&lt; 3.0E-3" PUnit="MeV/c"> 
+      </Decay> 
+      <Decay name="K(1)(1400)0phi" texName="K_{1}(1400)^{0}\phi" fraction="&lt; 5.0E-3" PUnit="MeV/c"> 
+      </Decay> 
+      <Decay name="K(2)*(1430)0rho0" texName="K^{\ast}_{2}(1430)^{0}\rho^{0}" fraction="&lt; 1.1E-3" PUnit="MeV/c"> 
+      </Decay> 
+      <Decay name="K(2)*(1430)0phi" texName="K^{\ast}_{2}(1430)^{0}\phi" fraction="&lt; 1.4E-3" PUnit="MeV/c"> 
+      </Decay> 
+      <Decay name="K(1)(1270)0gamma" texName="K_{1}(1270)^{0}\gamma" fraction="&lt; 7.0E-3" PUnit="MeV/c"> 
+      </Decay> 
+      <Decay name="K(1)(1400)0gamma" texName="K_{1}(1400)^{0}\gamma" fraction="&lt; 4.3E-3" PUnit="MeV/c"> 
+      </Decay> 
+      <Decay name="K(2)*(1430)0gamma" texName="K^{\ast}_{2}(1430)^{0}\gamma" fraction="&lt; 4.0E-4" PUnit="MeV/c"> 
+      </Decay> 
+      <Decay name="K*(1680)0gamma" texName="K^{\ast}(1680)^{0}\gamma" fraction="&lt; 2.0E-3" PUnit="MeV/c"> 
+      </Decay> 
+      <Decay name="K(3)*(1780)0gamma" texName="K^{\ast}_{3}(1780)^{0}\gamma" fraction="&lt; 1.0" PUnit="MeV/c"> 
+      </Decay> 
+      <Decay name="K(4)*(2045)0gamma" texName="K^{\ast}_{4}(2045)^{0}\gamma" fraction="&lt; 4.3E-3" PUnit="MeV/c"> 
+      </Decay> 
+      <Decay name="pi+pi-" texName="pi^{+}pi^{-}" fraction="&lt; 1.5E-5" PUnit="MeV/c"> 
+      </Decay> 
+      <Decay name="pi0pi0" texName="pi^{0}pi^{0}" fraction="&lt; 9.3E-6" PUnit="MeV/c"> 
+      </Decay> 
+      <Decay name="etaeta" texName="\eta\;\eta" fraction="&lt; 1.8E-5" PUnit="MeV/c"> 
+      </Decay> 
+      <Decay name="eta'pi0" texName="\eta^{\prime}pi^{0}" fraction="&lt; 1.1E-5" PUnit="MeV/c"> 
+      </Decay> 
+      <Decay name="eta'eta'" texName="\eta^{\prime}\eta^{\prime}" fraction="&lt; 4.7E-5" PUnit="MeV/c"> 
+      </Decay> 
+      <Decay name="eta'eta" texName="\eta^{\prime}\eta" fraction="&lt; 2.7E-5" PUnit="MeV/c"> 
+      </Decay> 
+      <Decay name="eta'rho0" texName="\eta^{\prime}\rho^{0}" fraction="&lt; 2.3E-5" PUnit="MeV/c"> 
+      </Decay> 
+      <Decay name="etarho0" texName="\eta\;\rho^{0}" fraction="&lt; 1.3E-5" PUnit="MeV/c"> 
+      </Decay> 
+      <Decay name="omegaeta" texName="\omega\;\eta" fraction="&lt; 1.2E-5" PUnit="MeV/c"> 
+      </Decay> 
+      <Decay name="omegaeta'" texName="\omega\;\eta^{\prime}" fraction="&lt; 6.0E-5" PUnit="MeV/c"> 
+      </Decay> 
+      <Decay name="omegarho0" texName="\omega\;\rho^{0}" fraction="&lt; 1.1E-5" PUnit="MeV/c"> 
+      </Decay> 
+      <Decay name="omegaomega" texName="\omega\;\omega" fraction="&lt; 1.9E-5" PUnit="MeV/c"> 
+      </Decay> 
+      <Decay name="phieta" texName="\phi\;\eta" fraction="&lt; 9E-6" PUnit="MeV/c"> 
+      </Decay> 
+      <Decay name="phieta'" texName="\phi\;\eta^{\prime}" fraction="&lt; 3.1E-5" PUnit="MeV/c"> 
+      </Decay> 
+      <Decay name="phirho0" texName="\phi\;\rho^{0}" fraction="&lt; 1.3E-5" PUnit="MeV/c"> 
+      </Decay> 
+      <Decay name="phiomega" texName="\phi\;\omega" fraction="&lt; 2.1E-5" PUnit="MeV/c"> 
+      </Decay> 
+      <Decay name="phiphi" texName="\phi\;\phi" fraction="&lt; 1.2E-5" PUnit="MeV/c"> 
+      </Decay> 
+      <Decay name="pi+pi-pi0" texName="pi^{+}pi^{-}pi^{0}" fraction="&lt; 7.2E-4" PUnit="MeV/c"> 
+      </Decay> 
+      <Decay name="rho0pi0" texName="\rho^{0}pi^{0}" fraction="&lt; 2.4E-5" PUnit="MeV/c"> 
+      </Decay> 
+      <Decay name="rhomppi+" texName="\rho^{\mp}pi^{\pm}" fraction="&lt; 8.8E-5" PUnit="MeV/c"> 
+      </Decay> 
+      <Decay name="pi+pi-pi+pi-" texName="pi^{+}pi^{-}pi^{+}pi^{-}" fraction="&lt; 2.3E-4" PUnit="MeV/c"> 
+      </Decay> 
+      <Decay name="rho0rho0" texName="\rho^{0}\rho^{0}" fraction="&lt; 2.8E-4" PUnit="MeV/c"> 
+      </Decay> 
+      <Decay name="a(1)(1260)mppi+" texName="a_{1}(1260)^{\mp}pi^{\pm}" fraction="&lt; 4.9E-4" PUnit="MeV/c"> 
+      </Decay> 
+      <Decay name="a(2)(1320)mppi+" texName="a_{2}(1320)^{\mp}pi^{\pm}" fraction="&lt; 3.0E-4" PUnit="MeV/c"> 
+      </Decay> 
+      <Decay name="pi+pi-pi0pi0" texName="pi^{+}pi^{-}pi^{0}pi^{0}" fraction="&lt; 3.1E-3" PUnit="MeV/c"> 
+      </Decay> 
+      <Decay name="rho+rho-" texName="\rho^{+}\rho^{-}" fraction="&lt; 2.2E-3" PUnit="MeV/c"> 
+      </Decay> 
+      <Decay name="a(1)(1260)0pi0" texName="a_{1}(1260)^{0}pi^{0}" fraction="&lt; 1.1E-3" PUnit="MeV/c"> 
+      </Decay> 
+      <Decay name="omegapi0" texName="\omega\;pi^{0}" fraction="&lt; 1.4E-5" PUnit="MeV/c"> 
+      </Decay> 
+      <Decay name="pi+pi+pi-pi-pi0" texName="pi^{+}pi^{+}pi^{-}pi^{-}pi^{0}" fraction="&lt; 9.0E-3" PUnit="MeV/c"> 
+      </Decay> 
+      <Decay name="a(1)(1260)+rho-" texName="a_{1}(1260)^{+}\rho^{-}" fraction="&lt; 3.4E-3" PUnit="MeV/c"> 
+      </Decay> 
+      <Decay name="a(1)(1260)0rho0" texName="a_{1}(1260)^{0}\rho^{0}" fraction="&lt; 2.4E-3" PUnit="MeV/c"> 
+      </Decay> 
+      <Decay name="pi+pi+pi+pi-pi-pi-" texName="pi^{+}pi^{+}pi^{+}pi^{-}pi^{-}pi^{-}" fraction="&lt; 3.0E-3" PUnit="MeV/c"> 
+      </Decay> 
+      <Decay name="a(1)(1260)+a(1)(1260)-" texName="a_{1}(1260)^{+}a_{1}(1260)^{-}" fraction="&lt; 2.8E-3" PUnit="MeV/c"> 
+      </Decay> 
+      <Decay name="pi+pi+pi+pi-pi-pi-pi0" texName="pi^{+}pi^{+}pi^{+}pi^{-}pi^{-}pi^{-}pi^{0}" fraction="&lt; 1.1" PUnit="MeV/c"> 
+      </Decay> 
+      <Decay name="pp" texName="p\;p" fraction="&lt; 7.0E-6" PUnit="MeV/c"> 
+      </Decay> 
+      <Decay name="pppi+pi-" texName="p\;p\;pi^{+}pi^{-}" fraction="&lt; 2.5E-4" PUnit="MeV/c"> 
+      </Decay> 
+      <Decay name="pLambdapi-" texName="p\;\Lambda\;pi^{-}" fraction="&lt; 1.3E-5" PUnit="MeV/c"> 
+      </Decay> 
+      <Decay name="LambdaLambda" texName="\Lambda\;\Lambda" fraction="&lt; 3.9E-6" PUnit="MeV/c"> 
+      </Decay> 
+      <Decay name="Delta0Delta0" texName="\Delta^{0}\Delta^{0}" fraction="&lt; 1.5E-3" PUnit="MeV/c"> 
+      </Decay> 
+      <Decay name="Delta++Delta--" texName="\Delta^{++}\Delta^{--}" fraction="&lt; 1.1E-4" PUnit="MeV/c"> 
+      </Decay> 
+      <Decay name="Sigma(c)--Delta++" texName="\Sigma^{--}_{c}\Delta^{++}" fraction="&lt; 1.0E-3" PUnit="MeV/c"> 
+      </Decay> 
+      <Decay name="Lambda(c)-p" texName="\Lambda^{-}_{c}p" fraction="&lt; 2.1E-4" PUnit="MeV/c"> 
+      </Decay> 
+      <Decay name="Lambda(c)-ppi0" texName="\Lambda^{-}_{c}p\;pi^{0}" fraction="&lt; 5.9E-4" PUnit="MeV/c"> 
+      </Decay> 
+      <Decay name="Lambda(c)-ppi+pi-pi0" texName="\Lambda^{-}_{c}p\;pi^{+}pi^{-}pi^{0}" fraction="&lt; 5.07E-3" PUnit="MeV/c"> 
+      </Decay> 
+      <Decay name="Lambda(c)-ppi+pi-pi+pi-" texName="\Lambda^{-}_{c}p\;pi^{+}pi^{-}pi^{+}pi^{-}" fraction="&lt; 2.74E-3" PUnit="MeV/c"> 
+      </Decay> 
+      <Decay name="LeptonFamilynumber" texName="Lepton\;Family\;number" fraction="1" PUnit="MeV/c"> 
+      </Decay> 
+      <Decay name="gammagamma" texName="\gamma\;\gamma" fraction="&lt; 3.9E-5" PUnit="MeV/c"> 
+      </Decay> 
+      <Decay name="e+e-" texName="e^{+}e^{-}" fraction="&lt; 5.9E-6" PUnit="MeV/c"> 
+      </Decay> 
+      <Decay name="mu+mu-" texName="mu^{+}mu^{-}" fraction="&lt; 6.8E-7" PUnit="MeV/c"> 
+      </Decay> 
+      <Decay name="K0e+e-" texName="K^{0}e^{+}e^{-}" fraction="&lt; 3.0E-4" PUnit="MeV/c"> 
+      </Decay> 
+      <Decay name="K0mu+mu-" texName="K^{0}mu^{+}mu^{-}" fraction="&lt; 3.6E-4" PUnit="MeV/c"> 
+      </Decay> 
+      <Decay name="K*(892)0e+e-" texName="K^{\ast}(892)^{0}e^{+}e^{-}" fraction="&lt; 2.9E-4" PUnit="MeV/c"> 
+      </Decay> 
+      <Decay name="K*(892)0mu+mu-" texName="K^{\ast}(892)^{0}mu^{+}mu^{-}" fraction="&lt; 4.0E-6" PUnit="MeV/c"> 
+      </Decay> 
+      <Decay name="K*(892)0nunu" texName="K^{\ast}(892)^{0}nu\;nu" fraction="&lt; 1.0E-3" PUnit="MeV/c"> 
+      </Decay> 
+      <Decay name="e+mump" texName="e^{\pm}mu^{\mp}" fraction="&lt; 3.5E-6" PUnit="MeV/c"> 
+      </Decay> 
+      <Decay name="e+taump" texName="e^{\pm}\tau^{\mp}" fraction="&lt; 5.3E-4" PUnit="MeV/c"> 
+      </Decay> 
+      <Decay name="mu+taump" texName="mu^{\pm}\tau^{\mp}" fraction="&lt; 8.3E-4" PUnit="MeV/c"> 
+      </Decay> 
+   </ParticleType> 
+   <ParticleType name="B+/B0ADMIXTURE" > 
+      <Decay name="Barrowrightpbare+nu(e)anything" texName="B\;\arrowright\overline{p}\;e^{+}nu_{e}anything" fraction="&lt; 1.6E-3" PUnit="MeV/c"> 
+      </Decay> 
+      <Decay name="BarrowrightD(s)-ell+nu(ell)anything" texName="B\;\arrowright\;D^{-}_{s}\ell^{+}nu_{\ell}anything" fraction="&lt; 9E-3" PUnit="MeV/c"> 
+      </Decay> 
+      <Decay name="BarrowrightD(*)D(*)K" texName="B\;\arrowright\;D^{(\ast)}D^{(\ast)}K" fraction="0" PUnit="MeV/c"> 
+      </Decay> 
+      <Decay name="BarrowrightD*D*(2010)+" texName="B\;\arrowright\;D^{\ast}D^{\ast}(2010)^{\pm}" fraction="&lt; 5.9E-3" PUnit="MeV/c"> 
+      </Decay> 
+      <Decay name="BarrowrightDD*(2010)++D*D+" texName="B\;\arrowright\;D\;D^{\ast}(2010)^{\pm}+\;D^{\ast}D^{\pm}" fraction="&lt; 5.5E-3" PUnit="MeV/c"> 
+      </Decay> 
+      <Decay name="BarrowrightDD+" texName="B\;\arrowright\;D\;D^{\pm}" fraction="&lt; 3.1E-3" PUnit="MeV/c"> 
+      </Decay> 
+      <Decay name="BarrowrightD*(2010)gamma" texName="B\;\arrowright\;D^{\ast}(2010)\;\gamma" fraction="&lt; 1.1E-3" PUnit="MeV/c"> 
+      </Decay> 
+      <Decay name="D(s)+rho(s)-,D*+rho(s)-,D+pi" texName="D^{+}_{s}\rho^{-},\;D^{\ast+}_{s}\rho^{-},\;D^{+}_{s}pi" fraction="0" PUnit="MeV/c"> 
+      </Decay> 
+      <Decay name="D(s)*+pi" texName="D^{\ast+}_{s}pi" fraction="0" PUnit="MeV/c"> 
+      </Decay> 
+      <Decay name="D(s)+rho" texName="D^{+}_{s}\rho" fraction="0" PUnit="MeV/c"> 
+      </Decay> 
+      <Decay name="D(s)*+omega" texName="D^{\ast+}_{s}\omega" fraction="&lt; 5E-4" PUnit="MeV/c"> 
+      </Decay> 
+      <Decay name="BarrowrightD(s1)(2536)+anything" texName="B\;\arrowright\;D_{s1}(2536)^{+}anything" fraction="&lt; 9.5E-3" PUnit="MeV/c"> 
+      </Decay> 
+      <Decay name="Barrowrightchi(c2)(1P)anything" texName="B\;\arrowright\;\chi_{c2}(1P)\;anything" fraction="&lt; 3.8E-3" PUnit="MeV/c"> 
+      </Decay> 
+      <Decay name="BarrowrightK*" texName="B\;\arrowright\;K^{\ast}" fraction="892" PUnit="MeV/c"> 
+      </Decay> 
+      <Decay name="BarrowrightK(1)(1400)gamma" texName="B\;\arrowright\;K_{1}(1400)\;\gamma" fraction="&lt; 4.1E-4" PUnit="MeV/c"> 
+      </Decay> 
+      <Decay name="BarrowrightK(2)*(1430)gamma" texName="B\;\arrowright\;K^{\ast}_{2}(1430)\;\gamma" fraction="&lt; 8.3E-4" PUnit="MeV/c"> 
+      </Decay> 
+      <Decay name="BarrowrightK(2)(1770)gamma" texName="B\;\arrowright\;K_{2}(1770)\;\gamma" fraction="&lt; 1.2E-3" PUnit="MeV/c"> 
+      </Decay> 
+      <Decay name="BarrowrightK(3)*(1780)gamma" texName="B\;\arrowright\;K^{\ast}_{3}(1780)\;\gamma" fraction="&lt; 3.0E-3" PUnit="MeV/c"> 
+      </Decay> 
+      <Decay name="BarrowrightK(4)*(2045)gamma" texName="B\;\arrowright\;K^{\ast}_{4}(2045)\;\gamma" fraction="&lt; 1.0E-3" PUnit="MeV/c"> 
+      </Decay> 
+      <Decay name="Barrowrightbbararrowrightsbargluon" texName="B\;\arrowright\overline{b}\;\arrowright\overline{s}\;gluon" fraction="&lt; 6.8" PUnit="MeV/c"> 
+      </Decay> 
+      <Decay name="Barrowrightetaanything" texName="B\;\arrowright\;\eta\;anything" fraction="&lt; 4.4E-4" PUnit="MeV/c"> 
+      </Decay> 
+      <Decay name="Barrowrightomegaanything" texName="B\;\arrowright\;\omega\;anything" fraction="&lt; 81" PUnit="MeV/c"> 
+      </Decay> 
+      <Decay name="BarrowrightphiK*(892)" texName="B\;\arrowright\;\phi\;K^{\ast}(892)" fraction="&lt; 2.2E-5" PUnit="MeV/c"> 
+      </Decay> 
+      <Decay name="BarrowrightLambdabar(c)-e+anything" texName="B\;\arrowright\overline{\Lambda}^{-}_{c}e^{+}anything" fraction="&lt; 3.2E-3" PUnit="MeV/c"> 
+      </Decay> 
+      <Decay name="BarrowrightLambda(c)-pe+nu(e)" texName="B\;\arrowright\Lambda^{-}_{c}p\;e^{+}nu_{e}" fraction="&lt; 1.5E-3" PUnit="MeV/c"> 
+      </Decay> 
+      <Decay name="BarrowrightSigma(c)-anything" texName="B\;\arrowright\Sigma^{-}_{c}anything" fraction="&lt; 9.6E-3" PUnit="MeV/c"> 
+      </Decay> 
+      <Decay name="BarrowrightSigma(c)0N(N=porn)" texName="B\;\arrowright\Sigma^{0}_{c}N\;(N\;=\;p\;or\;n)" fraction="&lt; 1.5E-3" PUnit="MeV/c"> 
+      </Decay> 
+      <Decay name="BarrowrightXi" texName="B\;\arrowright\;\Xi" fraction="0" PUnit="MeV/c"> 
+      </Decay> 
+      <Decay name="BarrowrightLambdaLambdaanything" texName="B\;\arrowright\;\Lambda\;\Lambda\;anything" fraction="&lt; 5E-3" PUnit="MeV/c"> 
+      </Decay> 
+      <Decay name="Barrowrighte+e-s" texName="B\;\arrowright\;e^{+}e^{-}s" fraction="&lt; 5.7E-5" PUnit="MeV/c"> 
+      </Decay> 
+      <Decay name="Barrowrightmu+mu-s" texName="B\;\arrowright\;mu^{+}mu^{-}s" fraction="&lt; 5.8E-5" PUnit="MeV/c"> 
+      </Decay> 
+      <Decay name="Barrowrighte+mumps" texName="B\;\arrowright\;e^{\pm}mu^{\mp}s" fraction="&lt; 2.2E-5" PUnit="MeV/c"> 
+      </Decay> 
+   </ParticleType> 
+   <ParticleType name="B(s)+/B0/B0/b-baryonADMIXTURE" > 
+      <Decay name="barrowrightB" texName="b\;\arrowright\;B" fraction="0" PUnit="MeV/c"> 
+      </Decay> 
+      <Decay name="barrowrightB+()+B(barrowrightB)" texName="b\;\arrowright\;B+_{)\;+\;B(b\;\arrowright\;B}" fraction="0" PUnit="MeV/c"> 
+      </Decay> 
+      <Decay name="B(c)---" texName="B_{c}---" fraction="" PUnit="MeV/c"> 
+      </Decay> 
+      <Decay name="D(j)0ell+nu(ell)anything" texName="D^{0}_{j}\ell^{+}nu_{\ell}anything" fraction="seen" PUnit="MeV/c"> 
+      </Decay> 
+      <Decay name="D(2)*(2460)0ell+nu(ell)anything" texName="D^{\ast}_{2}(2460)^{0}\ell^{+}nu_{\ell}anything" fraction="seen" PUnit="MeV/c"> 
+      </Decay> 
+      <Decay name="D+Dmpanything" texName="D^{\pm}D^{\mp}anything" fraction="&lt; 9E-3" PUnit="MeV/c"> 
+      </Decay> 
+      <Decay name="mu+mu-anything" texName="mu^{+}mu^{-}anything" fraction="&lt; 3.2E-4" PUnit="MeV/c"> 
+      </Decay> 
+   </ParticleType> 
+   <ParticleType name="B*0" > 
+      <Decay name="Bgamma" texName="B\;\gamma" fraction="dominant" PUnit="MeV/c"> 
+      </Decay> 
+   </ParticleType> 
+   <ParticleType name="B*+" > 
+      <Decay name="Bgamma" texName="B\;\gamma" fraction="dominant" PUnit="MeV/c"> 
+      </Decay> 
+   </ParticleType> 
+   <ParticleType name="B(s)0" > 
+      <Decay name="D(s)-pi+" texName="D^{-}_{s}pi^{+}" fraction="&lt; 13" PUnit="MeV/c"> 
+      </Decay> 
+      <Decay name="D(s)(*)+D(s)(*)-" texName="D_{s}^{(\ast)+}D_{s}^{(\ast)-}" fraction="&lt; 21.8" PUnit="MeV/c"> 
+      </Decay> 
+      <Decay name="J/psi(1S)pi0" texName="J/\psi\;(1S\;)\;pi^{0}" fraction="&lt; 1.2E-3" PUnit="MeV/c"> 
+      </Decay> 
+      <Decay name="J/psi(1S)eta" texName="J/\psi\;(1S\;)\;\eta" fraction="&lt; 3.8E-3" PUnit="MeV/c"> 
+      </Decay> 
+      <Decay name="psi(2S)phi" texName="\psi\;(2S\;)\;\phi" fraction="seen" PUnit="MeV/c"> 
+      </Decay> 
+      <Decay name="pi+pi-" texName="pi^{+}pi^{-}" fraction="&lt; 1.7E-4" PUnit="MeV/c"> 
+      </Decay> 
+      <Decay name="pi0pi0" texName="pi^{0}pi^{0}" fraction="&lt; 2.1E-4" PUnit="MeV/c"> 
+      </Decay> 
+      <Decay name="etapi0" texName="\eta\;pi^{0}" fraction="&lt; 1.0E-3" PUnit="MeV/c"> 
+      </Decay> 
+      <Decay name="etaeta" texName="\eta\;\eta" fraction="&lt; 1.5E-3" PUnit="MeV/c"> 
+      </Decay> 
+      <Decay name="pi+K-" texName="pi^{+}K^{-}" fraction="&lt; 2.1E-4" PUnit="MeV/c"> 
+      </Decay> 
+      <Decay name="K+K-" texName="K^{+}K^{-}" fraction="&lt; 5.9E-5" PUnit="MeV/c"> 
+      </Decay> 
+      <Decay name="pp" texName="p\;p" fraction="&lt; 5.9E-5" PUnit="MeV/c"> 
+      </Decay> 
+      <Decay name="gammagamma" texName="\gamma\;\gamma" fraction="&lt; 1.48E-4" PUnit="MeV/c"> 
+      </Decay> 
+      <Decay name="phigamma" texName="\phi\;\gamma" fraction="&lt; 7E-4" PUnit="MeV/c"> 
+      </Decay> 
+      <Decay name="mu+mu-" texName="mu^{+}mu^{-}" fraction="&lt; 2.0E-6" PUnit="MeV/c"> 
+      </Decay> 
+      <Decay name="e+e-" texName="e^{+}e^{-}" fraction="&lt; 5.4E-5" PUnit="MeV/c"> 
+      </Decay> 
+      <Decay name="e+mump" texName="e^{\pm}mu^{\mp}" fraction="&lt; 6.1E-6" PUnit="MeV/c"> 
+      </Decay> 
+      <Decay name="phinunu" texName="\phi\;nu\;nu" fraction="&lt; 5.4E-3" PUnit="MeV/c"> 
+      </Decay> 
+   </ParticleType> 
+   <ParticleType name="B(c)+" > 
+      <Decay name="J/psi(1S)pi+" texName="J/\psi\;(1S\;)\;pi^{+}" fraction="&lt; 8.2E-5" PUnit="MeV/c"> 
+      </Decay> 
+      <Decay name="J/psi(1S)pi+pi+pi-" texName="J/\psi\;(1S\;)\;pi^{+}pi^{+}pi^{-}" fraction="&lt; 5.7E-4" PUnit="MeV/c"> 
+      </Decay> 
+      <Decay name="J/psi(1S)a(1)(1260)" texName="J/\psi\;(1S\;)\;a_{1}(1260)" fraction="&lt; 1.2E-3" PUnit="MeV/c"> 
+      </Decay> 
+      <Decay name="D*(2010)+D0" texName="D^{\ast}(2010)^{+}D^{0}" fraction="&lt; 6.2E-3" PUnit="MeV/c"> 
+      </Decay> 
+   </ParticleType> 
+   <ParticleType name="eta(c)(1S)" > 
+      <DecayGroup name="Decays involving hadronic resonances">
+          <Decay name="a(0)(980) pi" texName="" fraction="&lt; 2" P="1323" PUnit="MeV/c"> 
+          </Decay> 
+          <Decay name="a(2)(1320) pi" texName="" fraction="&lt; 2" P="1193" PUnit="MeV/c"> 
+          </Decay> 
+          <Decay name="K*(892) Kbar + c.c." texName="K^{\ast}(892)\;K\;+\;c.c." fraction="&lt; 1.28" P="1307" PUnit="MeV/c"> 
+          </Decay> 
+          <Decay name="f(2)(1270) eta" texName="f_{2}(1270)\;\eta" fraction="&lt; 1.1" P="1142" PUnit="MeV/c"> 
+          </Decay> 
+          <Decay name="omega omega" texName="\omega\;\omega" fraction="&lt; 3.1E-3" P="1268" PUnit="MeV/c"> 
+          </Decay>
+      </DecayGroup>
+      <DecayGroup name="Decays into stable hadrons"> 
+          <Decay name="K Kbar eta" texName="K\;K\;\eta" fraction="&lt; 3.1" P="1262" PUnit="MeV/c"> 
+          </Decay> 
+          <Decay name="pi+ pi- p pbar" texName="pi^{+}pi^{-}p\;p" fraction="&lt; 1.2" P="1023" PUnit="MeV/c"> 
+          </Decay> 
+          <Decay name="Lambda Lambdabar" texName="\Lambda\;\Lambda" fraction="&lt; 2E-3" P="987" PUnit="MeV/c"> 
+          </Decay>
+      </DecayGroup>
+   </ParticleType> 
+   <ParticleType name="J/psi(1S)" > 
+      <Decay name="a(2)(1320)+pimp" texName="a_{2}(1320)^{\pm}pi^{\mp}" fraction="&lt; 4.3E-3" PUnit="MeV/c"> 
+      </Decay> 
+      <Decay name="KK(2)*(1430)+c.c." texName="K\;K^{\ast}_{2}(1430)\;+\;c.c." fraction="&lt; 4.0E-3" PUnit="MeV/c"> 
+      </Decay> 
+      <Decay name="K(1)(1270)+Kmp" texName="K_{1}(1270)^{\pm}K^{\mp}" fraction="&lt; 3.0E-3" PUnit="MeV/c"> 
+      </Decay> 
+      <Decay name="K(2)*(1430)(2)0K*(1430)0" texName="K^{\ast}_{2}(1430)^{0}K^{\ast}_{2}(1430)^{0}" fraction="&lt; 2.9E-3" PUnit="MeV/c"> 
+      </Decay> 
+      <Decay name="phif(2)(1270)" texName="\phi\;f_{2}(1270)" fraction="&lt; 3.7E-4" PUnit="MeV/c"> 
+      </Decay> 
+      <Decay name="pprho" texName="p\;p\;\rho" fraction="&lt; 3.1E-4" PUnit="MeV/c"> 
+      </Decay> 
+      <Decay name="phieta(1440)arrowrightphietapipi" texName="\phi\;\eta\;(1440)\;\arrowright\;\phi\;\eta\;pi\;pi" fraction="&lt; 2.5E-4" PUnit="MeV/c"> 
+      </Decay> 
+      <Decay name="omegaf(2)'(1525)" texName="\omega\;f^{\prime}_{2}(1525)" fraction="&lt; 2.2E-4" PUnit="MeV/c"> 
+      </Decay> 
+      <Decay name="phipi0" texName="\phi\;pi^{0}" fraction="&lt; 6.8E-6" PUnit="MeV/c"> 
+      </Decay> 
+      <Decay name="LambdaSigma+c.c." texName="\Lambda\;\Sigma\;+\;c.c." fraction="&lt; 1.5E-4" PUnit="MeV/c"> 
+      </Decay> 
+      <Decay name="K(S)0K(S)0" texName="K^{0}_{S}K^{0}_{S}" fraction="&lt; 5.2E-6" PUnit="MeV/c"> 
+      </Decay> 
+      <Decay name="gammapppi+pi-" texName="\gamma\;p\;p\;pi^{+}pi^{-}" fraction="&lt; 7.9E-4" PUnit="MeV/c"> 
+      </Decay> 
+      <Decay name="gammagamma" texName="\gamma\;\gamma" fraction="&lt; 5E-4" PUnit="MeV/c"> 
+      </Decay> 
+      <Decay name="gammaLambdaLambda" texName="\gamma\;\Lambda\;\Lambda" fraction="&lt; 1.3E-4" PUnit="MeV/c"> 
+      </Decay> 
+      <Decay name="3gamma" texName="3\gamma" fraction="&lt; 5.5E-5" PUnit="MeV/c"> 
+      </Decay> 
+      <Decay name="gammaf(0)(1500)" texName="\gamma\;f_{0}(1500)" fraction="&lt; 5.7E-4" posError="0.8E-4" negError="0.8E-4" PUnit="MeV/c"> 
+      </Decay> 
+   </ParticleType> 
+   <ParticleType name="chi(c0)(1P)" > 
+      <Decay name="K(S)0K+pi-+c.c." texName="K^{0}_{S}K^{+}pi^{-}+\;c.c." fraction="&lt; 7.1E-4" PUnit="MeV/c"> 
+      </Decay> 
+   </ParticleType> 
+   <ParticleType name="chi(c1)(1P)" > 
+      <Decay name="pi+pi-+K+K-" texName="pi^{+}pi^{-}+\;K^{+}K^{-}" fraction="&lt; 2.1E-3" PUnit="MeV/c"> 
+      </Decay> 
+   </ParticleType> 
+   <ParticleType name="chi(c2)(1P)" > 
+      <Decay name="J/psi(1S)pi+pi-pi0" texName="J/\psi\;(1S\;)\;pi^{+}pi^{-}pi^{0}" fraction="&lt; 1.5" PUnit="MeV/c"> 
+      </Decay> 
+      <Decay name="K(S)0K+pi-+c.c." texName="K^{0}_{S}K^{+}pi^{-}+\;c.c." fraction="&lt; 1.06E-3" PUnit="MeV/c"> 
+      </Decay> 
+   </ParticleType> 
+   <ParticleType name="psi(2S)" > 
+      <Decay name="omegaf(2)(1270)" texName="\omega\;f_{2}(1270)" fraction="&lt; 1.7E-4" PUnit="MeV/c"> 
+      </Decay> 
+      <Decay name="rhoa(2)(1320)" texName="\rho\;a_{2}(1320)" fraction="&lt; 2.3E-4" PUnit="MeV/c"> 
+      </Decay> 
+      <Decay name="K(2)*(892)K*(1430)0" texName="K^{\ast}(892)\;K^{\ast}_{2}(1430)^{0}" fraction="&lt; 1.2E-4" PUnit="MeV/c"> 
+      </Decay> 
+      <Decay name="rhopi" texName="\rho\;pi" fraction="&lt; 8.3E-5" PUnit="MeV/c"> 
+      </Decay> 
+      <Decay name="LambdaLambda" texName="\Lambda\;\Lambda" fraction="&lt; 4E-4" PUnit="MeV/c"> 
+      </Decay> 
+      <Decay name="K(1)(1400)+Kmp" texName="K_{1}(1400)^{\pm}K^{\mp}" fraction="&lt; 3.1E-4" PUnit="MeV/c"> 
+      </Decay> 
+      <Decay name="Xi-Xi+" texName="\Xi^{-}\Xi^{+}" fraction="&lt; 2E-4" PUnit="MeV/c"> 
+      </Decay> 
+      <Decay name="K+K-pi0" texName="K^{+}K^{-}pi^{0}" fraction="&lt; 2.96E-5" PUnit="MeV/c"> 
+      </Decay> 
+      <Decay name="K+K*(892)-+c.c." texName="K^{+}K^{\ast}(892)^{-}+\;c.c." fraction="&lt; 5.4E-5" PUnit="MeV/c"> 
+      </Decay> 
+      <Decay name="phif(2)'(1525)" texName="\phi\;f^{\prime}_{2}(1525)" fraction="&lt; 4.5E-5" PUnit="MeV/c"> 
+      </Decay> 
+      <Decay name="gammaeta" texName="\gamma\;\eta" fraction="&lt; 9E-5" PUnit="MeV/c"> 
+      </Decay> 
+      <Decay name="gammagamma" texName="\gamma\;\gamma" fraction="&lt; 1.6E-4" PUnit="MeV/c"> 
+      </Decay> 
+      <Decay name="gammaeta(1440)arrowrightgammaKKpi" texName="\gamma\;\eta\;(1440)\;\arrowright\;\gamma\;K\;K\;pi" fraction="&lt; 1.2E-4" PUnit="MeV/c"> 
+      </Decay> 
+   </ParticleType> 
+   <ParticleType name="psi(3770)" > 
+      <Decay name="DD" texName="D\;D" fraction="dominant" PUnit="MeV/c"> 
+      </Decay> 
+   </ParticleType> 
+   <ParticleType name="psi(4040)" > 
+      <Decay name="D0D0" texName="D^{0}D^{0}" fraction="seen" PUnit="MeV/c"> 
+      </Decay> 
+      <Decay name="D*(2007)0D0+c.c." texName="D^{\ast}(2007)^{0}D^{0}+\;c.c." fraction="seen" PUnit="MeV/c"> 
+      </Decay> 
+      <Decay name="D*(2007)0D*(2007)0" texName="D^{\ast}(2007)^{0}D^{\ast}(2007)^{0}" fraction="seen" PUnit="MeV/c"> 
+      </Decay> 
+   </ParticleType> 
+   <ParticleType name="psi(4160)" > 
+   </ParticleType> 
+   <ParticleType name="psi(4415)" > 
+      <Decay name="hadrons" texName="hadrons" fraction="dominant" PUnit="MeV/c"> 
+      </Decay> 
+   </ParticleType> 
+   <ParticleType name="Upsilon(1S)" > 
+      <Decay name="rhopi" texName="\rho\;pi" fraction="&lt; 2E-4" PUnit="MeV/c"> 
+      </Decay> 
+      <Decay name="pi+pi-" texName="pi^{+}pi^{-}" fraction="&lt; 5E-4" PUnit="MeV/c"> 
+      </Decay> 
+      <Decay name="K+K-" texName="K^{+}K^{-}" fraction="&lt; 5E-4" PUnit="MeV/c"> 
+      </Decay> 
+      <Decay name="pp" texName="p\;p" fraction="&lt; 5E-4" PUnit="MeV/c"> 
+      </Decay> 
+      <Decay name="pi0pi+pi-" texName="pi^{0}pi^{+}pi^{-}" fraction="&lt; 1.84E-5" PUnit="MeV/c"> 
+      </Decay> 
+      <Decay name="gammaeta'(958)" texName="\gamma\;\eta^{\prime}(958)" fraction="&lt; 1.3E-3" PUnit="MeV/c"> 
+      </Decay> 
+      <Decay name="gammaeta" texName="\gamma\;\eta" fraction="&lt; 3.5E-4" PUnit="MeV/c"> 
+      </Decay> 
+      <Decay name="gammaf(2)'(1525)" texName="\gamma\;f^{\prime}_{2}(1525)" fraction="&lt; 1.4E-4" PUnit="MeV/c"> 
+      </Decay> 
+      <Decay name="gammaeta(1440)" texName="\gamma\;\eta\;(1440)" fraction="&lt; 8.2E-5" PUnit="MeV/c"> 
+      </Decay> 
+      <Decay name="gammaf(0)(1710)arrowrightgammaKK" texName="\gamma\;f_{0}(1710)\;\arrowright\;\gamma\;K\;K" fraction="&lt; 2.6E-4" PUnit="MeV/c"> 
+      </Decay> 
+      <Decay name="gammaf(J)(2220)arrowrightgammaK+K-" texName="\gamma\;f_{J}(2220)\;\arrowright\;\gamma\;K^{+}K^{-}" fraction="&lt; 1.5E-5" PUnit="MeV/c"> 
+      </Decay> 
+      <Decay name="gammaX" texName="\gamma\;X" fraction="&lt; 7.2" PUnit="MeV/c"> 
+      </Decay> 
+      <Decay name="gammaXX" texName="\gamma\;X\;X" fraction="&lt; 3.1" PUnit="MeV/c"> 
+      </Decay> 
+   </ParticleType> 
+   <ParticleType name="chi(b0)(1P)" > 
+   </ParticleType> 
+   <ParticleType name="chi(b1)(1P)" > 
+   </ParticleType> 
+   <ParticleType name="chi(b2)(1P)" > 
+   </ParticleType> 
+   <ParticleType name="Upsilon(2S)" > 
+      <Decay name="Upsilon(1S)pi0" texName="\Upsilon(1S\;)\;pi^{0}" fraction="&lt; 1.1E-3" PUnit="MeV/c"> 
+      </Decay> 
+      <Decay name="gammaf(0)(1710)" texName="\gamma\;f_{0}(1710)" fraction="&lt; 5.9E-4" PUnit="MeV/c"> 
+      </Decay> 
+      <Decay name="gammaf(2)'(1525)" texName="\gamma\;f^{\prime}_{2}(1525)" fraction="&lt; 5.3E-4" PUnit="MeV/c"> 
+      </Decay> 
+      <Decay name="gammaf(2)(1270)" texName="\gamma\;f_{2}(1270)" fraction="&lt; 2.41E-4" PUnit="MeV/c"> 
+      </Decay> 
+   </ParticleType> 
+   <ParticleType name="chi(b0)(2P)" > 
+   </ParticleType> 
+   <ParticleType name="chi(b1)(2P)" > 
+   </ParticleType> 
+   <ParticleType name="chi(b2)(2P)" > 
+   </ParticleType> 
+   <ParticleType name="Upsilon(3S)" > 
+      <Decay name="Upsilon(1S)eta" texName="\Upsilon(1S\;)\;\eta" fraction="&lt; 2.2E-3" PUnit="MeV/c"> 
+      </Decay> 
+      <Decay name="e+e-" texName="e^{+}e^{-}" fraction="seen" PUnit="MeV/c"> 
+      </Decay> 
+   </ParticleType> 
+   <ParticleType name="Upsilon(4S)" > 
+      <Decay name="non-BB" texName="non-\;B\;B" fraction="&lt; 4" PUnit="MeV/c"> 
+      </Decay> 
+      <Decay name="D*+anything+c.c." texName="D^{\ast+}anything\;+\;c.c." fraction="&lt; 7.4" PUnit="MeV/c"> 
+      </Decay> 
+      <Decay name="phianything" texName="\phi\;anything" fraction="&lt; 2.3E-3" PUnit="MeV/c"> 
+      </Decay> 
+      <Decay name="Upsilon(1S)anything" texName="\Upsilon(1S\;)\;anything" fraction="&lt; 1.2E-4" PUnit="MeV/c"> 
+      </Decay> 
+      <Decay name="Upsilon(2S)pi+pi-" texName="\Upsilon(2S\;)\;pi^{+}pi^{-}" fraction="&lt; 3.9E-4" PUnit="MeV/c"> 
+      </Decay> 
+   </ParticleType> 
+   <ParticleType name="Upsilon(10860)" > 
+   </ParticleType> 
+   <ParticleType name="Upsilon(11020)" > 
+   </ParticleType> 
+   <ParticleType name="p+" > 
+      <Decay name="Narrowrighte+piX" texName="N\;\arrowright\;e^{+}pi\;X" fraction="158" PUnit="MeV/c"> 
+      </Decay> 
+      <Decay name="Narrowrightmu+piX" texName="N\;\arrowright\;mu^{+}pi\;X" fraction="100" PUnit="MeV/c"> 
+      </Decay> 
+      <Decay name="NarrowrightnupiX" texName="N\;\arrowright\;nu\;pi\;X" fraction="112" PUnit="MeV/c"> 
+      </Decay> 
+      <Decay name="parrowrighte+etaX" texName="p\;\arrowright\;e^{+}\eta\;X" fraction="313" PUnit="MeV/c"> 
+      </Decay> 
+      <Decay name="parrowrightmu+etaX" texName="p\;\arrowright\;mu^{+}\eta\;X" fraction="126" PUnit="MeV/c"> 
+      </Decay> 
+      <Decay name="narrowrightnuetaX" texName="n\;\arrowright\;nu\;\eta\;X" fraction="158" PUnit="MeV/c"> 
+      </Decay> 
+      <Decay name="Narrowrighte+rhoX" texName="N\;\arrowright\;e^{+}\rho\;X" fraction="217" PUnit="MeV/c"> 
+      </Decay> 
+      <Decay name="Narrowrightmu+rhoX" texName="N\;\arrowright\;mu^{+}\rho\;X" fraction="228" PUnit="MeV/c"> 
+      </Decay> 
+      <Decay name="NarrowrightnurhoX" texName="N\;\arrowright\;nu\;\rho\;X" fraction="19" PUnit="MeV/c"> 
+      </Decay> 
+      <Decay name="parrowrighte+omegaX" texName="p\;\arrowright\;e^{+}\omega\;X" fraction="107" PUnit="MeV/c"> 
+      </Decay> 
+      <Decay name="parrowrightmu+omegaX" texName="p\;\arrowright\;mu^{+}\omega\;X" fraction="117" PUnit="MeV/c"> 
+      </Decay> 
+      <Decay name="narrowrightnuomegaX" texName="n\;\arrowright\;nu\;\omega\;X" fraction="108" PUnit="MeV/c"> 
+      </Decay> 
+      <Decay name="Narrowrighte+KX" texName="N\;\arrowright\;e^{+}K\;X" fraction="17" PUnit="MeV/c"> 
+      </Decay> 
+      <Decay name="parrowrighte+K" texName="p\;\arrowright\;e^{+}K" fraction="0" PUnit="MeV/c"> 
+      </Decay> 
+      <Decay name="parrowrighte+K" texName="p\;\arrowright\;e^{+}K" fraction="0" PUnit="MeV/c"> 
+      </Decay> 
+      <Decay name="Narrowrightmu+KX" texName="N\;\arrowright\;mu^{+}K\;X" fraction="26" PUnit="MeV/c"> 
+      </Decay> 
+      <Decay name="parrowrightmu+K" texName="p\;\arrowright\;mu^{+}K" fraction="0" PUnit="MeV/c"> 
+      </Decay> 
+      <Decay name="parrowrightmu+K" texName="p\;\arrowright\;mu^{+}K" fraction="0" PUnit="MeV/c"> 
+      </Decay> 
+      <Decay name="NarrowrightnuKX" texName="N\;\arrowright\;nu\;K\;X" fraction="86" PUnit="MeV/c"> 
+      </Decay> 
+      <Decay name="parrowrighte+K*" texName="p\;\arrowright\;e^{+}K^{\ast}" fraction="892" PUnit="MeV/c"> 
+      </Decay> 
+      <Decay name="NarrowrightnuK*" texName="N\;\arrowright\;nu\;K^{\ast}" fraction="892" PUnit="MeV/c"> 
+      </Decay> 
+      <Decay name="parrowrighte+pi+pi-X" texName="p\;\arrowright\;e^{+}pi^{+}pi^{-}X" fraction="82" PUnit="MeV/c"> 
+      </Decay> 
+      <Decay name="parrowrighte+pi" texName="p\;\arrowright\;e^{+}pi" fraction="0" PUnit="MeV/c"> 
+      </Decay> 
+      <Decay name="narrowrighte+pi-pi" texName="n\;\arrowright\;e^{+}pi^{-}pi" fraction="0" PUnit="MeV/c"> 
+      </Decay> 
+      <Decay name="parrowrightmu+pi+pi-X" texName="p\;\arrowright\;mu^{+}pi^{+}pi^{-}X" fraction="133" PUnit="MeV/c"> 
+      </Decay> 
+      <Decay name="parrowrightmu+pi" texName="p\;\arrowright\;mu^{+}pi" fraction="0" PUnit="MeV/c"> 
+      </Decay> 
+      <Decay name="narrowrightmu+pi-pi" texName="n\;\arrowright\;mu^{+}pi^{-}pi" fraction="0" PUnit="MeV/c"> 
+      </Decay> 
+      <Decay name="narrowrighte+K" texName="n\;\arrowright\;e^{+}K" fraction="0" PUnit="MeV/c"> 
+      </Decay> 
+      <Decay name="narrowrighte-pi+X" texName="n\;\arrowright\;e^{-}pi^{+}X" fraction="65" PUnit="MeV/c"> 
+      </Decay> 
+      <Decay name="narrowrightmu-pi+X" texName="n\;\arrowright\;mu^{-}pi^{+}X" fraction="49" PUnit="MeV/c"> 
+      </Decay> 
+      <Decay name="narrowrighte-rho+X" texName="n\;\arrowright\;e^{-}\rho^{+}X" fraction="62" PUnit="MeV/c"> 
+      </Decay> 
+      <Decay name="narrowrightmu-rho+X" texName="n\;\arrowright\;mu^{-}\rho^{+}X" fraction="7" PUnit="MeV/c"> 
+      </Decay> 
+      <Decay name="narrowrighte-K+X" texName="n\;\arrowright\;e^{-}K^{+}X" fraction="32" PUnit="MeV/c"> 
+      </Decay> 
+      <Decay name="narrowrightmu-K+X" texName="n\;\arrowright\;mu^{-}K^{+}X" fraction="57" PUnit="MeV/c"> 
+      </Decay> 
+      <Decay name="parrowrighte-pi+pi+X" texName="p\;\arrowright\;e^{-}pi^{+}pi^{+}X" fraction="30" PUnit="MeV/c"> 
+      </Decay> 
+      <Decay name="narrowrighte-pi+pi" texName="n\;\arrowright\;e^{-}pi^{+}pi" fraction="0" PUnit="MeV/c"> 
+      </Decay> 
+      <Decay name="parrowrightmu-pi+pi+X" texName="p\;\arrowright\;mu^{-}pi^{+}pi^{+}X" fraction="17" PUnit="MeV/c"> 
+      </Decay> 
+      <Decay name="narrowrightmu-pi+pi" texName="n\;\arrowright\;mu^{-}pi^{+}pi" fraction="0" PUnit="MeV/c"> 
+      </Decay> 
+      <Decay name="parrowrighte-pi+K+X" texName="p\;\arrowright\;e^{-}pi^{+}K^{+}X" fraction="75" PUnit="MeV/c"> 
+      </Decay> 
+      <Decay name="parrowrightmu-pi+K+X" texName="p\;\arrowright\;mu^{-}pi^{+}K^{+}X" fraction="245" PUnit="MeV/c"> 
+      </Decay> 
+      <Decay name="parrowrighte+gammaX" texName="p\;\arrowright\;e^{+}\gamma\;X" fraction="670" PUnit="MeV/c"> 
+      </Decay> 
+      <Decay name="parrowrightmu+gammaX" texName="p\;\arrowright\;mu^{+}\gamma\;X" fraction="478" PUnit="MeV/c"> 
+      </Decay> 
+      <Decay name="narrowrightnugammaX" texName="n\;\arrowright\;nu\;\gamma\;X" fraction="28" PUnit="MeV/c"> 
+      </Decay> 
+      <Decay name="parrowrighte+gammagammaX" texName="p\;\arrowright\;e^{+}\gamma\;\gamma\;X" fraction="100" PUnit="MeV/c"> 
+      </Decay> 
+      <Decay name="narrowrightnugammagammaX" texName="n\;\arrowright\;nu\;\gamma\;\gamma\;X" fraction="219" PUnit="MeV/c"> 
+      </Decay> 
+      <Decay name="parrowrighte+e+e-X" texName="p\;\arrowright\;e^{+}e^{+}e^{-}X" fraction="793" PUnit="MeV/c"> 
+      </Decay> 
+      <Decay name="parrowrighte+mu+mu-X" texName="p\;\arrowright\;e^{+}mu^{+}mu^{-}X" fraction="359" PUnit="MeV/c"> 
+      </Decay> 
+      <Decay name="parrowrighte+nunuX" texName="p\;\arrowright\;e^{+}nu\;nu\;X" fraction="17" PUnit="MeV/c"> 
+      </Decay> 
+      <Decay name="narrowrighte+e-nuX" texName="n\;\arrowright\;e^{+}e^{-}nu\;X" fraction="257" PUnit="MeV/c"> 
+      </Decay> 
+      <Decay name="narrowrightmu+e-nuX" texName="n\;\arrowright\;mu^{+}e^{-}nu\;X" fraction="83" PUnit="MeV/c"> 
+      </Decay> 
+      <Decay name="narrowrightmu+mu-nuX" texName="n\;\arrowright\;mu^{+}mu^{-}nu\;X" fraction="79" PUnit="MeV/c"> 
+      </Decay> 
+      <Decay name="parrowrightmu+e+e-X" texName="p\;\arrowright\;mu^{+}e^{+}e^{-}X" fraction="529" PUnit="MeV/c"> 
+      </Decay> 
+      <Decay name="parrowrightmu+mu+mu-X" texName="p\;\arrowright\;mu^{+}mu^{+}mu^{-}X" fraction="675" PUnit="MeV/c"> 
+      </Decay> 
+      <Decay name="parrowrightmu+nunuX" texName="p\;\arrowright\;mu^{+}nu\;nu\;X" fraction="21" PUnit="MeV/c"> 
+      </Decay> 
+      <Decay name="parrowrighte-mu+mu+X" texName="p\;\arrowright\;e^{-}mu^{+}mu^{+}X" fraction="6" PUnit="MeV/c"> 
+      </Decay> 
+      <Decay name="narrowright3nuX" texName="n\;\arrowright\;3nu\;X" fraction="0.0005" PUnit="MeV/c"> 
+      </Decay> 
+      <Decay name="Narrowrighte+anythingX" texName="N\;\arrowright\;e^{+}anything\;X" fraction="0.6" PUnit="MeV/c"> 
+      </Decay> 
+      <Decay name="Narrowrightmu+anythingX" texName="N\;\arrowright\;mu^{+}anything\;X" fraction="12" PUnit="MeV/c"> 
+      </Decay> 
+      <Decay name="Narrowrighte+pi0anythingX" texName="N\;\arrowright\;e^{+}pi^{0}anything\;X" fraction="0.6" PUnit="MeV/c"> 
+      </Decay> 
+      <Decay name="pparrowrightpi+pi+X" texName="p\;p\;\arrowright\;pi^{+}pi^{+}X" fraction="0.7" PUnit="MeV/c"> 
+      </Decay> 
+      <Decay name="pnarrowrightpi+pi" texName="p\;n\;\arrowright\;pi^{+}pi" fraction="0" PUnit="MeV/c"> 
+      </Decay> 
+      <Decay name="nnarrowrightpi+pi-X" texName="n\;n\;\arrowright\;pi^{+}pi^{-}X" fraction="0.7" PUnit="MeV/c"> 
+      </Decay> 
+      <Decay name="nnarrowrightpi0pi0X" texName="n\;n\;\arrowright\;pi^{0}pi^{0}X" fraction="3.4" PUnit="MeV/c"> 
+      </Decay> 
+      <Decay name="pparrowrighte+e+X" texName="p\;p\;\arrowright\;e^{+}e^{+}X" fraction="5.8" PUnit="MeV/c"> 
+      </Decay> 
+      <Decay name="pparrowrighte+mu+X" texName="p\;p\;\arrowright\;e^{+}mu^{+}X" fraction="3.6" PUnit="MeV/c"> 
+      </Decay> 
+      <Decay name="pparrowrightmu+mu+X" texName="p\;p\;\arrowright\;mu^{+}mu^{+}X" fraction="1.7" PUnit="MeV/c"> 
+      </Decay> 
+      <Decay name="pnarrowrighte+nuX" texName="p\;n\;\arrowright\;e^{+}nu\;X" fraction="2.8" PUnit="MeV/c"> 
+      </Decay> 
+      <Decay name="pnarrowrightmu+nuX" texName="p\;n\;\arrowright\;mu^{+}nu\;X" fraction="1.6" PUnit="MeV/c"> 
+      </Decay> 
+      <Decay name="nnarrowrightnu(e)nu(e)X" texName="n\;n\;\arrowright\;nu_{e}nu_{e}X" fraction="0.000012" PUnit="MeV/c"> 
+      </Decay> 
+      <Decay name="nnarrowrightnu(mu)nu(mu)X" texName="n\;n\;\arrowright\;nu_{mu}nu_{mu}X" fraction="0.000006" PUnit="MeV/c"> 
+      </Decay> 
+      <Decay name="parrowrighte-gammaX" texName="p\;\arrowright\;e^{-}\gamma\;X" fraction="7" PUnit="MeV/c"> 
+      </Decay> 
+      <Decay name="parrowrightmu-gammaX" texName="p\;\arrowright\;mu^{-}\gamma\;X" fraction="5" PUnit="MeV/c"> 
+      </Decay> 
+      <Decay name="parrowrighte-pi" texName="p\;\arrowright\;e^{-}pi" fraction="0" PUnit="MeV/c"> 
+      </Decay> 
+      <Decay name="parrowrightmu-pi" texName="p\;\arrowright\;mu^{-}pi" fraction="0" PUnit="MeV/c"> 
+      </Decay> 
+      <Decay name="parrowrighte-etaX" texName="p\;\arrowright\;e^{-}\eta\;X" fraction="2" PUnit="MeV/c"> 
+      </Decay> 
+      <Decay name="parrowrightmu-etaX" texName="p\;\arrowright\;mu^{-}\eta\;X" fraction="8" PUnit="MeV/c"> 
+      </Decay> 
+      <Decay name="parrowrighte-K" texName="p\;\arrowright\;e^{-}K" fraction="0" PUnit="MeV/c"> 
+      </Decay> 
+      <Decay name="parrowrightmu-K" texName="p\;\arrowright\;mu^{-}K" fraction="0" PUnit="MeV/c"> 
+      </Decay> 
+      <Decay name="parrowrighte-K" texName="p\;\arrowright\;e^{-}K" fraction="0" PUnit="MeV/c"> 
+      </Decay> 
+      <Decay name="parrowrightmu-K" texName="p\;\arrowright\;mu^{-}K" fraction="0" PUnit="MeV/c"> 
+      </Decay> 
+      <Decay name="parrowrighte-gammagammaX" texName="p\;\arrowright\;e^{-}\gamma\;\gamma\;X" fraction="2" PUnit="MeV/c"> 
+      </Decay> 
+      <Decay name="parrowrightmu-gammagammaX" texName="p\;\arrowright\;mu^{-}\gamma\;\gamma\;X" fraction="2" PUnit="MeV/c"> 
+      </Decay> 
+      <Decay name="parrowrighte-rhoX" texName="p\;\arrowright\;e^{-}\rho\;X" fraction="200" PUnit="MeV/c"> 
+      </Decay> 
+      <Decay name="parrowrighte-omegaX" texName="p\;\arrowright\;e^{-}\omega\;X" fraction="200" PUnit="MeV/c"> 
+      </Decay> 
+      <Decay name="parrowrighte-K*" texName="p\;\arrowright\;e^{-}K^{\ast}" fraction="892" PUnit="MeV/c"> 
+      </Decay> 
+   </ParticleType> 
+   <ParticleType name="n" > 
+      <Decay name="pnu(e)nu(e)Q" texName="p\;nu_{e}nu_{e}Q" fraction="&lt; 8E-27" PUnit="MeV/c"> 
+      </Decay> 
+   </ParticleType> 
+   <ParticleType name="N(1440)0" > 
+      <Decay name="Npi60--70X" texName="N\;pi\;60--70\;X" fraction="397" PUnit="MeV/c"> 
+      </Decay> 
+      <Decay name="Npipi30--40X" texName="N\;pi\;pi\;30--40\;X" fraction="342" PUnit="MeV/c"> 
+      </Decay> 
+      <Decay name="Deltapi20--30X" texName="\Delta\;pi\;20--30\;X" fraction="143" PUnit="MeV/c"> 
+      </Decay> 
+      <Decay name="Nrho" texName="N\;\rho" fraction="&lt; 8" PUnit="MeV/c"> 
+      </Decay> 
+   </ParticleType> 
+   <ParticleType name="N(1440)+" > 
+      <Decay name="Npi60--70X" texName="N\;pi\;60--70\;X" fraction="397" PUnit="MeV/c"> 
+      </Decay> 
+      <Decay name="Npipi30--40X" texName="N\;pi\;pi\;30--40\;X" fraction="342" PUnit="MeV/c"> 
+      </Decay> 
+      <Decay name="Deltapi20--30X" texName="\Delta\;pi\;20--30\;X" fraction="143" PUnit="MeV/c"> 
+      </Decay> 
+      <Decay name="Nrho" texName="N\;\rho" fraction="&lt; 8" PUnit="MeV/c"> 
+      </Decay> 
+   </ParticleType> 
+   <ParticleType name="N(1520)0" > 
+      <Decay name="Npi50--60X" texName="N\;pi\;50--60\;X" fraction="456" PUnit="MeV/c"> 
+      </Decay> 
+      <Decay name="Npipi40--50X" texName="N\;pi\;pi\;40--50\;X" fraction="410" PUnit="MeV/c"> 
+      </Decay> 
+      <Decay name="Deltapi15--25X" texName="\Delta\;pi\;15--25\;X" fraction="228" PUnit="MeV/c"> 
+      </Decay> 
+      <Decay name="N(pipi)(S-wave)I=0" texName="N\;(\;pi\;pi\;)^{I\;=0}_{S-wave}" fraction="&lt; 8" PUnit="MeV/c"> 
+      </Decay> 
+   </ParticleType> 
+   <ParticleType name="N(1520)+" > 
+      <Decay name="Npi50--60X" texName="N\;pi\;50--60\;X" fraction="456" PUnit="MeV/c"> 
+      </Decay> 
+      <Decay name="Npipi40--50X" texName="N\;pi\;pi\;40--50\;X" fraction="410" PUnit="MeV/c"> 
+      </Decay> 
+      <Decay name="Deltapi15--25X" texName="\Delta\;pi\;15--25\;X" fraction="228" PUnit="MeV/c"> 
+      </Decay> 
+      <Decay name="N(pipi)(S-wave)I=0" texName="N\;(\;pi\;pi\;)^{I\;=0}_{S-wave}" fraction="&lt; 8" PUnit="MeV/c"> 
+      </Decay> 
+   </ParticleType> 
+   <ParticleType name="N(1535)0" > 
+      <Decay name="Npi35--55X" texName="N\;pi\;35--55\;X" fraction="467" PUnit="MeV/c"> 
+      </Decay> 
+      <Decay name="Neta30--55X" texName="N\;\eta\;30--55\;X" fraction="182" PUnit="MeV/c"> 
+      </Decay> 
+      <Decay name="Npipi1--10X" texName="N\;pi\;pi\;1--10\;X" fraction="422" PUnit="MeV/c"> 
+      </Decay> 
+      <Decay name="Deltapi" texName="\Delta\;pi" fraction="&lt; 1" PUnit="MeV/c"> 
+      </Decay> 
+      <Decay name="Nrho" texName="N\;\rho" fraction="&lt; 4" PUnit="MeV/c"> 
+      </Decay> 
+      <Decay name="N(pipi)(S-wave)I=0" texName="N\;(\;pi\;pi\;)^{I\;=0}_{S-wave}" fraction="&lt; 3" PUnit="MeV/c"> 
+      </Decay> 
+   </ParticleType> 
+   <ParticleType name="N(1535)+" > 
+      <Decay name="Npi35--55X" texName="N\;pi\;35--55\;X" fraction="467" PUnit="MeV/c"> 
+      </Decay> 
+      <Decay name="Neta30--55X" texName="N\;\eta\;30--55\;X" fraction="182" PUnit="MeV/c"> 
+      </Decay> 
+      <Decay name="Npipi1--10X" texName="N\;pi\;pi\;1--10\;X" fraction="422" PUnit="MeV/c"> 
+      </Decay> 
+      <Decay name="Deltapi" texName="\Delta\;pi" fraction="&lt; 1" PUnit="MeV/c"> 
+      </Decay> 
+      <Decay name="Nrho" texName="N\;\rho" fraction="&lt; 4" PUnit="MeV/c"> 
+      </Decay> 
+      <Decay name="N(pipi)(S-wave)I=0" texName="N\;(\;pi\;pi\;)^{I\;=0}_{S-wave}" fraction="&lt; 3" PUnit="MeV/c"> 
+      </Decay> 
+   </ParticleType> 
+   <ParticleType name="N(1650)0" > 
+      <Decay name="Npi55--90X" texName="N\;pi\;55--90\;X" fraction="547" PUnit="MeV/c"> 
+      </Decay> 
+      <Decay name="Neta3--10X" texName="N\;\eta\;3--10\;X" fraction="346" PUnit="MeV/c"> 
+      </Decay> 
+      <Decay name="LambdaK3--11X" texName="\Lambda\;K\;3--11\;X" fraction="161" PUnit="MeV/c"> 
+      </Decay> 
+      <Decay name="Npipi10--20X" texName="N\;pi\;pi\;10--20\;X" fraction="511" PUnit="MeV/c"> 
+      </Decay> 
+      <Decay name="Deltapi1--7X" texName="\Delta\;pi\;1--7\;X" fraction="344" PUnit="MeV/c"> 
+      </Decay> 
+      <Decay name="N(pipi)(S-wave)I=0" texName="N\;(\;pi\;pi\;)^{I\;=0}_{S-wave}" fraction="&lt; 4" PUnit="MeV/c"> 
+      </Decay> 
+   </ParticleType> 
+   <ParticleType name="N(1650)+" > 
+      <Decay name="Npi55--90X" texName="N\;pi\;55--90\;X" fraction="547" PUnit="MeV/c"> 
+      </Decay> 
+      <Decay name="Neta3--10X" texName="N\;\eta\;3--10\;X" fraction="346" PUnit="MeV/c"> 
+      </Decay> 
+      <Decay name="LambdaK3--11X" texName="\Lambda\;K\;3--11\;X" fraction="161" PUnit="MeV/c"> 
+      </Decay> 
+      <Decay name="Npipi10--20X" texName="N\;pi\;pi\;10--20\;X" fraction="511" PUnit="MeV/c"> 
+      </Decay> 
+      <Decay name="Deltapi1--7X" texName="\Delta\;pi\;1--7\;X" fraction="344" PUnit="MeV/c"> 
+      </Decay> 
+      <Decay name="N(pipi)(S-wave)I=0" texName="N\;(\;pi\;pi\;)^{I\;=0}_{S-wave}" fraction="&lt; 4" PUnit="MeV/c"> 
+      </Decay> 
+   </ParticleType> 
+   <ParticleType name="N(1675)0" > 
+      <Decay name="Npi40--50X" texName="N\;pi\;40--50\;X" fraction="563" PUnit="MeV/c"> 
+      </Decay> 
+      <Decay name="LambdaK" texName="\Lambda\;K" fraction="&lt; 1" PUnit="MeV/c"> 
+      </Decay> 
+      <Decay name="Npipi50--60X" texName="N\;pi\;pi\;50--60\;X" fraction="529" PUnit="MeV/c"> 
+      </Decay> 
+      <Decay name="Deltapi50--60X" texName="\Delta\;pi\;50--60\;X" fraction="364" PUnit="MeV/c"> 
+      </Decay> 
+      <Decay name="Nrho" texName="N\;\rho" fraction="&lt; 3" PUnit="MeV/c"> 
+      </Decay> 
+   </ParticleType> 
+   <ParticleType name="N(1675)+" > 
+      <Decay name="Npi40--50X" texName="N\;pi\;40--50\;X" fraction="563" PUnit="MeV/c"> 
+      </Decay> 
+      <Decay name="LambdaK" texName="\Lambda\;K" fraction="&lt; 1" PUnit="MeV/c"> 
+      </Decay> 
+      <Decay name="Npipi50--60X" texName="N\;pi\;pi\;50--60\;X" fraction="529" PUnit="MeV/c"> 
+      </Decay> 
+      <Decay name="Deltapi50--60X" texName="\Delta\;pi\;50--60\;X" fraction="364" PUnit="MeV/c"> 
+      </Decay> 
+      <Decay name="Nrho" texName="N\;\rho" fraction="&lt; 3" PUnit="MeV/c"> 
+      </Decay> 
+   </ParticleType> 
+   <ParticleType name="N(1680)0" > 
+      <Decay name="Npi60--70X" texName="N\;pi\;60--70\;X" fraction="567" PUnit="MeV/c"> 
+      </Decay> 
+      <Decay name="Npipi30--40X" texName="N\;pi\;pi\;30--40\;X" fraction="532" PUnit="MeV/c"> 
+      </Decay> 
+      <Decay name="Deltapi5--15X" texName="\Delta\;pi\;5--15\;X" fraction="369" PUnit="MeV/c"> 
+      </Decay> 
+   </ParticleType> 
+   <ParticleType name="N(1680)+" > 
+      <Decay name="Npi60--70X" texName="N\;pi\;60--70\;X" fraction="567" PUnit="MeV/c"> 
+      </Decay> 
+      <Decay name="Npipi30--40X" texName="N\;pi\;pi\;30--40\;X" fraction="532" PUnit="MeV/c"> 
+      </Decay> 
+      <Decay name="Deltapi5--15X" texName="\Delta\;pi\;5--15\;X" fraction="369" PUnit="MeV/c"> 
+      </Decay> 
+   </ParticleType> 
+   <ParticleType name="N(1700)0" > 
+      <Decay name="Npi5--15X" texName="N\;pi\;5--15\;X" fraction="580" PUnit="MeV/c"> 
+      </Decay> 
+      <Decay name="LambdaK" texName="\Lambda\;K" fraction="&lt; 3" PUnit="MeV/c"> 
+      </Decay> 
+      <Decay name="Npipi85--95X" texName="N\;pi\;pi\;85--95\;X" fraction="547" PUnit="MeV/c"> 
+      </Decay> 
+      <Decay name="Nrho" texName="N\;\rho" fraction="&lt; 35" PUnit="MeV/c"> 
+      </Decay> 
+   </ParticleType> 
+   <ParticleType name="N(1700)+" > 
+      <Decay name="Npi5--15X" texName="N\;pi\;5--15\;X" fraction="580" PUnit="MeV/c"> 
+      </Decay> 
+      <Decay name="LambdaK" texName="\Lambda\;K" fraction="&lt; 3" PUnit="MeV/c"> 
+      </Decay> 
+      <Decay name="Npipi85--95X" texName="N\;pi\;pi\;85--95\;X" fraction="547" PUnit="MeV/c"> 
+      </Decay> 
+      <Decay name="Nrho" texName="N\;\rho" fraction="&lt; 35" PUnit="MeV/c"> 
+      </Decay> 
+   </ParticleType> 
+   <ParticleType name="N(1710)0" > 
+      <Decay name="Npi10--20X" texName="N\;pi\;10--20\;X" fraction="587" PUnit="MeV/c"> 
+      </Decay> 
+      <Decay name="LambdaK5--25X" texName="\Lambda\;K\;5--25\;X" fraction="264" PUnit="MeV/c"> 
+      </Decay> 
+      <Decay name="Npipi40--90X" texName="N\;pi\;pi\;40--90\;X" fraction="554" PUnit="MeV/c"> 
+      </Decay> 
+      <Decay name="Deltapi15--40X" texName="\Delta\;pi\;15--40\;X" fraction="393" PUnit="MeV/c"> 
+      </Decay> 
+      <Decay name="Nrho5--25X" texName="N\;\rho\;5--25\;X" fraction="48" PUnit="MeV/c"> 
+      </Decay> 
+      <Decay name="pgamma" texName="p\;\gamma" fraction="0" PUnit="MeV/c"> 
+      </Decay> 
+      <Decay name="pgamma,helicity=1/2" texName="p\;\gamma\;,\;helicity=1/2" fraction="0" PUnit="MeV/c"> 
+      </Decay> 
+      <Decay name="ngamma" texName="n\;\gamma" fraction="0" PUnit="MeV/c"> 
+      </Decay> 
+      <Decay name="ngamma,helicity=1/2" texName="n\;\gamma\;,\;helicity=1/2" fraction="0" PUnit="MeV/c"> 
+      </Decay> 
+   </ParticleType> 
+   <ParticleType name="N(1710)+" > 
+      <Decay name="Npi10--20X" texName="N\;pi\;10--20\;X" fraction="587" PUnit="MeV/c"> 
+      </Decay> 
+      <Decay name="LambdaK5--25X" texName="\Lambda\;K\;5--25\;X" fraction="264" PUnit="MeV/c"> 
+      </Decay> 
+      <Decay name="Npipi40--90X" texName="N\;pi\;pi\;40--90\;X" fraction="554" PUnit="MeV/c"> 
+      </Decay> 
+      <Decay name="Deltapi15--40X" texName="\Delta\;pi\;15--40\;X" fraction="393" PUnit="MeV/c"> 
+      </Decay> 
+      <Decay name="Nrho5--25X" texName="N\;\rho\;5--25\;X" fraction="48" PUnit="MeV/c"> 
+      </Decay> 
+      <Decay name="pgamma" texName="p\;\gamma" fraction="0" PUnit="MeV/c"> 
+      </Decay> 
+      <Decay name="pgamma,helicity=1/2" texName="p\;\gamma\;,\;helicity=1/2" fraction="0" PUnit="MeV/c"> 
+      </Decay> 
+      <Decay name="ngamma" texName="n\;\gamma" fraction="0" PUnit="MeV/c"> 
+      </Decay> 
+      <Decay name="ngamma,helicity=1/2" texName="n\;\gamma\;,\;helicity=1/2" fraction="0" PUnit="MeV/c"> 
+      </Decay> 
+   </ParticleType> 
+   <ParticleType name="N(1720)0" > 
+      <Decay name="Npi10--20X" texName="N\;pi\;10--20\;X" fraction="594" PUnit="MeV/c"> 
+      </Decay> 
+      <Decay name="LambdaK1--15X" texName="\Lambda\;K\;1--15\;X" fraction="278" PUnit="MeV/c"> 
+      </Decay> 
+      <Decay name="Nrho70--85X" texName="N\;\rho\;70--85\;X" fraction="104" PUnit="MeV/c"> 
+      </Decay> 
+   </ParticleType> 
+   <ParticleType name="N(1720)+" > 
+      <Decay name="Npi10--20X" texName="N\;pi\;10--20\;X" fraction="594" PUnit="MeV/c"> 
+      </Decay> 
+      <Decay name="LambdaK1--15X" texName="\Lambda\;K\;1--15\;X" fraction="278" PUnit="MeV/c"> 
+      </Decay> 
+      <Decay name="Nrho70--85X" texName="N\;\rho\;70--85\;X" fraction="104" PUnit="MeV/c"> 
+      </Decay> 
+   </ParticleType> 
+   <ParticleType name="N(2190)0" > 
+      <Decay name="Npi10--20X" texName="N\;pi\;10--20\;X" fraction="888" PUnit="MeV/c"> 
+      </Decay> 
+   </ParticleType> 
+   <ParticleType name="N(2190)+" > 
+      <Decay name="Npi10--20X" texName="N\;pi\;10--20\;X" fraction="888" PUnit="MeV/c"> 
+      </Decay> 
+   </ParticleType> 
+   <ParticleType name="N(2220)" > 
+      <Decay name="Npi10--20X" texName="N\;pi\;10--20\;X" fraction="905" PUnit="MeV/c"> 
+      </Decay> 
+   </ParticleType> 
+   <ParticleType name="N(2250)" > 
+      <Decay name="Npi5--15X" texName="N\;pi\;5--15\;X" fraction="923" PUnit="MeV/c"> 
+      </Decay> 
+   </ParticleType> 
+   <ParticleType name="N(2600)" > 
+      <Decay name="Npi5--10X" texName="N\;pi\;5--10\;X" fraction="1126" PUnit="MeV/c"> 
+      </Decay> 
+   </ParticleType> 
+   <ParticleType name="Delta(1232)-" > 
+   </ParticleType> 
+   <ParticleType name="Delta(1232)0" > 
+   </ParticleType> 
+   <ParticleType name="Delta(1232)+" > 
+   </ParticleType> 
+   <ParticleType name="Delta(1232)++" > 
+   </ParticleType> 
+   <ParticleType name="Delta(1600)-" > 
+      <Decay name="Npi10--25X" texName="N\;pi\;10--25\;X" fraction="512" PUnit="MeV/c"> 
+      </Decay> 
+      <Decay name="Npipi75--90X" texName="N\;pi\;pi\;75--90\;X" fraction="473" PUnit="MeV/c"> 
+      </Decay> 
+      <Decay name="Deltapi40--70X" texName="\Delta\;pi\;40--70\;X" fraction="301" PUnit="MeV/c"> 
+      </Decay> 
+      <Decay name="Nrho" texName="N\;\rho" fraction="&lt; 25" PUnit="MeV/c"> 
+      </Decay> 
+   </ParticleType> 
+   <ParticleType name="Delta(1600)0" > 
+      <Decay name="Npi10--25X" texName="N\;pi\;10--25\;X" fraction="512" PUnit="MeV/c"> 
+      </Decay> 
+      <Decay name="Npipi75--90X" texName="N\;pi\;pi\;75--90\;X" fraction="473" PUnit="MeV/c"> 
+      </Decay> 
+      <Decay name="Deltapi40--70X" texName="\Delta\;pi\;40--70\;X" fraction="301" PUnit="MeV/c"> 
+      </Decay> 
+      <Decay name="Nrho" texName="N\;\rho" fraction="&lt; 25" PUnit="MeV/c"> 
+      </Decay> 
+   </ParticleType> 
+   <ParticleType name="Delta(1600)+" > 
+      <Decay name="Npi10--25X" texName="N\;pi\;10--25\;X" fraction="512" PUnit="MeV/c"> 
+      </Decay> 
+      <Decay name="Npipi75--90X" texName="N\;pi\;pi\;75--90\;X" fraction="473" PUnit="MeV/c"> 
+      </Decay> 
+      <Decay name="Deltapi40--70X" texName="\Delta\;pi\;40--70\;X" fraction="301" PUnit="MeV/c"> 
+      </Decay> 
+      <Decay name="Nrho" texName="N\;\rho" fraction="&lt; 25" PUnit="MeV/c"> 
+      </Decay> 
+   </ParticleType> 
+   <ParticleType name="Delta(1600)++" > 
+      <Decay name="Npi10--25X" texName="N\;pi\;10--25\;X" fraction="512" PUnit="MeV/c"> 
+      </Decay> 
+      <Decay name="Npipi75--90X" texName="N\;pi\;pi\;75--90\;X" fraction="473" PUnit="MeV/c"> 
+      </Decay> 
+      <Decay name="Deltapi40--70X" texName="\Delta\;pi\;40--70\;X" fraction="301" PUnit="MeV/c"> 
+      </Decay> 
+      <Decay name="Nrho" texName="N\;\rho" fraction="&lt; 25" PUnit="MeV/c"> 
+      </Decay> 
+   </ParticleType> 
+   <ParticleType name="Delta(1620)-" > 
+      <Decay name="Npi20--30X" texName="N\;pi\;20--30\;X" fraction="526" PUnit="MeV/c"> 
+      </Decay> 
+      <Decay name="Npipi70--80X" texName="N\;pi\;pi\;70--80\;X" fraction="488" PUnit="MeV/c"> 
+      </Decay> 
+      <Decay name="Deltapi30--60X" texName="\Delta\;pi\;30--60\;X" fraction="318" PUnit="MeV/c"> 
+      </Decay> 
+   </ParticleType> 
+   <ParticleType name="Delta(1620)0" > 
+      <Decay name="Npi20--30X" texName="N\;pi\;20--30\;X" fraction="526" PUnit="MeV/c"> 
+      </Decay> 
+      <Decay name="Npipi70--80X" texName="N\;pi\;pi\;70--80\;X" fraction="488" PUnit="MeV/c"> 
+      </Decay> 
+      <Decay name="Deltapi30--60X" texName="\Delta\;pi\;30--60\;X" fraction="318" PUnit="MeV/c"> 
+      </Decay> 
+   </ParticleType> 
+   <ParticleType name="Delta(1620)+" > 
+      <Decay name="Npi20--30X" texName="N\;pi\;20--30\;X" fraction="526" PUnit="MeV/c"> 
+      </Decay> 
+      <Decay name="Npipi70--80X" texName="N\;pi\;pi\;70--80\;X" fraction="488" PUnit="MeV/c"> 
+      </Decay> 
+      <Decay name="Deltapi30--60X" texName="\Delta\;pi\;30--60\;X" fraction="318" PUnit="MeV/c"> 
+      </Decay> 
+   </ParticleType> 
+   <ParticleType name="Delta(1620)++" > 
+      <Decay name="Npi20--30X" texName="N\;pi\;20--30\;X" fraction="526" PUnit="MeV/c"> 
+      </Decay> 
+      <Decay name="Npipi70--80X" texName="N\;pi\;pi\;70--80\;X" fraction="488" PUnit="MeV/c"> 
+      </Decay> 
+      <Decay name="Deltapi30--60X" texName="\Delta\;pi\;30--60\;X" fraction="318" PUnit="MeV/c"> 
+      </Decay> 
+   </ParticleType> 
+   <ParticleType name="Delta(1700)-" > 
+      <Decay name="Npi10--20X" texName="N\;pi\;10--20\;X" fraction="580" PUnit="MeV/c"> 
+      </Decay> 
+      <Decay name="Npipi80--90X" texName="N\;pi\;pi\;80--90\;X" fraction="547" PUnit="MeV/c"> 
+      </Decay> 
+      <Decay name="Deltapi30--60X" texName="\Delta\;pi\;30--60\;X" fraction="385" PUnit="MeV/c"> 
+      </Decay> 
+   </ParticleType> 
+   <ParticleType name="Delta(1700)0" > 
+      <Decay name="Npi10--20X" texName="N\;pi\;10--20\;X" fraction="580" PUnit="MeV/c"> 
+      </Decay> 
+      <Decay name="Npipi80--90X" texName="N\;pi\;pi\;80--90\;X" fraction="547" PUnit="MeV/c"> 
+      </Decay> 
+      <Decay name="Deltapi30--60X" texName="\Delta\;pi\;30--60\;X" fraction="385" PUnit="MeV/c"> 
+      </Decay> 
+   </ParticleType> 
+   <ParticleType name="Delta(1700)+" > 
+      <Decay name="Npi10--20X" texName="N\;pi\;10--20\;X" fraction="580" PUnit="MeV/c"> 
+      </Decay> 
+      <Decay name="Npipi80--90X" texName="N\;pi\;pi\;80--90\;X" fraction="547" PUnit="MeV/c"> 
+      </Decay> 
+      <Decay name="Deltapi30--60X" texName="\Delta\;pi\;30--60\;X" fraction="385" PUnit="MeV/c"> 
+      </Decay> 
+   </ParticleType> 
+   <ParticleType name="Delta(1700)++" > 
+      <Decay name="Npi10--20X" texName="N\;pi\;10--20\;X" fraction="580" PUnit="MeV/c"> 
+      </Decay> 
+      <Decay name="Npipi80--90X" texName="N\;pi\;pi\;80--90\;X" fraction="547" PUnit="MeV/c"> 
+      </Decay> 
+      <Decay name="Deltapi30--60X" texName="\Delta\;pi\;30--60\;X" fraction="385" PUnit="MeV/c"> 
+      </Decay> 
+   </ParticleType> 
+   <ParticleType name="Delta(1905)-" > 
+      <Decay name="Npi5--15X" texName="N\;pi\;5--15\;X" fraction="713" PUnit="MeV/c"> 
+      </Decay> 
+      <Decay name="Npipi85--95X" texName="N\;pi\;pi\;85--95\;X" fraction="687" PUnit="MeV/c"> 
+      </Decay> 
+      <Decay name="Deltapi" texName="\Delta\;pi" fraction="&lt; 25" PUnit="MeV/c"> 
+      </Decay> 
+   </ParticleType> 
+   <ParticleType name="Delta(1905)0" > 
+      <Decay name="Npi5--15X" texName="N\;pi\;5--15\;X" fraction="713" PUnit="MeV/c"> 
+      </Decay> 
+      <Decay name="Npipi85--95X" texName="N\;pi\;pi\;85--95\;X" fraction="687" PUnit="MeV/c"> 
+      </Decay> 
+      <Decay name="Deltapi" texName="\Delta\;pi" fraction="&lt; 25" PUnit="MeV/c"> 
+      </Decay> 
+   </ParticleType> 
+   <ParticleType name="Delta(1905)+" > 
+      <Decay name="Npi5--15X" texName="N\;pi\;5--15\;X" fraction="713" PUnit="MeV/c"> 
+      </Decay> 
+      <Decay name="Npipi85--95X" texName="N\;pi\;pi\;85--95\;X" fraction="687" PUnit="MeV/c"> 
+      </Decay> 
+      <Decay name="Deltapi" texName="\Delta\;pi" fraction="&lt; 25" PUnit="MeV/c"> 
+      </Decay> 
+   </ParticleType> 
+   <ParticleType name="Delta(1905)++" > 
+      <Decay name="Npi5--15X" texName="N\;pi\;5--15\;X" fraction="713" PUnit="MeV/c"> 
+      </Decay> 
+      <Decay name="Npipi85--95X" texName="N\;pi\;pi\;85--95\;X" fraction="687" PUnit="MeV/c"> 
+      </Decay> 
+      <Decay name="Deltapi" texName="\Delta\;pi" fraction="&lt; 25" PUnit="MeV/c"> 
+      </Decay> 
+   </ParticleType> 
+   <ParticleType name="Delta(1910)-" > 
+      <Decay name="Npi15--30X" texName="N\;pi\;15--30\;X" fraction="716" PUnit="MeV/c"> 
+      </Decay> 
+   </ParticleType> 
+   <ParticleType name="Delta(1910)0" > 
+      <Decay name="Npi15--30X" texName="N\;pi\;15--30\;X" fraction="716" PUnit="MeV/c"> 
+      </Decay> 
+   </ParticleType> 
+   <ParticleType name="Delta(1910)+" > 
+      <Decay name="Npi15--30X" texName="N\;pi\;15--30\;X" fraction="716" PUnit="MeV/c"> 
+      </Decay> 
+   </ParticleType> 
+   <ParticleType name="Delta(1910)++" > 
+      <Decay name="Npi15--30X" texName="N\;pi\;15--30\;X" fraction="716" PUnit="MeV/c"> 
+      </Decay> 
+   </ParticleType> 
+   <ParticleType name="Delta(1920)-" > 
+      <Decay name="Npi5--20X" texName="N\;pi\;5--20\;X" fraction="722" PUnit="MeV/c"> 
+      </Decay> 
+   </ParticleType> 
+   <ParticleType name="Delta(1920)0" > 
+      <Decay name="Npi5--20X" texName="N\;pi\;5--20\;X" fraction="722" PUnit="MeV/c"> 
+      </Decay> 
+   </ParticleType> 
+   <ParticleType name="Delta(1920)+" > 
+      <Decay name="Npi5--20X" texName="N\;pi\;5--20\;X" fraction="722" PUnit="MeV/c"> 
+      </Decay> 
+   </ParticleType> 
+   <ParticleType name="Delta(1920)++" > 
+      <Decay name="Npi5--20X" texName="N\;pi\;5--20\;X" fraction="722" PUnit="MeV/c"> 
+      </Decay> 
+   </ParticleType> 
+   <ParticleType name="Delta(1930)-" > 
+      <Decay name="Npi10--20X" texName="N\;pi\;10--20\;X" fraction="729" PUnit="MeV/c"> 
+      </Decay> 
+   </ParticleType> 
+   <ParticleType name="Delta(1930)0" > 
+      <Decay name="Npi10--20X" texName="N\;pi\;10--20\;X" fraction="729" PUnit="MeV/c"> 
+      </Decay> 
+   </ParticleType> 
+   <ParticleType name="Delta(1930)+" > 
+      <Decay name="Npi10--20X" texName="N\;pi\;10--20\;X" fraction="729" PUnit="MeV/c"> 
+      </Decay> 
+   </ParticleType> 
+   <ParticleType name="Delta(1930)++" > 
+      <Decay name="Npi10--20X" texName="N\;pi\;10--20\;X" fraction="729" PUnit="MeV/c"> 
+      </Decay> 
+   </ParticleType> 
+   <ParticleType name="Delta(1950)-" > 
+      <Decay name="Npi35--40X" texName="N\;pi\;35--40\;X" fraction="741" PUnit="MeV/c"> 
+      </Decay> 
+      <Decay name="Npipi" texName="N\;pi\;pi" fraction="716" PUnit="MeV/c"> 
+      </Decay> 
+      <Decay name="Deltapi20--30X" texName="\Delta\;pi\;20--30\;X" fraction="574" PUnit="MeV/c"> 
+      </Decay> 
+      <Decay name="Nrho" texName="N\;\rho" fraction="&lt; 10" PUnit="MeV/c"> 
+      </Decay> 
+   </ParticleType> 
+   <ParticleType name="Delta(1950)0" > 
+      <Decay name="Npi35--40X" texName="N\;pi\;35--40\;X" fraction="741" PUnit="MeV/c"> 
+      </Decay> 
+      <Decay name="Npipi" texName="N\;pi\;pi" fraction="716" PUnit="MeV/c"> 
+      </Decay> 
+      <Decay name="Deltapi20--30X" texName="\Delta\;pi\;20--30\;X" fraction="574" PUnit="MeV/c"> 
+      </Decay> 
+      <Decay name="Nrho" texName="N\;\rho" fraction="&lt; 10" PUnit="MeV/c"> 
+      </Decay> 
+   </ParticleType> 
+   <ParticleType name="Delta(1950)+" > 
+      <Decay name="Npi35--40X" texName="N\;pi\;35--40\;X" fraction="741" PUnit="MeV/c"> 
+      </Decay> 
+      <Decay name="Npipi" texName="N\;pi\;pi" fraction="716" PUnit="MeV/c"> 
+      </Decay> 
+      <Decay name="Deltapi20--30X" texName="\Delta\;pi\;20--30\;X" fraction="574" PUnit="MeV/c"> 
+      </Decay> 
+      <Decay name="Nrho" texName="N\;\rho" fraction="&lt; 10" PUnit="MeV/c"> 
+      </Decay> 
+   </ParticleType> 
+   <ParticleType name="Delta(1950)++" > 
+      <Decay name="Npi35--40X" texName="N\;pi\;35--40\;X" fraction="741" PUnit="MeV/c"> 
+      </Decay> 
+      <Decay name="Npipi" texName="N\;pi\;pi" fraction="716" PUnit="MeV/c"> 
+      </Decay> 
+      <Decay name="Deltapi20--30X" texName="\Delta\;pi\;20--30\;X" fraction="574" PUnit="MeV/c"> 
+      </Decay> 
+      <Decay name="Nrho" texName="N\;\rho" fraction="&lt; 10" PUnit="MeV/c"> 
+      </Decay> 
+   </ParticleType> 
+   <ParticleType name="Delta(2420)" > 
+      <Decay name="Npi5--15X" texName="N\;pi\;5--15\;X" fraction="1023" PUnit="MeV/c"> 
+      </Decay> 
+   </ParticleType> 
+   <ParticleType name="Lambda" > 
+   </ParticleType> 
+   <ParticleType name="Lambda(1405)" > 
+   </ParticleType> 
+   <ParticleType name="Lambda(1520)" > 
+      <Decay name="NK" texName="N\;K" fraction="45" PUnit="MeV/c"> 
+      </Decay> 
+      <Decay name="Sigmapi" texName="\Sigma\;pi" fraction="42" PUnit="MeV/c"> 
+      </Decay> 
+      <Decay name="Lambdapipi" texName="\Lambda\;pi\;pi" fraction="10" PUnit="MeV/c"> 
+      </Decay> 
+      <Decay name="Sigmapipi" texName="\Sigma\;pi\;pi" fraction="0.9" PUnit="MeV/c"> 
+      </Decay> 
+      <Decay name="Lambdagamma" texName="\Lambda\;\gamma" fraction="0.8" PUnit="MeV/c"> 
+      </Decay> 
+   </ParticleType> 
+   <ParticleType name="Lambda(1600)" > 
+      <Decay name="NK15--30X" texName="N\;K\;15--30\;X" fraction="343" PUnit="MeV/c"> 
+      </Decay> 
+      <Decay name="Sigmapi10--60X" texName="\Sigma\;pi\;10--60\;X" fraction="336" PUnit="MeV/c"> 
+      </Decay> 
+   </ParticleType> 
+   <ParticleType name="Lambda(1670)" > 
+      <Decay name="NK15--25X" texName="N\;K\;15--25\;X" fraction="414" PUnit="MeV/c"> 
+      </Decay> 
+      <Decay name="Sigmapi20--60X" texName="\Sigma\;pi\;20--60\;X" fraction="393" PUnit="MeV/c"> 
+      </Decay> 
+      <Decay name="Lambdaeta15--35X" texName="\Lambda\;\eta\;15--35\;X" fraction="64" PUnit="MeV/c"> 
+      </Decay> 
+   </ParticleType> 
+   <ParticleType name="Lambda(1690)" > 
+      <Decay name="NK20--30X" texName="N\;K\;20--30\;X" fraction="433" PUnit="MeV/c"> 
+      </Decay> 
+      <Decay name="Sigmapi20--40X" texName="\Sigma\;pi\;20--40\;X" fraction="409" PUnit="MeV/c"> 
+      </Decay> 
+   </ParticleType> 
+   <ParticleType name="Lambda(1800)" > 
+      <Decay name="NK25--40X" texName="N\;K\;25--40\;X" fraction="528" PUnit="MeV/c"> 
+      </Decay> 
+      <Decay name="Sigmapi" texName="\Sigma\;pi" fraction="seen" PUnit="MeV/c"> 
+      </Decay> 
+      <Decay name="Sigma(1385)pi" texName="\Sigma\;(1385)\;pi" fraction="seen" PUnit="MeV/c"> 
+      </Decay> 
+      <Decay name="NK*(892)" texName="N\;K^{\ast}(892)" fraction="seen" PUnit="MeV/c"> 
+      </Decay> 
+   </ParticleType> 
+   <ParticleType name="Lambda(1810)" > 
+      <Decay name="NK20--50X" texName="N\;K\;20--50\;X" fraction="537" PUnit="MeV/c"> 
+      </Decay> 
+      <Decay name="Sigmapi10--40X" texName="\Sigma\;pi\;10--40\;X" fraction="501" PUnit="MeV/c"> 
+      </Decay> 
+      <Decay name="Sigma(1385)pi" texName="\Sigma\;(1385)\;pi" fraction="seen" PUnit="MeV/c"> 
+      </Decay> 
+   </ParticleType> 
+   <ParticleType name="Lambda(1820)" > 
+      <Decay name="NK55--65X" texName="N\;K\;55--65\;X" fraction="545" PUnit="MeV/c"> 
+      </Decay> 
+      <Decay name="Sigmapi8--14X" texName="\Sigma\;pi\;8--14\;X" fraction="508" PUnit="MeV/c"> 
+      </Decay> 
+   </ParticleType> 
+   <ParticleType name="Lambda(1830)" > 
+      <Decay name="NK3--10X" texName="N\;K\;3--10\;X" fraction="553" PUnit="MeV/c"> 
+      </Decay> 
+      <Decay name="Sigmapi35--75X" texName="\Sigma\;pi\;35--75\;X" fraction="515" PUnit="MeV/c"> 
+      </Decay> 
+   </ParticleType> 
+   <ParticleType name="Lambda(1890)" > 
+      <Decay name="NK20--35X" texName="N\;K\;20--35\;X" fraction="599" PUnit="MeV/c"> 
+      </Decay> 
+      <Decay name="Sigmapi3--10X" texName="\Sigma\;pi\;3--10\;X" fraction="559" PUnit="MeV/c"> 
+      </Decay> 
+      <Decay name="Sigma(1385)pi" texName="\Sigma\;(1385)\;pi" fraction="seen" PUnit="MeV/c"> 
+      </Decay> 
+      <Decay name="NK*(892)" texName="N\;K^{\ast}(892)" fraction="seen" PUnit="MeV/c"> 
+      </Decay> 
+   </ParticleType> 
+   <ParticleType name="Lambda(2100)" > 
+      <Decay name="NK25--35X" texName="N\;K\;25--35\;X" fraction="751" PUnit="MeV/c"> 
+      </Decay> 
+      <Decay name="Lambdaeta" texName="\Lambda\;\eta" fraction="&lt; 3" PUnit="MeV/c"> 
+      </Decay> 
+      <Decay name="XiK" texName="\Xi\;K" fraction="&lt; 3" PUnit="MeV/c"> 
+      </Decay> 
+      <Decay name="Lambdaomega" texName="\Lambda\;\omega" fraction="&lt; 8" PUnit="MeV/c"> 
+      </Decay> 
+   </ParticleType> 
+   <ParticleType name="Lambda(2110)" > 
+      <Decay name="NK5--25X" texName="N\;K\;5--25\;X" fraction="757" PUnit="MeV/c"> 
+      </Decay> 
+      <Decay name="Sigmapi10--40X" texName="\Sigma\;pi\;10--40\;X" fraction="711" PUnit="MeV/c"> 
+      </Decay> 
+      <Decay name="Lambdaomega" texName="\Lambda\;\omega" fraction="seen" PUnit="MeV/c"> 
+      </Decay> 
+      <Decay name="Sigma(1385)pi" texName="\Sigma\;(1385)\;pi" fraction="seen" PUnit="MeV/c"> 
+      </Decay> 
+   </ParticleType> 
+   <ParticleType name="Lambda(2350)" > 
+   </ParticleType> 
+   <ParticleType name="Sigma+" > 
+      <Decay name="ne+nu(e)SQ" texName="n\;e^{+}nu_{e}SQ" fraction="&lt; 5E-6" PUnit="MeV/c"> 
+      </Decay> 
+      <Decay name="nmu+nu(mu)SQ" texName="n\;mu^{+}nu_{mu}SQ" fraction="&lt; 3.0E-5" PUnit="MeV/c"> 
+      </Decay> 
+      <Decay name="pe+e-S1" texName="p\;e^{+}e^{-}S1" fraction="&lt; 7E-6" PUnit="MeV/c"> 
+      </Decay> 
+   </ParticleType> 
+   <ParticleType name="Sigma0" > 
+      <Decay name="Lambdagammagamma" texName="\Lambda\;\gamma\;\gamma" fraction="&lt; 3" PUnit="MeV/c"> 
+      </Decay> 
+   </ParticleType> 
+   <ParticleType name="Sigma-" > 
+   </ParticleType> 
+   <ParticleType name="Sigma(1385)+" > 
+   </ParticleType> 
+   <ParticleType name="Sigma(1385)-" > 
+   </ParticleType> 
+   <ParticleType name="Sigma(1385)0" > 
+   </ParticleType> 
+   <ParticleType name="Sigma(1660)-" > 
+      <Decay name="NK10--30X" texName="N\;K\;10--30\;X" fraction="405" PUnit="MeV/c"> 
+      </Decay> 
+      <Decay name="Lambdapi" texName="\Lambda\;pi" fraction="seen" PUnit="MeV/c"> 
+      </Decay> 
+      <Decay name="Sigmapi" texName="\Sigma\;pi" fraction="seen" PUnit="MeV/c"> 
+      </Decay> 
+   </ParticleType> 
+   <ParticleType name="Sigma(1660)0" > 
+      <Decay name="NK10--30X" texName="N\;K\;10--30\;X" fraction="405" PUnit="MeV/c"> 
+      </Decay> 
+      <Decay name="Lambdapi" texName="\Lambda\;pi" fraction="seen" PUnit="MeV/c"> 
+      </Decay> 
+      <Decay name="Sigmapi" texName="\Sigma\;pi" fraction="seen" PUnit="MeV/c"> 
+      </Decay> 
+   </ParticleType> 
+   <ParticleType name="Sigma(1660)+" > 
+      <Decay name="NK10--30X" texName="N\;K\;10--30\;X" fraction="405" PUnit="MeV/c"> 
+      </Decay> 
+      <Decay name="Lambdapi" texName="\Lambda\;pi" fraction="seen" PUnit="MeV/c"> 
+      </Decay> 
+      <Decay name="Sigmapi" texName="\Sigma\;pi" fraction="seen" PUnit="MeV/c"> 
+      </Decay> 
+   </ParticleType> 
+   <ParticleType name="Sigma(1670)-" > 
+      <Decay name="NK7--13X" texName="N\;K\;7--13\;X" fraction="414" PUnit="MeV/c"> 
+      </Decay> 
+      <Decay name="Lambdapi5--15X" texName="\Lambda\;pi\;5--15\;X" fraction="447" PUnit="MeV/c"> 
+      </Decay> 
+      <Decay name="Sigmapi30--60X" texName="\Sigma\;pi\;30--60\;X" fraction="393" PUnit="MeV/c"> 
+      </Decay> 
+   </ParticleType> 
+   <ParticleType name="Sigma(1670)0" > 
+      <Decay name="NK7--13X" texName="N\;K\;7--13\;X" fraction="414" PUnit="MeV/c"> 
+      </Decay> 
+      <Decay name="Lambdapi5--15X" texName="\Lambda\;pi\;5--15\;X" fraction="447" PUnit="MeV/c"> 
+      </Decay> 
+      <Decay name="Sigmapi30--60X" texName="\Sigma\;pi\;30--60\;X" fraction="393" PUnit="MeV/c"> 
+      </Decay> 
+   </ParticleType> 
+   <ParticleType name="Sigma(1670)+" > 
+      <Decay name="NK7--13X" texName="N\;K\;7--13\;X" fraction="414" PUnit="MeV/c"> 
+      </Decay> 
+      <Decay name="Lambdapi5--15X" texName="\Lambda\;pi\;5--15\;X" fraction="447" PUnit="MeV/c"> 
+      </Decay> 
+      <Decay name="Sigmapi30--60X" texName="\Sigma\;pi\;30--60\;X" fraction="393" PUnit="MeV/c"> 
+      </Decay> 
+   </ParticleType> 
+   <ParticleType name="Sigma(1750)-" > 
+      <Decay name="NK10--40X" texName="N\;K\;10--40\;X" fraction="486" PUnit="MeV/c"> 
+      </Decay> 
+      <Decay name="Lambdapi" texName="\Lambda\;pi" fraction="seen" PUnit="MeV/c"> 
+      </Decay> 
+      <Decay name="Sigmapi" texName="\Sigma\;pi" fraction="&lt; 8" PUnit="MeV/c"> 
+      </Decay> 
+      <Decay name="Sigmaeta15--55X" texName="\Sigma\;\eta\;15--55\;X" fraction="81" PUnit="MeV/c"> 
+      </Decay> 
+   </ParticleType> 
+   <ParticleType name="Sigma(1750)0" > 
+      <Decay name="NK10--40X" texName="N\;K\;10--40\;X" fraction="486" PUnit="MeV/c"> 
+      </Decay> 
+      <Decay name="Lambdapi" texName="\Lambda\;pi" fraction="seen" PUnit="MeV/c"> 
+      </Decay> 
+      <Decay name="Sigmapi" texName="\Sigma\;pi" fraction="&lt; 8" PUnit="MeV/c"> 
+      </Decay> 
+      <Decay name="Sigmaeta15--55X" texName="\Sigma\;\eta\;15--55\;X" fraction="81" PUnit="MeV/c"> 
+      </Decay> 
+   </ParticleType> 
+   <ParticleType name="Sigma(1750)+" > 
+      <Decay name="NK10--40X" texName="N\;K\;10--40\;X" fraction="486" PUnit="MeV/c"> 
+      </Decay> 
+      <Decay name="Lambdapi" texName="\Lambda\;pi" fraction="seen" PUnit="MeV/c"> 
+      </Decay> 
+      <Decay name="Sigmapi" texName="\Sigma\;pi" fraction="&lt; 8" PUnit="MeV/c"> 
+      </Decay> 
+      <Decay name="Sigmaeta15--55X" texName="\Sigma\;\eta\;15--55\;X" fraction="81" PUnit="MeV/c"> 
+      </Decay> 
+   </ParticleType> 
+   <ParticleType name="Sigma(1775)-" > 
+      <Decay name="NK37--43X" texName="N\;K\;37--43X" fraction="508" PUnit="MeV/c"> 
+      </Decay> 
+      <Decay name="Lambdapi14--20X" texName="\Lambda\;pi\;14--20X" fraction="525" PUnit="MeV/c"> 
+      </Decay> 
+      <Decay name="Sigmapi2--5X" texName="\Sigma\;pi\;2--5X" fraction="474" PUnit="MeV/c"> 
+      </Decay> 
+      <Decay name="Sigma" texName="\Sigma" fraction="1385" PUnit="MeV/c"> 
+      </Decay> 
+      <Decay name="Lambda" texName="\Lambda" fraction="1520" PUnit="MeV/c"> 
+      </Decay> 
+   </ParticleType> 
+   <ParticleType name="Sigma(1775)0" > 
+      <Decay name="NK37--43X" texName="N\;K\;37--43X" fraction="508" PUnit="MeV/c"> 
+      </Decay> 
+      <Decay name="Lambdapi14--20X" texName="\Lambda\;pi\;14--20X" fraction="525" PUnit="MeV/c"> 
+      </Decay> 
+      <Decay name="Sigmapi2--5X" texName="\Sigma\;pi\;2--5X" fraction="474" PUnit="MeV/c"> 
+      </Decay> 
+      <Decay name="Sigma" texName="\Sigma" fraction="1385" PUnit="MeV/c"> 
+      </Decay> 
+      <Decay name="Lambda" texName="\Lambda" fraction="1520" PUnit="MeV/c"> 
+      </Decay> 
+   </ParticleType> 
+   <ParticleType name="Sigma(1775)+" > 
+      <Decay name="NK37--43X" texName="N\;K\;37--43X" fraction="508" PUnit="MeV/c"> 
+      </Decay> 
+      <Decay name="Lambdapi14--20X" texName="\Lambda\;pi\;14--20X" fraction="525" PUnit="MeV/c"> 
+      </Decay> 
+      <Decay name="Sigmapi2--5X" texName="\Sigma\;pi\;2--5X" fraction="474" PUnit="MeV/c"> 
+      </Decay> 
+      <Decay name="Sigma" texName="\Sigma" fraction="1385" PUnit="MeV/c"> 
+      </Decay> 
+      <Decay name="Lambda" texName="\Lambda" fraction="1520" PUnit="MeV/c"> 
+      </Decay> 
+   </ParticleType> 
+   <ParticleType name="Sigma(1915)-" > 
+      <Decay name="NK5--15X" texName="N\;K\;5--15\;X" fraction="618" PUnit="MeV/c"> 
+      </Decay> 
+      <Decay name="Lambdapi" texName="\Lambda\;pi" fraction="seen" PUnit="MeV/c"> 
+      </Decay> 
+      <Decay name="Sigmapi" texName="\Sigma\;pi" fraction="seen" PUnit="MeV/c"> 
+      </Decay> 
+   </ParticleType> 
+   <ParticleType name="Sigma(1915)0" > 
+      <Decay name="NK5--15X" texName="N\;K\;5--15\;X" fraction="618" PUnit="MeV/c"> 
+      </Decay> 
+      <Decay name="Lambdapi" texName="\Lambda\;pi" fraction="seen" PUnit="MeV/c"> 
+      </Decay> 
+      <Decay name="Sigmapi" texName="\Sigma\;pi" fraction="seen" PUnit="MeV/c"> 
+      </Decay> 
+   </ParticleType> 
+   <ParticleType name="Sigma(1915)+" > 
+      <Decay name="NK5--15X" texName="N\;K\;5--15\;X" fraction="618" PUnit="MeV/c"> 
+      </Decay> 
+      <Decay name="Lambdapi" texName="\Lambda\;pi" fraction="seen" PUnit="MeV/c"> 
+      </Decay> 
+      <Decay name="Sigmapi" texName="\Sigma\;pi" fraction="seen" PUnit="MeV/c"> 
+      </Decay> 
+   </ParticleType> 
+   <ParticleType name="Sigma(1940)-" > 
+      <Decay name="NK" texName="N\;K" fraction="&lt; 20" PUnit="MeV/c"> 
+      </Decay> 
+      <Decay name="Lambdapi" texName="\Lambda\;pi" fraction="seen" PUnit="MeV/c"> 
+      </Decay> 
+      <Decay name="Sigmapi" texName="\Sigma\;pi" fraction="seen" PUnit="MeV/c"> 
+      </Decay> 
+      <Decay name="Sigma(1385)pi" texName="\Sigma\;(1385)\;pi" fraction="seen" PUnit="MeV/c"> 
+      </Decay> 
+      <Decay name="Lambda(1520)pi" texName="\Lambda(1520)\;pi" fraction="seen" PUnit="MeV/c"> 
+      </Decay> 
+      <Decay name="Delta(1232)K" texName="\Delta(1232)\;K" fraction="seen" PUnit="MeV/c"> 
+      </Decay> 
+      <Decay name="NK*(892)" texName="N\;K^{\ast}(892)" fraction="seen" PUnit="MeV/c"> 
+      </Decay> 
+   </ParticleType> 
+   <ParticleType name="Sigma(1940)0" > 
+      <Decay name="NK" texName="N\;K" fraction="&lt; 20" PUnit="MeV/c"> 
+      </Decay> 
+      <Decay name="Lambdapi" texName="\Lambda\;pi" fraction="seen" PUnit="MeV/c"> 
+      </Decay> 
+      <Decay name="Sigmapi" texName="\Sigma\;pi" fraction="seen" PUnit="MeV/c"> 
+      </Decay> 
+      <Decay name="Sigma(1385)pi" texName="\Sigma\;(1385)\;pi" fraction="seen" PUnit="MeV/c"> 
+      </Decay> 
+      <Decay name="Lambda(1520)pi" texName="\Lambda(1520)\;pi" fraction="seen" PUnit="MeV/c"> 
+      </Decay> 
+      <Decay name="Delta(1232)K" texName="\Delta(1232)\;K" fraction="seen" PUnit="MeV/c"> 
+      </Decay> 
+      <Decay name="NK*(892)" texName="N\;K^{\ast}(892)" fraction="seen" PUnit="MeV/c"> 
+      </Decay> 
+   </ParticleType> 
+   <ParticleType name="Sigma(1940)+" > 
+      <Decay name="NK" texName="N\;K" fraction="&lt; 20" PUnit="MeV/c"> 
+      </Decay> 
+      <Decay name="Lambdapi" texName="\Lambda\;pi" fraction="seen" PUnit="MeV/c"> 
+      </Decay> 
+      <Decay name="Sigmapi" texName="\Sigma\;pi" fraction="seen" PUnit="MeV/c"> 
+      </Decay> 
+      <Decay name="Sigma(1385)pi" texName="\Sigma\;(1385)\;pi" fraction="seen" PUnit="MeV/c"> 
+      </Decay> 
+      <Decay name="Lambda(1520)pi" texName="\Lambda(1520)\;pi" fraction="seen" PUnit="MeV/c"> 
+      </Decay> 
+      <Decay name="Delta(1232)K" texName="\Delta(1232)\;K" fraction="seen" PUnit="MeV/c"> 
+      </Decay> 
+      <Decay name="NK*(892)" texName="N\;K^{\ast}(892)" fraction="seen" PUnit="MeV/c"> 
+      </Decay> 
+   </ParticleType> 
+   <ParticleType name="Sigma(2030)-" > 
+      <Decay name="NK17--23X" texName="N\;K\;17--23\;X" fraction="702" PUnit="MeV/c"> 
+      </Decay> 
+      <Decay name="Lambdapi17--23X" texName="\Lambda\;pi\;17--23\;X" fraction="700" PUnit="MeV/c"> 
+      </Decay> 
+      <Decay name="Sigmapi5--10X" texName="\Sigma\;pi\;5--10\;X" fraction="657" PUnit="MeV/c"> 
+      </Decay> 
+      <Decay name="XiK" texName="\Xi\;K" fraction="&lt; 2" PUnit="MeV/c"> 
+      </Decay> 
+   </ParticleType> 
+   <ParticleType name="Sigma(2030)0" > 
+      <Decay name="NK17--23X" texName="N\;K\;17--23\;X" fraction="702" PUnit="MeV/c"> 
+      </Decay> 
+      <Decay name="Lambdapi17--23X" texName="\Lambda\;pi\;17--23\;X" fraction="700" PUnit="MeV/c"> 
+      </Decay> 
+      <Decay name="Sigmapi5--10X" texName="\Sigma\;pi\;5--10\;X" fraction="657" PUnit="MeV/c"> 
+      </Decay> 
+      <Decay name="XiK" texName="\Xi\;K" fraction="&lt; 2" PUnit="MeV/c"> 
+      </Decay> 
+   </ParticleType> 
+   <ParticleType name="Sigma(2030)+" > 
+      <Decay name="NK17--23X" texName="N\;K\;17--23\;X" fraction="702" PUnit="MeV/c"> 
+      </Decay> 
+      <Decay name="Lambdapi17--23X" texName="\Lambda\;pi\;17--23\;X" fraction="700" PUnit="MeV/c"> 
+      </Decay> 
+      <Decay name="Sigmapi5--10X" texName="\Sigma\;pi\;5--10\;X" fraction="657" PUnit="MeV/c"> 
+      </Decay> 
+      <Decay name="XiK" texName="\Xi\;K" fraction="&lt; 2" PUnit="MeV/c"> 
+      </Decay> 
+   </ParticleType> 
+   <ParticleType name="Sigma(2250)" > 
+      <Decay name="NK" texName="N\;K" fraction="&lt; 10" PUnit="MeV/c"> 
+      </Decay> 
+      <Decay name="Lambdapi" texName="\Lambda\;pi" fraction="seen" PUnit="MeV/c"> 
+      </Decay> 
+      <Decay name="Sigmapi" texName="\Sigma\;pi" fraction="seen" PUnit="MeV/c"> 
+      </Decay> 
+   </ParticleType> 
+   <ParticleType name="Xi0" > 
+      <Decay name="Sigma+mu-nu(mu)" texName="\Sigma^{+}mu^{-}nu_{mu}" fraction="&lt; 1.1E-3" PUnit="MeV/c"> 
+      </Decay> 
+      <Decay name="Sigma-e+nu(e)SQ" texName="\Sigma^{-}e^{+}nu_{e}SQ" fraction="&lt; 9E-4" PUnit="MeV/c"> 
+      </Decay> 
+      <Decay name="Sigma-mu+nu(mu)SQ" texName="\Sigma^{-}mu^{+}nu_{mu}SQ" fraction="&lt; 9E-4" PUnit="MeV/c"> 
+      </Decay> 
+      <Decay name="ppi-S2" texName="p\;pi^{-}S2" fraction="&lt; 4E-5" PUnit="MeV/c"> 
+      </Decay> 
+      <Decay name="pe-nu(e)S2" texName="p\;e^{-}nu_{e}S2" fraction="&lt; 1.3E-3" PUnit="MeV/c"> 
+      </Decay> 
+      <Decay name="pmu-nu(mu)S2" texName="p\;mu^{-}nu_{mu}S2" fraction="&lt; 1.3E-3" PUnit="MeV/c"> 
+      </Decay> 
+   </ParticleType> 
+   <ParticleType name="Xi-" > 
+      <Decay name="Xi0e-nu(e)" texName="\Xi^{0}e^{-}nu_{e}" fraction="&lt; 2.3E-3" PUnit="MeV/c"> 
+      </Decay> 
+      <Decay name="npi-S2" texName="n\;pi^{-}S2" fraction="&lt; 1.9E-5" PUnit="MeV/c"> 
+      </Decay> 
+      <Decay name="ne-nu(e)S2" texName="n\;e^{-}nu_{e}S2" fraction="&lt; 3.2E-3" PUnit="MeV/c"> 
+      </Decay> 
+      <Decay name="nmu-nu(mu)S2" texName="n\;mu^{-}nu_{mu}S2" fraction="&lt; 1.5" PUnit="MeV/c"> 
+      </Decay> 
+      <Decay name="ppi-pi-S2" texName="p\;pi^{-}pi^{-}S2" fraction="&lt; 4E-4" PUnit="MeV/c"> 
+      </Decay> 
+      <Decay name="ppi-e-nu(e)S2" texName="p\;pi^{-}e^{-}nu_{e}S2" fraction="&lt; 4E-4" PUnit="MeV/c"> 
+      </Decay> 
+      <Decay name="ppi-mu-nu(mu)S2" texName="p\;pi^{-}mu^{-}nu_{mu}S2" fraction="&lt; 4E-4" PUnit="MeV/c"> 
+      </Decay> 
+      <Decay name="pmu-mu-L" texName="p\;mu^{-}mu^{-}L" fraction="&lt; 4E-4" PUnit="MeV/c"> 
+      </Decay> 
+   </ParticleType> 
+   <ParticleType name="Xi(1530)-" > 
+      <Decay name="Xigamma" texName="\Xi\;\gamma" fraction="&lt; 4" PUnit="MeV/c"> 
+      </Decay> 
+   </ParticleType> 
+   <ParticleType name="Xi(1530)0" > 
+      <Decay name="Xigamma" texName="\Xi\;\gamma" fraction="&lt; 4" PUnit="MeV/c"> 
+      </Decay> 
+   </ParticleType> 
+   <ParticleType name="Xi(1690)" > 
+      <Decay name="LambdaK" texName="\Lambda\;K" fraction="seen" PUnit="MeV/c"> 
+      </Decay> 
+      <Decay name="SigmaK" texName="\Sigma\;K" fraction="seen" PUnit="MeV/c"> 
+      </Decay> 
+      <Decay name="Xipi" texName="\Xi\;pi" fraction="seen" PUnit="MeV/c"> 
+      </Decay> 
+      <Decay name="Xi-pi+pi-possibly" texName="\Xi^{-}pi^{+}pi^{-}possibly" fraction="seen" PUnit="MeV/c"> 
+      </Decay> 
+   </ParticleType> 
+   <ParticleType name="Xi(1820)-" > 
+      <Decay name="LambdaK" texName="\Lambda\;K" fraction="large" PUnit="MeV/c"> 
+      </Decay> 
+      <Decay name="SigmaKsmall" texName="\Sigma\;K\;small" fraction="320" PUnit="MeV/c"> 
+      </Decay> 
+      <Decay name="Xipismall" texName="\Xi\;pi\;small" fraction="413" PUnit="MeV/c"> 
+      </Decay> 
+      <Decay name="Xi" texName="\Xi" fraction="1530" PUnit="MeV/c"> 
+      </Decay> 
+   </ParticleType> 
+   <ParticleType name="Xi(1820)0" > 
+      <Decay name="LambdaK" texName="\Lambda\;K" fraction="large" PUnit="MeV/c"> 
+      </Decay> 
+      <Decay name="SigmaKsmall" texName="\Sigma\;K\;small" fraction="320" PUnit="MeV/c"> 
+      </Decay> 
+      <Decay name="Xipismall" texName="\Xi\;pi\;small" fraction="413" PUnit="MeV/c"> 
+      </Decay> 
+      <Decay name="Xi" texName="\Xi" fraction="1530" PUnit="MeV/c"> 
+      </Decay> 
+   </ParticleType> 
+   <ParticleType name="Xi(1950)" > 
+      <Decay name="LambdaK" texName="\Lambda\;K" fraction="seen" PUnit="MeV/c"> 
+      </Decay> 
+      <Decay name="SigmaKpossibly" texName="\Sigma\;K\;possibly" fraction="seen" PUnit="MeV/c"> 
+      </Decay> 
+      <Decay name="Xipi" texName="\Xi\;pi" fraction="seen" PUnit="MeV/c"> 
+      </Decay> 
+   </ParticleType> 
+   <ParticleType name="Xi(2030)" > 
+      <Decay name="Xipismall" texName="\Xi\;pi\;small" fraction="573" PUnit="MeV/c"> 
+      </Decay> 
+      <Decay name="Xi" texName="\Xi" fraction="1530" PUnit="MeV/c"> 
+      </Decay> 
+      <Decay name="LambdaKpismall" texName="\Lambda\;K\;pi\;small" fraction="501" PUnit="MeV/c"> 
+      </Decay> 
+      <Decay name="SigmaKpismall" texName="\Sigma\;K\;pi\;small" fraction="430" PUnit="MeV/c"> 
+      </Decay> 
+   </ParticleType> 
+   <ParticleType name="Omega-" > 
+      <Decay name="Xi-gamma" texName="\Xi^{-}\gamma" fraction="&lt; 4.6E-4" PUnit="MeV/c"> 
+      </Decay> 
+      <Decay name="Lambdapi-S2" texName="\Lambda\;pi^{-}S2" fraction="&lt; 1.9E-4" PUnit="MeV/c"> 
+      </Decay> 
+   </ParticleType> 
+   <ParticleType name="Omega(2250)-" > 
+      <Decay name="Xi-pi+K-" texName="\Xi^{-}pi^{+}K^{-}" fraction="seen" PUnit="MeV/c"> 
+      </Decay> 
+      <Decay name="Xi(1530)0K-" texName="\Xi\;(1530)^{0}K^{-}" fraction="seen" PUnit="MeV/c"> 
+      </Decay> 
+   </ParticleType> 
+   <ParticleType name="Lambda(c)+" > 
+      <Decay name="Delta(1232)K*(892)" texName="\Delta(1232)\;K^{\ast}(892)" fraction="seen" PUnit="MeV/c"> 
+      </Decay> 
+      <Decay name="Lambdarho+" texName="\Lambda\;\rho^{+}" fraction="&lt; 5" PUnit="MeV/c"> 
+      </Decay> 
+      <Decay name="Sigma+rho0" texName="\Sigma^{+}\rho^{0}" fraction="&lt; 1.4" PUnit="MeV/c"> 
+      </Decay> 
+      <Decay name="Sigma+pi+pi-pi" texName="\Sigma^{+}pi^{+}pi^{-}pi" fraction="0" PUnit="MeV/c"> 
+      </Decay> 
+      <Decay name="pmu+mu-C1" texName="p\;mu^{+}mu^{-}C1" fraction="&lt; 3.4E-4" PUnit="MeV/c"> 
+      </Decay> 
+      <Decay name="Sigma-mu+mu+L" texName="\Sigma^{-}mu^{+}mu^{+}L" fraction="&lt; 7.0E-4" PUnit="MeV/c"> 
+      </Decay> 
+   </ParticleType> 
+   <ParticleType name="Lambda(c)(2593)+" > 
+      <Decay name="Lambda(c)+pi0" texName="\Lambda^{+}_{c}pi^{0}" fraction="not seen" PUnit="MeV/c"> 
+      </Decay> 
+      <Decay name="Lambda(c)+gamma" texName="\Lambda^{+}_{c}\gamma" fraction="not seen" PUnit="MeV/c"> 
+      </Decay> 
+   </ParticleType> 
+   <ParticleType name="Lambda(c)(2625)+" > 
+      <Decay name="Lambda(c)+pi+pi-" texName="\Lambda^{+}_{c}pi^{+}pi^{-}" fraction="184" PUnit="MeV/c"> 
+      </Decay> 
+      <Decay name="Sigma(c)" texName="\Sigma_{c}" fraction="2455" PUnit="MeV/c"> 
+      </Decay> 
+      <Decay name="Sigma(c)" texName="\Sigma_{c}" fraction="2455" PUnit="MeV/c"> 
+      </Decay> 
+      <Decay name="Lambda(c)+pi+pi-3-body" texName="\Lambda^{+}_{c}pi^{+}pi^{-}3-body" fraction="large" PUnit="MeV/c"> 
+      </Decay> 
+      <Decay name="Lambda(c)+pi0" texName="\Lambda^{+}_{c}pi^{0}" fraction="not seen" PUnit="MeV/c"> 
+      </Decay> 
+      <Decay name="Lambda(c)+gamma" texName="\Lambda^{+}_{c}\gamma" fraction="not seen" PUnit="MeV/c"> 
+      </Decay> 
+   </ParticleType> 
+   <ParticleType name="Sigma(c)(2455)++" > 
+   </ParticleType> 
+   <ParticleType name="Sigma(c)(2455)+" > 
+   </ParticleType> 
+   <ParticleType name="Sigma(c)(2455)0" > 
+   </ParticleType> 
+   <ParticleType name="Sigma(c)(2520)++" > 
+   </ParticleType> 
+   <ParticleType name="Sigma(c)(2520)0" > 
+   </ParticleType> 
+   <ParticleType name="Xi(c)+" > 
+      <Decay name="LambdaK-pi+pi+" texName="\Lambda\;K^{-}pi^{+}pi^{+}" fraction="0.58" posError="0.18" negError="0.18" PUnit="MeV/c"> 
+      </Decay> 
+      <Decay name="LambdaK*(892)0pi+" texName="\Lambda\;K^{\ast}(892)^{0}pi^{+}" fraction="&lt; 0.29" PUnit="MeV/c"> 
+      </Decay> 
+      <Decay name="Sigma(1385)+K-pi+" texName="\Sigma\;(1385)^{+}K^{-}pi^{+}" fraction="&lt; 0.41" PUnit="MeV/c"> 
+      </Decay> 
+      <Decay name="Sigma+K-pi+" texName="\Sigma^{+}K^{-}pi^{+}" fraction="1.18" posError="0.31" negError="0.31" PUnit="MeV/c"> 
+      </Decay> 
+      <Decay name="Sigma+K*(892)0" texName="\Sigma^{+}K^{\ast}(892)^{0}" fraction="0.92" posError="0.30" negError="0.30" PUnit="MeV/c"> 
+      </Decay> 
+      <Decay name="Sigma0K-pi+pi+" texName="\Sigma^{0}K^{-}pi^{+}pi^{+}" fraction="0.49" posError="0.26" negError="0.26" PUnit="MeV/c"> 
+      </Decay> 
+      <Decay name="Xi0pi+" texName="\Xi^{0}pi^{+}" fraction="0.55" posError="0.16" negError="0.16" PUnit="MeV/c"> 
+      </Decay> 
+      <Decay name="Xi-pi+pi+" texName="\Xi^{-}pi^{+}pi^{+}" fraction="850" PUnit="MeV/c"> 
+      </Decay> 
+      <Decay name="Xi(1530)0pi+" texName="\Xi\;(1530)^{0}pi^{+}" fraction="&lt; 0.2" PUnit="MeV/c"> 
+      </Decay> 
+      <Decay name="Xi0pi+pi0" texName="\Xi^{0}pi^{+}pi^{0}" fraction="2.34" posError="0.68" negError="0.68" PUnit="MeV/c"> 
+      </Decay> 
+      <Decay name="Xi0pi+pi+pi-" texName="\Xi^{0}pi^{+}pi^{+}pi^{-}" fraction="1.74" posError="0.50" negError="0.50" PUnit="MeV/c"> 
+      </Decay> 
+      <Decay name="Xi0e+nu(e)" texName="\Xi^{0}e^{+}nu_{e}" fraction="2.3" posError="0.7" negError="0.9" PUnit="MeV/c"> 
+      </Decay> 
+      <Decay name="pK-pi+" texName="p\;K^{-}pi^{+}" fraction="0.20" posError="0.05" negError="0.05" PUnit="MeV/c"> 
+      </Decay> 
+   </ParticleType> 
+   <ParticleType name="Xi(c)0" > 
+      <Decay name="LambdaK0" texName="\Lambda\;K^{0}" fraction="seen" PUnit="MeV/c"> 
+      </Decay> 
+      <Decay name="LambdaK0pi+pi-" texName="\Lambda\;K^{0}pi^{+}pi^{-}" fraction="seen" PUnit="MeV/c"> 
+      </Decay> 
+      <Decay name="LambdaK-pi+pi+pi-" texName="\Lambda\;K^{-}pi^{+}pi^{+}pi^{-}" fraction="seen" PUnit="MeV/c"> 
+      </Decay> 
+      <Decay name="Xi-pi+" texName="\Xi^{-}pi^{+}" fraction="seen" PUnit="MeV/c"> 
+      </Decay> 
+      <Decay name="Xi-pi+pi+pi-" texName="\Xi^{-}pi^{+}pi^{+}pi^{-}" fraction="seen" PUnit="MeV/c"> 
+      </Decay> 
+      <Decay name="pK-K*(892)0" texName="p\;K^{-}K^{\ast}(892)^{0}" fraction="seen" PUnit="MeV/c"> 
+      </Decay> 
+      <Decay name="Omega-K+" texName="\Omega^{-}K^{+}" fraction="seen" PUnit="MeV/c"> 
+      </Decay> 
+      <Decay name="Xi-e+nu(e)" texName="\Xi^{-}e^{+}nu_{e}" fraction="seen" PUnit="MeV/c"> 
+      </Decay> 
+      <Decay name="Xi-ell+anything" texName="\Xi^{-}\ell^{+}anything" fraction="seen" PUnit="MeV/c"> 
+      </Decay> 
+   </ParticleType> 
+   <ParticleType name="Xi(c)'+" > 
+      <Decay name="Xi(c)+gamma" texName="\Xi^{+}_{c}\gamma" fraction="seen" PUnit="MeV/c"> 
+      </Decay> 
+   </ParticleType> 
+   <ParticleType name="Xi(c)'0" > 
+      <Decay name="Xi(c)0gamma" texName="\Xi^{0}_{c}\gamma" fraction="seen" PUnit="MeV/c"> 
+      </Decay> 
+   </ParticleType> 
+   <ParticleType name="Xi(c)(2645)+" > 
+      <Decay name="Xi(c)0pi+" texName="\Xi^{0}_{c}pi^{+}" fraction="seen" PUnit="MeV/c"> 
+      </Decay> 
+      <Decay name="Xi(c)+pi-" texName="\Xi^{+}_{c}pi^{-}" fraction="seen" PUnit="MeV/c"> 
+      </Decay> 
+   </ParticleType> 
+   <ParticleType name="Xi(c)(2645)0" > 
+      <Decay name="Xi(c)0pi+" texName="\Xi^{0}_{c}pi^{+}" fraction="seen" PUnit="MeV/c"> 
+      </Decay> 
+      <Decay name="Xi(c)+pi-" texName="\Xi^{+}_{c}pi^{-}" fraction="seen" PUnit="MeV/c"> 
+      </Decay> 
+   </ParticleType> 
+   <ParticleType name="Xi(c)(2815)+" > 
+      <Decay name="Xi(c)+pi+pi-" texName="\Xi^{+}_{c}pi^{+}pi^{-}" fraction="seen" PUnit="MeV/c"> 
+      </Decay> 
+      <Decay name="Xi(c)0pi+pi-" texName="\Xi^{0}_{c}pi^{+}pi^{-}" fraction="seen" PUnit="MeV/c"> 
+      </Decay> 
+   </ParticleType> 
+   <ParticleType name="Xi(c)(2815)0" > 
+      <Decay name="Xi(c)+pi+pi-" texName="\Xi^{+}_{c}pi^{+}pi^{-}" fraction="seen" PUnit="MeV/c"> 
+      </Decay> 
+      <Decay name="Xi(c)0pi+pi-" texName="\Xi^{0}_{c}pi^{+}pi^{-}" fraction="seen" PUnit="MeV/c"> 
+      </Decay> 
+   </ParticleType> 
+   <ParticleType name="Omega(c)0" > 
+      <Decay name="Sigma+K-K-pi+" texName="\Sigma^{+}K^{-}K^{-}pi^{+}" fraction="seen" PUnit="MeV/c"> 
+      </Decay> 
+      <Decay name="Xi-K-pi+pi+" texName="\Xi^{-}K^{-}pi^{+}pi^{+}" fraction="seen" PUnit="MeV/c"> 
+      </Decay> 
+      <Decay name="Omega-pi+" texName="\Omega^{-}pi^{+}" fraction="seen" PUnit="MeV/c"> 
+      </Decay> 
+      <Decay name="Omega-pi-pi+pi+" texName="\Omega^{-}pi^{-}pi^{+}pi^{+}" fraction="seen" PUnit="MeV/c"> 
+      </Decay> 
+   </ParticleType> 
+   <ParticleType name="Lambda(b)0" > 
+      <Decay name="Lambda(c)+pi-" texName="\Lambda^{+}_{c}pi^{-}" fraction="seen" PUnit="MeV/c"> 
+      </Decay> 
+      <Decay name="Lambda(c)+a(1)(1260)-" texName="\Lambda^{+}_{c}a_{1}(1260)^{-}" fraction="seen" PUnit="MeV/c"> 
+      </Decay> 
+      <Decay name="ppi-" texName="p\;pi^{-}" fraction="&lt; 5.0E-5" PUnit="MeV/c"> 
+      </Decay> 
+      <Decay name="pK-" texName="p\;K^{-}" fraction="&lt; 5.0E-5" PUnit="MeV/c"> 
+      </Decay> 
+   </ParticleType> 
+   <ParticleType name="b-baryonADMIXTURE(Lambda(b),Xi(b),Sigma(b),Omega(b))" > 
+   </ParticleType> 
+</PPML> 

@@ -1,0 +1,36 @@
+<project>
+  <parent>
+    <artifactId>global</artifactId>
+    <groupId>org.freehep</groupId>
+    <version>5</version>
+  </parent>
+  <modelVersion>4.0.0</modelVersion>
+  <groupId>org.freehep</groupId>
+  <artifactId>maven-plugins</artifactId>
+  <packaging>pom</packaging>
+  <name>FreeHEP Maven Plugins</name>
+  <version>4-SNAPSHOT</version>
+  <description>FreeHEP Plugins for Maven 2</description>
+  <url>http://java.freehep.org/</url>
+  <repositories>
+    <repository>
+      <id>freehep-maven</id>
+      <name>Maven FreeHEP</name>
+      <url>http://java.freehep.org/maven2</url>
+    </repository>
+  </repositories>
+  <modules>
+    <module>freehep-chartableconverter-plugin</module>
+    <module>freehep-idlj-plugin</module>
+<!-- NOT IN USE
+    <module>freehep-filter-plugin</module>
+-->
+    <module>freehep-jarjar-plugin</module>
+    <module>freehep-jas-plugin</module>
+    <module>freehep-nar-plugin</module>
+    <module>freehep-one-plugin</module>
+    <module>freehep-project-archetype</module>
+    <module>freehep-rmic-plugin</module>
+    <module>freehep-swig-plugin</module>
+  </modules>
+</project>

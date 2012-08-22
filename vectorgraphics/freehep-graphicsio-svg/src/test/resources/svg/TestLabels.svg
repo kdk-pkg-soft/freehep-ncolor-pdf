@@ -1,0 +1,502 @@
+<?xml version="1.0" standalone="no"?>
+
+<svg 
+     version="1.1"
+     baseProfile="full"
+     xmlns="http://www.w3.org/2000/svg"
+     xmlns:xlink="http://www.w3.org/1999/xlink"
+     xmlns:ev="http://www.w3.org/2001/xml-events"
+     x="0px"
+     y="0px"
+     width="600px"
+     height="600px"
+     viewBox="0 0 600 600"
+     >
+<title>
+
+</title>
+<desc>
+<Title></Title>
+<Creator>FreeHEP Graphics2D Driver</Creator>
+<Producer>org.freehep.graphicsio.svg.SVGGraphics2D</Producer>
+<Source></Source>
+</desc>
+<defs>
+<!-- Symbols for use with SVGGraphics (generic format) -->
+<!-- Author: Mark Donszelmann -->
+<!-- Version: $Id: TestLabels.svg 8617 2006-08-16 07:39:12Z duns $ -->
+
+<symbol id="hline" viewBox="-50 -50 100 100">
+  <path d="M -50 0 H 50"/>
+</symbol>
+
+<symbol id="vline" viewBox="-50 -50 100 100">
+  <path d="M 0 -50 V 50"/>
+</symbol>
+
+<symbol id="plus" viewBox="-50 -50 100 100">
+  <path d="M -50 0 H 50 M 0 -50 V 50"/>
+</symbol>
+
+<symbol id="cross" viewBox="-50 -50 100 100">
+  <use xlink:href="#plus" transform="rotate(45)translate(-51,-51)"/>
+</symbol>
+
+<symbol id="star" viewBox="-50 -50 100 100">
+  <use xlink:href="#plus" transform="translate(-50,-50)"/>
+  <use xlink:href="#cross" transform="translate(-52,-51)"/>
+</symbol>
+
+<symbol id="dot" viewBox="-50 -50 100 100">
+  <circle cx="0" cy="0" r="50"/>
+</symbol>
+
+<!-- sqrt(2)*s -->
+<symbol id="box" viewBox="-50 -50 100 100">
+  <rect x="-35.5" y="-35.5" width="71" height="71"/>
+</symbol>
+
+<!-- 1/sqrt(3) and sqrt(3)/2 - 1/sqrt(3) -->
+<symbol id="triup" viewBox="-50 -50 100 100">
+  <path d="M -50 36 L 0 -50 L 50 36 z"/> 
+</symbol>
+
+<symbol id="tridn" viewBox="-50 -50 100 100">
+  <use xlink:href="#triup" transform="rotate(180)translate(-50,-50)"/>
+</symbol>
+
+<symbol id="diamond" viewBox="-50 -50 100 100">
+  <use xlink:href="#box" transform="rotate(45)translate(-50,-50)"/>
+</symbol>
+<!-- Symbols for use with SVGGraphics (stylable format) -->
+<!-- Author: Mark Donszelmann -->
+<!-- Version: $Id: TestLabels.svg 8617 2006-08-16 07:39:12Z duns $ -->
+
+<symbol id="fdot">
+  <use xlink:href="#dot" style="stroke:none;fill:currentColor"/>
+</symbol>
+
+<symbol id="fbox">
+  <use xlink:href="#box" style="stroke:none;fill:currentColor"/>
+</symbol>
+
+<symbol id="ftriup">
+  <use xlink:href="#triup" style="stroke:none;fill:currentColor"/>
+</symbol>
+
+<symbol id="ftridn">
+  <use xlink:href="#tridn" style="stroke:none;fill:currentColor"/>
+</symbol>
+
+<symbol id="fdiamond">
+  <use xlink:href="#diamond" style="stroke:none;fill:currentColor"/>
+</symbol>
+</defs>
+
+<clipPath id="clip1">
+  <path d="M 0.0000 0.0000 L 0.0000 600.00 L 600.00 600.00 L 600.00 0.0000 z "/>
+</clipPath>
+<g clip-path="url(#clip1)">
+<g stroke="none" fill="#eeeeee" fill-opacity="1.0" fill-rule="nonzero" >
+  <path d="M 0.0000 0.0000 L 600.00 0.0000 L 600.00 600.00 L 0.0000 600.00 L 0.0000 0.0000 z "/>
+</g> <!-- drawing style -->
+</g> <!-- clip1 -->
+<g transform="matrix(1.0000, 0.0000, 0.0000, 1.0000, 496.00, 8.0000)">
+<clipPath id="clip2">
+  <path d="M 0.0000 0.0000 L 0.0000 20.000 L 73.000 20.000 L 73.000 0.0000 z "/>
+</clipPath>
+<g clip-path="url(#clip2)">
+<image x="0" y="0" width="64" height="20" xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEAAAAAUCAIAAACyFKxoAAAAdUlEQVR42tXWSwqDQBCE4br/mdy4
+cONGUAQhREgQGdSJyCQx4wPT1/ib7wZFUa27C2h6jm80ufmLJh9+aArrhqa4H2i64GcJnGjWgR1N
+rxDRbAdWNFviD5rwv1DTLWiqHjOaitajKb9NaMqaAU1p7dCUlD3aH1mTt4RoZ4BcAAAAAElFTkSu
+QmCC"/>
+</g> <!-- clip2 -->
+</g> <!-- transform -->
+<g transform="matrix(1.0000, 0.0000, 0.0000, 1.0000, 496.00, 8.0000)">
+<clipPath id="clip3">
+  <path d="M 0.0000 0.0000 L 0.0000 20.000 L 73.000 20.000 L 73.000 0.0000 z "/>
+</clipPath>
+<g clip-path="url(#clip3)">
+<g transform="matrix(1.0000, 0.0000, 0.0000, 1.0000, 64.000, 0.0000)">
+<image x="0" y="0" width="9" height="20" xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAkAAAAUCAYAAABf2RdVAAAAdklEQVR42o3RzQqCUBiE4bn/a3LT
+oo0boRAESSgiDpaJnMr8ibdzB+MHz3YY5tMpRBxd7i8chf6Doy5+cRTHGUfTsuKIDZeSfjip04Kj
+Z5xw0k4jTlr8jaNNv6uuA46O5x5HRdPhKK8fONpXLY52ZcBRdrjh/AE/0aEerOeGTAAAAABJRU5E
+rkJggg=="/>
+</g> <!-- transform -->
+</g> <!-- clip3 -->
+</g> <!-- transform -->
+<g transform="matrix(1.0000, 0.0000, 0.0000, 1.0000, 496.00, 8.0000)">
+<clipPath id="clip4">
+  <path d="M 0.0000 0.0000 L 0.0000 20.000 L 73.000 20.000 L 73.000 0.0000 z "/>
+</clipPath>
+<g clip-path="url(#clip4)">
+<text stroke="none" fill="#333333" fill-opacity="1.0" font-family="sans-serif" font-weight="bold" font-style="normal" font-size="12"  x="2.0000" y="15.000">TestButton3</text>
+</g> <!-- clip4 -->
+</g> <!-- transform -->
+<g transform="matrix(1.0000, 0.0000, 0.0000, 1.0000, 496.00, 8.0000)">
+<clipPath id="clip5">
+  <path d="M 0.0000 0.0000 L 0.0000 20.000 L 73.000 20.000 L 73.000 0.0000 z "/>
+</clipPath>
+<g clip-path="url(#clip5)">
+<g stroke="#a6a6a6" stroke-opacity="1.0" fill="none" fill-rule="nonzero" >
+  <path d="M 0.0000 0.0000 L 0.0000 19.000 "/>
+</g> <!-- drawing style -->
+</g> <!-- clip5 -->
+</g> <!-- transform -->
+<g transform="matrix(1.0000, 0.0000, 0.0000, 1.0000, 496.00, 8.0000)">
+<clipPath id="clip6">
+  <path d="M 0.0000 0.0000 L 0.0000 20.000 L 73.000 20.000 L 73.000 0.0000 z "/>
+</clipPath>
+<g clip-path="url(#clip6)">
+<g stroke="#a6a6a6" stroke-opacity="1.0" fill="none" fill-rule="nonzero" >
+  <path d="M 1.0000 0.0000 L 72.000 0.0000 "/>
+</g> <!-- drawing style -->
+</g> <!-- clip6 -->
+</g> <!-- transform -->
+<g transform="matrix(1.0000, 0.0000, 0.0000, 1.0000, 496.00, 8.0000)">
+<clipPath id="clip7">
+  <path d="M 0.0000 0.0000 L 0.0000 20.000 L 73.000 20.000 L 73.000 0.0000 z "/>
+</clipPath>
+<g clip-path="url(#clip7)">
+<g stroke="#747474" stroke-opacity="1.0" fill="none" fill-rule="nonzero" >
+  <path d="M 1.0000 1.0000 L 1.0000 18.000 "/>
+</g> <!-- drawing style -->
+</g> <!-- clip7 -->
+</g> <!-- transform -->
+<g transform="matrix(1.0000, 0.0000, 0.0000, 1.0000, 496.00, 8.0000)">
+<clipPath id="clip8">
+  <path d="M 0.0000 0.0000 L 0.0000 20.000 L 73.000 20.000 L 73.000 0.0000 z "/>
+</clipPath>
+<g clip-path="url(#clip8)">
+<g stroke="#747474" stroke-opacity="1.0" fill="none" fill-rule="nonzero" >
+  <path d="M 2.0000 1.0000 L 71.000 1.0000 "/>
+</g> <!-- drawing style -->
+</g> <!-- clip8 -->
+</g> <!-- transform -->
+<g transform="matrix(1.0000, 0.0000, 0.0000, 1.0000, 496.00, 8.0000)">
+<clipPath id="clip9">
+  <path d="M 0.0000 0.0000 L 0.0000 20.000 L 73.000 20.000 L 73.000 0.0000 z "/>
+</clipPath>
+<g clip-path="url(#clip9)">
+<g stroke="#ffffff" stroke-opacity="1.0" fill="none" fill-rule="nonzero" >
+  <path d="M 1.0000 19.000 L 72.000 19.000 "/>
+</g> <!-- drawing style -->
+</g> <!-- clip9 -->
+</g> <!-- transform -->
+<g transform="matrix(1.0000, 0.0000, 0.0000, 1.0000, 496.00, 8.0000)">
+<clipPath id="clip10">
+  <path d="M 0.0000 0.0000 L 0.0000 20.000 L 73.000 20.000 L 73.000 0.0000 z "/>
+</clipPath>
+<g clip-path="url(#clip10)">
+<g stroke="#ffffff" stroke-opacity="1.0" fill="none" fill-rule="nonzero" >
+  <path d="M 72.000 1.0000 L 72.000 18.000 "/>
+</g> <!-- drawing style -->
+</g> <!-- clip10 -->
+</g> <!-- transform -->
+<g transform="matrix(1.0000, 0.0000, 0.0000, 1.0000, 496.00, 8.0000)">
+<clipPath id="clip11">
+  <path d="M 0.0000 0.0000 L 0.0000 20.000 L 73.000 20.000 L 73.000 0.0000 z "/>
+</clipPath>
+<g clip-path="url(#clip11)">
+<g stroke="#ffffff" stroke-opacity="1.0" fill="none" fill-rule="nonzero" >
+  <path d="M 2.0000 18.000 L 71.000 18.000 "/>
+</g> <!-- drawing style -->
+</g> <!-- clip11 -->
+</g> <!-- transform -->
+<g transform="matrix(1.0000, 0.0000, 0.0000, 1.0000, 496.00, 8.0000)">
+<clipPath id="clip12">
+  <path d="M 0.0000 0.0000 L 0.0000 20.000 L 73.000 20.000 L 73.000 0.0000 z "/>
+</clipPath>
+<g clip-path="url(#clip12)">
+<g stroke="#ffffff" stroke-opacity="1.0" fill="none" fill-rule="nonzero" >
+  <path d="M 71.000 2.0000 L 71.000 17.000 "/>
+</g> <!-- drawing style -->
+</g> <!-- clip12 -->
+</g> <!-- transform -->
+<g transform="matrix(1.0000, 0.0000, 0.0000, 1.0000, 418.00, 8.0000)">
+<clipPath id="clip13">
+  <path d="M 0.0000 0.0000 L 0.0000 20.000 L 73.000 20.000 L 73.000 0.0000 z "/>
+</clipPath>
+<g clip-path="url(#clip13)">
+<image x="0" y="0" width="64" height="20" xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEAAAAAUCAIAAACyFKxoAAAAdUlEQVR42tXWSwqDQBCE4br/mdy4
+cONGUAQhREgQGdSJyCQx4wPT1/ib7wZFUa27C2h6jm80ufmLJh9+aArrhqa4H2i64GcJnGjWgR1N
+rxDRbAdWNFviD5rwv1DTLWiqHjOaitajKb9NaMqaAU1p7dCUlD3aH1mTt4RoZ4BcAAAAAElFTkSu
+QmCC"/>
+</g> <!-- clip13 -->
+</g> <!-- transform -->
+<g transform="matrix(1.0000, 0.0000, 0.0000, 1.0000, 418.00, 8.0000)">
+<clipPath id="clip14">
+  <path d="M 0.0000 0.0000 L 0.0000 20.000 L 73.000 20.000 L 73.000 0.0000 z "/>
+</clipPath>
+<g clip-path="url(#clip14)">
+<g transform="matrix(1.0000, 0.0000, 0.0000, 1.0000, 64.000, 0.0000)">
+<image x="0" y="0" width="9" height="20" xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAkAAAAUCAYAAABf2RdVAAAAdklEQVR42o3RzQqCUBiE4bn/a3LT
+oo0boRAESSgiDpaJnMr8ibdzB+MHz3YY5tMpRBxd7i8chf6Doy5+cRTHGUfTsuKIDZeSfjip04Kj
+Z5xw0k4jTlr8jaNNv6uuA46O5x5HRdPhKK8fONpXLY52ZcBRdrjh/AE/0aEerOeGTAAAAABJRU5E
+rkJggg=="/>
+</g> <!-- transform -->
+</g> <!-- clip14 -->
+</g> <!-- transform -->
+<g transform="matrix(1.0000, 0.0000, 0.0000, 1.0000, 418.00, 8.0000)">
+<clipPath id="clip15">
+  <path d="M 0.0000 0.0000 L 0.0000 20.000 L 73.000 20.000 L 73.000 0.0000 z "/>
+</clipPath>
+<g clip-path="url(#clip15)">
+<text stroke="none" fill="#333333" fill-opacity="1.0" font-family="sans-serif" font-weight="bold" font-style="normal" font-size="12"  x="2.0000" y="15.000">TestButton2</text>
+</g> <!-- clip15 -->
+</g> <!-- transform -->
+<g transform="matrix(1.0000, 0.0000, 0.0000, 1.0000, 418.00, 8.0000)">
+<clipPath id="clip16">
+  <path d="M 0.0000 0.0000 L 0.0000 20.000 L 73.000 20.000 L 73.000 0.0000 z "/>
+</clipPath>
+<g clip-path="url(#clip16)">
+<g stroke="#a6a6a6" stroke-opacity="1.0" fill="none" fill-rule="nonzero" >
+  <path d="M 0.0000 0.0000 L 71.000 0.0000 L 71.000 18.000 L 0.0000 18.000 L 0.0000 0.0000 z "/>
+</g> <!-- drawing style -->
+</g> <!-- clip16 -->
+</g> <!-- transform -->
+<g transform="matrix(1.0000, 0.0000, 0.0000, 1.0000, 418.00, 8.0000)">
+<clipPath id="clip17">
+  <path d="M 0.0000 0.0000 L 0.0000 20.000 L 73.000 20.000 L 73.000 0.0000 z "/>
+</clipPath>
+<g clip-path="url(#clip17)">
+<g stroke="#ffffff" stroke-opacity="1.0" fill="none" fill-rule="nonzero" >
+  <path d="M 1.0000 17.000 L 1.0000 1.0000 "/>
+</g> <!-- drawing style -->
+</g> <!-- clip17 -->
+</g> <!-- transform -->
+<g transform="matrix(1.0000, 0.0000, 0.0000, 1.0000, 418.00, 8.0000)">
+<clipPath id="clip18">
+  <path d="M 0.0000 0.0000 L 0.0000 20.000 L 73.000 20.000 L 73.000 0.0000 z "/>
+</clipPath>
+<g clip-path="url(#clip18)">
+<g stroke="#ffffff" stroke-opacity="1.0" fill="none" fill-rule="nonzero" >
+  <path d="M 1.0000 1.0000 L 70.000 1.0000 "/>
+</g> <!-- drawing style -->
+</g> <!-- clip18 -->
+</g> <!-- transform -->
+<g transform="matrix(1.0000, 0.0000, 0.0000, 1.0000, 418.00, 8.0000)">
+<clipPath id="clip19">
+  <path d="M 0.0000 0.0000 L 0.0000 20.000 L 73.000 20.000 L 73.000 0.0000 z "/>
+</clipPath>
+<g clip-path="url(#clip19)">
+<g stroke="#ffffff" stroke-opacity="1.0" fill="none" fill-rule="nonzero" >
+  <path d="M 0.0000 19.000 L 72.000 19.000 "/>
+</g> <!-- drawing style -->
+</g> <!-- clip19 -->
+</g> <!-- transform -->
+<g transform="matrix(1.0000, 0.0000, 0.0000, 1.0000, 418.00, 8.0000)">
+<clipPath id="clip20">
+  <path d="M 0.0000 0.0000 L 0.0000 20.000 L 73.000 20.000 L 73.000 0.0000 z "/>
+</clipPath>
+<g clip-path="url(#clip20)">
+<g stroke="#ffffff" stroke-opacity="1.0" fill="none" fill-rule="nonzero" >
+  <path d="M 72.000 19.000 L 72.000 0.0000 "/>
+</g> <!-- drawing style -->
+</g> <!-- clip20 -->
+</g> <!-- transform -->
+<g transform="matrix(1.0000, 0.0000, 0.0000, 1.0000, 310.00, 5.0000)">
+<clipPath id="clip21">
+  <path d="M 0.0000 0.0000 L 0.0000 26.000 L 103.00 26.000 L 103.00 0.0000 z "/>
+</clipPath>
+<g clip-path="url(#clip21)">
+<image x="0" y="0" width="64" height="26" xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEAAAAAaCAIAAACIHs0YAAAAgUlEQVR42tXWAQqCABBE0X//KwlB
+IAhBUEiGhIREZmqmlGGK1Dn+8m6w7M6QlS818vqtRtF+1Kj7UY1u+KoxjLMa07yo8ZOPfwP6G9B/
+IX0O6JNY34X0bTS99mokl06NOH+qsTu3amyzhxqbU6NGlFZqhMe7GutDqcYqvqkR7Au1P2ybtMBb
+FxHZAAAAAElFTkSuQmCC"/>
+</g> <!-- clip21 -->
+</g> <!-- transform -->
+<g transform="matrix(1.0000, 0.0000, 0.0000, 1.0000, 310.00, 5.0000)">
+<clipPath id="clip22">
+  <path d="M 0.0000 0.0000 L 0.0000 26.000 L 103.00 26.000 L 103.00 0.0000 z "/>
+</clipPath>
+<g clip-path="url(#clip22)">
+<g transform="matrix(1.0000, 0.0000, 0.0000, 1.0000, 64.000, 0.0000)">
+<image x="0" y="0" width="39" height="26" xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACcAAAAaCAYAAAA0R0VGAAAAi0lEQVR42s3WCwqCABCE4bn/lYQg
+EIJAKKRCREIiH1mmpGJJjNf4F74LLLs7q6z6mEp5M5hKRTuZSk0/m0rd+DWVxnkxlX7L31QyuNid
+Q88celvRdw6dEOhsRX8lyb03lc63zlSK87epdLi2plKUvUylffo0lXbJw1QKL7WptD1VptImLk2l
+4FiYagXTJbxm0LzNjAAAAABJRU5ErkJggg=="/>
+</g> <!-- transform -->
+</g> <!-- clip22 -->
+</g> <!-- transform -->
+<g transform="matrix(1.0000, 0.0000, 0.0000, 1.0000, 310.00, 5.0000)">
+<clipPath id="clip23">
+  <path d="M 0.0000 0.0000 L 0.0000 26.000 L 103.00 26.000 L 103.00 0.0000 z "/>
+</clipPath>
+<g clip-path="url(#clip23)">
+<text stroke="none" fill="#333333" fill-opacity="1.0" font-family="sans-serif" font-weight="bold" font-style="normal" font-size="12"  x="17.000" y="18.000">TestButton1</text>
+</g> <!-- clip23 -->
+</g> <!-- transform -->
+<g transform="matrix(1.0000, 0.0000, 0.0000, 1.0000, 310.00, 5.0000)">
+<clipPath id="clip24">
+  <path d="M 0.0000 0.0000 L 0.0000 26.000 L 103.00 26.000 L 103.00 0.0000 z "/>
+</clipPath>
+<g clip-path="url(#clip24)">
+<g stroke="#7a8a99" stroke-opacity="1.0" fill="none" fill-rule="nonzero" >
+  <path d="M 0.0000 0.0000 L 102.00 0.0000 L 102.00 25.000 L 0.0000 25.000 L 0.0000 0.0000 z "/>
+</g> <!-- drawing style -->
+</g> <!-- clip24 -->
+</g> <!-- transform -->
+<g transform="matrix(1.0000, 0.0000, 0.0000, 1.0000, 242.00, 10.000)">
+<clipPath id="clip25">
+  <path d="M 0.0000 0.0000 L 0.0000 16.000 L 63.000 16.000 L 63.000 0.0000 z "/>
+</clipPath>
+<g clip-path="url(#clip25)">
+<text stroke="none" fill="#333333" fill-opacity="1.0" font-family="sans-serif" font-weight="bold" font-style="normal" font-size="12"  x="0.0000" y="13.000">TestLabel4</text>
+</g> <!-- clip25 -->
+</g> <!-- transform -->
+<g transform="matrix(1.0000, 0.0000, 0.0000, 1.0000, 170.00, 8.0000)">
+<clipPath id="clip26">
+  <path d="M 0.0000 0.0000 L 0.0000 20.000 L 67.000 20.000 L 67.000 0.0000 z "/>
+</clipPath>
+<g clip-path="url(#clip26)">
+<text stroke="none" fill="#333333" fill-opacity="1.0" font-family="sans-serif" font-weight="bold" font-style="normal" font-size="12"  x="2.0000" y="15.000">TestLabel3</text>
+</g> <!-- clip26 -->
+</g> <!-- transform -->
+<g transform="matrix(1.0000, 0.0000, 0.0000, 1.0000, 170.00, 8.0000)">
+<clipPath id="clip27">
+  <path d="M 0.0000 0.0000 L 0.0000 20.000 L 67.000 20.000 L 67.000 0.0000 z "/>
+</clipPath>
+<g clip-path="url(#clip27)">
+<g stroke="#a6a6a6" stroke-opacity="1.0" fill="none" fill-rule="nonzero" >
+  <path d="M 0.0000 0.0000 L 0.0000 19.000 "/>
+</g> <!-- drawing style -->
+</g> <!-- clip27 -->
+</g> <!-- transform -->
+<g transform="matrix(1.0000, 0.0000, 0.0000, 1.0000, 170.00, 8.0000)">
+<clipPath id="clip28">
+  <path d="M 0.0000 0.0000 L 0.0000 20.000 L 67.000 20.000 L 67.000 0.0000 z "/>
+</clipPath>
+<g clip-path="url(#clip28)">
+<g stroke="#a6a6a6" stroke-opacity="1.0" fill="none" fill-rule="nonzero" >
+  <path d="M 1.0000 0.0000 L 66.000 0.0000 "/>
+</g> <!-- drawing style -->
+</g> <!-- clip28 -->
+</g> <!-- transform -->
+<g transform="matrix(1.0000, 0.0000, 0.0000, 1.0000, 170.00, 8.0000)">
+<clipPath id="clip29">
+  <path d="M 0.0000 0.0000 L 0.0000 20.000 L 67.000 20.000 L 67.000 0.0000 z "/>
+</clipPath>
+<g clip-path="url(#clip29)">
+<g stroke="#747474" stroke-opacity="1.0" fill="none" fill-rule="nonzero" >
+  <path d="M 1.0000 1.0000 L 1.0000 18.000 "/>
+</g> <!-- drawing style -->
+</g> <!-- clip29 -->
+</g> <!-- transform -->
+<g transform="matrix(1.0000, 0.0000, 0.0000, 1.0000, 170.00, 8.0000)">
+<clipPath id="clip30">
+  <path d="M 0.0000 0.0000 L 0.0000 20.000 L 67.000 20.000 L 67.000 0.0000 z "/>
+</clipPath>
+<g clip-path="url(#clip30)">
+<g stroke="#747474" stroke-opacity="1.0" fill="none" fill-rule="nonzero" >
+  <path d="M 2.0000 1.0000 L 65.000 1.0000 "/>
+</g> <!-- drawing style -->
+</g> <!-- clip30 -->
+</g> <!-- transform -->
+<g transform="matrix(1.0000, 0.0000, 0.0000, 1.0000, 170.00, 8.0000)">
+<clipPath id="clip31">
+  <path d="M 0.0000 0.0000 L 0.0000 20.000 L 67.000 20.000 L 67.000 0.0000 z "/>
+</clipPath>
+<g clip-path="url(#clip31)">
+<g stroke="#ffffff" stroke-opacity="1.0" fill="none" fill-rule="nonzero" >
+  <path d="M 1.0000 19.000 L 66.000 19.000 "/>
+</g> <!-- drawing style -->
+</g> <!-- clip31 -->
+</g> <!-- transform -->
+<g transform="matrix(1.0000, 0.0000, 0.0000, 1.0000, 170.00, 8.0000)">
+<clipPath id="clip32">
+  <path d="M 0.0000 0.0000 L 0.0000 20.000 L 67.000 20.000 L 67.000 0.0000 z "/>
+</clipPath>
+<g clip-path="url(#clip32)">
+<g stroke="#ffffff" stroke-opacity="1.0" fill="none" fill-rule="nonzero" >
+  <path d="M 66.000 1.0000 L 66.000 18.000 "/>
+</g> <!-- drawing style -->
+</g> <!-- clip32 -->
+</g> <!-- transform -->
+<g transform="matrix(1.0000, 0.0000, 0.0000, 1.0000, 170.00, 8.0000)">
+<clipPath id="clip33">
+  <path d="M 0.0000 0.0000 L 0.0000 20.000 L 67.000 20.000 L 67.000 0.0000 z "/>
+</clipPath>
+<g clip-path="url(#clip33)">
+<g stroke="#ffffff" stroke-opacity="1.0" fill="none" fill-rule="nonzero" >
+  <path d="M 2.0000 18.000 L 65.000 18.000 "/>
+</g> <!-- drawing style -->
+</g> <!-- clip33 -->
+</g> <!-- transform -->
+<g transform="matrix(1.0000, 0.0000, 0.0000, 1.0000, 170.00, 8.0000)">
+<clipPath id="clip34">
+  <path d="M 0.0000 0.0000 L 0.0000 20.000 L 67.000 20.000 L 67.000 0.0000 z "/>
+</clipPath>
+<g clip-path="url(#clip34)">
+<g stroke="#ffffff" stroke-opacity="1.0" fill="none" fill-rule="nonzero" >
+  <path d="M 65.000 2.0000 L 65.000 17.000 "/>
+</g> <!-- drawing style -->
+</g> <!-- clip34 -->
+</g> <!-- transform -->
+<g transform="matrix(1.0000, 0.0000, 0.0000, 1.0000, 98.000, 8.0000)">
+<clipPath id="clip35">
+  <path d="M 0.0000 0.0000 L 0.0000 20.000 L 67.000 20.000 L 67.000 0.0000 z "/>
+</clipPath>
+<g clip-path="url(#clip35)">
+<text stroke="none" fill="#333333" fill-opacity="1.0" font-family="sans-serif" font-weight="bold" font-style="normal" font-size="12"  x="2.0000" y="15.000">TestLabel2</text>
+</g> <!-- clip35 -->
+</g> <!-- transform -->
+<g transform="matrix(1.0000, 0.0000, 0.0000, 1.0000, 98.000, 8.0000)">
+<clipPath id="clip36">
+  <path d="M 0.0000 0.0000 L 0.0000 20.000 L 67.000 20.000 L 67.000 0.0000 z "/>
+</clipPath>
+<g clip-path="url(#clip36)">
+<g stroke="#a6a6a6" stroke-opacity="1.0" fill="none" fill-rule="nonzero" >
+  <path d="M 0.0000 0.0000 L 65.000 0.0000 L 65.000 18.000 L 0.0000 18.000 L 0.0000 0.0000 z "/>
+</g> <!-- drawing style -->
+</g> <!-- clip36 -->
+</g> <!-- transform -->
+<g transform="matrix(1.0000, 0.0000, 0.0000, 1.0000, 98.000, 8.0000)">
+<clipPath id="clip37">
+  <path d="M 0.0000 0.0000 L 0.0000 20.000 L 67.000 20.000 L 67.000 0.0000 z "/>
+</clipPath>
+<g clip-path="url(#clip37)">
+<g stroke="#ffffff" stroke-opacity="1.0" fill="none" fill-rule="nonzero" >
+  <path d="M 1.0000 17.000 L 1.0000 1.0000 "/>
+</g> <!-- drawing style -->
+</g> <!-- clip37 -->
+</g> <!-- transform -->
+<g transform="matrix(1.0000, 0.0000, 0.0000, 1.0000, 98.000, 8.0000)">
+<clipPath id="clip38">
+  <path d="M 0.0000 0.0000 L 0.0000 20.000 L 67.000 20.000 L 67.000 0.0000 z "/>
+</clipPath>
+<g clip-path="url(#clip38)">
+<g stroke="#ffffff" stroke-opacity="1.0" fill="none" fill-rule="nonzero" >
+  <path d="M 1.0000 1.0000 L 64.000 1.0000 "/>
+</g> <!-- drawing style -->
+</g> <!-- clip38 -->
+</g> <!-- transform -->
+<g transform="matrix(1.0000, 0.0000, 0.0000, 1.0000, 98.000, 8.0000)">
+<clipPath id="clip39">
+  <path d="M 0.0000 0.0000 L 0.0000 20.000 L 67.000 20.000 L 67.000 0.0000 z "/>
+</clipPath>
+<g clip-path="url(#clip39)">
+<g stroke="#ffffff" stroke-opacity="1.0" fill="none" fill-rule="nonzero" >
+  <path d="M 0.0000 19.000 L 66.000 19.000 "/>
+</g> <!-- drawing style -->
+</g> <!-- clip39 -->
+</g> <!-- transform -->
+<g transform="matrix(1.0000, 0.0000, 0.0000, 1.0000, 98.000, 8.0000)">
+<clipPath id="clip40">
+  <path d="M 0.0000 0.0000 L 0.0000 20.000 L 67.000 20.000 L 67.000 0.0000 z "/>
+</clipPath>
+<g clip-path="url(#clip40)">
+<g stroke="#ffffff" stroke-opacity="1.0" fill="none" fill-rule="nonzero" >
+  <path d="M 66.000 19.000 L 66.000 0.0000 "/>
+</g> <!-- drawing style -->
+</g> <!-- clip40 -->
+</g> <!-- transform -->
+<g transform="matrix(1.0000, 0.0000, 0.0000, 1.0000, 30.000, 10.000)">
+<clipPath id="clip41">
+  <path d="M 0.0000 0.0000 L 0.0000 16.000 L 63.000 16.000 L 63.000 0.0000 z "/>
+</clipPath>
+<g clip-path="url(#clip41)">
+<text stroke="none" fill="#333333" fill-opacity="1.0" font-family="sans-serif" font-weight="bold" font-style="normal" font-size="12"  x="0.0000" y="13.000">TestLabel1</text>
+</g> <!-- clip41 -->
+</g> <!-- transform -->
+</svg> <!-- bounding box -->

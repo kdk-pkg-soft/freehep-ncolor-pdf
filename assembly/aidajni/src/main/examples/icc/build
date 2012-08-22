@@ -1,0 +1,6 @@
+#
+# Build file for icc (Linux)
+#
+icc -c `aida-config --include` ../AidaTest.cpp
+icc -o AidaTest AidaTest.o -i_dynamic `aida-config --lib`
+

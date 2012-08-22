@@ -1,0 +1,123 @@
+<html>
+<head>
+<title>YaPPI - User Requirements</title>
+</head>
+
+<body>
+  <h1>User Requirements</h1>
+  <p>To find out the goals of this project we define User
+    Requirements. These are small, separated tasks which can be implemented
+    step by step. Every user requirement is one feature of the upcoming software
+    and implementation. It is very important, that it is possible to check
+    afterwards, if a particular user requirement was accomplished or not.
+    If not, it is easier to define the future work, which has to be done.</p>
+  <p>We begin with the most general user requirement: A
+    database has to be built up.</p>
+  <p>Define a data model fitting to all data requirements.</p>
+  <p>See the data model section.  </p>
+  <p>Choose a database system which is accessible in
+    many ways (also over the web) and run able on many platforms</p>
+  <p>Fitting to the very wide usage of the database we took XML
+    as format. We have the following reasons: A standard database system like
+    Oracle or MySQL is system dependent and needs a high level administration
+    team. The advantage of such a system would be very fast access and a high
+    security level. Both we don&#146;t need really, because the data is most
+    times just read only. The data changes not very often and could be just
+    copied as a backup to a tape. There is no need of a high-tech database
+    system.   </p>
+  <p>A XML file can be published easy on the web without a special
+    protocol or server. On the other hand a XML file can be also stored on
+    a harddisk. You need no software for a XML file, but your XML interface.  </p>
+  <p>XML is accessible in many standard database systems (for
+    example Oracle) and in nearly every programming language (C++, Java, &#133;).  </p>
+  <p>Create a human and computer readable database
+    definition file.</p>
+  <p>As database definition standard we use the &#147;XML Schema&#148;
+    definition. Unfortunately until now it is only a working draft and not
+    a recommendation.</p>
+  <p>August 16, 2000: Actual version of XML-Schema: 7 April 2000  </p>
+  <p>Create a test data file by hand</p>
+  <p>Additional data must be easily addable</p>
+  <p>If a user wants to add his own data he can add a XML file
+    with his own data. The data inside will be added.   </p>
+  <p>Data should be easily modifiable / overwrite able
+  </p>
+  <p>If a user doesn&#146;t want to use specific data or overwrite
+    special values he can use a second XML file, where the specific data is
+    provided.   </p>
+  <p>Data should be imported from other databases.</p>
+  <p>This database is not intended to be used as first order
+    database. The intention is to provide the particle properties to a wide
+    range of users, but the data itself should be taken out of a other database
+    (Particle Data Group (PDG)). For this reason interfaces and import utilities
+    must be written.   </p>
+  <p>August 16, 2000: We have an import utility for the &#147;.mc&#148;
+    file from the Particle Data Group Web Site
+    (<a href="http://pdg.lbl.gov/">http://pdg.lbl.gov</a>).
+    Problem here is the contents: This is only very few of data: ASCII-Name,
+    PDG-ID-Number, Mass, Width and Charge.   </p>
+  <p>August 16, 2000: We have a slight approach to get the whole
+    PDG-database. If this happens we have to look, what actually is in the
+    database and how we can get the useful information out of it. If we get
+    no access to this database another idea would be to get the information
+    out of the web-published Postscript files (*.PS) on the PDG web site.
+    I have looked a bit on it and it seems to be possible to get it out.  </p>
+  <p>August 24, 2000: We have a copy of the PDG database from
+    1998, but the computed results are missing (table RESULTS_SUMMARY). I
+    (Patrick Hellwig) have requested the FORTRAN programs to compute these
+    values from the PDG. I hope they will arrive soon.  </p>
+  <p>A data administration program should be written.
+  </p>
+  <p>The following idea: Build up an overall software: Add/Modify/Delete
+    Particles, Add/Modify/Delete FamilyStructures, Add/Modify/Delete Sources,
+    Add/Modify/Delete Comments, create new XML files (import or type in data),
+    export data (create hardcode), search and browse data, display treelike
+    structure, etc.  </p>
+  <p>August 24, 2000: Until now it seems to me, that I will not
+    have the time to do it until my departure.  </p>
+  <p>A Java Servlet should be written to browse and
+    search through the database</p>
+  <p>August 16, 2000: The servlet can actually search for particle
+    name and PDGID. But it can&#146;t display the decay modes until now.   </p>
+  <p>August 24, 2000: The servlet is now able to display also
+    the decay modes either in HTML-format or LaTeX format  </p>
+  <p>The interface must be capable to read multiple
+    data files</p>
+  <p>August 16, 2000: This must be also implemented.  </p>
+  <p>August 24, 2000: Implementation has been done.  </p>
+  <p>Provide an web site with all the information</p>
+  <p>You are currently looking on it.   </p>
+  <p>August 24, 2000: I have no specific server until now.  </p>
+  <p>The database must provide the same information
+    like all the other old software databases</p>
+  <p>It must be possible to implement new Particle
+    Properties without recompiling code or changing the database structure</p>
+  <p>This is done by the data structure. You have an entry like:
+    &lt;data name=&#148;Mass&#148; value=&#148;1.233&#148;/&gt; to store the
+    data. So if additional data will come up it is easy to add another &lt;data
+    &#133;/&gt; element.  </p>
+  <p>For each data entry there should be the possibility
+    for a source entry</p>
+  <p>August 16, 2000: I have thought about this, but it is not
+    implemented yet.  </p>
+  <p>August 24, 2000: The XML Schema file (XSD) is prepared for
+    this, but the Parser doesn&#146;t care about it. Until now I haven&#146;t
+    implemented the Interface for &#147;source&#148; entries.  </p>
+  <p>For each particle the following data must be stored:</p>
+  <p>
+    <ul>
+      <li>Family (Bosons, Mesons, etc.)</li>
+      <li>Name in ASCII encoding </li>
+      <li>Name in typsetting format (LaTeX)</li>
+      <li>Standard Particle ID</li>
+      <li>Charge </li>
+      <li>Width (+Error, -Error)</li>
+      <li>Mass (+Error, -Error)</li>
+      <li>has antiparticle (yes / no)</li>
+      <li>2J (Quantum Information)</li>
+      <li>&lt;add more general data&gt;</li>
+    </ul>
+  </p>
+</body>
+
+</html>

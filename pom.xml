@@ -1,0 +1,35 @@
+<project>
+  <parent>
+    <artifactId>global</artifactId>
+    <groupId>org.freehep</groupId>
+    <version>7</version>
+  </parent>
+  <modelVersion>4.0.0</modelVersion>
+  <groupId>org.freehep</groupId>
+  <artifactId>freehep</artifactId>
+  <packaging>pom</packaging>
+  <name>FreeHEP</name>
+  <version>5</version>
+  <description>FreeHEP Java Library</description>
+  <url>http://java.freehep.org/</url>
+  <repositories>
+    <repository>
+      <id>freehep-maven</id>
+      <name>Maven FreeHEP</name>
+      <url>http://java.freehep.org/maven2</url>
+    </repository>
+  </repositories>
+  <modules>
+    <module>base</module>
+    <module>demo</module>
+    <module>hep</module>
+    <module>hepio</module>
+    <module>heprep</module>
+    <module>jaida</module>
+    <module>math</module>
+    <module>maven-plugins</module>
+    <module>site</module>
+    <module>tools</module>
+    <module>vectorgraphics</module>
+  </modules>
+</project>

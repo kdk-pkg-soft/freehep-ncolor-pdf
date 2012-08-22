@@ -1,0 +1,10 @@
+_private
+_vti_cnf
+_vti_pvt
+velocity.log
+*.toc
+*.aux
+*.log
+*.bbl
+*.blg
+*.dvi

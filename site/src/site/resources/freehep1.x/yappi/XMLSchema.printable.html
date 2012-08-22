@@ -1,0 +1,51 @@
+<html><head>
+    
+
+    <link rel="stylesheet" type="text/css" href="PrintablePage.css">
+
+<title>YaPPI - XML Schema</title>
+</head><body>
+
+<h1>
+YaPPI
+</h1>
+<span class="YaPPI">Y</span>et
+<span class="YaPPI">a</span>nother
+<span class="YaPPI">P</span>article
+<span class="YaPPI">P</span>roperty
+<span class="YaPPI">I</span>nterface</span>
+  <h1>XML Schema</h1>
+  <p>The YaPPI XML data model is shown below. The base PPML element may contain
+    Family and ParticleType elements, and so on. Elements may have attributes
+    (required attributes are shown in bold). A ParticleType, in addition to
+    its attributes, can contain arbitrary Data elements. Decays are stored
+    in separate Decay elements, and may also be grouped in DecayGroups. Independently
+    of particle properties, a heirarchy of Family elements (referring to particles
+    by their name) defines the particle family tree. </p>
+  <p><center><img src="diagrams/XMLDataModel.gif"></center></p>
+  <h2>
+    <a href="http://java.freehep.org/servlet/fhcvs/list/freehep/hep/physics/yappi/xml/2000">
+    TheXML data files</a>
+  </h2>
+  <p>
+    The particle data in xml may be conveniently broken up into several files,
+    according to what best fits how the data will be used. Following the link
+    above will give you access to these data files: </p>
+  <p>
+    <ul>
+      <li>PDG-Family.xml </li>
+      <li>PDG-Properties.xml </li>
+      <li>PDG-NormalDecayChannels.xml </li>
+      <li>PDG-LimitDecayChannels.xml </li>
+      <li>PDG-RareDecayChannels.xml </li>
+    </ul>
+  </p>
+  <p>Decay information has been broken up into three separate files, according
+    to their fraction size, categorized as either <strong>normal</strong>,
+    <strong>limit</strong> or <strong>rare</strong>. Normal decay information
+    is what a physicist would most likely use most often. For applications
+    that also need to include more decay precision, the limit and rare files
+    may also be read as necessary. </p>
+
+
+</body></html>

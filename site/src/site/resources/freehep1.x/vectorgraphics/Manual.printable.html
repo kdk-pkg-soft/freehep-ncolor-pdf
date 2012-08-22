@@ -1,0 +1,379 @@
+<html xmlns="http://www.w3.org/1999/xhtml"><head>
+    
+
+    <link rel="stylesheet" type="text/css" href="PrintablePage.css">
+
+  <meta http-equiv="Content-Language" content="en-us" />
+  <meta name="GENERATOR" content="Microsoft FrontPage 5.0" />
+  <meta name="ProgId" content="FrontPage.Editor.Document" />
+  <meta http-equiv="Content-Type" content="text/html; charset=windows-1252" />
+
+  <title>VectorGraphics - Manual</title>
+</head><body>
+
+<h1>VectorGraphics</h1>
+2D Vector and Image Graphics Library
+<?xml version="1.0"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+    "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+
+
+  <h1>Manual</h1>
+
+  <p>The
+  <a href="http://java.freehep.org/lib/freehep/api/org/freehep/graphics2d/package-summary.html">VectorGraphics</a> package of
+  <a href="http://java.freehep.org">FreeHEP</a> is an extension of the java graphics system for users to save their
+  graphical output in a number of <a href="#VectorFormats">Vector Formats </a>or
+  <a href="#ImageFormats">Image (bitmap) Formats</a>. The package also contains a set of base
+  classes which can easily be extended to allow for any new formats that may become available over time. A standard
+  <a href="http://java.freehep.org/lib/freehep/api/org/freehep/util/export/ExportDialog.html">
+  ExportDialog</a> is provided to allow users to select the required output format.</p>
+
+  <h2>How to use the VectorGraphics package?</h2>
+
+  <p>Drawing in java takes place in the paint(Graphics g) method of a component in which the user calls methods of a
+  java.awt.Graphics or java.awt.Graphics2D context to do the actual drawing. The VectorGraphics package extends the
+  Graphics2D class to allow users to keep drawing to the same old and familiar Graphics2D context, while adding the
+  functionality of the new output formats. The user code for drawing the picture therefore stays the same for both
+  displaying on the screen as for writing it to some format.</p>
+
+  <p>To use the VectorGraphics package the programmer needs to add code to display the
+  <a href="http://java.freehep.org/lib/freehep/api/org/freehep/util/export/ExportDialog.html">
+  ExportDialog</a> and have the user
+  select a format. This can be added as a MenuItem in either a PopupMenu or in the File menu somewhere. The following
+  example shows how to do this:</p>
+  <pre>import org.freehep.graphics2d.VectorGraphics;
+import org.freehep.util.export.ExportDialog;
+</pre>
+  <pre>public class X {
+</pre>
+  <pre>...
+</pre>
+  <pre>   JMenuItem exportItem = new JMenuItem( "Export..." );
+   exportItem.addActionListener( new ActionListener() {
+      public void actionPerformed( ActionEvent e ) {
+         ExportDialog export = new ExportDialog();
+         export.showExportDialog( panel1, "Export view as ...", panel2, "export" );
+      }
+   });
+</pre>
+  <pre>...
+</pre>
+  <pre>}
+</pre>
+  <pre><i>where "panel1" is the parent for the export dialog (to center the dialog box),
+and where "panel2" specifies the target to be exported.
+These can be the same.</i></pre>
+
+  <p>As an alternative if you know you just want to write PostScript for 
+  instance, and you wish not to use the ExportDialog class, you can use the 
+  following code:</p>
+
+  <pre>import java.awt.Dimension;
+import java.io.File;
+import java.util.Properties;
+import org.freehep.graphics2d.VectorGraphics;
+import org.freehep.util.export.ExportDialog;
+</pre>
+  <pre>public class X {
+</pre>
+  <pre>...</pre>
+  <pre>    Properties p = new Properties();
+    p.setProperty(&quot;PageSize&quot;,&quot;A5&quot;);
+    VectorGraphics g = new PSGraphics2D(new File(&quot;Output.eps&quot;, new Dimension(400,300)); 
+    g.setProperties(p); 
+    g.startExport(); 
+    panel2.print(g); 
+    g.endExport();</pre>
+  <pre>...
+</pre>
+  <pre>}
+</pre>
+  <pre><i>where "panel2" specifies the target to be exported.</i></pre>
+  <pre><i>Note that you have to call g.startExport to open the file and g.endExport to close the file.
+Also note that you should call print(g) rather than paint(g) since the latter may use 
+double buffering and therefore paint an image, rather than vectorgraphics.</i>
+</pre>
+  <p>To run code using the VectorGraphics package you need to add the following jar files to your CLASSPATH:</p>
+  <pre>freehep-base.jar; freehep-graphics2d.jar; freehep-graphicsio.jar;
+</pre>
+
+  <p><i>this includes some of the Image Formats (JPG, PNG and PPM)</i></p>
+
+  <p>followed by one or more output format specific jar file for any of the Vector Formats:</p>
+  <pre>freehep-graphicsio-cgm.jar; freehep-graphicsio-emf.jar; freehep-graphicsio-pdf.jar;
+freehep-graphicsio.ps.jar; freehep-graphicsio-svg.jar; freehep-graphicsio-swf.jar;
+</pre>
+
+  <p>to include gif you should add:</p>
+  <pre>freehep-graphicsio-gif.jar
+  </pre>
+
+  <p>then run your program as usual. The ExportDialog will now allow you to select any of the output formats for which
+  you included jar files in the CLASSPATH.</p>
+
+  <h2>How to paint into a VectorGraphics context?</h2>
+
+  <p>To make use of the extensions, described below, in the
+  <a href="http://java.freehep.org/lib/freehep/api/org/freehep/graphics2d/VectorGraphics.html">VectorGraphics</a> class you need to convert the standard
+  java.awt.Graphics context to a VectorGraphics context. To do so one uses the static method
+  VectorGraphics.create(Graphics g), which will either return g if it is already an instance of VectorGraphics or wrap
+  g in an implementation of VectorGraphics. See the example below on how to do this:</p>
+  <pre>...
+import org.freehep.graphics2d.VectorGraphics;
+...
+
+public class X extends Component {
+    public void paint(Graphics g) {
+        VectorGraphics vg = VectorGraphics.create(g);
+        vg.drawLine(100.0,100.0,200.0,200.0);
+    }
+}
+</pre>
+
+  <p>You can use any of the methods available in Graphics2D, plus the extra methods from VectorGraphics, but you need
+  to properly nest calls to the <i>create()</i> and <i>dispose()</i> methods to allow the different output formats to
+  have their graphics states <i>stored</i> and <i>restored</i> correctly. All swing components do this.</p>
+
+  <h2>Additional Functionality in VectorGraphics</h2>
+
+  <p>The VectorGraphics class extends Graphics2D with a number of features to write better output formats. These
+  features are described below:</p>
+
+  <h3>Draw, Fill, Clear and Clip methods</h3>
+
+  <p>All draw, fill, clear and clip methods (drawLine(), fillOval(), clearRect, clipRect, ...) which normally take
+  integer parameters have been overloaded with methods with equal names which take double parameters. This allows for
+  high precision drawing using these easy methods, which was only available using the draw(Shape) or fill(Shape)
+  methods in java.awt.Graphics2D. The higher precision is necessary for Vector Formats on higher than screen resolution
+  targets, such as printers.</p>
+
+  <p>The methods setLineWidth() and getLineWidth() allow you to change the linewidth without explicitly creating a
+  Stroke object.</p>
+
+  <h3>PrintColors</h3>
+
+  <p>The PrintColor extends java.awt.Color to allow for colors which are visible both on the screen and a printer. The
+  printer may be either color, black and white or grayscale. PrintColors can be created with the correct mappings, and
+  behave differently on the screen than they do in any of the output formats. The PrintColor class can be used anywhere
+  a normal java.awt.Color class would be used. The default java colors are also defined, with correct mappings for
+  printers. PrintColor will only be handled specially if a VectorGraphics context is used.</p>
+
+  <p>The methods setColorMode() and getColorMode() can be used to switch the output between COLOR, BLACK_AND_WHITE and
+  GRAYSCALE.</p>
+
+  <h3>Symbols</h3>
+
+  <p>To draw a large number of similar symbols (small squares, triangles, etc...) one could use a the drawSymbol() or
+  fillSymbol() methods in the VectorGraphics context. A number of predefined symbols are available in
+  VectorGraphicsConstants (and in VectorGraphics). Advantage of using these symbols, rather than coding them yourself
+  in terms of lines and other primitives, is that the output format can translate these calls to procedures. This can
+  be done in some output formats which allow procedures to be defined. Among thos formats are PostScript and SVG. This
+  way the output file gets shortened considerably.</p>
+
+  <h3>TagStrings</h3>
+
+  <p>The class TagString allows you to display strings which can be marked up with the HTML like tags described in the
+  table below:</p>
+
+  <table summary="Table with tags that are allowed in a TagString" border="1"
+  style="border-collapse: collapse; border: .75pt solid black; background-color: white" width="100%"
+  bordercolor="#111111" cellpadding="0" cellspacing="0">
+    <tr>
+      <th style="font-weight: bold; color: black; border-left-style: none; border-right-style: none; border-top-style: none; border-bottom: 1.5pt solid black">
+      Start Tag</th>
+
+      <th style="font-weight: bold; color: black; border-left-style: none; border-right-style: none; border-top-style: none; border-bottom: 1.5pt solid black">
+      End Tag</th>
+
+      <th style="font-weight: bold; color: black; border-left-style: none; border-right-style: none; border-top-style: none; border-bottom: 1.5pt solid black">
+      Description</th>
+
+      <th style="font-weight: bold; color: black; border-left-style: none; border-right-style: none; border-top-style: none; border-bottom: 1.5pt solid black">
+      Look</th>
+    </tr>
+
+    <tr>
+      <td style="font-weight: normal; color: black; border-style: none; background-color: gray">&lt;B&gt;</td>
+
+      <td style="font-weight: normal; color: black; border-style: none; background-color: gray">&lt;/B&gt;</td>
+
+      <td style="font-weight: normal; color: black; border-style: none; background-color: gray">Bold Face</td>
+
+      <td style="font-weight: normal; color: black; border-style: none; background-color: gray"><b>Bold</b> Face</td>
+    </tr>
+
+    <tr>
+      <td style="font-weight: normal; color: black; border-style: none; background-color: silver">&lt;I&gt;</td>
+
+      <td style="font-weight: normal; color: black; border-style: none; background-color: silver">&lt;/I&gt;</td>
+
+      <td style="font-weight: normal; color: black; border-style: none; background-color: silver">Italic Face</td>
+
+      <td style="font-weight: normal; color: black; border-style: none; background-color: silver"><i>Italic</i>
+      Face</td>
+    </tr>
+
+    <tr>
+      <td style="font-weight: normal; color: black; border-style: none; background-color: gray">&lt;OVER&gt;</td>
+
+      <td style="font-weight: normal; color: black; border-style: none; background-color: gray">&lt;/OVER&gt;</td>
+
+      <td style="font-weight: normal; color: black; border-style: none; background-color: gray">OverLine</td>
+
+      <td style="font-weight: normal; color: black; border-style: none; background-color: gray">
+      <span style="text-decoration: overline">OverLine</span></td>
+    </tr>
+
+    <tr>
+      <td style="font-weight: normal; color: black; border-style: none; background-color: silver">&lt;SUB&gt;</td>
+
+      <td style="font-weight: normal; color: black; border-style: none; background-color: silver">&lt;/SUB&gt;</td>
+
+      <td style="font-weight: normal; color: black; border-style: none; background-color: silver">SubScript</td>
+
+      <td style="font-weight: normal; color: black; border-style: none; background-color: silver">
+      Sub<sub>Script</sub></td>
+    </tr>
+
+    <tr>
+      <td style="font-weight: normal; color: black; border-style: none; background-color: gray">&lt;SUP&gt;</td>
+
+      <td style="font-weight: normal; color: black; border-style: none; background-color: gray">&lt;/SUP&gt;</td>
+
+      <td style="font-weight: normal; color: black; border-style: none; background-color: gray">SuperScript</td>
+
+      <td style="font-weight: normal; color: black; border-style: none; background-color: gray">
+      Super<sup>Script</sup></td>
+    </tr>
+
+    <tr>
+      <td style="font-weight: normal; color: black; border-style: none; background-color: silver">&lt;TT&gt;</td>
+
+      <td style="font-weight: normal; color: black; border-style: none; background-color: silver">&lt;/TT&gt;</td>
+
+      <td style="font-weight: normal; color: black; border-style: none; background-color: silver">Monospaced</td>
+
+      <td style="font-weight: normal; color: black; border-style: none; background-color: silver">
+      <code>Monospaced</code></td>
+    </tr>
+
+    <tr>
+      <td style="font-weight: normal; color: black; border-style: none; background-color: gray">&lt;U&gt;</td>
+
+      <td style="font-weight: normal; color: black; border-style: none; background-color: gray">&lt;/U&gt;</td>
+
+      <td style="font-weight: normal; color: black; border-style: none; background-color: gray">UnderLine</td>
+
+      <td style="font-weight: normal; color: black; border-style: none; background-color: gray">
+      <span style="text-decoration: underline">UnderLine</span></td>
+    </tr>
+  </table>
+
+  <p>The writing of &amp;, &lt;, &gt;, " and ' can be done using the entities: &amp;amp; &amp;lt; &amp;gt; &amp;quot
+  and &amp;apos;.</p>
+
+  <p>The drawString() methods have been overridden to take a TagString as a parameter and handle the tags
+  accordingly.</p>
+
+  <h3>Other Methods</h3>
+
+  <p>The startExport() and endExport() methods are available, and called when outputting to a file, to allow the
+  implementation of a VectorGraphics output format to write some header and footer, and properly close the file. These
+  methods do not have to be called explicitly by the user, they are called by the ExportDialog.</p>
+
+  <p>The setCreator() and getCreator() methods are available to document the creator of the output format in the file.
+  These calls do nothing when displaying on the screen.</p>
+
+  <p>The printComment() method, available in the VectorGraphicsIO subclass of VectorGraphics, allows users to add
+  comments to their output formats, if permitted.</p>
+
+  <p>The setDeviceIndependent() and isDeviceIndependent() methods allow the specific VectorGraphics output format to
+  omit device dependent information in its output, such as dates. This allows us to do testing on the output
+  formats.</p>
+
+  <h2>Supported Formats and their Limitations</h2>
+
+  <p>The VectorGraphics package, contrary to its name, supports both Vector Formats and Image Formats. Reason to add
+  the latter was to unify the way the output is produced using the java.awt.Graphics2D API. All supported formats and
+  their current limitations are described below:</p>
+
+  <h3><a name="VectorFormats" id="VectorFormats">Vector Formats</a> (Alphabetical)</h3>
+
+  <p>Vector Graphics Formats store the drawing as you make it. No rasterization takes place while outputting the
+  format. Unlike Image formats, which do rasterize at the time of output, rasterization for vector formats happens in
+  the viewer of the format. The output can be scaled, rotated and manipulated in many ways, without losing its
+  precision. For most drawings Vector Formats should be preferred.</p>
+
+  <h4>CGM (Computer Graphics Metafile)</h4>
+
+  <p>The Computer Graphics Metafile format is used for electronic interchange. Can be used by many document
+  applications, but limited in functionality. Prefer EMF over CGM. CGM can be used for the web in conjunction with the
+  <a href="http://www.corel.com/servlet/Satellite?pagename=Corel/Products/productInfo&id=1042152784209&did=1042152819585">
+  Corel's ActiveCGM</a> plugin. CGM support is currently
+  limited to version 1, see
+  <a href="http://java.freehep.org/lib/freehep/api/org/freehep/graphicsio/cgm/package-summary.html">apidoc</a> for more details.</p>
+
+  <h4>EMF (Enhanced Meta Format)</h4>
+
+  <p>The EMF format is a Windows specific format and can be used to import into Office applications (e.g. Word,
+  PowerPoint, etc...). Some limitations exists for EMF, especially on Windows 95/98, see
+  <a href="http://java.freehep.org/lib/freehep/api/org/freehep/graphicsio/emf/package-summary.html">apidoc</a> for more details.</p>
+
+  <h4>PDF (Portable Document Format)</h4>
+
+  <p>The Portable Document Format from Adobe is a multi-page format for electronic interchange as well as printing. To
+  view PDF one can use the <a href="http://www.adobe.com/products/acrobat/">PDFViewer</a>. PDF support is at version
+  1.4, some limitations exist, see
+  <a href="http://java.freehep.org/lib/freehep/api/org/freehep/graphicsio/pdf/package-summary.html">apidoc</a> for more details.</p>
+
+  <h4>PostScript and Encapsulated PostScript</h4>
+
+  <p>The PostScript format from Adobe is a multi-page format for printing. Encapsulated PostScript is a single page of
+  PostScript which can be used for inclusion in another document (such as a LaTeX document). To view Postscript one can
+  use for instance <a href="http://www.cs.wisc.edu/~ghost/">GhostScript and GhostView</a>. PostScript and EPS support
+  is at Level 2, but some limitations exist, see
+  <a href="http://java.freehep.org/lib/freehep/api/org/freehep/graphicsio/ps/package-summary.html">apidoc</a> for more details.</p>
+
+  <h4>SVG (Scalable Vector Graphics)</h4>
+
+  <p>Scalable Vector Graphics is an XML based format for vector graphics on the Web. Current browsers need a plugin,
+  for instance Adobe's <a href="http://www.adobe.com/svg/viewer/install/main.html">SVGViewer</a> plugin. SVG support is
+  based on REC-SVG-20010904, several limitations exist, see
+  <a href="http://java.freehep.org/lib/freehep/api/org/freehep/graphicsio/svg/package-summary.html">apidoc</a> for more details.</p>
+
+  <h4>SWF (Shock Wave Format)</h4>
+
+  <p>MacroMedia's Flash format is a format for animation, based on frames. Outputing to SWF produces one such frame and
+  can be viewed with the <a href="http://www.macromedia.com/software/flashplayer/">ShockWave FlashPlayer</a>. SWF
+  support is currently limited to version 3 and a number of things are unimplemented, see
+  <a href="http://java.freehep.org/lib/freehep/api/org/freehep/graphicsio/swf/package-summary.html">apidoc</a> for more details.</p>
+
+  <h3><a name="ImageFormats" id="ImageFormats">Image Formats</a> (Alphabetical)</h3>
+
+  <p>VectorGraphics formats are preferred for most drawings, unless a lot of imaging is involved. Resizing of an image
+  normally results in a degradation of the image. Resizing a VectorGraphics output will use all of the resolution
+  available.</p>
+
+  <h4>GIF (Graphics Interchange Format)</h4>
+
+  <p>GIF is a popular image format for line drawings on the web. It is limited to 256 colors and only has one
+  transparency level available. All known browsers support it. PNG is preferred over GIF if more colors are needed or
+  more transparency levels.</p>
+
+  <h4>JPEG (Joint Photographic Engineering Group)</h4>
+
+  <p>JPEG is a popular image format for continuous tone pictures (e.g. photographs). The JPG driver currently does not
+  work.</p>
+
+  <h4>PNG (Portable Network Graphics)</h4>
+
+  <p>Portable Network Graphics is an image format for drawings on the web. It uses 24 bit colors and can display up to
+  256 transparency levels. Most browsers support it.</p>
+
+  <h4>PPM (Portable Pix Map)</h4>
+
+  <p>Portable Pix Map is a format which allows you to convert your image to a variety of other image formats.</p>
+
+
+</body></html>

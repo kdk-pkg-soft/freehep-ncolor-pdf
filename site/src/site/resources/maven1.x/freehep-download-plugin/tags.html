@@ -1,0 +1,66 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd"><html><head><title>Tags - FreeHEP Download Plugin</title><style type="text/css" media="all">
+          @import url("./style/maven-base.css");
+          
+          @import url("./style/maven-theme.css");</style><link rel="stylesheet" href="./style/print.css" type="text/css" media="print"></link><meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1"></meta><meta name="author" content="Mark Donszelmann"></meta><meta name="email" content="Mark.Donszelmann@slac.stanford.edu"></meta></head><body class="composite"><div id="banner"><a href="http://java.freehep.org/" id="organizationLogo"><img alt="FreeHEP" src="http://www.freehep.org/images/sm-freehep.gif"></img></a><a href="http://java.freehep.org/freehep-download-plugin/index.html" id="projectLogo"><img alt="Download Plugin" src="http://java.freehep.org/freehep-download-plugin/logo.gif"></img></a><div class="clear"><hr></hr></div></div><div id="breadcrumbs"><div class="xleft">Last published: July 11, 2005 7:33:22 AM PDT
+                <span class="separator">|</span>Doc for  1.0.3-SNAPSHOT
+                </div><div class="xright">
+        
+        <a href="http://maven.apache.org/" class="externalLink" title="External Link">Maven</a>
+      
+        
+          
+            <span class="separator">|</span>
+          
+        
+        <a href="http://java.freehep.org/" class="externalLink" title="External Link">FreeHEP</a>
+      </div><div class="clear"><hr></hr></div></div><div id="leftColumn"><div id="navcolumn"><div id="menuDownload_Plugin"><h5>Download Plugin</h5><ul><li class="none"><a href="index.html">Overview</a></li><li class="none"><a href="team-list.html">Project Team</a></li><li class="none"><a href="downloads.html">Download</a></li><li class="none"><a href="SourceRepository.html">Source Code</a></li><li class="none"><a href="dependencies.html">Dependencies</a></li><li class="none"><a href="http://forum.freehep.org/index.php?t=thread&amp;frm_id=14&amp;rid=4" class="newWindow" title="New Window" target="_blank">Forum</a></li><li class="none"><a href="http://bugs.freehep.org/" class="newWindow" title="New Window" target="_blank">Bug Database</a></li></ul></div><div id="menuUser_Documentation"><h5>User Documentation</h5><ul><li class="none"><a href="goals.html">Goals</a></li><li class="none"><a href="properties.html">Properties</a></li><li class="none"><strong><a href="tags.html">Tags</a></strong></li></ul></div><div id="legend"><h5>Legend</h5><ul><li class="externalLink">External Link</li><li class="newWindow">Opens in a new window</li></ul></div><a href="http://maven.apache.org/" title="Built by Maven" id="poweredBy"><img alt="Built by Maven" src="./images/logos/maven-button-1.png"></img></a></div></div><div id="bodyColumn"><div class="contentBox"><div class="section"><a name="Overview"></a><h2>Overview</h2>
+      <p>
+        This document describes the
+        <a href="http://jakarta.apache.org/commons/jelly/tags.html" class="externalLink" title="External Link">tags</a>
+        that are available when using the FreeHEP Download Plug-in with Maven.
+      </p>      
+    </div><div class="section"><a name="Tags"></a><h2>Tags</h2>
+      <table class="bodyTable">
+        <tr class="b"><th>Name</th><th>Description</th></tr>
+        <tr class="a">
+          <td><a href="#freehep:download">freehep:download</a></td>
+          <td>Download artifact from remote repository(ies)</td>
+        </tr>
+      </table>
+      
+      <div class="subsection"><a name="freehep:download"></a><h3>freehep:download</h3>
+        <p>
+          Download an artifact from any of the remote repositories.
+        </p>
+        <table class="bodyTable">
+          <tr class="b">
+            <th>Attribute Name</th><th>Description</th><th>Optional?</th>
+          </tr>
+
+          <tr class="a">
+            <td>name</td>
+            <td>The name of the artifact file</td>
+            <td>No</td>
+          </tr>
+
+          <tr class="b">
+            <td>path</td>
+            <td>The path to the artifact file</td>
+            <td>No</td>
+          </tr>
+
+          <tr class="a">
+            <td>force</td>
+            <td>Force download even if the file exists locally</td>
+            <td>No</td>
+          </tr>
+
+          <tr class="b">
+            <td>url</td>
+            <td>The url to look for if the download fails</td>
+            <td>yes</td>
+          </tr>
+        </table>
+      </div>
+      
+    </div></div></div><div class="clear"><hr></hr></div><div id="footer"><div class="xright">© 2000-2005, FreeHEP</div><div class="clear"><hr></hr></div></div></body></html>

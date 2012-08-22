@@ -1,0 +1,59 @@
+<model>
+    <parent>
+        <artifactId>global</artifactId>
+        <groupId>org.freehep</groupId>
+        <version>8</version>
+    </parent>
+    
+    <name>FreeHEP HEPREP JNI Library</name>
+    <description>JNI wrapper for the Java HepRep (version 2) driver.</description>
+    <modelVersion>4.0.0</modelVersion>
+    <groupId>org.freehep</groupId>
+    <artifactId>freehep-heprepjni</artifactId>
+    <packaging>nar</packaging>
+    <version>2.0-SNAPSHOT</version>
+
+    <build>
+        <plugins>            
+            <plugin>
+                <groupId>org.freehep</groupId>
+                <artifactId>freehep-nar-plugin</artifactId>
+                <version>2.0-alpha-10</version>
+                <configuration>
+                    <java>
+                        <include>true</include>
+                    </java>
+
+                    <libraries>
+                        <library>
+                            <type>static</type>
+                        </library>
+                    </libraries>
+
+                    <tests>
+                        <test>
+                            <name>HepRepTestMain</name>
+                            <link>static</link>
+                            <!-- currently fails -->
+                            <run>false</run>
+                        </test>
+                    </tests>
+                </configuration>
+            </plugin>            
+        </plugins>
+    </build>    
+
+    <dependencies>
+        <dependency>
+            <groupId>org.freehep</groupId>
+            <artifactId>freehep-heprep</artifactId>
+            <version>2.0.3-SNAPSHOT</version>
+        </dependency>
+        <dependency>
+            <groupId>org.freehep</groupId>
+            <artifactId>freehep-jni</artifactId>
+            <version>2.0-SNAPSHOT</version>
+        </dependency>
+    </dependencies>
+
+</model>

@@ -1,0 +1,49 @@
+<html><head>
+    
+
+    <link rel="stylesheet" type="text/css" href="PrintablePage.css">
+
+<meta http-equiv="Content-Language" content="en-us">
+<meta http-equiv="Content-Type" content="text/html; charset=windows-1252">
+<meta name="GENERATOR" content="Microsoft FrontPage 5.0">
+<meta name="ProgId" content="FrontPage.Editor.Document">
+<title>The FreeHEP Java Library - Project Guidelines</title>
+</head><body>
+
+<h1>FreeHEP Java Library</h1>
+Components and Tools for Java
+
+
+      <h1>Project Guidelines</h1>
+      <p>Currently we have not developed any formal rules or policies. The
+      following are some guidelines for authors.</p>
+      <ul>
+        <li>Packages should include test/example code, normally in a package post fixed
+          .test</li>
+        <li>Each class should include an <tt>@author</tt> tag, specifying the owner, and
+          a <tt>@version</tt> tag specifying the version.<br>
+        (You can use <tt>@version &#036;Id&#036;</tt> to
+          get CVS to automatically generate version tags).</li>
+        <li>usage of external libraries, dependencies should be kept to minimum,
+          and documented.</li>
+        <li>Each package should have a javadoc package.html file giving an
+          overview of the functionality of the package.</li>
+      </ul>
+
+      <h3>Creating new packages</h3>
+      <p>Before a new package is introduced it should be discussed on the
+      <a href="mailto:developers@freehep.org">FreeHEP developers mailing</a> list. The discussion should help to clarify</p>
+      <ol>
+        <li>Whether the suggested functionality is useful, and likely to be of
+          sufficient generality to be reused by others in future</li>
+        <li>Whether the suggested functionality is already available elsewhere
+          in the FreeHEP library or any other open source library</li>
+        <li>Where in the FreeHEP hierarchy it belongs</li>
+      </ol>
+      <p>As a result of these discussions it should be possible to provide a
+      package.html file which describes the package and how it meets the above
+      goals. In some cases it may be appropriate to initially insert the package
+      in the preview area before it becomes clear if it meets all of the goals.</p>
+
+
+</body></html>

@@ -1,0 +1,292 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
+  <parent>
+    <artifactId>global</artifactId>
+    <groupId>org.freehep</groupId>
+    <version>8</version>
+  </parent>
+  <modelVersion>4.0.0</modelVersion>
+  <groupId>org.freehep</groupId>
+  <artifactId>vectorgraphics</artifactId>
+  <packaging>pom</packaging>
+  <name>FreeHEP Vector Graphics</name>
+  <version>2.1.2-SNAPSHOT</version>
+  <description>FreeHEP Vector Graphics Library</description>
+  <repositories>
+     <repository>
+      <id>freehep-maven</id>
+      <name>Maven FreeHEP</name>
+      <url>http://java.freehep.org/maven2</url>
+    </repository>
+  </repositories>
+  <distributionManagement>
+    <site>
+      <id>freehep-web-deploy</id>
+      <url>scpexe://svn.freehep.org/nfs/slac/g/jas/workspace/freehep/__star__/web/freehep/vectorgraphics</url>
+    </site>
+  </distributionManagement>
+  <developers>
+    <developer>
+      <id>duns</id>
+      <name>Mark Donszelmann</name>
+      <email>Mark.Donszelmann@slac.stanford.edu</email>
+      <organization>SLAC - Stanford Linear Accelerator Center</organization>
+      <organizationUrl>http://www.slac.stanford.edu</organizationUrl>
+      <roles>
+        <role>Architect</role>
+        <role>Release Manager</role>
+      </roles>
+      <timezone>-8</timezone>
+    </developer>
+    <developer>
+      <id>tonyj</id>
+      <name>Tony Johnson</name>
+      <email>tonyj@slac.stanford.edu</email>
+      <organization>SLAC - Stanford Linear Accelerator Center</organization>
+      <organizationUrl>http://www.slac.stanford.edu</organizationUrl>
+      <roles>
+        <role>Architect</role>
+      </roles>
+      <timezone>-8</timezone>
+    </developer>
+    <developer>
+      <name>Cal Loomis</name>
+      <email>loomis@lal.in2p3.fr</email>
+      <organization>LAL - Laboratoire de l'Accelerateur Lineaire</organization>
+      <organizationUrl>http://www.lal.in2p3.fr</organizationUrl>
+      <roles>
+        <role>Architect</role>
+      </roles>
+      <timezone>+1</timezone>
+    </developer>  
+  </developers>
+  <contributors>
+    <contributor>
+      <name>Simon Fischer</name>
+      <organization>CERN - European Organization for Nuclear Research</organization>
+      <organizationUrl>http://www.cern.ch</organizationUrl>
+      <roles>
+        <role>Summer Student 2001</role>
+      </roles>
+    </contributor>  
+    <contributor>
+      <name>Andre Bach</name>
+      <organization>SLAC - Stanford Linear Accelerator Center</organization>
+      <organizationUrl>http://www.slac.stanford.edu</organizationUrl>
+      <roles>
+        <role>Summer Student 2004</role>
+      </roles>
+    </contributor>  
+    <contributor>
+      <name>Partick Hellwig</name>
+      <organization>CERN - European Organization for Nuclear Research</organization>
+      <organizationUrl>http://www.cern.ch</organizationUrl>
+      <roles>
+        <role>Summer Student 2000</role>
+      </roles>
+    </contributor>  
+    <contributor>
+      <name>Sami Kama</name>
+      <organization>CERN - European Organization for Nuclear Research</organization>
+      <organizationUrl>http://www.cern.ch</organizationUrl>
+      <roles>
+        <role>Summer Student 2001</role>
+      </roles>
+      <timezone />
+    </contributor>  
+    <contributor>
+      <name>Ian Graham</name>
+      <organizationUrl>mailto:ian@kelman.com</organizationUrl>
+     </contributor>  
+    <contributor>
+      <name>Carsten Zerbst</name>
+      <organizationUrl>mailto:carsten.zerbst@atlantec-es.com</organizationUrl>
+    </contributor>  
+    <contributor>
+      <name>Steffen Greiffenberg</name>
+      <organization>Semture - Business Excellence Engineering</organization>
+      <organizationUrl>http://www.semture.com</organizationUrl>
+      <email>mailto:steffen.greiffenberg@semture.de</email>
+      <timezone>+1</timezone>
+    </contributor>  
+  </contributors>
+  <build>
+    <pluginManagement>
+      <plugins>
+        <plugin>
+          <groupId>org.freehep</groupId>
+          <artifactId>freehep-chartableconverter-plugin</artifactId>
+          <version>2.0</version>
+        </plugin>
+      </plugins>
+    </pluginManagement>
+    <plugins>
+      <plugin>
+        <groupId>org.apache.maven.plugins</groupId>
+        <artifactId>maven-compiler-plugin</artifactId>
+        <!-- <version>2.3.2</version> -->
+        <configuration>
+          <source>1.5</source>
+          <target>1.5</target>
+        </configuration>
+      </plugin>
+      <plugin>
+        <groupId>org.apache.maven.plugins</groupId>
+        <artifactId>maven-release-plugin</artifactId>
+        <configuration>
+          <preparationGoals>clean install</preparationGoals>
+          <arguments>-DupdateReleaseInfo -Dvg.local=false</arguments>
+        </configuration>
+      </plugin>
+      <plugin>
+        <groupId>org.apache.maven.plugins</groupId>
+        <artifactId>maven-site-plugin</artifactId>
+      </plugin>
+      <plugin>
+        <artifactId>maven-assembly-plugin</artifactId>
+        <configuration>
+          <descriptors>
+            <descriptor>src/main/assembly/bin.xml</descriptor>
+            <descriptor>src/main/assembly/doc.xml</descriptor>
+            <descriptor>src/main/assembly/src.xml</descriptor>
+          </descriptors>
+        </configuration>
+      </plugin>
+      <plugin>
+        <groupId>org.freehep</groupId>
+        <artifactId>freehep-one-plugin</artifactId>
+        <executions>
+          <execution>
+            <goals>
+              <goal>generate-dependencies</goal>
+            </goals>
+          </execution>
+        </executions>      
+      </plugin>
+      <plugin>
+        <groupId>org.codehaus.mojo</groupId>
+        <artifactId>exec-maven-plugin</artifactId>
+        <version>1.0.2</version>
+        <executions>
+          <execution>
+            <goals>
+              <goal>java</goal>
+            </goals>
+          </execution>
+        </executions>
+        <configuration>
+          <mainClass>org.freehep.graphicsio.test.TestApplication</mainClass>
+          <keepAlive>true</keepAlive>
+        </configuration>
+      </plugin>
+      <plugin>
+        <artifactId>maven-surefire-plugin</artifactId>
+        <!-- Version 2.3 fine with FVG-312 fixed -->
+        <configuration>
+          <forkMode>pertest</forkMode>
+          <includes>
+            <include>**/*TestSuite.java</include>
+          </includes>
+          <excludes>
+            <exclude>**/TestSuite.java</exclude>
+          </excludes>
+        </configuration>
+      </plugin>
+    </plugins>
+  </build>
+  <reporting>
+    <plugins>
+      <plugin>
+        <groupId>org.apache.maven.plugins</groupId>
+        <artifactId>maven-jxr-plugin</artifactId>
+        <configuration>
+          <aggregate>true</aggregate>
+        </configuration>
+      </plugin>
+      <plugin>
+        <groupId>org.apache.maven.plugins</groupId>
+        <artifactId>maven-javadoc-plugin</artifactId>
+        <configuration>
+          <aggregate>true</aggregate>  
+<!-- bug in javadoc plugin 2.0, maybe next version will work       
+          <overview>overview.html</overview>
+-->
+          <groups>
+            <group>
+              <title>VectorGraphics</title>
+              <packages>org.freehep.graphics2d*:org.freehep.graphicsio:org.freehep.graphicsio.exportchooser:org.freehep.graphicsio.font*:org.freehep.graphicsio.test</packages>
+            </group>
+            <group>
+              <title>Vector Formats</title>
+              <packages>org.freehep.graphicsio.emf*:org.freehep.graphicsio.pdf*:org.freehep.graphicsio.ps*:org.freehep.graphicsio.svg*:org.freehep.graphicsio.swf*</packages>
+            </group>
+            <group>
+              <title>Bitmap Formats</title>
+              <packages>org.freehep.graphicsio.gif*:org.freehep.graphicsio.png*:org.freehep.graphicsio.ppm*:org.freehep.graphicsio.raw*</packages>
+            </group>
+          </groups>
+        </configuration>
+      </plugin>
+    </plugins>  
+  </reporting>
+  <dependencyManagement>
+    <dependencies>
+      <dependency>
+        <groupId>org.freehep</groupId>
+        <artifactId>freehep-export</artifactId>
+        <version>2.1.1</version>
+      </dependency>
+      <dependency>
+        <groupId>org.freehep</groupId>
+        <artifactId>freehep-io</artifactId>
+        <version>2.0.2</version>
+      </dependency>
+      <dependency>
+        <groupId>org.freehep</groupId>
+        <artifactId>freehep-util</artifactId>
+        <version>2.0.2</version>
+      </dependency>
+      <dependency>
+        <groupId>org.freehep</groupId>
+        <artifactId>freehep-xml</artifactId>
+        <version>2.1.1</version>
+      </dependency>
+      <dependency>
+        <groupId>hep.aida</groupId>
+        <artifactId>aida</artifactId>
+        <version>3.3</version>
+        <scope>test</scope>
+      </dependency>
+      <dependency>
+        <groupId>org.freehep</groupId>
+        <artifactId>freehep-graphicsio-tests</artifactId>
+	<version>2.1.2-SNAPSHOT</version>
+        <scope>provided</scope>
+      </dependency>
+    </dependencies>
+  </dependencyManagement>
+  <!-- necessary for surefire 2.3 -->
+  <dependencies>
+    <dependency>
+      <groupId>junit</groupId>
+      <artifactId>junit</artifactId>
+      <version>3.8.2</version>
+      <scope>test</scope>
+    </dependency>
+  </dependencies>
+  <modules>
+    <module>freehep-graphics2d</module>
+<!--
+    <module>freehep-graphics3d</module>
+    <module>freehep-graphicsio-cgm</module>
+    <module>freehep-graphicsio-latex</module>
+-->
+    <module>freehep-graphicsio</module>
+    <module>freehep-graphicsio-emf</module>
+    <module>freehep-graphicsio-java</module>
+    <module>freehep-graphicsio-pdf</module>
+    <module>freehep-graphicsio-ps</module>
+    <module>freehep-graphicsio-svg</module>
+    <module>freehep-graphicsio-swf</module>
+    <module>freehep-graphicsio-tests</module>
+  </modules>
+</project>

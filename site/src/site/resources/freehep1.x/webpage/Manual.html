@@ -1,0 +1,227 @@
+<html><head>
+    
+    <link rel="stylesheet" type="text/css" href="WebPage.css">
+
+<title>WebPage - Manual</title>
+</head><body>
+
+<table border="0" style="border-collapse: collapse" bordercolor="#111111" width="100%" cellpadding="0" cellspacing="5">
+  <tr>
+    <td colspan="2">
+        <table bgcolor="#294563" width="100%" border="0" style="border-collapse: collapse" bordercolor="#111111" cellspacing="0" cellpadding="5">
+          <tr>
+                                    <td width="100%" rowspan="2" align="left" valign="center">
+                <font color="#FFCC00">
+                <h1>WebPage</h1>
+Web Page Generation System
+                </font>
+            </td>
+            <td  bgcolor="#4C6C8F" colspan="2" align="right" valign="top">
+              <table width="100%" border="0" style="border-collapse: collapse" bordercolor="#111111" cellpadding="3">
+                <form method="GET" action="http://www.google.com/search">
+                <tr>
+                                                                                                                                                            <td colspan="2">
+                     <input type="text" name="as_q" size="30">
+                  </td>
+                  <td rowspan="2">
+                     <input type="submit">
+                  </td>
+                </tr>
+                                    <tr>
+                                                                <td><input type="radio" checked name="as_sitesearch" value="java.freehep.org" >WebPage</td>
+                                                                                        <td><input type="radio"  name="as_sitesearch" value="freehep.org" >FreeHEP</td>
+                                                                </tr>
+                                </form>
+              </table>
+            </td>
+          </tr>
+          <tr>
+            <td align="center" valign="center">
+                <a href="http://www.freehep.org">
+                    Member&nbsp;of&nbsp;FreeHEP
+                </a>
+            </td>
+                            <td align="center" valign="center">
+                    <a href="Manual.printable.html">Printable&nbsp;Page</a>
+                </td>
+                      </tr>
+        </table>
+    </td>
+  </tr>
+  <tr>
+    <td valign="top">
+        
+<div class="menu">
+<ul>
+<li>
+<span class="head">Introduction</span>
+<ul>
+<li>
+<a href="Welcome.html"><span>Overview</span></a>
+</li>
+<li>
+<a href="Contributors.html"><span>Contributors</span></a>
+</li>
+<li>
+<a href="Users.html"><span>Users</span></a>
+</li>
+</ul>
+</li>
+<li>
+<span class="head">User&nbsp;Documentation</span>
+<ul>
+<li>
+<a href="Manual.html"><span class="sel">Manual</span></a>
+</li>
+<li>
+<a href="RelatedProjects.html"><span>Related&nbsp;Projects</span></a>
+</li>
+</ul>
+</li>
+<li>
+<span class="head">Developer&nbsp;Area</span>
+<ul>
+<li>
+<a href="ToDoList.html"><span>ToDo&nbsp;List</span></a>
+</li>
+</ul>
+</li>
+</ul>
+</div>
+
+
+    </td>
+    <td valign="top">
+        
+<h1>Quick Guide to the WebPage system
+</h1>
+<h2>Installation
+</h2>
+<ul>
+    <li>Get source code from FreeHEP CVS</li>
+    <li>add FREEHEP/tools to your PATH</li>
+    <li>type: <tt>webpage *.xhtml</tt> to run the tool</li>
+</ul>
+<h2>Configuration of a New Web</h2>
+<p>Copy the following files/directory from FREEHEP/web/freehep to your web directory:</p>
+<ul>
+  <li>
+  <pre>webpage/<b>image</b> directory </pre>
+  </li>
+  <li>
+  <pre>webpage/<b>Menu.xml</b></pre>
+  </li>
+  <li>
+  <pre>webpage/<b>Header.ivm</b></pre>
+  </li>
+  <li>
+  <pre>webpage/<b>WebPage.css</b></pre>
+  </li>
+  <li>
+  <pre>webpage/<b>PrintablePage.css</b></pre>
+  </li>
+</ul>
+<h2>Your Own Pages</h2>
+<h3>Write your content pages</h3>
+Create your content web pages with the extension .xhtml in pure XHTML. You may add
+<a href="http://jakarta.apache.org/velocity/index.html">Velocity</a>
+statements inside these pages.
+<p>
+For more information on the capabilities of Velocity see their
+<a href="http://jakarta.apache.org/velocity/user-guide.html">User Manual</a>.
+
+<h3>Menu.xml</h3>
+
+Add references to pages from your Menu.xml file, by adding an href attribute to
+each of the MenuItems. These links may be either relative or absolute.
+See below for an example:
+<p>
+<table class="code"><tr><td><span class="codefrag">&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?><br>
+<br>
+&lt;!--<br>
+    Document   : SiteMapTemplate.xml<br>
+    Created on : March 11, 2003, 11:20 AM<br>
+    Author     : The FreeHEP team @ SLAC<br>
+    Description: The default MenuList<br>
+--><br>
+&lt;?xml-stylesheet type=&quot;text/xsl&quot; href=&quot;menu.xslt&quot;?><br>
+&lt;MenuList xmlns:xsi='http://www.w3.org/2001/XMLSchema-instance'<br>
+  xsi:noNamespaceSchemaLocation='SiteMap.xsd'><br>
+    &lt;Menu name = &quot;Introduction&quot;><br>
+        &lt;MenuItem name = &quot;Overview&quot; href=&quot;Welcome.html&quot;/><br>
+        &lt;MenuItem name = &quot;News&quot;/><br>
+        &lt;MenuItem name = &quot;Features&quot;/><br>
+        &lt;MenuItem name = &quot;Demos&quot;/><br>
+        &lt;MenuItem name = &quot;Screen Shots&quot;/><br>
+        &lt;MenuItem name = &quot;Publications/Talks&quot;/><br>
+        &lt;MenuItem name = &quot;Future Plans&quot;/><br>
+        &lt;MenuItem name = &quot;Contributors&quot; href=&quot;Contributors.html&quot;/><br>
+        &lt;MenuItem name = &quot;Users&quot; href=&quot;Users.html&quot;/><br>
+    &lt;/Menu><br>
+    &lt;Menu name = &quot;User Documentation&quot;><br>
+        &lt;MenuItem name = &quot;Overview&quot;/><br>
+        &lt;MenuItem name = &quot;Manual&quot; href=&quot;Manual.html&quot;/><br>
+        &lt;MenuItem name = &quot;Apis&quot;/><br>
+        &lt;MenuItem name = &quot;Howtos&quot;/><br>
+        &lt;MenuItem name = &quot;Tutorials/Examples&quot;/><br>
+        &lt;MenuItem name = &quot;Quick Guide&quot;/><br>
+        &lt;MenuItem name = &quot;Related Projects&quot; href=&quot;RelatedProjects.html&quot;/><br>
+        &lt;MenuItem name = &quot;Plugins and Extensions&quot;/><br>
+        &lt;MenuItem name = &quot;Faq&quot;/><br>
+        &lt;MenuItem name = &quot;Having Problems&quot;/><br>
+        &lt;MenuItem name = &quot;License&quot;/><br>
+    &lt;/Menu><br>
+    &lt;Menu name = &quot;Download&quot;><br>
+        &lt;MenuItem name = &quot;Binary Distributions&quot;/><br>
+        &lt;MenuItem name = &quot;Source Distributions&quot;/><br>
+        &lt;MenuItem name = &quot;Release Notes&quot;/><br>
+    &lt;/Menu><br>
+    &lt;Menu name = &quot;Get Involved&quot;><br>
+        &lt;MenuItem name = &quot;Discussion&quot;/><br>
+        &lt;MenuItem name = &quot;Source Code&quot;/><br>
+        &lt;MenuItem name = &quot;Bug Database&quot;/><br>
+        &lt;MenuItem name = &quot;Enhancement Requests&quot;/><br>
+        &lt;MenuItem name = &quot;Outreach&quot;/><br>
+    &lt;/Menu><br>
+    &lt;Menu name = &quot;Developer Area&quot;><br>
+        &lt;MenuItem name = &quot;Design Documentation&quot;/><br>
+        &lt;MenuItem name = &quot;Project Guidelines&quot;/><br>
+        &lt;MenuItem name = &quot;How to Extend&quot;/><br>
+        &lt;MenuItem name = &quot;ToDo List&quot; href=&quot;ToDoList.html&quot;/><br>
+    &lt;/Menu><br>
+&lt;/MenuList><br>
+</span></td></tr></table>
+
+<h3>Header.ivm</h3>
+
+Edit the Header.ivm to create a header for printable and web documents,
+see example below:
+<p>
+<table class="code"><tr><td><span class="codefrag">#set( $webName = &quot;WebPage&quot; )<br>
+#set( $webSearch = &quot;java.freehep.org&quot; )<br>
+&lt;h1>WebPage&lt;/h1><br>
+Web Page Generation System<br>
+</span></td></tr></table>
+
+<h2>Offline generation of Web Pages</h2>
+<p>Type </p>
+<pre>WebPage page1.xhtml page2.xhtml subdir/page3.xhtml</pre>
+<p>or</p>
+<pre>WebPage *.xhtml subdir/*.xhtml</pre>
+<p>which will convert your xhtml pages into page1.html, page1.printable.html,
+page2.html and printable/page2.html</p>
+
+        <p>
+        &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp
+        &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp
+        &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp
+        &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp
+        &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp
+        &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp
+        &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp
+        &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp
+    </td>
+  </tr>
+</table>
+
+</body></html>

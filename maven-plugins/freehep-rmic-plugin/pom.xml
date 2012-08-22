@@ -1,0 +1,36 @@
+<project>
+  <parent>
+    <artifactId>maven-plugin-pom</artifactId>
+    <groupId>org.freehep</groupId>
+    <version>5-SNAPSHOT</version>
+  </parent>
+  <modelVersion>4.0.0</modelVersion>
+  <groupId>org.freehep</groupId>
+  <artifactId>freehep-rmic-plugin</artifactId>
+  <packaging>maven-plugin</packaging>
+  <name>FreeHEP RMIC Maven Plugin</name>
+  <version>2.0.1-SNAPSHOT</version>
+  <description>The RMIC Plugin calls the rmic compiler on a number of specified class files and generates stubs for these
+  classes. The classpath for rmic is set to the Compile classpath of the maven project.</description>
+  <repositories>
+    <repository>
+      <id>freehep-maven</id>
+      <name>Maven FreeHEP</name>
+      <url>http://java.freehep.org/maven2</url>
+    </repository>
+  </repositories>
+  <dependencies>
+    <dependency>
+      <groupId>org.codehaus.plexus</groupId>
+      <artifactId>plexus-compiler-api</artifactId>
+    </dependency>
+    <dependency>
+      <groupId>org.apache.maven</groupId>
+      <artifactId>maven-project</artifactId>
+    </dependency>
+    <dependency>
+      <groupId>org.apache.maven</groupId>
+      <artifactId>maven-plugin-api</artifactId>
+    </dependency>
+  </dependencies>
+</project>

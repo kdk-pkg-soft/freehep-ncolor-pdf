@@ -1,0 +1,70 @@
+    ---
+FreeHEP Modules
+    ---
+Mark Donszelmann
+    ---
+    ---
+
+FreeHEP Modules
+
+* Adding a new module
+
+    To add a new module to a group we have set up an "AddModule" command in the top-level
+    freehep directory.
+    
+    Make sure you have Maven\ 2 installed and on your path:
+    
++--
+mvn -version
+
+Maven version: 2.x
++--
+
+    Make sure you have svn installed and on your path:
+    
++--
+svn --version
+
+svn, version 1.2.3 (r15833)
+   compiled Aug 19 2005, 23:10:39
+
+Copyright (C) 2000-2005 CollabNet.
+Subversion is open source software, see http://subversion.tigris.org/
+This product includes software developed by CollabNet (http://www.Collab.Net/).
+
+The following repository access (RA) modules are available:
+
+* ra_dav : Module for accessing a repository via WebDAV (DeltaV) protocol.
+  - handles 'http' scheme
+  - handles 'https' scheme
+* ra_svn : Module for accessing a repository using the svn network protocol.
+  - handles 'svn' scheme
+* ra_local : Module for accessing a repository on local disk.
+  - handles 'file' scheme
++--
+
+    Make sure you have freehep checked out completely:
+    
++--
+svn co svn://svn.freehep.org/svn/freehep/trunk freehep
++--
+
+    Now change directory into a group and add a new module by running "AddModule", for Unix:
+    
++--
+cd base
+../AddModule freehep-util
++--
+
+    AddModule runs the freehep-project-archetype (in group maven-plugins) to create a 
+    directory structure and some template files. Most files need some changes. 
+
+    The resulting module is now available and added to subversion, but not committed yet.
+    If you want to back out the module, do:
+    
++--
+svn revert -R <modulename>
++--
+
+    Note: The AddModule script in NOT very well protected.    
+    

@@ -1,0 +1,123 @@
+<html>
+
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=windows-1252">
+<meta name="GENERATOR" content="Microsoft FrontPage 5.0">
+<meta name="ProgId" content="FrontPage.Editor.Document">
+<title>Using JAIDA from C</title>
+</head>
+
+<body>
+
+<h1>Using JAIDA from C++</h1>
+
+<p>To access the Java implementation of the AIDA interfaces from C++ you need to
+download the <a href="../../BinaryDistributions.html">AIDAJNI </a>glue code
+that will allow you to invoke the java objects from the C++ side.</p>
+
+<p>The C++ code follows:</p>
+
+<table border="1" cellpadding="0" cellspacing="0" style="border-collapse: collapse" bordercolor="#111111" width="100%">
+  <tr>
+    <td width="100%">&#035include &lt;iostream&gt;<br>
+    &#035include &lt;cstdlib&gt;<br>
+    <br>
+    &#035include &quot;AIDA/AIDA.h&quot;<br>
+    &#035include &quot;JIAnalysisFactory.h&quot;<br>
+    <br>
+    using namespace AIDA;<br>
+    <br>
+    int main(int argc, char *argv[]) {<br>
+    <br>
+&nbsp;&nbsp;&nbsp;&nbsp; AIDA::IAnalysisFactory* factory =
+    AIDA_createAnalysisFactory();<br>
+&nbsp;&nbsp;&nbsp;&nbsp; ITree* tree = factory-&gt;createTreeFactory()-&gt;create(&quot;UsingJAIDAFromCPP.aida&quot;,&quot;xml&quot;,false,true);<br>
+&nbsp;&nbsp;&nbsp;&nbsp; IHistogramFactory* hf = factory-&gt;createHistogramFactory(*tree);<br>
+    <br>
+&nbsp;&nbsp;&nbsp;&nbsp; tree-&gt;mkdir(&quot;/Histograms&quot;);<br>
+&nbsp;&nbsp;&nbsp;&nbsp; tree-&gt;cd(&quot;/Histograms&quot;);<br>
+    <br>
+&nbsp;&nbsp;&nbsp;&nbsp; IHistogram1D* h1 = hf-&gt;createHistogram1D(&quot;Histogram
+    1D&quot;,50,0,10);<br>
+&nbsp;&nbsp;&nbsp;&nbsp; IHistogram2D* h2 = hf-&gt;createHistogram2D(&quot;Histogram
+    2D&quot;,40,0,10,40,0,10);<br>
+    <br>
+&nbsp;&nbsp;&nbsp;&nbsp; tree-&gt;mkdir(&quot;/Clouds&quot;);<br>
+&nbsp;&nbsp;&nbsp;&nbsp; tree-&gt;cd(&quot;/Clouds&quot;);<br>
+    <br>
+&nbsp;&nbsp;&nbsp;&nbsp; ICloud1D* c1 = hf-&gt;createCloud1D(&quot;Cloud 1D&quot;);<br>
+&nbsp;&nbsp;&nbsp;&nbsp; ICloud2D* c2 = hf-&gt;createCloud2D(&quot;Cloud 2D&quot;);<br>
+    <br>
+&nbsp;&nbsp;&nbsp;&nbsp; IPlotter* page1 = factory-&gt;createPlotterFactory()-&gt;create(&quot;Page1&quot;);<br>
+    <br>
+&nbsp;&nbsp;&nbsp;&nbsp; page1-&gt;show();<br>
+&nbsp;&nbsp;&nbsp;&nbsp; page1-&gt;createRegions(2,2);<br>
+    <br>
+&nbsp;&nbsp;&nbsp;&nbsp; page1-&gt;region(0)-&gt;plot(*h1);<br>
+&nbsp;&nbsp;&nbsp;&nbsp; page1-&gt;region(1)-&gt;plot(*h2);<br>
+&nbsp;&nbsp;&nbsp;&nbsp; page1-&gt;region(2)-&gt;plot(*c1);<br>
+&nbsp;&nbsp;&nbsp;&nbsp; page1-&gt;region(3)-&gt;plot(*c2);<br>
+    <br>
+&nbsp;&nbsp;&nbsp;&nbsp; srand( 0 );<br>
+&nbsp;&nbsp;&nbsp;&nbsp; for ( int i = 0; i &lt; 10000; i++ ) {<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; h1-&gt;fill( 10*rand()/(double)RAND_MAX
+    );<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; h2-&gt;fill( 10*rand()/(double)RAND_MAX,
+    10*rand()/(double)RAND_MAX);<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; c1-&gt;fill( 10*rand()/(double)RAND_MAX
+    );<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; c2-&gt;fill( 10*rand()/(double)RAND_MAX,
+    10*rand()/(double)RAND_MAX);<br>
+&nbsp;&nbsp;&nbsp;&nbsp; }<br>
+    <br>
+&nbsp;&nbsp;&nbsp;&nbsp; tree-&gt;commit();<br>
+    <br>
+&nbsp;&nbsp;&nbsp;&nbsp; delete factory;<br>
+    <br>
+&nbsp;&nbsp;&nbsp;&nbsp; return 1;<br>
+    }</td>
+  </tr>
+</table>
+
+<p>It is necessary to compile and link the code against the AIDAJNI libraries
+required for your platform.&nbsp;</p>
+
+<ul>
+  <li>set the environment variable AIDAJNI_HOME to point the directory where the
+    AIDAJNI code has been put</li>
+  <li>set the environment variable JDK_HOME to point the the head of the Java
+    distribution (a least 1.4.0 is required)</li>
+</ul>
+<p>For Windows</p>
+<ul>
+  <li>compile with:</li>
+</ul>
+<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; cl -c -TP
+-Og -W1 -nologo -MD -G5 -GX -GR -Zm200 -DWINVER=0x0400 -DWIN32 -D_WIN32 -I%AIDAJNI_HOME%\include
+-I%JDK_HOME%\include -I%JDK_HOME%\include\win32 UsingJAIDAFromCPP.cpp</p>
+<ul>
+  <li>link with&nbsp;</li>
+</ul>
+<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; link -nologo -LIBPATH:%AIDAJNI_HOME%\lib\WIN32-VC UsingJAIDAFromCPP.obj  AIDAJNI.lib %JDK_HOME%/lib/jvm.lib FHJNI.lib</p>
+<p>Before executing make sure that you add to your PATH the directory of the
+Java Virtual Machine sharable library</p>
+
+<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; set PATH=%PATH%;%JDK_HOME%\jre\bin\client</p>
+
+<p>Please notice that in the above code, before the return statement, the
+JIAnalysisFactory is deleted. This way the execution thread will wait on the GUI
+to stop running.</p>
+
+<p>It is also possible to change the type of analysis factory to be used
+(with/without GUI) as for the Java case by specifying it via the JVM_ARGS 
+environment variable that is read when the Java Virtual Machine is started. So, 
+for an analysis factory with the GUI</p>
+
+<blockquote>
+  <p>set JVM_ARGS=-Dhep.aida.IAnalysisFactory=hep.aida.ref.AnalysisFactory</p>
+
+</blockquote>
+
+</body>
+
+</html>

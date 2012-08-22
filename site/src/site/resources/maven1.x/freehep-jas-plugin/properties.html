@@ -1,0 +1,50 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd"><html><head><title>FreeHEP JAS Plug-in Properties - FreeHEP JAS Plug-in</title><style type="text/css" media="all">
+          @import url("./style/maven-base.css");
+          
+          @import url("./style/maven-theme.css");</style><link rel="stylesheet" href="./style/print.css" type="text/css" media="print"></link><meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1"></meta></head><body class="composite"><div id="banner"><a href="http://java.freehep.org/" id="organizationLogo"><img alt="FreeHEP" src="http://www.freehep.org/images/sm-freehep.gif"></img></a><a href="http://java.freehep.org/freehep-jas-plugin/index.html" id="projectLogo"><img alt="FreeHEP JAS Plug-in" src="http://java.freehep.org/freehep-jas-plugin/logo.gif"></img></a><div class="clear"><hr></hr></div></div><div id="breadcrumbs"><div class="xleft">Last published: July 8, 2005 3:30:19 PM PDT
+                <span class="separator">|</span>Doc for  1.0.2
+                </div><div class="xright">
+        
+        <a href="http://maven.apache.org/" class="externalLink" title="External Link">Maven</a>
+      
+        
+          
+            <span class="separator">|</span>
+          
+        
+        <a href="http://java.freehep.org/" class="externalLink" title="External Link">FreeHEP</a>
+      </div><div class="clear"><hr></hr></div></div><div id="leftColumn"><div id="navcolumn"><div id="menuJAS_Plugin"><h5>JAS Plugin</h5><ul><li class="none"><a href="index.html">Overview</a></li><li class="none"><a href="team-list.html">Project Team</a></li><li class="none"><a href="downloads.html">Download</a></li><li class="none"><a href="SourceRepository.html">Source Code</a></li><li class="none"><a href="dependencies.html">Dependencies</a></li><li class="none"><a href="http://forum.freehep.org/index.php?t=thread&amp;frm_id=14&amp;rid=4" class="newWindow" title="New Window" target="_blank">Forum</a></li><li class="none"><a href="http://bugs.freehep.org/secure/BrowseProject.jspa?id=10160" class="newWindow" title="New Window" target="_blank">Bug Database</a></li></ul></div><div id="menuUser_Documentation"><h5>User Documentation</h5><ul><li class="none"><a href="goals.html">Goals</a></li><li class="none"><strong><a href="properties.html">Properties</a></strong></li></ul></div><div id="legend"><h5>Legend</h5><ul><li class="externalLink">External Link</li><li class="newWindow">Opens in a new window</li></ul></div><a href="http://maven.apache.org/" title="Built by Maven" id="poweredBy"><img alt="Built by Maven" src="./images/logos/maven-button-1.png"></img></a></div></div><div id="bodyColumn"><div class="contentBox"><div class="section"><a name="FreeHEP_JAS_Plug-in_Settings"></a><h2>FreeHEP JAS Plug-in Settings</h2>
+      <table class="bodyTable">
+        <tr class="b">
+          <th>Property</th>
+          <th>Description</th>
+          <th>Default Value</th>
+        </tr>
+
+        <tr class="a">
+            <td>jas3.user.dir</td>
+            <td>JAS 3 User Directory</td>
+            <td>${user.home}/.JAS3</td>
+        </tr>
+      </table>
+    </div><div class="section"><a name="Dependency_Bundling"></a><h2>Dependency Bundling</h2>
+      <p>You may also set any of the following properties in the project.xml file</p>
+      <table class="bodyTable">
+        <tr class="b">
+            <td>jas3.bundle</td>
+            <td>This property includes this dependency when copying to the extensions directory.</td>
+        </tr>
+      </table>
+      <p>For example, to include commons-lang into the installed copy</p>
+
+    <div class="source"><pre>
+  &lt;dependency&gt;
+    &lt;id&gt;commons-lang&lt;/id&gt;
+    &lt;version&gt;2.0&lt;/version&gt;
+    &lt;properties&gt;
+      &lt;jas3.bundle&gt;true&lt;/jas3.bundle&gt;
+    &lt;/properties&gt;
+  &lt;/dependency&gt;</pre></div>
+  
+      
+    </div></div></div><div class="clear"><hr></hr></div><div id="footer"><div class="xright">© 2000-2005, FreeHEP</div><div class="clear"><hr></hr></div></div></body></html>

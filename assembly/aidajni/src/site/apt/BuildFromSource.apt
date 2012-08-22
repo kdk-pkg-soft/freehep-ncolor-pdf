@@ -1,0 +1,51 @@
+    ---
+FreeHEP AIDAJNI - Build from Source
+    ---
+Mark Donszelmann
+    ---
+    ---
+
+Build from Source
+
+	To build a distribution for AIDAJNI you need to check out the modules:
+	
+	* jaida/freehep-aidajni
+	
+	* jaida/aida-config 
+	
+	* assembly/aidajni
+	
+	[]
+	
+	from the FreeHEP repository. Please refer to {{{SourceRepository.html}SourceRepository}} to get these
+modules.
+
+	You now need to run {{{http://maven.apache.org/}maven}} (mvn) on the modules freehep-aidajni and aida-config for the platform for which you 
+need to make a distribution. 
+
++--
+cd ..../freehep-aidajni
+mvn
+cd ..../aida-config
+mvn
++--
+
+	If you want to make all distributions, the resulting nar files need to be deployed from each of the platforms to some central
+server.
+
+	After this you can assemble the distribution(s) by running maven (mvn) in the aidajni module. This
+would normally pick up all distributions, so if you want just one, you need to edit pom.xml and comment out the
+others (in 2 places). If you change the version number you need to update the version number in the pom.xml file
+but also in each of the setup scripts. 
+
+	You also need to generate the website to go into the distribution. All of
+these can be done with the following commands:
+
++--
+cd ..../aidajni
+mvn site:site
+mvn
++--
+
+	The resulting .tar.gz or .zip file will be in the aidajni/target directory.
+	

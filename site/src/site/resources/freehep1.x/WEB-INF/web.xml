@@ -1,0 +1,53 @@
+
+
+<!DOCTYPE web-app PUBLIC "-//Sun Microsystems, Inc.//DTD Web Application 2.3//EN" "http://java.sun.com/dtd/web-app_2_3.dtd">
+
+<web-app>
+    <display-name>FreeHEP Web</display-name>
+    <description>Servlet configuration for FreeHEP web</description>
+   <servlet>
+      <servlet-name>JnlpDownloadServlet</servlet-name>
+      <servlet-class>com.sun.javaws.servlet.JnlpDownloadServlet</servlet-class>
+   </servlet>
+   <servlet>
+       <servlet-name>RedirectServlet</servlet-name>
+       <servlet-class>org.freehep.tools.servlet.RedirectServlet</servlet-class>
+       <init-param>
+         <param-name>RedirectURL</param-name>
+	 <param-value>http://java.freehep.org/redirect.xml</param-value>
+       </init-param>
+    </servlet>
+   <servlet-mapping>
+      <servlet-name>JnlpDownloadServlet</servlet-name>
+      <url-pattern>*.jnlp</url-pattern>
+   </servlet-mapping>
+   <!--
+   <servlet-mapping>
+        <servlet-name>JnlpDownloadServlet</servlet-name>
+        <url-pattern>/demo/*.jar</url-pattern>
+   </servlet-mapping>
+   -->
+   <servlet-mapping>
+        <servlet-name>RedirectServlet</servlet-name>
+        <url-pattern>/redirect</url-pattern>
+   </servlet-mapping>
+   <mime-mapping>
+   <extension>ppt</extension><mime-type>application/vnd.ms-powerpoint</mime-type>
+   </mime-mapping>
+   <welcome-file-list>
+  <welcome-file>
+    Welcome.html
+  </welcome-file>
+  <welcome-file>
+    index.html
+  </welcome-file>
+  <welcome-file>
+    index.jsp
+  </welcome-file>
+  <welcome-file>
+    index.thtml
+  </welcome-file>
+</welcome-file-list>
+    <error-page><error-code>404</error-code><location>/error.html</location></error-page>
+</web-app>
+

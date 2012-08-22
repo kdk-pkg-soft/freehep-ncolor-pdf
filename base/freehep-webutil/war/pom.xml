@@ -1,0 +1,51 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
+
+    <parent>
+        <artifactId>freehep-webutil-base</artifactId>
+        <groupId>org.freehep</groupId>
+        <version>1.10-SNAPSHOT</version>
+    </parent>
+
+    <groupId>org.freehep</groupId>
+    <name>FreeHEP Web Util Library Web Application</name>    
+    <packaging>war</packaging>
+    <artifactId>freehep-webutil-web</artifactId>
+    <modelVersion>4.0.0</modelVersion>
+  <repositories>
+    <repository>
+      <id>freehep-maven</id>
+      <name>Maven FreeHEP</name>
+      <url>http://java.freehep.org/maven2</url>
+    </repository>
+  </repositories>
+  
+    <scm>  
+        <connection>scm:svn:svn://svn.freehep.org/svn/freehep/trunk/base/freehep-webutil/war</connection>
+      <developerConnection>scm:svn:svn://svn.freehep.org/svn/freehep/trunk/freehep-webutil-base/freehep-webutil-web</developerConnection>
+  </scm>
+
+    <distributionManagement>
+        <site>
+            <id>freehep-web-deploy</id>
+            <url>scpexe://svn.freehep.org/nfs/slac/g/jas/workspace/freehep/__star__/web/freehep/freehep-webutil</url>
+        </site>
+    </distributionManagement>
+  
+    <dependencies>
+        <dependency>
+            <groupId>org.freehep</groupId>
+            <artifactId>freehep-webutil</artifactId>
+            <version>${version}</version>
+        </dependency>        
+        <dependency>
+            <groupId>javax.servlet</groupId>
+            <artifactId>jstl</artifactId>
+            <version>1.1.2</version>
+        </dependency>
+        <dependency>
+            <groupId>taglibs</groupId>
+            <artifactId>standard</artifactId>
+            <version>1.1.2</version>
+        </dependency>
+    </dependencies>
+</project>

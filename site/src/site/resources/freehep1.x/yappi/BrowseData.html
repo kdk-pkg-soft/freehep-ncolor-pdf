@@ -1,0 +1,206 @@
+<html><head>
+    
+    <link rel="stylesheet" type="text/css" href="WebPage.css">
+
+<title>YaPPI - Browse Particle Data</title>
+</head><body>
+
+<table border="0" style="border-collapse: collapse" bordercolor="#111111" width="100%" cellpadding="0" cellspacing="5">
+  <tr>
+    <td colspan="2">
+        <table bgcolor="#294563" width="100%" border="0" style="border-collapse: collapse" bordercolor="#111111" cellspacing="0" cellpadding="5">
+          <tr>
+                                    <td width="100%" rowspan="2" align="left" valign="center">
+                <font color="#FFCC00">
+                <h1>
+YaPPI
+</h1>
+<span class="YaPPI">Y</span>et
+<span class="YaPPI">a</span>nother
+<span class="YaPPI">P</span>article
+<span class="YaPPI">P</span>roperty
+<span class="YaPPI">I</span>nterface</span>                </font>
+            </td>
+            <td  bgcolor="#4C6C8F" colspan="2" align="right" valign="top">
+              <table width="100%" border="0" style="border-collapse: collapse" bordercolor="#111111" cellpadding="3">
+                <form method="GET" action="http://www.google.com/search">
+                <tr>
+                                                                                                                                                            <td colspan="2">
+                     <input type="text" name="as_q" size="30">
+                  </td>
+                  <td rowspan="2">
+                     <input type="submit">
+                  </td>
+                </tr>
+                                    <tr>
+                                                                <td><input type="radio" checked name="as_sitesearch" value="yappi.freehep.org" >YaPPI</td>
+                                                                                        <td><input type="radio"  name="as_sitesearch" value="freehep.org" >FreeHEP</td>
+                                                                </tr>
+                                </form>
+              </table>
+            </td>
+          </tr>
+          <tr>
+            <td align="center" valign="center">
+                <a href="http://www.freehep.org">
+                    Member&nbsp;of&nbsp;FreeHEP
+                </a>
+            </td>
+                            <td align="center" valign="center">
+                    <a href="BrowseData.printable.html">Printable&nbsp;Page</a>
+                </td>
+                      </tr>
+        </table>
+    </td>
+  </tr>
+  <tr>
+    <td valign="top">
+        
+<div class="menu">
+<ul>
+<li>
+<span class="head">Introduction</span>
+<ul>
+<li>
+<a href="index.html"><span>Overview</span></a>
+</li>
+<li>
+<a href="BrowseData.html"><span class="sel">Browse&nbsp;Particle&nbsp;Data</span></a>
+</li>
+<li>
+<a href="ScreenShots.html"><span>Screen&nbsp;Shots</span></a>
+</li>
+<li>
+<a href="Publications.html"><span>Publications/Talks</span></a>
+</li>
+<li>
+<a href="Contributors.html"><span>Contributors</span></a>
+</li>
+<li>
+<a href="Users.html"><span>Users</span></a>
+</li>
+</ul>
+</li>
+<li>
+<span class="head">User&nbsp;Documentation</span>
+<ul>
+<li>
+<a href="Manual.html"><span>Manual</span></a>
+</li>
+<li>
+<a href="License.html"><span>License</span></a>
+</li>
+</ul>
+</li>
+<li>
+<span class="head">Download</span>
+<ul>
+<li>
+<a href="Distributions.html"><span>Binary&nbsp;Distributions</span></a>
+</li>
+<li>
+<a href="Distributions.html"><span>Source&nbsp;Distributions</span></a>
+</li>
+</ul>
+</li>
+<li>
+<span class="head">Get&nbsp;Involved</span>
+<ul>
+<li>
+<a href="SourceCode.html"><span>Source&nbsp;Code</span></a>
+</li>
+<li>
+<a href="http://bugs.freehep.org/secure/IssueNavigator.jspa?reset=true&mode=hide&pid=10012&sorter/order=ASC&sorter/field=priority&resolutionIds=-1&component=10018"><span>Bug&nbsp;Database</span></a>
+</li>
+</ul>
+</li>
+<li>
+<span class="head">Developer&nbsp;Area</span>
+<ul>
+<li>
+<a href="XMLSchema.html"><span>XML&nbsp;Schema</span></a>
+</li>
+<li>
+<a href="ClassDiagram.html"><span>Class&nbsp;Diagram</span></a>
+</li>
+<li>
+<a href="ToDoList.html"><span>ToDo&nbsp;List</span></a>
+</li>
+</ul>
+</li>
+</ul>
+</div>
+
+
+    </td>
+    <td valign="top">
+        
+  <h1>Browse Particle Data</h1>
+  <p>The Java Servlet provides online information
+    about the particle properties. Quick particle searches can be performed
+    by specifying particle name using the encoding below or by PDGID number. </p>
+  <table border="1" cellpadding="0" cellspacing="0" style="border-collapse: collapse" bordercolor="#111111" width="100%" id="AutoNumber1">
+    <tr>
+      <th width="50%">Particle</th>
+      <th width="50%">ASCII Particle Encoding</th>
+    </tr>
+    <tr>
+      <td width="50%">name <sup>charge</sup> <sub>subset</sub> (special)</td>
+      <td width="50%">name charge (subset) (special)</td>
+    </tr>
+    <tr>
+      <td width="50%">e<sup>+</sup></td>
+      <td width="50%">e+</td>
+    </tr>
+    <tr>
+      <td width="50%"><font face="Symbol">p</font><sup>+</sup></td>
+      <td width="50%">pi+</td>
+    </tr>
+    <tr>
+      <td width="50%"><font face="Symbol">h</font></td>
+      <td width="50%">eta</td>
+    </tr>
+    <tr>
+      <td width="50%"><font face="Symbol">h</font><sub>c</sub>(1S)</td>
+      <td width="50%">eta(c)(1S)</td>
+    </tr>
+  </table>
+  <p>You may browse particle
+    data by <strong>name</strong>, e.g by typing &quot;eta(c)(1S)&quot;, &quot;eta&quot;,
+    &quot;pi+&quot;, and so on, in the name box below. </p>
+<form method=GET action="../lookup">
+  <table border="0" cellspacing="0" cellpadding="4" vspace="0" hspace="0" width="100%">
+    <tr>
+      <td colspan="2"><strong>Quick Particle Lookup</strong></td>
+    </tr>
+    <tr>
+      <td align="right">By name:&nbsp;</td>
+      <td>
+          <input type="text" name="particle" size="10" value="eta(c)(1S)">
+          (Not functional at the moment).
+      </td>
+    </tr>
+    <tr>
+      <td align="right">By PDGID:&nbsp;</td>
+      <td valign="bottom">
+          <input type="text" name="pdgid" size="10">
+          (Not functional at the moment).
+      </td>
+    </tr>
+  </table>
+</form>
+
+        <p>
+        &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp
+        &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp
+        &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp
+        &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp
+        &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp
+        &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp
+        &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp
+        &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp
+    </td>
+  </tr>
+</table>
+
+</body></html>

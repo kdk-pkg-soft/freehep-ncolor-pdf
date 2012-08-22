@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?> 
+<!-- JNLP File for Icon Browser--> 
+<jnlp 
+  spec="1.0" 
+  codebase="http://java.freehep.org/demo/LegoPlot" 
+  href="lego.jnlp"
+  version ="1.0"> 
+  <information> 
+    <title>FreeHEP Java 3D Lego Plot</title> 
+    <vendor>FreeHEP</vendor> 
+    <homepage href="index.thtml"/> 
+    <description>FreeHEP Java 3D Lego Plot</description> 
+    <description kind="short">A lego plot which uses Java 3D.</description>
+    <offline-allowed/> 
+  </information> 
+  <resources> 
+    <j2se version="1.3+"/> 
+    <jar href="lego.jar"/>
+  </resources> 
+  <application-desc main-class="org.freehep.j3d.plot.test.DemoGUI"/> 
+</jnlp> 

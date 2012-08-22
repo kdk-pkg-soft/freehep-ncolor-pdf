@@ -1,0 +1,28 @@
+    ---
+FreeHEP AIDAJNI - Introduction
+    ---
+Mark Donszelmann
+    ---
+    ---
+
+Introduction
+
+    The AIDAJNI adapter package allows a C++ program to use the C++ 
+{{{http://aida.freehep.org}AIDA}}
+interface to link with a Java implementation of AIDA, such as 
+{{{http://java.freehep.org/jaida}JAIDA}}.
+
+    {{{http://geant4.cern.ch}Geant4}} can for instance be linked 
+against AIDAJNI, thereby enabling it to use JAIDA to write .aida files 
+which can afterwards be analysed using 
+{{{http://jas.freehep.org/jas3/index.html}JAS3}} - Java Analysis Studio.
+
+	The package is available for the Linux, Windows, Sun and MacOS X 
+platforms using a variety of compilers.
+
+	AIDAJNI uses the JNI (Java Native Interface) to access Java from C++ 
+and vice-versa.
+
+	Currently AIDAJNI is only available for the 3.2.x series of AIDA
+and before. We are working on a release for AIDA 3.3.x.
+

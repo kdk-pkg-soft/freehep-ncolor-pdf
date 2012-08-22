@@ -1,0 +1,4 @@
+#set( $webName = "AID" )
+#set( $webSearch = "java.freehep.org" )
+<h1>AID - Abstract Interface Definition</h1>
+Compiler for Language Independent Interfaces

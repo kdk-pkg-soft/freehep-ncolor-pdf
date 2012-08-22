@@ -1,0 +1,62 @@
+<project>
+  <parent>
+    <artifactId>global</artifactId>
+    <groupId>org.freehep</groupId>
+    <version>5</version>
+  </parent>
+  <modelVersion>4.0.0</modelVersion>
+  <artifactId>heprep</artifactId>
+  <packaging>pom</packaging>
+  <name>FreeHEP HepRep Modules</name>
+  <version>4-SNAPSHOT</version>
+  <description>FreeHEP HepRep Library</description>
+  <repositories>
+    <repository>
+      <id>freehep-maven</id>
+      <name>Maven FreeHEP</name>
+      <url>http://java.freehep.org/maven2</url>
+    </repository>
+  </repositories>
+  <profiles>
+    <profile>
+      <id>native</id>
+      <activation>
+        <property>
+          <name>native</name>
+          <value>true</value>
+        </property>
+      </activation>
+      <modules>
+        <module>freehep-cheprep</module>
+        <module>freehep-heprepjni</module>
+      </modules>
+    </profile>
+  </profiles>
+  <modules>
+    <module>freehep-heprep</module>
+    <module>freehep-heprep1</module>
+    <module>freehep-jheprep</module>
+    <module>freehep-jheprep1</module>
+    <module>freehep-jheprep1-adapter</module>
+  </modules>
+  <dependencyManagement>
+    <dependencies>
+      <dependency>
+        <groupId>org.freehep</groupId>
+        <artifactId>freehep-heprep</artifactId>
+        <version>2.0.2</version>
+      </dependency>
+      <dependency>
+        <groupId>org.freehep</groupId>
+        <artifactId>freehep-heprep1</artifactId>
+        <version>1.0.1</version>
+      </dependency>
+      <dependency>
+        <groupId>hep.aida</groupId>
+        <artifactId>aida</artifactId>
+        <version>3.3</version>
+        <scope>test</scope>
+      </dependency>
+    </dependencies>
+  </dependencyManagement>
+</project>

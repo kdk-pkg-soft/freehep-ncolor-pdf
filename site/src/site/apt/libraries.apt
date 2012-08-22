@@ -1,0 +1,37 @@
+    ---
+FreeHEP Libraries
+    ---
+Mark Donszelmann
+    ---
+    ---
+
+Libraries
+
+	FreeHEP 1.x was delivered as a number of large jar files. In FreeHEP 2.x we went the "Maven" way
+	which allows for easy delivery of smaller jar files and their dependencies to Maven users. 
+	However, for non-maven users we still supply large jar files. Those jar files are created
+	using the assembkly mechanism of Maven. All assemblies are in the repository under:
+	
++--
+svn co svn://svn.freehep.org/svn/trunk/assembly
++--
+
+	The following library modules are available:
+	
+	* freehep-base containing all base modules
+	
+	* freehep-hep containing all hep modules
+	
+	* freehep-heprep-lib containing all heprep modules
+	
+	* freehep-vectorgraphics containing all vectorgraphics modules
+	
+	[]
+	
+	Ther are also other distributions, such as:
+	
+	* jaida containing a full distribution of jaida.
+	
+	* aidajni containing freehep-aidajni, the aida-config executable and the setup scripts
+	
+	[]

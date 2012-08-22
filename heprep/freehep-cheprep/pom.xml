@@ -1,0 +1,68 @@
+<model>
+    <parent>
+        <artifactId>global</artifactId>
+        <groupId>org.freehep</groupId>
+        <version>8</version>
+    </parent>
+    
+    <name>FreeHEP C++ HepRep</name>
+    <description>C++ implementation of the HepRep (version 2) driver.</description>
+    <modelVersion>4.0.0</modelVersion>
+    <groupId>org.freehep</groupId>
+    <artifactId>freehep-cheprep</artifactId>
+    <packaging>nar</packaging>
+    <version>2.0.6-SNAPSHOT</version>
+
+    <build>
+        <plugins>            
+            <plugin>
+                <groupId>org.freehep</groupId>
+                <artifactId>freehep-nar-plugin</artifactId>
+                <version>2.0-alpha-10</version>
+                <configuration>
+                    <libraries>
+                        <library>
+                            <type>static</type>
+                        </library>
+                    </libraries>
+
+                    <tests>
+                        <test>
+                            <name>HepRepExample</name>
+                            <link>static</link>
+                        </test>
+                        <test>
+                            <name>HepRepTest</name>
+                            <link>static</link>
+                        </test>
+                        <test>
+                            <name>MultiWriteTest</name>
+                            <link>static</link>
+                            <args>
+                              <arg>10</arg>
+                              <arg>MultiWriteTestOutput.heprep</arg>
+                            </args>
+                        </test>
+                        <test>
+                            <name>BHepRepTest</name>
+                            <link>static</link>
+                        </test>
+                    </tests>
+                </configuration>
+            </plugin>            
+        </plugins>
+    </build>    
+
+    <dependencies>
+        <dependency>
+            <groupId>org.freehep</groupId>
+            <artifactId>freehep-heprep</artifactId>
+            <version>2.0.3-SNAPSHOT</version>
+        </dependency>
+        <dependency>
+            <groupId>org.freehep</groupId>
+            <artifactId>freehep-zlib</artifactId>
+            <version>1.2.3-1-SNAPSHOT</version>
+        </dependency>
+    </dependencies>
+</model>

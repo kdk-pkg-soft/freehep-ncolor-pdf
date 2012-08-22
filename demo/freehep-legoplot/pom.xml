@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project>
+    <parent>
+        <artifactId>global</artifactId>
+        <groupId>org.freehep</groupId>
+        <version>7</version>
+    </parent>
+    <modelVersion>4.0.0</modelVersion>
+    <groupId>org.freehep</groupId>
+    <artifactId>freehep-legoplot</artifactId>
+    <name>FreeHEP Java 3D Lego Plot Demo</name>
+    <version>2.0-SNAPSHOT</version>
+    <description>FreeHEP Java 3D Lego Plot Demo</description>
+    <repositories>
+        <repository>
+            <id>freehep-maven</id>
+            <name>Maven FreeHEP</name>
+            <url>http://java.freehep.org/maven2</url>
+        </repository>
+    </repositories>
+  <build>
+    <defaultGoal>webstart:jnlp</defaultGoal>
+    <plugins>
+      <plugin>
+        <groupId>org.codehaus.mojo</groupId>
+        <artifactId>webstart-maven-plugin</artifactId>
+        <version>1.0-alpha-2-SNAPSHOT</version>
+        <executions>
+           <execution>
+              <goals>
+                 <goal>jnlp</goal>
+              </goals>
+           </execution>
+        </executions>
+        <configuration>
+           <jnlp>
+             <outputFile>LegoPlot.jnlp</outputFile>
+             <mainClass>org.freehep.j3d.plot.demo.DemoGUI</mainClass>
+           </jnlp>
+           <verbose>false</verbose>
+        </configuration>
+      </plugin>
+    </plugins>
+  </build>
+
+  <dependencies>
+    <dependency>
+      <groupId>org.freehep</groupId>
+      <artifactId>freehep-java3d</artifactId>
+      <version>2.0-SNAPSHOT</version>
+      <exclusions>
+        <exclusion>
+          <groupId>java3d</groupId>
+          <artifactId>vecmath</artifactId>
+        </exclusion>
+        <exclusion>
+          <groupId>java3d</groupId>
+          <artifactId>j3d-core</artifactId>
+        </exclusion>
+        <exclusion>
+          <groupId>java3d</groupId>
+          <artifactId>j3d-core-utils</artifactId>
+        </exclusion>
+      </exclusions>
+    </dependency>
+  </dependencies>
+</project>
+

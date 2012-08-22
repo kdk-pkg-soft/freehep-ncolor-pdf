@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!--
+    Document   : SiteMapTemplate.xml
+    Created on : March 11, 2003, 11:20 AM
+    Author     : The FreeHEP team @ SLAC
+    Description: The default MenuList
+-->
+<!DOCTYPE MenuList>
+<?xml-stylesheet type="text/xsl" href="menu.xslt"?>
+<MenuList xmlns:xsi='http://www.w3.org/2001/XMLSchema-instance'
+  xsi:noNamespaceSchemaLocation='SiteMap.xsd'>
+    <Menu name = "Introduction">
+        <MenuItem name = "Overview"             href = "index.html"/>
+        <MenuItem name = "News"/>
+        <MenuItem name = "Features"/>
+        <MenuItem name = "Demos"/>
+        <MenuItem name = "Screen Shots"/>
+        <MenuItem name = "Publications/Talks"/>
+        <MenuItem name = "Future Plans"/>
+        <MenuItem name = "Contributors"         href ="Contributors.html"/>
+        <MenuItem name = "Users"/>
+    </Menu>
+    <Menu name = "User Documentation">
+        <MenuItem name = "Overview"/>
+        <MenuItem name = "Manual"/>
+        <MenuItem name = "Apis"/>
+        <MenuItem name = "Howtos"/>
+        <MenuItem name = "Tutorials/Examples"/>
+        <MenuItem name = "Quick Guide"/>
+        <MenuItem name = "Related Projects"/>
+        <MenuItem name = "Plugins and Extensions"/>
+        <MenuItem name = "Faq"/>
+        <MenuItem name = "Having Problems"/>
+        <MenuItem name = "License"              href = "License.html"/>
+    </Menu>
+    <Menu name = "Download">
+        <MenuItem name = "Binary Distributions" href = "BinaryDistributions.html"/>
+        <MenuItem name = "Source Distributions" href = "SourceDistributions.html"/>
+        <MenuItem name = "Release Notes"        href = "AllReleaseNotes.html"/>
+    </Menu>
+    <Menu name = "Get Involved">
+        <MenuItem name = "Discussion"           href="http://java.freehep.org/redirect?project=HEPREP&amp;area=forum"/>
+        <MenuItem name = "Source Code"/>
+        <MenuItem name = "Bug Database"         href="http://java.freehep.org/redirect?project=HEPREP&amp;area=bugs"/>
+        <MenuItem name = "Enhancement Requests"/>
+        <MenuItem name = "Outreach"/>
+    </Menu>
+    <Menu name = "Developer Area">
+        <MenuItem name = "Design Documentation"/>
+        <MenuItem name = "Project Guidelines"/>
+        <MenuItem name = "How to Extend"/>
+        <MenuItem name = "ToDo List"/>
+    </Menu>
+</MenuList>

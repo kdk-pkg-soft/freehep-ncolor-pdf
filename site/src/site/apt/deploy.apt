@@ -1,0 +1,143 @@
+    ---
+FreeHEP - Deploy
+    ---
+Mark Donszelmann
+    ---
+    ---
+
+Deploy
+
+* Deploying artifacts
+
+    To deploy an artifact to the freehep maven server you need to have write access to our
+    nfs disk area. The maven protocol we use is scpexe, which can be mapped in your settings.xml
+    file to any ssh capable copy program. Most of this information was found in:
+    {{{http://maven.apache.org/guides/mini/guide-deploy-ssh-external.html}
+    "Guide to deploying with an external SSH command"}}.
+    
+    On Linux/Unix, MacOS X and CYGWIN your settings file should look like this (scpexe by default maps to scp):
+    
++--
+<settings>
+  ...
+  <servers>
+    <server>
+      <id>freehep-maven-deploy</id>
+      <username>your-user-name</username>
+      <filePermissions>664</filePermissions>
+      <directoryPermissions>775</directoryPermissions>
+    </server>
+    <server>
+      <id>freehep-maven1-deploy</id>
+      <username>your-user-name</username>
+      <filePermissions>664</filePermissions>
+      <directoryPermissions>775</directoryPermissions>
+    </server>
+    <server>
+      <id>freehep-web-deploy</id>
+      <username>your-user-name</username>
+      <filePermissions>664</filePermissions>
+      <directoryPermissions>775</directoryPermissions>
+    </server>
+  </servers>
+  ...
+</settings>
++--
+
+		On Windows you need to install PuTTY from 
+		{{http://www.chiark.greenend.org.uk/~sgtatham/putty/}}, 
+		and make sure plink and pscp is in yout PATH.
+		Your settings file should look like this (we map ssh and scp to plink and pscp):
+		
++--
+<settings>
+  ...
+  <servers>
+    <server>
+      <id>freehep-maven-deploy</id>
+      <username>your-user-name</username>
+      <filePermissions>664</filePermissions>
+      <directoryPermissions>775</directoryPermissions>
+      <configuration>
+        <sshExecutable>plink</sshExecutable>
+        <scpExecutable>pscp</scpExecutable>
+      </configuration>
+    </server>
+    <server>
+      <id>freehep-maven1-deploy</id>
+      <username>your-user-name</username>
+      <filePermissions>664</filePermissions>
+      <directoryPermissions>775</directoryPermissions>
+      <configuration>
+        <sshExecutable>plink</sshExecutable>
+        <scpExecutable>pscp</scpExecutable>
+      </configuration>
+    </server>
+    <server>
+      <id>freehep-web-deploy</id>
+      <username>your-user-name</username>
+      <filePermissions>664</filePermissions>
+      <directoryPermissions>775</directoryPermissions>
+      <configuration>
+        <sshExecutable>plink</sshExecutable>
+        <scpExecutable>pscp</scpExecutable>
+      </configuration>
+    </server>
+  </servers>
+  ...
+</settings>
++--
+
+		To authenticate one should generate a pair of public/private keys (rsa1, rsa2 or dsa) on
+		the svn.freehep.org machine. 
+
+		You should make sure you have the necessary agents setup and autheticated at least once
+		the svn.freehep.org node. 
+		
+		On Linux/Unix and CYGWIN you should run the ssh-agent and add your private key to it:
+		
++--
+eval `ssh-agent`
+ssh-add your-private-key
++--
+
+		On Windows you should run Pageant and add the key interactively. PuTTY will accept keys
+		in .ppk format which can be converted from the other formats using the PuTTYgen program.
+		NOTE: make sure your original format contains an end-of-line character after the final
+		line, or PuTTYgen will complain that the file is unreadable.
+		
+		On MacOS X you can run SSH KeyChain {{http://www.sshkeychain.org/}},
+		which cooperates with Apple KeyChain and runs the ssh-agent and key administration for you.
+
+		You should be able to log into svn.freehep.org without typing 
+		a password, since maven will NOT ask for one.
+    
+    You can then call:
+
++--
+mvn deploy
++--
+    to deploy the artifact.
+    
+* Maven 1 deployment
+
+		To deploy the artifact also on our maven 1 repository use:
+		
++--
+mvn -DupdateReleaseInfo deploy
++--
+
+* Site deployment
+
+		Using the same setup as described above you can call:
+		
++--
+mvn site:deploy
++--
+
+		to deploy the website of a project.
+
+	NOTE: on Windows the current maven-site-plugin (2.0-beta-5) has a problem
+using an external ssh command to deploy the site (bug MSITE-25). You need to deploy
+(and release) from a Unix machine for now.
+

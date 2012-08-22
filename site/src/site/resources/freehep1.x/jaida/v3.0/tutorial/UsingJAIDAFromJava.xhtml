@@ -1,0 +1,121 @@
+<html>
+
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=windows-1252">
+<meta name="GENERATOR" content="Microsoft FrontPage 5.0">
+<meta name="ProgId" content="FrontPage.Editor.Document">
+<title>Tutorial</title>
+</head>
+
+<body>
+
+<h1>Using JAIDA from Java</h1>
+
+<table border="1" cellpadding="0" cellspacing="0" style="border-collapse: collapse" bordercolor="#111111" width="100%">
+  <tr>
+    <td width="100%">import java.util.Random;<br>
+import hep.aida.*;<br>
+<br>
+public class UsingJAIDAFromJava {<br>
+<br>
+    &nbsp;&nbsp;
+    public static void main(String[] args) throws java.io.IOException {<br>
+<br>
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        IAnalysisFactory  factory = IAnalysisFactory.create();<br>
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        ITree             tree    = factory.createTreeFactory().create("UsingJAIDAFromJava.aida",null,false,true);<br>
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        IHistogramFactory hf      = factory.createHistogramFactory(tree);<br>
+	&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+	IFitter           fitter  = factory.createFitFactory().createFitter("Chi2","uncmin");<br>
+<br>
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        Random r = new Random();<br>
+<br>
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        tree.mkdir("/Histograms");<br>
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        tree.cd("/Histograms");<br>
+<br>
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        IHistogram1D h1 = hf.createHistogram1D("Histogram 1D",50,-3,3);<br>
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        IHistogram2D h2 = hf.createHistogram2D("Histogram 2D",40,-3,3,40,-3,3);<br>
+<br>
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        tree.mkdir("/Clouds");<br>
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        tree.cd("/Clouds");<br>
+<br>
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        ICloud1D c1 = hf.createCloud1D("Cloud 1D");<br>
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        ICloud2D c2 = hf.createCloud2D("Cloud 2D");<br>
+<br>
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        IPlotter page1 = factory.createPlotterFactory().create("Page1");<br>
+<br>
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        page1.show();<br>
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        page1.createRegions(2,2);<br>
+<br>
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        page1.region(0).plot(h1);<br>
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        page1.region(1).plot(h2);<br>
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        page1.region(2).plot(c1);<br>
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        page1.region(3).plot(c2);<br>
+<br>
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        for ( int i = 0; i &lt; 10000; i++ ) {<br>
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            h1.fill(r.nextGaussian());<br>
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            h2.fill(r.nextGaussian(),r.nextGaussian());<br>
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            c1.fill(r.nextGaussian());<br>
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            c2.fill(r.nextGaussian(),r.nextGaussian());<br>
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        }<br>
+<br>
+	&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+	IFitResult h1FitUncMin = fitter.fit(h1,"g");<br>
+	&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; fitter.setEngine(&quot;minuit");<br>
+	&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+	IFitResult h1FitMinuit = fitter.fit(h1,"g");<br>
+<br>
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        page1.region(0).plot(h1FitUncMin.fittedFunction());<br>
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        page1.region(0).plot(h1FitMinuit.fittedFunction());<br>
+<br>
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        tree.commit();<br>
+    &nbsp;&nbsp;
+    }<br>
+<br>
+}</td>
+  </tr>
+</table>
+<p>&nbsp;</p>
+<p>Compile the code with :</p>
+<p>&nbsp;&nbsp;&nbsp; javac&nbsp; UsingJAIDAFromJava.java</p>
+<p>and run it:&nbsp;</p>
+<p>&nbsp;&nbsp;&nbsp; java UsingJAIDAFromJava</p>
+<p>no GUI will be displayed; a new file, UsingAIDAFromJava.aida, will be created
+containing the information loaded in the IHistograms and IClouds (the file, by
+default, is gzipped).</p>
+<p>Specify which analysis factory to use as follows:</p>
+<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; java -Dhep.aida.IAnalysisFactory=jas.aida.gui.JASGUIAnalysisFactory
+UsingJAIDAFromJava</p>
+<p>which will bring up the GUI below.</p>
+<p><img border="0" src="UsingJAIDAFromJava.jpg"></p>
+
+</body>
+
+</html>

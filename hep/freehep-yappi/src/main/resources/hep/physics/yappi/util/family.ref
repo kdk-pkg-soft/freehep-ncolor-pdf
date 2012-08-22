@@ -1,0 +1,21 @@
+# fname     #part   #mass   #life   #widths #normaldecay    #raredecay  #limitdecay
+gxxx.ps     7       2       0       2       21              5           29
+lxxx.ps     10      3       2       0       26              44          79
+qxxx.ps     8       1       0       0       1               0           2
+mxxxa.ps    50      47      2       38      86              79          217
+mxxxb.ps    26      24      3       22      78              49          60
+mxxxc.ps    7       7       2       3       125             126         134
+mxxxd.ps    4       3       1       1       33              14          32   
+mxxxe.ps    7       0       1       0       92              81          284
+mxxxf.ps    1       0       1       0       2               1           18
+mxxxg.ps    1       1       1       0       0               1           4
+mxxxh.ps    10      10      0       10      40              161         44
+mxxxi.ps    12      12      0       6       30              23          24
+bxxxa.ps    25      2       0       0       91              0           179
+bxxxb.ps    37      0       0       0       100             0           81
+bxxxc.ps    14      3       1       2       13              4           35
+bxxxd.ps    28      6       3       3       25              8           94   
+bxxxe.ps    9       9       2       6       6               8           35
+bxxxf.ps    2       2       1       1       3               3           4
+bxxxg.ps    17      13      4       3       39              22          50
+bxxxh.ps    2       1       2       0       6               2           4

@@ -1,0 +1,45 @@
+<html>
+<head>
+<title>YaPPI, Yet another Particle Property Interface</title>
+</head>
+
+<body>
+<h1>Overview</h1>
+<p>YaPPI is an XML database of particle properties. It is a part of the open source
+<a href="http://java.freehep.org/">FreeHEP Java Library</a>.</p>
+
+<h2>What is YaPPI?</h2>
+<p>
+YaPPI is an XML database of particle properties, accessible through a
+Java API. The goal is to provide particle property data to physicists'
+analysis programs in a way that is independent of platform, environment,
+or analysis package being used. Available components of YaPPI include:
+</p>
+
+<ul>
+<li>
+    A set of XML files derived from
+    derived directly from the from the Review of Particle Physics (RPP)
+    of the <a href="http://pdg.lbl.gov/">Particle Data Group</a> (PDG).
+    The XML data files are designed to be easy for users to modify or
+    extend for their own purposes.
+</li>
+<li>
+    A Java API for reading (and writing) the XML database.
+</li>
+<li>
+    An implementation of the ParticlePropertyProvider
+    interface of the <a href="http://jas.freehep.org/">Java Analysis Studio</a>
+    (JAS), a High Energy Physics analysis software package. JAS users
+    may access particle properties in XML directly from within JAS,.
+</li>
+<li>A <a href="BrowseData.html">web servlet</a> to allow online browsing
+    of particle data. </li>
+</ul>
+
+<p>The implementation was created by Patrick Hellwig as Summer Student at CERN in 2000
+and is currently maintained by Mark D&ouml;nszelmann and Tony Johnson at SLAC.
+</p>
+</body>
+
+</html>

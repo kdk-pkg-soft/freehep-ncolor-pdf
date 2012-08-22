@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+
+<!DOCTYPE web-app
+    PUBLIC "-//Sun Microsystems, Inc.//DTD Web Application 2.2//EN"
+    "http://java.sun.com/j2ee/dtds/web-app_2_2.dtd">
+
+<web-app>
+    <display-name>YaPPI - Yet Another Particle Property Interface</display-name>
+    <servlet>
+        <servlet-name>Lookup</servlet-name>
+        <servlet-class>hep.physics.yappi.servlet.Lookup</servlet-class>
+
+        <init-param>
+            <param-name>YappiConfig</param-name>
+            <param-value>/hep/physics/yappi/servlet/YappiServlet.cfg</param-value>
+        </init-param>
+    </servlet>
+        
+    <servlet-mapping>
+        <servlet-name>
+            Lookup
+        </servlet-name>
+        <url-pattern>
+            /lookup
+        </url-pattern>
+    </servlet-mapping>
+    
+</web-app>

@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<project name="HepRep">
+    <bannerLeft>
+        <name>HepRep 2 - HEP Representables for Event Display</name>
+<!--        <src>http://maven.apache.org/images/apache-maven-project.png</src> -->
+        <href>http://java.freehep.org/heprep</href>
+    </bannerLeft>
+    
+    <bannerRight>
+        <name>HepRep 2</name>
+        <src>http://java.freehep.org/images/sm-freehep.gif</src>
+        <href>http://java.freehep.org/</href>
+    </bannerRight>
+    
+    <body>
+        <links>
+            <item name="HepRep 1" href="http://www.slac.stanford.edu/~perl/heprep/index.html"/>
+<!--
+            <item name="CHepRep" href="http://java.freehep.org/cheprep/"/>
+            <item name="JHepRep" href="http://java.freehep.org/jheprep/"/>
+-->
+        </links>
+
+        <menu name="HepRep 2">
+            <item name="Introduction"           href="index.html"/>
+<!-- 
+            <item name="Features"               href="Features.html"/>
+            <item name="Download"               href="Download.html"/>
+            <item name="Users"                  href="Users.html"/>
+-->
+        </menu>
+        
+        <menu name="User's Guide">
+<!--              <item name="Classes"                href="Classes.html"/> -->
+            <item name="API Docs"               href="apidocs/index.html"/>
+            <item name="Representations"        href="DrawAsValues.html"/>
+            <item name="Attribute Defaults"     href="AttributeDefaults.html"/>
+<!--              <item name="HepRep XML"             href="HepRepXML.html"/>-->
+            <item name="Binary HepRep"          href="BinaryHepRep.html"/>
+<!--            <item name="Examples in C++"        href="ExamplesInCPP.html"/>-->
+<!--            <item name="Examples in Java"       href="ExamplesInJava.html"/>-->
+<!--            <item name="Examples in XML"        href="ExamplesInXML.html"/>-->
+<!--            <item name="Implementations"        href="Implementations.html"/>-->
+        </menu>
+
+        <menu name="Reference">
+            <item name="HepRep 1"               href="http://www.slac.stanford.edu/~perl/heprep/index.html"/>
+            <item name="HepRep Source"               href="source-repository.html"/>
+<!--            <item name="References"             href="References.html"/> -->
+        </menu>
+
+<!--        ${reports} -->
+    </body>
+</project>

@@ -1,0 +1,13 @@
+- we should get lifetime in PPP from lifetime or width
+- add decay modes interface to PPP
+- PDGID is in data should be an attribute of ParticleType
+
+-- add installservlet target to Ant to install the servlet into Tomcats directory
+-- Use of particular XML implementation should not be
+   hard wired in
+-- Servlet should be configurable at init time
+-- extend the SAX exception to show problm and linenumber  
+-- schema can be simplified!
+-- CreateTexFile
+-- Create TexYappiWriter
+

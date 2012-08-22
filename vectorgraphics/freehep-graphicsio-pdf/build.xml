@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project name="freehep-graphicsio-pdf-2.1.2-SNAPSHOT" default="jar" basedir=".">
+
+	<!-- Definitions -->
+
+	<property environment="env"/>
+	<property name="java.home" value="${env.JAVA_HOME}"/>
+	<property name="jre.windows" value="${env.WINDOWS_JRE}"/>
+	<property name="path.src" value="${basedir}/src/main"/>
+	<property name="path.classes" value="${basedir}/classes"/>
+	<property name="path.dist" value="${basedir}/lib"/>
+
+	<tstamp>
+		<format property="build.time" pattern="yyyy-MM-dd HH:mm:ss"/>
+	</tstamp>
+
+	<path id="path.source">
+		<pathelement location="${path.src}"/>
+	</path>
+
+	<path id="path.classpath">
+		<fileset dir="${basedir}/../../bin">
+			<include name="freehep-io-2.0.2.jar"/>
+			<include name="freehep-util-2.0.2.jar"/>
+			<include name="freehep-graphicsio-2.1.2-SNAPSHOT.jar"/>
+			<include name="freehep-graphics2d-2.1.2-SNAPSHOT.jar"/>
+		</fileset>
+	</path>
+
+	<!-- Targets -->
+
+	<target name="clean" description="Removes classes and javadoc">
+		<delete dir="${path.classes}"/>
+		<delete dir="${path.dist}"/>
+	</target>
+
+	<target name="compile" depends="init" description="Compiles sources">
+		<mkdir dir="${path.classes}"/>
+		<javac sourcepathref="path.source" classpathref="path.classpath" destdir="${path.classes}"
+			   deprecation="on" debug="on" debuglevel="lines,vars,source" target="1.5">
+			<src refid="path.source"/>
+			<exclude name="**/PDFExportFileType.java"/>
+		</javac>
+	</target>
+
+	<target name="help" description="Displays target information">
+		<echo message="Target           Description"/>
+		<echo message="----------------------------"/>
+		<echo message="clean            Removes classes and javadoc"/>
+		<echo message="compile          Compiles sources"/>
+		<echo message="help             Displays target information"/>
+		<echo message="init             Removes classes and javadoc"/>
+		<echo message="jar              Create the jar file"/>
+	</target>
+
+	<target name="init" description="Displays information about the build">
+		<tstamp/>
+		<echo message="project name : ${ant.project.name}"/>
+		<echo message="build file   : ${ant.file}"/>
+		<echo message="project.dir  : ${project.dirname}"/>
+		<echo message="basedir      : ${basedir}"/>
+		<echo message="java home    : ${java.home}"/>
+		<echo message="java version : ${java.version}"/>
+		<!-- "Mac OS X", "Windows XP" -->
+		<echo message="O/S name     : ${os.name}"/>
+		<echo message="O/S version  : ${os.version}"/>
+		<echo message="O/S arch     : ${os.arch}"/>
+		<echo message="username     : ${user.name}"/>		
+	</target>
+
+	<target name="jar" depends="clean, compile" description="Create the jar file">
+
+		<copy todir="${path.classes}">
+			<fileset dir="${path.src}">
+				<exclude name="**/*.java"/>
+			</fileset>
+		</copy>
+
+		<mkdir dir="${path.dist}"/>
+		<jar destfile="${path.dist}/${ant.project.name}.jar"
+			 basedir="${path.classes}">
+			<manifest>
+				<attribute name="builder" value="${user.name}"/>
+				<attribute name="product" value="${ant.project.name}"/>
+				<attribute name="time" value="${build.time}"/>
+			</manifest>
+		</jar>
+	</target>
+
+</project>
+

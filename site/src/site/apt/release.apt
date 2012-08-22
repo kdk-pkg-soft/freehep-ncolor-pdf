@@ -1,0 +1,77 @@
+    ---
+FreeHEP - Release
+    ---
+Mark Donszelmann
+    ---
+    ---
+
+Release
+
+   Maven has a release mechanism which performs the following steps 
+   automatically in the "prepare" phase:
+   
+   		[[1]] Checks if you have any dependencies to SNAPSHOTS.
+   		
+   		[[2]] Checks if you have all your source code committed.
+   		
+   		[[3]] Checks if the project to be released is a SNAPSHOT.
+   		
+   		[[4]] Removes the SNAPSHOT and checks the code to compile,
+   		package and test
+   		
+   		[[5]] Commits the version and tags it.
+   		
+   		[[6]] Updates the version to a new SNAPSHOT version 
+   		and commits this.
+   		
+   		[]
+   		
+   	It then does the following in the "release" phase:
+   	
+   		[[1]] Checks out the tag, which was created in the "prepare"
+   		phase.
+   		
+   		[[2]] Compiles, package and test.
+   		
+   		[[3]] Creates the site including javadoc.
+   		
+   		[[4]] Deploys the jar, the javadoc and the sources
+   		
+   		[[5]] Deploys the site.
+   		
+   		[]
+   		
+   	To do the above, follow the steps below:
+   	
+   		* Make sure you have ssh'd to svn.freehep.org at least once to set up the ssh keys
+   		and/or an ssh-agent.
+   	
+   		* Make sure you have no SNAPSHOT dependencies and
+   		make sure you have committed your code.
+   		
+   		* Run prepare phase:
+
++--
+maven release:prepare
++--
+
+		* If this fails somewhere, first run
+
++--
+maven release:clean
++--
+
+		then correct and start again at the prepare phase.
+		
+		* Run release phase:
+
++--
+maven release:perform
++--
+		
+		[]
+		
+	NOTE: these goals do not work in mevenide, they have to be done from the command line.
+	
+	NOTE on WINDOWS: You need to set up hacked versions of ssh and scp on windows. I have them in c:\tony\projects\sshhack.
+			

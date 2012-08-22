@@ -1,0 +1,30 @@
+<?xml version="1.0"?><project>
+  <parent>
+    <artifactId>global</artifactId>
+    <groupId>org.freehep</groupId>
+    <version>10-SNAPSHOT</version>
+  </parent>
+  <modelVersion>4.0.0</modelVersion>
+  <groupId>org.freehep</groupId>
+  <artifactId>freehep-site</artifactId>
+  <name>FreeHEP Web Site</name>
+  <version>2.0-SNAPSHOT</version>
+  <description>FreeHEP Top-Level Web Site</description>
+  <packaging>pom</packaging>
+  <repositories>
+    <repository>
+      <id>freehep-maven</id>
+      <name>Maven FreeHEP</name>
+      <url>http://java.freehep.org/maven2</url>
+    </repository>
+  </repositories>
+  <build>
+    <defaultGoal>site:site</defaultGoal>
+  </build>
+  <distributionManagement>
+    <site>
+      <id>freehep-web-deploy</id>
+      <url>scpexe://svn.freehep.org/nfs/slac/g/jas/workspace/freehep/__star__/web/freehep</url>
+    </site>
+  </distributionManagement>
+</project>

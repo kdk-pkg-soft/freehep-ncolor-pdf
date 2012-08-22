@@ -1,0 +1,16 @@
+    ---
+FreeHEP Continuous Integration
+    ---
+Mark Donszelmann
+    ---
+    ---
+
+FreeHEP Continuous Integration
+    
+	We run Continuum on all our FreeHEP and WIRED projects. 
+	Continuum checks every hour for changes in the HEAD 
+	revision of subversion. All projects should in principle compile and test.
+	
+	See {{{http://glast-heprep01.slac.stanford.edu:8080/continuum/servlet/continuum}FreeHEP Continuum}} 
+	(only reachable from the SLAC Network for now).
+	    

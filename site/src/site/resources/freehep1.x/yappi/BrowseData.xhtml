@@ -1,0 +1,63 @@
+<html>
+<head>
+<title>YaPPI - Browse Particle Data</title>
+</head>
+
+<body>
+  <h1>Browse Particle Data</h1>
+  <p>The Java Servlet provides online information
+    about the particle properties. Quick particle searches can be performed
+    by specifying particle name using the encoding below or by PDGID number. </p>
+  <table border="1" cellpadding="0" cellspacing="0" style="border-collapse: collapse" bordercolor="#111111" width="100%" id="AutoNumber1">
+    <tr>
+      <th width="50%">Particle</th>
+      <th width="50%">ASCII Particle Encoding</th>
+    </tr>
+    <tr>
+      <td width="50%">name <sup>charge</sup> <sub>subset</sub> (special)</td>
+      <td width="50%">name charge (subset) (special)</td>
+    </tr>
+    <tr>
+      <td width="50%">e<sup>+</sup></td>
+      <td width="50%">e+</td>
+    </tr>
+    <tr>
+      <td width="50%"><font face="Symbol">p</font><sup>+</sup></td>
+      <td width="50%">pi+</td>
+    </tr>
+    <tr>
+      <td width="50%"><font face="Symbol">h</font></td>
+      <td width="50%">eta</td>
+    </tr>
+    <tr>
+      <td width="50%"><font face="Symbol">h</font><sub>c</sub>(1S)</td>
+      <td width="50%">eta(c)(1S)</td>
+    </tr>
+  </table>
+  <p>You may browse particle
+    data by <strong>name</strong>, e.g by typing &quot;eta(c)(1S)&quot;, &quot;eta&quot;,
+    &quot;pi+&quot;, and so on, in the name box below. </p>
+<form method=GET action="../lookup">
+  <table border="0" cellspacing="0" cellpadding="4" vspace="0" hspace="0" width="100%">
+    <tr>
+      <td colspan="2"><strong>Quick Particle Lookup</strong></td>
+    </tr>
+    <tr>
+      <td align="right">By name:&nbsp;</td>
+      <td>
+          <input type="text" name="particle" size="10" value="eta(c)(1S)">
+          (Not functional at the moment).
+      </td>
+    </tr>
+    <tr>
+      <td align="right">By PDGID:&nbsp;</td>
+      <td valign="bottom">
+          <input type="text" name="pdgid" size="10">
+          (Not functional at the moment).
+      </td>
+    </tr>
+  </table>
+</form>
+
+</body>
+</html>

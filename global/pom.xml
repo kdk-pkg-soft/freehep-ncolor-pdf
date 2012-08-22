@@ -1,0 +1,436 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+    <prerequisites>
+        <maven>2.1</maven>
+    </prerequisites>
+    <groupId>org.freehep</groupId>
+    <artifactId>global</artifactId>
+    <packaging>pom</packaging>
+    <name>FreeHEP Global Settings</name>
+    <version>11-SNAPSHOT</version>
+    <description>FreeHEP Global Settings</description>
+    <url>http://java.freehep.org/</url>
+    <issueManagement>
+        <system>jira</system>
+        <url>http://java.freehep.org/redirect?project=${pom.artifactId}&amp;area=bugs</url>
+    </issueManagement>
+    <ciManagement>
+        <system>continuum</system>
+        <url>http://glast-heprep01.slac.stanford.edu:8080/continuum/servlet/continuum</url>
+        <notifiers>
+            <notifier>
+                <configuration>
+                    <address>freehep-java-report@slac.stanford.edu</address>
+                </configuration>
+            </notifier>
+        </notifiers>
+    </ciManagement>
+    <inceptionYear>2000</inceptionYear>
+    <mailingLists>
+        <mailingList>
+            <name>FreeHEP Java Announce</name>
+            <subscribe>mailto:majordomo@slac.stanford.edu?body=subscribe freehep-java-announce</subscribe>
+            <unsubscribe>mailto:majordomo@slac.stanford.edu?body=unsubscribe freehep-java-announce</unsubscribe>
+            <post>freehep-java-announce@slac.stanford.edu</post>
+            <archive />
+        </mailingList>
+        <mailingList>
+            <name>FreeHEP Java Report</name>
+            <subscribe>mailto:majordomo@slac.stanford.edu?body=subscribe freehep-java-report</subscribe>
+            <unsubscribe>mailto:majordomo@slac.stanford.edu?body=unsubscribe freehep-java-report</unsubscribe>
+            <post>freehep-java-report@slac.stanford.edu</post>
+            <archive />
+        </mailingList>
+        <mailingList>
+            <name>Developers</name>
+            <post>developers@freehep.org</post>
+        </mailingList>
+    </mailingLists>
+
+    <developers>
+        <developer>
+            <id>duns</id>
+            <name>Mark Donszelmann</name>
+            <email>Mark.Donszelmann@slac.stanford.edu</email>
+            <organization>${slac}</organization>
+            <organizationUrl>${slacUrl}</organizationUrl>
+            <roles>
+                <role>Architect</role>
+                <role>Release Manager</role>
+            </roles>
+            <timezone>-8</timezone>
+        </developer>
+        <developer>
+            <id>tonyj</id>
+            <name>Tony Johnson</name>
+            <email>tonyj@slac.stanford.edu</email>
+            <organization>${slac}</organization>
+            <organizationUrl>${slacUrl}</organizationUrl>
+            <roles>
+                <role>Architect</role>
+            </roles>
+            <timezone>-8</timezone>
+        </developer>
+        <developer>
+            <id>turri</id>
+            <name>Max Turri</name>
+            <email>turri@slac.stanford.edu</email>
+            <organization>${slac}</organization>
+            <organizationUrl>${slacUrl}</organizationUrl>
+            <roles>
+                <role>Developer</role>
+            </roles>
+            <timezone>-8</timezone>
+        </developer>
+        <developer>
+            <id>serbo</id>
+            <name>Victor Serbo</name>
+            <email>Victor.Serbo@slac.stanford.edu</email>
+            <organization>${slac}</organization>
+            <organizationUrl>${slacUrl}</organizationUrl>
+            <roles>
+                <role>Developer</role>
+            </roles>
+            <timezone>-8</timezone>
+        </developer>
+    </developers>
+    <contributors>
+        <contributor>
+            <name>Gary Bower</name>
+            <email>Gary.Bower@slac.stanford.edu</email>
+            <organization>${slac}</organization>
+            <organizationUrl>${slacUrl}</organizationUrl>
+            <roles>
+                <role>Physics Code</role>
+            </roles>
+            <timezone>-8</timezone>
+        </contributor>
+        <contributor>
+            <name>Julius Hrivnac</name>
+            <email>hrivnac@lal.in2p3.fr</email>
+            <organization>${lal}</organization>
+            <organizationUrl>${lalUrl}</organizationUrl>
+            <roles>
+                <role>Java 3D</role>
+            </roles>
+            <timezone>+1</timezone>
+        </contributor>
+        <contributor>
+            <name>Cal Loomis</name>
+            <email>loomis@lal.in2p3.fr</email>
+            <organization>${lal}</organization>
+            <organizationUrl>${lalUrl}</organizationUrl>
+            <roles>
+                <role>VectorGraphics</role>
+            </roles>
+            <timezone>+1</timezone>
+        </contributor>
+        <contributor>
+            <name>Joseph Perl</name>
+            <email>Joseph.Perl@slac.stanford.edu</email>
+            <organization>${slac}</organization>
+            <organizationUrl>${slacUrl}</organizationUrl>
+            <roles>
+                <role>HepRep Interfaces</role>
+            </roles>
+            <timezone>+8</timezone>
+        </contributor>
+        <contributor>
+            <name>Peter Armstrong</name>
+            <organization>${slac}</organization>
+            <organizationUrl>${slacUrl}</organizationUrl>
+            <roles>
+                <role>Student</role>
+            </roles>
+        </contributor>
+        <contributor>
+            <name>Simon Fischer</name>
+            <organization>${cern}</organization>
+            <organizationUrl>${cernUrl}</organizationUrl>
+            <roles>
+                <role>Summer Student 2001</role>
+            </roles>
+        </contributor>
+        <contributor>
+            <name>Andre Bach</name>
+            <organization>${slac}</organization>
+            <organizationUrl>${slacUrl}</organizationUrl>
+            <roles>
+                <role>Summer Student 2004</role>
+            </roles>
+        </contributor>
+        <contributor>
+            <name>Partick Hellwig</name>
+            <organization>${cern}</organization>
+            <organizationUrl>${cernUrl}</organizationUrl>
+            <roles>
+                <role>Summer Student 2000</role>
+            </roles>
+        </contributor>
+        <contributor>
+            <name>Sami Kama</name>
+            <organization>${cern}</organization>
+            <organizationUrl>${cernUrl}</organizationUrl>
+            <roles>
+                <role>Summer Student 2001</role>
+            </roles>
+            <timezone />
+        </contributor>
+        <contributor>
+            <name>Paul Spence</name>
+            <organization>${slac}</organization>
+            <organizationUrl>${slacUrl}</organizationUrl>
+            <roles>
+                <role>Student</role>
+            </roles>
+        </contributor>
+    </contributors>
+    <licenses>
+        <license>
+            <name>GNU LESSER GENERAL PUBLIC LICENSE, Version 2.1</name>
+            <url>http://www.gnu.org/licenses/lgpl-2.1.txt</url>
+            <distribution>repo</distribution>
+        </license>
+    </licenses>
+    <scm>
+        <connection>scm:svn:svn://svn.freehep.org/svn/freehep/trunk</connection>
+        <developerConnection>scm:svn:svn://svn.freehep.org/svn/freehep/trunk</developerConnection>
+    </scm>
+    <organization>
+        <name>FreeHEP</name>
+        <url>http://www.freehep.org/</url>
+    </organization>
+    <build>
+        <extensions>
+            <extension>
+                <groupId>org.apache.maven.wagon</groupId>
+                <artifactId>wagon-ssh-external</artifactId>
+            </extension>
+        </extensions>
+        <defaultGoal>install</defaultGoal>
+        <pluginManagement>
+            <plugins>
+                <plugin>
+                    <artifactId>maven-compiler-plugin</artifactId>
+                    <configuration>
+                        <source>${sourceLevel}</source>
+                        <target>${sourceLevel}</target>
+                    </configuration>
+                </plugin>
+                <plugin>
+                    <artifactId>maven-javadoc-plugin</artifactId>
+                    <configuration>
+                        <source>${sourceLevel}</source>
+                        <detectLinks>true</detectLinks>
+                    </configuration>
+                </plugin>
+                <plugin>
+                    <artifactId>maven-release-plugin</artifactId>
+                    <configuration>
+                        <tagBase>svn://${svnHost}/svn/freehep/tags</tagBase>
+                    </configuration>
+                </plugin>
+                <plugin>
+                    <artifactId>freehep-nar-plugin</artifactId>
+                    <groupId>org.freehep</groupId>
+                    <extensions>true</extensions>
+                </plugin>
+                <plugin>
+                    <groupId>org.apache.maven.plugins</groupId>
+                    <artifactId>maven-site-plugin</artifactId>
+                    <version>2.1.1</version>
+                </plugin>
+            </plugins>
+        </pluginManagement>
+    </build>
+    <repositories>
+        <repository>
+            <id>freehep-maven</id>
+            <name>Maven FreeHEP</name>
+            <url>${mavenFreehep}</url>
+        </repository>
+        <repository>
+            <id>central</id>
+            <name>Maven Ibiblio</name>
+            <url>${mavenIbiblio}</url>
+        </repository>
+        <repository>
+            <id>Codehaus</id>
+            <url>http://repository.codehaus.org/</url>
+            <snapshots>
+                <enabled>false</enabled>
+            </snapshots>
+            <releases>
+                <enabled>true</enabled>
+            </releases>
+        </repository>
+        <repository>
+            <id>Codehaus Snapshots</id>
+            <url>http://snapshots.repository.codehaus.org/</url>
+            <snapshots>
+                <enabled>true</enabled>
+            </snapshots>
+            <releases>
+                <enabled>false</enabled>
+            </releases>
+        </repository>
+    </repositories>
+    <pluginRepositories>
+        <pluginRepository>
+            <id>freehep-maven</id>
+            <name>Maven FreeHEP</name>
+            <url>${mavenFreehep}</url>
+        </pluginRepository>
+        <pluginRepository>
+            <id>central</id>
+            <name>Maven Ibiblio</name>
+            <url>${mavenIbiblio}</url>
+        </pluginRepository>
+        <pluginRepository>
+            <id>Codehaus</id>
+            <url>http://repository.codehaus.org/</url>
+            <snapshots>
+                <enabled>false</enabled>
+            </snapshots>
+            <releases>
+                <enabled>true</enabled>
+            </releases>
+        </pluginRepository>
+        <pluginRepository>
+            <id>Codehaus Snapshots</id>
+            <url>http://snapshots.repository.codehaus.org/</url>
+            <snapshots>
+                <enabled>true</enabled>
+            </snapshots>
+            <releases>
+                <enabled>false</enabled>
+            </releases>
+        </pluginRepository>
+    </pluginRepositories>
+    <reporting>
+        <plugins>
+            <plugin>
+                <artifactId>maven-project-info-reports-plugin</artifactId>
+            </plugin>
+        </plugins>
+    </reporting>
+    <dependencyManagement>
+        <dependencies>
+            <dependency>
+                <groupId>org.apache.maven</groupId>
+                <artifactId>maven-project</artifactId>
+                <version>2.0</version>
+            </dependency>
+            <dependency>
+                <groupId>org.apache.maven</groupId>
+                <artifactId>maven-plugin-api</artifactId>
+                <version>2.0</version>
+            </dependency>
+            <dependency>
+                <groupId>org.codehaus.plexus</groupId>
+                <artifactId>plexus-compiler-api</artifactId>
+                <version>1.5.1</version>
+            </dependency>
+            <dependency>
+                <groupId>org.codehaus.plexus</groupId>
+                <artifactId>plexus-archiver</artifactId>
+                <version>1.0-alpha-3</version>
+            </dependency>
+            <dependency>
+                <groupId>jdom</groupId>
+                <artifactId>jdom</artifactId>
+                <version>1.0</version>
+            </dependency>
+            <dependency>
+                <groupId>bcel</groupId>
+                <artifactId>bcel</artifactId>
+                <version>5.1</version>
+            </dependency>
+            <dependency>
+                <groupId>junit</groupId>
+                <artifactId>junit</artifactId>
+                <version>3.8.2</version>
+                <scope>compile</scope>
+            </dependency>
+        </dependencies>
+    </dependencyManagement>
+    <distributionManagement>
+        <repository>
+            <id>freehep-maven-deploy</id>
+            <name>FreeHEP Maven Repository</name>
+            <url>scpexe://${deployHost}/nfs/slac/g/jas/maven2</url>
+        </repository>
+        <site>
+            <id>freehep-web-deploy</id>
+            <url>scpexe://${deployHost}/nfs/slac/g/jas/workspace/freehep/__star__/web/freehep</url>
+        </site>
+    </distributionManagement>
+    <properties>
+        <mavenIbiblio>http://www.ibiblio.org/maven2</mavenIbiblio>
+        <mavenFreehepSlacOnly>http://java.freehep.org/maven2-slaconly</mavenFreehepSlacOnly>
+        <deployHost>svn.freehep.org</deployHost>
+        <svnHost>svn.freehep.org</svnHost>
+        <mavenFreehep>http://java.freehep.org/maven2</mavenFreehep>
+        <slac>SLAC National Accelerator Laboratory</slac>
+        <slacUrl>http://www.slac.stanford.edu</slacUrl>
+        <!--    <lal>LAL - Laboratoire de l'Acc&eacute;l&eacute;rateur Lin&eacute;aire</lal> -->
+        <lal>LAL - Laboratoire de l'Accelerateur Lineaire</lal>
+        <lalUrl>http://www.lal.in2p3.fr</lalUrl>
+        <cern>CERN - European Organization for Nuclear Research</cern>
+        <cernUrl>http://www.cern.ch</cernUrl>
+        <scipp>SCIPP - Santa Cruz Institute for Particle Physics</scipp>
+        <scipUrl>http://scipp.ucsc.edu</scipUrl>
+        <sourceLevel>1.5</sourceLevel>
+    </properties>
+    <profiles>
+        <profile>
+            <id>maven-one-publish</id>
+            <activation>
+                <property>
+                    <name>updateReleaseInfo</name>
+                </property>
+            </activation>
+            <build>
+                <plugins>
+                    <plugin>
+                        <artifactId>maven-one-plugin</artifactId>
+                        <extensions>true</extensions>
+                        <executions>
+                            <execution>
+                                <id>maven-one-install</id>
+                                <goals>
+                                    <goal>install-maven-one-repository</goal>
+                                </goals>
+                            </execution>
+                            <execution>
+                                <id>maven-one-deploy</id>
+                                <configuration>
+                                    <remoteRepositoryId>freehep-maven1-deploy</remoteRepositoryId>
+                                    <remoteRepositoryUrl>scpexe://svn.freehep.org/nfs/slac/g/jas/maven</remoteRepositoryUrl>
+                                </configuration>
+                                <goals>
+                                    <goal>deploy-maven-one-repository</goal>
+                                </goals>
+                            </execution>
+                        </executions>
+                    </plugin>
+                </plugins>
+            </build>
+        </profile>
+        <profile>
+            <id>proprietary</id>
+            <activation>
+                <property>
+                    <name>proprietary</name>
+                </property>
+            </activation>
+            <repositories>
+                <repository>
+                    <id>freehep-maven-slaconly</id>
+                    <name>Maven FreeHEP SLAC Only</name>
+                    <url>${mavenFreehepSlacOnly}</url>
+                </repository>
+            </repositories>
+        </profile>
+    </profiles>
+</project>

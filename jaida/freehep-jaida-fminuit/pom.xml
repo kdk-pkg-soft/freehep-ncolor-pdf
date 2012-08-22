@@ -1,0 +1,59 @@
+<?xml version="1.0"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
+    <parent>
+        <artifactId>jaida-pom</artifactId>
+        <groupId>org.freehep</groupId>
+        <version>3.3.0-13-SNAPSHOT</version>
+    </parent>
+    <modelVersion>4.0.0</modelVersion>
+    <groupId>org.freehep</groupId>
+    <artifactId>freehep-jaida-fminuit</artifactId>
+    <name>FreeHEP JAIDA FMinuit</name>
+    <description>FreeHEP JAIDA Fortran MINUIT Connector</description>
+    <packaging>nar</packaging>
+    <repositories>
+        <repository>
+            <id>freehep-maven</id>
+            <name>Maven FreeHEP</name>
+            <url>http://java.freehep.org/maven2</url>
+        </repository>
+    </repositories>
+    <build>
+        <plugins>
+            <plugin>
+                <groupId>org.freehep</groupId>
+                <artifactId>freehep-nar-plugin</artifactId>
+                <version>2.0-alpha-10</version>
+            </plugin>
+            <plugin>
+                <artifactId>maven-surefire-plugin</artifactId>
+                <configuration>
+                    <skip>true</skip>
+                </configuration>
+            </plugin>
+        </plugins>
+    </build>
+    <dependencies>
+        <dependency>
+            <groupId>org.freehep</groupId>
+            <artifactId>freehep-jaida</artifactId>
+            <version>${pom.version}</version>
+        </dependency>
+        <dependency>
+            <groupId>org.freehep</groupId>
+            <artifactId>freehep-fminuit</artifactId>
+            <version>2.1.2</version>
+        </dependency>
+        <dependency>
+            <groupId>org.freehep</groupId>
+            <artifactId>fortran</artifactId>
+            <version>1.1</version>
+        </dependency>
+        <dependency>
+            <groupId>junit</groupId>
+            <artifactId>junit</artifactId>
+            <version>3.8.2</version>
+            <scope>compile</scope>
+        </dependency>
+    </dependencies>
+</project>

@@ -1,0 +1,1301 @@
+<?xml version="1.0" encoding="ISO-8859-1"?> 
+<!--=============================================================================--> 
+<!-- Copyright of file, 2000, CERN, Geneva, Switzerland. (yappi.freehep.org)     --> 
+<!-- Copyright of data, 2000, PDG. (pdg.lbl.gov)                                 --> 
+<!--=============================================================================--> 
+<!-- ATTENTION: this file is GENERATED. To override values, use a different file --> 
+<!--=============================================================================--> 
+<PPML source="PDG-2000-Generated" xmlns:ppml="http://www.w3.org/1999/XMLSchema-instance" 
+      ppml:nonamespaceSchemaLocation='ppml.xsd'> 
+   <ParticleType name="gamma" texName="\gamma" antiName="gammabar" antiTexName="\overline{\gamma}" > 
+      <Data name="PDGID" value="22" /> 
+      <Data name="Charge" value="0" /> 
+   </ParticleType> 
+   <ParticleType name="g" texName="g\;---\;or\;gluon" antiName="g" antiTexName="\overline{g\;---\;or\;gluon}" > 
+   </ParticleType> 
+   <ParticleType name="W+" texName="W" antiName="Wbar" antiTexName="\overline{W}" > 
+      <Data name="PDGID" value="24" /> 
+      <Data name="Charge" value="+1" /> 
+      <Data name="Mass"     texName="Mass $m$" value="80.419" posError="0.056" negError="0.056" unit="GeV"/> 
+      <Data name="Width"    texName="Full Width $\Gamma$" value="2.12" posError="0.05" negError="0.05" unit="GeV"/> 
+   </ParticleType> 
+   <ParticleType name="Z" texName="Z" antiName="Zbar" antiTexName="\overline{Z}" > 
+      <Data name="PDGID" value="23" /> 
+      <Data name="Charge" value="0" /> 
+      <Data name="Mass"     texName="Mass $m$" value="91.1882" posError="0.0022" negError="0.0022" unit="GeV"/> 
+      <Data name="Width"    texName="Full Width $\Gamma$" value="2.4952" posError="0.0026" negError="0.0026" unit="GeV"/> 
+   </ParticleType> 
+   <ParticleType name="HiggsBosons---H0andH+,Searchesfor" texName="Higgs\;Bosons\;---\;H^{0}and\;H^{+},\;Searches\;for" antiName="HiggsBosons---H0andH-,Searchesfor" antiTexName="Higgs\;Bosons\;---\;H^{0}and\;H^{-},\;Searches\;for" > 
+   </ParticleType> 
+   <ParticleType name="HeavyBosonsOtherThan---HiggsBosons,Searchesfor" texName="Heavy\;Bosons\;Other\;Than\;---\;Higgs\;Bosons,\;Searches\;for" antiName="HeavyBosonsOtherThan---HiggsBosons,Searchesforbar" antiTexName="\overline{Heavy\;Bosons\;Other\;Than\;---\;Higgs\;Bosons,\;Searches\;for}" > 
+   </ParticleType> 
+   <ParticleType name="Axions(A0)andOther---VeryLightBosons,Searchesfor" texName="Axions\;(A^{0})\;and\;Other\;---\;Very\;Light\;Bosons,\;Searches\;for" antiName="Axions(A0bar)andOther---VeryLightBosons,Searchesfor" antiTexName="\overline{Axions\;(A^{0})\;and\;Other\;---\;Very\;Light\;Bosons,\;Searches\;for}" > 
+   </ParticleType> 
+   <ParticleType name="e-" texName="e^{-}" antiName="e+" antiTexName="e^{+}" > 
+      <Data name="PDGID" value="11" /> 
+      <Data name="Charge" value="-1" /> 
+      <Data name="Mass"     texName="Mass $m$" value="0.510998902" posError="0.000000021" negError="0.000000021" unit="MeV"/> 
+   </ParticleType> 
+   <ParticleType name="mu-" texName="mu" antiName="mubar" antiTexName="\overline{mu}" > 
+      <Data name="PDGID" value="13" /> 
+      <Data name="Charge" value="-1" /> 
+      <Data name="Mass"     texName="Mass $m$" value="105.658357" posError="0.000005" negError="0.000005" unit="MeV"/> 
+      <Data name="LifeTime" texName="Mean Life $\tau$" value="2.19703E-6" posError="0.00004E-6" negError="0.00004E-6" unit="s"/> 
+   </ParticleType> 
+   <ParticleType name="tau-" texName="\tau^{-}}" antiName="tau+" antiTexName="\tau^{+}" > 
+      <Data name="PDGID" value="15" /> 
+      <Data name="Charge" value="-1" /> 
+      <Data name="Mass"     texName="Mass $m$" value="1777.03" posError="0.30" negError="0.26" unit="MeV"/> 
+      <Data name="LifeTime" texName="Mean Life $\tau$" value="290.6E-15" posError="1.1E-15" negError="1.1E-15" unit="s"/> 
+   </ParticleType> 
+   <ParticleType name="HeavyChargedLeptonSearches" texName="Heavy\;Charged\;Lepton\;Searches" antiName="HeavyChargedLeptonSearchesbar" antiTexName="\overline{Heavy\;Charged\;Lepton\;Searches}" > 
+   </ParticleType> 
+   <ParticleType name="Neutrinos" texName="Neutrinos" antiName="Neutrinosbar" antiTexName="\overline{Neutrinos}" > 
+   </ParticleType> 
+   <ParticleType name="nu(e)" texName="nu_{e}" antiName="nu(ebar)" antiTexName="\overline{nu_{e}}" > 
+      <Data name="PDGID" value="12" /> 
+      <Data name="Charge" value="0" /> 
+   </ParticleType> 
+   <ParticleType name="nu(mu)" texName="nu_{mu}" antiName="nu(mubar)" antiTexName="\overline{nu_{mu}}" > 
+      <Data name="PDGID" value="14" /> 
+      <Data name="Charge" value="0" /> 
+   </ParticleType> 
+   <ParticleType name="nu(tau)" texName="nu_{\tau}" antiName="nu(taubar)" antiTexName="\overline{nu_{\tau}}" > 
+      <Data name="PDGID" value="16" /> 
+      <Data name="Charge" value="0" /> 
+   </ParticleType> 
+   <ParticleType name="NumberofLightNeutrinoTypes" texName="Numb\;er\;of\;Light\;Neutrino\;Typ\;es" antiName="NumberofLightNeutrinoTypesbar" antiTexName="\overline{Numb\;er\;of\;Light\;Neutrino\;Typ\;es}" > 
+   </ParticleType> 
+   <ParticleType name="MassiveNeutrinosand---LeptonMixing,Searchesfor+" texName="Massive\;Neutrinos\;and\;---\;Lepton\;Mixing,\;Searches\;for" antiName="MassiveNeutrinosand---LeptonMixing,Searchesforbar+" antiTexName="\overline{Massive\;Neutrinos\;and\;---\;Lepton\;Mixing,\;Searches\;for}" > 
+   </ParticleType> 
+   <ParticleType name="u" texName="u" antiName="ubar" antiTexName="\overline{u}" > 
+   </ParticleType> 
+   <ParticleType name="d" texName="d" antiName="dbar" antiTexName="\overline{d}" > 
+   </ParticleType> 
+   <ParticleType name="s" texName="s" antiName="sbar" antiTexName="\overline{s}" > 
+   </ParticleType> 
+   <ParticleType name="c" texName="c" antiName="cbar" antiTexName="\overline{c}" > 
+   </ParticleType> 
+   <ParticleType name="b" texName="b" antiName="bbar" antiTexName="\overline{b}" > 
+   </ParticleType> 
+   <ParticleType name="t" texName="t" antiName="tbar" antiTexName="\overline{t}" > 
+      <Data name="PDGID" value="6" /> 
+      <Data name="Charge" value="0" /> 
+      <Data name="Mass"     texName="Mass $m$" value="174.3" posError="5.1" negError="5.1" unit="GeV"/> 
+   </ParticleType> 
+   <ParticleType name="b'(4thGeneration)Quark,Searchesfor" texName="b^{\prime}(4^{th}Generation)\;Quark,\;Searches\;for" antiName="b'bar(4thGeneration)Quark,Searchesfor" antiTexName="\overline{b^{\prime}(4^{th}Generation)\;Quark,\;Searches\;for}" > 
+   </ParticleType> 
+   <ParticleType name="FreeQuarkSearches" texName="Free\;Quark\;Searches" antiName="FreeQuarkSearchesbar" antiTexName="\overline{Free\;Quark\;Searches}" > 
+   </ParticleType> 
+   <ParticleType name="pi+" texName="pi^{+}" antiName="pi-" antiTexName="pi^{-}" > 
+      <Data name="PDGID" value="211" /> 
+      <Data name="Charge" value="+1" /> 
+      <Data name="Mass"     texName="Mass $m$" value="139.57018" posError="0.00035" negError="0.00035" unit="MeV"/> 
+      <Data name="LifeTime" texName="Mean Life $\tau$" value="2.6033E-8" posError="0.0005E-8" negError="0.0005E-8" unit="s"/> 
+   </ParticleType> 
+   <ParticleType name="pi0" texName="pi^{0}" antiName="pi0bar" antiTexName="\overline{pi^{0}}" > 
+      <Data name="PDGID" value="111" /> 
+      <Data name="Charge" value="0" /> 
+      <Data name="Mass"     texName="Mass $m$" value="134.9766" posError="0.0006" negError="0.0006" unit="MeV"/> 
+      <Data name="LifeTime" texName="Mean Life $\tau$" value="8.4E-17" posError="0.6E-17" negError="0.6E-17" unit="s"/> 
+   </ParticleType> 
+   <ParticleType name="eta" texName="\eta" antiName="etabar" antiTexName="\overline{\eta}" > 
+      <Data name="PDGID" value="221" /> 
+      <Data name="Charge" value="0" /> 
+      <Data name="Mass"     texName="Mass $m$" value="547.30" posError="0.12" negError="0.12" unit="MeV"/> 
+      <Data name="Width"    texName="Full Width $\Gamma$" value="1.18" posError="0.11" negError="0.11" unit="keV"/> 
+   </ParticleType> 
+   <ParticleType name="f(0)(400--1200)" texName="f_{0}(400--1200)\;---\;or\;\sigma" antiName="f(0bar(400--1200)" antiTexName="\overline{f_{0}(400--1200)\;---\;or\;\sigma}" > 
+   </ParticleType> 
+   <ParticleType name="rho(770)0" texName="\rho(770)" antiName="rho(770)bar0" antiTexName="\overline{\rho(770)}" > 
+      <Data name="PDGID" value="113" /> 
+      <Data name="Charge" value="0" /> 
+      <Data name="Mass"     texName="Mass $m$" value="769.3" posError="0.8" negError="0.8" unit="MeV"/> 
+      <Data name="Width"    texName="Full Width $\Gamma$" value="150.2" posError="0.8" negError="0.8" unit="MeV"/> 
+   </ParticleType> 
+   <ParticleType name="rho(770)+" texName="\rho(770)" antiName="rho(770)bar+" antiTexName="\overline{\rho(770)}" > 
+      <Data name="PDGID" value="213" /> 
+      <Data name="Charge" value="+1" /> 
+      <Data name="Mass"     texName="Mass $m$" value="769.3" posError="0.8" negError="0.8" unit="MeV"/> 
+      <Data name="Width"    texName="Full Width $\Gamma$" value="150.2" posError="0.8" negError="0.8" unit="MeV"/> 
+   </ParticleType> 
+   <ParticleType name="omega(782)" texName="\omega\;(782)" antiName="omega(782)bar" antiTexName="\overline{\omega\;(782)}" > 
+      <Data name="PDGID" value="223" /> 
+      <Data name="Charge" value="0" /> 
+      <Data name="Mass"     texName="Mass $m$" value="782.57" posError="0.12" negError="0.12" unit="MeV"/> 
+      <Data name="Width"    texName="Full Width $\Gamma$" value="8.44" posError="0.09" negError="0.09" unit="MeV"/> 
+   </ParticleType> 
+   <ParticleType name="eta'(958)" texName="\eta^{\prime}(958)" antiName="eta'bar(958)" antiTexName="\overline{\eta^{\prime}(958)}" > 
+      <Data name="PDGID" value="331" /> 
+      <Data name="Charge" value="0" /> 
+      <Data name="Mass"     texName="Mass $m$" value="957.78" posError="0.14" negError="0.14" unit="MeV"/> 
+      <Data name="Width"    texName="Full Width $\Gamma$" value="0.202" posError="0.016" negError="0.016" unit="MeV"/> 
+   </ParticleType> 
+   <ParticleType name="f(0)(980)" texName="f_{0}(980)" antiName="f(0bar(980))" antiTexName="\overline{f_{0}(980)}" > 
+      <Data name="PDGID" value="9010221" /> 
+      <Data name="Charge" value="0" /> 
+      <Data name="Mass"     texName="Mass $m$" value="980" posError="10" negError="10" unit="MeV"/> 
+   </ParticleType> 
+   <ParticleType name="a(0)(980)0" texName="a_{0}(980)" antiName="a(0bar(980))0" antiTexName="\overline{a_{0}(980)}" > 
+      <Data name="PDGID" value="9000111" /> 
+      <Data name="Charge" value="0" /> 
+      <Data name="Mass"     texName="Mass $m$" value="984.8" posError="1.4" negError="1.4" unit="MeV"/> 
+   </ParticleType> 
+   <ParticleType name="a(0)(980)+" texName="a_{0}(980)" antiName="a(0bar(980))+" antiTexName="\overline{a_{0}(980)}" > 
+      <Data name="PDGID" value="9000211" /> 
+      <Data name="Charge" value="+1" /> 
+      <Data name="Mass"     texName="Mass $m$" value="984.8" posError="1.4" negError="1.4" unit="MeV"/> 
+   </ParticleType> 
+   <ParticleType name="phi(1020)" texName="\phi(1020)" antiName="phi(1020)bar" antiTexName="\overline{\phi(1020)}" > 
+      <Data name="PDGID" value="333" /> 
+      <Data name="Charge" value="0" /> 
+      <Data name="Mass"     texName="Mass $m$" value="1019.417" posError="0.014" negError="0.014" unit="MeV"/> 
+      <Data name="Width"    texName="Full Width $\Gamma$" value="4.458" posError="0.032" negError="0.032" unit="MeVScale"/> 
+   </ParticleType> 
+   <ParticleType name="h(1)(1170)" texName="h_{1}(1170)" antiName="h(1bar(1170))" antiTexName="\overline{h_{1}(1170)}" > 
+      <Data name="PDGID" value="10223" /> 
+      <Data name="Charge" value="0" /> 
+      <Data name="Mass"     texName="Mass $m$" value="1170" posError="20" negError="20" unit="MeV"/> 
+      <Data name="Width"    texName="Full Width $\Gamma$" value="360" posError="40" negError="40" unit="MeV"/> 
+   </ParticleType> 
+   <ParticleType name="b(1)(1235)0" texName="b_{1}(1235)" antiName="b(1bar(1235))0" antiTexName="\overline{b_{1}(1235)}" > 
+      <Data name="PDGID" value="10113" /> 
+      <Data name="Charge" value="0" /> 
+      <Data name="Mass"     texName="Mass $m$" value="1229.5" posError="3.2" negError="3.2" unit="MeV"/> 
+      <Data name="Width"    texName="Full Width $\Gamma$" value="142" posError="9" negError="9" unit="MeV"/> 
+   </ParticleType> 
+   <ParticleType name="b(1)(1235)+" texName="b_{1}(1235)" antiName="b(1bar(1235))+" antiTexName="\overline{b_{1}(1235)}" > 
+      <Data name="PDGID" value="10213" /> 
+      <Data name="Charge" value="+1" /> 
+      <Data name="Mass"     texName="Mass $m$" value="1229.5" posError="3.2" negError="3.2" unit="MeV"/> 
+      <Data name="Width"    texName="Full Width $\Gamma$" value="142" posError="9" negError="9" unit="MeV"/> 
+   </ParticleType> 
+   <ParticleType name="a(1)(1260)0" texName="a_{1}(1260)" antiName="a(1bar(1260))0" antiTexName="\overline{a_{1}(1260)}" > 
+      <Data name="PDGID" value="20113" /> 
+      <Data name="Charge" value="0" /> 
+      <Data name="Mass"     texName="Mass $m$" value="1230" posError="40" negError="40" unit="MeV"/> 
+   </ParticleType> 
+   <ParticleType name="a(1)(1260)+" texName="a_{1}(1260)" antiName="a(1bar(1260))+" antiTexName="\overline{a_{1}(1260)}" > 
+      <Data name="PDGID" value="20213" /> 
+      <Data name="Charge" value="+1" /> 
+      <Data name="Mass"     texName="Mass $m$" value="1230" posError="40" negError="40" unit="MeV"/> 
+   </ParticleType> 
+   <ParticleType name="f(2)(1270)" texName="f_{2}(1270)" antiName="f(2bar(1270))" antiTexName="\overline{f_{2}(1270)}" > 
+      <Data name="PDGID" value="225" /> 
+      <Data name="Charge" value="0" /> 
+      <Data name="Mass"     texName="Mass $m$" value="1275.4" posError="1.2" negError="1.2" unit="MeV"/> 
+      <Data name="Width"    texName="Full Width $\Gamma$" value="185.1" posError="3.4" negError="2.6" unit="MeV"/> 
+   </ParticleType> 
+   <ParticleType name="f(1)(1285)" texName="f_{1}(1285)" antiName="f(1bar(1285))" antiTexName="\overline{f_{1}(1285)}" > 
+      <Data name="PDGID" value="20223" /> 
+      <Data name="Charge" value="0" /> 
+      <Data name="Mass"     texName="Mass $m$" value="1281.9" posError="0.6" negError="0.6" unit="MeV"/> 
+      <Data name="Width"    texName="Full Width $\Gamma$" value="24.0" posError="1.2" negError="1.2" unit="MeV"/> 
+   </ParticleType> 
+   <ParticleType name="eta(1295)" texName="\eta\;(1295)" antiName="eta(1295)bar" antiTexName="\overline{\eta\;(1295)}" > 
+      <Data name="PDGID" value="100221" /> 
+      <Data name="Charge" value="0" /> 
+      <Data name="Mass"     texName="Mass $m$" value="1297.0" posError="2.8" negError="2.8" unit="MeV"/> 
+      <Data name="Width"    texName="Full Width $\Gamma$" value="53" posError="6" negError="6" unit="MeV"/> 
+   </ParticleType> 
+   <ParticleType name="pi(1300)0" texName="pi\;(1300)" antiName="pi(1300)bar0" antiTexName="\overline{pi\;(1300)}" > 
+      <Data name="PDGID" value="100111" /> 
+      <Data name="Charge" value="0" /> 
+      <Data name="Mass"     texName="Mass $m$" value="1300" posError="100" negError="100" unit="MeV"/> 
+   </ParticleType> 
+   <ParticleType name="pi(1300)+" texName="pi\;(1300)" antiName="pi(1300)bar+" antiTexName="\overline{pi\;(1300)}" > 
+      <Data name="PDGID" value="100211" /> 
+      <Data name="Charge" value="+1" /> 
+      <Data name="Mass"     texName="Mass $m$" value="1300" posError="100" negError="100" unit="MeV"/> 
+   </ParticleType> 
+   <ParticleType name="a(2)(1320)0" texName="a_{2}(1320)" antiName="a(2bar(1320))0" antiTexName="\overline{a_{2}(1320)}" > 
+      <Data name="PDGID" value="115" /> 
+      <Data name="Charge" value="0" /> 
+      <Data name="Mass"     texName="Mass $m$" value="1318.0" posError="0.6" negError="0.6" unit="MeV"/> 
+      <Data name="Width"    texName="Full Width $\Gamma$" value="107" posError="5" negError="5" unit="MeV"/> 
+   </ParticleType> 
+   <ParticleType name="a(2)(1320)+" texName="a_{2}(1320)" antiName="a(2bar(1320))+" antiTexName="\overline{a_{2}(1320)}" > 
+      <Data name="PDGID" value="215" /> 
+      <Data name="Charge" value="+1" /> 
+      <Data name="Mass"     texName="Mass $m$" value="1318.0" posError="0.6" negError="0.6" unit="MeV"/> 
+      <Data name="Width"    texName="Full Width $\Gamma$" value="107" posError="5" negError="5" unit="MeV"/> 
+   </ParticleType> 
+   <ParticleType name="f(0)(1370)" texName="f_{0}(1370)" antiName="f(0bar(1370))" antiTexName="\overline{f_{0}(1370)}" > 
+   </ParticleType> 
+   <ParticleType name="f(1)(1420)" texName="f_{1}(1420)" antiName="f(1bar(1420))" antiTexName="\overline{f_{1}(1420)}" > 
+      <Data name="PDGID" value="30223" /> 
+      <Data name="Charge" value="0" /> 
+      <Data name="Mass"     texName="Mass $m$" value="1426.3" posError="1.1" negError="1.1" unit="MeV"/> 
+      <Data name="Width"    texName="Full Width $\Gamma$" value="55.5" posError="2.9" negError="2.9" unit="MeVf"/> 
+   </ParticleType> 
+   <ParticleType name="omega(1420)" texName="\omega\;(1420)" antiName="omega(1420)bar" antiTexName="\overline{\omega\;(1420)}" > 
+      <Data name="PDGID" value="100223" /> 
+      <Data name="Charge" value="0" /> 
+      <Data name="Mass"     texName="Mass $m$" value="1419" posError="31" negError="31" unit="MeV"/> 
+      <Data name="Width"    texName="Full Width $\Gamma$" value="174" posError="60" negError="60" unit="MeV"/> 
+   </ParticleType> 
+   <ParticleType name="eta(1440)" texName="\eta\;(1440)" antiName="eta(1440)bar" antiTexName="\overline{\eta\;(1440)}" > 
+   </ParticleType> 
+   <ParticleType name="a(0)(1450)0" texName="a_{0}(1450)" antiName="a(0bar(1450))0" antiTexName="\overline{a_{0}(1450)}" > 
+      <Data name="PDGID" value="10111" /> 
+      <Data name="Charge" value="0" /> 
+      <Data name="Mass"     texName="Mass $m$" value="1474" posError="19" negError="19" unit="MeV"/> 
+      <Data name="Width"    texName="Full Width $\Gamma$" value="265" posError="13" negError="13" unit="MeV"/> 
+   </ParticleType> 
+   <ParticleType name="a(0)(1450)+" texName="a_{0}(1450)" antiName="a(0bar(1450))+" antiTexName="\overline{a_{0}(1450)}" > 
+      <Data name="PDGID" value="10211" /> 
+      <Data name="Charge" value="+1" /> 
+      <Data name="Mass"     texName="Mass $m$" value="1474" posError="19" negError="19" unit="MeV"/> 
+      <Data name="Width"    texName="Full Width $\Gamma$" value="265" posError="13" negError="13" unit="MeV"/> 
+   </ParticleType> 
+   <ParticleType name="rho(1450)0" texName="\rho(1450)" antiName="rho(1450)bar0" antiTexName="\overline{\rho(1450)}" > 
+      <Data name="PDGID" value="100113" /> 
+      <Data name="Charge" value="0" /> 
+      <Data name="Mass"     texName="Mass $m$" value="1465" posError="25" negError="25" unit="MeV"/> 
+      <Data name="Width"    texName="Full Width $\Gamma$" value="310" posError="60" negError="60" unit="MeV"/> 
+   </ParticleType> 
+   <ParticleType name="rho(1450)+" texName="\rho(1450)" antiName="rho(1450)bar+" antiTexName="\overline{\rho(1450)}" > 
+      <Data name="PDGID" value="100213" /> 
+      <Data name="Charge" value="+1" /> 
+      <Data name="Mass"     texName="Mass $m$" value="1465" posError="25" negError="25" unit="MeV"/> 
+      <Data name="Width"    texName="Full Width $\Gamma$" value="310" posError="60" negError="60" unit="MeV"/> 
+   </ParticleType> 
+   <ParticleType name="f(0)(1500)" texName="f_{0}(1500)" antiName="f(0bar(1500))" antiTexName="\overline{f_{0}(1500)}" > 
+      <Data name="PDGID" value="9020221" /> 
+      <Data name="Charge" value="0" /> 
+      <Data name="Mass"     texName="Mass $m$" value="1500" posError="10" negError="10" unit="MeV"/> 
+      <Data name="Width"    texName="Full Width $\Gamma$" value="112" posError="10" negError="10" unit="MeV"/> 
+   </ParticleType> 
+   <ParticleType name="f(2)'(1525)" texName="f^{\prime}_{2}(1525)" antiName="f'bar(2)(1525)" antiTexName="\overline{f^{\prime}_{2}(1525)}" > 
+      <Data name="PDGID" value="335" /> 
+      <Data name="Charge" value="0" /> 
+      <Data name="Mass"     texName="Mass $m$" value="1525" posError="5" negError="5" unit="MeV"/> 
+      <Data name="Width"    texName="Full Width $\Gamma$" value="76" posError="10" negError="10" unit="MeV"/> 
+   </ParticleType> 
+   <ParticleType name="omega(1650)" texName="\omega\;(1650)\;---\;was\;\omega\;(1600)" antiName="omega(1650)" antiTexName="\overline{\omega\;(1650)\;---\;was\;\omega\;(1600)}" > 
+      <Data name="PDGID" value="60223" /> 
+      <Data name="Charge" value="0" /> 
+      <Data name="Mass"     texName="Mass $m$" value="1649" posError="24" negError="24" unit="MeV"/> 
+      <Data name="Width"    texName="Full Width $\Gamma$" value="220" posError="35" negError="35" unit="MeV"/> 
+   </ParticleType> 
+   <ParticleType name="omega(3)(1670)" texName="\omega_{3}(1670)" antiName="omega(3bar(1670))" antiTexName="\overline{\omega_{3}(1670)}" > 
+      <Data name="PDGID" value="227" /> 
+      <Data name="Charge" value="0" /> 
+      <Data name="Mass"     texName="Mass $m$" value="1667" posError="4" negError="4" unit="MeV"/> 
+      <Data name="Width"    texName="Full Width $\Gamma$" value="168" posError="10" negError="10" unit="MeV"/> 
+   </ParticleType> 
+   <ParticleType name="pi(2)(1670)0" texName="pi_{2}(1670)" antiName="pi(2bar(1670))0" antiTexName="\overline{pi_{2}(1670)}" > 
+      <Data name="PDGID" value="10115" /> 
+      <Data name="Charge" value="0" /> 
+      <Data name="Mass"     texName="Mass $m$" value="1670" posError="20" negError="20" unit="MeV"/> 
+      <Data name="Width"    texName="Full Width $\Gamma$" value="259" posError="11" negError="11" unit="MeV"/> 
+   </ParticleType> 
+   <ParticleType name="pi(2)(1670)+" texName="pi_{2}(1670)" antiName="pi(2bar(1670))+" antiTexName="\overline{pi_{2}(1670)}" > 
+      <Data name="PDGID" value="10215" /> 
+      <Data name="Charge" value="+1" /> 
+      <Data name="Mass"     texName="Mass $m$" value="1670" posError="20" negError="20" unit="MeV"/> 
+      <Data name="Width"    texName="Full Width $\Gamma$" value="259" posError="11" negError="11" unit="MeV"/> 
+   </ParticleType> 
+   <ParticleType name="phi(1680)" texName="\phi(1680)" antiName="phi(1680)bar" antiTexName="\overline{\phi(1680)}" > 
+      <Data name="PDGID" value="100333" /> 
+      <Data name="Charge" value="0" /> 
+      <Data name="Mass"     texName="Mass $m$" value="1680" posError="20" negError="20" unit="MeV"/> 
+      <Data name="Width"    texName="Full Width $\Gamma$" value="150" posError="50" negError="50" unit="MeV"/> 
+   </ParticleType> 
+   <ParticleType name="rho(3)(1690)0" texName="\rho_{3}(1690)" antiName="rho(3bar(1690))0" antiTexName="\overline{\rho_{3}(1690)}" > 
+      <Data name="PDGID" value="117" /> 
+      <Data name="Charge" value="0" /> 
+      <Data name="Mass"     texName="Mass $m$" value="1691" posError="5" negError="5" unit="MeV"/> 
+      <Data name="Width"    texName="Full Width $\Gamma$" value="161" posError="10" negError="10" unit="MeV"/> 
+   </ParticleType> 
+   <ParticleType name="rho(3)(1690)+" texName="\rho_{3}(1690)" antiName="rho(3bar(1690))+" antiTexName="\overline{\rho_{3}(1690)}" > 
+      <Data name="PDGID" value="217" /> 
+      <Data name="Charge" value="+1" /> 
+      <Data name="Mass"     texName="Mass $m$" value="1691" posError="5" negError="5" unit="MeV"/> 
+      <Data name="Width"    texName="Full Width $\Gamma$" value="161" posError="10" negError="10" unit="MeV"/> 
+   </ParticleType> 
+   <ParticleType name="rho(1700)0" texName="\rho(1700)" antiName="rho(1700)bar0" antiTexName="\overline{\rho(1700)}" > 
+      <Data name="PDGID" value="30113" /> 
+      <Data name="Charge" value="0" /> 
+      <Data name="Mass"     texName="Mass $m$" value="1700" posError="20" negError="20" unit="MeV"/> 
+      <Data name="Width"    texName="Full Width $\Gamma$" value="240" posError="60" negError="60" unit="MeV"/> 
+   </ParticleType> 
+   <ParticleType name="rho(1700)+" texName="\rho(1700)" antiName="rho(1700)bar+" antiTexName="\overline{\rho(1700)}" > 
+      <Data name="PDGID" value="30213" /> 
+      <Data name="Charge" value="+1" /> 
+      <Data name="Mass"     texName="Mass $m$" value="1700" posError="20" negError="20" unit="MeV"/> 
+      <Data name="Width"    texName="Full Width $\Gamma$" value="240" posError="60" negError="60" unit="MeV"/> 
+   </ParticleType> 
+   <ParticleType name="f(0)(1710)" texName="f_{0}(1710)" antiName="f(0bar(1710))" antiTexName="\overline{f_{0}(1710)}" > 
+      <Data name="PDGID" value="10331" /> 
+      <Data name="Charge" value="0" /> 
+      <Data name="Mass"     texName="Mass $m$" value="1715" posError="7" negError="7" unit="MeV"/> 
+      <Data name="Width"    texName="Full Width $\Gamma$" value="125" posError="12" negError="12" unit="MeV"/> 
+   </ParticleType> 
+   <ParticleType name="pi(1800)0" texName="pi\;(1800)" antiName="pi(1800)bar0" antiTexName="\overline{pi\;(1800)}" > 
+      <Data name="PDGID" value="200111" /> 
+      <Data name="Charge" value="0" /> 
+      <Data name="Mass"     texName="Mass $m$" value="1801" posError="13" negError="13" unit="MeV"/> 
+      <Data name="Width"    texName="Full Width $\Gamma$" value="210" posError="15" negError="15" unit="MeV"/> 
+   </ParticleType> 
+   <ParticleType name="pi(1800)+" texName="pi\;(1800)" antiName="pi(1800)bar+" antiTexName="\overline{pi\;(1800)}" > 
+      <Data name="PDGID" value="200211" /> 
+      <Data name="Charge" value="+1" /> 
+      <Data name="Mass"     texName="Mass $m$" value="1801" posError="13" negError="13" unit="MeV"/> 
+      <Data name="Width"    texName="Full Width $\Gamma$" value="210" posError="15" negError="15" unit="MeV"/> 
+   </ParticleType> 
+   <ParticleType name="phi(3)(1850)" texName="\phi_{3}(1850)" antiName="phi(3bar(1850))" antiTexName="\overline{\phi_{3}(1850)}" > 
+      <Data name="PDGID" value="337" /> 
+      <Data name="Charge" value="0" /> 
+      <Data name="Mass"     texName="Mass $m$" value="1854" posError="7" negError="7" unit="MeV"/> 
+      <Data name="Width"    texName="Full Width $\Gamma$" value="87" posError="28" negError="23" unit="MeV"/> 
+   </ParticleType> 
+   <ParticleType name="f(2)(2010)" texName="f_{2}(2010)" antiName="f(2bar(2010))" antiTexName="\overline{f_{2}(2010)}" > 
+      <Data name="PDGID" value="100335" /> 
+      <Data name="Charge" value="0" /> 
+      <Data name="Mass"     texName="Mass $m$" value="2011" posError="60" negError="80" unit="MeV"/> 
+      <Data name="Width"    texName="Full Width $\Gamma$" value="202" posError="60" negError="60" unit="MeV"/> 
+   </ParticleType> 
+   <ParticleType name="a(4)(2040)0" texName="a_{4}(2040)" antiName="a(4bar(2040))0" antiTexName="\overline{a_{4}(2040)}" > 
+      <Data name="PDGID" value="119" /> 
+      <Data name="Charge" value="0" /> 
+      <Data name="Mass"     texName="Mass $m$" value="2014" posError="15" negError="15" unit="MeV"/> 
+      <Data name="Width"    texName="Full Width $\Gamma$" value="361" posError="50" negError="50" unit="MeV"/> 
+   </ParticleType> 
+   <ParticleType name="a(4)(2040)+" texName="a_{4}(2040)" antiName="a(4bar(2040))+" antiTexName="\overline{a_{4}(2040)}" > 
+      <Data name="PDGID" value="219" /> 
+      <Data name="Charge" value="+1" /> 
+      <Data name="Mass"     texName="Mass $m$" value="2014" posError="15" negError="15" unit="MeV"/> 
+      <Data name="Width"    texName="Full Width $\Gamma$" value="361" posError="50" negError="50" unit="MeV"/> 
+   </ParticleType> 
+   <ParticleType name="f(4)(2050)" texName="f_{4}(2050)" antiName="f(4bar(2050))" antiTexName="\overline{f_{4}(2050)}" > 
+      <Data name="PDGID" value="229" /> 
+      <Data name="Charge" value="0" /> 
+      <Data name="Mass"     texName="Mass $m$" value="2034" posError="11" negError="11" unit="MeV"/> 
+      <Data name="Width"    texName="Full Width $\Gamma$" value="222" posError="19" negError="19" unit="MeV"/> 
+   </ParticleType> 
+   <ParticleType name="f(2)(2300)" texName="f_{2}(2300)" antiName="f(2bar(2300))" antiTexName="\overline{f_{2}(2300)}" > 
+      <Data name="PDGID" value="9050225" /> 
+      <Data name="Charge" value="0" /> 
+      <Data name="Mass"     texName="Mass $m$" value="2297" posError="28" negError="28" unit="MeV"/> 
+      <Data name="Width"    texName="Full Width $\Gamma$" value="149" posError="40" negError="40" unit="MeV"/> 
+   </ParticleType> 
+   <ParticleType name="f(2)(2340)" texName="f_{2}(2340)" antiName="f(2bar(2340))" antiTexName="\overline{f_{2}(2340)}" > 
+      <Data name="PDGID" value="9060225" /> 
+      <Data name="Charge" value="0" /> 
+      <Data name="Mass"     texName="Mass $m$" value="2339" posError="60" negError="60" unit="MeV"/> 
+      <Data name="Width"    texName="Full Width $\Gamma$" value="319" posError="80" negError="70" unit="MeV"/> 
+   </ParticleType> 
+   <ParticleType name="K+" texName="K^{+}" antiName="K-" antiTexName="K^{-}" > 
+      <Data name="PDGID" value="321" /> 
+      <Data name="Charge" value="+1" /> 
+      <Data name="Mass"     texName="Mass $m$" value="493.677" posError="0.016" negError="0.016" unit="MeV"/> 
+      <Data name="LifeTime" texName="Mean Life $\tau$" value="1.2386E-8" posError="0.0024E-8" negError="0.0024E-8" unit="s"/> 
+   </ParticleType> 
+   <ParticleType name="K0" texName="K^{0}" antiName="K0bar" antiTexName="\overline{K^{0}}" > 
+      <Data name="PDGID" value="311" /> 
+      <Data name="Charge" value="0" /> 
+      <Data name="Mass"     texName="Mass $m$" value="497.672" posError="0.031" negError="0.031" unit="MeV"/> 
+   </ParticleType> 
+   <ParticleType name="K(S)0" texName="K^{0}_{S}" antiName="K0bar(S)" antiTexName="\overline{K^{0}_{S}}" > 
+      <Data name="PDGID" value="310" /> 
+      <Data name="Charge" value="0" /> 
+      <Data name="LifeTime" texName="Mean Life $\tau$" value="0.8935E-10" posError="0.0008E-10" negError="0.0008E-10" unit="s"/> 
+   </ParticleType> 
+   <ParticleType name="K(L)0" texName="K^{0}_{L}" antiName="K0bar(L)" antiTexName="\overline{K^{0}_{L}}" > 
+      <Data name="PDGID" value="130" /> 
+      <Data name="Charge" value="0" /> 
+      <Data name="LifeTime" texName="Mean Life $\tau$" value="5.17E-8" posError="0.04E-8" negError="0.04E-8" unit="s"/> 
+   </ParticleType> 
+   <ParticleType name="K*(892)+" texName="K^{\ast}(892)" antiName="K*bar(892)+" antiTexName="\overline{K^{\ast}(892)}" > 
+      <Data name="Mass"     texName="Mass $m$" value="891.66" posError="0.26" negError="0.26" unit="MeV"/> 
+      <Data name="Width"    texName="Full Width $\Gamma$" value="50.8" posError="0.9" negError="0.9" unit="MeVK"/> 
+   </ParticleType> 
+   <ParticleType name="K*(892)0" texName="K^{\ast}(892)" antiName="K*bar(892)0" antiTexName="\overline{K^{\ast}(892)}" > 
+      <Data name="Mass"     texName="Mass $m$" value="896.10" posError="0.27" negError="0.27" unit="MeV"/> 
+      <Data name="Width"    texName="Full Width $\Gamma$" value="50.7" posError="0.6" negError="0.6" unit="MeV"/> 
+   </ParticleType> 
+   <ParticleType name="K(1)(1270)0" texName="K_{1}(1270)" antiName="K(1bar(1270))0" antiTexName="\overline{K_{1}(1270)}" > 
+      <Data name="PDGID" value="10313" /> 
+      <Data name="Charge" value="0" /> 
+      <Data name="Mass"     texName="Mass $m$" value="1273" posError="7" negError="7" unit="MeV"/> 
+      <Data name="Width"    texName="Full Width $\Gamma$" value="90" posError="20" negError="20" unit="MeV"/> 
+   </ParticleType> 
+   <ParticleType name="K(1)(1270)+" texName="K_{1}(1270)" antiName="K(1bar(1270))+" antiTexName="\overline{K_{1}(1270)}" > 
+      <Data name="PDGID" value="10323" /> 
+      <Data name="Charge" value="+1" /> 
+      <Data name="Mass"     texName="Mass $m$" value="1273" posError="7" negError="7" unit="MeV"/> 
+      <Data name="Width"    texName="Full Width $\Gamma$" value="90" posError="20" negError="20" unit="MeV"/> 
+   </ParticleType> 
+   <ParticleType name="K(1)(1400)0" texName="K_{1}(1400)" antiName="K(1bar(1400))0" antiTexName="\overline{K_{1}(1400)}" > 
+      <Data name="PDGID" value="20313" /> 
+      <Data name="Charge" value="0" /> 
+      <Data name="Mass"     texName="Mass $m$" value="1402" posError="7" negError="7" unit="MeV"/> 
+      <Data name="Width"    texName="Full Width $\Gamma$" value="174" posError="13" negError="13" unit="MeV"/> 
+   </ParticleType> 
+   <ParticleType name="K(1)(1400)+" texName="K_{1}(1400)" antiName="K(1bar(1400))+" antiTexName="\overline{K_{1}(1400)}" > 
+      <Data name="PDGID" value="20323" /> 
+      <Data name="Charge" value="+1" /> 
+      <Data name="Mass"     texName="Mass $m$" value="1402" posError="7" negError="7" unit="MeV"/> 
+      <Data name="Width"    texName="Full Width $\Gamma$" value="174" posError="13" negError="13" unit="MeV"/> 
+   </ParticleType> 
+   <ParticleType name="K*(1410)0" texName="K^{\ast}(1410)" antiName="K*bar(1410)0" antiTexName="\overline{K^{\ast}(1410)}" > 
+      <Data name="PDGID" value="100313" /> 
+      <Data name="Charge" value="0" /> 
+      <Data name="Mass"     texName="Mass $m$" value="1414" posError="15" negError="15" unit="MeV"/> 
+      <Data name="Width"    texName="Full Width $\Gamma$" value="232" posError="21" negError="21" unit="MeV"/> 
+   </ParticleType> 
+   <ParticleType name="K*(1410)+" texName="K^{\ast}(1410)" antiName="K*bar(1410)+" antiTexName="\overline{K^{\ast}(1410)}" > 
+      <Data name="PDGID" value="100323" /> 
+      <Data name="Charge" value="+1" /> 
+      <Data name="Mass"     texName="Mass $m$" value="1414" posError="15" negError="15" unit="MeV"/> 
+      <Data name="Width"    texName="Full Width $\Gamma$" value="232" posError="21" negError="21" unit="MeV"/> 
+   </ParticleType> 
+   <ParticleType name="K(0)*(1430)0" texName="K^{\ast}_{0}(1430)" antiName="K*bar(0)(1430)0" antiTexName="\overline{K^{\ast}_{0}(1430)}" > 
+      <Data name="PDGID" value="10311" /> 
+      <Data name="Charge" value="0" /> 
+      <Data name="Mass"     texName="Mass $m$" value="1412" posError="6" negError="6" unit="MeV"/> 
+      <Data name="Width"    texName="Full Width $\Gamma$" value="294" posError="23" negError="23" unit="MeV"/> 
+   </ParticleType> 
+   <ParticleType name="K(0)*(1430)+" texName="K^{\ast}_{0}(1430)" antiName="K*bar(0)(1430)+" antiTexName="\overline{K^{\ast}_{0}(1430)}" > 
+      <Data name="PDGID" value="10321" /> 
+      <Data name="Charge" value="+1" /> 
+      <Data name="Mass"     texName="Mass $m$" value="1412" posError="6" negError="6" unit="MeV"/> 
+      <Data name="Width"    texName="Full Width $\Gamma$" value="294" posError="23" negError="23" unit="MeV"/> 
+   </ParticleType> 
+   <ParticleType name="K(2)*(1430)+" texName="K^{\ast}_{2}(1430)" antiName="K*bar(2)(1430)+" antiTexName="\overline{K^{\ast}_{2}(1430)}" > 
+      <Data name="Mass"     texName="Mass $m$" value="1425.6" posError="1.5" negError="1.5" unit="MeV"/> 
+      <Data name="Width"    texName="Full Width $\Gamma$" value="98.5" posError="2.7" negError="2.7" unit="MeV"/> 
+   </ParticleType> 
+   <ParticleType name="K(2)*(1430)0" texName="K^{\ast}_{2}(1430)" antiName="K*bar(2)(1430)0" antiTexName="\overline{K^{\ast}_{2}(1430)}" > 
+      <Data name="Mass"     texName="Mass $m$" value="1432.4" posError="1.3" negError="1.3" unit="MeV"/> 
+      <Data name="Width"    texName="Full Width $\Gamma$" value="109" posError="5" negError="5" unit="MeV"/> 
+   </ParticleType> 
+   <ParticleType name="K*(1680)0" texName="K^{\ast}(1680)" antiName="K*bar(1680)0" antiTexName="\overline{K^{\ast}(1680)}" > 
+      <Data name="PDGID" value="40313" /> 
+      <Data name="Charge" value="0" /> 
+      <Data name="Mass"     texName="Mass $m$" value="1717" posError="27" negError="27" unit="MeV"/> 
+      <Data name="Width"    texName="Full Width $\Gamma$" value="322" posError="110" negError="110" unit="MeV"/> 
+   </ParticleType> 
+   <ParticleType name="K*(1680)+" texName="K^{\ast}(1680)" antiName="K*bar(1680)+" antiTexName="\overline{K^{\ast}(1680)}" > 
+      <Data name="PDGID" value="40323" /> 
+      <Data name="Charge" value="+1" /> 
+      <Data name="Mass"     texName="Mass $m$" value="1717" posError="27" negError="27" unit="MeV"/> 
+      <Data name="Width"    texName="Full Width $\Gamma$" value="322" posError="110" negError="110" unit="MeV"/> 
+   </ParticleType> 
+   <ParticleType name="K(2)(1770)0" texName="K_{2}(1770)" antiName="K(2bar(1770))0" antiTexName="\overline{K_{2}(1770)}" > 
+      <Data name="PDGID" value="10315" /> 
+      <Data name="Charge" value="0" /> 
+      <Data name="Mass"     texName="Mass $m$" value="1773" posError="8" negError="8" unit="MeV"/> 
+      <Data name="Width"    texName="Full Width $\Gamma$" value="186" posError="14" negError="14" unit="MeV"/> 
+   </ParticleType> 
+   <ParticleType name="K(2)(1770)+" texName="K_{2}(1770)" antiName="K(2bar(1770))+" antiTexName="\overline{K_{2}(1770)}" > 
+      <Data name="PDGID" value="10325" /> 
+      <Data name="Charge" value="+1" /> 
+      <Data name="Mass"     texName="Mass $m$" value="1773" posError="8" negError="8" unit="MeV"/> 
+      <Data name="Width"    texName="Full Width $\Gamma$" value="186" posError="14" negError="14" unit="MeV"/> 
+   </ParticleType> 
+   <ParticleType name="K(3)*(1780)0" texName="K^{\ast}_{3}(1780)" antiName="K*bar(3)(1780)0" antiTexName="\overline{K^{\ast}_{3}(1780)}" > 
+      <Data name="PDGID" value="317" /> 
+      <Data name="Charge" value="0" /> 
+      <Data name="Mass"     texName="Mass $m$" value="1776" posError="7" negError="7" unit="MeV"/> 
+      <Data name="Width"    texName="Full Width $\Gamma$" value="159" posError="21" negError="21" unit="MeV"/> 
+   </ParticleType> 
+   <ParticleType name="K(3)*(1780)+" texName="K^{\ast}_{3}(1780)" antiName="K*bar(3)(1780)+" antiTexName="\overline{K^{\ast}_{3}(1780)}" > 
+      <Data name="PDGID" value="327" /> 
+      <Data name="Charge" value="+1" /> 
+      <Data name="Mass"     texName="Mass $m$" value="1776" posError="7" negError="7" unit="MeV"/> 
+      <Data name="Width"    texName="Full Width $\Gamma$" value="159" posError="21" negError="21" unit="MeV"/> 
+   </ParticleType> 
+   <ParticleType name="K(2)(1820)0" texName="K_{2}(1820)" antiName="K(2bar(1820))0" antiTexName="\overline{K_{2}(1820)}" > 
+      <Data name="PDGID" value="20315" /> 
+      <Data name="Charge" value="0" /> 
+      <Data name="Mass"     texName="Mass $m$" value="1816" posError="13" negError="13" unit="MeV"/> 
+      <Data name="Width"    texName="Full Width $\Gamma$" value="276" posError="35" negError="35" unit="MeV"/> 
+   </ParticleType> 
+   <ParticleType name="K(2)(1820)+" texName="K_{2}(1820)" antiName="K(2bar(1820))+" antiTexName="\overline{K_{2}(1820)}" > 
+      <Data name="PDGID" value="20325" /> 
+      <Data name="Charge" value="+1" /> 
+      <Data name="Mass"     texName="Mass $m$" value="1816" posError="13" negError="13" unit="MeV"/> 
+      <Data name="Width"    texName="Full Width $\Gamma$" value="276" posError="35" negError="35" unit="MeV"/> 
+   </ParticleType> 
+   <ParticleType name="K(4)*(2045)0" texName="K^{\ast}_{4}(2045)" antiName="K*bar(4)(2045)0" antiTexName="\overline{K^{\ast}_{4}(2045)}" > 
+      <Data name="PDGID" value="319" /> 
+      <Data name="Charge" value="0" /> 
+      <Data name="Mass"     texName="Mass $m$" value="2045" posError="9" negError="9" unit="MeV"/> 
+      <Data name="Width"    texName="Full Width $\Gamma$" value="198" posError="30" negError="30" unit="MeV"/> 
+   </ParticleType> 
+   <ParticleType name="K(4)*(2045)+" texName="K^{\ast}_{4}(2045)" antiName="K*bar(4)(2045)+" antiTexName="\overline{K^{\ast}_{4}(2045)}" > 
+      <Data name="PDGID" value="329" /> 
+      <Data name="Charge" value="+1" /> 
+      <Data name="Mass"     texName="Mass $m$" value="2045" posError="9" negError="9" unit="MeV"/> 
+      <Data name="Width"    texName="Full Width $\Gamma$" value="198" posError="30" negError="30" unit="MeV"/> 
+   </ParticleType> 
+   <ParticleType name="D+" texName="D^{+}" antiName="D-" antiTexName="D^{-}" > 
+      <Data name="PDGID" value="411" /> 
+      <Data name="Charge" value="+1" /> 
+      <Data name="Mass"     texName="Mass $m$" value="1869.3" posError="0.5" negError="0.5" unit="MeV"/> 
+      <Data name="LifeTime" texName="Mean Life $\tau$" value="1.051E-12" posError="0.013E-12" negError="0.013E-12" unit="s"/> 
+   </ParticleType> 
+   <ParticleType name="D0" texName="D^{0}" antiName="D0bar" antiTexName="\overline{D^{0}}" > 
+      <Data name="PDGID" value="421" /> 
+      <Data name="Charge" value="0" /> 
+      <Data name="Mass"     texName="Mass $m$" value="1864.5" posError="0.5" negError="0.5" unit="MeV"/> 
+      <Data name="LifeTime" texName="Mean Life $\tau$" value="0.4126E-12" posError="0.0028E-12" negError="0.0028E-12" unit="s"/> 
+   </ParticleType> 
+   <ParticleType name="D*(2007)0" texName="D^{\ast}(2007)^{0}" antiName="D*bar(2007)0" antiTexName="\overline{D^{\ast}(2007)^{0}}" > 
+      <Data name="PDGID" value="423" /> 
+      <Data name="Charge" value="0" /> 
+      <Data name="Mass"     texName="Mass $m$" value="2006.7" posError="0.5" negError="0.5" unit="MeV"/> 
+   </ParticleType> 
+   <ParticleType name="D*(2010)+" texName="D^{\ast}(2010)^{+}" antiName="D*(2010)-" antiTexName="D^{\ast}(2010)^{-}" > 
+      <Data name="PDGID" value="413" /> 
+      <Data name="Charge" value="+1" /> 
+      <Data name="Mass"     texName="Mass $m$" value="2010.0" posError="0.5" negError="0.5" unit="MeV"/> 
+   </ParticleType> 
+   <ParticleType name="D(1)(2420)0" texName="D_{1}(2420)^{0}" antiName="D(1bar(2420)0)" antiTexName="\overline{D_{1}(2420)^{0}}" > 
+      <Data name="PDGID" value="10423" /> 
+      <Data name="Charge" value="0" /> 
+      <Data name="Mass"     texName="Mass $m$" value="2422.2" posError="1.8" negError="1.8" unit="MeV"/> 
+      <Data name="Width"    texName="Full Width $\Gamma$" value="18.9" posError="4.6" negError="3.5" unit="MeV"/> 
+   </ParticleType> 
+   <ParticleType name="D(2)*(2460)0" texName="D^{\ast}_{2}(2460)^{0}" antiName="D*bar(2)(2460)0" antiTexName="\overline{D^{\ast}_{2}(2460)^{0}}" > 
+      <Data name="PDGID" value="425" /> 
+      <Data name="Charge" value="0" /> 
+      <Data name="Mass"     texName="Mass $m$" value="2458.9" posError="2.0" negError="2.0" unit="MeV"/> 
+      <Data name="Width"    texName="Full Width $\Gamma$" value="23" posError="5" negError="5" unit="MeV"/> 
+   </ParticleType> 
+   <ParticleType name="D(2)*(2460)+" texName="D^{\ast}_{2}(2460)^{+}" antiName="D(2)*(2460)-" antiTexName="D^{\ast}_{2}(2460)^{-}" > 
+      <Data name="PDGID" value="415" /> 
+      <Data name="Charge" value="+1" /> 
+      <Data name="Mass"     texName="Mass $m$" value="2459" posError="4" negError="4" unit="MeV"/> 
+      <Data name="Width"    texName="Full Width $\Gamma$" value="25" posError="8" negError="7" unit="MeV"/> 
+   </ParticleType> 
+   <ParticleType name="D(s)+" texName="D^{+}_{s}\;---\;was\;F\;---\;+" antiName="D(s)-" antiTexName="D^{-}_{s}\;---\;was\;F\;---\;-" > 
+      <Data name="PDGID" value="431" /> 
+      <Data name="Charge" value="+1" /> 
+      <Data name="Mass"     texName="Mass $m$" value="1968.6" posError="0.6" negError="0.6" unit="MeV"/> 
+      <Data name="LifeTime" texName="Mean Life $\tau$" value="0.496E-000" posError="0.010E-000" negError="0.009E-000" unit="12"/> 
+   </ParticleType> 
+   <ParticleType name="D(s)*+" texName="D^{\ast+}_{s}" antiName="D(s)*-" antiTexName="D^{\ast-}_{s}" > 
+      <Data name="PDGID" value="433" /> 
+      <Data name="Charge" value="+1" /> 
+      <Data name="Mass"     texName="Mass $m$" value="2112.4" posError="0.7" negError="0.7" unit="MeV"/> 
+   </ParticleType> 
+   <ParticleType name="D(s1)(2536)+" texName="D_{s1}(2536)^{+}" antiName="D(s1)(2536)-" antiTexName="D_{s1}(2536)^{-}" > 
+      <Data name="PDGID" value="10433" /> 
+      <Data name="Charge" value="+1" /> 
+   </ParticleType> 
+   <ParticleType name="D(sJ)(2573)+" texName="D_{sJ}(2573)^{+}" antiName="D(sJ)(2573)-" antiTexName="D_{sJ}(2573)^{-}" > 
+      <Data name="Mass"     texName="Mass $m$" value="2573.5" posError="1.7" negError="1.7" unit="MeV"/> 
+      <Data name="Width"    texName="Full Width $\Gamma$" value="15" posError="5" negError="4" unit="MeV"/> 
+   </ParticleType> 
+   <ParticleType name="B-particleorganization" texName="B\;-particle\;organization" antiName="B-particleorganizationbar" antiTexName="\overline{B\;-particle\;organization}" > 
+   </ParticleType> 
+   <ParticleType name="B+" texName="B^{+}" antiName="B-" antiTexName="B^{-}" > 
+      <Data name="PDGID" value="521" /> 
+      <Data name="Charge" value="+1" /> 
+   </ParticleType> 
+   <ParticleType name="B0" texName="B^{0}" antiName="B0bar" antiTexName="\overline{B^{0}}" > 
+      <Data name="PDGID" value="511" /> 
+      <Data name="Charge" value="0" /> 
+   </ParticleType> 
+   <ParticleType name="B+/B0ADMIXTURE" texName="B^{+}/B^{0}ADMIXTURE" antiName="B-/B0ADMIXTURE" antiTexName="B^{-}/B^{0}ADMIXTURE" > 
+   </ParticleType> 
+   <ParticleType name="B(s)+/B0/B0/b-baryonADMIXTURE" texName="B^{+}/B^{0}/B^{0}_{s}/b\;-baryon\;ADMIXTURE" antiName="B(s)-/B0/B0/b-baryonADMIXTURE" antiTexName="B^{-}/B^{0}/B^{0}_{s}/b\;-baryon\;ADMIXTURE" > 
+      <Data name="LifeTime" texName="Mean Life $\tau$" value="1.564E-12" posError="0.014E-12" negError="0.014E-12" unit="s"/> 
+   </ParticleType> 
+   <ParticleType name="B*0" texName="B^{\ast}" antiName="B*bar0" antiTexName="\overline{B^{\ast}}" > 
+      <Data name="PDGID" value="513" /> 
+      <Data name="Charge" value="0" /> 
+   </ParticleType> 
+   <ParticleType name="B*+" texName="B^{\ast}" antiName="B*bar+" antiTexName="\overline{B^{\ast}}" > 
+      <Data name="PDGID" value="523" /> 
+      <Data name="Charge" value="+1" /> 
+   </ParticleType> 
+   <ParticleType name="B(s)0" texName="B^{0}_{s}" antiName="B0bar(s)" antiTexName="\overline{B^{0}_{s}}" > 
+      <Data name="PDGID" value="531" /> 
+      <Data name="Charge" value="0" /> 
+      <Data name="LifeTime" texName="Mean Life $\tau$" value="1.493E-12" posError="0.062E-12" negError="0.062E-12" unit="s"/> 
+   </ParticleType> 
+   <ParticleType name="B(c)+" texName="B^{+}_{c}" antiName="B(c)-" antiTexName="B^{-}_{c}" > 
+      <Data name="PDGID" value="541" /> 
+      <Data name="Charge" value="+1" /> 
+      <Data name="Mass"     texName="Mass $m$" value="6.4" posError="0.4" negError="0.4" unit="GeV"/> 
+      <Data name="LifeTime" texName="Mean Life $\tau$" value="0.46E-000" posError="0.18E-000" negError="0.16E-000" unit="12"/> 
+   </ParticleType> 
+   <ParticleType name="eta(c)(1S)" texName="\eta_{c}(1S\;)" antiName="eta(cbar(1S))" antiTexName="\overline{\eta_{c}(1S\;)}" > 
+      <Data name="PDGID" value="441" /> 
+      <Data name="Charge" value="0" /> 
+      <Data name="Mass"     texName="Mass $m$" value="2979.8" posError="1.8" negError="1.8" unit="MeV"/> 
+      <Data name="Width"    texName="Full Width $\Gamma$" value="13.2" posError="3.8" negError="3.2" unit="MeV"/> 
+   </ParticleType> 
+   <ParticleType name="J/psi(1S)" texName="J\;/\psi\;(1S\;)" antiName="J/psi(1S)bar" antiTexName="\overline{J\;/\psi\;(1S\;)}" > 
+      <Data name="PDGID" value="443" /> 
+      <Data name="Charge" value="0" /> 
+      <Data name="Mass"     texName="Mass $m$" value="3096.87" posError="0.04" negError="0.04" unit="MeV"/> 
+      <Data name="Width"    texName="Full Width $\Gamma$" value="87" posError="5" negError="5" unit="k"/> 
+   </ParticleType> 
+   <ParticleType name="chi(c0)(1P)" texName="\chi_{c0}(1P\;)" antiName="chi(c0bar(1P))" antiTexName="\overline{\chi_{c0}(1P\;)}" > 
+      <Data name="PDGID" value="10441" /> 
+      <Data name="Charge" value="0" /> 
+      <Data name="Mass"     texName="Mass $m$" value="3415.0" posError="0.8" negError="0.8" unit="MeV"/> 
+      <Data name="Width"    texName="Full Width $\Gamma$" value="14.9" posError="2.6" negError="2.3" unit="MeV"/> 
+   </ParticleType> 
+   <ParticleType name="chi(c1)(1P)" texName="\chi_{c1}(1P\;)" antiName="chi(c1bar(1P))" antiTexName="\overline{\chi_{c1}(1P\;)}" > 
+      <Data name="PDGID" value="20443" /> 
+      <Data name="Charge" value="0" /> 
+      <Data name="Mass"     texName="Mass $m$" value="3510.51" posError="0.12" negError="0.12" unit="MeV"/> 
+      <Data name="Width"    texName="Full Width $\Gamma$" value="0.88" posError="0.14" negError="0.14" unit="MeVp"/> 
+   </ParticleType> 
+   <ParticleType name="chi(c2)(1P)" texName="\chi_{c2}(1P\;)" antiName="chi(c2bar(1P))" antiTexName="\overline{\chi_{c2}(1P\;)}" > 
+      <Data name="PDGID" value="445" /> 
+      <Data name="Charge" value="0" /> 
+      <Data name="Mass"     texName="Mass $m$" value="3556.18" posError="0.13" negError="0.13" unit="MeV"/> 
+      <Data name="Width"    texName="Full Width $\Gamma$" value="2.00" posError="0.18" negError="0.18" unit="MeVScale"/> 
+   </ParticleType> 
+   <ParticleType name="psi(2S)" texName="\psi\;(2S\;)" antiName="psi(2S)bar" antiTexName="\overline{\psi\;(2S\;)}" > 
+      <Data name="PDGID" value="100443" /> 
+      <Data name="Charge" value="0" /> 
+      <Data name="Mass"     texName="Mass $m$" value="3685.96" posError="0.09" negError="0.09" unit="MeV"/> 
+      <Data name="Width"    texName="Full Width $\Gamma$" value="277" posError="31" negError="31" unit="k"/> 
+   </ParticleType> 
+   <ParticleType name="psi(3770)" texName="\psi\;(3770)" antiName="psi(3770)bar" antiTexName="\overline{\psi\;(3770)}" > 
+      <Data name="PDGID" value="30443" /> 
+      <Data name="Charge" value="0" /> 
+      <Data name="Mass"     texName="Mass $m$" value="3769.9" posError="2.5" negError="2.5" unit="MeV"/> 
+      <Data name="Width"    texName="Full Width $\Gamma$" value="23.6" posError="2.7" negError="2.7" unit="MeV"/> 
+   </ParticleType> 
+   <ParticleType name="psi(4040)" texName="\psi\;(4040)" antiName="psi(4040)bar" antiTexName="\overline{\psi\;(4040)}" > 
+      <Data name="PDGID" value="9000443" /> 
+      <Data name="Charge" value="0" /> 
+      <Data name="Mass"     texName="Mass $m$" value="4040" posError="10" negError="10" unit="MeV"/> 
+      <Data name="Width"    texName="Full Width $\Gamma$" value="52" posError="10" negError="10" unit="MeV"/> 
+   </ParticleType> 
+   <ParticleType name="psi(4160)" texName="\psi\;(4160)" antiName="psi(4160)bar" antiTexName="\overline{\psi\;(4160)}" > 
+      <Data name="PDGID" value="9010443" /> 
+      <Data name="Charge" value="0" /> 
+      <Data name="Mass"     texName="Mass $m$" value="4159" posError="20" negError="20" unit="MeV"/> 
+      <Data name="Width"    texName="Full Width $\Gamma$" value="78" posError="20" negError="20" unit="MeV"/> 
+   </ParticleType> 
+   <ParticleType name="psi(4415)" texName="\psi\;(4415)" antiName="psi(4415)bar" antiTexName="\overline{\psi\;(4415)}" > 
+      <Data name="PDGID" value="9020443" /> 
+      <Data name="Charge" value="0" /> 
+      <Data name="Mass"     texName="Mass $m$" value="4415" posError="6" negError="6" unit="MeV"/> 
+      <Data name="Width"    texName="Full Width $\Gamma$" value="43" posError="15" negError="15" unit="MeV"/> 
+   </ParticleType> 
+   <ParticleType name="Upsilon(1S)" texName="\Upsilon\;(1S\;)" antiName="Upsilon(1S)bar" antiTexName="\overline{\Upsilon\;(1S\;)}" > 
+      <Data name="PDGID" value="553" /> 
+      <Data name="Charge" value="0" /> 
+      <Data name="Mass"     texName="Mass $m$" value="9460.30" posError="0.26" negError="0.26" unit="MeV"/> 
+      <Data name="Width"    texName="Full Width $\Gamma$" value="52.5" posError="1.8" negError="1.8" unit="keV"/> 
+   </ParticleType> 
+   <ParticleType name="chi(b0)(1P)" texName="\chi_{b0}(1P\;)" antiName="chi(b0bar(1P))" antiTexName="\overline{\chi_{b0}(1P\;)}" > 
+      <Data name="PDGID" value="10551" /> 
+      <Data name="Charge" value="0" /> 
+      <Data name="Mass"     texName="Mass $m$" value="9859.9" posError="1.0" negError="1.0" unit="MeV"/> 
+   </ParticleType> 
+   <ParticleType name="chi(b1)(1P)" texName="\chi_{b1}(1P\;)" antiName="chi(b1bar(1P))" antiTexName="\overline{\chi_{b1}(1P\;)}" > 
+      <Data name="PDGID" value="20553" /> 
+      <Data name="Charge" value="0" /> 
+      <Data name="Mass"     texName="Mass $m$" value="9892.7" posError="0.6" negError="0.6" unit="MeV"/> 
+   </ParticleType> 
+   <ParticleType name="chi(b2)(1P)" texName="\chi_{b2}(1P\;)" antiName="chi(b2bar(1P))" antiTexName="\overline{\chi_{b2}(1P\;)}" > 
+      <Data name="PDGID" value="555" /> 
+      <Data name="Charge" value="0" /> 
+      <Data name="Mass"     texName="Mass $m$" value="9912.6" posError="0.5" negError="0.5" unit="MeV"/> 
+   </ParticleType> 
+   <ParticleType name="Upsilon(2S)" texName="\Upsilon\;(2S\;)" antiName="Upsilon(2S)bar" antiTexName="\overline{\Upsilon\;(2S\;)}" > 
+      <Data name="PDGID" value="100553" /> 
+      <Data name="Charge" value="0" /> 
+      <Data name="Mass"     texName="Mass $m$" value="10.02326" posError="0.00031" negError="0.00031" unit="GeV"/> 
+      <Data name="Width"    texName="Full Width $\Gamma$" value="44" posError="7" negError="7" unit="k"/> 
+   </ParticleType> 
+   <ParticleType name="chi(b0)(2P)" texName="\chi_{b0}(2P\;)" antiName="chi(b0bar(2P))" antiTexName="\overline{\chi_{b0}(2P\;)}" > 
+      <Data name="PDGID" value="110551" /> 
+      <Data name="Charge" value="0" /> 
+      <Data name="Mass"     texName="Mass $m$" value="10.2321" posError="0.0006" negError="0.0006" unit="GeV"/> 
+   </ParticleType> 
+   <ParticleType name="chi(b1)(2P)" texName="\chi_{b1}(2P\;)" antiName="chi(b1bar(2P))" antiTexName="\overline{\chi_{b1}(2P\;)}" > 
+      <Data name="PDGID" value="120553" /> 
+      <Data name="Charge" value="0" /> 
+      <Data name="Mass"     texName="Mass $m$" value="10.2552" posError="0.0005" negError="0.0005" unit="GeV"/> 
+   </ParticleType> 
+   <ParticleType name="chi(b2)(2P)" texName="\chi_{b2}(2P\;)" antiName="chi(b2bar(2P))" antiTexName="\overline{\chi_{b2}(2P\;)}" > 
+      <Data name="PDGID" value="100555" /> 
+      <Data name="Charge" value="0" /> 
+      <Data name="Mass"     texName="Mass $m$" value="10.2685" posError="0.0004" negError="0.0004" unit="GeV"/> 
+   </ParticleType> 
+   <ParticleType name="Upsilon(3S)" texName="\Upsilon\;(3S\;)" antiName="Upsilon(3S)bar" antiTexName="\overline{\Upsilon\;(3S\;)}" > 
+      <Data name="PDGID" value="200553" /> 
+      <Data name="Charge" value="0" /> 
+      <Data name="Mass"     texName="Mass $m$" value="10.3552" posError="0.0005" negError="0.0005" unit="GeV"/> 
+      <Data name="Width"    texName="Full Width $\Gamma$" value="26.3" posError="3.5" negError="3.5" unit="keV"/> 
+   </ParticleType> 
+   <ParticleType name="Upsilon(4S)" texName="\Upsilon\;(4S\;)\;---\;or\;\Upsilon(10580)" antiName="Upsilon(4S)" antiTexName="\overline{\Upsilon\;(4S\;)\;---\;or\;\Upsilon(10580)}" > 
+      <Data name="PDGID" value="300553" /> 
+      <Data name="Charge" value="0" /> 
+      <Data name="Mass"     texName="Mass $m$" value="10.5800" posError="0.0035" negError="0.0035" unit="GeV"/> 
+      <Data name="Width"    texName="Full Width $\Gamma$" value="14" posError="5" negError="5" unit="MeV"/> 
+   </ParticleType> 
+   <ParticleType name="Upsilon(10860)" texName="\Upsilon\;(10860)" antiName="Upsilon(10860)bar" antiTexName="\overline{\Upsilon\;(10860)}" > 
+      <Data name="PDGID" value="9000553" /> 
+      <Data name="Charge" value="0" /> 
+      <Data name="Mass"     texName="Mass $m$" value="10.865" posError="0.008" negError="0.008" unit="GeV"/> 
+      <Data name="Width"    texName="Full Width $\Gamma$" value="110" posError="13" negError="13" unit="MeV"/> 
+   </ParticleType> 
+   <ParticleType name="Upsilon(11020)" texName="\Upsilon\;(11020)" antiName="Upsilon(11020)bar" antiTexName="\overline{\Upsilon\;(11020)}" > 
+      <Data name="PDGID" value="9010553" /> 
+      <Data name="Charge" value="0" /> 
+      <Data name="Mass"     texName="Mass $m$" value="11.019" posError="0.008" negError="0.008" unit="GeV"/> 
+      <Data name="Width"    texName="Full Width $\Gamma$" value="79" posError="16" negError="16" unit="MeV"/> 
+   </ParticleType> 
+   <ParticleType name="p+" texName="p^{+}" antiName="p-" antiTexName="p^{-}" > 
+      <Data name="PDGID" value="2212" /> 
+      <Data name="Charge" value="+1" /> 
+      <Data name="Mass"     texName="Mass $m$" value="938.27200" posError="0.00004" negError="0.00004" unit="MeV"/> 
+   </ParticleType> 
+   <ParticleType name="n" texName="n" antiName="nbar" antiTexName="\overline{n}" > 
+      <Data name="PDGID" value="2112" /> 
+      <Data name="Charge" value="0" /> 
+      <Data name="Mass"     texName="Mass $m$" value="939.56533" posError="0.00004" negError="0.00004" unit="MeV"/> 
+   </ParticleType> 
+   <ParticleType name="N(1440)0" texName="N\;(1440)\;P_{11}" antiName="N(1440)bar0" antiTexName="\overline{N\;(1440)\;P_{11}}" > 
+      <Data name="PDGID" value="12112" /> 
+      <Data name="Charge" value="0" /> 
+   </ParticleType> 
+   <ParticleType name="N(1440)+" texName="N\;(1440)\;P_{11}" antiName="N(1440)bar+" antiTexName="\overline{N\;(1440)\;P_{11}}" > 
+      <Data name="PDGID" value="12212" /> 
+      <Data name="Charge" value="+1" /> 
+   </ParticleType> 
+   <ParticleType name="N(1520)0" texName="N\;(1520)\;D_{13}" antiName="N(1520)bar0" antiTexName="\overline{N\;(1520)\;D_{13}}" > 
+      <Data name="PDGID" value="1214" /> 
+      <Data name="Charge" value="0" /> 
+   </ParticleType> 
+   <ParticleType name="N(1520)+" texName="N\;(1520)\;D_{13}" antiName="N(1520)bar+" antiTexName="\overline{N\;(1520)\;D_{13}}" > 
+      <Data name="PDGID" value="2124" /> 
+      <Data name="Charge" value="+1" /> 
+   </ParticleType> 
+   <ParticleType name="N(1535)0" texName="N\;(1535)\;S_{11}" antiName="N(1535)bar0" antiTexName="\overline{N\;(1535)\;S_{11}}" > 
+      <Data name="PDGID" value="22112" /> 
+      <Data name="Charge" value="0" /> 
+   </ParticleType> 
+   <ParticleType name="N(1535)+" texName="N\;(1535)\;S_{11}" antiName="N(1535)bar+" antiTexName="\overline{N\;(1535)\;S_{11}}" > 
+      <Data name="PDGID" value="22212" /> 
+      <Data name="Charge" value="+1" /> 
+   </ParticleType> 
+   <ParticleType name="N(1650)0" texName="N\;(1650)\;S_{11}" antiName="N(1650)bar0" antiTexName="\overline{N\;(1650)\;S_{11}}" > 
+      <Data name="PDGID" value="32112" /> 
+      <Data name="Charge" value="0" /> 
+   </ParticleType> 
+   <ParticleType name="N(1650)+" texName="N\;(1650)\;S_{11}" antiName="N(1650)bar+" antiTexName="\overline{N\;(1650)\;S_{11}}" > 
+      <Data name="PDGID" value="32212" /> 
+      <Data name="Charge" value="+1" /> 
+   </ParticleType> 
+   <ParticleType name="N(1675)0" texName="N\;(1675)\;D_{15}" antiName="N(1675)bar0" antiTexName="\overline{N\;(1675)\;D_{15}}" > 
+      <Data name="PDGID" value="2116" /> 
+      <Data name="Charge" value="0" /> 
+   </ParticleType> 
+   <ParticleType name="N(1675)+" texName="N\;(1675)\;D_{15}" antiName="N(1675)bar+" antiTexName="\overline{N\;(1675)\;D_{15}}" > 
+      <Data name="PDGID" value="2216" /> 
+      <Data name="Charge" value="+1" /> 
+   </ParticleType> 
+   <ParticleType name="N(1680)0" texName="N\;(1680)\;F_{15}" antiName="N(1680)bar0" antiTexName="\overline{N\;(1680)\;F_{15}}" > 
+      <Data name="PDGID" value="12116" /> 
+      <Data name="Charge" value="0" /> 
+   </ParticleType> 
+   <ParticleType name="N(1680)+" texName="N\;(1680)\;F_{15}" antiName="N(1680)bar+" antiTexName="\overline{N\;(1680)\;F_{15}}" > 
+      <Data name="PDGID" value="12216" /> 
+      <Data name="Charge" value="+1" /> 
+   </ParticleType> 
+   <ParticleType name="N(1700)0" texName="N\;(1700)\;D_{13}" antiName="N(1700)bar0" antiTexName="\overline{N\;(1700)\;D_{13}}" > 
+      <Data name="PDGID" value="21214" /> 
+      <Data name="Charge" value="0" /> 
+   </ParticleType> 
+   <ParticleType name="N(1700)+" texName="N\;(1700)\;D_{13}" antiName="N(1700)bar+" antiTexName="\overline{N\;(1700)\;D_{13}}" > 
+      <Data name="PDGID" value="22124" /> 
+      <Data name="Charge" value="+1" /> 
+   </ParticleType> 
+   <ParticleType name="N(1710)0" texName="N\;(1710)\;P_{11}" antiName="N(1710)bar0" antiTexName="\overline{N\;(1710)\;P_{11}}" > 
+      <Data name="PDGID" value="42112" /> 
+      <Data name="Charge" value="0" /> 
+   </ParticleType> 
+   <ParticleType name="N(1710)+" texName="N\;(1710)\;P_{11}" antiName="N(1710)bar+" antiTexName="\overline{N\;(1710)\;P_{11}}" > 
+      <Data name="PDGID" value="42212" /> 
+      <Data name="Charge" value="+1" /> 
+   </ParticleType> 
+   <ParticleType name="N(1720)0" texName="N\;(1720)\;P_{13}" antiName="N(1720)bar0" antiTexName="\overline{N\;(1720)\;P_{13}}" > 
+      <Data name="PDGID" value="31214" /> 
+      <Data name="Charge" value="0" /> 
+   </ParticleType> 
+   <ParticleType name="N(1720)+" texName="N\;(1720)\;P_{13}" antiName="N(1720)bar+" antiTexName="\overline{N\;(1720)\;P_{13}}" > 
+      <Data name="PDGID" value="32124" /> 
+      <Data name="Charge" value="+1" /> 
+   </ParticleType> 
+   <ParticleType name="N(2190)0" texName="N\;(2190)\;G_{17}" antiName="N(2190)bar0" antiTexName="\overline{N\;(2190)\;G_{17}}" > 
+      <Data name="PDGID" value="1218" /> 
+      <Data name="Charge" value="0" /> 
+   </ParticleType> 
+   <ParticleType name="N(2190)+" texName="N\;(2190)\;G_{17}" antiName="N(2190)bar+" antiTexName="\overline{N\;(2190)\;G_{17}}" > 
+      <Data name="PDGID" value="2128" /> 
+      <Data name="Charge" value="+1" /> 
+   </ParticleType> 
+   <ParticleType name="N(2220)" texName="N\;(2220)\;H_{19}" antiName="N(2220)bar" antiTexName="\overline{N\;(2220)\;H_{19}}" > 
+   </ParticleType> 
+   <ParticleType name="N(2250)" texName="N\;(2250)\;G_{19}" antiName="N(2250)bar" antiTexName="\overline{N\;(2250)\;G_{19}}" > 
+   </ParticleType> 
+   <ParticleType name="N(2600)" texName="N\;(2600)\;I_{1,11}" antiName="N(2600)bar" antiTexName="\overline{N\;(2600)\;I_{1,11}}" > 
+   </ParticleType> 
+   <ParticleType name="Delta(1232)-" texName="\Delta(1232)\;P_{33}" antiName="Delta(1232)bar-" antiTexName="\overline{\Delta(1232)\;P_{33}}" > 
+      <Data name="PDGID" value="1114" /> 
+      <Data name="Charge" value="-1" /> 
+   </ParticleType> 
+   <ParticleType name="Delta(1232)0" texName="\Delta(1232)\;P_{33}" antiName="Delta(1232)bar0" antiTexName="\overline{\Delta(1232)\;P_{33}}" > 
+      <Data name="PDGID" value="2114" /> 
+      <Data name="Charge" value="0" /> 
+   </ParticleType> 
+   <ParticleType name="Delta(1232)+" texName="\Delta(1232)\;P_{33}" antiName="Delta(1232)bar+" antiTexName="\overline{\Delta(1232)\;P_{33}}" > 
+      <Data name="PDGID" value="2214" /> 
+      <Data name="Charge" value="+1" /> 
+   </ParticleType> 
+   <ParticleType name="Delta(1232)++" texName="\Delta(1232)\;P_{33}" antiName="Delta(1232)bar++" antiTexName="\overline{\Delta(1232)\;P_{33}}" > 
+      <Data name="PDGID" value="2224" /> 
+      <Data name="Charge" value="+1+" /> 
+   </ParticleType> 
+   <ParticleType name="Delta(1600)-" texName="\Delta(1600)\;P_{33}" antiName="Delta(1600)bar-" antiTexName="\overline{\Delta(1600)\;P_{33}}" > 
+      <Data name="PDGID" value="31114" /> 
+      <Data name="Charge" value="-1" /> 
+   </ParticleType> 
+   <ParticleType name="Delta(1600)0" texName="\Delta(1600)\;P_{33}" antiName="Delta(1600)bar0" antiTexName="\overline{\Delta(1600)\;P_{33}}" > 
+      <Data name="PDGID" value="32114" /> 
+      <Data name="Charge" value="0" /> 
+   </ParticleType> 
+   <ParticleType name="Delta(1600)+" texName="\Delta(1600)\;P_{33}" antiName="Delta(1600)bar+" antiTexName="\overline{\Delta(1600)\;P_{33}}" > 
+      <Data name="PDGID" value="32214" /> 
+      <Data name="Charge" value="+1" /> 
+   </ParticleType> 
+   <ParticleType name="Delta(1600)++" texName="\Delta(1600)\;P_{33}" antiName="Delta(1600)bar++" antiTexName="\overline{\Delta(1600)\;P_{33}}" > 
+      <Data name="PDGID" value="32224" /> 
+      <Data name="Charge" value="+1+" /> 
+   </ParticleType> 
+   <ParticleType name="Delta(1620)-" texName="\Delta(1620)\;S_{31}" antiName="Delta(1620)bar-" antiTexName="\overline{\Delta(1620)\;S_{31}}" > 
+      <Data name="PDGID" value="1112" /> 
+      <Data name="Charge" value="-1" /> 
+   </ParticleType> 
+   <ParticleType name="Delta(1620)0" texName="\Delta(1620)\;S_{31}" antiName="Delta(1620)bar0" antiTexName="\overline{\Delta(1620)\;S_{31}}" > 
+      <Data name="PDGID" value="1212" /> 
+      <Data name="Charge" value="0" /> 
+   </ParticleType> 
+   <ParticleType name="Delta(1620)+" texName="\Delta(1620)\;S_{31}" antiName="Delta(1620)bar+" antiTexName="\overline{\Delta(1620)\;S_{31}}" > 
+      <Data name="PDGID" value="2122" /> 
+      <Data name="Charge" value="+1" /> 
+   </ParticleType> 
+   <ParticleType name="Delta(1620)++" texName="\Delta(1620)\;S_{31}" antiName="Delta(1620)bar++" antiTexName="\overline{\Delta(1620)\;S_{31}}" > 
+      <Data name="PDGID" value="2222" /> 
+      <Data name="Charge" value="+1+" /> 
+   </ParticleType> 
+   <ParticleType name="Delta(1700)-" texName="\Delta(1700)\;D_{33}" antiName="Delta(1700)bar-" antiTexName="\overline{\Delta(1700)\;D_{33}}" > 
+      <Data name="PDGID" value="11114" /> 
+      <Data name="Charge" value="-1" /> 
+   </ParticleType> 
+   <ParticleType name="Delta(1700)0" texName="\Delta(1700)\;D_{33}" antiName="Delta(1700)bar0" antiTexName="\overline{\Delta(1700)\;D_{33}}" > 
+      <Data name="PDGID" value="12114" /> 
+      <Data name="Charge" value="0" /> 
+   </ParticleType> 
+   <ParticleType name="Delta(1700)+" texName="\Delta(1700)\;D_{33}" antiName="Delta(1700)bar+" antiTexName="\overline{\Delta(1700)\;D_{33}}" > 
+      <Data name="PDGID" value="12214" /> 
+      <Data name="Charge" value="+1" /> 
+   </ParticleType> 
+   <ParticleType name="Delta(1700)++" texName="\Delta(1700)\;D_{33}" antiName="Delta(1700)bar++" antiTexName="\overline{\Delta(1700)\;D_{33}}" > 
+      <Data name="PDGID" value="12224" /> 
+      <Data name="Charge" value="+1+" /> 
+   </ParticleType> 
+   <ParticleType name="Delta(1905)-" texName="\Delta(1905)\;F_{35}" antiName="Delta(1905)bar-" antiTexName="\overline{\Delta(1905)\;F_{35}}" > 
+      <Data name="PDGID" value="1116" /> 
+      <Data name="Charge" value="-1" /> 
+   </ParticleType> 
+   <ParticleType name="Delta(1905)0" texName="\Delta(1905)\;F_{35}" antiName="Delta(1905)bar0" antiTexName="\overline{\Delta(1905)\;F_{35}}" > 
+      <Data name="PDGID" value="1216" /> 
+      <Data name="Charge" value="0" /> 
+   </ParticleType> 
+   <ParticleType name="Delta(1905)+" texName="\Delta(1905)\;F_{35}" antiName="Delta(1905)bar+" antiTexName="\overline{\Delta(1905)\;F_{35}}" > 
+      <Data name="PDGID" value="2126" /> 
+      <Data name="Charge" value="+1" /> 
+   </ParticleType> 
+   <ParticleType name="Delta(1905)++" texName="\Delta(1905)\;F_{35}" antiName="Delta(1905)bar++" antiTexName="\overline{\Delta(1905)\;F_{35}}" > 
+      <Data name="PDGID" value="2226" /> 
+      <Data name="Charge" value="+1+" /> 
+   </ParticleType> 
+   <ParticleType name="Delta(1910)-" texName="\Delta(1910)\;P_{31}" antiName="Delta(1910)bar-" antiTexName="\overline{\Delta(1910)\;P_{31}}" > 
+      <Data name="PDGID" value="21112" /> 
+      <Data name="Charge" value="-1" /> 
+   </ParticleType> 
+   <ParticleType name="Delta(1910)0" texName="\Delta(1910)\;P_{31}" antiName="Delta(1910)bar0" antiTexName="\overline{\Delta(1910)\;P_{31}}" > 
+      <Data name="PDGID" value="21212" /> 
+      <Data name="Charge" value="0" /> 
+   </ParticleType> 
+   <ParticleType name="Delta(1910)+" texName="\Delta(1910)\;P_{31}" antiName="Delta(1910)bar+" antiTexName="\overline{\Delta(1910)\;P_{31}}" > 
+      <Data name="PDGID" value="22122" /> 
+      <Data name="Charge" value="+1" /> 
+   </ParticleType> 
+   <ParticleType name="Delta(1910)++" texName="\Delta(1910)\;P_{31}" antiName="Delta(1910)bar++" antiTexName="\overline{\Delta(1910)\;P_{31}}" > 
+      <Data name="PDGID" value="22222" /> 
+      <Data name="Charge" value="+1+" /> 
+   </ParticleType> 
+   <ParticleType name="Delta(1920)-" texName="\Delta(1920)\;P_{33}" antiName="Delta(1920)bar-" antiTexName="\overline{\Delta(1920)\;P_{33}}" > 
+      <Data name="PDGID" value="21114" /> 
+      <Data name="Charge" value="-1" /> 
+   </ParticleType> 
+   <ParticleType name="Delta(1920)0" texName="\Delta(1920)\;P_{33}" antiName="Delta(1920)bar0" antiTexName="\overline{\Delta(1920)\;P_{33}}" > 
+      <Data name="PDGID" value="22114" /> 
+      <Data name="Charge" value="0" /> 
+   </ParticleType> 
+   <ParticleType name="Delta(1920)+" texName="\Delta(1920)\;P_{33}" antiName="Delta(1920)bar+" antiTexName="\overline{\Delta(1920)\;P_{33}}" > 
+      <Data name="PDGID" value="22214" /> 
+      <Data name="Charge" value="+1" /> 
+   </ParticleType> 
+   <ParticleType name="Delta(1920)++" texName="\Delta(1920)\;P_{33}" antiName="Delta(1920)bar++" antiTexName="\overline{\Delta(1920)\;P_{33}}" > 
+      <Data name="PDGID" value="22224" /> 
+      <Data name="Charge" value="+1+" /> 
+   </ParticleType> 
+   <ParticleType name="Delta(1930)-" texName="\Delta(1930)\;D_{35}" antiName="Delta(1930)bar-" antiTexName="\overline{\Delta(1930)\;D_{35}}" > 
+      <Data name="PDGID" value="11116" /> 
+      <Data name="Charge" value="-1" /> 
+   </ParticleType> 
+   <ParticleType name="Delta(1930)0" texName="\Delta(1930)\;D_{35}" antiName="Delta(1930)bar0" antiTexName="\overline{\Delta(1930)\;D_{35}}" > 
+      <Data name="PDGID" value="11216" /> 
+      <Data name="Charge" value="0" /> 
+   </ParticleType> 
+   <ParticleType name="Delta(1930)+" texName="\Delta(1930)\;D_{35}" antiName="Delta(1930)bar+" antiTexName="\overline{\Delta(1930)\;D_{35}}" > 
+      <Data name="PDGID" value="12126" /> 
+      <Data name="Charge" value="+1" /> 
+   </ParticleType> 
+   <ParticleType name="Delta(1930)++" texName="\Delta(1930)\;D_{35}" antiName="Delta(1930)bar++" antiTexName="\overline{\Delta(1930)\;D_{35}}" > 
+      <Data name="PDGID" value="12226" /> 
+      <Data name="Charge" value="+1+" /> 
+   </ParticleType> 
+   <ParticleType name="Delta(1950)-" texName="\Delta(1950)\;F_{37}" antiName="Delta(1950)bar-" antiTexName="\overline{\Delta(1950)\;F_{37}}" > 
+      <Data name="PDGID" value="1118" /> 
+      <Data name="Charge" value="-1" /> 
+   </ParticleType> 
+   <ParticleType name="Delta(1950)0" texName="\Delta(1950)\;F_{37}" antiName="Delta(1950)bar0" antiTexName="\overline{\Delta(1950)\;F_{37}}" > 
+      <Data name="PDGID" value="2118" /> 
+      <Data name="Charge" value="0" /> 
+   </ParticleType> 
+   <ParticleType name="Delta(1950)+" texName="\Delta(1950)\;F_{37}" antiName="Delta(1950)bar+" antiTexName="\overline{\Delta(1950)\;F_{37}}" > 
+      <Data name="PDGID" value="2218" /> 
+      <Data name="Charge" value="+1" /> 
+   </ParticleType> 
+   <ParticleType name="Delta(1950)++" texName="\Delta(1950)\;F_{37}" antiName="Delta(1950)bar++" antiTexName="\overline{\Delta(1950)\;F_{37}}" > 
+      <Data name="PDGID" value="2228" /> 
+      <Data name="Charge" value="+1+" /> 
+   </ParticleType> 
+   <ParticleType name="Delta(2420)" texName="\Delta(2420)\;H_{3,11}" antiName="Delta(2420)bar" antiTexName="\overline{\Delta(2420)\;H_{3,11}}" > 
+   </ParticleType> 
+   <ParticleType name="Lambda" texName="\Lambda" antiName="Lambdabar" antiTexName="\overline{\Lambda}" > 
+      <Data name="PDGID" value="3122" /> 
+      <Data name="Charge" value="0" /> 
+      <Data name="Mass"     texName="Mass $m$" value="1115.683" posError="0.006" negError="0.006" unit="MeV"/> 
+      <Data name="LifeTime" texName="Mean Life $\tau$" value="2.632E-10" posError="0.020E-10" negError="0.020E-10" unit="s"/> 
+   </ParticleType> 
+   <ParticleType name="Lambda(1405)" texName="\Lambda(1405)\;S_{01}" antiName="Lambda(1405)bar" antiTexName="\overline{\Lambda(1405)\;S_{01}}" > 
+      <Data name="PDGID" value="13122" /> 
+      <Data name="Charge" value="0" /> 
+      <Data name="Mass"     texName="Mass $m$" value="1406" posError="4" negError="4" unit="MeV"/> 
+      <Data name="Width"    texName="Full Width $\Gamma$" value="50.0" posError="2.0" negError="2.0" unit="MeVBelo"/> 
+   </ParticleType> 
+   <ParticleType name="Lambda(1520)" texName="\Lambda(1520)\;D_{03}" antiName="Lambda(1520)bar" antiTexName="\overline{\Lambda(1520)\;D_{03}}" > 
+      <Data name="PDGID" value="3124" /> 
+      <Data name="Charge" value="0" /> 
+      <Data name="Mass"     texName="Mass $m$" value="1519.5" posError="1.0" negError="1.0" unit="MeV"/> 
+      <Data name="Width"    texName="Full Width $\Gamma$" value="15.6" posError="1.0" negError="1.0" unit="MeV"/> 
+   </ParticleType> 
+   <ParticleType name="Lambda(1600)" texName="\Lambda(1600)\;P_{01}" antiName="Lambda(1600)bar" antiTexName="\overline{\Lambda(1600)\;P_{01}}" > 
+      <Data name="PDGID" value="23122" /> 
+      <Data name="Charge" value="0" /> 
+   </ParticleType> 
+   <ParticleType name="Lambda(1670)" texName="\Lambda(1670)\;S_{01}" antiName="Lambda(1670)bar" antiTexName="\overline{\Lambda(1670)\;S_{01}}" > 
+      <Data name="PDGID" value="33122" /> 
+      <Data name="Charge" value="0" /> 
+   </ParticleType> 
+   <ParticleType name="Lambda(1690)" texName="\Lambda(1690)\;D_{03}" antiName="Lambda(1690)bar" antiTexName="\overline{\Lambda(1690)\;D_{03}}" > 
+      <Data name="PDGID" value="13124" /> 
+      <Data name="Charge" value="0" /> 
+   </ParticleType> 
+   <ParticleType name="Lambda(1800)" texName="\Lambda(1800)\;S_{01}" antiName="Lambda(1800)bar" antiTexName="\overline{\Lambda(1800)\;S_{01}}" > 
+      <Data name="PDGID" value="43122" /> 
+      <Data name="Charge" value="0" /> 
+   </ParticleType> 
+   <ParticleType name="Lambda(1810)" texName="\Lambda(1810)\;P_{01}" antiName="Lambda(1810)bar" antiTexName="\overline{\Lambda(1810)\;P_{01}}" > 
+      <Data name="PDGID" value="53122" /> 
+      <Data name="Charge" value="0" /> 
+   </ParticleType> 
+   <ParticleType name="Lambda(1820)" texName="\Lambda(1820)\;F_{05}" antiName="Lambda(1820)bar" antiTexName="\overline{\Lambda(1820)\;F_{05}}" > 
+      <Data name="PDGID" value="3126" /> 
+      <Data name="Charge" value="0" /> 
+   </ParticleType> 
+   <ParticleType name="Lambda(1830)" texName="\Lambda(1830)\;D_{05}" antiName="Lambda(1830)bar" antiTexName="\overline{\Lambda(1830)\;D_{05}}" > 
+      <Data name="PDGID" value="13126" /> 
+      <Data name="Charge" value="0" /> 
+   </ParticleType> 
+   <ParticleType name="Lambda(1890)" texName="\Lambda(1890)\;P_{03}" antiName="Lambda(1890)bar" antiTexName="\overline{\Lambda(1890)\;P_{03}}" > 
+      <Data name="PDGID" value="23124" /> 
+      <Data name="Charge" value="0" /> 
+   </ParticleType> 
+   <ParticleType name="Lambda(2100)" texName="\Lambda(2100)\;G_{07}" antiName="Lambda(2100)bar" antiTexName="\overline{\Lambda(2100)\;G_{07}}" > 
+      <Data name="PDGID" value="3128" /> 
+      <Data name="Charge" value="0" /> 
+   </ParticleType> 
+   <ParticleType name="Lambda(2110)" texName="\Lambda(2110)\;F_{05}" antiName="Lambda(2110)bar" antiTexName="\overline{\Lambda(2110)\;F_{05}}" > 
+      <Data name="PDGID" value="23126" /> 
+      <Data name="Charge" value="0" /> 
+   </ParticleType> 
+   <ParticleType name="Lambda(2350)" texName="\Lambda(2350)\;H_{09}" antiName="Lambda(2350)bar" antiTexName="\overline{\Lambda(2350)\;H_{09}}" > 
+   </ParticleType> 
+   <ParticleType name="Sigma+" texName="\Sigma^{+}" antiName="Sigma+bar" antiTexName="\overline{\Sigma^{+}}" > 
+      <Data name="PDGID" value="3222" /> 
+      <Data name="Charge" value="+1" /> 
+      <Data name="Mass"     texName="Mass $m$" value="1189.37" posError="0.07" negError="0.07" unit="MeV"/> 
+      <Data name="LifeTime" texName="Mean Life $\tau$" value="0.8018E-10" posError="0.0026E-10" negError="0.0026E-10" unit="s"/> 
+   </ParticleType> 
+   <ParticleType name="Sigma0" texName="\Sigma^{0}" antiName="Sigma0bar" antiTexName="\overline{\Sigma^{0}}" > 
+      <Data name="PDGID" value="3212" /> 
+      <Data name="Charge" value="0" /> 
+      <Data name="Mass"     texName="Mass $m$" value="1192.642" posError="0.024" negError="0.024" unit="MeV"/> 
+      <Data name="LifeTime" texName="Mean Life $\tau$" value="7.4E-20" posError="0.7E-20" negError="0.7E-20" unit="s"/> 
+   </ParticleType> 
+   <ParticleType name="Sigma-" texName="\Sigma^{-}" antiName="Sigma-bar" antiTexName="\overline{\Sigma^{-}}" > 
+      <Data name="PDGID" value="3112" /> 
+      <Data name="Charge" value="-1" /> 
+      <Data name="Mass"     texName="Mass $m$" value="1197.449" posError="0.030" negError="0.030" unit="MeV"/> 
+      <Data name="LifeTime" texName="Mean Life $\tau$" value="1.479E-10" posError="0.011E-10" negError="0.011E-10" unit="s"/> 
+   </ParticleType> 
+   <ParticleType name="Sigma(1385)+" texName="\Sigma\;(1385)\;P_{13}" antiName="Sigma(1385)bar+" antiTexName="\overline{\Sigma\;(1385)\;P_{13}}" > 
+      <Data name="Mass"     texName="Mass $m$" value="1382.8" posError="0.4" negError="0.4" unit="MeV"/> 
+      <Data name="Width"    texName="Full Width $\Gamma$" value="35.8" posError="0.8" negError="0.8" unit="MeV"/> 
+   </ParticleType> 
+   <ParticleType name="Sigma(1385)-" texName="\Sigma\;(1385)\;P_{13}" antiName="Sigma(1385)bar-" antiTexName="\overline{\Sigma\;(1385)\;P_{13}}" > 
+      <Data name="Mass"     texName="Mass $m$" value="1387.2" posError="0.5" negError="0.5" unit="MeV"/> 
+      <Data name="Width"    texName="Full Width $\Gamma$" value="39.4" posError="2.1" negError="2.1" unit="MeV"/> 
+   </ParticleType> 
+   <ParticleType name="Sigma(1385)0" texName="\Sigma\;(1385)\;P_{13}" antiName="Sigma(1385)bar0" antiTexName="\overline{\Sigma\;(1385)\;P_{13}}" > 
+      <Data name="Mass"     texName="Mass $m$" value="1383.7" posError="1.0" negError="1.0" unit="MeV"/> 
+      <Data name="Width"    texName="Full Width $\Gamma$" value="36" posError="5" negError="5" unit="MeV"/> 
+   </ParticleType> 
+   <ParticleType name="Sigma(1660)-" texName="\Sigma\;(1660)\;P_{11}" antiName="Sigma(1660)bar-" antiTexName="\overline{\Sigma\;(1660)\;P_{11}}" > 
+      <Data name="PDGID" value="13112" /> 
+      <Data name="Charge" value="-1" /> 
+   </ParticleType> 
+   <ParticleType name="Sigma(1660)0" texName="\Sigma\;(1660)\;P_{11}" antiName="Sigma(1660)bar0" antiTexName="\overline{\Sigma\;(1660)\;P_{11}}" > 
+      <Data name="PDGID" value="13212" /> 
+      <Data name="Charge" value="0" /> 
+   </ParticleType> 
+   <ParticleType name="Sigma(1660)+" texName="\Sigma\;(1660)\;P_{11}" antiName="Sigma(1660)bar+" antiTexName="\overline{\Sigma\;(1660)\;P_{11}}" > 
+      <Data name="PDGID" value="13222" /> 
+      <Data name="Charge" value="+1" /> 
+   </ParticleType> 
+   <ParticleType name="Sigma(1670)-" texName="\Sigma\;(1670)\;D_{13}" antiName="Sigma(1670)bar-" antiTexName="\overline{\Sigma\;(1670)\;D_{13}}" > 
+      <Data name="PDGID" value="13114" /> 
+      <Data name="Charge" value="-1" /> 
+   </ParticleType> 
+   <ParticleType name="Sigma(1670)0" texName="\Sigma\;(1670)\;D_{13}" antiName="Sigma(1670)bar0" antiTexName="\overline{\Sigma\;(1670)\;D_{13}}" > 
+      <Data name="PDGID" value="13214" /> 
+      <Data name="Charge" value="0" /> 
+   </ParticleType> 
+   <ParticleType name="Sigma(1670)+" texName="\Sigma\;(1670)\;D_{13}" antiName="Sigma(1670)bar+" antiTexName="\overline{\Sigma\;(1670)\;D_{13}}" > 
+      <Data name="PDGID" value="13224" /> 
+      <Data name="Charge" value="+1" /> 
+   </ParticleType> 
+   <ParticleType name="Sigma(1750)-" texName="\Sigma\;(1750)\;S_{11}" antiName="Sigma(1750)bar-" antiTexName="\overline{\Sigma\;(1750)\;S_{11}}" > 
+      <Data name="PDGID" value="23112" /> 
+      <Data name="Charge" value="-1" /> 
+   </ParticleType> 
+   <ParticleType name="Sigma(1750)0" texName="\Sigma\;(1750)\;S_{11}" antiName="Sigma(1750)bar0" antiTexName="\overline{\Sigma\;(1750)\;S_{11}}" > 
+      <Data name="PDGID" value="23212" /> 
+      <Data name="Charge" value="0" /> 
+   </ParticleType> 
+   <ParticleType name="Sigma(1750)+" texName="\Sigma\;(1750)\;S_{11}" antiName="Sigma(1750)bar+" antiTexName="\overline{\Sigma\;(1750)\;S_{11}}" > 
+      <Data name="PDGID" value="23222" /> 
+      <Data name="Charge" value="+1" /> 
+   </ParticleType> 
+   <ParticleType name="Sigma(1775)-" texName="\Sigma\;(1775)\;D_{15}" antiName="Sigma(1775)bar-" antiTexName="\overline{\Sigma\;(1775)\;D_{15}}" > 
+      <Data name="PDGID" value="3116" /> 
+      <Data name="Charge" value="-1" /> 
+   </ParticleType> 
+   <ParticleType name="Sigma(1775)0" texName="\Sigma\;(1775)\;D_{15}" antiName="Sigma(1775)bar0" antiTexName="\overline{\Sigma\;(1775)\;D_{15}}" > 
+      <Data name="PDGID" value="3216" /> 
+      <Data name="Charge" value="0" /> 
+   </ParticleType> 
+   <ParticleType name="Sigma(1775)+" texName="\Sigma\;(1775)\;D_{15}" antiName="Sigma(1775)bar+" antiTexName="\overline{\Sigma\;(1775)\;D_{15}}" > 
+      <Data name="PDGID" value="3226" /> 
+      <Data name="Charge" value="+1" /> 
+   </ParticleType> 
+   <ParticleType name="Sigma(1915)-" texName="\Sigma\;(1915)\;F_{15}" antiName="Sigma(1915)bar-" antiTexName="\overline{\Sigma\;(1915)\;F_{15}}" > 
+      <Data name="PDGID" value="13116" /> 
+      <Data name="Charge" value="-1" /> 
+   </ParticleType> 
+   <ParticleType name="Sigma(1915)0" texName="\Sigma\;(1915)\;F_{15}" antiName="Sigma(1915)bar0" antiTexName="\overline{\Sigma\;(1915)\;F_{15}}" > 
+      <Data name="PDGID" value="13216" /> 
+      <Data name="Charge" value="0" /> 
+   </ParticleType> 
+   <ParticleType name="Sigma(1915)+" texName="\Sigma\;(1915)\;F_{15}" antiName="Sigma(1915)bar+" antiTexName="\overline{\Sigma\;(1915)\;F_{15}}" > 
+      <Data name="PDGID" value="13226" /> 
+      <Data name="Charge" value="+1" /> 
+   </ParticleType> 
+   <ParticleType name="Sigma(1940)-" texName="\Sigma\;(1940)\;D_{13}" antiName="Sigma(1940)bar-" antiTexName="\overline{\Sigma\;(1940)\;D_{13}}" > 
+      <Data name="PDGID" value="23114" /> 
+      <Data name="Charge" value="-1" /> 
+   </ParticleType> 
+   <ParticleType name="Sigma(1940)0" texName="\Sigma\;(1940)\;D_{13}" antiName="Sigma(1940)bar0" antiTexName="\overline{\Sigma\;(1940)\;D_{13}}" > 
+      <Data name="PDGID" value="23214" /> 
+      <Data name="Charge" value="0" /> 
+   </ParticleType> 
+   <ParticleType name="Sigma(1940)+" texName="\Sigma\;(1940)\;D_{13}" antiName="Sigma(1940)bar+" antiTexName="\overline{\Sigma\;(1940)\;D_{13}}" > 
+      <Data name="PDGID" value="23224" /> 
+      <Data name="Charge" value="+1" /> 
+   </ParticleType> 
+   <ParticleType name="Sigma(2030)-" texName="\Sigma\;(2030)\;F_{17}" antiName="Sigma(2030)bar-" antiTexName="\overline{\Sigma\;(2030)\;F_{17}}" > 
+      <Data name="PDGID" value="3118" /> 
+      <Data name="Charge" value="-1" /> 
+   </ParticleType> 
+   <ParticleType name="Sigma(2030)0" texName="\Sigma\;(2030)\;F_{17}" antiName="Sigma(2030)bar0" antiTexName="\overline{\Sigma\;(2030)\;F_{17}}" > 
+      <Data name="PDGID" value="3218" /> 
+      <Data name="Charge" value="0" /> 
+   </ParticleType> 
+   <ParticleType name="Sigma(2030)+" texName="\Sigma\;(2030)\;F_{17}" antiName="Sigma(2030)bar+" antiTexName="\overline{\Sigma\;(2030)\;F_{17}}" > 
+      <Data name="PDGID" value="3228" /> 
+      <Data name="Charge" value="+1" /> 
+   </ParticleType> 
+   <ParticleType name="Sigma(2250)" texName="\Sigma\;(2250)" antiName="Sigma(2250)bar" antiTexName="\overline{\Sigma\;(2250)}" > 
+   </ParticleType> 
+   <ParticleType name="Xi0" texName="\Xi^{0}" antiName="Xi0bar" antiTexName="\overline{\Xi^{0}}" > 
+      <Data name="PDGID" value="3322" /> 
+      <Data name="Charge" value="0" /> 
+      <Data name="Mass"     texName="Mass $m$" value="1314.83" posError="0.20" negError="0.20" unit="MeV"/> 
+      <Data name="LifeTime" texName="Mean Life $\tau$" value="2.90E-10" posError="0.09E-10" negError="0.09E-10" unit="s"/> 
+   </ParticleType> 
+   <ParticleType name="Xi-" texName="\Xi^{-}" antiName="Xi-bar" antiTexName="\overline{\Xi^{-}}" > 
+      <Data name="PDGID" value="3312" /> 
+      <Data name="Charge" value="-1" /> 
+      <Data name="Mass"     texName="Mass $m$" value="1321.31" posError="0.13" negError="0.13" unit="MeV"/> 
+      <Data name="LifeTime" texName="Mean Life $\tau$" value="1.639E-10" posError="0.015E-10" negError="0.015E-10" unit="s"/> 
+   </ParticleType> 
+   <ParticleType name="Xi(1530)-" texName="\Xi\;(1530)\;P_{13}" antiName="Xi(1530)bar-" antiTexName="\overline{\Xi\;(1530)\;P_{13}}" > 
+      <Data name="Mass"     texName="Mass $m$" value="1535.0" posError="0.6" negError="0.6" unit="MeV"/> 
+      <Data name="Width"    texName="Full Width $\Gamma$" value="9.9" posError="1.7" negError="1.9" unit="MeV"/> 
+   </ParticleType> 
+   <ParticleType name="Xi(1530)0" texName="\Xi\;(1530)\;P_{13}" antiName="Xi(1530)bar0" antiTexName="\overline{\Xi\;(1530)\;P_{13}}" > 
+      <Data name="Mass"     texName="Mass $m$" value="1531.80" posError="0.32" negError="0.32" unit="MeV"/> 
+      <Data name="Width"    texName="Full Width $\Gamma$" value="9.1" posError="0.5" negError="0.5" unit="MeV"/> 
+   </ParticleType> 
+   <ParticleType name="Xi(1690)" texName="\Xi\;(1690)" antiName="Xi(1690)bar" antiTexName="\overline{\Xi\;(1690)}" > 
+      <Data name="Mass"     texName="Mass $m$" value="1690" posError="10" negError="10" unit="MeV"/> 
+   </ParticleType> 
+   <ParticleType name="Xi(1820)-" texName="\Xi\;(1820)\;D_{13}" antiName="Xi(1820)bar-" antiTexName="\overline{\Xi\;(1820)\;D_{13}}" > 
+      <Data name="PDGID" value="13314" /> 
+      <Data name="Charge" value="-1" /> 
+      <Data name="Mass"     texName="Mass $m$" value="1823" posError="5" negError="5" unit="MeV"/> 
+      <Data name="Width"    texName="Full Width $\Gamma$" value="24" posError="15" negError="10" unit="MeV"/> 
+   </ParticleType> 
+   <ParticleType name="Xi(1820)0" texName="\Xi\;(1820)\;D_{13}" antiName="Xi(1820)bar0" antiTexName="\overline{\Xi\;(1820)\;D_{13}}" > 
+      <Data name="PDGID" value="13324" /> 
+      <Data name="Charge" value="0" /> 
+      <Data name="Mass"     texName="Mass $m$" value="1823" posError="5" negError="5" unit="MeV"/> 
+      <Data name="Width"    texName="Full Width $\Gamma$" value="24" posError="15" negError="10" unit="MeV"/> 
+   </ParticleType> 
+   <ParticleType name="Xi(1950)" texName="\Xi\;(1950)" antiName="Xi(1950)bar" antiTexName="\overline{\Xi\;(1950)}" > 
+      <Data name="Mass"     texName="Mass $m$" value="1950" posError="15" negError="15" unit="MeV"/> 
+      <Data name="Width"    texName="Full Width $\Gamma$" value="60" posError="20" negError="20" unit="MeV"/> 
+   </ParticleType> 
+   <ParticleType name="Xi(2030)" texName="\Xi\;(2030)" antiName="Xi(2030)bar" antiTexName="\overline{\Xi\;(2030)}" > 
+      <Data name="Mass"     texName="Mass $m$" value="2025" posError="5" negError="5" unit="MeV"/> 
+      <Data name="Width"    texName="Full Width $\Gamma$" value="20" posError="15" negError="5" unit="MeV"/> 
+   </ParticleType> 
+   <ParticleType name="Omega-" texName="\Omega^{-}" antiName="Omega-bar" antiTexName="\overline{\Omega^{-}}" > 
+      <Data name="PDGID" value="3334" /> 
+      <Data name="Charge" value="-1" /> 
+      <Data name="Mass"     texName="Mass $m$" value="1672.45" posError="0.29" negError="0.29" unit="MeV"/> 
+      <Data name="LifeTime" texName="Mean Life $\tau$" value="0.821E-10" posError="0.011E-10" negError="0.011E-10" unit="s"/> 
+   </ParticleType> 
+   <ParticleType name="Omega(2250)-" texName="\Omega\;(2250)^{-}" antiName="Omega(2250)-bar" antiTexName="\overline{\Omega\;(2250)^{-}}" > 
+      <Data name="Mass"     texName="Mass $m$" value="2252" posError="9" negError="9" unit="MeV"/> 
+      <Data name="Width"    texName="Full Width $\Gamma$" value="55" posError="18" negError="18" unit="MeV"/> 
+   </ParticleType> 
+   <ParticleType name="Lambda(c)+" texName="\Lambda^{+}_{c}" antiName="Lambda+bar(c)" antiTexName="\overline{\Lambda^{+}_{c}}" > 
+      <Data name="PDGID" value="4122" /> 
+      <Data name="Charge" value="+1" /> 
+      <Data name="Mass"     texName="Mass $m$" value="2284.9" posError="0.6" negError="0.6" unit="MeV"/> 
+      <Data name="LifeTime" texName="Mean Life $\tau$" value="0.206E-12" posError="0.012E-12" negError="0.012E-12" unit="s"/> 
+   </ParticleType> 
+   <ParticleType name="Lambda(c)(2593)+" texName="\Lambda_{c}(2593)^{+}" antiName="Lambda(cbar(2593)+)" antiTexName="\overline{\Lambda_{c}(2593)^{+}}" > 
+      <Data name="PDGID" value="14122" /> 
+      <Data name="Charge" value="+1" /> 
+      <Data name="Mass"     texName="Mass $m$" value="2593.9" posError="0.8" negError="0.8" unit="MeV"/> 
+      <Data name="Width"    texName="Full Width $\Gamma$" value="3.6" posError="2.0" negError="1.3" unit="MeV"/> 
+   </ParticleType> 
+   <ParticleType name="Lambda(c)(2625)+" texName="\Lambda_{c}(2625)^{+}" antiName="Lambda(cbar(2625)+)" antiTexName="\overline{\Lambda_{c}(2625)^{+}}" > 
+      <Data name="Mass"     texName="Mass $m$" value="2626.6" posError="0.8" negError="0.8" unit="MeV"/> 
+   </ParticleType> 
+   <ParticleType name="Sigma(c)(2455)++" texName="\Sigma_{c}(2455)" antiName="Sigma(cbar(2455))++" antiTexName="\overline{\Sigma_{c}(2455)}" > 
+      <Data name="Mass"     texName="Mass $m$" value="2452.8" posError="0.6" negError="0.6" unit="MeV"/> 
+   </ParticleType> 
+   <ParticleType name="Sigma(c)(2455)+" texName="\Sigma_{c}(2455)" antiName="Sigma(cbar(2455))+" antiTexName="\overline{\Sigma_{c}(2455)}" > 
+      <Data name="Mass"     texName="Mass $m$" value="2453.6" posError="0.9" negError="0.9" unit="MeV"/> 
+   </ParticleType> 
+   <ParticleType name="Sigma(c)(2455)0" texName="\Sigma_{c}(2455)" antiName="Sigma(cbar(2455))0" antiTexName="\overline{\Sigma_{c}(2455)}" > 
+      <Data name="Mass"     texName="Mass $m$" value="2452.2" posError="0.6" negError="0.6" unit="MeV"/> 
+   </ParticleType> 
+   <ParticleType name="Sigma(c)(2520)++" texName="\Sigma_{c}(2520)" antiName="Sigma(cbar(2520))++" antiTexName="\overline{\Sigma_{c}(2520)}" > 
+      <Data name="Mass"     texName="Mass $m$" value="2519.4" posError="1.5" negError="1.5" unit="MeV"/> 
+      <Data name="Width"    texName="Full Width $\Gamma$" value="18" posError="5" negError="5" unit="MeV"/> 
+   </ParticleType> 
+   <ParticleType name="Sigma(c)(2520)0" texName="\Sigma_{c}(2520)" antiName="Sigma(cbar(2520))0" antiTexName="\overline{\Sigma_{c}(2520)}" > 
+      <Data name="Mass"     texName="Mass $m$" value="2517.5" posError="1.4" negError="1.4" unit="MeV"/> 
+      <Data name="Width"    texName="Full Width $\Gamma$" value="13" posError="5" negError="5" unit="MeV"/> 
+   </ParticleType> 
+   <ParticleType name="Xi(c)+" texName="\Xi^{+}_{c}" antiName="Xi+bar(c)" antiTexName="\overline{\Xi^{+}_{c}}" > 
+      <Data name="PDGID" value="4232" /> 
+      <Data name="Charge" value="+1" /> 
+      <Data name="Mass"     texName="Mass $m$" value="2466.3" posError="1.4" negError="1.4" unit="MeV"/> 
+      <Data name="LifeTime" texName="Mean Life $\tau$" value="0.33E-000" posError="0.06E-000" negError="0.04E-000" unit="12"/> 
+   </ParticleType> 
+   <ParticleType name="Xi(c)0" texName="\Xi^{0}_{c}" antiName="Xi0bar(c)" antiTexName="\overline{\Xi^{0}_{c}}" > 
+      <Data name="PDGID" value="4132" /> 
+      <Data name="Charge" value="0" /> 
+      <Data name="Mass"     texName="Mass $m$" value="2471.8" posError="1.4" negError="1.4" unit="MeV"/> 
+      <Data name="LifeTime" texName="Mean Life $\tau$" value="0.098E-000" posError="0.023E-000" negError="0.015E-000" unit="12"/> 
+   </ParticleType> 
+   <ParticleType name="Xi(c)'+" texName="\Xi^{\prime+}_{c}" antiName="Xi'+bar(c)" antiTexName="\overline{\Xi^{\prime+}_{c}}" > 
+      <Data name="PDGID" value="4322" /> 
+      <Data name="Charge" value="+1" /> 
+      <Data name="Mass"     texName="Mass $m$" value="2574.1" posError="3.3" negError="3.3" unit="MeV"/> 
+   </ParticleType> 
+   <ParticleType name="Xi(c)'0" texName="\Xi^{\prime0}_{c}" antiName="Xi'0bar(c)" antiTexName="\overline{\Xi^{\prime0}_{c}}" > 
+      <Data name="PDGID" value="4312" /> 
+      <Data name="Charge" value="0" /> 
+      <Data name="Mass"     texName="Mass $m$" value="2578.8" posError="3.2" negError="3.2" unit="MeV"/> 
+   </ParticleType> 
+   <ParticleType name="Xi(c)(2645)+" texName="\Xi_{c}(2645)" antiName="Xi(cbar(2645))+" antiTexName="\overline{\Xi_{c}(2645)}" > 
+   </ParticleType> 
+   <ParticleType name="Xi(c)(2645)0" texName="\Xi_{c}(2645)" antiName="Xi(cbar(2645))0" antiTexName="\overline{\Xi_{c}(2645)}" > 
+   </ParticleType> 
+   <ParticleType name="Xi(c)(2815)+" texName="\Xi_{c}(2815)" antiName="Xi(cbar(2815))+" antiTexName="\overline{\Xi_{c}(2815)}" > 
+   </ParticleType> 
+   <ParticleType name="Xi(c)(2815)0" texName="\Xi_{c}(2815)" antiName="Xi(cbar(2815))0" antiTexName="\overline{\Xi_{c}(2815)}" > 
+   </ParticleType> 
+   <ParticleType name="Omega(c)0" texName="\Omega^{0}_{c}" antiName="Omega0bar(c)" antiTexName="\overline{\Omega^{0}_{c}}" > 
+      <Data name="PDGID" value="4332" /> 
+      <Data name="Charge" value="0" /> 
+      <Data name="Mass"     texName="Mass $m$" value="2704" posError="4" negError="4" unit="MeV"/> 
+      <Data name="LifeTime" texName="Mean Life $\tau$" value="0.064E-12" posError="0.020E-12" negError="0.020E-12" unit="s"/> 
+   </ParticleType> 
+   <ParticleType name="Lambda(b)0" texName="\Lambda^{0}_{b}" antiName="Lambda0bar(b)" antiTexName="\overline{\Lambda^{0}_{b}}" > 
+      <Data name="PDGID" value="5122" /> 
+      <Data name="Charge" value="0" /> 
+      <Data name="Mass"     texName="Mass $m$" value="5624" posError="9" negError="9" unit="MeV"/> 
+      <Data name="LifeTime" texName="Mean Life $\tau$" value="1.229E-12" posError="0.080E-12" negError="0.080E-12" unit="s"/> 
+   </ParticleType> 
+   <ParticleType name="b-baryonADMIXTURE(Lambda(b),Xi(b),Sigma(b),Omega(b))" texName="b\;-baryon\;ADMIXTURE\;(\Lambda_{b},\;\Xi_{b},\;\Sigma_{b},\;\Omega_{b})" antiName="b-baryonADMIXTURE(Lambda(bbar,Xi_b),Sigma(b),Omega(b))" antiTexName="\overline{b\;-baryon\;ADMIXTURE\;(\Lambda_{b},\;\Xi_{b},\;\Sigma_{b},\;\Omega_{b})}" > 
+      <Data name="LifeTime" texName="Mean Life $\tau$" value="1.208E-12" posError="0.051E-12" negError="0.051E-12" unit="s"/> 
+   </ParticleType> 
+</PPML> 

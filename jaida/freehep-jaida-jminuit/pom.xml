@@ -1,0 +1,37 @@
+<?xml version="1.0"?><project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
+  <parent>
+    <artifactId>jaida-pom</artifactId>
+    <groupId>org.freehep</groupId>
+    <version>3.3.0-13-SNAPSHOT</version>
+  </parent>
+  <modelVersion>4.0.0</modelVersion>
+  <groupId>org.freehep</groupId>
+  <artifactId>freehep-jaida-jminuit</artifactId>
+  <name>FreeHEP JAIDA JMinuit</name>
+  <description>FreeHEP JAIDA Java Minuit Connector</description>
+  <repositories>
+    <repository>
+      <id>freehep-maven</id>
+      <name>Maven FreeHEP</name>
+      <url>http://java.freehep.org/maven2</url>
+    </repository>
+  </repositories>
+  <dependencies>
+    <dependency>
+      <groupId>org.freehep</groupId>
+      <artifactId>freehep-jaida</artifactId>
+      <version>3.3.0-7</version>
+    </dependency>
+    <dependency>
+      <groupId>org.freehep</groupId>
+      <artifactId>freehep-jminuit-jdk1.4</artifactId>
+      <version>1.0</version>
+    </dependency>
+    <dependency>
+      <groupId>junit</groupId>
+      <artifactId>junit</artifactId>
+      <version>3.8.2</version>
+      <scope>compile</scope>
+    </dependency>
+  </dependencies>
+</project>

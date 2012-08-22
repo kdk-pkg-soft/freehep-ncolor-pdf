@@ -1,0 +1,54 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
+  <parent>
+    <artifactId>global</artifactId>
+    <groupId>org.freehep</groupId>
+    <version>8</version>
+  </parent>
+  <modelVersion>4.0.0</modelVersion>
+  <groupId>org.freehep</groupId>
+  <artifactId>jaida-pom</artifactId>
+  <packaging>pom</packaging>
+  <name>FreeHEP JAIDA POM</name>
+  <version>3.3.0-13-SNAPSHOT</version>
+  <description>FreeHEP JAIDA Libraries</description>
+  <repositories>
+    <repository>
+      <id>freehep-maven</id>
+      <name>Maven FreeHEP</name>
+      <url>http://java.freehep.org/maven2</url>
+    </repository>
+  </repositories>
+  <build>
+    <plugins>
+      <plugin>
+        <groupId>org.apache.maven.plugins</groupId>
+        <artifactId>maven-release-plugin</artifactId>
+        <configuration>
+          <preparationGoals>clean install</preparationGoals>
+          <arguments>-DupdateReleaseInfo</arguments>
+        </configuration>
+      </plugin>
+    </plugins>
+  </build>
+  <modules>
+    <module>freehep-jaida</module>
+    <module>freehep-jaida-remote</module>
+    <module>freehep-jaida-hbook</module>
+    <module>freehep-jaida-root</module>
+    <module>freehep-jaida-jminuit</module>
+    <module>freehep-jaida-fminuit</module>
+    <module>freehep-jaida-xml</module>
+  </modules>
+  <mailingLists>
+    <mailingList>
+      <name>JAIDA/AIDAJNI/AIDA Forum</name>
+      <post>http://java.freehep.org/redirect?project=JAIDA&amp;area=forum</post>
+      <archive />
+    </mailingList>
+    <mailingList>
+      <name>AIDA Mailing List</name>
+      <post>http://aida.freehep.org/mailing_list.thtml</post>
+      <archive />
+    </mailingList>
+  </mailingLists>
+</project>

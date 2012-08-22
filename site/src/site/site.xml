@@ -1,0 +1,158 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<project name="freehep">
+    <bannerLeft>
+        <name>FreeHEP Java Libraries</name>
+<!--        <src>http://maven.apache.org/images/apache-maven-project.png</src> -->
+<!-- FIXME, should this be substituted by some properties -->
+        <href>http://java.freehep.org</href>
+    </bannerLeft>
+    
+    <bannerRight>
+        <name>FreeHEP</name>
+        <src>http://java.freehep.org/images/sm-freehep.gif</src>
+        <href>http://java.freehep.org</href>
+    </bannerRight>
+    
+    <poweredBy>
+        <logo
+           name="Build with Maven 2"
+           href="http://maven.apache.org"
+           img="images/logos/maven-feather.png"/>
+		<logo
+           name="JIRA"
+           href="http://www.atlassian.com/c/NPOS/10160"
+           img="images/jira_button_120wx60h.gif"/> 
+        <logo
+           name="Hosted at SLAC"
+           href="http://www.slac.stanford.edu"
+           img="http://home.slac.stanford.edu/images/sub_slaclogo.gif"/>
+		<logo
+           name="NetBeans"
+           href="http://www.netbeans.org"
+           img="images/netbeans.gif"/> 
+        <logo
+           name="Eclipse"
+           href="http://www.eclipse.org"
+           img="images/eclipse.gif"/> 
+        <logo
+           name="YourKit"
+           href="http://www.yourkit.com"
+           img="images/yjp.gif"/> 
+    </poweredBy>
+
+    <body>
+        <links>
+            <item name="FreeHEP 1.x" href="freehep1.x"/>
+            <item name="FreeHEP 2.x" href="http://java.freehep.org/"/>
+            <item name="JAS" href="http://jas.freehep.org/"/>
+            <item name="WIRED" href="http://wired.freehep.org/"/>
+        </links>
+    
+        <menu name="General">
+            <item name="Introduction" href="index.html"/>
+            <item name="Team" href="team-list.html"/>
+            <item name="License" href="license.html"/>
+            <item name="Mailing Lists" href="mail-lists.html"/>
+			<item name="Publications &amp; Talks" href="Publications.html"/>
+			<item name="Users" href="Users.html"/>
+        </menu>
+        
+        <menu name="User Information">
+            <item name="Maven Repositories" href="maven-repositories.html"/>
+            <item name="Global Libraries" href="libraries.html"/>
+            <item name="Use with NetBeans" href="netbeans.html"/>
+            <item name="Use with Eclipse" href="eclipse.html"/>
+            <item name="FreeHEP 1.x Web" href="freehep1.x/index.html"/>		
+            <item name="Maven 1.x Plugins" href="maven1.x"/>		
+            <item name="Forums" href="http://forum.freehep.org"/>
+            <item name="Bugs and Issues" href="http://bugs.freehep.org"/>
+        </menu>
+
+        <menu name="Developer Information">
+            <item name="Migration Status" href="status.html"/>
+            <item name="Source Code" href="svn.html"/>
+            <item name="Compile, Test and Install" href="mvn.html"/>
+            <item name="Deploy" href="deploy.html"/>
+            <item name="Continuous Integration" href="continuum.html"/>
+            <item name="Release" href="release.html"/>
+            <item name="Adding Modules" href="modules.html"/>
+            <item name="Native Code" href="native.html"/>
+            <item name="Coding Standard" href="coding.html"/>
+            <item name="Changes 1.x - 2.x" href="changes.html"/>
+            <item name="Infrastructure" href="infrastructure.html"/>
+        </menu>
+
+        <menu name="Demonstrations">
+            <item name="Icon Browser" href="freehep-iconbrowser/index.html"/>
+            <item name="Vector Graphics" href="freehep-exportdemo/index.html"/>
+            <item name="Root Histogram Browser" href="freehep-roothistogrambrowser/index.html"/>
+            <item name="Root Object Browser" href="freehep-rootobjectbrowser/index.html"/>
+            <item name="3D Lego Plot" href="freehep-legoplot/index.html"/>
+        </menu>
+        
+        <menu name="FreeHEP 1.x Projects">
+        	<item name = "CERNLIBAdapter"           href="freehep1.x/cernlibadapter/index.html"/>
+        	<item name = "HEPREP"                   href="freehep1.x/heprep/index.html"/>
+         	<item name = "YaPPI"                    href="freehep1.x/yappi/index.html"/>
+        </menu>
+        
+        <menu name="Java Projects (A-Z)">
+        	<item name = "AID"                      href="freehep-aid/index.html"/>
+        	<item name = "AIDAJNI"                  href="aidajni/index.html"/>
+        	<item name = "AIDATLD"                  href="http://aidatld.freehep.org"/>
+        	<item name = "Application Framework"    href="freehep-application/index.html"/>
+        	<item name = "ArgV"                     href="freehep-argv/index.html"/>
+        	<item name = "CommandDispatcher"        href="freehep-commanddispatcher/index.html"/>
+        	<item name = "CommandLine"              href="freehep-commandline/index.html"/>
+        	<item name = "Export"                   href="freehep-export/index.html"/>
+        	<item name = "FMinuit"                  href="freehep-fminuit/index.html"/>
+       		<item name = "HBook"                    href="freehep-hbook/index.html"/>
+       		<item name = "HepRep"                   href="heprep/index.html"/>       		
+         	<item name = "IO"                       href="freehep-io/index.html"/>
+        	<item name = "JAIDA"                    href="jaida/index.html"/>
+        	<item name = "Java3D"                   href="freehep-java3d/index.html"/>
+        	<item name = "JMinuit"                  href="freehep-jminuit/index.html"/>
+       		<item name = "MCFIO"                    href="freehep-mcfio/index.html"/>
+        	<item name = "ParameterDatabase"        href="freehep-parameterdatabase/index.html"/>
+        	<item name = "Physics"                  href="freehep-physics/index.html"/>
+        	<item name = "PostScript Viewer"        href="freehep-psviewer/index.html"/>
+        	<item name = "Record"                   href="freehep-record/index.html"/>
+       		<item name = "RootIO"                   href="freehep-rootio/index.html"/>
+        	<item name = "RTTI"                     href="freehep-rtti/index.html"/>
+       		<item name = "StdHEP"                   href="freehep-stdhep/index.html"/>
+        	<item name = "Swing"                    href="freehep-swing/index.html"/>
+        	<item name = "Util"                     href="freehep-util/index.html"/>
+           	<item name = "VectorGraphics"           href="vectorgraphics/index.html"/>
+        	<item name = "WebUtil"                  href="freehep-webutil/index.html"/>
+       		<item name = "XDR"                      href="freehep-xdr/index.html"/>
+        	<item name = "XML"                      href="freehep-xml/index.html"/>
+        	<item name = "YaPPI"					href="freehep-yappi/index.html"/>
+        </menu>
+
+        <menu name="Maven 2 Plugins (A-Z)">
+        	<item name = "AID Plugin"               href="freehep-aid-plugin/index.html"/>
+           	<item name = "CharTable Plugin"         href="freehep-chartableconverter-plugin/index.html"/>
+<!--
+           	<item name = "Filter Plugin"            href="freehep-filter-plugin/index.html"/>
+-->
+        	<item name = "IDLJ Plugin"              href="freehep-idlj-plugin/index.html"/>
+        	<item name = "JarJar Plugin"            href="freehep-jarjar-plugin/index.html"/>
+        	<item name = "JAS Plugin"               href="freehep-jas-plugin/index.html"/>
+        	<item name = "NAR Plugin"               href="freehep-nar-plugin/index.html"/>
+        	<item name = "One Plugin"               href="freehep-one-plugin/index.html"/>
+        	<item name = "RMIC Plugin"              href="freehep-rmic-plugin/index.html"/>
+        	<item name = "SWIG Plugin"              href="freehep-swig-plugin/index.html"/>
+        	<item name = "WBXML Plugin"             href="freehep-wbxml-plugin/index.html"/>
+        </menu>
+
+        <menu name="Native Projects (A-Z)">
+        	<item name = "CHepRep"              	href="freehep-cheprep/index.html"/>
+        	<item name = "JNI"              	href="freehep-jni/index.html"/>
+        	<item name = "WBXML"              	href="freehep-wbxml/index.html"/>
+        	<item name = "ZLib"              	href="freehep-zlib/index.html"/>
+        </menu>
+<!--        
+        ${reports}      
+-->
+    </body>
+</project>

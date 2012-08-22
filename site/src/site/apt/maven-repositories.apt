@@ -1,0 +1,48 @@
+    ---
+FreeHEP Maven Repositories
+    ---
+Mark Donszelmann
+    ---
+    ---
+
+FreeHEP Maven Repositories
+
+    FreeHEP contains three maven repositories where we publish artifacts, source code and javadoc. If you are using 
+    maven and want access to our published artifacts, you need to point your pom files to our repository
+    (as well as to your own and {{http://www.ibiblio.org/maven}}).
+    
+    For Maven 1 use: <<< {{http://java.freehep.org/maven}} >>> or the following section in your project.properties:
+    
++--
+maven.repo.remote = http://java.freehep.org/maven/,http://www.ibiblio.org/maven/
++--
+
+    For Maven 2 use: <<< {{http://java.freehep.org/maven2}} >>> or the following section in your pom.xml:
+    
++--
+<repositories>
+  <repository>
+    <id>freehep-maven</id>
+    <name>Maven FreeHEP</name>
+    <url>http://java.freehep.org/maven2</url>
+  </repository>
+</repositories>
++--
+
+    For Maven 2, if you are at SLAC you can also add: <<< {{http://java.freehep.org/maven2-slaconly}} >>> 
+    or the following section in your pom.xml:
+    
++--
+<repositories>
+  <repository>
+    <id>freehep-maven-slaconly</id>
+    <name>Maven FreeHEP SLAC Only</name>
+    <url>http://java.freehep.org/maven2-slaconly</url>
+  </repository>
+</repositories>
++--
+    to be able to download 3rd party proprietary jar files, which cannot be published. Other users may need to 
+    follow the instructions given by maven to download these proprietary jar files and install them.
+
+    The FreeHEP pom files already contain references to the repositories mentioned above.
+    

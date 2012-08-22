@@ -1,0 +1,48 @@
+    ---
+FreeHEP AIDAJNI - Source Repository
+    ---
+Mark Donszelmann
+    ---
+    ---
+
+Source Repository
+
+    This project uses {{{http://subversion.tigris.org}Subversion}} to manage its 
+source code. Instructions on Subversion use can be found at {{http://svnbook.red-bean.com/}}.
+
+
+* Web Access
+
+    You can browse the repository with 
+{{{http://java.freehep.org/svn/repobrowser.svn?path=%2ffreehep%2ftrunk%2fjaida%2ffreehep-aidajni/&revision=HEAD}Sventon}}.
+
+
+* Checkout HEAD
+
+    The source of freehep-aidajni and the aida-config tool can be checked out from SVN with these commands:
+    
++--
+svn checkout svn://svn.freehep.org/svn/freehep/trunk/jaida/freehep-aidajni freehep-aidajni
+svn checkout svn://svn.freehep.org/svn/freehep/trunk/jaida/aida-config aida-config
++--
+
+    To build the distributions you also need the aidajni assembly which you can check out from SVN with this command:
+    
++--
+svn checkout svn://svn.freehep.org/svn/freehep/trunk/assembly/aidajni aidajni
++--
+
+* Checkout Version X.Y.Z
+
+    The source of freehep-aidajni and the aida-config tool can be checked out from SVN with these commands:
+    
++--
+svn checkout svn://svn.freehep.org/svn/freehep/tags/freehep-aidajni-x.y.z freehep-aidajni-x.y.z
+svn checkout svn://svn.freehep.org/svn/freehep/tags/aida-config-x.y.z aida-config-x.y.z
++--
+
+    To build the distributions you also need the aidajni assembly which you can check out from SVN with this command:
+    
++--
+svn checkout svn://svn.freehep.org/svn/freehep/tags/aidajni-x.y.z aidajni-x.y.z
++--

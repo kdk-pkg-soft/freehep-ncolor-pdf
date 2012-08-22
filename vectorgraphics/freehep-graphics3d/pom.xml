@@ -1,0 +1,13 @@
+<project>
+  <parent>
+    <artifactId>vectorgraphics</artifactId>
+    <groupId>org.freehep</groupId>
+    <version>2.1-SNAPSHOT</version>
+  </parent>
+  <modelVersion>4.0.0</modelVersion>
+  <groupId>org.freehep</groupId>
+  <artifactId>freehep-graphics3d</artifactId>
+  <name>FreeHEP Graphics 3D</name>
+  <description>FreeHEP Graphics 3D Library</description>
+  <dependencies/>
+</project>

@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!--
+    Document   : SiteMapTemplate.xml
+    Created on : March 11, 2003, 11:20 AM
+    Author     : The FreeHEP team @ SLAC
+    Description: The default MenuList
+-->
+<?xml-stylesheet type="text/xsl" href="menu.xslt"?>
+<MenuList xmlns:xsi='http://www.w3.org/2001/XMLSchema-instance'
+  xsi:noNamespaceSchemaLocation='SiteMap.xsd'>
+    <Menu name = "Introduction">
+        <MenuItem name = "Overview" href="Welcome.html"/>
+        <MenuItem name = "News"/>
+        <MenuItem name = "Features"/>
+        <MenuItem name = "Demos"/>
+        <MenuItem name = "Screen Shots"/>
+        <MenuItem name = "Publications/Talks"/>
+        <MenuItem name = "Future Plans"/>
+        <MenuItem name = "Contributors" href="Contributors.html"/>
+        <MenuItem name = "Users" href="Users.html"/>
+    </Menu>
+    <Menu name = "User Documentation">
+        <MenuItem name = "Overview"/>
+        <MenuItem name = "Manual" href="Manual.html"/>
+        <MenuItem name = "Apis"/>
+        <MenuItem name = "Howtos"/>
+        <MenuItem name = "Tutorials/Examples"/>
+        <MenuItem name = "Quick Guide"/>
+        <MenuItem name = "Related Projects" href="RelatedProjects.html"/>
+        <MenuItem name = "Plugins and Extensions"/>
+        <MenuItem name = "Faq"/>
+        <MenuItem name = "Having Problems"/>
+        <MenuItem name = "License"/>
+    </Menu>
+    <Menu name = "Download">
+        <MenuItem name = "Binary Distributions"/>
+        <MenuItem name = "Source Distributions"/>
+        <MenuItem name = "Release Notes"/>
+    </Menu>
+    <Menu name = "Get Involved">
+        <MenuItem name = "Discussion"/>
+        <MenuItem name = "Source Code"/>
+        <MenuItem name = "Bug Database"/>
+        <MenuItem name = "Enhancement Requests"/>
+        <MenuItem name = "Outreach"/>
+    </Menu>
+    <Menu name = "Developer Area">
+        <MenuItem name = "Design Documentation"/>
+        <MenuItem name = "Project Guidelines"/>
+        <MenuItem name = "How to Extend"/>
+        <MenuItem name = "ToDo List" href="ToDoList.html"/>
+    </Menu>
+</MenuList>

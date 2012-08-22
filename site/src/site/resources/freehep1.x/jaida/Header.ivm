@@ -1,0 +1,4 @@
+#set( $webName = "JAIDA" )
+#set( $webSearch = "java.freehep.org" )
+<h1>JAIDA</h1>
+AIDA in Java

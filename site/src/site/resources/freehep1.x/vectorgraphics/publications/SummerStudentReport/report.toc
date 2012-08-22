@@ -1,0 +1,21 @@
+\contentsline {section}{\numberline {1}Introduction}{2}
+\contentsline {section}{\numberline {2}Features}{2}
+\contentsline {subsection}{\numberline {2.1}Class hierarchy}{2}
+\contentsline {subsection}{\numberline {2.2}Overview of the \texttt {VectorGraphics2D} Features}{2}
+\contentsline {subsubsection}{\numberline {2.2.1}Additional features}{2}
+\contentsline {subsubsection}{\numberline {2.2.2}Multi page documents}{3}
+\contentsline {subsubsection}{\numberline {2.2.3}Drawing to a \texttt {VectorGraphics2D} context}{3}
+\contentsline {subsection}{\numberline {2.3}The new \texttt {PDFGraphics2D} driver}{4}
+\contentsline {subsubsection}{\numberline {2.3.1}Features}{4}
+\contentsline {subsubsection}{\numberline {2.3.2}Implementation}{4}
+\contentsline {subsection}{\numberline {2.4}Newly implemented features of \texttt {PSGraphics2D}}{4}
+\contentsline {section}{\numberline {3}Using the library}{4}
+\contentsline {subsection}{\numberline {3.1}Creation of and drawing on graphics contexts}{4}
+\contentsline {subsection}{\numberline {3.2}Exporting components to a file}{5}
+\contentsline {section}{\numberline {4}Font embedding}{6}
+\contentsline {subsection}{\numberline {4.1}Encoding}{7}
+\contentsline {subsection}{\numberline {4.2}Type 3 fonts}{7}
+\contentsline {subsection}{\numberline {4.3}Type 1 fonts}{8}
+\contentsline {subsection}{\numberline {4.4}TrueType Fonts}{8}
+\contentsline {section}{\numberline {5}Conclusion}{8}
+\contentsline {section}{\numberline {6}Acknowledgements}{9}

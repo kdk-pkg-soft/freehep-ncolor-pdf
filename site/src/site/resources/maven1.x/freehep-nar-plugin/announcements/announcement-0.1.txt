@@ -1,0 +1,26 @@
+The freehep team is pleased to announce the FreeHEP NAR Plug-in 0.1 release! 
+
+http://java.freehep.org/freehep-nar-plugin/index.html
+
+FreeHEP Native Archive Plug-in to compile and link c++, c and fortran. 
+
+Changes in this version include:
+
+  Fixed bugs:
+
+o Something was fixed. Issue: NAR-1.  
+
+To automatically install the plugin, type the following on a single line:
+
+maven plugin:download 
+  -DgroupId=freehep 
+  -DartifactId=freehep-nar-plugin
+  -Dversion=0.1
+
+For a manual installation, you can download the plugin here:
+http://java.freehep.org/maven,http://www.ibiblio.org/maven/freehep/plugins/freehep-nar-plugin-0.1.jar
+         
+
+Have fun!
+-The freehep team
+      

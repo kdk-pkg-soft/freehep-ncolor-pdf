@@ -1,0 +1,287 @@
+<html><head>
+    
+    <link rel="stylesheet" type="text/css" href="WebPage.css">
+
+<meta http-equiv="Content-Type" content="text/html; charset=windows-1252">
+<meta name="GENERATOR" content="Microsoft FrontPage 6.0">
+<meta name="ProgId" content="FrontPage.Editor.Document">
+<title>Release Notes</title>
+</head><body>
+
+<table border="0" style="border-collapse: collapse" bordercolor="#111111" width="100%" cellpadding="0" cellspacing="5">
+  <tr>
+    <td colspan="2">
+        <table bgcolor="#294563" width="100%" border="0" style="border-collapse: collapse" bordercolor="#111111" cellspacing="0" cellpadding="5">
+          <tr>
+                                    <td width="100%" rowspan="2" align="left" valign="center">
+                <font color="#FFCC00">
+                <h1>HEPREP</h1>
+HEPREP implementation in C++ and JAVA                 </font>
+            </td>
+            <td  bgcolor="#4C6C8F" colspan="2" align="right" valign="top">
+              <table width="100%" border="0" style="border-collapse: collapse" bordercolor="#111111" cellpadding="3">
+                <form method="GET" action="http://www.google.com/search">
+                <tr>
+                                                                                                                                                            <td colspan="2">
+                     <input type="text" name="as_q" size="30">
+                  </td>
+                  <td rowspan="2">
+                     <input type="submit">
+                  </td>
+                </tr>
+                                    <tr>
+                                                                <td><input type="radio" checked name="as_sitesearch" value="java.freehep.org" >HEPREP</td>
+                                                                                        <td><input type="radio"  name="as_sitesearch" value="freehep.org" >FreeHEP</td>
+                                                                </tr>
+                                </form>
+              </table>
+            </td>
+          </tr>
+          <tr>
+            <td align="center" valign="center">
+                <a href="http://www.freehep.org">
+                    Member&nbsp;of&nbsp;FreeHEP
+                </a>
+            </td>
+                            <td align="center" valign="center">
+                    <a href="ReleaseNotes-2.0.2.printable.html">Printable&nbsp;Page</a>
+                </td>
+                      </tr>
+        </table>
+    </td>
+  </tr>
+  <tr>
+    <td valign="top">
+        
+<div class="menu">
+<ul>
+<li>
+<span class="head">Introduction</span>
+<ul>
+<li>
+<a href="index.html"><span>Overview</span></a>
+</li>
+<li>
+<a href="Contributors.html"><span>Contributors</span></a>
+</li>
+</ul>
+</li>
+<li>
+<span class="head">User&nbsp;Documentation</span>
+<ul>
+<li>
+<a href="License.html"><span>License</span></a>
+</li>
+</ul>
+</li>
+<li>
+<span class="head">Download</span>
+<ul>
+<li>
+<a href="BinaryDistributions.html"><span>Binary&nbsp;Distributions</span></a>
+</li>
+<li>
+<a href="SourceDistributions.html"><span>Source&nbsp;Distributions</span></a>
+</li>
+<li>
+<a href="AllReleaseNotes.html"><span>Release&nbsp;Notes</span></a>
+</li>
+</ul>
+</li>
+<li>
+<span class="head">Get&nbsp;Involved</span>
+<ul>
+<li>
+<a href="http://java.freehep.org/redirect?project=HEPREP&area=forum"><span>Discussion</span></a>
+</li>
+<li>
+<a href="http://java.freehep.org/redirect?project=Java&area=bugs"><span>Bug&nbsp;Database</span></a>
+</li>
+</ul>
+</li>
+</ul>
+</div>
+
+
+    </td>
+    <td valign="top">
+        
+
+<h1>HEPREP 2.0.2 Release Notes (NOT YET RELEASED)</h1>
+<p><font size="2">Release Notes Version: : 1.1 $.</font></p>
+<p><font size="2">The most recent version of this file is available
+<a href="http://java.freehep.org/heprep/ReleaseNotes-2.0.2.html">here</a>.<br>
+Release notes for all versions of HEPREP are available
+<a href="http://java.freehep.org/heprep/AllReleaseNotes.html">here</a>.</font></p>
+
+<p>
+The HEPREP 2 standard, see <A HREF="http://heprep.freehep.org">heprep.freehep.org</A> is implemented
+in C++ and Java as part of the FreeHEP library.</p>
+<p>
+The C++ version is in use by GEANT4 and other programs, while the Java version is in use by WIRED
+versions 3 and 4. The Java version of HepRep also implements a converter to convert HepRep version 1
+into HepRep version 2.</p>
+
+</p>
+<h2>Contents</h2>
+<ul>
+  <li><a href="#Compliance">HEPREP Standard Compliance</a></li>
+  <li><a href="#Platforms">Supported Platforms</a></li>
+  <li><a href="#Changes">Major changes in HEPREP 2.0.2</a></li>
+  <li><a href="#Documentation">Documentation</a></li>
+  <li><a href="#License">License</a></li>
+  <li><a href="#Installation">Installing HEPREP</a></li>
+  <li><a href="#Compilation">Compiling HEPREP</a></li>
+  <li><a href="#Building">Building an Application with HEPREP</a></li>
+  <li><a href="#Running">Running an Application with HEPREP</a></li>
+  <li><a href="#Geant4">Using HEPREP from Geant4</a></li>
+  <li><a href="#Features">Features/Limitations of the Current Release</a></li>
+  <li><a href="#BugReporting">Reporting Bugs</a></li>
+  <li><a href="#Examples">Examples</a></li>
+</ul>
+<h2><a name="Compliance">HEPREP Standard Compliance</a></h2>
+<p>This implementation fully supports the HEPREP 2 standard.</p>
+<h2><a name="Platforms">Supported Platforms</a></h2>
+<p>Binaries are available and supported for the following combinations of 
+architectures and compilers:</p>
+<ul>
+  <li>Windows NT/2000/XP<ul>
+    <li><b>WIN32-VC7</b>: Visual Studio .NET Professional 2003.<br>
+    Microsoft (R) 32-bit C/C++ Optimizing Compiler Version 
+    13.10.3077 for 80x86</li>
+    <li><b>WIN32-g++</b>: gcc version 3.3.1 (cygming special)<br>
+    Using a cygwin shell.</li>
+  </ul>
+  </li>
+  <li>Linux Red Hat Linux 7.2 (Enigma) 2.4.20-30.7.legacysmp (2x1396MHz Intel)<ul>
+    <li><b>Linux-g++2</b>: gcc version 2.95.3 20010315 (release)</li>
+  </ul>
+  </li>
+  <li>Linux Red Hat Linux release 9 (Shrike) 2.4.20-31.9 (1x996MHz PIII)<ul>
+    <li><b>Linux-g++</b>: gcc version 3.2.2 20030222 (Red Hat Linux 3.2.2-5)</li>
+	<li><b>Linux-icc</b>: Intel(R) C++ Compiler for 32-bit applications, 
+Version 8.0   Build 20031231Z Package ID: l_cc_pc_8.0.058</li>
+  </ul></li>
+  <li>MacOS X 10.3<ul>
+    <li><b>Darwin-g++</b>: gcc version 3.3 20030304 (Apple Computer, Inc. build 1495)</li>
+  </ul>
+  </li>
+  <li>SUN Solaris<ul>
+    <li><b>SUN-CC</b>: CC: Forte Developer 7 C++ 5.4 Patch 111715-13 2003/12/11</li>
+  </ul>
+  </li>
+</ul>
+<h2><a name="Changes">Major changes in HEPREP 3.2.3</a></h2>
+<h3>Improvements</h3>
+<ul>
+        <li>HEPREP C++ now separately packaged, including setup scripts for a 
+		variety of platforms.</li>
+<li>FREEHEP-420: Java and C++ writer now use new Identifier for 
+        HepRep.xsd.</li>
+		<li>Changed HepRepWriter to be able to write out heprep.properties file.</li>
+</ul>
+<p><font size="2">For a full list of changes in HEPREP 2.0.2 see the
+<a href="http://java.freehep.org/redirect?project=HEPREP&area=bugs&report=changelog">HEPREP
+change log</a>.</font></p>
+<h2><a name="Documentation">Documentation</a></h2>
+<p>These release notes list issues specific to the FreeHEP HEPREP implementation of 
+the HEPREP standard. 
+In general all of the HEPREP documentation applies to FreeHEP HEPREP, in particular the 
+following link may be useful:</p>
+<ul>
+	<li><a href="http://heprep.freehep.org">HepRep: a Generic Interface 
+	Definition for HEP Event Display Representables</a></li>
+</ul>
+<h2><a name="License">License</a></h2>
+<p>HEPREP is part of the <a href="http://java.freehep.org/">FreeHEP Java Library</a> 
+an &quot;Open Source&quot; library distributed under the terms of the
+<a href="http://www.gnu.org/copyleft/lesser.html">LGPL</a>. If you have 
+questions about the licensing please send a mail to:
+<a href="mailto:developers@freehep.org">developers@freehep.org</a>.</p>
+<h2><a name="Installation">Installin</a>g HEPREP</h2>
+
+<p>Download HEPREP for one or more platforms. These distributions overlay on 
+top of each other, adding support for different architectures. The distribution 
+creates the following directory structure:</p>
+
+<pre>HEPREP-version            containing license and release notes
+HEPREP-version/bin        containing platform specific directories with setup scripts
+HEPREP-version/examples   containing examples
+HEPREP-version/include    containing all necessary include files
+HEPREP-version/lib        containing platform specific directories with libraries
+                           (shareable and static)</pre>
+<h2><a name="Compilation">Compilation</a></h2>
+<p>The current distributions do not contain source files.  </p>
+<p>To (re-)build HEPREP for a 
+particular platform you need to get HEPREP-2.0.2-src.zip or .tar.gz file from 
+the <a href="ftp://ftp.slac.stanford.edu/software/freehep/HEPREP/v2.0.2/">
+ftp://ftp.slac.stanford.edu/software/freehep/HEPREP/v2.0.2/</a> directory. </p>
+<p>Follow the instructions in README-HEPREP.html contained in that 
+distribution.</p>
+<h2><a name="Building">Building</a> an Application with HEPREP</h2>
+<p>Set the environment variable HEPREP_HOME to your unpacked HEPREP 
+distribution. Source the system specific heprep-setup file (.sh/.csh for Unix, 
+.bat for Windows, .win32 for Cygwin).</p>
+<p>Example for Linux-g++, using tcsh:</p>
+<blockquote>
+  <pre>setenv HEPREP_HOME /users/tom/HEPREP-2.0.2
+source /bin/Linux-g++/heprep-setup.csh</pre>
+</blockquote>
+<p>Now you are able to execute the heprep-config utility:</p>
+<blockquote>
+  <pre>heprep-config --version		will display the version you installed.
+heprep-config --include 	will display the include options 
+                        	for your compiler.
+heprep-config --lib 		will display the library link options 
+                        	for your linker.</pre>
+</blockquote>
+<p>To compile (example for Linux-g++): </p>
+<blockquote>
+  <pre>g++ -c `heprep-config --include` YourApplication.cc
+g++ YourApplication.o `heprep-config --lib`</pre>
+</blockquote>
+<h2><a name="Running">Running</a> an Application with HEPREP</h2>
+<p>Once you have run the heprep-setup script successfully you can just execute 
+your application.</p>
+
+<h2><a name="Geant4">Using HEPREP from Geant4</a></h2>
+
+<p>Both the HepRep 1 and HepRep 2 drivers are included in Geant4. See Geant4 for 
+instructions.</p>
+<h2><a name="Features">Features/Limitations of the Current Release</a></h2>
+<p>The following limitations exist:</p>
+<ul>
+  <li>The distribution kits contain some CVS directories and files, please 
+  ignore.</li>
+</ul>
+<h2><a name="BugReporting">Reporting Bugs</a></h2>
+<p>For discussion of features or problems related to HEPREP please use the
+<a href="http://java.freehep.org/redirect?project=HEPREP&area=forum">HEPREP forum</a>. To 
+report bugs or request enhancements you can also use the
+<a href="http://java.freehep.org/redirect?project=Java&area=bugs&report=changelog">Java FreeHEP bug database</a>.
+</p>
+<h2><a name="Examples">Examples</a></h2>
+<p>The HEPREP/examples directory contains HepRepExample.cpp which serves as  a small test as well as an example.
+The MultiWriteTest.cpp shows how to write out .zip files with multiple HepRep events in it.</p>
+
+<p>The subdirectories g++, CC and VC contain build scripts to compile and link 
+both examples into executables. HEPREP must have been set up before 
+running the build script. </p>
+
+<p></p>
+
+
+        <p>
+        &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp
+        &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp
+        &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp
+        &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp
+        &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp
+        &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp
+        &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp
+        &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp
+    </td>
+  </tr>
+</table>
+
+</body></html>

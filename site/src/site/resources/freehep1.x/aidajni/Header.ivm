@@ -1,0 +1,4 @@
+#set( $webName = "AIDAJNI" )
+#set( $webSearch = "java.freehep.org" )
+<h1>AIDAJNI</h1>
+C++ to Java glue for AIDA

@@ -1,0 +1,66 @@
+<html>
+<head>
+<title>WebPage - Manual</title>
+</head>
+<body>
+<h1>Quick Guide to the WebPage system
+</h1>
+<h2>Installation
+</h2>
+<ul>
+    <li>Get source code from FreeHEP CVS</li>
+    <li>add FREEHEP/tools to your PATH</li>
+    <li>type: <tt>webpage *.xhtml</tt> to run the tool</li>
+</ul>
+<h2>Configuration of a New Web</h2>
+<p>Copy the following files/directory from FREEHEP/web/freehep to your web directory:</p>
+<ul>
+  <li>
+  <pre>webpage/<b>image</b> directory </pre>
+  </li>
+  <li>
+  <pre>webpage/<b>Menu.xml</b></pre>
+  </li>
+  <li>
+  <pre>webpage/<b>Header.ivm</b></pre>
+  </li>
+  <li>
+  <pre>webpage/<b>WebPage.css</b></pre>
+  </li>
+  <li>
+  <pre>webpage/<b>PrintablePage.css</b></pre>
+  </li>
+</ul>
+<h2>Your Own Pages</h2>
+<h3>Write your content pages</h3>
+Create your content web pages with the extension .xhtml in pure XHTML. You may add
+<a href="http://jakarta.apache.org/velocity/index.html">Velocity</a>
+statements inside these pages.
+<p>
+For more information on the capabilities of Velocity see their
+<a href="http://jakarta.apache.org/velocity/user-guide.html">User Manual</a>.
+
+<h3>Menu.xml</h3>
+
+Add references to pages from your Menu.xml file, by adding an href attribute to
+each of the MenuItems. These links may be either relative or absolute.
+See below for an example:
+<p>
+$includer.xml("Menu.xml")
+
+<h3>Header.ivm</h3>
+
+Edit the Header.ivm to create a header for printable and web documents,
+see example below:
+<p>
+$includer.xml("Header.ivm")
+
+<h2>Offline generation of Web Pages</h2>
+<p>Type </p>
+<pre>WebPage page1.xhtml page2.xhtml subdir/page3.xhtml</pre>
+<p>or</p>
+<pre>WebPage *.xhtml subdir/*.xhtml</pre>
+<p>which will convert your xhtml pages into page1.html, page1.printable.html,
+page2.html and printable/page2.html</p>
+</body>
+</html>

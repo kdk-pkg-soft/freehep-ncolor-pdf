@@ -1,0 +1,101 @@
+<html><head>
+    
+
+    <link rel="stylesheet" type="text/css" href="../../PrintablePage.css">
+
+<meta http-equiv="Content-Language" content="en-us">
+<meta name="GENERATOR" content="Microsoft FrontPage 5.0">
+<meta name="ProgId" content="FrontPage.Editor.Document">
+<meta http-equiv="Content-Type" content="text/html; charset=windows-1252">
+<title>Using JAIDA with Python</title>
+</head><body>
+
+<h1>JAIDA</h1>
+AIDA in Java
+
+<h1>Using JAIDA from Jython</h1>
+
+<p><a href="http://www.python.org/">Python</a> is a popular object-oriented 
+scripting language. <a href="http://www.jython.org/">Jython</a> is an 
+implementation of Python written in Java. Jython is able to access any Java 
+object as if it were a Python object. Thus it is very easy to use JAIDA with 
+Jython. The combination provides a very convenient way of exploring the 
+capabilities of JAIDA.</p>
+<p>To use it follow steps below:</p>
+<ul>
+  <li><a href="http://www.jython.org/download.html">Download</a> and install 
+  Jython. Add the installation directory to your PATH.</li>
+  <li><a href="../../BinaryDistributions.html">Download</a> and install JAIDA
+    and set your 
+  CLASSPATH variable as described in the JAIDA <a href="../../ReleaseNotes.html">
+  release notes</a>.</li>
+</ul>
+<p>Run the script below just by typing:</p>
+<p>&nbsp;&nbsp;&nbsp; jython UsingJAIDAFromJython.py</p>
+<table border="1" cellpadding="0" cellspacing="0" style="border-collapse: collapse" bordercolor="#111111" width="100%">
+  <tr>
+    <td width="100%">from hep.aida import *<br>
+    from java.lang import *<br>
+    from java.util import *<br>
+    <br>
+    System.getProperties().setProperty(&quot;hep.aida.IAnalysisFactory&quot;,&quot;hep.aida.ref.AnalysisFactory&quot;)<br>
+    <br>
+    true = Boolean(&quot;true&quot;);<br>
+    false = Boolean(&quot;false&quot;);<br>
+    <br>
+    factory = IAnalysisFactory.create();<br>
+    tree = 
+    factory.createTreeFactory().create(&quot;UsingJAIDAFromJython.aida&quot;,&quot;xml&quot;,false,true);<br>
+    hf = factory.createHistogramFactory(tree);<br>
+    #fitter = factory.createFitFactory().createFitter(&quot;Chi2&quot;,&quot;uncmin&quot;);<br>
+    <br>
+    tree.mkdir(&quot;/Histograms&quot;);<br>
+    tree.cd(&quot;/Histograms&quot;);<br>
+    <br>
+    h1 = hf.createHistogram1D(&quot;Histogram 1D&quot;,50,-3,3);<br>
+    h2 = hf.createHistogram2D(&quot;Histogram 2D&quot;,40,-3,3,40,-3,3);<br>
+    <br>
+    tree.mkdir(&quot;/Clouds&quot;);<br>
+    tree.cd(&quot;/Clouds&quot;);<br>
+    <br>
+    c1 = hf.createCloud1D(&quot;Cloud 1D&quot;);<br>
+    c2 = hf.createCloud2D(&quot;Cloud 2D&quot;);<br>
+    <br>
+    page1 = factory.createPlotterFactory().create(&quot;Page1&quot;);<br>
+    <br>
+    page1.show();<br>
+    page1.createRegions(2,2);<br>
+    <br>
+    page1.region(0).plot(h1);<br>
+    page1.region(1).plot(h2);<br>
+    page1.region(2).plot(c1);<br>
+    page1.region(3).plot(c2);<br>
+    <br>
+    r = Random()<br>
+    <br>
+    def fill():<br>
+    for i in range(10000):<br>
+    h1.fill(r.nextGaussian())<br>
+    h2.fill(r.nextGaussian(),r.nextGaussian())<br>
+    c1.fill(r.nextGaussian())<br>
+    c2.fill(r.nextGaussian(),r.nextGaussian())<br>
+    <br>
+    fill()<br>
+    <br>
+    <br>
+    #h1FitUncMin = fitter.fit(h1,&quot;g&quot;);<br>
+    #fitter.setEngine(&quot;minuit&quot;);<br>
+    #h1FitMinuit = fitter.fit(h1,&quot;g&quot;);<br>
+    <br>
+    #page1.region(0).plot(h1FitUncMin.fittedFunction());<br>
+    #page1.region(0).plot(h1FitMinuit.fittedFunction());<br>
+    <br>
+    tree.commit();</td>
+  </tr>
+</table>
+<p>It is possible to change the analysis factory by issuing the following
+command within the script:</p>
+<p>&nbsp;&nbsp;&nbsp; System.getProperties().setProperty(&quot;hep.aida.IAnalysisFactory&quot;,&quot;hep.aida.ref.AnalysisFactory&quot;)</p>
+
+
+</body></html>

@@ -1,0 +1,21 @@
+<project>
+  <parent>
+    <artifactId>maven-plugin-pom</artifactId>
+    <groupId>org.freehep</groupId>
+    <version>5-SNAPSHOT</version>
+  </parent>
+  <modelVersion>4.0.0</modelVersion>
+  <groupId>org.freehep</groupId>
+  <artifactId>freehep-project-archetype</artifactId>
+  <packaging>maven-plugin</packaging>
+  <name>FreeHEP Project Archetype</name>
+  <version>1.0-SNAPSHOT</version>
+  <description>Standard archetype to create a FreeHEP Project.</description>
+  <repositories>
+    <repository>
+      <id>freehep-maven</id>
+      <name>Maven FreeHEP</name>
+      <url>http://java.freehep.org/maven2</url>
+    </repository>
+  </repositories>
+</project>

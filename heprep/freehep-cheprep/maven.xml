@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- 
+/*
+ * Copyright 2005 FreeHEP.
+ * 
+ */
+ -->
+
+<project default="all" xmlns:j="jelly:core">
+
+    <goal name="all" prereqs="nar" />
+
+    <goal name="install"            prereqs="all, nar:install" />
+    <goal name="deploy"             prereqs="all, nar:deploy" />
+
+    <goal name="tog4"               prereqs="all" >
+        <j:if test="${g4install == null}">
+            <fail message="Error: 'g4install' property not set." />        
+        </j:if>
+        
+        <copy todir="${g4install}/source/visualization/HepRep/include/cheprep" 
+              overwrite="true" 
+              preservelastmodified="true">
+            <fileset dir="src/main/include/cheprep" >
+                <include name="*.h" />
+            </fileset>
+        </copy>
+
+        <copy todir="${g4install}/source/visualization/HepRep/src" 
+              overwrite="true" 
+              preservelastmodified="true">
+            <fileset dir="src/main/cpp" >
+                <include name="*.cc" />
+            </fileset>
+        </copy>
+
+        <j:file name="${g4install}/source/visualization/HepRep/include/cheprep/${pom.artifactId}.version"
+                omitXmlDeclaration="true"
+                trim="false">source = ${pom.artifactId}-${pom.currentVersion}</j:file>
+    </goal>
+
+</project>

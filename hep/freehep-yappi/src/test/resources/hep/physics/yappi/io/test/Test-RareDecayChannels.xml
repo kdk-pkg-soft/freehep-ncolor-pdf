@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="ISO-8859-1"?> 
+<!--=============================================================================--> 
+<!-- Copyright of file, 2000, CERN, Geneva, Switzerland. (yappi.freehep.org)     --> 
+<!-- Copyright of data, 2000, PDG. (pdg.lbl.gov)                                 --> 
+<!--=============================================================================--> 
+<PPML source="TestFile" xmlns:ppml="http://www.w3.org/1999/XMLSchema-instance" 
+      ppml:nonamespaceSchemaLocation='ppml.xsd'> 
+   <ParticleType name="eta(c)(1S)" > 
+      <DecayGroup name="Decays involving hadronic resonances">
+          <Decay name="K*(892) Kbar*(892)" texName="K^{\ast}(892)\;K^{\ast}(892)" fraction="8.5E-3" posError="3.1E-3" negError="3.1E-3" P="1193" PUnit="MeV/c"> 
+          </Decay> 
+          <Decay name="phi phi" texName="\phi\;\phi" fraction="7.1E-3" posError="2.8E-3" negError="2.8E-3" P="1086" PUnit="MeV/c"> 
+          </Decay> 
+      </DecayGroup>
+      <DecayGroup name="Decays into stable hadrons"> 
+          <Decay name="p pbar" texName="p\;p" fraction="1.2E-3" posError="0.4E-3" negError="0.4E-3" P="1157" PUnit="MeV/c"> 
+          </Decay> 
+      </DecayGroup>
+      <DecayGroup name="Radiative decays"> 
+          <Decay name="gamma gamma" texName="\gamma\;\gamma" fraction="3.0E-4" posError="1.2E-4" negError="1.2E-4" P="1489" PUnit="MeV/c"> 
+          </Decay> 
+      </DecayGroup>
+   </ParticleType> 
+</PPML> 

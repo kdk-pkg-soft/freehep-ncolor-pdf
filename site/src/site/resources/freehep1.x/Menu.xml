@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!--
+    Document   : SiteMapTemplate.xml
+    Created on : March 11, 2003, 11:20 AM
+    Author     : The FreeHEP team @ SLAC
+    Description: The default MenuList
+-->
+<MenuList xmlns:xsi='http://www.w3.org/2001/XMLSchema-instance'
+  xsi:noNamespaceSchemaLocation='SiteMap.xsd'>
+    <Menu name = "Java Library">
+        <MenuItem name = "Overview"                 href="index.html"/>
+        <MenuItem name = "News"/>
+        <MenuItem name = "Features"/>
+        <MenuItem name = "Demonstrations"           href="Demonstrations.html"/>
+        <MenuItem name = "Screen Shots"/>
+        <MenuItem name = "Publications/Talks"       href="Publications.html"/>
+        <MenuItem name = "Future Plans"/>
+        <MenuItem name = "Contributors"             href="Contributors.html"/>
+        <MenuItem name = "Users"                    href="Users.html"/>
+    </Menu>
+    <Menu name = "Sub Projects">
+        <MenuItem name = "Application Framework"    href="/lib/freehep/doc/application/index.html"/>
+        <MenuItem name = "AID"                      href="aid/index.html"/>
+        <MenuItem name = "JAIDA"                    href="jaida/index.html"/>
+        <MenuItem name = "AIDAJNI"                  href="aidajni/index.html"/>
+        <MenuItem name = "CERNLIBAdapter"           href="cernlibadapter/index.html"/>
+        <MenuItem name = "HEPREP"                   href="heprep/index.html"/>
+        <MenuItem name = "IO"                       href="io/index.html"/>
+        <MenuItem name = "PostScript Viewer"        href="psviewer/index.html"/>
+        <MenuItem name = "RootIO"                   href="/lib/freehep/doc/root/index.html"/>
+        <MenuItem name = "VectorGraphics"           href="vectorgraphics/index.html"/>
+        <MenuItem name = "YaPPI"                    href="yappi/index.html"/>
+    </Menu>
+    <Menu name = "User Documentation">
+        <MenuItem name = "Overview"                 href="DocOverview.html"/>
+        <MenuItem name = "Manual"/>
+        <MenuItem name = "Apis"                     href="Apis.html"/>
+        <MenuItem name = "Howtos"/>
+        <MenuItem name = "Tutorials/Examples"/>
+        <MenuItem name = "Quick Guide"/>
+        <MenuItem name = "Related Projects"         href="RelatedProjects.html"/>
+        <MenuItem name = "Plugins and Extensions"/>
+        <MenuItem name = "Faq"/>
+        <MenuItem name = "Having Problems"/>
+        <MenuItem name = "License"                  href="License.html"/>
+    </Menu>
+    <Menu name = "Download">
+        <MenuItem name = "Binary Distributions"     href="Distributions.html"/>
+        <MenuItem name = "Source Distributions"     href="Distributions.html"/>
+        <MenuItem name = "Release Notes"            href="ReleaseNotes.html"/>
+    </Menu>
+    <Menu name = "Get Involved">
+        <MenuItem name = "Discussion"               href="http://java.freehep.org/redirect?project=Java&amp;area=forum"/>
+        <MenuItem name = "Source Code"              href="SourceCode.html"/>
+        <MenuItem name = "Build Instructions"       href="Build.html"/>
+        <MenuItem name = "Bug Database"             href="http://java.freehep.org/redirect?project=Java&amp;area=bugs"/>
+        <MenuItem name = "Enhancement Requests"/>
+        <MenuItem name = "Outreach"/>
+    </Menu>
+    <Menu name = "Developer Area">
+        <MenuItem name = "Design Documentation"/>
+        <MenuItem name = "Project Guidelines"       href="ProjectGuidelines.html"/>
+        <MenuItem name = "How to Extend"/>
+        <MenuItem name = "Used Technologies"        href="UsedTechnologies.html"/>
+        <MenuItem name = "ToDo List"/>
+    </Menu>
+</MenuList>

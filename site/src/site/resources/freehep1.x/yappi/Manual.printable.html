@@ -1,0 +1,94 @@
+<html><head>
+    
+
+    <link rel="stylesheet" type="text/css" href="PrintablePage.css">
+
+<title>YaPPI - Manual</title>
+</head><body>
+
+<h1>
+YaPPI
+</h1>
+<span class="YaPPI">Y</span>et
+<span class="YaPPI">a</span>nother
+<span class="YaPPI">P</span>article
+<span class="YaPPI">P</span>roperty
+<span class="YaPPI">I</span>nterface</span>
+  <h1>Manual</h1>
+  <p>To use the YaPPI Java API means to write a Java program that uses class
+    definitions from the YaPPI class package. The program will make use of
+    methods to read (or write) particle data from (or to) XML files that you
+    specify. The basic steps in using the YaPPI Java API are: </p>
+  <ol>
+    <li>Get the YaPPI class library (jar files) that you will need to compile
+      your program with. </li>
+    <li> Use YaPPI classes, methods and variables, as explained in the javadocs
+      YaPPI classes. </li>
+    <li>Load the XML data. </li>
+    <li>Manipulate the data. </li>
+  </ol>
+  <p>
+  We expand on each of these steps below.</p>
+  <h2>Get YaPPI Jar Files</h2>
+    In your program you will use classes defined in these jar files, thus
+    you will need to have them in your Java classpath. Thus: </p>
+  <ol>
+    <li>Download the jar files from the <a href="Distributions.html">FreeHEP
+      download area</a>. </li>
+    <li>Modify the classpath of your JDK to include the location of the FreeHEP
+      Jar files. </li>
+  </ol>
+  <h2>Use the YaPPI API javadocs</h2>
+  <p>
+    For the details on what you can do with each YaPPI API class, such as
+    constructor to use, which methods to call, and so on, you will need to
+    <a href="http://java.freehep.org/lib/freehep/api/hep/physics/yappi/package-summary.html">browse
+    the javadoc</a> (automatically generated documentation) for the Java classes
+    of the YaPPI API. The YaPPI javadoc is contained in the FreeHEP Java Library javadoc.
+  </p>
+  <p>Please the the <a href="ClassDiagram.html">YaPPI Class Diagram</a> for
+    an overview of the available classes.<br>
+    <br>
+  </p>
+  <h2>Load the XML data</h2>
+    XML data is loaded by reading XML files, as many as needed. This you do
+    creating an instance of the XMLYappi class, and using one of its <strong>read</strong>
+    methods to load one or more XML files. Please see small test class below
+    as a sample.</p>
+  <p>Please visit the <a href="XMLSchema.html">YaPPI XML Schema</a> for a visual
+    representation of how Particle Property data is structured in XML by YaPPI.
+  </p>
+  <h2>Manipulate the Data</h2>
+  <p>
+    Data that is read in from XML files is made accessible to your program
+    via a set of <strong>get</strong> methods, for each supported data element.
+    Please see the methods available to XMLYappi for a complete list. The
+    sample below shows a get of a family and a get of a particle.
+  </p>
+  <h2>Sample Code</h2>
+  <p>
+  <pre>
+package hep.physics.yappi.test;
+
+import hep.physics.yappi.*;
+
+public class TestYappi {
+
+    public static void main(String[] args) throws Exception {
+
+        XMLYappi yappi = new XMLYappi();
+        yappi.read("hep/physics/yappi/xml/2000/PDG-Family.xml");
+        yappi.read("hep/physics/yappi/xml/2000/PDG-Properties.xml");
+
+        Family family = yappi.getFamily(&quot;ccbar MESONS");
+        System.out.println(&quot;Family: &quot; + family);
+
+        ParticleType particleType = yappi.getParticle("eta(c)(1S)");
+        System.out.println(&quot;Particle: &quot; + particleType);
+   }
+}
+</pre>
+</p>
+
+
+</body></html>

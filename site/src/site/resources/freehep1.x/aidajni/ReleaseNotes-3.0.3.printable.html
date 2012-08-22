@@ -1,0 +1,169 @@
+<html><head>
+    
+
+    <link rel="stylesheet" type="text/css" href="PrintablePage.css">
+
+<meta http-equiv="Content-Type" content="text/html; charset=windows-1252">
+<meta name="GENERATOR" content="Microsoft FrontPage 5.0">
+<meta name="ProgId" content="FrontPage.Editor.Document">
+<title>Release Notes</title>
+</head><body>
+
+<h1>AIDAJNI</h1>
+C++ to Java glue for AIDA
+
+<h1>AIDAJNI 3.0.3 Release Notes</h1>
+<p><font size="2">The most recent version of this file is available
+<a href="http://java.freehep.org/aidajni/ReleaseNotes-3.0.3.html">here</a>.<br>
+Release notes for other versions of AIDAJNI are available
+<a href="http://java.freehep.org/aidajni/AllReleaseNotes.html">here</a>.</font></p>
+<p>AIDAJNI is a C++ adapter of <a href="http://aida.freehep.org/">AIDA - 
+Abstract Interfaces for Data Analysis</a> which connects to a Java 
+implementation of AIDA, such as <a href="http://java.freehep.org/jaida">JAIDA</a>.</p>
+<p>AIDAJNI allows C++ programmers to use any Java AIDA implementation. </p>
+<p>It allows for instance <a href="http://geant4.cern.ch/geant4">Geant4</a>, written in 
+C++, to create histograms and ntuples in Java and store them in .aida files, 
+which can be analyzed using
+<a href="http://jas.freehep.org/jas3/index.html">JAS3 - Java Analysis Studio</a>.</p>
+<h2>Contents</h2>
+<ul>
+  <li><a href="#Compliance">AIDA Compliance</a></li>
+  <li><a href="#Platforms">Supported Platforms</a></li>
+  <li><a href="#Changes">Major changes in AIDAJNI 3.0.3</a> </li>
+  <li><a href="#Documentation">Documentation</a></li>
+  <li><a href="#License">License</a></li>
+  <li><a href="#Installation">Installing AIDJNI</a></li>
+  <li><a href="#Compilation">Compiling AIDAJNI</a></li>
+  <li><a href="#Building">Building an Application with AIDAJNI</a></li>
+  <li><a href="#Running">Running an Application with AIDAJNI</a></li>
+  <li><a href="#Geant4">Using AIDAJNI from Geant4</a></li>
+  <li><a href="#Features">Features/Limitations of the Current Release</a></li>
+  <li><a href="#BugReporting">Reporting Bugs</a></li>
+  <li><a href="#Examples">Examples</a></li>
+</ul>
+<h2><a name="Compliance">AIDA Compliance</a></h2>
+<p>This adapter connects AIDA-C++ to AIDA-JNI. It supports AIDA 3.0 in a very 
+limited way.</p>
+<h2><a name="Platforms">Supported Platforms</a></h2>
+<p>Binaries are available and supported for the following combinations of 
+architectures and compilers:</p>
+<ul>
+  <li>Windows NT/2000/XP<ul>
+    <li><b>WIN32-VC</b>: Microsoft (R) 32-bit C/C++ Optimizing Compiler Version 12.00.8804 
+for 80x86</li>
+  </ul>
+  </li>
+  <li>Linux<ul>
+    <li><b>Linux-g++2.95.3</b>: gcc version 2.95.3 20010315 (release)</li>
+    <li><b>Linux-g++2.96</b>: gcc version 2.96</li>
+    <li><b>Linux-g++3.2.1</b>: gcc version 3.2.1</li>
+  </ul>
+  </li>
+  <li>MacOS X<ul>
+    <li><b>Darwin-g++2.95.2</b>: Apple Computer, Inc. version gcc-7, based on gcc version 
+2.95.2 19991024 (release)</li>
+    <li><b>Darwin-g++3.1</b>: Apple Computer, Inc. GCC version 1175, based on gcc version 
+3.1 20020420 (prerelease)</li>
+  </ul>
+  </li>
+  <li>SUN Solaris<ul>
+    <li><b>SUN-CC5.2</b>: CC: Sun WorkShop 6 update 1 C++ 5.2 Patch 109508-03 2001/04/07</li>
+  </ul>
+  </li>
+</ul>
+<h2><a name="Changes">Major changes in AIDAJNI 3.0.3</a></h2>
+<ul>
+  <li>No previous release notes and no tracking.</li>
+</ul>
+<p><font size="2">For a full list of changes in AIDAJNI 3.0.3 see the
+<a href="http://java.freehep.org/redirect?project=AIDAJNI&area=bugs&report=changelog">AIDAJNI
+change log</a>.<br>
+For a full list of changes in AIDA 3.0 see the
+<a href="http://aida.freehep.org/releaseNotes.thtml">AIDA change 
+log</a>.</font></p>
+<h2><a name="Documentation">Documentation</a></h2>
+<p>These release notes list issues specific to the AIDAJNI implementation of AIDA. 
+In general all of the AIDA documentation applies to AIDAJNI, in particular the 
+following are useful:</p>
+<ul>
+  <li><a href="http://aida.freehep.org/doc/v3.0/UsersGuide.html">AIDA 
+  Users' Guide</a></li>
+  <li><a href="http://aida.freehep.org/doc/v3.0/api/index.html">AIDA API 
+  documentation</a></li>
+</ul>
+<h2><a name="License">License</a></h2>
+<p>AIDAJNI is part of the <a href="http://java.freehep.org/">FreeHEP Java Library</a> 
+an &quot;Open Source&quot; library distributed under the terms of the
+<a href="http://www.gnu.org/copyleft/lesser.html">LGPL</a>. If you have 
+questions about the licensing please send a mail to:
+<a href="mailto:developers@freehep.org">developers@freehep.org</a>.</p>
+<h2><a name="Installation">Installin</a>g AIDAJNI</h2>
+<p>Download and install a Java AIDA Implementation which supports AIDA 3.0, for 
+example <a href="http://java.freehep.org/jaida">JAIDA</a>.</p>
+
+<p>Download AIDAJNI for one or more platforms. These distributions overlay on 
+top of each other, adding support for different architectures. The distribution 
+creates the following directory structure:</p>
+
+<pre>AIDAJNI            containing license and example
+AIDAJNI/include    containing all necessary include files
+AIDAJNI/lib        containing platform specific libraries (shareable and static)</pre>
+<h2><a name="Compilation">Compilation</a></h2>
+<p>The current distributions do not contain source files. To build AIDAJNI for a 
+particular platform you need to get a local copy of the
+<a href="http://java.freehep.org/CVS.html">FreeHEP library using CVS</a> and 
+follow the instructions for <a href="http://java.freehep.org/Build.html">
+Building the native part of the library</a>.</p>
+<p>For any not-supported platform or compiler you may need to copy and change 
+the system specific files in the&nbsp; freehep/config/sys directory.</p>
+<p>In future a source overlay will be made and easier rebuild instructions will 
+be provided.</p>
+<h2><a name="Building">Building</a> an Application with AIDAJNI</h2>
+<p>To build a C++ program with the AIDJNI package set the include directory to 
+AIDAJNI/include and specify AIDAJNI/lib/{yourplatform} as a lib search path. 
+When linking AIDAJNI you need the libraries AIDAJNI, FHJNI and jvm. The latter 
+comes with the Java 2 Standard Development Kit and sits in different directories 
+for different platforms, somewhere relative to JDK_HOME.</p>
+<p>In future an aida-config utility will be provided to setup include 
+directories and library search paths.</p>
+<h2><a name="Running">Running</a> an Application with AIDAJNI</h2>
+<p>To run a C++ program with AIDAJNI, you need to point LD_LIBRARY_PATH (on 
+Unix) to AIDJNI/lib/{yourplatform}. </p>
+<p>To find the Java Virtual Machine, PATH (on Windows) or LD_LIBRARY_PATH (on 
+Unix) needs to be set to find jvm.dll (on Windows) or libjvm.so and libverify.so 
+(different directories, on Unix).</p>
+<p>You also need to set up the CLASSPATH to point to the jar containing the Java 
+AIDA implementation.</p>
+<p>In future an aida-config utility will be provided to setup library runtime 
+paths.</p>
+<h2><a name="Geant4">Using AIDAJNI from Geant4</a></h2>
+
+<p>JAIDA+AIDAJNI is currently distributed as an overlay product for 
+<a href="http://geant4.cern.ch/geant4">Geant4</a> version 4.5.x. Eventually 
+this will be changed and the normal AIDAJNI distribution should be usable. Until 
+then, follow the <a href="http://java.freehep.org/jaida/Geant4JAIDA.html">
+JAIDA/Geant4 instructions</a>.</p>
+
+<h2><a name="Features">Features/Limitations of the Current Release</a></h2>
+<p>This is a fairly limited implementation of AIDA:</p>
+<ul>
+  <li>Only Histogram and NTuple filling is supported.</li>
+  <li>Lots of calls may crash, for which the report normally states an exception 
+  has occurred outside the Java Virtual Machine. In fact any C++ problem (even 
+  in user code) will be trapped by the Java exception handler.</li>
+</ul>
+<h2><a name="BugReporting">Reporting Bugs</a></h2>
+<p>For discussion of features or problems related to AIDAJNI please use the
+<a href="http://aida.freehep.org/mailing_list.thtml">AIDA mailing lists</a>. To 
+report bugs or request enhancements you can also use the
+<a href="http://java.freehep.org/redirect?project=AIDAJNI&area=bugs&report=changelog">AIDAJNI bug database</a>.
+</p>
+<h2><a name="Examples">Examples</a></h2>
+<p>The AIDJNI directory contains AidaTest.cc which serves as both a test of 
+available functionality as well as an example.</p>
+
+<p>In future the standard AIDATest package (currently under development) will be 
+used to test the AIDAJNI adapter.</p>
+
+
+</body></html>

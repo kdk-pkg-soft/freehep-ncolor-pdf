@@ -1,0 +1,33 @@
+	---
+FreeHEP One Plugin
+	---
+	---
+Mark Donszelmann
+	---
+	
+Usage
+
+	Add the following fragment to your pom file to execute the one plugin as part of the
+"generate-resources" phase.
+
++--
+<project>
+  ...
+  <build>
+    <plugins>
+      <plugin>
+        <groupId>org.freehep</groupId>
+        <artifactId>freehep-one-plugin</artifactId>
+        <executions>
+          <execution>
+            <goals>
+              <goal>generate-dependencies</goal>
+            </goals>
+          </execution>
+        </executions>      
+      </plugin>
+    </plugins>
+  </build>
+  ...
+</project>
++--

@@ -1,0 +1,18 @@
+277 p 146 m 26 lt 97 w 817 ndm 631 rdm 1426 ldm
+
+- look for charge (gamma)
+- mean life = stable (gamma)
+- do something proper with normal fonts
+
+- particlerefs in decaymodes
+- yappi.cern.ch
+- check numbers
+- missing decaymodes
+- masses, lt and w with ranges
+- decay mode names not correct
+- fix anti-particle names
+- add confidence level, scale factor and p
+- ccbar not found as ccbar but as cc in decay modes
+- make sure we do not enter empty named decay modes
+
+- Rare decay contains 0x0 character!

@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!DOCTYPE releases SYSTEM "releases.dtd">
+
+<!-- Created by Tony Johnson on July 13, 2002, 12:43 PM -->
+
+<releases>
+    <release dir="vfht-6" version="test-6" tag="freehep-test-6" date="23 July 2002"></release>
+    <release version="1.1" date="25 July 2002" tag="v1_1" dir="v1.1"></release>
+</releases>
+

@@ -1,0 +1,37 @@
+<?xml version="1.0"?><project>
+  <parent>
+    <artifactId>global</artifactId>
+    <groupId>org.freehep</groupId>
+    <version>7</version>
+  </parent>
+  <modelVersion>4.0.0</modelVersion>
+  <groupId>org.freehep</groupId>
+  <artifactId>freehep-yappi</artifactId>
+  <name>FreeHEP YaPPI</name>
+  <version>2.0-SNAPSHOT</version>
+  <description>FreeHEP Yet another Particle Property Interface</description>
+  <repositories>
+    <repository>
+      <id>freehep-maven</id>
+      <name>Maven FreeHEP</name>
+      <url>http://java.freehep.org/maven2</url>
+    </repository>
+  </repositories>
+  <dependencies>
+    <dependency>
+      <groupId>org.freehep</groupId>
+      <artifactId>freehep-xml</artifactId>
+      <version>2.0-SNAPSHOT</version>
+    </dependency>
+    <dependency>
+      <groupId>javax.servlet</groupId>
+      <artifactId>servlet-api</artifactId>
+      <version>2.3</version>
+    </dependency>
+    <dependency>
+      <groupId>org.freehep</groupId>
+      <artifactId>freehep-physics</artifactId>
+      <version>2.0-SNAPSHOT</version>
+    </dependency>
+  </dependencies>
+</project>

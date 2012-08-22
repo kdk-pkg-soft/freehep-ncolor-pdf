@@ -1,0 +1,827 @@
+<html>
+
+<head>
+<meta http-equiv="Content-Language" content="en-us">
+<meta http-equiv="Content-Type" content="text/html; charset=windows-1252">
+<title>JAIDA 3</title>
+<style>
+<!--
+
+pre.code {font-size: 8pt; font-family: Courier New; border-style: solid; border-width: 1}
+-->
+</style>
+</head>
+
+<body>
+
+<h1>JAIDA 3.2.2 Release Notes</h1>
+<p><font size="2">The most recent version of this file is available
+<a href="http://java.freehep.org/jaida/v3.2.2/ReleaseNotes.html">here</a>.<br>
+Release notes for other versions of JAIDA are available
+<a href="http://java.freehep.org/jaida/ReleaseNotes.html">here</a>.</font></p>
+<p>JAIDA is a Java implementation of <a href="http://aida.freehep.org/">AIDA - 
+Abstract Interfaces for Data Analysis</a>. JAIDA 3.2.2 is based on AIDA 3.2. 
+From a user perspective JAIDA 3.2.2 is entirely backwards compatible with AIDA 
+3.0 and JAIDA 3.0.*. </p>
+<p>JAIDA allows Java programmers to quickly and easily create histograms, 
+scatter plots and tuples, perform fits, view plots and store and retrieve 
+analysis objects from files. JAIDA can be used either in a non-graphical 
+environment (for batch processing) or with a simple GUI to display plots. Files 
+written with JAIDA adhere to the AIDA IO standards and can be read by any AIDA 
+compliant analysis system.&nbsp;</p>
+<p>Users wishing to get full GUI functionality may be interested in
+<a href="#JAS3">JAS3</a>, a graphical data analysis toolkit built on top of 
+JAIDA. <a href="#JAS3">JAS3</a> can also read .aida files written with JAIDA.</p>
+<h2>Contents</h2>
+<ul>
+	<li><a href="#Changes">Major changes in JAIDA 3.2</a></li>
+	<li><a href="#Documentation">Documentation</a></li>
+	<li><a href="#License">License</a></li>
+	<li><span style="font-weight: 400"><a href="#Getting Started">Getting 
+	started</a></span></li>
+	<li><a href="#Features">Limitations/Features of the Current Release</a></li>
+	<li><a href="#Extras">Optional extras</a></li>
+	<li><a href="#Bugs">Reporting Bugs</a></li>
+	<li><a href="#Saving plots">Saving plots</a></li>
+	<li><a href="#Embed">Embedding the JAIDA plotter in your own Java 
+	application</a></li>
+	<li><a href="#servlet">Using JAIDA in a servlet</a></li>
+	<li><a href="#JAS3">Using JAIDA with JAS3</a></li>
+	<li><a href="#JAS3">Using JAIDA from C++</a></li>
+	<li><a href="#Python">Using JAIDA from Python</a></li>
+	<li><a href="#Pnuts">Using JAIDA from Pnuts</a></li>
+	<li><a href="#Geant4">Using JAIDA from Geant4</a></li>
+</ul>
+<h3><a name="Changes">Changes</a></h3>
+<h4>Changes in JAIDA 3.2.2</h4>
+<ul>
+  <li>Addition among functions is now supported. You can now fit for example &quot;g 
+	+ p0&quot; to any AIDA data source.</li>
+	<li>Improved styles support.</li>
+	<li>Fixed problems with logarithmic axis.</li>
+</ul>
+<h4>Changes in JAIDA 3.2.1.1</h4>
+<ul>
+  <li>Scripts updated to set and convert classpath correctly when used in cygwin 
+  on Windows.</li>
+</ul>
+<h4>Major changes in JAIDA 3.2.1</h4>
+<ul>
+	<li>Improved support for plot styles, including the ability to modify styles 
+	after a plot is displayed.</li>
+	<li>Support for reading root files from a remote root daemon using the root: 
+	protocol.</li>
+    <li>.win32 setup file merged with .csh and .sh setup files.</li>
+</ul>
+<h4>Major changes in JAIDA 3.2.0</h4>
+<ul>
+	<li>JAIDA 3.2 implements the AIDA 3.2 interfaces. </li>
+	<li>The default analysis factory has been changed from <code>
+	hep.aida.ref.BatchAnalysisFactory</code> to <code>
+	hep.aida.ref.AnalysisFactory</code>. See <a href="#Getting Started">Getting 
+	Started</a> for more information.</li>
+	<li>An initial implementation of the AIDA IStyle interfaces is now 
+	available.</li>
+</ul>
+<p><font size="2">For a full list of changes in JAIDA 3.2.2 see the
+<a href="http://java.freehep.org/redirect?project=JAIDA&area=changelog">JAIDA 
+change log</a>.<br>
+For a full list of changes in AIDA 3.2 see the
+<a href="http://aida.freehep.org/releaseNotes.thtml">AIDA change log</a>.</font></p>
+<h3><a name="Documentation">Documentation</a></h3>
+<p>These release notes list issues specific to the JAIDA implementation of AIDA. 
+In general all of the AIDA documentation applies to JAIDA, in particular the 
+following are useful:</p>
+<ul>
+	<li><a href="http://aida.freehep.org/lib/doc/UsersGuide/index.shtml">AIDA 
+	Users' Guide</a></li>
+	<li><a href="http://aida.freehep.org/doc/v3.2.1/api/index.html">AIDA API 
+	documentation</a></li>
+</ul>
+<h3><a name="License">License</a></h3>
+<p>JAIDA is part of the <a href="http://java.freehep.org/">FreeHEP Java Library</a> 
+an &quot;Open Source&quot; library distributed under the terms of the
+<a href="http://www.gnu.org/copyleft/lesser.html">LGPL</a>. If you have 
+questions about the licensing please send a mail to:
+<a href="mailto:developers@freehep.org">developers@freehep.org</a>.</p>
+<h3><a name="Getting Started">Getting Started</a></h3>
+<p>This current release of JAIDA is designed to be used with
+<a href="http://java.sun.com/j2se/1.4/download.html">Java 1.4.0</a> or later. It 
+will not work with earlier versions of Java. </p>
+<p>Several JAR files are included in this release. You have to include the ones 
+you need in your CLASSPATH to be able to use JAIDA:</p>
+<ul>
+	<li><b>aida.jar</b> - The specification of the AIDA interfaces</li>
+	<li><b>aida-dev.jar </b>- The developer level specification of the AIDA 
+	interfaces</li>
+	<li><b>freehep-hep.jar</b> - The base (non-graphical) AIDA implementation</li>
+	<li><b>freehep-base.jar</b> - Some utilities used by freehep-hep </li>
+	<li><b>openide-lookup.jar</b> - Utility used by AIDA implementation </li>
+	<li><b>jel.jar</b> - Utility used by AIDA implementation</li>
+	<li><b>optimizers.jar</b> - Optimization package containing the optimizer 
+	UNCMIN </li>
+	<li><b>bcel.jar</b> - needed to read ROOT files</li>
+	<li><b>jas-plotter.jar</b> - Required if you need to display plots</li>
+</ul>
+<p>A simple script called <code>aida-setup</code> is provided with JAIDA in the 
+bin directory, you can run this to set the CLASSPATH appropriately.</p>
+<p>Two implementations of the AIDA IAnalysisFactory are provided with JAIDA:</p>
+<ul>
+	<li>hep.aida.ref.AnalysisFatory (the default)</li>
+	<li>hep.aida.ref.BatchAnalysisFactory</li>
+</ul>
+<p>The former includes a simple implementation of the AIDA plotter, the latter 
+contains a dummy implementation of the plotter which allows for AIDA to be run 
+in a batch (or headless) environment. You can explicitly select which analysis 
+factory to use by setting the Java property hep.aida.IAnalysisFactory, e.g.:</p>
+<pre>java -Dhep.aida.IAnalysisFactory=hep.aida.ref.BatchAnalysisFactory</pre>
+<p>The built-in plotter is intended mainly as a simple viewer for AIDA plots, 
+for a full-featured GUI implementation based on JAIDA see <a href="#JAS3">JAS3</a>.</p>
+<h3><a name="Features">Features/Limitations of the Current Release</a></h3>
+<p><b>Histograms</b> - We have provided a full implementation of the AIDA 3.2 
+histogram interfaces, including histogram arithmetic and projections and slices.
+</p>
+<p><b>Profile</b> - One and two dimensional Profile histograms are fully 
+implemented. </p>
+<p><b>Clouds</b> - We have provided a full implementation of the AIDA 3.2 cloud 
+interfaces. By default clouds will &quot;auto-convert&quot; to histograms when they reach 
+100,000 entries. You can turn off auto-conversion by specifying the option &quot;autoConvert=no&quot; 
+when creating the Cloud. A new options controls how clouds are auto-converted to 
+histograms, &quot;margin=0.1&quot; will add a 10% margin to the computed min/max of the 
+cloud which determining the histogram range. The default value is &quot;margin=0.05&quot;, 
+&quot;margin=0&quot; will restore the behaviour of the previous release.</p>
+<p><b>DataPointSet</b> - A full implementation of the AIDA 3.2 is implemented 
+including operations among DataPointSets.</p>
+<p><b>Trees and IO - </b>The current implementation of&nbsp; ITree supports 
+reading and writing AIDA standard XML files (.aida files) in either gzip 
+compressed format, or uncompressed format. You can control this via the options 
+parameter when the ITree is created. The default is &quot;compressed=yes&quot;. It is also 
+possible to open ROOT files, and if the optional <a href="#Extras">CERNLIB 
+adapter</a> is installed, also PAW files.</p>
+<p><b>Tuples - </b>The whole functionality of AIDA ITuple interface is 
+supported, including support for evaluators, filters and nest ITuples . Full 
+interactive analysis of ITuples&nbsp; is provided by the TupleExplorer plugin in
+<a href="#JAS3">JAS3</a>.</p>
+<p><b>Plotting - </b>Full support for the IPlotter interface is included, 
+including regions and overlays. In the Java implementation the Plotter observes 
+all displayed Histograms and Clouds, and will automatically update the display 
+as necessary. Therefore the IPlotter.refresh() method is currently ignored in 
+the Java implementation. Not all AIDA implementations will do this, so for 
+portability you should still periodically call the refresh() method. Similarly 
+the Java implementation is multi-threaded, so plots will be refreshed while the 
+main program continues to run, and hence the IPlotter.interact() method is also 
+ignored by the Java implementation. Currently it is not possible to plot 3D (or 
+higher dimensionality) data objects. Histograms with variable bin-widths are not 
+yet displayed correctly. Initial support for plot styles has been added in this 
+release.</p>
+<p>The following parameters have been added in the Java implementation to the 
+plotter region to access the limits of the plot area: xAxisLowerLimit, 
+xAxisUpperLimit, yAxisLowerLimit, yAxisUpperLimit. To access the region's limits 
+just type:</p>
+
+<pre class="code">double xLowerLimit = Double.parseDouble( plotterRegion.parameterValue(&quot;xAxisLowerLimit&quot;) );</pre>
+
+<p align="left">The parameter &quot;mode&quot; is used to control how an object is added 
+to a plot. It is passed as an option in the plot(...) method on the 
+IPlotterRegion and it can take two values: &quot;overlay&quot; to overlay the object to 
+the existing ones, &quot;replace&quot; to replace the existing plots with the one 
+corresponding to the provided object. The latter is equivalent to first clearing 
+the region and then plotting the object. The default value is &quot;overlay&quot;.</p>
+	<pre class="code">plotterRegion.plot(hist, &quot;mode=overlay&quot;); or
+plotterRegion.plot(hist, &quot;mode=replace&quot;);</pre>
+<p><b>Trees - </b>JAIDA can read and write XML files (also known as aida files). 
+In addition it can read <a href="http://wwwasd.web.cern.ch/wwwasd/paw/">PAW</a> 
+(if the optional <a href="#Extras">CERNLIB extension</a> is installed) and
+<a href="http://root.cern.ch/">Root</a> files (either directly or via a root
+<a href="http://root.cern.ch/root/NetFile.html">daemon</a>). Here are some 
+examples:</p>
+<pre class="code">ITree tree = tf.create(&quot;myFile.aida&quot;,&quot;xml&quot;);
+ITree tree = tf.create(&quot;myFile.paw&quot;,&quot;paw&quot;);
+ITree tree = tf.create(&quot;myFile.root&quot;,&quot;root&quot;);
+ITree tree = tf.create(&quot;root://sldrh2.slac.stanford.edu&quot;,&quot;root&quot;,true,false,&quot;scheme=anonymous&quot;);</pre>
+<p>When opening root files the following options are supported:</p>
+<table border="1" cellspacing="0">
+	<tr>
+		<th>Option</th>
+		<th>Values</th>
+	</tr>
+	<tr>
+		<td>showAllCycles</td>
+		<td>By default only the highest numbered cycle is read. If this option 
+		is specified then all cylces are shown.</td>
+	</tr>
+	<tr>
+		<td>scheme</td>
+		<td><i>*rood only</i> The authorization scheme to use. Supported values, 
+		Anonymous, UsrPwd</td>
+	</tr>
+	<tr>
+		<td>user</td>
+		<td><i>*rood only</i> The user name to use (for UsrPwd scheme)</td>
+	</tr>
+	<tr>
+		<td>password</td>
+		<td><i>*rood only</i> The password to use (for UsrPwd scheme)</td>
+	</tr>
+</table>
+<p><b>Styles </b>- The AIDA style interfaces are fully implemented.&nbsp; To 
+understand the way styles work it is important to understand the hierarchical 
+structure of the AIDA styles. For each plot a cascade of styles is taken into 
+account: the style associated to the IPlotter, the one associated to the 
+IPlotterRegion, the default one for a given type of data, and the user provided 
+ones when the actual plotting is done (passed via the plot(..) method on the 
+IPlotterRegion). When retrieving the value of a give style parameter we first 
+start from the user provided styles (if any) and navigate down through all the 
+above styles until we find a style for which the given style parameter has been 
+set. This means that the style parameters set in a user provided style will 
+always overwrite the corresponding style parameter set on the IPlotterRegion. 
+Alternatively changing a style parameter on the IPlotterRegion will not affect a 
+plot if a user provided style has been used to render the plot and the given 
+style parameter has been set by the user.</p>
+<p>In the Java implementation all the plots listen for changes to all the 
+styles, except for the user provided ones, i.e. the ones that are passed to the IPlotterRegion via its plot(...) method. The plots will update automatically to 
+display any style changes. There is a small caveat here due to a limitation in the 
+AIDA interfaces. In order to modify the plot style of a given object that has 
+been rendered with a user defined style after it has been plotted, it is 
+necessary to first remove the object from the plot (remove(..) method on IPlotterRegion), adding it back again providing the modified style object. We 
+plan to fix this problem for the next release of AIDA: 4.0.</p>
+<p>In our Java implementation we have added the following parameters to our 
+implementation of the AIDA styles to allow a finer control over the objects that 
+appear on a given plot. In the table below we list the additional parameter 
+names, the AIDA object on which they should be set, a description of what they 
+control and the allowed values. Please note that all the parameter names and 
+their values are case sensitive.</p>
+<table border="1" width="85%" cellspacing="0">
+	<tr>
+		<th align="center" nowrap width="10%"><b>AIDA Interface</b></th>
+		<th align="center" nowrap width="14%"><b>Parameter name</b></th>
+		<th align="center" nowrap width="40%"><b>Description</b></th>
+		<th align="center" nowrap width="34%"><b>Allowed values</b></th>
+	</tr>
+	<tr>
+		<td rowspan="15" nowrap width="10%"><b>IPlotterStyle</b></td>
+		<td width="14%">showStatisticsBox</td>
+		<td width="40%">Display the statistics box</td>
+		<td width="34%">true, false</td>
+	</tr>
+	<tr>
+		<td width="14%">statisticsBoxFont</td>
+		<td width="40%">The font type used in the statistics box</td>
+		<td width="34%">SanSerif, Times, Comics, etc</td>
+	</tr>
+	<tr>
+		<td width="14%">statisticsBoxFontStyle</td>
+		<td width="40%">The font style used in the statistics box</td>
+		<td width="34%">plain or 0, bold or 1, italic or 2, boldItalic or 3</td>
+	</tr>
+	<tr>
+		<td width="14%">statisticsBoxFontSize</td>
+		<td width="40%">The font size used in the statistics box</td>
+		<td width="34%">a positive integer</td>
+	</tr>
+	<tr>
+		<td width="14%">showLegend</td>
+		<td width="40%">Display the legend on the plot</td>
+		<td width="34%">true, false</td>
+	</tr>
+	<tr>
+		<td width="14%">legendFont</td>
+		<td width="40%">The font type used in the legend</td>
+		<td width="34%">SanSerif, Times, Comics, etc</td>
+	</tr>
+	<tr>
+		<td width="14%">legendFontStyle</td>
+		<td width="40%">The font style used in the legend</td>
+		<td width="34%">plain or 0, bold or 1, italic or 2, boldItalic or 3</td>
+	</tr>
+	<tr>
+		<td width="14%">legendFontSize</td>
+		<td width="40%">The font size used in the legend</td>
+		<td width="34%">a positive integer</td>
+	</tr>
+	<tr>
+		<td width="14%">backgroundColor</td>
+		<td width="40%">The plot's background color</td>
+		<td width="34%">a color, see below</td>
+	</tr>
+	<tr>
+		<td width="14%">foregroundColor</td>
+		<td width="40%">The plot's foreground color</td>
+		<td width="34%">a color, see below</td>
+	</tr>
+	<tr>
+		<td width="14%">dataAreaColor</td>
+		<td width="40%">The data area's background color</td>
+		<td width="34%">a color, see below</td>
+	</tr>
+	<tr>
+		<td width="14%">dataAreaBorderType</td>
+		<td width="40%">The data area's border type</td>
+		<td width="34%">bevelIn or 0, bevelOut or 1, etched or 2, line or 3, shadow or 4</td>
+	</tr>
+	<tr>
+		<td width="14%">hist2DStyle</td>
+		<td width="40%">The way a histogram2D is represented</td>
+		<td width="34%">box or 0, ellipse or 1, colorMap or 2</td>
+	</tr>
+	<tr>
+		<td width="14%">showAsScatterPlot</td>
+		<td width="40%">For scatter plots only to switch between binned and unbinned 
+		representation</td>
+		<td width="34%">true, false. The default is true.</td>
+	</tr>
+	<tr>
+		<td width="14%">showTitle</td>
+		<td width="40%">Display the title.</td>
+		<td width="34%">true, false. The default is true.</td>
+	</tr>
+	<tr>
+		<td colspan="4" nowrap>&nbsp;</td>
+	</tr>
+	<tr>
+		<td rowspan="9" nowrap width="10%"><b>IDataStyle</b></td>
+		<td width="14%">showHistogramBars</td>
+		<td width="40%">Display the line around the histogram's bars</td>
+		<td width="34%">true, false</td>
+	</tr>
+	<tr>
+		<td width="14%">fillHistogramBars</td>
+		<td width="40%">Fill the histogram's bars</td>
+		<td width="34%">true, false</td>
+	</tr>
+	<tr>
+		<td width="14%">showErrorBars</td>
+		<td width="40%">Show the error bars</td>
+		<td width="34%">true, false</td>
+	</tr>
+	<tr>
+		<td width="14%">errorBarsColor</td>
+		<td width="40%">The error bars color</td>
+		<td width="34%">a color, see below</td>
+	</tr>
+	<tr>
+		<td width="14%">profileErrors</td>
+		<td width="40%">The type of error bars for profile plots</td>
+		<td width="34%">spread or 0, errorOnMean or 1. The default is spread.</td>
+	</tr>
+	<tr>
+		<td width="14%">showDataPoints</td>
+		<td width="40%">Show data points on top of the histogram's bars</td>
+		<td width="34%">true, false</td>
+	</tr>
+	<tr>
+		<td width="14%">connectDataPoints</td>
+		<td width="40%">Connects the data points with a line</td>
+		<td width="34%">true, false</td>
+	</tr>
+	<tr>
+		<td width="14%">lineBetweenPointsColor</td>
+		<td width="40%">The color of the line between the points</td>
+		<td width="34%">a color, see below</td>
+	</tr>
+	<tr>
+		<td width="14%">functionLineColor</td>
+		<td width="40%">The color of a function</td>
+		<td width="34%">a color, see below</td>
+	</tr>
+	<tr>
+		<td colspan="4" nowrap>&nbsp;</td>
+	</tr>
+	<tr>
+		<td rowspan="4" nowrap width="10%"><b>IAxisStyle</b></td>
+		<td width="14%">label</td>
+		<td width="40%">The axis label</td>
+		<td width="34%">a string</td>
+	</tr>
+	<tr>
+		<td width="14%">scale</td>
+		<td width="40%">The scale of the axis</td>
+		<td width="34%">lin, linear, log, logarithmic</td>
+	</tr>
+	<tr>
+		<td width="14%">type</td>
+		<td width="40%">The axis type</td>
+		<td width="34%">double, int, string, date</td>
+	</tr>
+	<tr>
+		<td width="14%">allowZeroSuppression</td>
+		<td width="40%">To allow zero suppression</td>
+		<td width="34%">true, false. The default is false.</td>
+	</tr>
+	<tr>
+		<td colspan="4" nowrap>&nbsp;</td>
+	</tr>
+	<tr>
+		<td nowrap width="10%"><b>IFillStyle</b></td>
+		<td width="14%">colorMapScheme</td>
+		<td width="40%">The type of color map for 2D histograms</td>
+		<td width="34%">warm or 0, cool or 1, thermal or 2, rainbow or 3, grayscale or 4</td>
+	</tr>
+	<tr>
+		<td colspan="4" nowrap>&nbsp;</td>
+	</tr>
+	<tr>
+		<td nowrap width="10%"><b>IMarkerStyle</b></td>
+		<td width="14%">size</td>
+		<td width="40%">The size of the marker</td>
+		<td width="34%">a positive integer</td>
+	</tr>
+</table>
+<p>The colors can be passed to the styles in the following formats:</p>
+<ul>
+	<li>by name: &quot;yellow&quot; , where alpha is always 1.0 </li>
+	<li>&nbsp;by int r,g,b,a: &quot;128, 255, 64, 255&quot; , where alpha (a) is optional </li>
+	<li>&nbsp;by float r,g,b,a: &quot;0.5, 1.0, 0.25, 1.0&quot; , where alpha (a) is optional 
+	</li>
+	<li>&nbsp;by single number: &quot;64637&quot; or &quot;0x0FFF08&quot; , where alpha is always 1.0 
+	</li>
+</ul>
+<p><b>Fitting </b>- The flexible design of the IFitter interface allows the user 
+to switch very easily the optimizer engine used in the minimization process and 
+the type of fit method used. We currently support two optimizers: <i>Minuit</i> 
+and <a uncmin.html? Blurbs SoftwareGuide Guide otc www-fp.mcs.anl.gov ?http:><i>
+Uncmin</i></a>. The available fit methods are: </p>
+<ul>
+	<li><i>LeastSquares</i></li>
+	<li><i>Chi2</i></li>
+	<li><i>CleverChi2</i></li>
+	<li><i>BinnedMaximumLikelihood</i></li>
+	<li><i>UnbinnedMaximumLikelihood</i></li>
+</ul>
+<p>The following link provides&nbsp;the
+<a href="http://java.freehep.org/jaida/v3.2.0/FitMethods.html">fit methods 
+definition</a>.</p>
+<p><b>Functions</b>- Two types of functions can be created with the 
+IFunctionFactory: built-in functions and scripted functions. Currently the only 
+built-in functions we provide are the <i>Polynomial</i>, the <i>Exponential</i>, 
+the one and two dimensional <i>Gaussian</i> that can be created through the <i>
+createFunctionByName</i> method of the <i>IFunctionFactory</i> using for the 
+functions model <i>p0, p1, ... </i>, <i>e</i>, <i>g</i> and <i>g2</i> 
+respectively. No operations among them are currently supported. </p>
+<p>The following table shows the name and the list of parameters for each of the 
+built-in functions:</p>
+<table border="1" cellspacing="1" width="57%" id="AutoNumber1">
+	<tr>
+		<td width="35%">Polynomial of order n</td>
+		<td width="13%" align="center"><i>pn</i></td>
+		<td width="81%"><i>p0, p1,....,p(n-1)</i></td>
+	</tr>
+	<tr>
+		<td width="35%">Exponential</td>
+		<td width="13%" align="center"><i>e</i></td>
+		<td width="81%"><i>amplitude, exponent</i></td>
+	</tr>
+	<tr>
+		<td width="35%">Gaussian 1-dimensional</td>
+		<td width="13%" align="center"><i>g</i></td>
+		<td width="81%"><i>amplitude, mean, sigma</i></td>
+	</tr>
+	<tr>
+		<td width="35%">Gaussian 2-dimensional</td>
+		<td width="13%" align="center"><i>g2</i></td>
+		<td width="81%"><i>amplitude, meanX, sigmaX, meanY, sigmaY</i></td>
+	</tr>
+</table>
+<p>It is possible to create functions by name by adding any of the built in 
+functions, e.g. &quot;g0 + p1&quot;.</p>
+<p>For more complicated functions the user should create scripted functions 
+though the <i>createFunctionFromScript</i> method. </p>
+<p>The following list details which parts of the AIDA standard are not fully 
+implemented:</p>
+<ul>
+	<li>Class IInfo is not implemented</li>
+	<li>IFitter supports only constraints of the type &quot;a = b&quot;</li>
+	<li>IFunctions: no operations among built in functions, beside addition, are supported.</li>
+	<li>IPlotterLayout is not implemented</li>
+	<li>IEvaluator and IFilter can only be applied to ITuple's columns at the 
+	root level (not to columns inside folders)</li>
+	<li>ITuple: for the reason above the project methods on ITuple apply only to 
+	root level columns</li>
+	<li>Provide full support to the AIDA Styles parameters</li>
+</ul>
+<h3><a name="Extras">Optional Extras</a></h3>
+<p>JAIDA is written entirely in Java, and therefore works on any platform with 
+support for Java. JAIDA also contains code for reading PAW files and for using 
+the Minuit fitter. Both of these components use native code from CERNLIB, and to 
+use them you will need to download and install the additional
+<a href="ftp://ftp.slac.stanford.edu/software/freehep/CERNLIBAdapter/v3.0.3">
+CERNLIB_Adapter for your platform</a> in order to use these features.</p>
+<h3><a name="Bugs">Reporting Bugs</a></h3>
+<p>For discussion of features or problems related to JAIDA please use the
+<a href="http://java.freehep.org/redirect?project=JAIDA&area=forum">JAIDA 
+discussion forum</a>. To report bugs or request enhancements you can also use 
+the <a href="http://java.freehep.org/redirect?project=JAIDA&area=bugs">JAIDA bug 
+database</a>. </p>
+<h3><a name="Saving plots">Saving plots</a></h3>
+<p>If you are using the hep.aida.ref.AnalysisFactory you can export your plots 
+to a graphics file through the writeToFile(String fileName, String type) method 
+on the IPlotter. In order to do this you need to download the following jar 
+files from the <a href="http://java.freehep.org/Distributions.html">FreeHEP 
+repository</a> and add them to your CLASSPATH:</p>
+<ul>
+	<li><b>freehep-graphics2d.jar</b></li>
+	<li><b>freehep-graphicsio.jar</b></li>
+	<li>any additional <b>freehep-graphicsio-&quot;type&quot;.jar</b> where &quot;type&quot; is one 
+	of the following export formats:
+  	<ul>
+		<li>cgm, emf, gif, pdf, ppm, ps, svg, swf</li>
+	</ul>
+	</li>
+</ul>
+<h3><a name="Embed">Embedding the JAIDA plotter in your own Java application</a></h3>
+<p>The following example illustrates how to embed one (or more) JAIDA plotters 
+into your own Java application. The example makes use of the 
+hep.aida.ref.plotter.PlotterUtilities class which contains several methods for 
+assisting in interfacing JAIDA to other Java applications.</p>
+<pre class="code"><font color="green"><b>import</b></font> hep<font color="blue"><b>.</b></font>aida<font color="blue"><b>.</b>*<b>;</b></font>
+<font color="green"><b>import</b></font> hep<font color="blue"><b>.</b></font>aida<font color="blue"><b>.</b></font>ref<font color="blue"><b>.</b></font>plotter<font color="blue"><b>.</b></font>PlotterUtilities<font color="blue"><b>;</b></font>
+<font color="green"><b>import</b></font> java<font color="blue"><b>.</b></font>awt<font color="blue"><b>.</b></font>BorderLayout<font color="blue"><b>;</b></font>
+<font color="green"><b>import</b></font> java<font color="blue"><b>.</b></font>awt<font color="blue"><b>.</b></font>event<font color="blue"><b>.</b></font>ActionEvent<font color="blue"><b>;</b></font>
+<font color="green"><b>import</b></font> java<font color="blue"><b>.</b></font>util<font color="blue"><b>.</b></font>Random<font color="blue"><b>;</b></font>
+
+<font color="green"><b>import</b></font> javax<font color="blue"><b>.</b></font>swing<font color="blue"><b>.</b>*<b>;</b></font>
+
+<font color="green"><i>/**
+ * An example of how to embed a JAIDA IPlotter into your own application.
+ */</i></font>
+<font color="green"><b>public</b></font> <font color="green"><b>class</b></font> AIDAEmbed <font color="green"><b>extends</b></font> JPanel
+<font color="blue"><b>{</b></font>
+   <font color="green"><i>/** Creates a new instance of AIDAEmbed */</i></font>
+   <font color="green"><b>public</b></font> AIDAEmbed<font color="blue"><b>()</b></font>
+   <font color="blue"><b>{</b></font>
+      <font color="green"><b>super</b></font><font color="blue"><b>(</b></font><font color="green"><b>new</b></font> BorderLayout<font color="blue"><b>());</b></font>
+
+      IAnalysisFactory af <font color="blue">=</font> IAnalysisFactory<font color="blue"><b>.</b></font>create<font color="blue"><b>();</b></font>
+      ITree tree <font color="blue">=</font> af<font color="blue"><b>.</b></font>createTreeFactory<font color="blue"><b>().</b></font>create<font color="blue"><b>();</b></font>
+      IHistogramFactory hf <font color="blue">=</font> af<font color="blue"><b>.</b></font>createHistogramFactory<font color="blue"><b>(</b></font>tree<font color="blue"><b>);</b></font>
+      IHistogram1D h1d <font color="blue">=</font> hf<font color="blue"><b>.</b></font>createHistogram1D<font color="blue"><b>(</b></font><font color="purple">&quot;Test&quot;</font><font color="blue"><b>,</b></font> <font color="brown">50</font><font color="blue"><b>,</b></font> <font color="blue">-</font><font color="brown">3</font><font color="blue"><b>,</b></font> <font color="brown">3</font><font color="blue"><b>);</b></font>
+
+      <font color="green"><i>// Fill with junk
+</i></font>      Random rand <font color="blue">=</font> <font color="green"><b>new</b></font> Random<font color="blue"><b>();</b></font>
+      <font color="green"><b>for</b></font> <font color="blue"><b>(</b></font><font color="green"><b>int</b></font> i <font color="blue">=</font> <font color="brown">0</font><font color="blue"><b>;</b></font> i <font color="blue">&lt;</font> <font color="brown">10000</font><font color="blue"><b>;</b></font> i<font color="blue">++<b>)</b></font>
+         h1d<font color="blue"><b>.</b></font>fill<font color="blue"><b>(</b></font>rand<font color="blue"><b>.</b></font>nextGaussian<font color="blue"><b>());</b></font>
+
+      <font color="green"><i>// Create an IPlotter 
+</i></font>      IPlotter plotter <font color="blue">=</font> af<font color="blue"><b>.</b></font>createPlotterFactory<font color="blue"><b>().</b></font>create<font color="blue"><b>();</b></font>
+      plotter<font color="blue"><b>.</b></font>currentRegion<font color="blue"><b>().</b></font>plot<font color="blue"><b>(</b></font>h1d<font color="blue"><b>);</b></font>
+
+      <font color="green"><i>// Now embed the plotter
+</i></font>      add<font color="blue"><b>(</b></font>PlotterUtilities<font color="blue"><b>.</b></font>componentForPlotter<font color="blue"><b>(</b></font>plotter<font color="blue"><b>),</b></font> BorderLayout<font color="blue"><b>.</b></font>CENTER<font color="blue"><b>);</b></font>
+   <font color="blue"><b>}</b></font>
+
+   <font color="green"><i>/**
+    * @param args the command line arguments
+    */</i></font>
+   <font color="green"><b>public</b></font> <font color="green"><b>static</b></font> <font color="green"><b>void</b></font> main<font color="blue"><b>(</b></font>String<font color="blue"><b>[]</b></font> args<font color="blue"><b>)</b></font>
+   <font color="blue"><b>{</b></font>
+      JFrame frame <font color="blue">=</font> <font color="green"><b>new</b></font> JFrame<font color="blue"><b>(</b></font><font color="purple">&quot;Embedded AIDA&quot;</font><font color="blue"><b>);</b></font>
+
+      JMenuBar bar <font color="blue">=</font> <font color="green"><b>new</b></font> JMenuBar<font color="blue"><b>();</b></font>
+      JMenu menu <font color="blue">=</font> <font color="green"><b>new</b></font> JMenu<font color="blue"><b>(</b></font><font color="purple">&quot;File&quot;</font><font color="blue"><b>);</b></font>
+      JMenuItem item <font color="blue">=</font> <font color="green"><b>new</b></font> JMenuItem<font color="blue"><b>(</b></font><font color="green"><b>new</b></font> ExitAction<font color="blue"><b>());</b></font>
+      menu<font color="blue"><b>.</b></font>add<font color="blue"><b>(</b></font>item<font color="blue"><b>);</b></font>
+      bar<font color="blue"><b>.</b></font>add<font color="blue"><b>(</b></font>menu<font color="blue"><b>);</b></font>
+      frame<font color="blue"><b>.</b></font>setJMenuBar<font color="blue"><b>(</b></font>bar<font color="blue"><b>);</b></font>
+
+      frame<font color="blue"><b>.</b></font>setContentPane<font color="blue"><b>(</b></font><font color="green"><b>new</b></font> AIDAEmbed<font color="blue"><b>());</b></font>
+      frame<font color="blue"><b>.</b></font>setDefaultCloseOperation<font color="blue"><b>(</b></font>frame<font color="blue"><b>.</b></font>EXIT_ON_CLOSE<font color="blue"><b>);</b></font>
+      frame<font color="blue"><b>.</b></font>pack<font color="blue"><b>();</b></font>
+      frame<font color="blue"><b>.</b></font>show<font color="blue"><b>();</b></font>
+   <font color="blue"><b>}</b></font>
+   
+   <font color="green"><b>private</b></font> <font color="green"><b>static</b></font> <font color="green"><b>class</b></font> ExitAction <font color="green"><b>extends</b></font> AbstractAction
+   <font color="blue"><b>{</b></font>
+      ExitAction<font color="blue"><b>()</b></font> <font color="blue"><b>{</b></font> <font color="green"><b>super</b></font><font color="blue"><b>(</b></font><font color="purple">&quot;Exit&quot;</font><font color="blue"><b>);</b></font> <font color="blue"><b>}</b></font>
+      <font color="green"><b>public</b></font> <font color="green"><b>void</b></font> actionPerformed<font color="blue"><b>(</b></font>ActionEvent e<font color="blue"><b>)</b></font> <font color="blue"><b>{</b></font> System<font color="blue"><b>.</b></font>exit<font color="blue"><b>(</b></font><font color="brown">0</font><font color="blue"><b>);</b></font> <font color="blue"><b>}</b></font>
+   <font color="blue"><b>}</b></font>
+<font color="blue"><b>}</b></font></pre>
+<h3><a name="servlet">Using JAIDA in a servlet</a></h3>
+<p>The following example illustrates how to use JAIDA in a servlet to send 
+graphics back to a user's web browser.</p>
+<pre class="code"><font color="green"><b>import</b></font> hep<font color="blue"><b>.</b></font>aida<font color="blue"><b>.</b>*<b>;</b></font>
+<font color="green"><b>import</b></font> hep<font color="blue"><b>.</b></font>aida<font color="blue"><b>.</b></font>ref<font color="blue"><b>.</b></font>plotter<font color="blue"><b>.</b></font>PlotterUtilities<font color="blue"><b>;</b></font>
+<font color="green"><b>import</b></font> java<font color="blue"><b>.</b></font>io<font color="blue"><b>.</b></font>IOException<font color="blue"><b>;</b></font>
+<font color="green"><b>import</b></font> java<font color="blue"><b>.</b></font>util<font color="blue"><b>.</b></font>Random<font color="blue"><b>;</b></font>
+<font color="green"><b>import</b></font> javax<font color="blue"><b>.</b></font>servlet<font color="blue"><b>.</b></font>ServletConfig<font color="blue"><b>;</b></font>
+<font color="green"><b>import</b></font> javax<font color="blue"><b>.</b></font>servlet<font color="blue"><b>.</b></font>ServletException<font color="blue"><b>;</b></font>
+<font color="green"><b>import</b></font> javax<font color="blue"><b>.</b></font>servlet<font color="blue"><b>.</b></font>ServletOutputStream<font color="blue"><b>;</b></font>
+<font color="green"><b>import</b></font> javax<font color="blue"><b>.</b></font>servlet<font color="blue"><b>.</b></font>http<font color="blue"><b>.</b></font>HttpServlet<font color="blue"><b>;</b></font>
+<font color="green"><b>import</b></font> javax<font color="blue"><b>.</b></font>servlet<font color="blue"><b>.</b></font>http<font color="blue"><b>.</b></font>HttpServletRequest<font color="blue"><b>;</b></font>
+<font color="green"><b>import</b></font> javax<font color="blue"><b>.</b></font>servlet<font color="blue"><b>.</b></font>http<font color="blue"><b>.</b></font>HttpServletResponse<font color="blue"><b>;</b></font>
+
+<font color="green"><b>public</b></font> <font color="green"><b>class</b></font> AIDAServlet <font color="green"><b>extends</b></font> HttpServlet
+<font color="blue"><b>{</b></font>
+   <font color="green"><b>private</b></font> IPlotter plotter<font color="blue"><b>;</b></font>
+   <font color="green"><i>/** Initializes the servlet.
+    */</i></font>
+   <font color="green"><b>public</b></font> <font color="green"><b>void</b></font> init<font color="blue"><b>(</b></font>ServletConfig config<font color="blue"><b>)</b></font> <font color="green"><b>throws</b></font> ServletException
+   <font color="blue"><b>{</b></font>
+      <font color="green"><b>super</b></font><font color="blue"><b>.</b></font>init<font color="blue"><b>(</b></font>config<font color="blue"><b>);</b></font>
+      
+      IAnalysisFactory af <font color="blue">=</font> IAnalysisFactory<font color="blue"><b>.</b></font>create<font color="blue"><b>();</b></font>
+      ITree tree <font color="blue">=</font> af<font color="blue"><b>.</b></font>createTreeFactory<font color="blue"><b>().</b></font>create<font color="blue"><b>();</b></font>
+      IHistogramFactory hf <font color="blue">=</font> af<font color="blue"><b>.</b></font>createHistogramFactory<font color="blue"><b>(</b></font>tree<font color="blue"><b>);</b></font>
+
+      IHistogram1D h1 <font color="blue">=</font> hf<font color="blue"><b>.</b></font>createHistogram1D<font color="blue"><b>(</b></font><font color="purple">&quot;Test&quot;</font><font color="blue"><b>,</b></font> <font color="brown">50</font><font color="blue"><b>,</b></font> <font color="blue">-</font><font color="brown">4</font><font color="blue"><b>,</b></font> <font color="brown">4</font><font color="blue"><b>);</b></font>
+      Random r <font color="blue">=</font> <font color="green"><b>new</b></font> Random<font color="blue"><b>();</b></font>
+      <font color="green"><b>for</b></font> <font color="blue"><b>(</b></font><font color="green"><b>int</b></font> i <font color="blue">=</font> <font color="brown">0</font><font color="blue"><b>;</b></font> i <font color="blue">&lt;</font> <font color="brown">10000</font><font color="blue"><b>;</b></font> i<font color="blue">++<b>)</b></font>
+         h1.fill<font color="blue"><b>(</b></font>r<font color="blue"><b>.</b></font>nextGaussian<font color="blue"><b>());</b></font>
+
+      plotter <font color="blue">=</font> af<font color="blue"><b>.</b></font>createPlotterFactory<font color="blue"><b>().</b></font>create<font color="blue"><b>(</b></font><font color="purple">&quot;Test&quot;</font><font color="blue"><b>);</b></font>
+      plotter<font color="blue"><b>.</b></font>region<font color="blue"><b>(</b></font><font color="brown">0</font><font color="blue"><b>).</b></font>plot<font color="blue"><b>(</b></font>h1<font color="blue"><b>);</b></font> 
+   <font color="blue"><b>}</b></font>
+   
+   <font color="green"><b>public</b></font> <font color="green"><b>void</b></font> doGet<font color="blue"><b>(</b></font>HttpServletRequest req<font color="blue"><b>,</b></font> HttpServletResponse res<font color="blue"><b>)</b></font> <font color="green"><b>throws</b></font> ServletException<font color="blue"><b>,</b></font> IOException
+   <font color="blue"><b>{</b></font>      
+      ServletOutputStream out <font color="blue">=</font> res<font color="blue"><b>.</b></font>getOutputStream<font color="blue"><b>();</b></font>  
+      res<font color="blue"><b>.</b></font>setContentType<font color="blue"><b>(</b></font><font color="purple">&quot;image/png&quot;</font><font color="blue"><b>);</b></font>
+      PlotterUtilities<font color="blue"><b>.</b></font>writeToFile<font color="blue"><b>(</b></font>plotter<font color="blue"><b>,</b></font>out<font color="blue"><b>,</b></font><font color="purple">&quot;png&quot;</font><font color="blue"><b>,</b></font><font color="green"><b>null</b></font><font color="blue"><b>);</b></font>
+      out<font color="blue"><b>.</b></font>close<font color="blue"><b>();</b></font>
+   <font color="blue"><b>}</b></font>   
+<font color="blue"><b>}</b></font></pre>
+<h3><a name="JAS3">Using JAIDA with JAS3</a></h3>
+<p>JAIDA is intended for use in simple standalone Java applications. It provides 
+the full AIDA functionality for Java, but only limited &quot;GUI&quot; functionality. JAS3 
+builds on the functionality of JAIDA and adds many GUI based interactive 
+analysis tools. JAS3 is available from <a href="http://jas.freehep.org/jas3">
+http://jas.freehep.org/jas3</a>.</p>
+<h3><a name="Python">Using JAIDA from Python</a></h3>
+<p><a href="http://www.python.org/">Python</a> is a popular object-oriented 
+scripting language. <a href="http://www.jython.org/">Jython</a> is an 
+implementation of Python written in Java. Jython is able to access any Java 
+object as if it were a Python object. Thus it is very easy to use JAIDA with 
+Jython. The combination provides a very convenient way of exploring the 
+capabilities of JAIDA.</p>
+<p>To use it follow steps below:</p>
+<ul>
+	<li><a href="http://www.jython.org/download.html">Download</a> and install 
+	Jython. Add the installation directory to your PATH. </li>
+	<li>Make sure your CLASSPATH is set as specified in the
+	<a href="#Getting Started">getting started</a> section of these release 
+	notes.</li>
+</ul>
+<p>Run the script below just by typing:</p>
+<pre>jython UsingJAIDAFromJython.py</pre>
+<p>where UsingJAIDAFromJython.py contains:</p>
+<pre class="code">from hep<font color="blue"><b>.</b></font>aida <font color="green"><b>import</b></font> <font color="blue">*</font>
+from java<font color="blue"><b>.</b></font>lang <font color="green"><b>import</b></font> <font color="blue">*</font>
+from java<font color="blue"><b>.</b></font>util <font color="green"><b>import</b></font> <font color="blue">*</font>
+
+System<font color="blue"><b>.</b></font>getProperties<font color="blue"><b>().</b></font>setProperty<font color="blue"><b>(</b></font><font color="purple">&quot;hep.aida.IAnalysisFactory&quot;</font><font color="blue"><b>,</b></font><font color="purple">&quot;hep.aida.ref.AnalysisFactory&quot;</font><font color="blue"><b>)</b></font>
+
+true <font color="blue">=</font> Boolean<font color="blue"><b>(</b></font><font color="purple">&quot;true&quot;</font><font color="blue"><b>);</b></font>
+false <font color="blue">=</font> Boolean<font color="blue"><b>(</b></font><font color="purple">&quot;false&quot;</font><font color="blue"><b>);</b></font>
+
+factory <font color="blue">=</font> IAnalysisFactory<font color="blue"><b>.</b></font>create<font color="blue"><b>();</b></font>
+tree    <font color="blue">=</font> factory<font color="blue"><b>.</b></font>createTreeFactory<font color="blue"><b>().</b></font>create<font color="blue"><b>(</b></font><font color="purple">&quot;UsingJAIDAFromJython.aida&quot;</font><font color="blue"><b>,</b></font><font color="purple">&quot;xml&quot;</font><font color="blue"><b>,</b></font>false<font color="blue"><b>,</b></font>true<font color="blue"><b>);</b></font>
+hf      <font color="blue">=</font> factory<font color="blue"><b>.</b></font>createHistogramFactory<font color="blue"><b>(</b></font>tree<font color="blue"><b>);</b></font>
+#fitter  <font color="blue">=</font> factory<font color="blue"><b>.</b></font>createFitFactory<font color="blue"><b>().</b></font>createFitter<font color="blue"><b>(</b></font><font color="purple">&quot;Chi2&quot;</font><font color="blue"><b>,</b></font><font color="purple">&quot;uncmin&quot;</font><font color="blue"><b>);</b></font>
+
+tree<font color="blue"><b>.</b></font>mkdir<font color="blue"><b>(</b></font><font color="purple">&quot;/Histograms&quot;</font><font color="blue"><b>);</b></font>
+tree<font color="blue"><b>.</b></font>cd<font color="blue"><b>(</b></font><font color="purple">&quot;/Histograms&quot;</font><font color="blue"><b>);</b></font>
+
+h1 <font color="blue">=</font> hf<font color="blue"><b>.</b></font>createHistogram1D<font color="blue"><b>(</b></font><font color="purple">&quot;Histogram 1D&quot;</font><font color="blue"><b>,</b></font><font color="brown">50</font><font color="blue"><b>,</b>-</font><font color="brown">3</font><font color="blue"><b>,</b></font>3<font color="blue"><b>);</b></font>
+h2 <font color="blue">=</font> hf<font color="blue"><b>.</b></font>createHistogram2D<font color="blue"><b>(</b></font><font color="purple">&quot;Histogram 2D&quot;</font><font color="blue"><b>,</b></font><font color="brown">40</font><font color="blue"><b>,</b>-</font><font color="brown">3</font><font color="blue"><b>,</b></font>3<font color="blue"><b>,</b></font><font color="brown">40</font><font color="blue"><b>,</b>-</font><font color="brown">3</font><font color="blue"><b>,</b></font>3<font color="blue"><b>);</b></font>
+        
+tree<font color="blue"><b>.</b></font>mkdir<font color="blue"><b>(</b></font><font color="purple">&quot;/Clouds&quot;</font><font color="blue"><b>);</b></font>
+tree<font color="blue"><b>.</b></font>cd<font color="blue"><b>(</b></font><font color="purple">&quot;/Clouds&quot;</font><font color="blue"><b>);</b></font>
+
+c1 <font color="blue">=</font> hf<font color="blue"><b>.</b></font>createCloud1D<font color="blue"><b>(</b></font><font color="purple">&quot;Cloud 1D&quot;</font><font color="blue"><b>);</b></font>
+c2 <font color="blue">=</font> hf<font color="blue"><b>.</b></font>createCloud2D<font color="blue"><b>(</b></font><font color="purple">&quot;Cloud 2D&quot;</font><font color="blue"><b>);</b></font>
+
+page1 <font color="blue">=</font> factory<font color="blue"><b>.</b></font>createPlotterFactory<font color="blue"><b>().</b></font>create<font color="blue"><b>(</b></font><font color="purple">&quot;Page1&quot;</font><font color="blue"><b>);</b></font>
+
+page1.show<font color="blue"><b>();</b></font>
+page1.createRegions<font color="blue"><b>(</b></font><font color="brown">2</font><font color="blue"><b>,</b></font>2<font color="blue"><b>);</b></font>
+
+page1.region<font color="blue"><b>(</b></font><font color="brown">0</font><font color="blue"><b>).</b></font>plot<font color="blue"><b>(</b></font>h1<font color="blue"><b>);</b></font>
+page1.region<font color="blue"><b>(</b></font><font color="brown">1</font><font color="blue"><b>).</b></font>plot<font color="blue"><b>(</b></font>h2<font color="blue"><b>);</b></font>
+page1.region<font color="blue"><b>(</b></font><font color="brown">2</font><font color="blue"><b>).</b></font>plot<font color="blue"><b>(</b></font>c1<font color="blue"><b>);</b></font>
+page1.region<font color="blue"><b>(</b></font><font color="brown">3</font><font color="blue"><b>).</b></font>plot<font color="blue"><b>(</b></font>c2<font color="blue"><b>);</b></font>
+
+r <font color="blue">=</font> Random<font color="blue"><b>()</b></font>
+
+def fill<font color="blue"><b>()</b>:</font>
+          <font color="green"><b>for</b></font> i in range<font color="blue"><b>(</b></font><font color="brown">10000</font><font color="blue"><b>)</b>:</font>
+                h1.fill<font color="blue"><b>(</b></font>r<font color="blue"><b>.</b></font>nextGaussian<font color="blue"><b>())</b></font>
+                h2.fill<font color="blue"><b>(</b></font>r<font color="blue"><b>.</b></font>nextGaussian<font color="blue"><b>(),</b></font>r<font color="blue"><b>.</b></font>nextGaussian<font color="blue"><b>())</b></font>
+                c1.fill<font color="blue"><b>(</b></font>r<font color="blue"><b>.</b></font>nextGaussian<font color="blue"><b>())</b></font>
+                c2.fill<font color="blue"><b>(</b></font>r<font color="blue"><b>.</b></font>nextGaussian<font color="blue"><b>(),</b></font>r<font color="blue"><b>.</b></font>nextGaussian<font color="blue"><b>())</b></font>
+
+fill<font color="blue"><b>()</b></font>
+
+tree<font color="blue"><b>.</b></font>commit<font color="blue"><b>();</b></font></pre>
+<h3><a name="Pnuts">Using JAIDA from Pnuts</a></h3>
+<p>Pnuts is a nice java scripting language and it can downloaded it from
+<a href="https://pnuts.dev.java.net/">https://pnuts.dev.java.net/</a>.</p>
+<p>The above AIDA script in Pnuts looks like:</p>
+<pre class="code">IAnalysisFactory = class hep.aida.IAnalysisFactory
+factory = IAnalysisFactory::create()
+
+tree    <font color="blue">=</font> factory<font color="blue"><b>.</b></font>createTreeFactory<font color="blue"><b>().</b></font>create<font color="blue"><b>(</b></font><font color="purple">&quot;UsingJAIDAFromPnuts.aida&quot;</font><font color="blue"><b>,</b></font><font color="purple">&quot;xml&quot;</font><font color="blue"><b>,</b></font>false<font color="blue"><b>,</b></font>true<font color="blue"><b>);</b></font>
+hf      <font color="blue">=</font> factory<font color="blue"><b>.</b></font>createHistogramFactory<font color="blue"><b>(</b></font>tree<font color="blue"><b>);</b></font>
+
+tree<font color="blue"><b>.</b></font>mkdir<font color="blue"><b>(</b></font><font color="purple">&quot;/Histograms&quot;</font><font color="blue"><b>);</b></font>
+tree<font color="blue"><b>.</b></font>cd<font color="blue"><b>(</b></font><font color="purple">&quot;/Histograms&quot;</font><font color="blue"><b>);</b></font>
+
+h1 <font color="blue">=</font> hf<font color="blue"><b>.</b></font>createHistogram1D<font color="blue"><b>(</b></font><font color="purple">&quot;Histogram 1D&quot;</font><font color="blue"><b>,</b></font><font color="brown">50</font><font color="blue"><b>,</b>-</font><font color="brown">3</font><font color="blue"><b>,</b></font>3<font color="blue"><b>);</b></font>
+h2 <font color="blue">=</font> hf<font color="blue"><b>.</b></font>createHistogram2D<font color="blue"><b>(</b></font><font color="purple">&quot;Histogram 2D&quot;</font><font color="blue"><b>,</b></font><font color="brown">40</font><font color="blue"><b>,</b>-</font><font color="brown">3</font><font color="blue"><b>,</b></font>3<font color="blue"><b>,</b></font><font color="brown">40</font><font color="blue"><b>,</b>-</font><font color="brown">3</font><font color="blue"><b>,</b></font>3<font color="blue"><b>);</b></font>
+        
+tree<font color="blue"><b>.</b></font>mkdir<font color="blue"><b>(</b></font><font color="purple">&quot;/Clouds&quot;</font><font color="blue"><b>);</b></font>
+tree<font color="blue"><b>.</b></font>cd<font color="blue"><b>(</b></font><font color="purple">&quot;/Clouds&quot;</font><font color="blue"><b>);</b></font>
+
+c1 <font color="blue">=</font> hf<font color="blue"><b>.</b></font>createCloud1D<font color="blue"><b>(</b></font><font color="purple">&quot;Cloud 1D&quot;</font><font color="blue"><b>);</b></font>
+c2 <font color="blue">=</font> hf<font color="blue"><b>.</b></font>createCloud2D<font color="blue"><b>(</b></font><font color="purple">&quot;Cloud 2D&quot;</font><font color="blue"><b>);</b></font>
+
+page1 <font color="blue">=</font> factory<font color="blue"><b>.</b></font>createPlotterFactory<font color="blue"><b>().</b></font>create<font color="blue"><b>(</b></font><font color="purple">&quot;Page1&quot;</font><font color="blue"><b>);</b></font>
+
+page1.show<font color="blue"><b>();</b></font>
+page1.createRegions<font color="blue"><b>(</b></font><font color="brown">2</font><font color="blue"><b>,</b></font>2<font color="blue"><b>);</b></font>
+
+page1.region<font color="blue"><b>(</b></font><font color="brown">0</font><font color="blue"><b>).</b></font>plot<font color="blue"><b>(</b></font>h1<font color="blue"><b>);</b></font>
+page1.region<font color="blue"><b>(</b></font><font color="brown">1</font><font color="blue"><b>).</b></font>plot<font color="blue"><b>(</b></font>h2<font color="blue"><b>);</b></font>
+page1.region<font color="blue"><b>(</b></font><font color="brown">2</font><font color="blue"><b>).</b></font>plot<font color="blue"><b>(</b></font>c1<font color="blue"><b>);</b></font>
+page1.region<font color="blue"><b>(</b></font><font color="brown">3</font><font color="blue"><b>).</b></font>plot<font color="blue"><b>(</b></font>c2<font color="blue"><b>);</b></font>
+
+Random = class java.util.Random
+r = Random()
+
+for( i = 0; i &lt; <font color="brown">10000; i++ </font><font color="blue"><b>) {</b></font>
+   h1.fill<font color="blue"><b>(</b></font>r<font color="blue"><b>.</b></font>nextGaussian<font color="blue"><b>())</b></font>
+   h2.fill<font color="blue"><b>(</b></font>r<font color="blue"><b>.</b></font>nextGaussian<font color="blue"><b>(),</b></font>r<font color="blue"><b>.</b></font>nextGaussian<font color="blue"><b>())</b></font>
+   c1.fill<font color="blue"><b>(</b></font>r<font color="blue"><b>.</b></font>nextGaussian<font color="blue"><b>())</b></font>
+   c2.fill<font color="blue"><b>(</b></font>r<font color="blue"><b>.</b></font>nextGaussian<font color="blue"><b>(),</b></font>r<font color="blue"><b>.</b></font>nextGaussian<font color="blue"><b>())</b></font>
+}
+
+tree<font color="blue"><b>.</b></font>commit<font color="blue"><b>();</b></font></pre>
+<p>To execute the above script follow the steps below:</p>
+<ul>
+	<li>save the Pnuts script in a file called &quot;script.pnut&quot;</li>
+	<li>execute with<ul>
+		<li>pnuts script.pnut</li>
+	</ul>
+	</li>
+</ul>
+<p>where &quot;pnuts&quot; is the executable that comes with the Pnuts distribution 
+appropriate for your platform.</p>
+<h3><a name="C++">Using JAIDA from C++</a></h3>
+<p>To access the Java implementation of the AIDA interfaces from C++ you need to 
+download the <a href="http://java.freehep.org/jaida/BinaryDistributions.html">
+AIDAJNI </a>glue code that will allow you to operate on the JAIDA objects from 
+C++.</p>
+<p>Example C++ code follows:</p>
+<pre class="code">£include <font color="blue">&lt;</font>iostream<font color="blue">&gt;</font>
+£include <font color="blue">&lt;</font>cstdlib<font color="blue">&gt;</font>
+
+£include <font color="purple">&quot;AIDA/AIDA.h&quot;</font>
+£include <font color="purple">&quot;JIAnalysisFactory.h&quot;</font>
+
+using namespace AIDA<font color="blue"><b>;</b></font>
+
+<font color="green"><b>int</b></font> <font color="green"><b>main</b></font><font color="blue"><b>(</b></font><font color="green"><b>int</b></font> argc<font color="blue"><b>,</b></font> <font color="green"><b>char</b></font> <font color="blue">*</font>argv<font color="blue"><b>[])</b></font> <font color="blue"><b>{</b></font>
+
+        AIDA<font color="blue">::</font>IAnalysisFactory<font color="blue">*</font> factory <font color="blue">=</font> AIDA_createAnalysisFactory<font color="blue"><b>();</b></font>
+        ITree<font color="blue">*</font>              tree    <font color="blue">=</font> factory<font color="blue">-&gt;</font>createTreeFactory<font color="blue"><b>()</b>-&gt;</font>create<font color="blue"><b>(</b></font><font color="purple">&quot;UsingJAIDAFromCPP.aida&quot;</font><font color="blue"><b>,</b></font><font color="purple">&quot;xml&quot;</font><font color="blue"><b>,</b></font>false<font color="blue"><b>,</b></font>true<font color="blue"><b>);</b></font>
+        IHistogramFactory<font color="blue">*</font>  hf      <font color="blue">=</font> factory<font color="blue">-&gt;</font>createHistogramFactory<font color="blue"><b>(</b>*</font>tree<font color="blue"><b>);</b></font>
+
+        tree<font color="blue">-&gt;</font>mkdir<font color="blue"><b>(</b></font><font color="purple">&quot;/Histograms&quot;</font><font color="blue"><b>);</b></font>
+        tree<font color="blue">-&gt;</font>cd<font color="blue"><b>(</b></font><font color="purple">&quot;/Histograms&quot;</font><font color="blue"><b>);</b></font>
+
+        IHistogram1D<font color="blue">*</font> h1 <font color="blue">=</font> hf<font color="blue">-&gt;</font>createHistogram1D<font color="blue"><b>(</b></font><font color="purple">&quot;Histogram 1D&quot;</font><font color="blue"><b>,</b></font><font color="brown">50</font><font color="blue"><b>,</b></font>0<font color="blue"><b>,</b></font><font color="brown">10</font><font color="blue"><b>);</b></font>
+        IHistogram2D<font color="blue">*</font> h2 <font color="blue">=</font> hf<font color="blue">-&gt;</font>createHistogram2D<font color="blue"><b>(</b></font><font color="purple">&quot;Histogram 2D&quot;</font><font color="blue"><b>,</b></font><font color="brown">40</font><font color="blue"><b>,</b></font>0<font color="blue"><b>,</b></font><font color="brown">10</font><font color="blue"><b>,</b></font>40<font color="blue"><b>,</b></font><font color="brown">0</font><font color="blue"><b>,</b></font>10<font color="blue"><b>);</b></font>
+        
+        tree<font color="blue">-&gt;</font>mkdir<font color="blue"><b>(</b></font><font color="purple">&quot;/Clouds&quot;</font><font color="blue"><b>);</b></font>
+        tree<font color="blue">-&gt;</font>cd<font color="blue"><b>(</b></font><font color="purple">&quot;/Clouds&quot;</font><font color="blue"><b>);</b></font>
+        
+        ICloud1D<font color="blue">*</font> c1 <font color="blue">=</font> hf<font color="blue">-&gt;</font>createCloud1D<font color="blue"><b>(</b></font><font color="purple">&quot;Cloud 1D&quot;</font><font color="blue"><b>);</b></font>
+        ICloud2D<font color="blue">*</font> c2 <font color="blue">=</font> hf<font color="blue">-&gt;</font>createCloud2D<font color="blue"><b>(</b></font><font color="purple">&quot;Cloud 2D&quot;</font><font color="blue"><b>);</b></font>
+
+        IPlotter<font color="blue">*</font> page1 <font color="blue">=</font> factory<font color="blue">-&gt;</font>createPlotterFactory<font color="blue"><b>()</b>-&gt;</font>create<font color="blue"><b>(</b></font><font color="purple">&quot;Page1&quot;</font><font color="blue"><b>);</b></font>
+
+        page1<font color="blue">-&gt;</font>show<font color="blue"><b>();</b></font>
+        page1<font color="blue">-&gt;</font>createRegions<font color="blue"><b>(</b></font><font color="brown">2</font><font color="blue"><b>,</b></font>2<font color="blue"><b>);</b></font>
+
+        page1<font color="blue">-&gt;</font>region<font color="blue"><b>(</b></font><font color="brown">0</font><font color="blue"><b>)</b>-&gt;</font>plot<font color="blue"><b>(</b>*</font>h1<font color="blue"><b>);</b></font>
+        page1<font color="blue">-&gt;</font>region<font color="blue"><b>(</b></font><font color="brown">1</font><font color="blue"><b>)</b>-&gt;</font>plot<font color="blue"><b>(</b>*</font>h2<font color="blue"><b>);</b></font>
+        page1<font color="blue">-&gt;</font>region<font color="blue"><b>(</b></font><font color="brown">2</font><font color="blue"><b>)</b>-&gt;</font>plot<font color="blue"><b>(</b>*</font>c1<font color="blue"><b>);</b></font>
+        page1<font color="blue">-&gt;</font>region<font color="blue"><b>(</b></font><font color="brown">3</font><font color="blue"><b>)</b>-&gt;</font>plot<font color="blue"><b>(</b>*</font>c2<font color="blue"><b>);</b></font>
+
+        srand<font color="blue"><b>(</b></font> <font color="brown">0</font> <font color="blue"><b>);</b></font>
+        <font color="green"><b>for</b></font> <font color="blue"><b>(</b></font> <font color="green"><b>int</b></font> i <font color="blue">=</font> <font color="brown">0</font><font color="blue"><b>;</b></font> i <font color="blue">&lt;</font> <font color="brown">10000</font><font color="blue"><b>;</b></font> i<font color="blue">++</font> <font color="blue"><b>)</b></font> <font color="blue"><b>{</b></font>
+            h1<font color="blue">-&gt;</font>fill<font color="blue"><b>(</b></font> <font color="brown">10</font><font color="blue">*</font>rand<font color="blue"><b>()</b>/<b>(</b></font><font color="green"><b>double</b></font><font color="blue"><b>)</b></font>RAND_MAX <font color="blue"><b>);</b></font>
+            h2<font color="blue">-&gt;</font>fill<font color="blue"><b>(</b></font> <font color="brown">10</font><font color="blue">*</font>rand<font color="blue"><b>()</b>/<b>(</b></font><font color="green"><b>double</b></font><font color="blue"><b>)</b></font>RAND_MAX<font color="blue"><b>,</b></font> <font color="brown">10</font><font color="blue">*</font>rand<font color="blue"><b>()</b>/<b>(</b></font><font color="green"><b>double</b></font><font color="blue"><b>)</b></font>RAND_MAX<font color="blue"><b>);</b></font>
+            c1<font color="blue">-&gt;</font>fill<font color="blue"><b>(</b></font> <font color="brown">10</font><font color="blue">*</font>rand<font color="blue"><b>()</b>/<b>(</b></font><font color="green"><b>double</b></font><font color="blue"><b>)</b></font>RAND_MAX <font color="blue"><b>);</b></font>
+            c2<font color="blue">-&gt;</font>fill<font color="blue"><b>(</b></font> <font color="brown">10</font><font color="blue">*</font>rand<font color="blue"><b>()</b>/<b>(</b></font><font color="green"><b>double</b></font><font color="blue"><b>)</b></font>RAND_MAX<font color="blue"><b>,</b></font> <font color="brown">10</font><font color="blue">*</font>rand<font color="blue"><b>()</b>/<b>(</b></font><font color="green"><b>double</b></font><font color="blue"><b>)</b></font>RAND_MAX<font color="blue"><b>);</b></font>
+        <font color="blue"><b>}</b></font>
+        tree<font color="blue">-&gt;</font>commit<font color="blue"><b>();</b></font>
+        <font color="green"><b>delete</b></font> factory<font color="blue"><b>;</b></font>
+        <font color="green"><b>return</b></font> <font color="brown">1</font><font color="blue"><b>;</b></font>
+<font color="blue"><b>}</b></font></pre>
+<h3><a name="Geant4">Using JAIDA from Geant4</a></h3>
+<p>Please see the documentation on
+<a href="http://java.freehep.org/aidajni/ReleaseNotes.html">AIDAJNI</a> to use 
+JAIDA from Geant4.</p>
+
+</body>
+
+</html>

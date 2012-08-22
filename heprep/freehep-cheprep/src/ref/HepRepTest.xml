@@ -1,0 +1,46 @@
+<?xml version="1.0" ?>
+<heprep version="2.0"
+  xmlns="http://java.freehep.org/schemas/heprep/2.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+  xsi:schemaLocation="http://java.freehep.org/schemas/heprep/2.0 http://java.freehep.org/schemas/heprep/2.0/HepRep.xsd">
+  <layer order="Detector"/>
+  <typetree name="CylinderType" version="1.0">
+    <type name="Cylinder">
+      <attvalue name="banner" type="boolean" value="true"/>
+      <attvalue name="framed" type="boolean" value="true"/>
+      <attvalue name="drawAs" value="Cylinder"/>
+      <attvalue name="radius1" type="double" value="2"/>
+      <attvalue name="radius2" showlabel="NAME, VALUE, 400"
+        type="double" value="2"/>
+    </type>
+  </typetree>
+  <instancetree name="TestCylinder"
+    typetreename="CylinderType" typetreeversion="1.0" version="CPlusPlus Generated">
+    <instance type="Cylinder">
+      <attvalue name="color" type="Color"
+        value="1.00, 0.00, 0.00, 1.00"/>
+      <attvalue name="label" showlabel="VALUE" value="x-axis"/>
+      <point x="0" y="0" z="0"/>
+      <point x="4" y="0" z="0"/>
+    </instance>
+    <instance type="Cylinder">
+      <attvalue name="color" type="Color"
+        value="0.00, 1.00, 0.00, 1.00"/>
+      <attvalue name="label" showlabel="VALUE" value="y-axis"/>
+      <point x="0" y="0" z="0"/>
+      <point x="0" y="4" z="0"/>
+    </instance>
+    <instance type="Cylinder">
+      <attvalue name="color" type="Color"
+        value="0.00, 1.00, 0.00, 1.00"/>
+      <attvalue name="label" showlabel="VALUE" value="z-axis"/>
+      <point x="0" y="0" z="0"/>
+      <point x="0" y="0" z="4"/>
+    </instance>
+    <instance type="Cylinder">
+      <attvalue name="Phi1" type="double" value="0.2"/>
+      <attvalue name="Phi2" type="double" value="0.3"/>
+      <point x="3.4e-006" y="10" z="1.20003e+006"/>
+      <point x="12.3" y="12.3" z="12.3"/>
+    </instance>
+  </instancetree>
+</heprep>

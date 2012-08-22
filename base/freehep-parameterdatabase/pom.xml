@@ -1,0 +1,32 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
+  <parent>
+    <artifactId>global</artifactId>
+    <groupId>org.freehep</groupId>
+    <version>5</version>
+  </parent>
+  <modelVersion>4.0.0</modelVersion>
+  <groupId>org.freehep</groupId>
+  <artifactId>freehep-parameterdatabase</artifactId>
+  <version>2.1-SNAPSHOT</version>
+  <name>FreeHEP Parameter Database</name>
+  <description>FreeHEP Parameter and Settings Database</description>
+  <repositories>
+    <repository>
+      <id>freehep-maven</id>
+      <name>Maven FreeHEP</name>
+      <url>http://java.freehep.org/maven2</url>
+    </repository>
+  </repositories>
+  <dependencies>
+    <dependency>
+      <groupId>org.freehep</groupId>
+      <artifactId>freehep-swing</artifactId>
+      <version>2.0.3</version>
+    </dependency>
+    <dependency>
+      <groupId>org.freehep</groupId>
+      <artifactId>freehep-xml</artifactId>
+      <version>2.1.2</version>
+    </dependency>
+  </dependencies>
+</project>

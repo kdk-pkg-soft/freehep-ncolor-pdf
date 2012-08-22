@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<project name="freehep-webutil">
+    <bannerLeft>
+        <name>FreeHEP Web Util</name>
+<!--        <src>http://maven.apache.org/images/apache-maven-project.png</src> -->
+<!-- FIXME, should this be substituted by some properties -->
+        <href>http://java.freehep.org/mvn/freehep-webutil</href>
+    </bannerLeft>
+    
+    <bannerRight>
+        <name>FreeHEP</name>
+        <src>http://java.freehep.org/images/sm-freehep.gif</src>
+        <href>http://java.freehep.org/</href>
+    </bannerRight>
+    
+    <body>
+        <links>
+            <item name="FreeHEP" href="http://java.freehep.org/"/>
+            <item name="JAS" href="http://jas.freehep.org/"/>
+            <item name="WIRED" href="http://wired.freehep.org/"/>
+        </links>
+    
+        <menu name="General">
+            <item name="Web Utilities" href="index.html" collapse="false">
+                <item name="Non Available Filter" href="nonAvailableFilter.html"/>
+                <item name="Tab Tags" href="tabTags.html"/>
+                <item name="Ttree Tags" href="tree.html"/>
+            </item>
+            <item name="Source Repository" href="source-repository.html"/>
+            <item name="Depencencies" href="dependencies.html"/>
+        </menu>   
+        <menu name="Documentation">
+            <item name="Tld Doc" href="tlddoc/index.html" />
+            <item name="API Doc" href="apidocs/overview-summary.html" />
+        </menu>           
+    </body>
+</project>

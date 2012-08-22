@@ -1,0 +1,10 @@
+#set( $webName = "YaPPI" )
+#set( $webSearch = "yappi.freehep.org" )
+<h1>
+YaPPI
+</h1>
+<span class="YaPPI">Y</span>et
+<span class="YaPPI">a</span>nother
+<span class="YaPPI">P</span>article
+<span class="YaPPI">P</span>roperty
+<span class="YaPPI">I</span>nterface</span>

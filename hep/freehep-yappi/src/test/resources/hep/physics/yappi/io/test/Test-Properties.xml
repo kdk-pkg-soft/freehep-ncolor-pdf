@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="ISO-8859-1"?> 
+<!--=============================================================================--> 
+<!-- Copyright of file, 2000, CERN, Geneva, Switzerland. (yappi.freehep.org)     --> 
+<!-- Copyright of data, 2000, PDG. (pdg.lbl.gov)                                 --> 
+<!--=============================================================================--> 
+<!-- ATTENTION: this file is GENERATED. To override values, use a different file --> 
+<!--=============================================================================--> 
+<PPML source="TestFile" xmlns:ppml="http://www.w3.org/1999/XMLSchema-instance" 
+      ppml:nonamespaceSchemaLocation='ppml.xsd'> 
+   <ParticleType name="eta(c)(1S)" texName="\eta_{c}(1S\;)" antiName="eta(cbar(1S))" antiTexName="\overline{\eta_{c}(1S\;)}" > 
+      <Data name="PDGID" value="441" /> 
+      <Data name="Charge" value="0" /> 
+      <Data name="Mass"     texName="Mass $m$" value="2979.8" posError="1.8" negError="1.8" unit="MeV"/> 
+      <Data name="Width"    texName="Full Width $\Gamma$" value="13.2" posError="3.8" negError="3.2" unit="MeV"/> 
+   </ParticleType> 
+</PPML> 

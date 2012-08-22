@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<!-- $Id: ppml.xsd 8609 2006-08-15 22:36:23Z duns $ -->
+<!-- Schema for the YaPPI XML Database -->
+
+<xsd:schema targetNamespace="http://www.freehep.org/Yappi"
+            xmlns:xsd="http://www.w3.org/1999/XMLSchema"
+            xmlns:heprep="http://www.freehep.org/Yappi">        
+  
+    <xsd:element name="Data">
+	    <xsd:attribute name="name"		        type="xsd:string"       	      />
+	    <xsd:attribute name="texName"		    type="xsd:string"	minOccurs="0" />
+	    <xsd:attribute name="value"		        type="xsd:string"       	      />
+	    <xsd:attribute name="unit"		        type="xsd:string"       	      />
+	    <xsd:attribute name="posError"		    type="xsd:string"	minOccurs="0" />
+	    <xsd:attribute name="negError" 	        type="xsd:string"	minOccurs="0" />
+	    <xsd:attribute name="confidenceLevel"	type="xsd:decimal"	minOccurs="0" />
+	    <xsd:attribute name="scaleFactor" 	    type="xsd:decimal"	minOccurs="0" />
+    </xsd:element>
+
+    <xsd:element name="Decay">
+	    <xsd:attribute name="name"       	    type="xsd:string"  	              />
+	    <xsd:attribute name="texName"  	        type="xsd:string"  	minOccurs="0" />
+	    <xsd:attribute name="fraction"	    	type="xsd:string"  		          />
+	    <xsd:attribute name="posError"		    type="xsd:decimal" 	minOccurs="0" />
+	    <xsd:attribute name="negError"		    type="xsd:decimal" 	minOccurs="0" />
+	    <xsd:attribute name="confidenceLevel"	type="xsd:decimal" 	minOccurs="0" />
+	    <xsd:attribute name="scaleFactor"	    type="xsd:decimal" 	minOccurs="0" />
+	    <xsd:attribute name="P"		            type="xsd:string"  	minOccurs="0" />
+	    <xsd:attribute name="PUnit"		        type="xsd:string"  	minOccurs="0" />
+    </xsd:element>
+
+    <xsd:element name="DecayGroup">
+	    <xsd:attribute	name="name"		        type="xsd:string"                 />
+        <xsd:all minOccurs="0" maxOccurs="*">
+            <xsd:element name="Decay" />
+        </xsd:all>        
+    </xsd:element>
+
+    <xsd:element name="ParticleType">
+	    <xsd:attribute name="name"    		    type="xsd:string"                     />
+	    <xsd:attribute name="texName" 		    type="xsd:string"       minOccurs="0" />
+	    <xsd:attribute name="antiname"    		type="xsd:string"       minOccurs="0" />
+	    <xsd:attribute name="antiTeXName" 		type="xsd:string"       minOccurs="0" />
+	    <xsd:attribute name="PDGID"  		    type="xsd:string"       minOccurs="0" />
+        <xsd:all minOccurs="0" maxOccurs="*">
+            <xsd:element name="Data" />
+            <xsd:element name="DecayGroup" />
+            <xsd:element name="Decay" />
+        </xsd:all>        
+    </xsd:element>
+
+    <xsd:element name="Family">
+	    <xsd:attribute name="name"		        type="xsd:string"		              />
+	    <xsd:attribute name="texName" 		    type="xsd:string"       minOccurs="0" />
+        <xsd:all minOccurs="0" maxOccurs="*">
+	        <xsd:element name="Family"/>
+	        <xsd:element name="ParticleType"/>
+        </xsd:all>        
+    </xsd:element>
+
+    <xsd:element name="PPML">
+        <xsd:all minOccurs="0" maxOccurs="*">
+        	<ppml:element name="ParticleType"/>
+        	<ppml:element name="Family"/>
+        </xsd:all>        
+    </xsd:element>
+
+</xsd:schema>

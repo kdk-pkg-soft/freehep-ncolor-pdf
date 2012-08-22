@@ -1,0 +1,91 @@
+/**
+ * YaPPI - Yet Another Particle Property Interface
+ *
+ * Cascading Style Sheet
+ * 
+ * @author Mark Donszelmann
+ * @version $Id: yappi.css 8609 2006-08-15 22:36:23Z duns $
+ */ 
+
+/**
+ * greek font
+ */
+.symbol {font-family:Symbol}
+    
+/**
+ * separator
+ * FIXME: does not work yet in Netscape
+ */
+hr {height:3; border-color:black; background:black}
+
+/**
+ * overline for Anti-Particles (ex: KKbar)
+ *
+ * NOTE: currently Netscape does not support overline, so underline is used instead
+ */
+.overline {text-decoration: underline}
+
+/**
+ * super and sub scripts
+ */ 
+sup { font-size:80% }
+sub { font-size:80% }
+
+/**
+ * tables (general)
+ */
+td {vertical-align:center; font-family:Helvetica}
+th {font-family:Helvetica}
+
+/**
+ * family
+ */
+div.family {align:center; font-weight:bold; font-size:120%}
+
+/**
+ * particle
+ */
+div.particle {align:none}
+td.particle-name {font-weight:bold; font-size:120%; vertical-align:baseline}
+td.particle-asciiname {font-size:80%; vertical-align:baseline}
+td.particle-info {}
+sup.particle {font-size:80%}
+sub.particle {font-size:80%}
+
+/**
+ * properties
+ */
+div.property {margin-left:2cm}
+td.property-poserror {font-size:80%}
+td.property-negerror {font-size:80%}
+ 
+/**
+ * decaymodes header
+ */
+div.decay {align:none}
+tr.decay-header {background:black}
+th.decay-header {color:white}
+sup.decay-header {font-size:80%}
+sub.decay-header {font-size:80%}
+
+/**
+ * decaygroup entries
+ */
+tr.decay-group {}
+th.decay-group {align:center}
+
+/**
+ * decaymode entries
+ */
+tr.decay-odd {background:#999999}
+tr.decay-even {background:#CCCCCC}
+sup.decay {font-size:60%}
+sub.decay {font-size:60%}
+td.decay {font-size:80%; letter-spacing:1}
+td.decay-poserror {font-size:60%}
+td.decay-negerror {font-size:60%}
+
+/**
+ * footer
+ */
+address.footer {font-family:Helvetica}

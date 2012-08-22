@@ -1,0 +1,37 @@
+<project>
+  <parent>
+    <artifactId>maven-plugin-pom</artifactId>
+    <groupId>org.freehep</groupId>
+    <version>5-SNAPSHOT</version>
+  </parent>
+  <modelVersion>4.0.0</modelVersion>
+  <groupId>org.freehep</groupId>
+  <artifactId>freehep-jarjar-plugin</artifactId>
+  <version>2.0.1-SNAPSHOT</version>
+  <packaging>maven-plugin</packaging>
+  <name>FreeHEP Jar Jar Plugin</name>
+  <description>Plugin to create a jar from all dependencies. Unpacks all dependent jar files
+  and creates a full jar file out of it. The files in META-INF/services are properly merged.
+  </description>
+  <repositories>
+    <repository>
+      <id>freehep-maven</id>
+      <name>Maven FreeHEP</name>
+      <url>http://java.freehep.org/maven2</url>
+    </repository>
+  </repositories>
+  <dependencies>
+    <dependency>
+      <groupId>org.apache.maven</groupId>
+      <artifactId>maven-project</artifactId>
+    </dependency>
+    <dependency>
+      <groupId>org.apache.maven</groupId>
+      <artifactId>maven-plugin-api</artifactId>
+    </dependency>
+    <dependency>
+      <groupId>org.codehaus.plexus</groupId>
+      <artifactId>plexus-archiver</artifactId>
+    </dependency>
+  </dependencies>
+</project>

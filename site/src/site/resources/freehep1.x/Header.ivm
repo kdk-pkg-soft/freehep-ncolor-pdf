@@ -1,0 +1,4 @@
+#set( $webName = "Java&nbsp;Library" )
+#set( $webSearch = "java.freehep.org" )
+<h1>FreeHEP Java Library</h1>
+Components and Tools for Java

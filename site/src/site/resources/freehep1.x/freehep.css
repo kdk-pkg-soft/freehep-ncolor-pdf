@@ -1,0 +1,17 @@
+a:link       { color: #CC0000 }
+a:active     { color: #66CC66 }
+a:visited    { color: #009933 }
+body         { font-family: Times, 'Times New Roman', Times, serif; background-color: #FFFFFF }
+h1, h2, h3, h4, h5, h6 { font-family: Verdana, Arial, sans-serif}
+h1           { color: #000066 }
+h2           { color: #FFCC33 }
+h3           { color: #000066 }
+h4           { color: #FFCC33 }
+h5
+{
+	color: rgb(153,255,51);
+}
+h6
+{
+	color: rgb(0,255,204);
+}
